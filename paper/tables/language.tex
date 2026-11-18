@@ -1,0 +1,76 @@
+% src: tab:tokenizers = work/posthoc_2026-11/S14_bilingual/RESULTS.md sec. 2.4 (tokjudge.json tokens: marginal prompt tokens per evidence character, per-language OLS on 768 calls per reader, 8 frozen arms x 96 questions)
+% src: tab:language = S15_crossling/RESULTS.md sec. 2 (results_tables.md, experiment X): complete gold bundle in the top 40 and in the 6,000-character pack, original -> translated query, 45 answerable questions per pool;
+%      end to end: HR_6000 69..71 -> 53..54 (fa pool 36 -> 28, en pool 33..35 -> 25..26); CLOSEDBOOK 26 -> 22..23 (fa 6 -> 4..5, en 20 -> 18)
+% src: tab:replication = S14_bilingual/compact_table.md and lang_tables.md (net A - B per half, GLM reader, judge 1; interaction = worst-case component-level permutation p over unresolved cells; Holm over 14 contrasts for the grep agent: .019)
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{2.6cm}rrr@{}}
+\toprule
+Reader & Persian & English & Ratio \\
+\midrule
+GLM-5.3-flash (primary) & 0.409 & 0.228 & 1.80 \\
+DeepSeek-V4-flash & 0.396 & 0.226 & 1.75 \\
+Llama 3.3 70B & 0.348 & 0.226 & 1.53 \\
+gpt-oss-20b & 0.341 & 0.225 & 1.51 \\
+Gemma 3 27B & 0.354 & 0.242 & 1.46 \\
+Qwen3 235B & 0.758 & 0.254 & 2.99 \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. Reader prompt tokens added per character of evidence text, for the six reader models, estimated from 768 answer calls per reader on identical packs. The ratio is Persian over English; 95\% intervals lie within $\pm$0.11.}
+\label{tab:tokenizers}
+\end{table}
+
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}p{3.1cm}cc@{}}
+\toprule
+Question language swapped & Persian pool & English pool \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Complete bundle in the top 40 (of 45), original $\to$ translated}} \\
+BM25 & 37 $\to$ 2 & 29 $\to$ 8 \\
+Dense & 38 $\to$ 35 & 33 $\to$ 28 \\
+Hybrid (rank fusion) & 39 $\to$ 33 & 33 $\to$ 27 \\
+Hybrid and reranker & 39 $\to$ 35 & 36 $\to$ 28 \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Complete bundle in the 6,000-character pack (of 45)}} \\
+BM25 & 25 $\to$ 0 & 20 $\to$ 4 \\
+Dense & 26 $\to$ 21 & 21 $\to$ 16 \\
+Hybrid (rank fusion) & 33 $\to$ 19 & 24 $\to$ 16 \\
+Hybrid and reranker & 34 $\to$ 29 & 29 $\to$ 20 \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Correct answers (of 45)}} \\
+Reranked pipeline & 36 $\to$ 28 & 33--35 $\to$ 25--26 \\
+Closed book & 6 $\to$ 4--5 & 20 $\to$ 18 \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. Every test question asked in the other language against its own document pool, with the original question in the left value and the translated one in the right. Hybrid retrieval here is BM25 and dense retrieval merged by reciprocal rank fusion.}
+\label{tab:language}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+ & Persian half & English half & Difference between \\
+Contrast (net answers, A minus B) & (of 45) & (of 45) & halves, permutation $p$ \\
+\midrule
+\lexb{} against Lex-RAG without selection, 3,000 characters & +7..+8 & +8 & 1.00 \\
+\lexb{} against Lex-RAG without selection, 6,000 characters & +4..+6 & +5 & 1.00 \\
+\hr{} against \hybrid{}, 6,000 characters & 0..+1 & +6..+8 & .17 \\
+\hybrid{} at 15,500 against 6,000 characters & $-$1..0 & +6 & .11 \\
+SetR set only against \hybrid{}, 3,000 characters & +2..+3 & +10..+11 & .12 \\
+Hybrid-index search agent against \hybrid{} & +3..+4 & +11 & .11 \\
+BM25 search agent against \hybrid{} & $-$2..$-$1 & +12 & .02 \\
+Grep agent against \hybrid{} & $-$7..$-$6 & +12 & .001 \\
+Gold evidence against \hr{} & +7 & +5..+7 & 1.00 \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. Contrasts split by language half, with the primary reader and first judge. The last column tests whether the two halves differ, by permuting the 20 source groups between languages (worst case over unresolved cells). Only the grep agent row survives correction over the 14 contrasts tested (adjusted $p$ = .02). Nine of the 14 contrasts are shown; the other five are in the released analysis tables (S14). Each half has 45 questions and detects a difference of about 8.}
+\label{tab:replication}
+\end{table*}

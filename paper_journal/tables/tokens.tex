@@ -1,0 +1,40 @@
+% src: work/posthoc_2026-11/S7_analysis/tokens.json, tokens_tables.md (section 3 of RESULTS.md); S4_route_long/pool_stats.json and lc_results.json
+%      (1.81, 1.94, 1.97); S2a_packs/results.json (ptok columns; 1.65 at 3,000 and 1.79 at 24,000 characters); work/datasets_v2/lex10/calib10.json (the 1.66 of the draft).
+%      Token-matched rows: S7 tokens_tables.md "Mixed cells" (Persian half at budget B, English half at the next budget up, against B for both).
+\begin{table*}[tp]
+\caption{Post hoc. Persian-to-English token ratio and tokens at equal budgets}
+\label{tab:tokens}
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xr@{}}
+\toprule
+\multicolumn{2}{@{}l}{\emph{How the Persian-to-English token ratio is measured}} \\
+\cmidrule(r){1-2}
+Measure & fa/en \\
+\midrule
+Whole answer prompt, pooled tokens per character, 36 dev calls per language (the earlier 1.66) & 1.66 \\
+Same rule, all 2,106 test answer calls & 1.75 \\
+Median of per-call ratios, 384 test calls per language & 1.81 \\
+\textbf{Marginal tokens per evidence character (regression on the test calls): 0.409 vs 0.227} & \textbf{1.80} \\
+Long prompts that are almost all document text (long-context variants) & 1.94--1.97 \\
+Ratio of mean prompt tokens at the same character budget & 1.65 (3,000) to 1.79 (24,000) \\
+\bottomrule
+\end{tabularx}
+
+\bigskip
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\multicolumn{4}{@{}l}{\emph{Persian at budget $B$ and English at the next budget up, against both at $B$}} \\
+\cmidrule(r){1-4}
+Pipeline, $B$ & Net & Correct & Sign $p$ \\
+\midrule
+\hybrid{}, 3,000 & +4..+7 & 55--56 vs 49--51 & .04--.34 \\
+\hybrid{}, 6,000 & +2..+5 & 65--67 vs 62--63 & .13--.69 \\
+\hr{}, 3,000 & +6..+8 & 62--64 vs 56 & .02--.07 \\
+\hr{}, 6,000 & $-$2..0 & 69 vs 69--71 & -- \\
+Lex-RAG w/o selection, 3,000 & +6..+8 & -- & .02--.11 \\
+Lex-RAG w/o selection, 6,000 & +2..+4 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

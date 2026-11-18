@@ -1,0 +1,4 @@
+{"phase": "qvec", "n": 96, "wall_s": 50.5, "nvsmi": "787 MiB, 8188 MiB", "t": "2026-11-10T19:39:45"}
+{"phase": "rerank", "n_questions": 96, "wall_s": 96.0, "peak_alloc_mb": 1271.3, "nvsmi_end": "3032 MiB, 8188 MiB", "device": "cuda", "fp16": true, "batch_size": 16, "load_ms": 23273.7, "sizes": [1000], "t": "2026-11-10T19:42:07"}
+{"phase": "rerank", "n_questions": 96, "wall_s": 153.9, "peak_alloc_mb": 1271.3, "nvsmi_end": "4052 MiB, 8188 MiB", "device": "cuda", "fp16": true, "batch_size": 16, "load_ms": 22468.1, "sizes": [2000], "t": "2026-11-10T20:09:46"}
+{"phase": "rerank", "n_questions": 96, "wall_s": 31.9, "peak_alloc_mb": 1192.6, "nvsmi_end": "2262 MiB, 8188 MiB", "device": "cuda", "fp16": true, "batch_size": 16, "load_ms": 16231.1, "sizes": [500], "t": "2026-11-10T20:34:13"}

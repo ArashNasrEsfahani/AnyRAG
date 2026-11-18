@@ -1,0 +1,18 @@
+{
+ "arm": "FUSION_6000",
+ "question_id": "V2-test-RPT-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5975 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "fd7993a8f911ef7c5e65fde8c250e69f035bfa8d311e9ca2cc8d8a6aaff79b70",
+ "evidence_chars": 5808
+}

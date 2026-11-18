@@ -1,0 +1,18 @@
+{
+ "arm": "GOLD",
+ "question_id": "V2-test-RPT-fa-T2-003",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 437 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "3bb6ed411c7a61d96ef02307f3daa026059c8dd7c10595ee1fa83ccb08a95be6",
+ "evidence_chars": 297
+}

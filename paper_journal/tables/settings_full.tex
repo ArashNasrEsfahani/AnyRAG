@@ -1,0 +1,65 @@
+% src: RAG-Paper-upgrades/ragbench: retrieval/hybrid.py (BM25 Lucene k1 1.5, b .75; RRF k 60), approaches/lex5b/{approach,views}.py
+%      (unit completion 300/1,200; view 2,600 est. tokens, max observed 2,598; 3^8 combinations; low reasoning effort);
+%      ragbench/contracts.py (completion limits); test_freeze/PROTOCOL.md sec. 2, 7 and 9 (pins, fp8/bf16, no seed, Ollama vs HF);
+%      lex5b/LEX5B.md (2.2k tokens at 6,000; Persian 1.66x tokens/char in that early dev measure; the body uses 1.80 = S7_analysis/RESULTS.md sec. 3); budget_matrix/BUDGET_MATRIX.md (15,500 predicted 2.37x; derivation in lex10/LEX10.md "single B**" row: 15,500, 5,135 tokens, 2.37x)
+% Blind-review additions (2026-10-07): lex5b/views.py (CAPS 420..60 step 20; est. ar/2.55 + other/4.2); lex5/bundles.py (MAX_PARTS 8,
+%      MAX_ALTS 2); contracts.py pack_evidence + config.yaml evidence.min_item_chars 200; setr/approach.py PASSAGE_CAP 1500;
+%      config.yaml generation (temperature 0, top_p 1, seed 42); judge_runs.jsonl sent_params [seed, temperature, top_p]
+\begin{table*}[tp]
+\caption{Implementation settings, model identifiers and providers}
+\label{tab:settings-full}
+\centering
+\small
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Setting & Value \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Retrieval}} \\
+Chunks & at most 1,000 characters, 200 overlap; sections packed whole, longer ones windowed at paragraph or sentence breaks (\ref{app:implementation}) \\
+BM25 & Lucene variant (bm25s), $k_1=1.5$, $b=0.75$, over title, section path and chunk text; Persian-aware normalisation and tokenizer, no Persian stemming (\ref{app:implementation}) \\
+Reciprocal rank fusion & equal weights, $k=60$ \\
+Dense / sparse encoder & bge-m3; served by Ollama for \hybrid, Hugging Face implementation for \lexb's fusion \\
+Three-signal score fusion & min-max normalised channel scores $z_j$ over the union of the top-40 lists; $\tfrac12\max_j z_j+\tfrac12\,\mathrm{mean}_j z_j$ \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{\lexb{} selector and packer}} \\
+Evidence units & sentence cut at a chunk edge extended by at most 300 characters, at most 1,200 in total; table captions and headers attached \\
+Selector view & top 24 units; one excerpt length per question from 420 down to 60 characters in steps of 20, the largest keeping the prompt under an estimated 2,600 tokens (largest observed on test: 2,598); estimate = Arabic-script characters/2.55 + other characters/4.2 \\
+Selector call & GLM-5.3-flash, one fixed endpoint, one attempt, 3\,s deadline with cancellation, 600 completion tokens including reasoning, low reasoning effort \\
+Selector reply & at most 8 parts; at most 2 bundles per part (a first choice and one alternative); any other reply rejected \\
+Bundle packer & at most $3^8=6{,}561$ combinations (first bundle, alternative or none per part); lexicographic objective in the text \\
+Clipping (other pipelines) & first chunk that does not fit is cut to the remaining space if $\ge$200 of its characters survive, else dropped; packing stops \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\begin{table*}[tp]
+\addtocounter{table}{-1}
+\renewcommand{\theHtable}{\thetable.cont}
+\caption{Implementation settings, model identifiers and providers (continued)}
+\centering
+\small
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Setting & Value \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{\setr{} selector}} \\
+Selector call & GLM-5.3-flash, SetR system message and selection prompt verbatim, 8\,s deadline, 2,000 completion tokens, low reasoning effort; \hybrid's top 20 chunks shown whole (1,500-character safety cap, never reached) \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Readers (OpenRouter, one fixed provider each, fallbacks disabled)}} \\
+GLM-5.3-flash (primary; also selector) & Together; no seed parameter, so not deterministic \\
+gpt-oss-20b & Amazon Bedrock \\
+Qwen3-235B-A22B-2507 & GMICloud (fp8) \\
+Llama-3.3-70B-Instruct; Gemma-3-27B-it; DeepSeek-V4-flash & DeepInfra (fp8) \\
+Answer completion limits & 256 (single), 640 (explanation), 768 (comparison, series), 900 (list) tokens \\
+Decoding (readers, selectors) & temperature 0, top-$p$ 1, seed 42, each sent only where the one fixed endpoint supports it; low reasoning effort where supported \\
+\midrule
+\multicolumn{2}{@{}l}{\emph{Judge and budgets}} \\
+Judge & gpt-oss-120b, DeepInfra (bf16); temperature 0, top-$p$ 1, seed 42; strict multi-requirement rubric (Supplementary Material, Sect.~S3); up to three retries on a malformed reply \\
+6,000 characters & development default; about 2.2k GLM reader tokens per question \\
+15,500 characters & largest pack whose predicted mean reader tokens stayed within the 2.5$\times$ token allowance (predicted 2.37$\times$), fixed before any 15,500 result \\
+Persian vs.\ English & about 1.8 times as many reader tokens per character in Persian (Table~\ref{tab:tokens}) \\
+\bottomrule
+\end{tabularx}
+\end{table*}

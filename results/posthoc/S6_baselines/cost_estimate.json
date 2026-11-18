@@ -1,0 +1,36 @@
+{
+ "per_call_dev": {
+  "('LISTWISE', 'listwise_rank')": {
+   "calls": 3,
+   "usd": 0.002537,
+   "usd_per_call": 0.000846
+  },
+  "('LISTWISE', 'answer')": {
+   "calls": 3,
+   "usd": 0.001162,
+   "usd_per_call": 0.000387
+  },
+  "('CLOSEDBOOK', 'answer')": {
+   "calls": 2,
+   "usd": 0.000277,
+   "usd_per_call": 0.000139
+  },
+  "('SETR_NOFILL', 'answer')": {
+   "calls": 2,
+   "usd": 0.000433,
+   "usd_per_call": 0.000217
+  },
+  "('judge-multi', 'judge')": {
+   "calls": 8,
+   "usd": 0.001209,
+   "usd_per_call": 0.000151
+  }
+ },
+ "extrapolation_test_96q": {
+  "LISTWISE (rank+answer)": 0.1183,
+  "CLOSEDBOOK": 0.0133,
+  "SETR_NOFILL": 0.0208,
+  "judge 3x96": 0.0498
+ },
+ "total_est": 0.2022
+}

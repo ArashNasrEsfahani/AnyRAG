@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-RPT-en-T3-003",
+ "variant": "LEX5B_15500",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "c2427343a35b8570b981",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 15416 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "purpose": "answer",
+ "messages_sha256": "e4a8b7a312e5c0b73e4fed048ec30b2142bc22b5f14baf8b814e8ddb170077bf",
+ "evidence_chars": 15284,
+ "at": "2026-10-04T18:43:59"
+}

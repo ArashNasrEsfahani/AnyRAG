@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T3-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 78941 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "4b2ca332450974187917587821a4a84ddb66e460d6d8d9ebeeae9d1d692fdde8",
+ "evidence_chars": 78836,
+ "prompt_chars": 79772,
+ "est_prompt_tokens": 31553,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 9.366
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 7.495
+   },
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "score": 7.064
+   },
+   {
+    "doc": "C.tipax_annual-report_1403.fa",
+    "score": 7.033
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 6.764
+   },
+   {
+    "doc": "C.snapp_annual-report_1402.fa",
+    "score": 6.651
+   },
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "score": 6.453
+   },
+   {
+    "doc": "C.tipax_annual-report_1400.fa",
+    "score": 6.411
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "doc_chars": 178537,
+    "shown": 78802,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

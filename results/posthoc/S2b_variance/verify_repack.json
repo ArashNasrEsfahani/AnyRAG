@@ -1,0 +1,26 @@
+{
+ "LEX5B_6000": {
+  "n": 96,
+  "sha_match": 96,
+  "shown_match": 96,
+  "fallback_saved": 19,
+  "saved_reasons": {
+   "deadline": 15,
+   "overflow_alternatives": 2,
+   "duplicate_alternative": 1,
+   "id_out_of_range": 1
+  },
+  "mismatches": []
+ },
+ "LEX5B_15500": {
+  "n": 96,
+  "sha_match": 96,
+  "shown_match": 96,
+  "fallback_saved": 17,
+  "saved_reasons": {
+   "deadline": 15,
+   "overflow_alternatives": 2
+  },
+  "mismatches": []
+ }
+}

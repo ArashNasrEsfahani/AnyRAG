@@ -1,0 +1,21 @@
+% src: abstract numbers: 90 answerable test questions (tab:tiers, Sect. 2.2); no other number
+% Pre-specified part (PROTOCOL.md): the Lex-RAG accuracy gate and the two primary superiority tests; everything else is post hoc (Sect. 2.5).
+\title{What Reaches the Reader: A Comparison of Retrieval-Augmented Generation Setups in Persian and English}
+\author[ut]{Arash Nasr Esfahani\corref{cor1}}
+\ead{arash.nasr@ut.ac.ir}
+\cortext[cor1]{Corresponding author.}
+\affiliation[ut]{organization={School of Mathematics, Statistics, and Computer Science, University of Tehran},city={Tehran},country={Iran}}
+\begin{abstract}
+Retrieval-augmented generation (RAG) systems answer well only when the right evidence reaches the language model that writes the answer, yet controlled comparisons of retrieval and selection choices are scarce, especially outside English. Existing comparisons mostly use English benchmarks, vary one component at a time, and rarely separate a pre-specified test from later analyses. This paper compares four pipelines in Persian and English under a fixed evidence budget: hybrid retrieval, hybrid retrieval with a cross-encoder reranker, a proposed pipeline that selects evidence with one language-model call, and an adapted set selector. The benchmark uses natural documents in three genres. Annotated passage sets that suffice to answer each question separate evidence lost in retrieval from evidence lost when passages are cut to the budget. Only the decision rule for the proposed pipeline and two primary contrasts were fixed in advance, and all other analyses are post hoc. In the pre-specified test of 90 answerable questions, the proposed pipeline misses its required margin over the reranking baseline. Post hoc analyses indicate that most wrong answers arise before the answer is written, that reranking or selection helps most at small budgets, and that iterative search has the highest point estimate, from one run and one judge, at several times the token cost. The ranking of pipelines with similar accuracy changes when the answering model is run again, when a second judge is used and when the human review covers pipelines unequally. For Persian, text must be normalised before lexical search and budgets must be set in tokens. Recommendations are marked as strong or tentative.
+\end{abstract}
+
+\begin{highlights}
+\item Comparison of RAG pipelines at fixed evidence budgets
+\item Natural Persian and English documents with annotated evidence bundles
+\item Most wrong answers arise in retrieval or when evidence is cut to the budget
+\item A frozen test and post hoc analyses are reported separately
+\item Rankings of close pipelines shift with repeated runs, judge and review
+\end{highlights}
+\begin{keyword}
+retrieval-augmented generation \sep Persian \sep evidence budget \sep reranking \sep LLM-as-a-judge \sep multilingual retrieval
+\end{keyword}

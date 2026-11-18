@@ -1,0 +1,18 @@
+{
+ "arm": "E5_DENSE",
+ "question_id": "V2-test-RPT-fa-T1-003",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5996 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "be7478befec77a29d0669502099e844f2015d75f1b32217c411ad40a5edb67ab",
+ "evidence_chars": 5880
+}

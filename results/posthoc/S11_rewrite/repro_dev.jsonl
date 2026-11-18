@@ -1,0 +1,5 @@
+{"qid": "V2-dev-RPT-fa-T2-001", "split": "dev", "search_eq_channel_code": true, "n_offered": 8, "sha": "f534dbc25782796bf6bae2db5db72beeeb03d95e576a750740ac0888d6334284"}
+{"qid": "V2-dev-RPT-en-T3-002", "split": "dev", "search_eq_channel_code": true, "n_offered": 8, "sha": "36b49379f634aa8bd7ad3fbfd0bad3d9c6e813374fc0ec1c9e40179d0f17da89"}
+{"qid": "V2-dev-BOOK-fa-T3-001", "split": "dev", "search_eq_channel_code": true, "n_offered": 8, "sha": "904689984928703d67c44ca51e37d6e6262b610779c9c50609c7d78d819982ee"}
+{"qid": "V2-dev-BOOK-en-T3-002", "split": "dev", "search_eq_channel_code": true, "n_offered": 8, "sha": "ab829208c1d7b275112564dec4bf942500986d1931e4b21448d909e3415d2f48"}
+{"qid": "V2-dev-LAW-fa-T2-002", "split": "dev", "search_eq_channel_code": true, "n_offered": 8, "sha": "c7b67fb42968056d75ef39355d968f806798ee53b0a8ed3a8f4acf33cdd3c58f"}

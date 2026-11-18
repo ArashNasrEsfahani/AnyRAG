@@ -1,0 +1,18 @@
+{
+ "arm": "BM25_6000",
+ "question_id": "V2-test-BOOK-en-T1-005",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5992 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "b5cd6c7c5b23cd703d4cdb24c239fd37b67a75aa9621d0eb8c795ffd3ac8aaa3",
+ "evidence_chars": 5810
+}

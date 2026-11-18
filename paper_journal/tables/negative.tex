@@ -1,0 +1,50 @@
+% src: moved from sections_old/F_development.tex
+\begin{table*}[tp]
+\caption{Every development variant with its main numbers}
+\label{tab:negative-full}
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}Xp{4.6cm}p{2.2cm}@{}}
+\toprule
+Variant & Idea & Result & Verdict \\
+\midrule
+Regex document scan & LLM plans keywords; a second call picks the documents' own phrases; code compiles Persian-aware regexes; structure windows & 22/60 (local reader); ret.\ 0.513 (20); 3.0 recorded LLM calls/q including the answer & below both baselines \\
+Regex scan with routing & the regex scan + card routing, phrase mining, follow-up passes & 28/60 (= \hr); 3.0 calls/q; ret.\ 0.709 (30); p50 36.6\,s vs.\ 6.1\,s; 1 of 100 packed decisive spans found by the scan alone & 6$\times$ slower, no recall \\
+\quad + cards/sections & document cards and section expansion & 24/60 & options hurt ($-4$) \\
+Agentic loop (two settings) & plan, search, verify rows, answer (3.2--3.5 calls) & 25/60, 23/60; p50 43--49\,s & no gain, 7--8$\times$ slower \\
+\midrule
+Per-requirement retrieval (offline) & per-requirement retrieval, lexical votes, slot reservation, cover-then-fill & best (no lexical list) 0.718 (30); full design 0.681 (27); rule A 0.607 (22) & no variant passed \\
+Listwise LLM selection (replay) & LLM listwise selection over \hybrid{} top-24 (full / snippet / head views) & full view 0.858 (42); snippet view 0.837 (39); head view 0.782 (33) & best retention so far \\
+Full-passage selector (pilot, 12 q) & same, GLM reader; selector gpt-oss-20b or GLM & gpt-oss-20b selector 8/12, GLM selector 6/12, vs.\ \hybrid{} 5, \hr{} 7; tokens 4.3$\times$ and 3.5$\times$ \hybrid & failed 1.5$\times$ token gate \\
+\lexb{} selector views & excerpt types under a 2,600-token view & smart 0.801, full top-10 0.792, literal 0.854 (38) & literal admitted \\
+Faster selector & smaller view (top-16); gpt-oss-20b as selector & 0.813, 0.788; the gpt-oss-20b selector cut selector p50/p95 from 1,252/3,030 to 1,181/2,066\,ms but missed the required p50 cut and the retention gate & not admitted \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\begin{table*}[tp]
+\addtocounter{table}{-1}
+\renewcommand{\theHtable}{\thetable.cont}
+\caption{Every development variant with its main numbers (continued)}
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}Xp{4.6cm}p{2.2cm}@{}}
+\toprule
+Variant & Idea & Result & Verdict \\
+\midrule
+Keyword-count reranking; document-first routing (24 q) & keyword-count ranking; document-first search in top-$k$ docs & ret.\ (24 q) keyword-count only 0.601, \hybrid{} with keyword fusion 0.663, document-first (top-3) 0.642 vs.\ \hybrid{} 0.748; screen (answers): keyword fusion 10, document-first 11 & no \\
+Document slot reservation & document ranking + slot reservation by evidence unit; cards; sections; router & 0.733 (32); sections 0.709; router: 54/54 deadline misses; screen 11 & stopped \\
+bge-m3 channels (offline) & bge-m3 sparse / multi-vector channels, RRF, MMR, doc-decay & RRF of BM25, dense and sparse 0.763 (34), 4 better / 0 worse than \hybrid; multi-vector 0.730; MMR 0.767 & sparse useful, multi-vector not \\
+Chunk prefixes; order fixer & contextual chunk prefixes; small LLM order fixer & prefixes 0.714 ($-0.049$); fixer 0.773 (35); fixer screen 13 & below \hr \\
+Score-fusion variants & score fusion with learned sparse weights (CombSUM, MaxMean), compact units, coverage packer, synthetic-question field (\$3.49) & three-signal score fusion (MaxMean) 0.779 (33); CombSUM 0.746; coverage packer 0.712; +synthetic 0.726 & three-signal fusion kept as candidate generator \\
+Learned ranker & LightGBM ranker trained on 18k synthetic questions & held-out nDCG@10 0.857 (vs.\ three-signal fusion 0.810); dev 0.761 (32) & no transfer \\
+Wider pack without selection & spend token allowance on a wider pack without selection (8,500 chars) & 0.808 (36); not admitted (needs 38) & -- \\
+\quad same at 15,500 & same at 15,500 chars & 0.882 (42); screen 15 vs.\ \hybrid@15,500 19 & below \hybrid@15,500 on the screen \\
+Fusion membership, hybrid order & three-signal fusion membership, \hybrid{} presentation order & screen 12 @6,000, 15 @15,500 (= pack without selection) & this ordering intervention did not improve screen accuracy \\
+\midrule
+Learned lasso term weights$^\dagger$ & lasso over window features and phrase indicators replaces the hand-set window-scoring weights; five folds over questions, out of fold & accuracy 68.3\% vs.\ 74.6\% hand-set (63 paired records: 1 better / 5 worse / 57 equal); gold recall @8 windows 0.726 vs.\ 0.738; cross-validated fits dense (230--284 nonzero of about 290); sparse fits on top of the hand-set score 0.738 & not adopted; outside the theory's sparse-signal assumption \\
+\bottomrule
+\end{tabularx}
+
+{\footnotesize\emph{Note.} $^\dagger$Earlier experiment on an earlier development set, described in the text.\par}
+\end{table*}

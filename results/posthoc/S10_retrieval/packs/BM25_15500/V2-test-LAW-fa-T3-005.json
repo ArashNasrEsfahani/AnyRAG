@@ -1,0 +1,18 @@
+{
+ "arm": "BM25_15500",
+ "question_id": "V2-test-LAW-fa-T3-005",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 514 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 15737 chars]"
+  }
+ ],
+ "num_predict": 900,
+ "messages_sha256": "141d3601e1cce9b7bf83238e4b5b61e4901772a3104ba6e2ece74209ab4201dd",
+ "evidence_chars": 15500
+}

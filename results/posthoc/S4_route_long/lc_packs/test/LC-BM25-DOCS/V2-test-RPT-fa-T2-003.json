@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79239 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "e5f5bcb51e967ed2730debcc9c2d2cccd7c09156f86e2022b21dccb01a21d12a",
+ "evidence_chars": 79099,
+ "prompt_chars": 79955,
+ "est_prompt_tokens": 31626,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "score": 10.235
+   },
+   {
+    "doc": "C.snapp_annual-report_1402.fa",
+    "score": 9.574
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 7.361
+   },
+   {
+    "doc": "C.snapp_annual-report_1399.fa",
+    "score": 6.414
+   },
+   {
+    "doc": "C.snapp_annual-report_1398.fa",
+    "score": 6.343
+   },
+   {
+    "doc": "C.snapp_annual-report_1400.fa",
+    "score": 5.18
+   },
+   {
+    "doc": "C.snapp_annual-report_1401.fa",
+    "score": 5.061
+   },
+   {
+    "doc": "C.payman_direct-debit-annual-report_1402.fa",
+    "score": 4.935
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "doc_chars": 111267,
+    "shown": 79042,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "arm": "HYBRID_24000",
+ "question_id": "V2-test-LAW-fa-T1-002",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 514 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 24164 chars]"
+  }
+ ],
+ "num_predict": 900,
+ "messages_sha256": "69440e476b0f4f136951ab4fff33188f3f41e96a0b4161bb6154c1ce8dc6d0f1",
+ "evidence_chars": 24000
+}

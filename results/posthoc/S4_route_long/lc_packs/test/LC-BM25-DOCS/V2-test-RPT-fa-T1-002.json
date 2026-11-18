@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T1-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79232 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "c52900d9d64b33f79dc0c8c7197d373c25f08a0b6fd7b0085628308b9b8ad6f8",
+ "evidence_chars": 79073,
+ "prompt_chars": 79763,
+ "est_prompt_tokens": 31550,
+ "build_ms": 1.4,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 10.451
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 8.465
+   },
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "score": 7.296
+   },
+   {
+    "doc": "C.digikala_human-capital-report_1399.fa",
+    "score": 6.867
+   },
+   {
+    "doc": "C.achareh_eight-year-report_1396-1403.fa",
+    "score": 6.758
+   },
+   {
+    "doc": "C.digipay_annual-report_1400.fa",
+    "score": 6.477
+   },
+   {
+    "doc": "C.digikala_book-report-h1_1400.fa",
+    "score": 5.734
+   },
+   {
+    "doc": "C.irvc_vc-annual-report_1403.fa",
+    "score": 5.655
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "doc_chars": 151042,
+    "shown": 79039,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

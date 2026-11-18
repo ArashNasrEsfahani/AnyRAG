@@ -1,0 +1,24 @@
+% src: RAG-Paper-upgrades/ragbench: retrieval/hybrid.py, config.yaml (chunking), approaches/hybrid.py (rerank),
+%      approaches/lex5b/{approach,views}.py, approaches/lex8/fusion.py; work/datasets_v2/setr/SETR.md;
+%      test_freeze/PROTOCOL.md sec. 2 and 9 (arms, readers, pins). Same values as the R3 systems prose.
+\begin{table*}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{2.6cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.3cm}@{}}
+\toprule
+ & \hybrid & \hr & \lexb & \setr \\
+\midrule
+Channels & BM25, dense & BM25, dense & BM25, dense, learned sparse & BM25, dense \\
+Candidates & top 40 per channel; equal-weight RRF & top 50 fused, rescored; top 40 packed & top 40 per channel; three-signal score fusion & selection over \hybrid's top 20 full chunks \\
+Extra step & -- & cross-encoder bge-reranker-v2-m3 (local GPU, no LLM tokens) & one selector call over excerpts of the top 24 units: at most 8 parts, at most 2 bundles per part & one chain-of-thought call with the SetR prompt \\
+Deadline / cap & -- & -- & 3\,s / 600 completion tokens & 8\,s / 2,000 completion tokens \\
+Packing & fused order; last chunk clipped & reranked order; last chunk clipped & best feasible bundle combination (exact cost, no clipping), then fused units that fit whole & selected set first, filled from \hybrid's top 40; clipped \\
+On failure & -- & -- & fusion order (\emph{fallback pack}) & \hybrid{} order \\
+\midrule
+Shared & \multicolumn{4}{>{\raggedright\arraybackslash}p{13.0cm}}{1,000-character chunks (200 overlap); budgets $B\in\{6{,}000;\,15{,}500\}$ rendered characters; one answer prompt per answer format; selector model and primary reader GLM-5.3-flash; five replay readers; judge gpt-oss-120b (Table~\ref{tab:settings-full})} \\
+\bottomrule
+\end{tabularx}
+\caption{The four pipelines and their settings. Further settings, model versions and provider pins are in Appendix~\ref{app:implementation}.}
+\label{tab:settings}
+\end{table*}

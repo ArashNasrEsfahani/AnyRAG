@@ -1,0 +1,18 @@
+{
+ "arm": "KNAP_6000",
+ "question_id": "V2-test-BOOK-fa-T2-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5525 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "b8241bc8cb183ea357432a820ac86e0ba8668e2dee1ada70224abb3170ac7a55",
+ "evidence_chars": 5339
+}

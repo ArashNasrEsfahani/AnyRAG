@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-004",
+ "variant": "HYBRID+rerank",
+ "setting": "fa-fa",
+ "q_lang": "fa",
+ "rid": "f4a907cd8032fe33f9e1",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6152 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "purpose": "answer",
+ "messages_sha256": "f3a5e2dd449ca453c800ec100e594157a77656a22f43ce06c51f59ffee8d7951",
+ "evidence_chars": 6000,
+ "at": "2026-10-04T18:01:24"
+}

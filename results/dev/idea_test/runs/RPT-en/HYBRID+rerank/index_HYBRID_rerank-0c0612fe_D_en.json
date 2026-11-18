@@ -1,0 +1,49 @@
+{
+ "approach": "HYBRID+rerank",
+ "corpus_set": "D_en",
+ "fingerprint": "c118831e2fe8c1be2159ba683f468e1c4f817361",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T12:40:41",
+   "ok": true,
+   "build_ms": 9115.1,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 9115.1,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T12:40:50",
+ "size_bytes": 255,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\HYBRID\\D_en-c118831e",
+ "corpus_stats": {
+  "name": "D_en",
+  "docs": 15,
+  "sections": 6906,
+  "units": 111500,
+  "chars": 16638928,
+  "skipped": 0
+ },
+ "copied_at": "2026-09-26T14:24:43",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

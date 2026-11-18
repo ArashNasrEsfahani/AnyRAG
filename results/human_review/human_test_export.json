@@ -1,0 +1,391 @@
+{
+ "set": "test96_discordant@6000",
+ "seconds": 930,
+ "results": [
+  {
+   "item": "T01",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T02",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T03",
+   "verdict": "correct",
+   "note": "Half correct."
+  },
+  {
+   "item": "T04",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T05",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T06",
+   "verdict": "correct",
+   "note": "Half correct."
+  },
+  {
+   "item": "T07",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T08",
+   "verdict": "correct",
+   "note": "Half Correct."
+  },
+  {
+   "item": "T09",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T10",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T11",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T12",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T13",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T14",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T15",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T16",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T17",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T18",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T19",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T20",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T21",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T22",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T23",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T24",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T25",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T26",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T27",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T28",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T29",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T30",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T31",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T32",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T33",
+   "verdict": "correct",
+   "note": "half correct."
+  },
+  {
+   "item": "T34",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T35",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T36",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T37",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T38",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T39",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T40",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T41",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T42",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T43",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T44",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T45",
+   "verdict": "correct",
+   "note": "Half Correct"
+  },
+  {
+   "item": "T46",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T47",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T48",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T49",
+   "verdict": "correct",
+   "note": "Half Correct."
+  },
+  {
+   "item": "T50",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T51",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T52",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T53",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T54",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T55",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T56",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T57",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T58",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T59",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T60",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T61",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T62",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T63",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T64",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T65",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T66",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T67",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T68",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T69",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T70",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T71",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T72",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T73",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T74",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "T75",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T76",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "T77",
+   "verdict": "correct",
+   "note": ""
+  }
+ ]
+}

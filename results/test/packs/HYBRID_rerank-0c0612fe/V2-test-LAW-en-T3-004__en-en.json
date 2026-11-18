@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-LAW-en-T3-004",
+ "variant": "HYBRID+rerank",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "1af8a6cfb449b1d18475",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6336 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "purpose": "answer",
+ "messages_sha256": "532c37d306edf8ade98cc4a59db6ec6d5f36118f386caa12aea7d0aadb83bbb8",
+ "evidence_chars": 6000,
+ "at": "2026-10-04T21:31:54"
+}

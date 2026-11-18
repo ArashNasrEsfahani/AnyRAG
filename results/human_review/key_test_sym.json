@@ -1,0 +1,304 @@
+{
+ "seed": 11,
+ "source": "test_run GLM @6000, all four arms (HYBRID/HR/LEX5B/SETR) on the 30 questions of key_test.json; cells not yet reviewed there",
+ "counts": {
+  "questions": 30,
+  "cells_total": 120,
+  "cells_reviewed": 78,
+  "cells_unreviewed": 42,
+  "cells_inherited": 2,
+  "cells_shown": 40,
+  "items_shown": 39
+ },
+ "dedupe_rule": "answer_text.strip() byte-identical within the same question",
+ "inherited": [
+  {
+   "qid": "V2-test-LAW-en-T3-004",
+   "arm": "HYBRID_6000",
+   "from_item": "T74",
+   "verdict": "wrong"
+  },
+  {
+   "qid": "V2-test-LAW-en-T3-004",
+   "arm": "SETR_6000",
+   "from_item": "T74",
+   "verdict": "wrong"
+  }
+ ],
+ "items": [
+  {
+   "item": "S01",
+   "qid": "V2-test-BOOK-en-T3-005",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S02",
+   "qid": "V2-test-RPT-en-T2-004",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S03",
+   "qid": "V2-test-LAW-fa-T2-003",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S04",
+   "qid": "V2-test-BOOK-fa-T2-001",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S05",
+   "qid": "V2-test-LAW-fa-T2-003",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S06",
+   "qid": "V2-test-LAW-fa-T1-002",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S07",
+   "qid": "V2-test-RPT-en-T2-004",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S08",
+   "qid": "V2-test-RPT-en-T3-001",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S09",
+   "qid": "V2-test-LAW-fa-T2-004",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S10",
+   "qid": "V2-test-LAW-fa-T3-004",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S11",
+   "qid": "V2-test-LAW-en-T2-004",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S12",
+   "qid": "V2-test-BOOK-fa-T2-001",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S13",
+   "qid": "V2-test-LAW-en-T3-001",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S14",
+   "qid": "V2-test-RPT-en-T2-005",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S15",
+   "qid": "V2-test-RPT-en-T3-004",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S16",
+   "qid": "V2-test-RPT-fa-T2-002",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S17",
+   "qid": "V2-test-LAW-fa-T3-004",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S18",
+   "qid": "V2-test-LAW-en-T3-003",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S19",
+   "qid": "V2-test-LAW-en-T2-002",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S20",
+   "qid": "V2-test-RPT-fa-T2-003",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S21",
+   "qid": "V2-test-LAW-en-T2-001",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S22",
+   "qid": "V2-test-BOOK-fa-T2-005",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S23",
+   "qid": "V2-test-RPT-en-T2-001",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S24",
+   "qid": "V2-test-RPT-en-T2-003",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S25",
+   "qid": "V2-test-RPT-en-T2-005",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S26",
+   "qid": "V2-test-RPT-en-T3-004",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S27",
+   "qid": "V2-test-RPT-en-T2-001",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S28",
+   "qid": "V2-test-RPT-en-T2-003",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S29",
+   "qid": "V2-test-LAW-fa-T2-004",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S30",
+   "qid": "V2-test-BOOK-en-T3-005",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S31",
+   "qid": "V2-test-LAW-fa-T1-002",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S32",
+   "qid": "V2-test-LAW-en-T2-001",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S33",
+   "qid": "V2-test-RPT-en-T3-001",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S34",
+   "qid": "V2-test-RPT-en-T3-002",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S35",
+   "qid": "V2-test-LAW-en-T2-002",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S36",
+   "qid": "V2-test-LAW-en-T3-003",
+   "arms": [
+    "SETR_6000"
+   ]
+  },
+  {
+   "item": "S37",
+   "qid": "V2-test-LAW-en-T1-004",
+   "arms": [
+    "HR_6000"
+   ]
+  },
+  {
+   "item": "S38",
+   "qid": "V2-test-LAW-en-T3-001",
+   "arms": [
+    "HYBRID_6000"
+   ]
+  },
+  {
+   "item": "S39",
+   "qid": "V2-test-LAW-fa-T3-005",
+   "arms": [
+    "HYBRID_6000",
+    "HR_6000"
+   ]
+  }
+ ]
+}

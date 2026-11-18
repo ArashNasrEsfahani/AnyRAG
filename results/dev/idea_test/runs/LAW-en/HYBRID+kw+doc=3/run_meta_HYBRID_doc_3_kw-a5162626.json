@@ -1,0 +1,422 @@
+{
+ "approach": "HYBRID+doc=3,kw",
+ "approach_base": "HYBRID",
+ "flags": {
+  "kw": true,
+  "doc": 3
+ },
+ "invocations": [
+  {
+   "run_id": "20260926-141952-73302b",
+   "started": "2026-09-26T14:19:52",
+   "argv": [
+    "--approach",
+    "hybrid",
+    "--ablation",
+    "kw,doc=3",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-en.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "en-en",
+    "--pool",
+    "LAW-en",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "idea-test",
+    "--ids",
+    "V2-dev-LAW-en-T1-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\idea_test\\runs\\LAW-en\\HYBRID+kw+doc=3"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-en.jsonl",
+   "questions_sha1": "cf3c2e9e100ed3ac12eeb4141be70012808cf36e",
+   "corpus": "L",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "866d05edcce8f4790007b84b43c0f6c85877bbd1",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b95a647751b6614fb08467fda5905d459b0dd4e5",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-en",
+    "manifest_sha1": "dc6afa436672ddb75f8cc445e2d2104637b7cf83"
+   },
+   "identity": {
+    "experiment_id": "idea-test",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-09-26T14:19:56",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 1398,
+     "completion_tokens": 27,
+     "embed_tokens": 43,
+     "llm_wall_ms": 1097.5,
+     "load_ms": 2.2,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 4,
+     "llm_wall_ms": 1947.0,
+     "load_ms": 7.2,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\idea_test\\runs\\LAW-en\\HYBRID+kw+doc=3\\ledger_HYBRID_doc_3_kw-a5162626.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-142014-61d238",
+   "started": "2026-09-26T14:20:14",
+   "argv": [
+    "--approach",
+    "hybrid",
+    "--ablation",
+    "kw,doc=3",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-en.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "en-en",
+    "--pool",
+    "LAW-en",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "idea-test",
+    "--ids",
+    "V2-dev-LAW-en-T3-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\idea_test\\runs\\LAW-en\\HYBRID+kw+doc=3"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-en.jsonl",
+   "questions_sha1": "cf3c2e9e100ed3ac12eeb4141be70012808cf36e",
+   "corpus": "L",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "866d05edcce8f4790007b84b43c0f6c85877bbd1",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b95a647751b6614fb08467fda5905d459b0dd4e5",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-en",
+    "manifest_sha1": "dc6afa436672ddb75f8cc445e2d2104637b7cf83"
+   },
+   "identity": {
+    "experiment_id": "idea-test",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-09-26T14:20:18",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 1801,
+     "completion_tokens": 56,
+     "embed_tokens": 71,
+     "llm_wall_ms": 1127.0,
+     "load_ms": 3.9,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 4,
+     "llm_wall_ms": 1247.3,
+     "load_ms": 4.3,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\idea_test\\runs\\LAW-en\\HYBRID+kw+doc=3\\ledger_HYBRID_doc_3_kw-a5162626.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-142808-419159",
+   "started": "2026-09-26T14:28:08",
+   "argv": [
+    "--approach",
+    "hybrid",
+    "--ablation",
+    "kw,doc=3",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-en.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "en-en",
+    "--pool",
+    "LAW-en",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "idea-test",
+    "--ids",
+    "V2-dev-LAW-en-T2-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\idea_test\\runs\\LAW-en\\HYBRID+kw+doc=3"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-en.jsonl",
+   "questions_sha1": "cf3c2e9e100ed3ac12eeb4141be70012808cf36e",
+   "corpus": "L",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "866d05edcce8f4790007b84b43c0f6c85877bbd1",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b95a647751b6614fb08467fda5905d459b0dd4e5",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-en",
+    "manifest_sha1": "dc6afa436672ddb75f8cc445e2d2104637b7cf83"
+   },
+   "identity": {
+    "experiment_id": "idea-test",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-09-26T14:28:13",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 1757,
+     "completion_tokens": 388,
+     "embed_tokens": 43,
+     "llm_wall_ms": 2945.7,
+     "load_ms": 0.5,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 4,
+     "llm_wall_ms": 993.6,
+     "load_ms": 1.4,
+     "lock_wait_ms": 0.1,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\idea_test\\runs\\LAW-en\\HYBRID+kw+doc=3\\ledger_HYBRID_doc_3_kw-a5162626.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-dev-LAW-en-T1-002": "5c7db746456ad048",
+  "V2-dev-LAW-en-T3-002": "e63001116f965c68",
+  "V2-dev-LAW-en-T2-001": "e97168111afb161f"
+ },
+ "question_sigs_v2": {
+  "V2-dev-LAW-en-T1-002": "e4668efa16f2ad7c",
+  "V2-dev-LAW-en-T3-002": "779bd3c8d59cf264",
+  "V2-dev-LAW-en-T2-001": "068c55e067d9a53d"
+ }
+}

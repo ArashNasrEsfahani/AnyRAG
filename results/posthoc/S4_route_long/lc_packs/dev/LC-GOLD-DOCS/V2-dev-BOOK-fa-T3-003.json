@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-fa-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79105 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "19e2defc71d8e48c9178e2f3f73bdbcebc7aed3be95c3c65e9e3166d68821e24",
+ "evidence_chars": 78991,
+ "prompt_chars": 79821,
+ "est_prompt_tokens": 31573,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "K.wikisource_kasravi_azari.fa",
+    "doc_chars": 111248,
+    "shown": 42182,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "K.wikisource_kasravi_shir-o-khorshid.fa",
+    "doc_chars": 36740,
+    "shown": 36740,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 2
+ }
+}

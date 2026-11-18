@@ -1,0 +1,38 @@
+% src: work/posthoc_2026-11/S7_analysis/errors.json, errors_tables.md, j12_disagreements.json (section 4 of RESULTS.md). Judge 1 vs judge 2 on the 8 frozen GLM cells:
+%      66 disagreeing cells on 29 questions; one cause per cell, labelled by one analyst reading both judges' saved claims and reasons (labels in t4_errors.py).
+%      Lower block: Lex-RAG wins/losses at 6,000 characters by integration operation (subtype), machine strict verdicts; "unres." = pairs with an unresolved judge cell.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}p{6.5cm}rccrr@{}}
+\toprule
+\multicolumn{6}{@{}l}{\emph{Why the two judges disagree (66 cells, 29 questions)}} \\
+Cause of the stricter judge's rejection & Cells & Stricter: J1/J2 & Questions & fa & en \\
+\midrule
+A required part is right but an added, mostly true detail is failed as unsupported & 30 & 9/21 & 13 & 18 & 12 \\
+A required part is only implied or partly stated & 12 & 2/10 & 5 & 3 & 9 \\
+The judge misreads an answer that states the part plainly & 6 & 2/4 & 5 & 5 & 1 \\
+A Persian synonym (Kalimian for Jews) is not recognised & 7 & 7/0 & 1 & 7 & 0 \\
+A rounded number (9.2\% against about 9\%) is rejected & 4 & 1/3 & 1 & 4 & 0 \\
+A real error that only one judge caught & 7 & 2/5 & 7 & 2 & 5 \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Where \lexb{} wins and loses at 6,000 characters (wins/losses; questions)}} \\
+Operation (questions) & vs.\ \hybrid{} & fa & en & vs.\ no selection & vs.\ \hr{} \\
+\midrule
+Fact, table or list, T1 (30) & 2/1 & 1/1 & 1/0 & 0/0 & 1/0 \\
+Comparison or derivation, T2 (13) & 4/1 (+1) & 3/0 & 1/1 & 5/0 (+1) & 1/1 (+1) \\
+Rule and exception, T2 (7) & 2/2 & 0/1 & 2/1 & 3/1 & 1/1 (+1) \\
+Definition bridge, T2 (8) & 0/0 (+1) & -- & -- & 1/0 & 1/1 \\
+Bounded synthesis, T2 (2) & 1/0 & 0/0 & 1/0 & 1/0 & 0/0 \\
+Cross-time or cross-version, T3 (11) & 2/0 & 0/0 & 2/0 & 2/0 & 2/0 \\
+Cross-subject, T3 (9) & 0/0 & -- & -- & 0/1 & 0/3 (+1) \\
+Cross-document bridge, T3 (7) & 0/0 & -- & -- & 0/0 & 0/1 \\
+Bounded aggregation, T3 (3) & 0/0 & -- & -- & 0/0 & 0/0 \\
+\midrule
+All (90) & 11/4 (+2) & 4/2 & 7/2 & 12/2 (+1) & 6/7 (+3) \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. Top: causes of the 66 cells on which the two judges disagree. Bottom: \lexb{} wins and losses against \hr{} by integration operation; brackets give pairs with an unresolved judge cell.}
+\label{tab:errors}
+\end{table*}

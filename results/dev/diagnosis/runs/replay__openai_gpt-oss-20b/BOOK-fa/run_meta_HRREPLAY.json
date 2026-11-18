@@ -1,0 +1,150 @@
+{
+ "approach": "HRREPLAY",
+ "approach_base": "HRREPLAY",
+ "flags": {},
+ "invocations": [
+  {
+   "run_id": "20260926-015524-10a678",
+   "started": "2026-09-26T01:55:24",
+   "argv": [
+    "--approach-class",
+    "diag_arms:ReplayHR",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_BOOK-fa.jsonl",
+    "--corpus",
+    "K",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "BOOK-fa",
+    "--ids",
+    "V2-dev-BOOK-fa-T2-001,V2-dev-BOOK-fa-T2-002,V2-dev-BOOK-fa-T2-003,V2-dev-BOOK-fa-T3-001,V2-dev-BOOK-fa-T3-002,V2-dev-BOOK-fa-T3-003",
+    "--reader",
+    "openrouter:openai/gpt-oss-20b",
+    "--no-warmup",
+    "--no-health",
+    "--out",
+    "D:/KareOne/RAG Paper/work/datasets_v2/diagnosis/runs/replay__openai_gpt-oss-20b/BOOK-fa"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_BOOK-fa.jsonl",
+   "questions_sha1": "adc53c4d769b0b4e12a1f4c5f40ff56d6b985281",
+   "corpus": "K",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 6,
+   "n_todo": 6,
+   "models": {
+    "chat": "openrouter/openai/gpt-oss-20b",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b679df886c5b80d065bd500eeb22e7c46f941fe9",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "c619a791517f",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1,
+    "v2_explanation": 4,
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "5f032344d0ab0eea63ebe9ae3bad6adfca1892eb",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1",
+    "v2_explanation": "answer-v2-explanation-v1",
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "BOOK-fa",
+    "manifest_sha1": "cf74caccb4bec89c2e6f64e620cbbade49a6496b"
+   },
+   "identity": {
+    "experiment_id": "datasets-v2-dev",
+    "replicate": 0
+   },
+   "finished": "2026-09-26T01:55:51",
+   "status": "ok",
+   "n_ok": 6,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 6,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 14026,
+     "completion_tokens": 1263,
+     "embed_tokens": 0,
+     "llm_wall_ms": 26914.8,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\diagnosis\\runs\\replay__openai_gpt-oss-20b\\BOOK-fa\\ledger_HRREPLAY.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-dev-BOOK-fa-T2-001": "9909e8728772cb5f",
+  "V2-dev-BOOK-fa-T2-002": "3c1a5a6f5c8b0833",
+  "V2-dev-BOOK-fa-T2-003": "7e9baf4ef1985e04",
+  "V2-dev-BOOK-fa-T3-001": "49d66c0d0248773d",
+  "V2-dev-BOOK-fa-T3-002": "7462e73a4a393a7b",
+  "V2-dev-BOOK-fa-T3-003": "4b30297a10a96d36"
+ },
+ "question_sigs_v2": {
+  "V2-dev-BOOK-fa-T2-001": "e25c75e641e21eb1",
+  "V2-dev-BOOK-fa-T2-002": "e2fe76ba8eb8eec2",
+  "V2-dev-BOOK-fa-T2-003": "990ad2fa4cb214c0",
+  "V2-dev-BOOK-fa-T3-001": "06036dac183c642e",
+  "V2-dev-BOOK-fa-T3-002": "5f518ba822699bb7",
+  "V2-dev-BOOK-fa-T3-003": "79e00d94cb15b267"
+ }
+}

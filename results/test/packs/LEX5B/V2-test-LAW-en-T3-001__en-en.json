@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-LAW-en-T3-001",
+ "variant": "LEX5B",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "43bff445dcf8901369c9",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6173 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "purpose": "answer",
+ "messages_sha256": "72c0e17184715a9ec377985258801a60b59154f9d956400ee4ce663e7cdaf2e4",
+ "evidence_chars": 5972,
+ "at": "2026-10-04T21:23:53"
+}

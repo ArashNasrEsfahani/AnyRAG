@@ -1,0 +1,11 @@
+% src: work/posthoc_2026-11/S7_analysis/reach.json arms (GLM-5.3-flash, 90 answerable, machine strict verdicts; bundle complete/partial/none = how much of the gold evidence the pack held)
+i;cls;lab;hc;hp;hn;un;mn;mp;mc;rc
+0;1;Hybrid;54;6;2;1;5;19;3;57
+1;2;HR;60;8;1;2;2;14;3;63
+2;3;Lex-RAG;60;7;1;1;2;16;3;64
+3;4;SetR;55;6;2;0;1;18;8;63
+4;5;Lex-RAG without selection;50;5;3;1;3;26;2;53
+5;1;Hybrid, 15,500;59;7;2;0;1;15;6;65
+6;2;HR, 15,500;63;5;1;1;1;13;6;70
+7;6;BM25 search agent;64;8;1;0;4;6;7;71
+8;7;Grep agent;56;9;3;0;4;14;4;60

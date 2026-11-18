@@ -1,0 +1,236 @@
+{
+ "set": "dev60_discordant@6000",
+ "seconds": 1041,
+ "results": [
+  {
+   "item": "D01",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "D02",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "D03",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D04",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D05",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D06",
+   "verdict": "correct",
+   "note": "the explanation is too long."
+  },
+  {
+   "item": "D07",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D08",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "D09",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D10",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D11",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D12",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "D13",
+   "verdict": "wrong",
+   "note": ""
+  },
+  {
+   "item": "D14",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D15",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D16",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D17",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D18",
+   "verdict": "correct",
+   "note": "A little too long."
+  },
+  {
+   "item": "D19",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D20",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D21",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D22",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D23",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D24",
+   "verdict": "unsure",
+   "note": ""
+  },
+  {
+   "item": "D25",
+   "verdict": "wrong",
+   "note": "Half Correct."
+  },
+  {
+   "item": "D26",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D27",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D28",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D29",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D30",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D31",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D32",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D33",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D34",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D35",
+   "verdict": "correct",
+   "note": "Too much."
+  },
+  {
+   "item": "D36",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D37",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D38",
+   "verdict": "wrong",
+   "note": "Half Correct."
+  },
+  {
+   "item": "D39",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D40",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D41",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D42",
+   "verdict": "wrong",
+   "note": "Half Correct."
+  },
+  {
+   "item": "D43",
+   "verdict": "wrong",
+   "note": "Half Correct."
+  },
+  {
+   "item": "D44",
+   "verdict": "wrong",
+   "note": "Half Correct."
+  },
+  {
+   "item": "D45",
+   "verdict": "correct",
+   "note": ""
+  },
+  {
+   "item": "D46",
+   "verdict": "wrong",
+   "note": ""
+  }
+ ]
+}

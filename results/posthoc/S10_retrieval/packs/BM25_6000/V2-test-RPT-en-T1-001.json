@@ -1,0 +1,18 @@
+{
+ "arm": "BM25_6000",
+ "question_id": "V2-test-RPT-en-T1-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6194 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "8565d0eda0e623af444eb5c7bd00f05e20a7bbda41d57438d736461bcf9db09b",
+ "evidence_chars": 6000
+}

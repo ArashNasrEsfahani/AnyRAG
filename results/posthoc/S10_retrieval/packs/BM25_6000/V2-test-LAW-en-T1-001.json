@@ -1,0 +1,18 @@
+{
+ "arm": "BM25_6000",
+ "question_id": "V2-test-LAW-en-T1-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6169 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "3789dc38c8d8050ee802d0201a6a8d7647f84e26a4634fd2d438c92f5ca4cfaa",
+ "evidence_chars": 5999
+}

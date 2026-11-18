@@ -1,0 +1,1443 @@
+{
+ "note": "post hoc; margins 3/5/8 points of 90 chosen after unsealing",
+ "N": 90,
+ "tost": {
+  "machine LEX5B_6000 vs HR_6000": {
+   "net_bounds": [
+    -3,
+    0
+   ],
+   "pp_bounds": [
+    -3.3333333333333335,
+    0.0
+   ],
+   "component": {
+    "ci90_pp_union": [
+     -9.23076923076923,
+     6.315789473684211
+    ],
+    "ci95_pp_union": [
+     -10.344827586206897,
+     7.5
+    ],
+    "ci90_points_of_90": [
+     -8.307692307692307,
+     5.684210526315789
+    ],
+    "smallest_equivalence_margin_points": 8.307692307692307,
+    "smallest_noninferiority_margin_points": 8.307692307692307,
+    "margins": {
+     "3": {
+      "margin_pp": 3.3333333333333335,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.5022,
+      "p_lower": 0.5022,
+      "p_upper": 0.191,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.5022
+     },
+     "5": {
+      "margin_pp": 5.555555555555555,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.2715,
+      "p_lower": 0.2715,
+      "p_upper": 0.0748,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.2715
+     },
+     "8": {
+      "margin_pp": 8.88888888888889,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.0617,
+      "p_lower": 0.0617,
+      "p_upper": 0.0097,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.0617
+     }
+    }
+   },
+   "question": {
+    "ci90_pp_union": [
+     -10.0,
+     6.666666666666667
+    ],
+    "ci95_pp_union": [
+     -12.222222222222221,
+     7.777777777777778
+    ],
+    "ci90_points_of_90": [
+     -9.0,
+     6.0
+    ],
+    "smallest_equivalence_margin_points": 9.0,
+    "smallest_noninferiority_margin_points": 9.0,
+    "margins": {
+     "3": {
+      "margin_pp": 3.3333333333333335,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.5465,
+      "p_lower": 0.5465,
+      "p_upper": 0.2524,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.5465
+     },
+     "5": {
+      "margin_pp": 5.555555555555555,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.3476,
+      "p_lower": 0.3476,
+      "p_upper": 0.1126,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.3476
+     },
+     "8": {
+      "margin_pp": 8.88888888888889,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.1204,
+      "p_lower": 0.1204,
+      "p_upper": 0.0235,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.1204
+     }
+    }
+   },
+   "cluster_t_check": {
+    "lower_extreme": {
+     "mean_pp": -3.3333333333333335,
+     "se_pp": 3.6487145937182506,
+     "df": 19,
+     "ci90_pp": [
+      -9.642445457208419,
+      2.9757787905417517
+     ]
+    },
+    "upper_extreme": {
+     "mean_pp": 0.0,
+     "se_pp": 3.604920469572501,
+     "df": 19,
+     "ci90_pp": [
+      -6.233386266862829,
+      6.233386266862829
+     ]
+    },
+    "tost_p_by_margin": {
+     "3": {
+      "tost_p": 0.5,
+      "noninf_p": 0.5
+     },
+     "5": {
+      "tost_p": 0.2748549749472549,
+      "noninf_p": 0.2748549749472549
+     },
+     "8": {
+      "tost_p": 0.072163817007361,
+      "noninf_p": 0.072163817007361
+     }
+    }
+   }
+  },
+  "human_sym LEX5B_6000 vs HR_6000": {
+   "net_bounds": [
+    0,
+    0
+   ],
+   "pp_bounds": [
+    0.0,
+    0.0
+   ],
+   "component": {
+    "ci90_pp_union": [
+     -6.122448979591836,
+     6.837606837606837
+    ],
+    "ci95_pp_union": [
+     -7.142857142857143,
+     8.064516129032258
+    ],
+    "ci90_points_of_90": [
+     -5.510204081632653,
+     6.153846153846153
+    ],
+    "smallest_equivalence_margin_points": 6.153846153846153,
+    "smallest_noninferiority_margin_points": 5.510204081632653,
+    "margins": {
+     "3": {
+      "margin_pp": 3.3333333333333335,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.209,
+      "p_lower": 0.1904,
+      "p_upper": 0.209,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.1904
+     },
+     "5": {
+      "margin_pp": 5.555555555555555,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.092,
+      "p_lower": 0.0681,
+      "p_upper": 0.092,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.0681
+     },
+     "8": {
+      "margin_pp": 8.88888888888889,
+      "equivalent_at_5pct": true,
+      "tost_p": 0.017,
+      "p_lower": 0.0043,
+      "p_upper": 0.017,
+      "noninferior_at_5pct_one_sided": true,
+      "noninf_p": 0.0043
+     }
+    }
+   },
+   "question": {
+    "ci90_pp_union": [
+     -5.555555555555555,
+     5.555555555555555
+    ],
+    "ci95_pp_union": [
+     -6.666666666666667,
+     6.666666666666667
+    ],
+    "ci90_points_of_90": [
+     -5.0,
+     5.0
+    ],
+    "smallest_equivalence_margin_points": 5.0,
+    "smallest_noninferiority_margin_points": 5.0,
+    "margins": {
+     "3": {
+      "margin_pp": 3.3333333333333335,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.2193,
+      "p_lower": 0.2046,
+      "p_upper": 0.2193,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.2046
+     },
+     "5": {
+      "margin_pp": 5.555555555555555,
+      "equivalent_at_5pct": false,
+      "tost_p": 0.0776,
+      "p_lower": 0.0721,
+      "p_upper": 0.0776,
+      "noninferior_at_5pct_one_sided": false,
+      "noninf_p": 0.0721
+     },
+     "8": {
+      "margin_pp": 8.88888888888889,
+      "equivalent_at_5pct": true,
+      "tost_p": 0.0081,
+      "p_lower": 0.0066,
+      "p_upper": 0.0081,
+      "noninferior_at_5pct_one_sided": true,
+      "noninf_p": 0.0066
+     }
+    }
+   },
+   "cluster_t_check": {
+    "lower_extreme": {
+     "mean_pp": 0.0,
+     "se_pp": 3.948992518393949,
+     "df": 19,
+     "ci90_pp": [
+      -6.828332536007378,
+      6.828332536007378
+     ]
+    },
+    "upper_extreme": {
+     "mean_pp": 0.0,
+     "se_pp": 3.948992518393949,
+     "df": 19,
+     "ci90_pp": [
+      -6.828332536007378,
+      6.828332536007378
+     ]
+    },
+    "tost_p_by_margin": {
+     "3": {
+      "tost_p": 0.20455884781938086,
+      "noninf_p": 0.20455884781938086
+     },
+     "5": {
+      "tost_p": 0.08781268489748997,
+      "noninf_p": 0.08781268489748997
+     },
+     "8": {
+      "tost_p": 0.018212357962147062,
+      "noninf_p": 0.018212357962147062
+     }
+    }
+   }
+  }
+ },
+ "mde": {
+  "LEX5B_6000 vs HYBRID_6000": {
+   "better_worse_resolved": [
+    11,
+    4
+   ],
+   "n_resolved_pairs": 88,
+   "discordant_range": [
+    15,
+    17
+   ],
+   "design_effect_component_vs_question": 1.2461138150810032,
+   "by_psi": {
+    "resolved": {
+     "psi": 0.17045454545454544,
+     "mde_exact_points_of_90": 11.118749005767098,
+     "mde_exact_pp": 12.354165561963443,
+     "mde_normal_points_of_90": 10.829979454405128,
+     "mde_normal_pp": 12.033310504894587,
+     "mde_exact_points_with_deff": 12.411800375767415,
+     "n_for_5_of_90_normal": 431.1068126205201,
+     "n_for_5_of_90_exact_first": 458,
+     "n_for_5_of_90_exact_stable": 458,
+     "n_for_5_of_90_normal_with_deff": 537.2081549819675,
+     "power_at_n90_for_5_of_90": 0.17560098844968522
+    },
+    "min_over_assignments": {
+     "psi": 0.16666666666666666,
+     "mde_exact_points_of_90": 10.990429730641592,
+     "mde_exact_pp": 12.211588589601769,
+     "mde_normal_points_of_90": 10.708970299338189,
+     "mde_normal_pp": 11.898855888153543,
+     "mde_exact_points_with_deff": 12.268558251460547,
+     "n_for_5_of_90_normal": 421.47392371431704,
+     "n_for_5_of_90_exact_first": 448,
+     "n_for_5_of_90_exact_stable": 448,
+     "n_for_5_of_90_normal_with_deff": 525.2044790368072,
+     "power_at_n90_for_5_of_90": 0.17835942846353026
+    },
+    "max_over_assignments": {
+     "psi": 0.18888888888888888,
+     "mde_exact_points_of_90": 11.719388556894822,
+     "mde_exact_pp": 13.021542840994247,
+     "mde_normal_points_of_90": 11.400569467723466,
+     "mde_normal_pp": 12.667299408581629,
+     "mde_exact_points_with_deff": 13.082291111957348,
+     "n_for_5_of_90_normal": 477.98677216752014,
+     "n_for_5_of_90_exact_first": 506,
+     "n_for_5_of_90_exact_stable": 506,
+     "n_for_5_of_90_normal_with_deff": 595.6259202239228,
+     "power_at_n90_for_5_of_90": 0.16300853040211113
+    }
+   }
+  },
+  "LEX5B_6000 vs HR_6000": {
+   "better_worse_resolved": [
+    6,
+    7
+   ],
+   "n_resolved_pairs": 87,
+   "discordant_range": [
+    13,
+    16
+   ],
+   "design_effect_component_vs_question": 0.7188583026839838,
+   "by_psi": {
+    "resolved": {
+     "psi": 0.14942528735632185,
+     "mde_exact_points_of_90": 10.37599818814461,
+     "mde_exact_pp": 11.528886875716234,
+     "mde_normal_points_of_90": 10.139940091428132,
+     "mde_normal_pp": 11.266600101586812,
+     "mde_exact_points_with_deff": 8.797343177754483,
+     "n_for_5_of_90_normal": 377.62755886114206,
+     "n_for_5_of_90_exact_first": 401,
+     "n_for_5_of_90_exact_stable": 401,
+     "n_for_5_of_90_normal_with_deff": 271.46070600961673,
+     "power_at_n90_for_5_of_90": 0.192301757324237
+    },
+    "min_over_assignments": {
+     "psi": 0.14444444444444443,
+     "mde_exact_points_of_90": 10.18840384555089,
+     "mde_exact_pp": 11.320448717278767,
+     "mde_normal_points_of_90": 9.969508792103374,
+     "mde_normal_pp": 11.07723199122597,
+     "mde_exact_points_with_deff": 8.638290354105397,
+     "n_for_5_of_90_normal": 364.96079085770504,
+     "n_for_5_of_90_exact_first": 387,
+     "n_for_5_of_90_exact_stable": 387,
+     "n_for_5_of_90_normal_with_deff": 262.3550946621742,
+     "power_at_n90_for_5_of_90": 0.19695124391698615
+    },
+    "max_over_assignments": {
+     "psi": 0.17777777777777778,
+     "mde_exact_points_of_90": 11.361389416991019,
+     "mde_exact_pp": 12.623766018878909,
+     "mde_normal_points_of_90": 11.060176966497776,
+     "mde_normal_pp": 12.289085518330863,
+     "mde_exact_points_with_deff": 9.632812175273765,
+     "n_for_5_of_90_normal": 449.73037676672436,
+     "n_for_5_of_90_exact_first": 478,
+     "n_for_5_of_90_exact_stable": 478,
+     "n_for_5_of_90_normal_with_deff": 323.292415307956,
+     "power_at_n90_for_5_of_90": 0.17045967102778614
+    }
+   }
+  }
+ },
+ "readers_multiplicity": {
+  "note": "adjusted p are monotone in each raw p, so adjusting the min-p and max-p vectors bounds the adjusted p over all assignments of unresolved cells",
+  "tests": [
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "LEX5B_6000 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     5,
+     7
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.11846923828125,
+    "p_max": 0.332305908203125,
+    "per_column_6_readers_holm_p_min": 0.473876953125,
+    "per_column_6_readers_bh_p_min": 0.2369384765625,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.43114013671875,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5386962890625,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "LEX5B_6000 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     -3,
+     0
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.60723876953125,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6776394844055176,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "LEX5B_15500 vs HYBRID_15500",
+    "test": "exact sign test",
+    "net": [
+     -1,
+     -1
+    ],
+    "unresolved_cells": 0,
+    "p_min": 1.0,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 1.0,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 1.0,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 1.0,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "LEX5B_15500 vs HR_15500",
+    "test": "exact sign test",
+    "net": [
+     -3,
+     -2
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.629058837890625,
+    "p_max": 0.803619384765625,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8318119049072266,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "HYBRID_15500 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     5,
+     6
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.1795654296875,
+    "p_max": 0.3017578125,
+    "per_column_6_readers_holm_p_min": 0.59234619140625,
+    "per_column_6_readers_bh_p_min": 0.25213623046875,
+    "per_column_6_readers_holm_p_max": 0.9052734375,
+    "per_column_6_readers_bh_p_max": 0.45263671875,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "HR_15500 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     -2,
+     1
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.79052734375,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8388197422027588,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.8947410583496094,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "interaction vs HYBRID",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     6,
+     8
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.15228271484375,
+    "p_max": 0.32863378524780273,
+    "per_column_6_readers_holm_p_min": 0.76141357421875,
+    "per_column_6_readers_bh_p_min": 0.45684814453125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.9859013557434082,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "glm-5.3-flash",
+    "comparison": "interaction vs HR",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     -1,
+     3
+    ],
+    "unresolved_cells": 4,
+    "p_min": 0.6636238098144531,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8720002500340343,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "LEX5B_6000 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     10,
+     11
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.02660369873046875,
+    "p_max": 0.04138946533203125,
+    "per_column_6_readers_holm_p_min": 0.1596221923828125,
+    "per_column_6_readers_bh_p_min": 0.1596221923828125,
+    "per_column_6_readers_holm_p_max": 0.2483367919921875,
+    "per_column_6_readers_bh_p_max": 0.2483367919921875,
+    "lex_vs_control_24_holm_p_min": 0.63848876953125,
+    "lex_vs_control_24_bh_p_min": 0.5234375,
+    "lex_vs_control_24_holm_p_max": 0.99334716796875,
+    "lex_vs_control_24_bh_p_max": 0.99334716796875,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.6622314453125
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "LEX5B_6000 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     1,
+     4
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.557197093963623,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6776394844055176,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "LEX5B_15500 vs HYBRID_15500",
+    "test": "exact sign test",
+    "net": [
+     1,
+     3
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.60723876953125,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.7771270751953125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "LEX5B_15500 vs HR_15500",
+    "test": "exact sign test",
+    "net": [
+     -2,
+     -1
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.803619384765625,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8318119049072266,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.867977639903193,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.8947410583496094,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "HYBRID_15500 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     6,
+     7
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.11846923828125,
+    "p_max": 0.1795654296875,
+    "per_column_6_readers_holm_p_min": 0.59234619140625,
+    "per_column_6_readers_bh_p_min": 0.25213623046875,
+    "per_column_6_readers_holm_p_max": 0.71826171875,
+    "per_column_6_readers_bh_p_max": 0.359130859375,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "HR_15500 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     1,
+     3
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.60723876953125,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8388197422027588,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "interaction vs HYBRID",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     7,
+     10
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.11047407984733582,
+    "p_max": 0.2831020951271057,
+    "per_column_6_readers_holm_p_min": 0.6628444790840149,
+    "per_column_6_readers_bh_p_min": 0.45684814453125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.9859013557434082,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "gpt-oss-20b",
+    "comparison": "interaction vs HR",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     2,
+     6
+    ],
+    "unresolved_cells": 4,
+    "p_min": 0.34492845088243484,
+    "p_max": 0.8450189828872681,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.7588234543800354,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.68982421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "LEX5B_6000 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     5,
+     5
+    ],
+    "unresolved_cells": 0,
+    "p_min": 0.359283447265625,
+    "p_max": 0.359283447265625,
+    "per_column_6_readers_holm_p_min": 0.71856689453125,
+    "per_column_6_readers_bh_p_min": 0.43114013671875,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.43114013671875,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.71856689453125,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.68982421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "LEX5B_6000 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     3,
+     5
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.359283447265625,
+    "p_max": 0.6476058959960938,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6776394844055176,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.71856689453125,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.68982421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "LEX5B_15500 vs HYBRID_15500",
+    "test": "exact sign test",
+    "net": [
+     2,
+     7
+    ],
+    "unresolved_cells": 5,
+    "p_min": 0.143463134765625,
+    "p_max": 0.79052734375,
+    "per_column_6_readers_holm_p_min": 0.86077880859375,
+    "per_column_6_readers_bh_p_min": 0.7771270751953125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5386962890625,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "LEX5B_15500 vs HR_15500",
+    "test": "exact sign test",
+    "net": [
+     6,
+     9
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.049041748046875,
+    "p_max": 0.210113525390625,
+    "per_column_6_readers_holm_p_min": 0.29425048828125,
+    "per_column_6_readers_bh_p_min": 0.29425048828125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.630340576171875,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5234375,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.47080078125,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "HYBRID_15500 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     7,
+     9
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.03515625,
+    "p_max": 0.11846923828125,
+    "per_column_6_readers_holm_p_min": 0.2109375,
+    "per_column_6_readers_bh_p_min": 0.2109375,
+    "per_column_6_readers_holm_p_max": 0.7108154296875,
+    "per_column_6_readers_bh_p_max": 0.359130859375,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "HR_15500 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     3,
+     5
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.332305908203125,
+    "p_max": 0.629058837890625,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.66461181640625,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.68982421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "interaction vs HYBRID",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     -2,
+     3
+    ],
+    "unresolved_cells": 5,
+    "p_min": 0.7313270568847656,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8775924682617188,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.8775924682617188,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "qwen3-235b-a22b-2507",
+    "comparison": "interaction vs HR",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     -6,
+     -1
+    ],
+    "unresolved_cells": 5,
+    "p_min": 0.3794117271900177,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.7588234543800354,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.700452419427725,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "LEX5B_6000 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     4,
+     4
+    ],
+    "unresolved_cells": 0,
+    "p_min": 0.5034446716308594,
+    "p_max": 0.5034446716308594,
+    "per_column_6_readers_holm_p_min": 0.71856689453125,
+    "per_column_6_readers_bh_p_min": 0.5034446716308594,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.5034446716308594,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.805511474609375,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "LEX5B_6000 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     2,
+     3
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.6776394844055176,
+    "p_max": 0.8388197422027588,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6776394844055176,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "LEX5B_15500 vs HYBRID_15500",
+    "test": "exact sign test",
+    "net": [
+     3,
+     3
+    ],
+    "unresolved_cells": 0,
+    "p_min": 0.6476058959960938,
+    "p_max": 0.6476058959960938,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.7771270751953125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "LEX5B_15500 vs HR_15500",
+    "test": "exact sign test",
+    "net": [
+     1,
+     2
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.8318119049072266,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8318119049072266,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.867977639903193,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.8947410583496094,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "HYBRID_15500 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     7,
+     7
+    ],
+    "unresolved_cells": 0,
+    "p_min": 0.143463134765625,
+    "p_max": 0.143463134765625,
+    "per_column_6_readers_holm_p_min": 0.59234619140625,
+    "per_column_6_readers_bh_p_min": 0.25213623046875,
+    "per_column_6_readers_holm_p_max": 0.717315673828125,
+    "per_column_6_readers_bh_p_max": 0.359130859375,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "HR_15500 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     6,
+     8
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.076812744140625,
+    "p_max": 0.210113525390625,
+    "per_column_6_readers_holm_p_min": 0.384063720703125,
+    "per_column_6_readers_bh_p_min": 0.230438232421875,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.630340576171875,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "interaction vs HYBRID",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     1,
+     1
+    ],
+    "unresolved_cells": 0,
+    "p_min": 1.0,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 1.0,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 1.0,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "llama-3.3-70b-instruct",
+    "comparison": "interaction vs HR",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     0,
+     2
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.8720002500340343,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8720002500340343,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.9099133043833401,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "LEX5B_6000 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     6,
+     7
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.1670684814453125,
+    "p_max": 0.26317596435546875,
+    "per_column_6_readers_holm_p_min": 0.5012054443359375,
+    "per_column_6_readers_bh_p_min": 0.25060272216796875,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.43114013671875,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5386962890625,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "LEX5B_6000 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     7,
+     7
+    ],
+    "unresolved_cells": 0,
+    "p_min": 0.24778856337070465,
+    "p_max": 0.24778856337070465,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6776394844055176,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.660769502321879,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.6259921600944117,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "LEX5B_15500 vs HYBRID_15500",
+    "test": "exact sign test",
+    "net": [
+     0,
+     3
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.6476058959960938,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.7771270751953125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.834017826960637,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "LEX5B_15500 vs HR_15500",
+    "test": "exact sign test",
+    "net": [
+     4,
+     6
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.30745625495910645,
+    "p_max": 0.557197093963623,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6149125099182129,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.71856689453125,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.68982421875,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "HYBRID_15500 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     3,
+     6
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.210113525390625,
+    "p_max": 0.60723876953125,
+    "per_column_6_readers_holm_p_min": 0.59234619140625,
+    "per_column_6_readers_bh_p_min": 0.25213623046875,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.7286865234375,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.560302734375,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "HR_15500 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     1,
+     2
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.8388197422027588,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8388197422027588,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.8947410583496094,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "interaction vs HYBRID",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     3,
+     7
+    ],
+    "unresolved_cells": 4,
+    "p_min": 0.2671804428100586,
+    "p_max": 0.7132177352905273,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.5343608856201172,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.6412330627441406,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "gemma-3-27b-it",
+    "comparison": "interaction vs HR",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     1,
+     3
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.7623637970536947,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.8720002500340343,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.8925234697213987,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "LEX5B_6000 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     5,
+     7
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.0654296875,
+    "p_max": 0.2265625,
+    "per_column_6_readers_holm_p_min": 0.3271484375,
+    "per_column_6_readers_bh_p_min": 0.1962890625,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.43114013671875,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5234375,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "LEX5B_6000 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     4,
+     6
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.1795654296875,
+    "p_max": 0.454498291015625,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6776394844055176,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5386962890625,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "LEX5B_15500 vs HYBRID_15500",
+    "test": "exact sign test",
+    "net": [
+     2,
+     4
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.454498291015625,
+    "p_max": 0.803619384765625,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.7771270751953125,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.7744451250348773,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.7657723262392241,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "LEX5B_15500 vs HR_15500",
+    "test": "exact sign test",
+    "net": [
+     -7,
+     -6
+    ],
+    "unresolved_cells": 1,
+    "p_min": 0.11846923828125,
+    "p_max": 0.210113525390625,
+    "per_column_6_readers_holm_p_min": 0.59234619140625,
+    "per_column_6_readers_bh_p_min": 0.35540771484375,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 0.630340576171875,
+    "lex_vs_control_24_holm_p_min": 1.0,
+    "lex_vs_control_24_bh_p_min": 0.5386962890625,
+    "lex_vs_control_24_holm_p_max": 1.0,
+    "lex_vs_control_24_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.5070082720588235,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.996917724609375
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "HYBRID_15500 vs HYBRID_6000",
+    "test": "exact sign test",
+    "net": [
+     1,
+     4
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.454498291015625,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 0.59234619140625,
+    "per_column_6_readers_bh_p_min": 0.454498291015625,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.7657723262392241,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "HR_15500 vs HR_6000",
+    "test": "exact sign test",
+    "net": [
+     10,
+     12
+    ],
+    "unresolved_cells": 2,
+    "p_min": 0.00048828125,
+    "p_max": 0.00634765625,
+    "per_column_6_readers_holm_p_min": 0.0029296875,
+    "per_column_6_readers_bh_p_min": 0.0029296875,
+    "per_column_6_readers_holm_p_max": 0.0380859375,
+    "per_column_6_readers_bh_p_max": 0.0380859375,
+    "whole_table_48_holm_p_min": 0.0234375,
+    "whole_table_48_bh_p_min": 0.0234375,
+    "whole_table_48_holm_p_max": 0.3046875,
+    "whole_table_48_bh_p_max": 0.3046875
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "interaction vs HYBRID",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     1,
+     5
+    ],
+    "unresolved_cells": 4,
+    "p_min": 0.46265411376953125,
+    "p_max": 1.0,
+    "per_column_6_readers_holm_p_min": 1.0,
+    "per_column_6_readers_bh_p_min": 0.6939811706542969,
+    "per_column_6_readers_holm_p_max": 1.0,
+    "per_column_6_readers_bh_p_max": 1.0,
+    "whole_table_48_holm_p_min": 1.0,
+    "whole_table_48_bh_p_min": 0.7657723262392241,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 1.0
+   },
+   {
+    "reader": "deepseek-v4-flash",
+    "comparison": "interaction vs HR",
+    "test": "exact sign-flip permutation on per-question contrast",
+    "net": [
+     10,
+     13
+    ],
+    "unresolved_cells": 3,
+    "p_min": 0.006500244140625,
+    "p_max": 0.040496826171875,
+    "per_column_6_readers_holm_p_min": 0.03900146484375,
+    "per_column_6_readers_bh_p_min": 0.03900146484375,
+    "per_column_6_readers_holm_p_max": 0.24298095703125,
+    "per_column_6_readers_bh_p_max": 0.24298095703125,
+    "whole_table_48_holm_p_min": 0.305511474609375,
+    "whole_table_48_bh_p_min": 0.156005859375,
+    "whole_table_48_holm_p_max": 1.0,
+    "whole_table_48_bh_p_max": 0.6622314453125
+   }
+  ]
+ }
+}

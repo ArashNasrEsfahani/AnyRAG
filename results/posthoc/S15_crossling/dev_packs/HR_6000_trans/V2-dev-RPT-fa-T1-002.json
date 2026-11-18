@@ -1,0 +1,17 @@
+{
+ "question_id": "V2-dev-RPT-fa-T1-002",
+ "setting": "en-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6165 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "f4013ef25a7f0bcb8e815dc1726a70f6be83f4eea911782845d0c839652f262d",
+ "evidence_chars": 6000
+}

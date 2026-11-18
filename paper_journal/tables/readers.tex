@@ -1,0 +1,27 @@
+% src: paper/analysis/revision_stats.md, section "Per-reader net bounds (machine)" (from saved test records/verdicts;
+%      bounds over unresolved judge cells; all readers answer identical packs). Interaction = (LEX5B-C)@6000 - (LEX5B-C)@15500.
+% R3: same values as R2 readers.tex; background colour = sign and size of the midpoint of the bounds.
+% Blind-review fix (2026-10-07): colour-blind-safe blue (ahead) / orange (behind) shading plus a triangle marker on
+%      negative-midpoint cells, so the sign does not rely on colour alone. Values unchanged.
+\definecolor{cPos}{HTML}{56B4E9}\definecolor{cNeg}{HTML}{E69F00}
+\begin{table*}[tp]
+\caption{Per-reader contrasts for six readers. Blue marks \lexb{} ahead and orange a deficit}
+\label{tab:readers}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.75cm}cccccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{\lexb{} vs.\ @6,000} & \multicolumn{2}{c}{\lexb{} vs.\ @15,500} & \multicolumn{2}{c}{Budget effect} & \multicolumn{2}{c}{Interaction vs.} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(l){8-9}
+Reader & \hybrid & \hr & \hybrid & \hr & \hybrid & \hr & \hybrid & \hr \\
+\midrule
+GLM-5.3-flash (primary) & \cellcolor{cPos!38!white}+5..+7 & \cellcolor{cNeg!15!white}$-3$..0\,$\downarrow$  & \cellcolor{cNeg!13!white}$-1$\,$\downarrow$  & \cellcolor{cNeg!20!white}$-3$..$-2$\,$\downarrow$  & \cellcolor{cPos!35!white}+5..+6 & \cellcolor{cNeg!10!white}$-2$..+1\,$\downarrow$  & \cellcolor{cPos!43!white}+6..+8 & \cellcolor{cPos!13!white}$-1$..+3 \\
+gpt-oss-20b & \cellcolor{cPos!55!white}+10..+11 & \cellcolor{cPos!20!white}+1..+4 & \cellcolor{cPos!18!white}+1..+3 & \cellcolor{cNeg!15!white}$-2$..$-1$\,$\downarrow$  & \cellcolor{cPos!40!white}+6..+7 & \cellcolor{cPos!18!white}+1..+3 & \cellcolor{cPos!50!white}+7..+10 & \cellcolor{cPos!28!white}+2..+6 \\
+Qwen3-235B & \cellcolor{cPos!33!white}+5 & \cellcolor{cPos!28!white}+3..+5 & \cellcolor{cPos!30!white}+2..+7 & \cellcolor{cPos!45!white}+6..+9 & \cellcolor{cPos!48!white}+7..+9 & \cellcolor{cPos!28!white}+3..+5 & \cellcolor{cPos!10!white}$-2$..+3 & \cellcolor{cNeg!25!white}$-6$..$-1$\,$\downarrow$  \\
+Llama-3.3-70B & \cellcolor{cPos!28!white}+4 & \cellcolor{cPos!20!white}+2..+3 & \cellcolor{cPos!23!white}+3 & \cellcolor{cPos!15!white}+1..+2 & \cellcolor{cPos!43!white}+7 & \cellcolor{cPos!43!white}+6..+8 & \cellcolor{cPos!13!white}+1 & \cellcolor{cPos!13!white}0..+2 \\
+Gemma-3-27B & \cellcolor{cPos!40!white}+6..+7 & \cellcolor{cPos!43!white}+7 & \cellcolor{cPos!15!white}0..+3 & \cellcolor{cPos!33!white}+4..+6 & \cellcolor{cPos!30!white}+3..+6 & \cellcolor{cPos!15!white}+1..+2 & \cellcolor{cPos!33!white}+3..+7 & \cellcolor{cPos!18!white}+1..+3 \\
+DeepSeek-V4-flash & \cellcolor{cPos!38!white}+5..+7 & \cellcolor{cPos!33!white}+4..+6 & \cellcolor{cPos!23!white}+2..+4 & \cellcolor{cNeg!40!white}$-7$..$-6$\,$\downarrow$  & \cellcolor{cPos!20!white}+1..+4 & \cellcolor{cPos!55!white}+10..+12 & \cellcolor{cPos!23!white}+1..+5 & \cellcolor{cPos!55!white}+10..+13 \\
+\bottomrule
+\end{tabular}
+\end{table*}

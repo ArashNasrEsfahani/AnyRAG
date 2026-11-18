@@ -1,0 +1,3 @@
+{"at": "2026-11-18T14:32:45", "tag": "judge2", "limit_remaining": 0.3806773519999993, "stream_spent": 0.0, "ok": false}
+{"at": "2026-11-18T14:32:56", "tag": "recheck", "limit_remaining": 0.3806773519999993, "stream_spent": 0.0, "ok": false}
+{"at": "2026-11-18T14:40:50", "tag": "judge2", "limit_remaining": 1.64450671, "stream_spent": 0.0, "ok": true}

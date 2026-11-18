@@ -1,0 +1,430 @@
+{
+ "info": {
+  "train_queries": 14105,
+  "train_rows": 1550424,
+  "val_queries_all": 3724,
+  "union_recall_train": 0.988,
+  "union_recall_val": 0.9834
+ },
+ "results": {
+  "lr": {
+   "ndcg10": 0.8146,
+   "mrr": 0.7973,
+   "r10": 0.9506,
+   "by_pool_ndcg10": {
+    "BOOK-en": 0.7841,
+    "BOOK-fa": 0.7938,
+    "LAW-en": 0.8034,
+    "LAW-fa": 0.8751,
+    "RPT-en": 0.7704,
+    "RPT-fa": 0.8385
+   },
+   "queries": 3662,
+   "fit_s": 8.3
+  },
+  "lgbm": {
+   "ndcg10": 0.8565,
+   "mrr": 0.8409,
+   "r10": 0.962,
+   "by_pool_ndcg10": {
+    "BOOK-en": 0.8286,
+    "BOOK-fa": 0.8311,
+    "LAW-en": 0.8339,
+    "LAW-fa": 0.9131,
+    "RPT-en": 0.8374,
+    "RPT-fa": 0.8723
+   },
+   "queries": 3662,
+   "fit_s": 74.9
+  },
+  "ref_F2_maxmean3": {
+   "ndcg10": 0.8096,
+   "mrr": 0.8019,
+   "r10": 0.9525,
+   "by_pool_ndcg10": {
+    "BOOK-en": 0.7821,
+    "BOOK-fa": 0.7802,
+    "LAW-en": 0.7917,
+    "LAW-fa": 0.878,
+    "RPT-en": 0.7649,
+    "RPT-fa": 0.8356
+   },
+   "queries": 3662
+  },
+  "ref_maxmean4": {
+   "ndcg10": 0.7343,
+   "mrr": 0.713,
+   "r10": 0.9339,
+   "by_pool_ndcg10": {
+    "BOOK-en": 0.6945,
+    "BOOK-fa": 0.7177,
+    "LAW-en": 0.7254,
+    "LAW-fa": 0.8048,
+    "RPT-en": 0.673,
+    "RPT-fa": 0.7631
+   },
+   "queries": 3662
+  },
+  "ref_dense": {
+   "ndcg10": 0.6342,
+   "mrr": 0.6325,
+   "r10": 0.8427,
+   "by_pool_ndcg10": {
+    "BOOK-en": 0.6199,
+    "BOOK-fa": 0.5297,
+    "LAW-en": 0.6171,
+    "LAW-fa": 0.7279,
+    "RPT-en": 0.583,
+    "RPT-fa": 0.7082
+   },
+   "queries": 3662
+  },
+  "ref_synth": {
+   "ndcg10": 0.2267,
+   "mrr": 0.2603,
+   "r10": 0.4006,
+   "by_pool_ndcg10": {
+    "BOOK-en": 0.1695,
+    "BOOK-fa": 0.1654,
+    "LAW-en": 0.3012,
+    "LAW-fa": 0.2869,
+    "RPT-en": 0.2058,
+    "RPT-fa": 0.2316
+   },
+   "queries": 3662
+  }
+ },
+ "winner": "lgbm",
+ "lgbm_gain_share": [
+  [
+   "maxmean3",
+   0.6622
+  ],
+  [
+   "maxmean4",
+   0.1589
+  ],
+  [
+   "adj_max",
+   0.0441
+  ],
+  [
+   "bm25_logrank",
+   0.0116
+  ],
+  [
+   "cov_exact",
+   0.0113
+  ],
+  [
+   "bm25_z",
+   0.0105
+  ],
+  [
+   "cov_fold",
+   0.0103
+  ],
+  [
+   "synth_raw",
+   0.0096
+  ],
+  [
+   "sparse_logrank",
+   0.0071
+  ],
+  [
+   "cov_crumb",
+   0.0064
+  ],
+  [
+   "bm25_rel",
+   0.0061
+  ],
+  [
+   "dense_rel",
+   0.0058
+  ],
+  [
+   "log_chars",
+   0.0042
+  ],
+  [
+   "bm25_raw",
+   0.0041
+  ],
+  [
+   "sparse_raw",
+   0.004
+  ],
+  [
+   "dense_logrank",
+   0.004
+  ],
+  [
+   "synth_z",
+   0.0039
+  ],
+  [
+   "dense_z",
+   0.0038
+  ],
+  [
+   "doc_share",
+   0.0036
+  ],
+  [
+   "synth_logrank",
+   0.0034
+  ],
+  [
+   "rrf",
+   0.0031
+  ],
+  [
+   "synth_rel",
+   0.003
+  ],
+  [
+   "sparse_z",
+   0.0028
+  ],
+  [
+   "doc_max",
+   0.0024
+  ],
+  [
+   "pos",
+   0.0022
+  ],
+  [
+   "doc_cent",
+   0.0022
+  ],
+  [
+   "combsum4",
+   0.0017
+  ],
+  [
+   "dense_raw",
+   0.0015
+  ],
+  [
+   "sparse_rel",
+   0.0013
+  ],
+  [
+   "q_len",
+   0.0011
+  ],
+  [
+   "doc_cent_logrank",
+   0.0009
+  ],
+  [
+   "lang_fa",
+   0.0008
+  ],
+  [
+   "num_match",
+   0.0005
+  ],
+  [
+   "q_nums",
+   0.0005
+  ],
+  [
+   "doc_best",
+   0.0004
+  ],
+  [
+   "is_table",
+   0.0003
+  ],
+  [
+   "n_hit",
+   0.0001
+  ],
+  [
+   "dense_top",
+   0.0
+  ],
+  [
+   "synth_top",
+   0.0
+  ],
+  [
+   "sparse_top",
+   0.0
+  ],
+  [
+   "bm25_top",
+   0.0
+  ]
+ ],
+ "lr_std_coef": [
+  [
+   "rrf",
+   1.6043
+  ],
+  [
+   "dense_rel",
+   1.5456
+  ],
+  [
+   "maxmean4",
+   1.5108
+  ],
+  [
+   "n_hit",
+   -0.8855
+  ],
+  [
+   "adj_max",
+   0.843
+  ],
+  [
+   "bm25_z",
+   0.675
+  ],
+  [
+   "maxmean3",
+   -0.5983
+  ],
+  [
+   "doc_max",
+   0.5832
+  ],
+  [
+   "dense_z",
+   -0.5044
+  ],
+  [
+   "bm25_top",
+   -0.4607
+  ],
+  [
+   "dense_top",
+   -0.4179
+  ],
+  [
+   "dense_raw",
+   -0.3972
+  ],
+  [
+   "sparse_top",
+   -0.3797
+  ],
+  [
+   "synth_z",
+   -0.2848
+  ],
+  [
+   "dense_logrank",
+   -0.2771
+  ],
+  [
+   "synth_rel",
+   -0.2737
+  ],
+  [
+   "synth_top",
+   -0.2616
+  ],
+  [
+   "cov_fold",
+   0.2562
+  ],
+  [
+   "cov_exact",
+   0.2295
+  ],
+  [
+   "cov_crumb",
+   -0.2005
+  ],
+  [
+   "bm25_rel",
+   -0.1899
+  ],
+  [
+   "sparse_z",
+   0.1863
+  ],
+  [
+   "synth_logrank",
+   0.1806
+  ],
+  [
+   "doc_share",
+   -0.1774
+  ],
+  [
+   "doc_best",
+   0.169
+  ],
+  [
+   "log_chars",
+   -0.1633
+  ],
+  [
+   "sparse_logrank",
+   -0.1609
+  ],
+  [
+   "sparse_raw",
+   -0.1554
+  ],
+  [
+   "q_nums",
+   -0.1492
+  ],
+  [
+   "num_match",
+   0.1203
+  ],
+  [
+   "doc_cent",
+   -0.0942
+  ],
+  [
+   "bm25_raw",
+   -0.083
+  ],
+  [
+   "q_len",
+   -0.0742
+  ],
+  [
+   "sparse_rel",
+   -0.0711
+  ],
+  [
+   "synth_raw",
+   0.0341
+  ],
+  [
+   "doc_cent_logrank",
+   -0.026
+  ],
+  [
+   "is_table",
+   0.0238
+  ],
+  [
+   "combsum4",
+   0.0211
+  ],
+  [
+   "bm25_logrank",
+   0.0133
+  ],
+  [
+   "pos",
+   -0.0131
+  ],
+  [
+   "lang_fa",
+   -0.008
+  ]
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T1-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79253 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "8e2cfa19f9127d138c6fc973880bed5cc5c76f2efecb9c4935f28a5783565f16",
+ "evidence_chars": 79118,
+ "prompt_chars": 79784,
+ "est_prompt_tokens": 31558,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.dezhino_ad-performance-report_1403.fa",
+    "score": 8.547
+   },
+   {
+    "doc": "C.dezhino_ad-fraud-report_1401.fa",
+    "score": 7.762
+   },
+   {
+    "doc": "C.maxholding_adtech-report_1403.fa",
+    "score": 7.098
+   },
+   {
+    "doc": "C.tapsell_annual-report_1401.fa",
+    "score": 6.553
+   },
+   {
+    "doc": "C.metrix_annual-report_1399.fa",
+    "score": 5.88
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 5.115
+   },
+   {
+    "doc": "C.tapsell_annual-report_1398.fa",
+    "score": 4.462
+   },
+   {
+    "doc": "C.myket_annual-report_1403.fa",
+    "score": 4.319
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.dezhino_ad-performance-report_1403.fa",
+    "doc_chars": 67215,
+    "shown": 67215,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "C.dezhino_ad-fraud-report_1401.fa",
+    "doc_chars": 22922,
+    "shown": 11753,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

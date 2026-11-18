@@ -1,0 +1,91 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-fa-T3-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79191 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "5822738b8139a596276e46b38a8feab1aab97071efc9f4384a00a39e6137a80c",
+ "evidence_chars": 79039,
+ "prompt_chars": 80022,
+ "est_prompt_tokens": 31652,
+ "build_ms": 1.8,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "L.wikisource_press-bill-1334.fa",
+    "score": 8.064
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "score": 6.909
+   },
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "score": 2.789
+   },
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "score": 1.983
+   },
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "score": 1.533
+   },
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "score": 1.424
+   },
+   {
+    "doc": "L.wikisource_cooperatives-1350.fa",
+    "score": 1.385
+   },
+   {
+    "doc": "L.wikisource_civil-service-employment-1345.fa",
+    "score": 1.29
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.wikisource_press-bill-1334.fa",
+    "doc_chars": 22848,
+    "shown": 22848,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "doc_chars": 15381,
+    "shown": 15381,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "doc_chars": 75276,
+    "shown": 40694,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 2
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T2-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143161 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "3e0897eae84c88346c19db291d7f90a386980bfb5921f9a4f4f72af513f46a5d",
+ "evidence_chars": 142941,
+ "prompt_chars": 143684,
+ "est_prompt_tokens": 31472,
+ "build_ms": 1.5,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.wise_annual-report_2024.en",
+    "doc_chars": 501838,
+    "shown": 142891,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}

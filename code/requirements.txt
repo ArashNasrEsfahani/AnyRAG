@@ -1,0 +1,18 @@
+# Python 3.14.0 (CPython). Pinned from the environment used for the frozen test run.
+# Core (ragbench, runners, evaluation)
+bm25s==0.3.11
+numpy==2.5.3
+scipy==1.18.1
+PyYAML==6.0.3
+regex==2026.9.10
+requests==2.34.2
+httpx==0.28.1
+# Learned components and local rerankers/embedders (lex9, retrieval/rerank, retrieval/m3multi)
+lightgbm==4.7.0
+torch==2.14.0
+transformers==5.17.0
+tokenizers==0.23.2
+huggingface_hub==1.33.0
+safetensors==0.8.0
+# Corpus extraction only (tools/extract/pdf_extract.py)
+PyMuPDF

@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-RPT-en-T1-004",
+ "variant": "SETR_15500",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "80674bffb0711233ca81",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 15604 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "purpose": "answer",
+ "messages_sha256": "1d393c2dbf797b51192f4bd19a41ff2cd060574d7f78c0b93a2bc6aef96f0f46",
+ "evidence_chars": 15500,
+ "at": "2026-10-04T18:22:51"
+}

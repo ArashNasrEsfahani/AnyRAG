@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T3-004",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79240 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "33b294e874c4c03cafbd7c01f6edef92102c6d555ff10889d576a926258aef6f",
+ "evidence_chars": 79099,
+ "prompt_chars": 80071,
+ "est_prompt_tokens": 31672,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "score": 10.803
+   },
+   {
+    "doc": "C.snapp_annual-report_1402.fa",
+    "score": 10.71
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 7.222
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 6.703
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 6.37
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1399.fa",
+    "score": 6.179
+   },
+   {
+    "doc": "C.payman_direct-debit-annual-report_1402.fa",
+    "score": 5.586
+   },
+   {
+    "doc": "C.digikala_human-capital-report_1399.fa",
+    "score": 5.402
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "doc_chars": 111267,
+    "shown": 79042,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}

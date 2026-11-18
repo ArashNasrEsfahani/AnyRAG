@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142796 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "ce27df1cf4c381b953cb312687ec2cc7602f8ff33f6c8c88b36d3c99fb7aa75d",
+ "evidence_chars": 142599,
+ "prompt_chars": 143619,
+ "est_prompt_tokens": 31457,
+ "build_ms": 1.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.turkcell_form-20f_2024.en",
+    "doc_chars": 1164334,
+    "shown": 71367,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "D.vodafone_annual-report_2024.en",
+    "doc_chars": 1274439,
+    "shown": 71126,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 2
+ }
+}

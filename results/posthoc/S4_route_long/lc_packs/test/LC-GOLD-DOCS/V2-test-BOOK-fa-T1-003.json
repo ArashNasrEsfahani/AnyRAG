@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-fa-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79222 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "bd84ddbefa6b00aaddf7ccf7d5b080f7692c2b76ab612adb29ab3fc5d5b87528",
+ "evidence_chars": 79083,
+ "prompt_chars": 79938,
+ "est_prompt_tokens": 31619,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "K.wikisource_kasravi_khuzestan-500-years.fa",
+    "doc_chars": 485161,
+    "shown": 79046,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

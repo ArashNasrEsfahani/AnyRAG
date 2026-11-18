@@ -1,0 +1,139 @@
+{
+ "at": "2026-10-01T22:40:12",
+ "readers": [
+  "z-ai/glm-5.3-flash",
+  "openai/gpt-oss-20b",
+  "qwen/qwen3-235b-a22b-2507",
+  "meta-llama/llama-3.3-70b-instruct",
+  "google/gemma-3-27b-it",
+  "deepseek/deepseek-v4-flash"
+ ],
+ "primary": "z-ai/glm-5.3-flash",
+ "pins": {
+  "openai/gpt-oss-20b": {
+   "provider": "amazon-bedrock",
+   "params": [
+    "reasoning",
+    "include_reasoning",
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "top_k",
+    "stop",
+    "tools",
+    "tool_choice",
+    "reasoning_effort"
+   ]
+  },
+  "z-ai/glm-5.3-flash": {
+   "provider": "together",
+   "params": [
+    "reasoning",
+    "include_reasoning",
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "stop",
+    "frequency_penalty",
+    "presence_penalty",
+    "top_k",
+    "repetition_penalty",
+    "logit_bias",
+    "min_p",
+    "response_format",
+    "structured_outputs",
+    "tools",
+    "tool_choice",
+    "logprobs",
+    "top_logprobs",
+    "reasoning_effort"
+   ]
+  },
+  "qwen/qwen3-235b-a22b-2507": {
+   "provider": "gmicloud/fp8",
+   "params": [
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "seed",
+    "response_format",
+    "structured_outputs",
+    "tools",
+    "tool_choice",
+    "logprobs",
+    "top_logprobs"
+   ]
+  },
+  "meta-llama/llama-3.3-70b-instruct": {
+   "provider": "deepinfra/turbo",
+   "params": [
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "stop",
+    "frequency_penalty",
+    "presence_penalty",
+    "repetition_penalty",
+    "top_k",
+    "seed",
+    "min_p",
+    "tools",
+    "tool_choice",
+    "logit_bias",
+    "response_format",
+    "structured_outputs"
+   ]
+  },
+  "google/gemma-3-27b-it": {
+   "provider": "deepinfra/fp8",
+   "params": [
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "stop",
+    "frequency_penalty",
+    "presence_penalty",
+    "repetition_penalty",
+    "top_k",
+    "seed",
+    "min_p",
+    "logit_bias",
+    "structured_outputs",
+    "tools",
+    "tool_choice",
+    "response_format"
+   ]
+  },
+  "deepseek/deepseek-v4-flash": {
+   "provider": "deepinfra/fp8",
+   "params": [
+    "reasoning",
+    "include_reasoning",
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "stop",
+    "frequency_penalty",
+    "presence_penalty",
+    "repetition_penalty",
+    "top_k",
+    "seed",
+    "min_p",
+    "tools",
+    "tool_choice",
+    "structured_outputs",
+    "response_format",
+    "logit_bias",
+    "reasoning_effort"
+   ]
+  }
+ },
+ "why": {
+  "z-ai/glm-5.3-flash": "dev pin (lex5_pilot/providers.json), unchanged",
+  "openai/gpt-oss-20b": "dev pin (lex5_pilot/providers.json), unchanged",
+  "qwen/qwen3-235b-a22b-2507": "cheapest non-fp4 endpoint with status 0 at 2026-10-01T22:33:06 (in 0.0875 / out 0.3500 $/M, uptime30m 99.3%); deepinfra/fp8 was cheaper-equal but status -2 (uptime 91%)",
+  "meta-llama/llama-3.3-70b-instruct": "cheapest non-fp4 endpoint with status 0 at 2026-10-01T22:33:06 (in 0.1000 / out 0.3200 $/M, uptime30m 97.2%)",
+  "google/gemma-3-27b-it": "cheapest non-fp4 endpoint with status 0 at 2026-10-01T22:33:06 (in 0.0800 / out 0.1600 $/M, uptime30m 99.7%)",
+  "deepseek/deepseek-v4-flash": "cheapest non-fp4 endpoint with status 0 at 2026-10-01T22:33:06 (in 0.0900 / out 0.1800 $/M, uptime30m 99.5%)"
+ }
+}

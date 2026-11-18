@@ -1,0 +1,18 @@
+{
+ "arm": "HR_10000",
+ "question_id": "V2-test-BOOK-en-T1-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 10166 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "000be98982921a58f0fe3762cf922702d247165ec35d15fd735e3e80dc41c07b",
+ "evidence_chars": 10000
+}

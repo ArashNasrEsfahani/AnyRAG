@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-fa-T2-002",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 73155 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "fd0971f652c7db0d5926624e50b36d88a71be90279422fbd448304a521815633",
+ "evidence_chars": 73087,
+ "prompt_chars": 73686,
+ "est_prompt_tokens": 29146,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "K.wikisource_pirnia_iran-e-bastan.fa",
+    "doc_chars": 1123002,
+    "shown": 73038,
+    "ranges": 3,
+    "whole": false
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 1
+ }
+}

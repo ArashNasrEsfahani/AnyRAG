@@ -1,0 +1,18 @@
+{
+ "arm": "GOLD",
+ "question_id": "V2-test-BOOK-en-T3-002",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 1003 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "8330b46da555a13fbba613a3165e39fa67205844c8be6d66bbc511aaa70ae891",
+ "evidence_chars": 689
+}

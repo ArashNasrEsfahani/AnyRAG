@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79120 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "4fdeee1d497f7308cb724930aeae9fc983ec6a81bcb97e7640af84813d794290",
+ "evidence_chars": 78914,
+ "prompt_chars": 79951,
+ "est_prompt_tokens": 31624,
+ "build_ms": 0.8,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_commercial-code-1303.fa",
+    "doc_chars": 104151,
+    "shown": 39382,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "doc_chars": 224893,
+    "shown": 39484,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T1-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143038 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "8ec97cb158feeff90affb1853425e2e7333b123edd0117d0c9bb5ed4dd73ba9f",
+ "evidence_chars": 142844,
+ "prompt_chars": 143561,
+ "est_prompt_tokens": 31445,
+ "build_ms": 1.5,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "doc_chars": 1328555,
+    "shown": 142797,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

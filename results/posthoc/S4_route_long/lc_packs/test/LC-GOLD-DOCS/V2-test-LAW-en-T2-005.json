@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-en-T2-005",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143200 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "8b2acde696dd291625f3add857350e172cd8811d2a455ed355bfac1521e0e713",
+ "evidence_chars": 142875,
+ "prompt_chars": 143908,
+ "est_prompt_tokens": 31521,
+ "build_ms": 0.8,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "L.ukpga-2015-15_consumer-rights-act.en",
+    "doc_chars": 377548,
+    "shown": 142841,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 7,
+  "gold_units_retained": 7,
+  "gold_docs_shown": 1
+ }
+}

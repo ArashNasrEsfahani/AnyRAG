@@ -1,0 +1,28 @@
+\section{Results and Discussion}
+\label{sec:results}
+\phantomsection\label{sec:discussion}
+% src: test_run/TEST_RESULTS.md (machine), test_run/TEST_RESULTS_HUMAN_SYM.md (symmetric human), paper/analysis/revision_stats.md
+%      (bounds, sign-p ranges, CIs, readers, clipping, tokens), dev60/DEV60.md, setr/SETR.md, budget_matrix/BUDGET_MATRIX.md;
+%      power: posthoc_2026-11/S5_stats/RESULTS.md sec. 2.3 (MDE 10.4-11.1 points of 90; power 18-19% for 5/90); TOST: S5 sec. 2.2
+% src (rules moved here from the head of 4.2, REVIEW2 item 18): 576 of 576 rebuilt packs byte-identical: S2a_packs/RESULTS.md sec. 1 step 0 and sec. 5 item 1 (6 arms x 96 questions); families of 6 to 13 pairs: S10 12, S11 7, S12 13, S13 6 (RESULTS.md paired sections).
+% Rewrite 2026-11-10: Section 4 opens with the confirmatory test; post hoc subsections follow.
+
+The results come in two kinds. The frozen test is the only confirmatory part, because its hypotheses, prompts and decision rules were fixed before any test answer was seen. The remaining subsections use the same test set after its answers were known, to compare retrieval components, to ask why the frozen test came out as it did, to compare the two languages, and to turn the results into guidance. They are post hoc.
+
+All post hoc subsections follow the same rules. Prompts and settings were fixed on dev or a priori, and each new arm was run once on the test questions. The rebuilt evidence packs match the frozen ones byte for byte (576 of 576). We release the ledger of every call, and Appendix Table~\ref{tab:posthoc-log} lists every post hoc arm, including those not discussed here. Because the same 90 answerable questions were used after their answers were known, post hoc $p$-values are descriptive. Each experiment compared a declared family of 6 to 13 pairs. Unless noted, scores are for the primary reader and the first judge, on the 90 answerable questions.
+
+\subsection{Confirmatory Test}
+\label{sec:frozen}
+% src (post hoc paragraph, REVIEW2 item 16): merged scores 71, 76, 76, 78 and the setr-hybrid 7/0 p .016 = TEST_RESULTS_HUMAN_SYM.md; equivalence at 8: S5_stats sec. 2.2; power and 400 to 460 questions: S5_stats sec. 2.3.
+Table~\ref{tab:main} gives accuracy in all eight pipeline and budget cells for the primary reader, and Table~\ref{tab:paired} in Appendix~\ref{app:stats} gives every paired statistic.
+\input{tables/main_glm}
+
+The gate failed. At the tight budget, \lexb{} answered 5 to 7 more of the 90 answerable questions than \hybrid{} under the machine judge and 0 to 3 fewer than \hr. It therefore missed the required margin over \hr, and neither primary test was significant. The confidence intervals, which resample groups of questions that share a source, remain compatible with no improvement. The resource gate passed only under the token limit we relaxed during development; under the original limit it would have failed (Appendix Table~\ref{tab:cost}).
+
+The tiers show where the pipelines can differ (Table~\ref{tab:main}). Single facts (T1) are near ceiling for every pipeline, so a selection step has little room to help there. On within-document questions (T2), \lexb{} and \hr{} gain over \hybrid, while \setr{} does not. On cross-document questions (T3), \hr{} and \setr{} lead. By language, \lexb's gain over \hybrid{} is visible in English and small in Persian.
+
+Development results also shrank on the test, as expected for a method adapted to dev over many iterations. \lexb's lead over \hybrid{} roughly halved from dev to test, and its lead over \hr{} disappeared (Appendix Table~\ref{tab:devtest}). The confirmatory result is therefore a null with a wide interval and says little about which setup to prefer.
+
+Three post hoc checks help read this result. The first is the symmetric merge, in which the author's verdicts replace the judge's on the 30 reviewed questions. It raises every score but does not change the conclusion. \hybrid, \hr, \lexb{} and \setr{} then answer 71, 76, 76 and 78 of 90. All three pipelines with a reranking or selection step have higher point estimates than \hybrid. \lexb{} ties \hr, and its difference from \hybrid{} is not significant once the several comparisons are corrected. \setr{} has the highest merged score; its lead over \hybrid{} (7 wins, no loss, $p=.016$) is one of six uncorrected comparisons. None of the selection pipelines is clearly better than \hr. The second check is an equivalence test on the machine scores, which fails to show that \lexb{} and \hr{} are equivalent even for a margin of 8 questions out of 90.
+
+The third check is a power calculation. With 90 answerable questions and the disagreement rate we observed, a paired comparison has 80\% power only for differences of about 11 answers. A difference of 5, our gate, would be detected in fewer than one case in five, and would need about 400 to 460 questions. The gate was likely to fail whether or not selection helps, and its failure is weak evidence either way. The next subsections use the same test set to ask which retrieval components matter and then why the pipelines differ.

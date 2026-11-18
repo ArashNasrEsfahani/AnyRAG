@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T1-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79215 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "eb067ba746e500aae244f8a5d698a8490a3ead6a44b5de1d8140edbc3a5f0837",
+ "evidence_chars": 79099,
+ "prompt_chars": 79746,
+ "est_prompt_tokens": 31543,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "score": 9.769
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 8.25
+   },
+   {
+    "doc": "C.snapp_annual-report_1401.fa",
+    "score": 7.721
+   },
+   {
+    "doc": "C.snapp_annual-report_1402.fa",
+    "score": 7.579
+   },
+   {
+    "doc": "C.snapp_annual-report_1400.fa",
+    "score": 7.329
+   },
+   {
+    "doc": "C.snapp_annual-report_1399.fa",
+    "score": 6.614
+   },
+   {
+    "doc": "C.snapp_annual-report_1398.fa",
+    "score": 6.0
+   },
+   {
+    "doc": "C.flytoday_annual-report_1403.fa",
+    "score": 5.869
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "doc_chars": 111267,
+    "shown": 79042,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

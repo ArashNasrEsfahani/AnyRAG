@@ -1,0 +1,2251 @@
+{
+ "approach": "LEX5B",
+ "approach_base": "LEX5B",
+ "flags": {},
+ "invocations": [
+  {
+   "run_id": "20261004-203223-1d2ee9",
+   "started": "2026-10-04T20:32:23",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T1-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:32:40",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5673,
+     "completion_tokens": 86,
+     "embed_tokens": 0,
+     "llm_wall_ms": 2982.2,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 18,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1411.4,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-203432-cd4b87",
+   "started": "2026-10-04T20:34:32",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T1-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_list": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_list": "answer-v2-list-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:34:50",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5192,
+     "completion_tokens": 169,
+     "embed_tokens": 0,
+     "llm_wall_ms": 4263.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 149,
+     "embed_tokens": 0,
+     "llm_wall_ms": 3105.7,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-203624-1a6d4d",
+   "started": "2026-10-04T20:36:24",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T1-003",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:36:39",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 2574,
+     "completion_tokens": 72,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1099.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 1
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 12,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1593.5,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-204054-c0c966",
+   "started": "2026-10-04T20:40:54",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T1-004",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:41:05",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5244,
+     "completion_tokens": 70,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1938.3,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 906.0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-204225-c838f3",
+   "started": "2026-10-04T20:42:25",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T1-005",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:42:37",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5598,
+     "completion_tokens": 66,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1839.2,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 18,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1195.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-204355-d09344",
+   "started": "2026-10-04T20:43:56",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T2-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:44:12",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5789,
+     "completion_tokens": 491,
+     "embed_tokens": 0,
+     "llm_wall_ms": 6706.6,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 904.9,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-204542-89b0e9",
+   "started": "2026-10-04T20:45:42",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T2-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:45:57",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5176,
+     "completion_tokens": 219,
+     "embed_tokens": 0,
+     "llm_wall_ms": 4417.8,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 45,
+     "embed_tokens": 0,
+     "llm_wall_ms": 2360.0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-204730-36eca9",
+   "started": "2026-10-04T20:47:30",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T2-003",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:47:48",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5580,
+     "completion_tokens": 262,
+     "embed_tokens": 0,
+     "llm_wall_ms": 7527.4,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 32,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1432.0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-204932-8b6800",
+   "started": "2026-10-04T20:49:32",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T2-004",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:49:48",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5342,
+     "completion_tokens": 482,
+     "embed_tokens": 0,
+     "llm_wall_ms": 5308.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 32,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1530.2,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-205117-40b75b",
+   "started": "2026-10-04T20:51:17",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T2-005",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:51:31",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 4988,
+     "completion_tokens": 363,
+     "embed_tokens": 0,
+     "llm_wall_ms": 3978.7,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 32,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1501.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-205241-bd832d",
+   "started": "2026-10-04T20:52:41",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T3-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:52:54",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5617,
+     "completion_tokens": 343,
+     "embed_tokens": 0,
+     "llm_wall_ms": 3020.7,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 18,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1031.6,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-205556-a178f7",
+   "started": "2026-10-04T20:55:56",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T3-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:56:10",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5720,
+     "completion_tokens": 243,
+     "embed_tokens": 0,
+     "llm_wall_ms": 4321.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1191.0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-205759-8f8d8f",
+   "started": "2026-10-04T20:57:59",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T3-003",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:58:15",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5513,
+     "completion_tokens": 289,
+     "embed_tokens": 0,
+     "llm_wall_ms": 3265.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 4310.4,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-205935-042958",
+   "started": "2026-10-04T20:59:36",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T3-004",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T20:59:50",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 5444,
+     "completion_tokens": 266,
+     "embed_tokens": 0,
+     "llm_wall_ms": 3487.6,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 10,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1163.6,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-210056-b6e59b",
+   "started": "2026-10-04T21:00:56",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-T3-005",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_list": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_list": "answer-v2-list-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T21:01:09",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 2529,
+     "completion_tokens": 93,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1364.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 1
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 901.0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20261004-210226-cf3ec3",
+   "started": "2026-10-04T21:02:26",
+   "argv": [
+    "--approach",
+    "lex5b",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "v2-test-eval",
+    "--ids",
+    "V2-test-LAW-fa-AB-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000",
+    "--test-protocol",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\questions\\test_v2run_LAW-fa.jsonl",
+   "questions_sha1": "1bcdde02ddbb41567a5ebe348e3d7985f9e2217d",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b63add0d89cce979b2972d11f0896c98489dbcdf",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "test",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "b2cbb17718eea7d6ddcb942b884b8dd165587c5b",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "v2-test-eval",
+    "replicate": 0
+   },
+   "test_protocol": {
+    "manifest": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_freeze\\MANIFEST.json",
+    "sha1": "a15fad80ed25fff4d87d6aa9180794dff033f095"
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-10-04T21:02:41",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 2382,
+     "completion_tokens": 4,
+     "embed_tokens": 0,
+     "llm_wall_ms": 2064.8,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 1
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 17,
+     "embed_tokens": 0,
+     "llm_wall_ms": 865.8,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\test_run\\runs\\LAW-fa\\LEX5B_6000\\ledger_LEX5B.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-test-LAW-fa-T1-001": "e89d60efe40d00cd",
+  "V2-test-LAW-fa-T1-002": "7ac2c54d99514c32",
+  "V2-test-LAW-fa-T1-003": "14a49f97e9861c78",
+  "V2-test-LAW-fa-T1-004": "3c267385d14de926",
+  "V2-test-LAW-fa-T1-005": "615e37499988a527",
+  "V2-test-LAW-fa-T2-001": "8d98ce70f36193a9",
+  "V2-test-LAW-fa-T2-002": "bf8bda83a8ac5771",
+  "V2-test-LAW-fa-T2-003": "35de7dfd9eadd6c9",
+  "V2-test-LAW-fa-T2-004": "8064f1ad7910826e",
+  "V2-test-LAW-fa-T2-005": "c12d95429e021ebe",
+  "V2-test-LAW-fa-T3-001": "65ba585f95043848",
+  "V2-test-LAW-fa-T3-002": "9878477b72cfe2c7",
+  "V2-test-LAW-fa-T3-003": "59a85fbc6bde3dbb",
+  "V2-test-LAW-fa-T3-004": "72a448ea5705e630",
+  "V2-test-LAW-fa-T3-005": "e065e621e08f0ccd",
+  "V2-test-LAW-fa-AB-001": "1b0631527302d095"
+ },
+ "question_sigs_v2": {
+  "V2-test-LAW-fa-T1-001": "8bab9f0f19e29043",
+  "V2-test-LAW-fa-T1-002": "b703b5ac6742a375",
+  "V2-test-LAW-fa-T1-003": "e327d382b1ba279c",
+  "V2-test-LAW-fa-T1-004": "ac6afbbd104099a1",
+  "V2-test-LAW-fa-T1-005": "42d23bb1e8b65be4",
+  "V2-test-LAW-fa-T2-001": "5b65307334d4f45f",
+  "V2-test-LAW-fa-T2-002": "de06a9dc9a0ae96c",
+  "V2-test-LAW-fa-T2-003": "57495c37b58ec7cd",
+  "V2-test-LAW-fa-T2-004": "7ce33b9c5a29d867",
+  "V2-test-LAW-fa-T2-005": "707e855e93c7b413",
+  "V2-test-LAW-fa-T3-001": "8812bd7e42fcfd9d",
+  "V2-test-LAW-fa-T3-002": "9877f60b9de6ba0f",
+  "V2-test-LAW-fa-T3-003": "587e841acbd6216e",
+  "V2-test-LAW-fa-T3-004": "167bfcf45d985d4b",
+  "V2-test-LAW-fa-T3-005": "cf6b8d9934a5350b",
+  "V2-test-LAW-fa-AB-001": "84887489cb3c42db"
+ }
+}

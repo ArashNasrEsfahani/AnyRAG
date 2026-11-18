@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T1-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143074 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "e1a0915ceb0830b7f580c298229178d2a8279710225f7bc87ef2e80f0f6092c9",
+ "evidence_chars": 142880,
+ "prompt_chars": 143597,
+ "est_prompt_tokens": 31453,
+ "build_ms": 9922.7,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "score": 8.455
+   },
+   {
+    "doc": "D.arcelormittal_annual-report_2023.en",
+    "score": 8.349
+   },
+   {
+    "doc": "D.wise_annual-report_2024.en",
+    "score": 2.028
+   },
+   {
+    "doc": "D.riotinto_annual-report_2024.en",
+    "score": 1.793
+   },
+   {
+    "doc": "D.vodafone_annual-report_2024.en",
+    "score": 1.628
+   },
+   {
+    "doc": "D.maersk_annual-report_2024.en",
+    "score": 0.868
+   },
+   {
+    "doc": "D.turkcell_form-20f_2024.en",
+    "score": 0.751
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2022.en",
+    "score": 0.663
+   }
+  ],
+  "docs": [
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "doc_chars": 1328555,
+    "shown": 142839,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

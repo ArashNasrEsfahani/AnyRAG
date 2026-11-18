@@ -1,0 +1,49 @@
+{
+ "approach": "LEX11M_6000",
+ "corpus_set": "LAW_en",
+ "fingerprint": "ffa6ec8fd0ced10a9db69dfb3789bc0d7381d377",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T20:48:42",
+   "ok": true,
+   "build_ms": 8018.2,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 8018.2,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T20:48:50",
+ "size_bytes": 257,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX11M_6000\\LAW_en-ffa6ec8f",
+ "corpus_stats": {
+  "name": "LAW_en",
+  "docs": 10,
+  "sections": 1869,
+  "units": 17142,
+  "chars": 3523474,
+  "skipped": 0
+ },
+ "copied_at": "2026-09-26T21:01:46",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

@@ -1,0 +1,27 @@
+% Rounding fix (REVIEW2 item 8, 2026-11-11): 2,236.6 -> 2,237, 5,286.8 -> 5,287, 5,130.97 -> 5,131, 7,502.7 -> 7,503 (S2a_packs/results.json query_tokens_all_mean; S3_agentic/results.json tokens_per_q); earlier truncated.
+% src: work/datasets_v2/test_run/TEST_RESULTS.md sec. 2 and 4 (tok/q, x HYBRID, p50, p95; moved here from Table main in R4, values unchanged);
+%      paper/analysis/revision_stats.md "Tokens per question" (selector|all, total|fa, total|en; bounds over calls with unreported usage)
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}llrrrrrrr@{}}
+\toprule
+ & & \multicolumn{5}{c}{Query-time LLM tokens per question} & \multicolumn{2}{c}{Latency (s)} \\
+\cmidrule(lr){3-7}\cmidrule(l){8-9}
+Budget & Pipeline & All & $\times$\hybrid & Selector & Persian & English & p50 & p95 \\
+\midrule
+\multirow{4}{*}{6,000} & \hybrid & 2,216 & 1.00 & -- & 2,794 & 1,638 & 1.84 & 5.90 \\
+ & \hr & 2,237 & 1.01 & -- & 2,812 & 1,661 & 3.21 & 6.01 \\
+ & \lexb & 4,511--5,131 & 2.04--2.32 & 2,344--2,964 & 5,073--5,993 & 3,949--4,269 & 3.97 & 8.62 \\
+ & \setr & 7,503--8,128 & 3.39--3.67 & 5,281--5,906 & 9,372--10,180 & 5,633--6,076 & 5.53 & 13.12 \\
+\midrule
+\multirow{4}{*}{15,500} & \hybrid & 5,235 & 2.36 & -- & 6,676 & 3,795 & 2.56 & 6.15 \\
+ & \hr & 5,287 & 2.39 & -- & 6,710 & 3,863 & 3.60 & 8.78 \\
+ & \lexb & 7,541--8,154 & 3.40--3.68 & 2,360--2,973 & 9,283--9,787 & 5,801--6,523 & 4.04 & 8.47 \\
+ & \setr & 10,881 & 4.91 & 5,642 & 13,825 & 7,938 & 5.78 & 10.80 \\
+\bottomrule
+\end{tabular}
+\caption{Cost with the primary reader on all 96 test questions. Tokens count every query-time LLM call; ranges bound calls with unreported usage. $\times$\hybrid{} is relative to \hybrid\textsubscript{6000}. Latency was measured under contention and is descriptive.}
+\label{tab:cost}
+\end{table*}

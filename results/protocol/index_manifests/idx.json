@@ -1,0 +1,247 @@
+{
+ "files": 60,
+ "bytes": 489358878,
+ "tree_sha256": "f23f1c4e673704020152f91168507b24a1447fd8b88e7610f6cfb2a693a60979",
+ "rows": {
+  "BOOK_en/bm25/data.csc.index.npy": {
+   "bytes": 2369916,
+   "sha256": "7ddb9f82d29e36c5aa3b99abf50cb89e5c26e5f581dce805d2a6cd7e3ce9b0c4"
+  },
+  "BOOK_en/bm25/indices.csc.index.npy": {
+   "bytes": 2369916,
+   "sha256": "fb156b28762b7a08964389ad27029fba327b09db36062a90a7ed833b9dba9ab7"
+  },
+  "BOOK_en/bm25/indptr.csc.index.npy": {
+   "bytes": 178416,
+   "sha256": "7ce77c05f00947814e9bdf4d78eda9a4c6dec8107f65af16b2253c5a153eea26"
+  },
+  "BOOK_en/bm25/params.index.json": {
+   "bytes": 235,
+   "sha256": "ccc4f7cd6b727de53b8db7f7f32cb9712d0737e7ef66ed35c100812ff2cedaee"
+  },
+  "BOOK_en/bm25/vocab.index.json": {
+   "bytes": 403477,
+   "sha256": "f345c664752e30564d37eafb097de4d32c5aef26828b8d4902f73cabf9b53583"
+  },
+  "BOOK_en/m3.npz": {
+   "bytes": 31034524,
+   "sha256": "18523b5f4351ff19c0b97b7eb7f79d59faadab009dea2212e373695a17a72423"
+  },
+  "BOOK_en/manifest.json": {
+   "bytes": 659,
+   "sha256": "7a8b46966e422fcea60bd8e2ad3bc29d4f4485132f68dc37cd13487afd3275dd"
+  },
+  "BOOK_en/units.jsonl": {
+   "bytes": 2532258,
+   "sha256": "74985cff4e1a066382b14d8023aa155b72ed899a7b72595df75781c99d6021eb"
+  },
+  "BOOK_fa/bm25/data.csc.index.npy": {
+   "bytes": 3036016,
+   "sha256": "cf1c87be2b99352aad569114babef058f74c5e17c1704f778ea79fe04cf555da"
+  },
+  "BOOK_fa/bm25/indices.csc.index.npy": {
+   "bytes": 3036016,
+   "sha256": "873b8a16f4806aca74b853f6d8372a1c57ecf725ac612e7ec1dcbdeb6a060994"
+  },
+  "BOOK_fa/bm25/indptr.csc.index.npy": {
+   "bytes": 401520,
+   "sha256": "064e0e07acca7e97bada0b669dd7847b050c781a4ad4ede6a8a2866332cbca51"
+  },
+  "BOOK_fa/bm25/params.index.json": {
+   "bytes": 235,
+   "sha256": "265843059431c5eeaf404bbb81a159b256dfb6c7fd1e1260a63d73438b29122c"
+  },
+  "BOOK_fa/bm25/vocab.index.json": {
+   "bytes": 1185703,
+   "sha256": "c1cb0b8126a8bc506adee7b3fdacc46806dca804ffe121bb94bf2ac41b869386"
+  },
+  "BOOK_fa/m3.npz": {
+   "bytes": 27607692,
+   "sha256": "35700941b5a3a788102e8b945822ce279cd55cc4da982bf65ab467d26bd91add"
+  },
+  "BOOK_fa/manifest.json": {
+   "bytes": 658,
+   "sha256": "e9ab4d9a1c8bb73d407005e3ca46ea2dbc5bd456b8c191be85861df0cddeb5b3"
+  },
+  "BOOK_fa/units.jsonl": {
+   "bytes": 2119668,
+   "sha256": "50922ef5b4b0e3d1783889dc7601a38ce465b5aa5238134050553af75535e991"
+  },
+  "C/bm25/data.csc.index.npy": {
+   "bytes": 2842472,
+   "sha256": "cce0d2f6b012371cf97ea86ecaa29c20539cface48c05369eee009c9f2fcbbb2"
+  },
+  "C/bm25/indices.csc.index.npy": {
+   "bytes": 2842472,
+   "sha256": "c1e2c2c12a34f71462f23b569805a195a34ceaec8a6b3d1af809712feb089b01"
+  },
+  "C/bm25/indptr.csc.index.npy": {
+   "bytes": 381408,
+   "sha256": "84a322615a2dde7c16647948c803df1271cf8803c6d35067ac1a050616a31641"
+  },
+  "C/bm25/params.index.json": {
+   "bytes": 235,
+   "sha256": "618dc443861e248447adec3199693e407279f7f3af921f8b1f9151fe0d944af9"
+  },
+  "C/bm25/vocab.index.json": {
+   "bytes": 1003850,
+   "sha256": "57214d56d9762dd947d5b6e79c223749df4834ec8efb49574244eee4d16a119a"
+  },
+  "C/m3.npz": {
+   "bytes": 37787644,
+   "sha256": "043ba209b080a89f0e6507f82174788ccde0fbb5e85252bd13ece124469327e2"
+  },
+  "C/manifest.json": {
+   "bytes": 659,
+   "sha256": "e9e8705f7d5a89105ec4125332303918c5e9e610754b679d995c92bfc93f8ffe"
+  },
+  "C/units.jsonl": {
+   "bytes": 2967815,
+   "sha256": "630bce360ba30b4ec6fe428bbc43737fb600e22534caa6094a2ea6de4e92402e"
+  },
+  "chunks/BOOK_en.json": {
+   "bytes": 749,
+   "sha256": "396bb3bda45aa7aa9d81b7e09da8e9e8dce97b8e28f996d71272ea82ac62e69c"
+  },
+  "chunks/BOOK_en.npz": {
+   "bytes": 28087372,
+   "sha256": "63380d42ff096ddf8e2ba1d51bb819e31341c6ea498f857d16201be82b36b8b5"
+  },
+  "chunks/BOOK_fa.json": {
+   "bytes": 749,
+   "sha256": "5374d82a22aa763216b549e0f19e69b003acc6b6414c07e1e0fed84eb9d857ab"
+  },
+  "chunks/BOOK_fa.npz": {
+   "bytes": 25481780,
+   "sha256": "182deee0a4158086953b505baf48ad38cf9fd02a22829fe26f49b30867660976"
+  },
+  "chunks/C.json": {
+   "bytes": 748,
+   "sha256": "86f6e717280bec7acc881186d5075ec23eeead95036a75847ff141957778699c"
+  },
+  "chunks/C.npz": {
+   "bytes": 19200492,
+   "sha256": "07af61559fbba7adbad02b880d977980c077c074f262f0f6478851b6986b39e2"
+  },
+  "chunks/D_en.json": {
+   "bytes": 750,
+   "sha256": "d4b0a6476d2c17a286ea25db27b27b8887817512646e795215dc4eddec85ebd8"
+  },
+  "chunks/D_en.npz": {
+   "bytes": 72450948,
+   "sha256": "7166b83b3a6130245aeec0c247029cde59db64334c8582ceeace7c701fdbae9a"
+  },
+  "chunks/LAW_en.json": {
+   "bytes": 748,
+   "sha256": "e86d113ebfa3f64e94576eae4a9f88a32caf60d3c24c11b4e8229334dfe7d8c2"
+  },
+  "chunks/LAW_en.npz": {
+   "bytes": 14975620,
+   "sha256": "6224abe9bd2743205be544534b612ed2f8a67f7f6709515e61ae51fcd7399efd"
+  },
+  "chunks/LAW_fa.json": {
+   "bytes": 748,
+   "sha256": "30a87d7dace1d0449c9506b215e3a9a330556fa10b1e4fb7f3ac92919c5ccac5"
+  },
+  "chunks/LAW_fa.npz": {
+   "bytes": 4368660,
+   "sha256": "85f55025d8c9a24385f2c8d613639cc648576a11b088b8546a3cfe9ef3eacdbf"
+  },
+  "D_en/bm25/data.csc.index.npy": {
+   "bytes": 8164644,
+   "sha256": "5a096c55835b02ea6962cad8e4c98a030067140dca1ba14a237fc760ba284f6f"
+  },
+  "D_en/bm25/indices.csc.index.npy": {
+   "bytes": 8164644,
+   "sha256": "abf569727d593c4c1eb4d16288a170f1d9c0f6615755364831f920ccfe02ebe9"
+  },
+  "D_en/bm25/indptr.csc.index.npy": {
+   "bytes": 493544,
+   "sha256": "4de07df11a844bc0ec990bab604ca173dab3348848ecb25487cbba8321d9522f"
+  },
+  "D_en/bm25/params.index.json": {
+   "bytes": 235,
+   "sha256": "5f66e0bce7fc3d5b0c6c4ddc55e15f0e6272e38a7cce9a2fa6f0c79d63540772"
+  },
+  "D_en/bm25/vocab.index.json": {
+   "bytes": 1069759,
+   "sha256": "47340eb91248bb69e60cfc700f11fdeb198842ec8213fec2f9cb4f27bfc4248b"
+  },
+  "D_en/m3.npz": {
+   "bytes": 137873380,
+   "sha256": "2eed05110bba5adca81b81da28b0df79d56cf3696684711cb0930ebbb0b82aae"
+  },
+  "D_en/manifest.json": {
+   "bytes": 660,
+   "sha256": "94b8f5d5cfac5ad05a282c13fa004b992d9bf0fec4aea2954e8e4c50c8e49ece"
+  },
+  "D_en/units.jsonl": {
+   "bytes": 11027369,
+   "sha256": "a3751df4e581ad84f383995ba7568ab4557dffd0fb0180db4c60aceff75f9118"
+  },
+  "LAW_en/bm25/data.csc.index.npy": {
+   "bytes": 1224900,
+   "sha256": "bd5ccb03d532dd3cb4a2e62c7e020595750f70ebb406ff063a4d2fa745790087"
+  },
+  "LAW_en/bm25/indices.csc.index.npy": {
+   "bytes": 1224900,
+   "sha256": "b4dd65d4eb800339d1321d0f636fbbb82c5efaeb8e096cdf3d85364911e5d4d7"
+  },
+  "LAW_en/bm25/indptr.csc.index.npy": {
+   "bytes": 57280,
+   "sha256": "cd1efc60f8afaccd37be631594316767bba89f82ec49c102da63c98ed973887e"
+  },
+  "LAW_en/bm25/params.index.json": {
+   "bytes": 234,
+   "sha256": "338937f64c46f4ce4adc20bad0a0086f5f3ecb2efd03fc2c4edebaca8f9934ab"
+  },
+  "LAW_en/bm25/vocab.index.json": {
+   "bytes": 124793,
+   "sha256": "453e0765e8479c319de14257a63093dce3de397ba51a350a18f286b68b5dcab0"
+  },
+  "LAW_en/m3.npz": {
+   "bytes": 17967596,
+   "sha256": "9962d0bef0e2d3c6c0cbeed8f04dd2c0bd285635e19b1c9f4b66bb90f287307c"
+  },
+  "LAW_en/manifest.json": {
+   "bytes": 657,
+   "sha256": "1a423768d7c9a46ef2a7a1b8cb897afd73b4b3b2b09c8c49e55095025ee11a5a"
+  },
+  "LAW_en/units.jsonl": {
+   "bytes": 1310650,
+   "sha256": "8f047706abea9e85a9ce9baa7df853e9920dc8f7868954f127bebcbeb03b778e"
+  },
+  "LAW_fa/bm25/data.csc.index.npy": {
+   "bytes": 644200,
+   "sha256": "8cd025988dafa96cc56b0b97c9957b647091886e8e711cc826b4b9515084d172"
+  },
+  "LAW_fa/bm25/indices.csc.index.npy": {
+   "bytes": 644200,
+   "sha256": "cf741ff909403bc8ba68a9b3acff141ce5bc40c47490e663a9de2f647520cf07"
+  },
+  "LAW_fa/bm25/indptr.csc.index.npy": {
+   "bytes": 90616,
+   "sha256": "b7e1f044bfb7c03372cd5d211c2da777ef6e989859ff1b6b850311893b9f37f1"
+  },
+  "LAW_fa/bm25/params.index.json": {
+   "bytes": 234,
+   "sha256": "26626b561eee8595c2317e3bcc4834530bbdf3ea3f81cf0374ee2b8f5a8422d2"
+  },
+  "LAW_fa/bm25/vocab.index.json": {
+   "bytes": 253117,
+   "sha256": "fbed1f2f8fd569f7566c126caa6ea8a6240ef1a7fda7411d5d2b2386067de890"
+  },
+  "LAW_fa/m3.npz": {
+   "bytes": 9609812,
+   "sha256": "777a6fcca5ab587a99c42d686ac48c5dc61b4bfa84d82c2aea9be33736799645"
+  },
+  "LAW_fa/manifest.json": {
+   "bytes": 657,
+   "sha256": "fd9ca0d8805dde651b2d65896e86d6a05453d53312527fabc7e8a7567b4e3157"
+  },
+  "LAW_fa/units.jsonl": {
+   "bytes": 737969,
+   "sha256": "51e7fdf2b6206144b3e66ea3cb01cf98fec1edb90876bafde3d9dae9689b71a5"
+  }
+ }
+}

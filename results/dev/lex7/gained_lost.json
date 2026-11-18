@@ -1,0 +1,32 @@
+{
+ "gained_vs_rerank": [
+  "BOOK-en-T3-002 (0.17 vs 0.00)",
+  "BOOK-en-T3-003 (1.00 vs 0.67)",
+  "LAW-fa-T2-003 (1.00 vs 0.67)",
+  "LAW-en-T2-001 (1.00 vs 0.00)",
+  "LAW-en-T2-002 (1.00 vs 0.75)",
+  "RPT-en-T3-003 (0.75 vs 0.50)"
+ ],
+ "lost_vs_rerank": [
+  "BOOK-fa-T2-002 (0.33 vs 0.67)",
+  "BOOK-en-T2-001 (0.50 vs 0.75)",
+  "BOOK-en-T2-002 (0.60 vs 0.80)",
+  "BOOK-en-T3-001 (0.25 vs 0.75)",
+  "LAW-fa-T3-002 (0.67 vs 1.00)",
+  "RPT-fa-T2-001 (0.00 vs 0.50)",
+  "RPT-fa-T2-003 (0.00 vs 1.00)",
+  "RPT-fa-T3-002 (0.50 vs 1.00)",
+  "RPT-en-T2-003 (0.50 vs 1.00)"
+ ],
+ "gained_vs_HYBRID": [
+  "BOOK-fa-T2-002 (0.33 vs 0.00)",
+  "BOOK-fa-T3-003 (0.50 vs 0.00)",
+  "BOOK-en-T1-001 (1.00 vs 0.00)",
+  "LAW-en-T2-001 (1.00 vs 0.78)",
+  "RPT-fa-T2-002 (1.00 vs 0.50)",
+  "RPT-fa-T3-003 (0.50 vs 0.00)"
+ ],
+ "lost_vs_HYBRID": [
+  "BOOK-en-T3-002 (0.17 vs 0.33)"
+ ]
+}

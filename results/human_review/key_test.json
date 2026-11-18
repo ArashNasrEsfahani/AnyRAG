@@ -1,0 +1,778 @@
+{
+ "seed": 11,
+ "source": "test_run GLM @6000 discordant pairs (LEX5B vs HYBRID/HR, SETR vs LEX5B)",
+ "items": [
+  {
+   "item": "T01",
+   "qid": "V2-test-BOOK-en-T3-005",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 1
+   }
+  },
+  {
+   "item": "T02",
+   "qid": "V2-test-BOOK-fa-T2-005",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T03",
+   "qid": "V2-test-LAW-fa-T3-004",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 0
+   }
+  },
+  {
+   "item": "T04",
+   "qid": "V2-test-LAW-en-T2-005",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": null
+   }
+  },
+  {
+   "item": "T05",
+   "qid": "V2-test-LAW-en-T2-002",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 1
+   }
+  },
+  {
+   "item": "T06",
+   "qid": "V2-test-BOOK-fa-T2-003",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 0
+   }
+  },
+  {
+   "item": "T07",
+   "qid": "V2-test-BOOK-fa-T2-001",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T08",
+   "qid": "V2-test-RPT-en-T3-004",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T09",
+   "qid": "V2-test-LAW-en-T1-004",
+   "arms": [
+    "HYBRID_6000",
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0,
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T10",
+   "qid": "V2-test-RPT-en-T2-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T11",
+   "qid": "V2-test-RPT-en-T2-001",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T12",
+   "qid": "V2-test-BOOK-fa-T1-005",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T13",
+   "qid": "V2-test-LAW-en-T2-001",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T14",
+   "qid": "V2-test-RPT-en-T3-005",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T15",
+   "qid": "V2-test-LAW-en-T2-005",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T16",
+   "qid": "V2-test-BOOK-fa-T2-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T17",
+   "qid": "V2-test-RPT-en-T2-003",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T18",
+   "qid": "V2-test-RPT-en-T3-002",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T19",
+   "qid": "V2-test-RPT-en-T2-001",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T20",
+   "qid": "V2-test-LAW-fa-T2-002",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": null
+   }
+  },
+  {
+   "item": "T21",
+   "qid": "V2-test-LAW-en-T3-004",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T22",
+   "qid": "V2-test-BOOK-fa-T1-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T23",
+   "qid": "V2-test-RPT-en-T3-002",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T24",
+   "qid": "V2-test-RPT-en-T2-005",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T25",
+   "qid": "V2-test-RPT-en-T2-003",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 0
+   }
+  },
+  {
+   "item": "T26",
+   "qid": "V2-test-BOOK-fa-T2-005",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 1
+   }
+  },
+  {
+   "item": "T27",
+   "qid": "V2-test-BOOK-fa-T2-003",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T28",
+   "qid": "V2-test-BOOK-en-T3-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T29",
+   "qid": "V2-test-RPT-en-T3-005",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 0
+   }
+  },
+  {
+   "item": "T30",
+   "qid": "V2-test-LAW-fa-T2-002",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T31",
+   "qid": "V2-test-LAW-en-T2-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T32",
+   "qid": "V2-test-LAW-en-T2-002",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T33",
+   "qid": "V2-test-RPT-en-T3-001",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": null
+   }
+  },
+  {
+   "item": "T34",
+   "qid": "V2-test-LAW-fa-T1-002",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T35",
+   "qid": "V2-test-LAW-fa-T2-002",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 1
+   }
+  },
+  {
+   "item": "T36",
+   "qid": "V2-test-LAW-fa-T2-004",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T37",
+   "qid": "V2-test-RPT-en-T3-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T38",
+   "qid": "V2-test-BOOK-fa-T2-001",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T39",
+   "qid": "V2-test-RPT-fa-T2-002",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T40",
+   "qid": "V2-test-LAW-fa-T3-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T41",
+   "qid": "V2-test-RPT-en-T3-001",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T42",
+   "qid": "V2-test-LAW-en-T2-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T43",
+   "qid": "V2-test-LAW-en-T3-003",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T44",
+   "qid": "V2-test-RPT-fa-T2-003",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T45",
+   "qid": "V2-test-RPT-fa-T2-003",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": null
+   }
+  },
+  {
+   "item": "T46",
+   "qid": "V2-test-BOOK-fa-T2-003",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T47",
+   "qid": "V2-test-RPT-fa-T2-002",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T48",
+   "qid": "V2-test-LAW-fa-T2-003",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T49",
+   "qid": "V2-test-RPT-en-T2-004",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T50",
+   "qid": "V2-test-LAW-fa-T2-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T51",
+   "qid": "V2-test-BOOK-en-T2-002",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 1
+   }
+  },
+  {
+   "item": "T52",
+   "qid": "V2-test-LAW-fa-T2-002",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 1
+   }
+  },
+  {
+   "item": "T53",
+   "qid": "V2-test-BOOK-en-T2-002",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 1
+   }
+  },
+  {
+   "item": "T54",
+   "qid": "V2-test-BOOK-fa-T1-005",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T55",
+   "qid": "V2-test-BOOK-fa-T1-005",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 0
+   }
+  },
+  {
+   "item": "T56",
+   "qid": "V2-test-LAW-en-T2-004",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 0
+   }
+  },
+  {
+   "item": "T57",
+   "qid": "V2-test-RPT-fa-T2-002",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T58",
+   "qid": "V2-test-BOOK-en-T2-002",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T59",
+   "qid": "V2-test-LAW-fa-T1-002",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 1
+   }
+  },
+  {
+   "item": "T60",
+   "qid": "V2-test-LAW-fa-T3-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T61",
+   "qid": "V2-test-LAW-fa-T2-003",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T62",
+   "qid": "V2-test-BOOK-fa-T2-003",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T63",
+   "qid": "V2-test-RPT-fa-T2-003",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T64",
+   "qid": "V2-test-RPT-en-T3-002",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 1
+   }
+  },
+  {
+   "item": "T65",
+   "qid": "V2-test-BOOK-en-T2-002",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T66",
+   "qid": "V2-test-LAW-en-T3-003",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T67",
+   "qid": "V2-test-RPT-en-T2-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T68",
+   "qid": "V2-test-LAW-en-T2-005",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T69",
+   "qid": "V2-test-LAW-en-T2-001",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T70",
+   "qid": "V2-test-LAW-en-T3-001",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T71",
+   "qid": "V2-test-RPT-en-T3-005",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T72",
+   "qid": "V2-test-RPT-en-T3-005",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 0
+   }
+  },
+  {
+   "item": "T73",
+   "qid": "V2-test-LAW-en-T2-004",
+   "arms": [
+    "HYBRID_6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID_6000": 0
+   }
+  },
+  {
+   "item": "T74",
+   "qid": "V2-test-LAW-en-T3-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 0
+   }
+  },
+  {
+   "item": "T75",
+   "qid": "V2-test-LAW-en-T1-004",
+   "arms": [
+    "LEX5B_6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B_6000": 1
+   }
+  },
+  {
+   "item": "T76",
+   "qid": "V2-test-LAW-en-T3-001",
+   "arms": [
+    "HR_6000"
+   ],
+   "strict_verdicts": {
+    "HR_6000": 1
+   }
+  },
+  {
+   "item": "T77",
+   "qid": "V2-test-LAW-fa-T3-005",
+   "arms": [
+    "SETR_6000"
+   ],
+   "strict_verdicts": {
+    "SETR_6000": 1
+   }
+  }
+ ]
+}

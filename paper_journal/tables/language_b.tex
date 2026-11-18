@@ -1,0 +1,28 @@
+\begin{table}[tp]
+\caption{Post hoc. Retrieval when each question is asked in the other language}
+\label{tab:language}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}p{3.1cm}cc@{}}
+\toprule
+Question language swapped & Persian pool & English pool \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Complete bundle in the top 40 (of 45), original $\to$ translated}} \\
+BM25 & 37 $\to$ 2 & 29 $\to$ 8 \\
+Dense & 38 $\to$ 35 & 33 $\to$ 28 \\
+Hybrid (rank fusion) & 39 $\to$ 33 & 33 $\to$ 27 \\
+Hybrid and reranker & 39 $\to$ 35 & 36 $\to$ 28 \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Complete bundle in the 6,000-character pack (of 45)}} \\
+BM25 & 25 $\to$ 0 & 20 $\to$ 4 \\
+Dense & 26 $\to$ 21 & 21 $\to$ 16 \\
+Hybrid (rank fusion) & 33 $\to$ 19 & 24 $\to$ 16 \\
+Hybrid and reranker & 34 $\to$ 29 & 29 $\to$ 20 \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Correct answers (of 45)}} \\
+\hr{} & 36 $\to$ 28 & 33--35 $\to$ 25--26 \\
+Closed book & 6 $\to$ 4--5 & 20 $\to$ 18 \\
+\bottomrule
+\end{tabular}
+\end{table}

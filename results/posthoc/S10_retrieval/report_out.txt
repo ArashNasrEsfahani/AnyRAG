@@ -1,0 +1,258 @@
+{
+ "table": {
+  "DENSE_6000": {
+   "acc90": [
+    53,
+    53
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    53,
+    53
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 96
+   },
+   "evidence_chars_mean": 5937.3,
+   "answer_prompt_tokens_mean": 2109.6,
+   "answer_completion_tokens_mean": 127.1,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "DENSE_15500": {
+   "acc90": [
+    63,
+    63
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    63,
+    63
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 96
+   },
+   "evidence_chars_mean": 15436.9,
+   "answer_prompt_tokens_mean": 5143.1,
+   "answer_completion_tokens_mean": 139.8,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "BM25_6000": {
+   "acc90": [
+    48,
+    48
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    48,
+    48
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 95,
+    "frozen": 1
+   },
+   "evidence_chars_mean": 5952.9,
+   "answer_prompt_tokens_mean": 2085.2,
+   "answer_completion_tokens_mean": 118.1,
+   "tokens_n": 89,
+   "llm_calls_per_question": 1
+  },
+  "BM25_15500": {
+   "acc90": [
+    61,
+    61
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    61,
+    61
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 96
+   },
+   "evidence_chars_mean": 15450.9,
+   "answer_prompt_tokens_mean": 5051.8,
+   "answer_completion_tokens_mean": 128.1,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HYBRID_6000": {
+   "acc90": [
+    62,
+    63
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    62,
+    63
+   ],
+   "unresolved": 1,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 5952.8,
+   "answer_prompt_tokens_mean": 2096.8,
+   "answer_completion_tokens_mean": 130.3,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HR_6000": {
+   "acc90": [
+    69,
+    71
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    69,
+    71
+   ],
+   "unresolved": 2,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 5955.3,
+   "answer_prompt_tokens_mean": 2115.9,
+   "answer_completion_tokens_mean": 132.3,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HYBRID_15500": {
+   "acc90": [
+    68,
+    68
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    68,
+    68
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 15448.1,
+   "answer_prompt_tokens_mean": 5112.5,
+   "answer_completion_tokens_mean": 137.0,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HR_15500": {
+   "acc90": [
+    69,
+    70
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    69,
+    70
+   ],
+   "unresolved": 1,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 15440.0,
+   "answer_prompt_tokens_mean": 5164.8,
+   "answer_completion_tokens_mean": 139.6,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "LEX5B_6000": {
+   "acc90": [
+    68,
+    69
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    68,
+    69
+   ],
+   "unresolved": 1,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 5768.6,
+   "answer_prompt_tokens_mean": 2041.5,
+   "answer_completion_tokens_mean": 137.3,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "LEX5B_15500": {
+   "acc90": [
+    67,
+    67
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    67,
+    67
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 15213.2,
+   "answer_prompt_tokens_mean": 5055.6,
+   "answer_completion_tokens_mean": 143.6,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  }
+ },
+ "family_size": 12
+}
+DENSE_6000 vs BM25_6000      n=90 (53, 53) vs (48, 48) net [5, 5] p [0.4731, 0.4731] ci_q [-6.7, 17.8] ci_c [-5.6, 13.4] bw [18, 13]
+DENSE_6000 vs HYBRID_6000    n=90 (53, 53) vs (62, 63) net [-10, -9] p [0.0639, 0.0931] ci_q [-21.1, 0.0] ci_c [-25.0, -1.1] bw [7, 16]
+BM25_6000 vs HYBRID_6000     n=90 (48, 48) vs (62, 63) net [-15, -14] p [0.0007, 0.0013] ci_q [-25.6, -6.7] ci_c [-24.7, -7.1] bw [2, 16]
+DENSE_6000 vs HR_6000        n=90 (53, 53) vs (69, 71) net [-18, -16] p [0.0005, 0.0015] ci_q [-30.0, -7.8] ci_c [-33.8, -10.1] bw [4, 20]
+BM25_6000 vs HR_6000         n=90 (48, 48) vs (69, 71) net [-23, -21] p [0.0, 0.0] ci_q [-35.6, -13.3] ci_c [-33.3, -15.4] bw [2, 23]
+DENSE_15500 vs BM25_15500    n=90 (63, 63) vs (61, 61) net [2, 2] p [0.7744, 0.7744] ci_q [-5.6, 10.0] ci_c [-4.9, 11.3] bw [7, 5]
+DENSE_15500 vs HYBRID_15500  n=90 (63, 63) vs (68, 68) net [-5, -5] p [0.2668, 0.2668] ci_q [-13.3, 2.2] ci_c [-12.6, 3.9] bw [4, 9]
+BM25_15500 vs HYBRID_15500   n=90 (61, 61) vs (68, 68) net [-7, -7] p [0.0391, 0.0391] ci_q [-14.4, -2.2] ci_c [-13.5, -1.8] bw [1, 8]
+DENSE_15500 vs HR_15500      n=90 (63, 63) vs (69, 70) net [-7, -6] p [0.1435, 0.2379] ci_q [-16.7, 2.2] ci_c [-16.5, 5.8] bw [5, 12]
+BM25_15500 vs HR_15500       n=90 (61, 61) vs (69, 70) net [-9, -8] p [0.0352, 0.0768] ci_q [-18.9, 0.0] ci_c [-15.5, -1.4] bw [3, 12]
+DENSE_15500 vs DENSE_6000    n=90 (63, 63) vs (53, 53) net [10, 10] p [0.0414, 0.0414] ci_q [2.2, 21.1] ci_c [2.8, 23.9] bw [15, 5]
+BM25_15500 vs BM25_6000      n=90 (61, 61) vs (48, 48) net [13, 13] p [0.0044, 0.0044] ci_q [5.6, 23.3] ci_c [5.8, 20.4] bw [16, 3]
+6000 {'n': 90, 'dense_only': 18, 'bm25_only': 13, 'both_right': 35, 'both_wrong': 24, 'by': {'tier': {'T1': [2, 4], 'T2': [8, 6], 'T3': [8, 3]}, 'lang': {'en': [9, 7], 'fa': [9, 6]}, 'genre': {'BOOK': [6, 3], 'LAW': [7, 4], 'RPT': [5, 6]}, 'subtype': {'T1_fact': [2, 4], 'T2_bounded_synthesis': [0, 1], 'T2_comparison_derivation': [4, 3], 'T2_definition_bridge': [1, 1], 'T2_rule_exception': [3, 1], 'T3_bounded_aggregation': [1, 0], 'T3_cross_doc_bridge': [1, 2], 'T3_cross_subject': [1, 0], 'T3_cross_time_version': [5, 1]}}, 'oracle_either': 66}
+15500 {'n': 90, 'dense_only': 7, 'bm25_only': 5, 'both_right': 56, 'both_wrong': 22, 'by': {'tier': {'T1': [1, 1], 'T2': [3, 3], 'T3': [3, 1]}, 'lang': {'en': [4, 3], 'fa': [3, 2]}, 'genre': {'BOOK': [0, 3], 'LAW': [4, 0], 'RPT': [3, 2]}, 'subtype': {'T1_fact': [0, 1], 'T1_list_local': [1, 0], 'T2_bounded_synthesis': [0, 1], 'T2_comparison_derivation': [1, 1], 'T2_rule_exception': [2, 1], 'T3_cross_doc_bridge': [1, 1], 'T3_cross_subject': [1, 0], 'T3_cross_time_version': [1, 0]}}, 'oracle_either': 68}

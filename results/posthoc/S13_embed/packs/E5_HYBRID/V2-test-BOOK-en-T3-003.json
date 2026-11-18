@@ -1,0 +1,18 @@
+{
+ "arm": "E5_HYBRID",
+ "question_id": "V2-test-BOOK-en-T3-003",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6001 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "34682c637414534a07271c7d9fb1d8b90321e0f165319a4e468470c328f98cbf",
+ "evidence_chars": 5830
+}

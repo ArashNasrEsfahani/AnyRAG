@@ -1,0 +1,16 @@
+{
+ "qid": "V2-test-LAW-fa-T3-005",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 514 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6044 chars]"
+  }
+ ],
+ "messages_sha256": "38cfbd9f414dfdee90850e760c17735ed7d7153a7028b6176542987e2fc99983",
+ "num_predict": 900
+}

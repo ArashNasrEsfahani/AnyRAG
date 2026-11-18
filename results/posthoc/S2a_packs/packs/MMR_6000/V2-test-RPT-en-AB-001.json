@@ -1,0 +1,18 @@
+{
+ "arm": "MMR_6000",
+ "question_id": "V2-test-RPT-en-AB-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6076 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "a4ddf1959c69e426a35e259da1386fc4adca2a52ad6b74005c331498f0b55a80",
+ "evidence_chars": 5973
+}

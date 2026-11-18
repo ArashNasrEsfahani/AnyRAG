@@ -1,0 +1,37 @@
+% src: work/datasets_v2/questions/law_dev.jsonl, id V2-dev-LAW-fa-T3-001 (dev question; quotes verbatim from the frozen pool)
+% Illustration only (no plotted numbers). Style: tcolorbox cards in the shared figure palette (figures/style.tex).
+\begin{figure}[tp]
+\centering
+\tcbset{excard/.style={enhanced, boxrule=0.6pt, arc=3pt, left=4pt, right=4pt, top=9pt, bottom=3pt, fontupper=\small,
+  colframe=cAxis!60, colback=white, coltitle=white, colbacktitle=cAxis, fonttitle=\footnotesize\bfseries,
+  attach boxed title to top left={xshift=6pt, yshift=-2.2mm}, boxed title style={arc=2pt, boxrule=0pt}, before skip=8pt, after skip=3pt},
+  exdoc/.style={enhanced, boxrule=0pt, arc=0pt, leftrule=2.2pt, colframe=cHR, colback=cHR!6, left=4pt, right=3pt, top=1pt,
+  bottom=1pt, fontupper=\small, before skip=3pt, after skip=2pt}}
+\begin{tcolorbox}[excard, title={Question\enspace LAW-fa\enspace T3, cross-version}]
+\begin{otherlanguage}{persian}
+حداقل سنی که برای متقاضی امتیاز روزنامه یا نشریه تعیین شده بود، از لایحهٔ قانونی مطبوعات ۱۳۳۴ تا قانون مطبوعات ۱۳۶۴ چه تغییری کرد؟\par
+\end{otherlanguage}
+{\footnotesize\color{cAxis}\textit{Gloss:} How did the minimum age set for an applicant for a newspaper or periodical licence change from the 1334 [1955] Press Bill to the 1364 [1985] Press Law?\par}
+\end{tcolorbox}
+\begin{tcolorbox}[excard, title={Evidence bundle\enspace two documents}]
+\begin{tcolorbox}[exdoc]
+{\footnotesize\bfseries press-bill-1334}\par
+\begin{otherlanguage}{persian}
+درخواست کننده اجازه باید دارای شرایط ذیل باشد: \ldots{} ب - سن او از سی سال کمتر نباشد.\par
+\end{otherlanguage}
+{\footnotesize\color{cAxis}\textit{The applicant must meet the following conditions: \ldots{} b. be not younger than thirty.}\par}
+\end{tcolorbox}
+\begin{tcolorbox}[exdoc, colframe=cLex, colback=cLex!6]
+{\footnotesize\bfseries press-law-1364}\par
+\begin{otherlanguage}{persian}
+شخص حقیقی متقاضی صاحب امتیاز باید دارای شرایط زیر باشد: \ldots{} 2- دارا بودن حداقل 25 سال.\par
+\end{otherlanguage}
+{\footnotesize\color{cAxis}\textit{A natural person applying for a licence must meet the following conditions: \ldots{} 2. be at least 25 years old.}\par}
+\end{tcolorbox}
+\end{tcolorbox}
+\begin{tcolorbox}[excard, title={Expected answer\enspace gloss}]
+30 years under the 1334 bill (Art.~3(b)); 25 years under the 1364 law (Art.~9(2)); the minimum age fell by 5 years.
+\end{tcolorbox}
+\caption{A development question (T3, cross-version comparison) with its evidence bundle. The question says ``applicant for a licence''; the 1334 text says ``the person requesting permission''.}
+\label{fig:example}
+\end{figure}

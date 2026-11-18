@@ -1,0 +1,24 @@
+{
+ "cost_usd": 1.32387021,
+ "calls": 3706,
+ "by_model": {
+  "z-ai/glm-5.3-flash": {
+   "calls": 2136,
+   "cost_usd": 1.04326341,
+   "prompt_tokens": 7257331,
+   "completion_tokens": 269028
+  },
+  "google/gemini-3.1-flash-lite": {
+   "calls": 98,
+   "cost_usd": 0.07816075,
+   "prompt_tokens": 230017,
+   "completion_tokens": 13771
+  },
+  "openai/gpt-oss-120b": {
+   "calls": 1472,
+   "cost_usd": 0.20244605,
+   "prompt_tokens": 2426978,
+   "completion_tokens": 662636
+  }
+ }
+}

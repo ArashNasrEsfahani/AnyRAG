@@ -1,0 +1,40 @@
+\section{Protocol and Its Changes}
+\label{app:timeline}
+% src: work/TODO.md (dated log, entries 2026-10-06); TEST_RESULTS_HUMAN_SYM.md; lex5b/LEX5B.md; dev60/DEV60.md; budget_matrix/BUDGET_MATRIX.md;
+%      test_freeze/PROTOCOL.md sec. 1-10 (sec. 3 operational note 2026-10-01 23:10, sec. 5 bounds, sec. 6, 9, 10 amendment 2);
+%      test_run/TEST_RESULTS.md sec. 7 (61 cleanup tries, 123 reruns logged); lex5_pilot/PILOT.md (selector call tokens);
+%      lex7/LEX7_OFFLINE.md row O1 (945 tokens); TEST_RESULTS_HUMAN.md (half-correct rule); TEST_RESULTS_HUMAN_SYM.md header + sec. 1
+
+Table~\ref{tab:timeline} lists every change to the protocol of Section~\ref{sec:protocol}, with its date and its timing relative to the results. During development most decisions were screened on a fixed 24-question dev subset and on offline decisive-span retention over the 54 answerable dev questions. The frozen manifest covers questions, pools, indexes, reader pins and token calibration, and the runner refuses a modified code tree.
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}p{1.6cm}Xp{5.4cm}@{}}
+\toprule
+Date (2026) & Change & Timing relative to results \\
+\midrule
+09-25 & Benchmark frozen; dev run with 11 pipelines and a local reader; development gates fixed (+3/54 vs.\ each control; tokens, p50, p95 $\le1.5\times$) & before any method result on the benchmark \\
+09-26 & Development reader switched to GLM-5.3-flash via API & after a diagnosis showed the local 4B reader was the bottleneck \\
+09-26 & Token gate 1.5$\times\to$2.5$\times$ \hybrid{} tokens & before any \lexb{} result; after the full-passage selector pilot showed 3.5--4.3$\times$ \\
+09-26 & Evidence budget made a study variable (6,000 and 15,500 chars for every pipeline) & after \hybrid@15,500 scored 19/24 on the screen \\
+09-26 & \lexb{} latency reported as a trade-off, not a gate & after \lexb{} failed the latency gate on the 24-question screen \\
+10-01 & Test protocol frozen (commit b31cd4c): pipelines, gates, judge pin, first-verdict-final rule, needs-adjudication policy; dev record corrections declared (a contradictory dev verdict; a replay under the frozen parser) & before any test answer \\
+10-01 & Re-freeze (commit 77924d4): \setr{} added as a no-gate baseline; five more readers; shared answer packs & before any test answer; after \setr{} led on dev \\
+10-01 -- 10-04 & Test run interrupted by the author (GPU needed elsewhere) at about question 4 of 96 and resumed on the same commit; one hung cell killed before writing a record and re-run & during the test; no answered cell re-run \\
+10-04 & Infrastructure clean-up: cells whose every record was an HTTP 429 or a local connection error retried (concurrency 1, back-off, $\le$5 tries; 61 tries, all succeeded) & after all cells were attempted \\
+10-04 & Report-script fixes (verdict lookup by answer, token calibration for non-primary readers, file encoding) & before the report was generated; gate numbers unaffected \\
+10-05 & Blinded human review of 77 test items; rule ``half correct = wrong, unsure = machine'' applied to dev and test & after the machine results were known \\
+10-06 & The first human review was found to be asymmetric (\lexb{} 30 reviewed cells, controls 15--17); the 42 missing cells of the same 30 questions were reviewed blind (39 items) and the symmetric merge replaced the asymmetric one & after the asymmetric result (+8, Holm .043) had been reported in the draft; no test answer changed \\
+10-06 & Paper statistics revised: bounds instead of zero-filled points, sign-test ranges over unresolved cells, intervals over source groups; the frozen report is unchanged & after all results; gate decision unchanged \\
+\bottomrule
+\end{tabularx}
+\caption{Dated record of protocol changes. The development variants of Table~\ref{tab:negative-full} were run between the 09-25 and 10-01 entries.}
+\label{tab:timeline}
+\end{table*}
+
+Three of the changes need a note on why they were made. The token gate was relaxed because the full-passage selectors piloted at the time needed 5--7k selector tokens per question, while the original gate left about 1.1k (half of \hybrid's roughly 2.2k); a smaller excerpt-only order fixer later used 945 tokens, so the old gate did not exclude every LLM selector. \setr{} was added because it led on dev, and excluding a baseline adapted from published work after seeing it win would have been selective. The judge was pinned because, on dev, the unpinned judge scored one identical answer as both correct and incorrect on two occasions.
+
+On test, retrieval, reranking and selection ran once per question and cell with the primary reader. The primary cells ran one process at a time, with the pipeline order rotated per question, while the other five readers answered the saved packs in parallel and judging ran as answers arrived. An operational note added at the start of the run changed no method, arm, reader setting or gate. A selector deadline is a completed execution and is never re-run. Infrastructure failures were allowed one re-run, extended on 10-04 to five tries for cells whose records were all HTTP 429 or local connection errors; the log holds 123 re-run entries in total, 61 of them clean-up tries for one replay reader, and no cell that had produced an answer was re-run.
+
+For the resource gate, calls with unknown usage are bounded per call and never counted as zero, and the comparison is with the concurrent \hybrid\textsubscript{6000} run over all 96 questions. A malformed judge reply was retried up to three times with identical input, and if none parsed the cell was marked \emph{needs adjudication} and enters totals and differences as bounds (0 and 1). The first valid verdict for an answer is final. The frozen report script excluded unresolved pairs from the sign test, zero-filled them in point estimates and bootstraps, and clustered by the full family label. This paper instead reports bounds over unresolved cells, the sign-test $p$ range over every assignment, and clusters that are connected components of shared constituent families (script in the release).

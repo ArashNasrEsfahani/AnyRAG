@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-LAW-fa-T2-003",
+ "variant": "LEX5B",
+ "setting": "fa-fa",
+ "q_lang": "fa",
+ "rid": "be420d6df0238bc361f6",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5972 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "purpose": "answer",
+ "messages_sha256": "50f3e9a9f9cb9d4bc8d3f8b0f4950e2e05fd4f1fd0e1e31734b26ffc9319087b",
+ "evidence_chars": 5725,
+ "at": "2026-10-04T20:47:48"
+}

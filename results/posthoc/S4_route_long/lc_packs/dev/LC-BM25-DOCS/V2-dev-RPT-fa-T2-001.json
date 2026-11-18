@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T2-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79155 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "5570df56a9f8f92a7ed5617155f30e5cfe9f69ad8a7a3b7cfb15e2b64b6563d9",
+ "evidence_chars": 79065,
+ "prompt_chars": 79686,
+ "est_prompt_tokens": 31519,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.divar_annual-report_1397.fa",
+    "score": 4.34
+   },
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "score": 4.264
+   },
+   {
+    "doc": "C.divar_annual-report_1400.fa",
+    "score": 3.969
+   },
+   {
+    "doc": "C.tipax_annual-report_1400.fa",
+    "score": 3.557
+   },
+   {
+    "doc": "C.maxholding_adtech-report_1403.fa",
+    "score": 3.539
+   },
+   {
+    "doc": "C.divar_annual-report_1398.fa",
+    "score": 3.5
+   },
+   {
+    "doc": "C.khanoumi_annual-report_1404.fa",
+    "score": 3.498
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 3.437
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.divar_annual-report_1397.fa",
+    "doc_chars": 29865,
+    "shown": 29865,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "doc_chars": 77645,
+    "shown": 49106,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

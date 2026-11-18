@@ -1,0 +1,23 @@
+% src: questions/*_test.jsonl (wording, documents per T3 gold, requirements); paper/analysis/revision_stats.md "Families"
+%      (labels 47, constituents 33, components 20, blocks 29); work/memory review budget (about 20 s/question, at most 1 h)
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Property (test set) & Value \\
+\midrule
+Questions / answerable & 96 / 90 \\
+Paraphrased / ordinary wording & 62 / 34 \\
+T3 gold over 2 / 3--4 documents & 27 / 3 \\
+Requirements per question & mostly 2--3 \\
+Source blocks & 29 \\
+Family labels / constituents & 47 / 33 \\
+Connected components & 20 \\
+\midrule
+Author review budget & ${\approx}$20\,s/question, $\le$1\,h \\
+\bottomrule
+\end{tabular}
+\caption{Composition of the test set. A family label names a question's source material; composite labels share constituents with single ones. Linked questions form the connected components used for clustered intervals (1 to 15 questions each).}
+\label{tab:composition}
+\end{table}

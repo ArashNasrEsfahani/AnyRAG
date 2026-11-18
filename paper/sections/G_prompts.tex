@@ -1,0 +1,92 @@
+\section{Prompts}
+\label{app:prompts}
+% src: RAG-Paper-upgrades/ragbench/approaches/lex5b/views.py (PROMPT); ragbench/contracts.py (ANSWER_V2_* systems)
+% Blind-review fix (2026-10-07): all prompts verbatim from the frozen code tree (RAG-Paper-upgrades, commit 77924d4, clean):
+%   answer: contracts.py _V2_HEAD, SOURCE_RULE_EVIDENCE, ABSTAIN_RULE_EVIDENCE, ANSWER_V2_{SINGLE,LIST,COMPARISON,SERIES,
+%     EXPLANATION}_SYSTEM, ANSWER_USER_EVIDENCE, V2_ABSTAIN_FORMAT, LANG_NAMES; config.yaml evidence.abstain_token NOT_FOUND;
+%   SetR: approaches/setr/approach.py SYSTEM, USER, render_passage;
+%   judge: tools/judge_multi.py V2_MULTI_SYSTEM, V2_MULTI_USER, V2_UNANS_SYSTEM, V2_UNANS_USER, reference_packet_v2,
+%     parse_multi, score_v2 (rubric "judge-multi v2 (strict)", MANIFEST.json judge). Python's doubled braces are shown single.
+
+The selector, answer and judge prompts used on test are reproduced here verbatim, with placeholders in braces. The SetR and unanswerable-question judge prompts are described in a line each, and their full text is in the release.
+
+\emph{\lexb{} selector.} In this prompt, \texttt{\{legend\}} lists the documents as \texttt{D<k>: title}, and each passage is rendered as \texttt{[n] D<k> > section}, followed by its excerpt. The parser reads ``at most 2 alternatives'' as at most two bundles per part, a first choice and one alternative (Appendix~\ref{app:implementation}).
+\begin{lstlisting}
+You are selecting evidence passages for a question. Read the question and the numbered passages. Each passage is shown by its document, its section and a short excerpt; the full passage is longer.
+
+Question: {question}
+
+Documents:
+{legend}
+
+Passages:
+{passages}
+
+Task:
+1. Split the question into the separate parts it asks for: one part per separate piece of information needed to answer it. A simple question has one part. Use at most 8 parts.
+2. For each part, give the passages that together fully support its answer. Include every passage the answer depends on: each value or operand, each condition, qualifier, exception or definition - not only the passage that states the final answer. Join passages that are needed together with +. If a different set of passages would also fully support the part on its own, give it after | as an alternative (at most 2 alternatives, best first). Do not list passages that are only on a related topic. If no passage supports a part, write NONE.
+
+Reply with exactly these lines and nothing else (numbers are passage numbers). The first line gives the number of parts, then one line per part, and the last line is the word END. An alternative must be a different set of passages.
+parts=<number of parts>
+P1: <passages joined by +> | <alternative passages joined by +>
+P2: NONE
+END
+Always finish your reply with the line END.
+\end{lstlisting}
+
+\emph{Answer prompts.} All pipelines and readers use the same system prompt for a given answer format. It starts with a shared head, in which \texttt{\{answer\_lang\}} is \texttt{Persian (Farsi)} or \texttt{English}:
+\begin{lstlisting}
+You answer questions about documents such as company reports, books and laws.
+Use only the numbered evidence passages in the user message.
+If the answer is not there, reply with exactly NOT_FOUND and nothing else.
+Answer in {answer_lang}.
+\end{lstlisting}
+The format instruction follows on the same line as the last sentence of the head. The five instructions are:
+\begin{lstlisting}
+[single] The question asks for one fact. Reply with the answer only, in one or two short sentences, naming what it applies to (the subject and, where the question fixes them, the period, version or condition). Copy numbers exactly as they are written, with their unit. Do not explain your reasoning.
+
+[list] The question asks for several items. Give them as a numbered list, one short line each, naming the subject, period or version of an item whenever the question spans more than one. List each item once. Copy numbers exactly as they are written. Do not explain your reasoning.
+
+[comparison] The question compares things across subjects, documents, periods or versions. First give each value or statement the comparison needs on its own line, in the form <subject> - <period or version>: <value or statement>, and write NOT_FOUND for one you cannot give. Then give the comparison, difference or calculation the question asks for in one or two short sentences, with any arithmetic in brief. If the definitions, periods or units differ, say that the values are not directly comparable instead of comparing them. Copy numbers exactly as they are written. Do not explain your reasoning.
+
+[series] The question asks for one value over several periods or versions. Reply with one line per period or version, earliest first, in the form <period or version>: <value> <unit>, and write <period or version>: NOT_FOUND for one whose value you cannot give. Copy numbers exactly as they are written. End with one short sentence on how the value changed; if what is counted differs between periods (a different definition or scope), say instead that the values are not directly comparable. Do not explain your reasoning.
+
+[explanation] The question needs an answer that combines several points (for example a rule and its exception or condition, a definition applied to a case, a cause and its effect, or several steps of one account). Give the direct answer first, then each point it rests on, in at most six short sentences, naming the article, section, subject or period each point comes from. Answer every part of the question. Copy numbers exactly as they are written. Do not add points you cannot support.
+\end{lstlisting}
+The bracketed labels are ours and are not sent. The user message is \texttt{Evidence:} followed by the rendered pack, a blank line and \texttt{Question: \{question\}}. Unanswerable questions are given the format of the tier they imitate (T1 single, T2 explanation, T3 comparison) and are correct only with an abstention. Completion limits are given in Table~\ref{tab:settings-full}.
+\emph{\setr{} selector.} We use the system message and selection prompt of the SetR release (\texttt{generate\_data.py}, selection mode with information requirements) verbatim, filling only the number of passages, the question and the passages as \texttt{[i] text}. The system message names the model RankLLM; the user message asks it to list the information requirements, find the passages for each, and end with \texttt{\#\#\# Final Selection: [] []}. The parser takes the numbers after the last \texttt{Final Selection} marker; a reply without a marker or a valid number falls back to \hybrid{} order. The exact text is in the release.
+
+\emph{Judge.} The judge grades every answer of an answerable question with the following system and user prompts:
+\begin{lstlisting}
+[system] You are a strict, impartial grader for a question-answering benchmark over documents (company reports, non-fiction books and laws) written in Persian and English. You compare a candidate answer with a reference packet built from the documents: the reference answer, the answer requirements (each with an id, marked required or optional), the source excerpts behind them and accepted alternatives. The packet is the truth; do not use outside knowledge. Reply with one JSON object only.
+
+[user] Question ({lang}): {question}
+Answer format: {fmt}
+
+Reference packet:
+{packet}
+
+Candidate answer:
+{answer}
+
+Grade in two lists.
+1. "claims": split the candidate into its distinct claims. For each give {"text": <the claim, short>, "unit":
+   <the requirement id it expresses, or null>, "status": one of correct | wrong_value | wrong_binding | contradiction |
+   unsupported | extra | duplicate | non_substantive}.
+   correct: states a requirement with the same meaning, bound to the same subject, aspect and constraints (time,
+   version, place, population, condition). Paraphrase, either language, rounding at the requirement's precision,
+   Persian digits, the Persian decimal slash (78/3 = 78.3) and scale words are all fine.
+   wrong_value: the right subject and aspect with a different value or statement. wrong_binding: a right value or
+   statement attached to the wrong subject, time, version or condition. contradiction: conflicts with a requirement,
+   an excerpt or another claim of the answer. unsupported: a substantive claim not in the packet that changes the
+   answer (a different conclusion, a wrong reason, rule, exception or trend). extra: harmless additional detail not in
+   the packet that does not change the answer. duplicate: repeats an earlier claim. non_substantive: framing, hedging or
+   citation markers such as [2].
+2. "units": for EVERY requirement id in the packet give one of correct | missing | wrong | contradicted.
+A derived requirement (a comparison, difference, ranking or conclusion) is correct only if the candidate states it;
+its inputs are graded as their own requirements. For a list, each required item is its own requirement.
+Reply with JSON only: {"claims": [...], "units": {"<requirement id>": "<status>", ...}, "reason": "at most 25 words"}
+\end{lstlisting}
+The reference packet is a JSON object built from the question file alone, with the question's tier, answer format, integration operation, language and reference answer, and one entry per requirement (identifier, whether required, proposition, subject, aspect, constraints, value, unit, precision, accepted alternatives, derivation and source excerpts). A reply is valid only if its \texttt{units} grade every requirement identifier of the packet and its \texttt{claims} use the eight claim statuses; an invalid reply is retried up to three attempts and never repaired. An answer is strictly correct if every required requirement is graded \texttt{correct}, none is \texttt{contradicted}, and no claim is \texttt{contradiction}, \texttt{wrong\_value}, \texttt{wrong\_binding} or \texttt{unsupported}. Claims marked \texttt{extra}, \texttt{duplicate} or \texttt{non\_substantive}, and optional requirements, do not affect it.
+
+For unanswerable questions the judge receives the absence audit of the question (what the documents lack, and nearby facts that are not the answer) instead of a packet. It marks the answer correct only if it declines to give the missing fact, and incorrect if it states a value, date, name or conclusion for it, including one taken from a nearby fact. It replies with a JSON object holding a verdict and a reason of at most 20 words; the full text is in the release.

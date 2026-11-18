@@ -1,0 +1,163 @@
+{
+ "source": "primary reader z-ai/glm-5.3-flash, saved test records; layout workspace",
+ "arms": {
+  "LEX5B_6000": {
+   "all": {
+    "n": 96,
+    "deadline": 15,
+    "fallback": 19,
+    "all_none": 6,
+    "reasons": {
+     "deadline": 15,
+     "overflow_alternatives": 2,
+     "duplicate_alternative": 1,
+     "id_out_of_range": 1
+    },
+    "missing": 0
+   },
+   "Persian": {
+    "n": 48,
+    "deadline": 11,
+    "fallback": 13,
+    "all_none": 3,
+    "reasons": {
+     "deadline": 11,
+     "overflow_alternatives": 1,
+     "duplicate_alternative": 1
+    },
+    "missing": 0
+   },
+   "English": {
+    "n": 48,
+    "deadline": 4,
+    "fallback": 6,
+    "all_none": 3,
+    "reasons": {
+     "overflow_alternatives": 1,
+     "deadline": 4,
+     "id_out_of_range": 1
+    },
+    "missing": 0
+   },
+   "Answerable T1": {
+    "n": 30,
+    "deadline": 2,
+    "fallback": 3,
+    "all_none": 2,
+    "reasons": {
+     "overflow_alternatives": 1,
+     "deadline": 2
+    },
+    "missing": 0
+   },
+   "Answerable T2": {
+    "n": 30,
+    "deadline": 5,
+    "fallback": 5,
+    "all_none": 0,
+    "reasons": {
+     "deadline": 5
+    },
+    "missing": 0
+   },
+   "Answerable T3": {
+    "n": 30,
+    "deadline": 7,
+    "fallback": 10,
+    "all_none": 0,
+    "reasons": {
+     "deadline": 7,
+     "overflow_alternatives": 1,
+     "duplicate_alternative": 1,
+     "id_out_of_range": 1
+    },
+    "missing": 0
+   },
+   "Unanswerable": {
+    "n": 6,
+    "deadline": 1,
+    "fallback": 1,
+    "all_none": 4,
+    "reasons": {
+     "deadline": 1
+    },
+    "missing": 0
+   }
+  },
+  "LEX5B_15500": {
+   "all": {
+    "n": 96,
+    "deadline": 15,
+    "fallback": 17,
+    "all_none": 6,
+    "reasons": {
+     "deadline": 15,
+     "overflow_alternatives": 2
+    },
+    "missing": 0
+   },
+   "Persian": {
+    "n": 48,
+    "deadline": 6,
+    "fallback": 6,
+    "all_none": 4,
+    "reasons": {
+     "deadline": 6
+    },
+    "missing": 0
+   },
+   "English": {
+    "n": 48,
+    "deadline": 9,
+    "fallback": 11,
+    "all_none": 2,
+    "reasons": {
+     "overflow_alternatives": 2,
+     "deadline": 9
+    },
+    "missing": 0
+   },
+   "Answerable T1": {
+    "n": 30,
+    "deadline": 1,
+    "fallback": 3,
+    "all_none": 1,
+    "reasons": {
+     "overflow_alternatives": 2,
+     "deadline": 1
+    },
+    "missing": 0
+   },
+   "Answerable T2": {
+    "n": 30,
+    "deadline": 3,
+    "fallback": 3,
+    "all_none": 1,
+    "reasons": {
+     "deadline": 3
+    },
+    "missing": 0
+   },
+   "Answerable T3": {
+    "n": 30,
+    "deadline": 9,
+    "fallback": 9,
+    "all_none": 0,
+    "reasons": {
+     "deadline": 9
+    },
+    "missing": 0
+   },
+   "Unanswerable": {
+    "n": 6,
+    "deadline": 2,
+    "fallback": 2,
+    "all_none": 4,
+    "reasons": {
+     "deadline": 2
+    },
+    "missing": 0
+   }
+  }
+ }
+}

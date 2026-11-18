@@ -1,0 +1,49 @@
+{
+ "approach": "F2_6000",
+ "corpus_set": "C",
+ "fingerprint": "046887265fbecd59b2da2693330fdd18d57aac2b",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T20:40:08",
+   "ok": true,
+   "build_ms": 15422.0,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 15422.0,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T20:40:23",
+ "size_bytes": 247,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\F2_6000\\C-04688726",
+ "corpus_stats": {
+  "name": "C",
+  "docs": 97,
+  "sections": 8572,
+  "units": 69488,
+  "chars": 4760118,
+  "skipped": 34
+ },
+ "copied_at": "2026-09-26T20:52:21",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

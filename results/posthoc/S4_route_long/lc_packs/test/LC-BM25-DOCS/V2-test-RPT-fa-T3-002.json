@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T3-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79002 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "3d2361b23216ceb8f0fe3f9f570c153a82444eb287f365b064a819502e4f17ac",
+ "evidence_chars": 78836,
+ "prompt_chars": 79833,
+ "est_prompt_tokens": 31577,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 10.276
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 10.185
+   },
+   {
+    "doc": "C.digikala_human-capital-report_1399.fa",
+    "score": 9.052
+   },
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "score": 9.007
+   },
+   {
+    "doc": "C.digikala_book-report-h1_1400.fa",
+    "score": 7.966
+   },
+   {
+    "doc": "C.payman_direct-debit-annual-report_1402.fa",
+    "score": 6.957
+   },
+   {
+    "doc": "C.tetherland_annual-report_1402.fa",
+    "score": 6.752
+   },
+   {
+    "doc": "C.digipay_annual-report_1400.fa",
+    "score": 6.091
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "doc_chars": 178537,
+    "shown": 78802,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

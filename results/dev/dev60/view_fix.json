@@ -1,0 +1,450 @@
+{
+ "checked": 48,
+ "identical": 48,
+ "offline_old_ms_p50_p95": [
+  559.1,
+  1304.6
+ ],
+ "offline_new_ms_p50_p95": [
+  101.1,
+  151.9
+ ],
+ "saved_online_t_view_ms_p50_p95": [
+  401.7,
+  762.7
+ ],
+ "rows": [
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-BOOK-en-T2-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 162.3,
+   "old_ms": 163.1,
+   "new_ms": 35.5
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-BOOK-en-T1-001",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 218.7,
+   "old_ms": 215.5,
+   "new_ms": 40.9
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-BOOK-en-T3-001",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 201.2,
+   "old_ms": 193.2,
+   "new_ms": 37.3
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-BOOK-fa-T1-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 549.0,
+   "old_ms": 1304.6,
+   "new_ms": 134.4
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-BOOK-fa-T3-002",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 412.8,
+   "old_ms": 1191.3,
+   "new_ms": 146.0
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-BOOK-fa-T2-001",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 501.7,
+   "old_ms": 1353.1,
+   "new_ms": 151.9
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-LAW-en-T1-002",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 338.3,
+   "old_ms": 478.5,
+   "new_ms": 93.6
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-LAW-en-T3-002",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 247.4,
+   "old_ms": 456.9,
+   "new_ms": 94.2
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-LAW-en-T2-001",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 154.3,
+   "old_ms": 159.7,
+   "new_ms": 33.4
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-LAW-fa-T2-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 511.6,
+   "old_ms": 559.1,
+   "new_ms": 65.8
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-LAW-fa-T1-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 375.5,
+   "old_ms": 422.6,
+   "new_ms": 49.6
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-LAW-fa-T3-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 420.5,
+   "old_ms": 414.9,
+   "new_ms": 51.9
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-en-T1-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 762.7,
+   "old_ms": 383.2,
+   "new_ms": 87.7
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-en-T2-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 429.2,
+   "old_ms": 419.9,
+   "new_ms": 95.1
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-en-T3-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 233.7,
+   "old_ms": 459.2,
+   "new_ms": 101.1
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-en-T1-001",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 158.4,
+   "old_ms": 373.8,
+   "new_ms": 79.7
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-en-T2-001",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 232.3,
+   "old_ms": 448.9,
+   "new_ms": 88.8
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-en-T3-001",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 189.4,
+   "old_ms": 448.9,
+   "new_ms": 96.0
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-fa-T1-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 414.9,
+   "old_ms": 1137.7,
+   "new_ms": 120.9
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-fa-T2-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 392.5,
+   "old_ms": 1110.9,
+   "new_ms": 134.9
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-fa-T3-002",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 512.7,
+   "old_ms": 1082.5,
+   "new_ms": 127.8
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-fa-T1-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 1103.5,
+   "old_ms": 1189.1,
+   "new_ms": 129.8
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-fa-T2-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 414.9,
+   "old_ms": 1199.2,
+   "new_ms": 126.9
+  },
+  {
+   "cell": "LEX5B@6000",
+   "id": "V2-dev-RPT-fa-T3-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 1122.4,
+   "old_ms": 1255.6,
+   "new_ms": 155.2
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-BOOK-en-T2-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 169.1,
+   "old_ms": 437.3,
+   "new_ms": 89.1
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-BOOK-en-T1-001",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 244.6,
+   "old_ms": 642.0,
+   "new_ms": 123.8
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-BOOK-en-T3-001",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 217.6,
+   "old_ms": 565.8,
+   "new_ms": 106.0
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-BOOK-fa-T1-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 434.5,
+   "old_ms": 984.9,
+   "new_ms": 70.7
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-BOOK-fa-T3-002",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 475.3,
+   "old_ms": 1119.4,
+   "new_ms": 144.4
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-BOOK-fa-T2-001",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 528.1,
+   "old_ms": 1334.7,
+   "new_ms": 171.8
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-LAW-en-T1-002",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 180.8,
+   "old_ms": 497.9,
+   "new_ms": 97.4
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-LAW-en-T3-002",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 179.5,
+   "old_ms": 502.0,
+   "new_ms": 108.1
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-LAW-en-T2-001",
+   "identical": true,
+   "cap": 320,
+   "saved_t_view_ms": 163.7,
+   "old_ms": 418.5,
+   "new_ms": 79.4
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-LAW-fa-T2-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 509.3,
+   "old_ms": 1084.0,
+   "new_ms": 109.9
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-LAW-fa-T1-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 633.8,
+   "old_ms": 1024.3,
+   "new_ms": 141.5
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-LAW-fa-T3-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 431.8,
+   "old_ms": 970.9,
+   "new_ms": 127.3
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-en-T1-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 140.7,
+   "old_ms": 388.0,
+   "new_ms": 87.7
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-en-T2-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 154.0,
+   "old_ms": 360.7,
+   "new_ms": 89.1
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-en-T3-002",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 154.5,
+   "old_ms": 413.7,
+   "new_ms": 91.4
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-en-T1-001",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 423.1,
+   "old_ms": 266.9,
+   "new_ms": 34.5
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-en-T2-001",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 529.8,
+   "old_ms": 392.6,
+   "new_ms": 81.8
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-en-T3-001",
+   "identical": true,
+   "cap": 340,
+   "saved_t_view_ms": 187.6,
+   "old_ms": 361.8,
+   "new_ms": 81.5
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-fa-T1-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 401.5,
+   "old_ms": 1005.3,
+   "new_ms": 115.3
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-fa-T2-002",
+   "identical": true,
+   "cap": 200,
+   "saved_t_view_ms": 385.2,
+   "old_ms": 1075.6,
+   "new_ms": 117.8
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-fa-T3-002",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 401.7,
+   "old_ms": 917.1,
+   "new_ms": 103.4
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-fa-T1-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 433.3,
+   "old_ms": 1069.0,
+   "new_ms": 133.5
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-fa-T2-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 466.9,
+   "old_ms": 1134.8,
+   "new_ms": 101.9
+  },
+  {
+   "cell": "LEX5B@15500",
+   "id": "V2-dev-RPT-fa-T3-001",
+   "identical": true,
+   "cap": 220,
+   "saved_t_view_ms": 443.2,
+   "old_ms": 1164.2,
+   "new_ms": 135.1
+  }
+ ]
+}

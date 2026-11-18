@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T1-004",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143114 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "c697bed6c783a4c6a2e69706279a7f89585d307a6bf3ecad2bd8dfd04b45f7cd",
+ "evidence_chars": 142948,
+ "prompt_chars": 143937,
+ "est_prompt_tokens": 31527,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "doc_chars": 642053,
+    "shown": 142900,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

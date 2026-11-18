@@ -1,0 +1,18 @@
+{
+ "arm": "DENSE_6000",
+ "question_id": "V2-test-BOOK-fa-T3-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6139 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "94cabffdff6a6c860720a2da629b72e63d3b4097b0766a2682ba71f1018f1d58",
+ "evidence_chars": 6000
+}

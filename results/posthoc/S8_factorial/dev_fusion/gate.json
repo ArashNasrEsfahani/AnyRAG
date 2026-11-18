@@ -1,0 +1,490 @@
+{
+ "n": 60,
+ "fallback_match": 60,
+ "saved_fallback": 11,
+ "fallback_cells_shown_match": 11,
+ "fallback_cells_chars_match": 11,
+ "pack_same_as_lex5b": 25,
+ "rows": [
+  {
+   "q": "V2-dev-BOOK-en-AB-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-en-T1-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-en-T1-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-en-T1-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-en-T2-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-en-T2-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-en-T2-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-en-T3-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-en-T3-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-en-T3-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-fa-AB-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T1-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T1-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T1-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T2-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T2-002",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T2-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T3-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T3-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-BOOK-fa-T3-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-en-AB-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-en-T1-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-en-T1-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-en-T1-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-en-T2-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-en-T2-002",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-en-T2-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-en-T3-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-en-T3-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-en-T3-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-fa-AB-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-fa-T1-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-fa-T1-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-fa-T1-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-fa-T2-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-fa-T2-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-fa-T2-003",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-LAW-fa-T3-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-fa-T3-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-LAW-fa-T3-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-en-AB-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-en-T1-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T1-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T1-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T2-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T2-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T2-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T3-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-en-T3-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-en-T3-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-fa-AB-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-fa-T1-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-fa-T1-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-fa-T1-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-fa-T2-001",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-fa-T2-002",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-fa-T2-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-fa-T3-001",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  },
+  {
+   "q": "V2-dev-RPT-fa-T3-002",
+   "fallback_match": true,
+   "saved_fallback": true,
+   "shown_match": true,
+   "chars_match": true,
+   "pack_same_as_lex5b": true
+  },
+  {
+   "q": "V2-dev-RPT-fa-T3-003",
+   "fallback_match": true,
+   "saved_fallback": false,
+   "shown_match": null,
+   "chars_match": null,
+   "pack_same_as_lex5b": false
+  }
+ ]
+}

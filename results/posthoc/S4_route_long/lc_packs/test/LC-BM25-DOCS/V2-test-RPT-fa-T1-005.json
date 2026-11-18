@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T1-005",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79243 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "33c064fd82e54a4054d6a50220252503f40d4c3a31a41114ec672b9cd27bae8c",
+ "evidence_chars": 79123,
+ "prompt_chars": 79774,
+ "est_prompt_tokens": 31554,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.irancell_sustainability-report_1401.fa",
+    "score": 6.967
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1402.fa",
+    "score": 6.954
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1400.fa",
+    "score": 6.363
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1399.fa",
+    "score": 6.319
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1403.fa",
+    "score": 6.272
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 5.026
+   },
+   {
+    "doc": "C.jabama_annual-report_1401.fa",
+    "score": 5.0
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 4.736
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.irancell_sustainability-report_1401.fa",
+    "doc_chars": 129989,
+    "shown": 79088,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

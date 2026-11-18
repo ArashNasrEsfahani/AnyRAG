@@ -1,0 +1,11 @@
+{
+ "SETR_6000": {
+  "n": 96,
+  "sha_match": 96,
+  "sel_match": 96,
+  "offered_match": 96,
+  "fallback": 6,
+  "raw_at_cap_4000": 0,
+  "mismatch": []
+ }
+}

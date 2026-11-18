@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-en-T3-005",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142668 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "0a61dfcf600abe121cf2b059f601ed996aeef7ea2546dc70c359866e7dbf36ec",
+ "evidence_chars": 142342,
+ "prompt_chars": 143491,
+ "est_prompt_tokens": 31429,
+ "build_ms": 0.8,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "L.eurlex-32016R0679_gdpr.en",
+    "doc_chars": 350933,
+    "shown": 71034,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "L.eurlex-32024R1689_ai-act.en",
+    "doc_chars": 582624,
+    "shown": 71163,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

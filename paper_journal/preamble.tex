@@ -1,0 +1,46 @@
+% Shared preamble of main.tex and supplementary.tex (everything between \documentclass and \begin{document}).
+\usepackage[english,bidi=default]{babel}
+\babelfont{rm}{TeXGyreTermesX}
+\babelprovide[import]{persian}
+\babelfont[persian]{rm}[Scale=0.92]{Vazirmatn}
+\newcommand{\fa}[1]{\foreignlanguage{persian}{#1}}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{placeins}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[most]{tcolorbox}
+\input{figures/style}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\scriptsize, breaklines=true, columns=fullflexible, frame=single, framesep=2pt}
+% \usepackage{lineno} % optional
+\usepackage[hidelinks]{hyperref}
+\biboptions{numbers,sort&compress}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{5}
+\renewcommand{\figurename}{Fig.}
+\AtBeginDocument{\renewcommand{\figurename}{Fig.}}% elsarticle and babel reset it at the start of the document
+\addto\captionsenglish{\renewcommand{\figurename}{Fig.}}
+\setlength{\belowcaptionskip}{4pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+% system names (same macros as the earlier version)
+\newcommand{\hybrid}{\textsc{Hybrid}}
+\newcommand{\hr}{\textsc{HR}}
+\newcommand{\lexb}{\textsc{Lex-RAG}}
+\newcommand{\setr}{\textsc{SetR-p+fill}}
+\newcommand{\ftwo}{three-signal score fusion}

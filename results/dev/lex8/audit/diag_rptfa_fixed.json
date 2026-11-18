@@ -1,0 +1,584 @@
+[
+ {
+  "id": "V2-dev-RPT-fa-T1-001",
+  "HR_raw_pack": [
+   3666,
+   3616,
+   3652,
+   3550,
+   3601,
+   3651
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   3666,
+   3616,
+   3652,
+   3550,
+   3601,
+   3545
+  ],
+  "O1_pack": [
+   3616,
+   3617,
+   3666,
+   3652,
+   3550,
+   3667
+  ],
+  "O1_retention": 1.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3666,
+    "rank_bm25": 1,
+    "rank_dense": 1,
+    "rank_sparse": 1,
+    "rank_a1_rrf": 1,
+    "rank_MMR_a1": 1,
+    "rank_O1": 3,
+    "rank_HR": 1,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 1,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T1-002",
+  "HR_raw_pack": [
+   4602,
+   4088,
+   4133,
+   4157,
+   4085,
+   4147
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   4602,
+   4088,
+   4133,
+   4157,
+   4085,
+   4603
+  ],
+  "O1_pack": [
+   4088,
+   4114,
+   4085,
+   4138,
+   4083,
+   4602
+  ],
+  "O1_retention": 1.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 4088,
+    "rank_bm25": 6,
+    "rank_dense": 14,
+    "rank_sparse": 1,
+    "rank_a1_rrf": 3,
+    "rank_MMR_a1": 4,
+    "rank_O1": 1,
+    "rank_HR": 2,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 2,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T1-003",
+  "HR_raw_pack": [
+   3880,
+   3878,
+   4022,
+   3877,
+   4023,
+   3866,
+   3783
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   3880,
+   3878,
+   4022,
+   3877,
+   4023,
+   3866,
+   3742
+  ],
+  "O1_pack": [
+   3880,
+   3784,
+   3788,
+   3878,
+   3692,
+   3783
+  ],
+  "O1_retention": 1.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3880,
+    "rank_bm25": 2,
+    "rank_dense": 1,
+    "rank_sparse": 2,
+    "rank_a1_rrf": 1,
+    "rank_MMR_a1": 1,
+    "rank_O1": 1,
+    "rank_HR": 1,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 1,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   },
+   {
+    "sid": "E2",
+    "chunk": 3880,
+    "rank_bm25": 2,
+    "rank_dense": 1,
+    "rank_sparse": 2,
+    "rank_a1_rrf": 1,
+    "rank_MMR_a1": 1,
+    "rank_O1": 1,
+    "rank_HR": 1,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 1,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T2-001",
+  "HR_raw_pack": [
+   3545,
+   3669,
+   3652,
+   3646,
+   3517,
+   3651,
+   3653
+  ],
+  "HR_raw_retention": 0.5,
+  "HR_intact_pack_used_by_v71_diag": [
+   3545,
+   3669,
+   3652,
+   3646,
+   3517,
+   3651
+  ],
+  "O1_pack": [
+   3653,
+   3545,
+   3656,
+   3666,
+   3655,
+   3606,
+   3658,
+   3651
+  ],
+  "O1_retention": 0.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3652,
+    "rank_bm25": 13,
+    "rank_dense": null,
+    "rank_sparse": 18,
+    "rank_a1_rrf": 22,
+    "rank_MMR_a1": 22,
+    "rank_O1": 22,
+    "rank_HR": 3,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 3,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": false
+   },
+   {
+    "sid": "E2",
+    "chunk": 3657,
+    "rank_bm25": null,
+    "rank_dense": 18,
+    "rank_sparse": 1,
+    "rank_a1_rrf": 18,
+    "rank_MMR_a1": 19,
+    "rank_O1": 19,
+    "rank_HR": null,
+    "in_HR_raw_pack": false,
+    "HR_raw_pack_position": null,
+    "in_HR_intact_pack": false,
+    "in_O1_pack": false
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T2-002",
+  "HR_raw_pack": [
+   3818,
+   3844,
+   3821,
+   3728,
+   4022,
+   3836,
+   3822
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   3818,
+   3844,
+   3821,
+   3728,
+   4022,
+   3836,
+   3822
+  ],
+  "O1_pack": [
+   3693,
+   3844,
+   3728,
+   3878,
+   3836,
+   4022,
+   3743,
+   3821
+  ],
+  "O1_retention": 1.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3836,
+    "rank_bm25": 24,
+    "rank_dense": 1,
+    "rank_sparse": 3,
+    "rank_a1_rrf": 3,
+    "rank_MMR_a1": 5,
+    "rank_O1": 5,
+    "rank_HR": 6,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 6,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   },
+   {
+    "sid": "E2",
+    "chunk": 3844,
+    "rank_bm25": 12,
+    "rank_dense": 7,
+    "rank_sparse": 1,
+    "rank_a1_rrf": 2,
+    "rank_MMR_a1": 2,
+    "rank_O1": 2,
+    "rank_HR": 2,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 2,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T2-003",
+  "HR_raw_pack": [
+   3736,
+   3839,
+   3772,
+   3830,
+   3833,
+   3838,
+   3829
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   3736,
+   3839,
+   3772,
+   3830,
+   3833,
+   3838,
+   3758
+  ],
+  "O1_pack": [
+   3772,
+   3736,
+   3839,
+   3830,
+   3778,
+   3741,
+   3727
+  ],
+  "O1_retention": 0.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3829,
+    "rank_bm25": 34,
+    "rank_dense": 20,
+    "rank_sparse": 23,
+    "rank_a1_rrf": 13,
+    "rank_MMR_a1": 13,
+    "rank_O1": 13,
+    "rank_HR": 7,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 7,
+    "in_HR_intact_pack": false,
+    "in_O1_pack": false
+   },
+   {
+    "sid": "E2",
+    "chunk": 3838,
+    "rank_bm25": 32,
+    "rank_dense": 16,
+    "rank_sparse": 13,
+    "rank_a1_rrf": 10,
+    "rank_MMR_a1": 10,
+    "rank_O1": 11,
+    "rank_HR": 6,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 6,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": false
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T3-001",
+  "HR_raw_pack": [
+   3550,
+   3549,
+   3664,
+   3548,
+   3551,
+   3540
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   3550,
+   3549,
+   3664,
+   3548,
+   3551,
+   3665
+  ],
+  "O1_pack": [
+   3550,
+   3664,
+   3549,
+   3519,
+   3568,
+   3540
+  ],
+  "O1_retention": 1.0,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3549,
+    "rank_bm25": 1,
+    "rank_dense": 1,
+    "rank_sparse": 2,
+    "rank_a1_rrf": 1,
+    "rank_MMR_a1": 1,
+    "rank_O1": 3,
+    "rank_HR": 2,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 2,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   },
+   {
+    "sid": "E1",
+    "chunk": 3550,
+    "rank_bm25": 2,
+    "rank_dense": 2,
+    "rank_sparse": 1,
+    "rank_a1_rrf": 2,
+    "rank_MMR_a1": 3,
+    "rank_O1": 1,
+    "rank_HR": 1,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 1,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   },
+   {
+    "sid": "E2",
+    "chunk": 3664,
+    "rank_bm25": 3,
+    "rank_dense": 3,
+    "rank_sparse": 3,
+    "rank_a1_rrf": 3,
+    "rank_MMR_a1": 2,
+    "rank_O1": 2,
+    "rank_HR": 3,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 3,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": true
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T3-002",
+  "HR_raw_pack": [
+   3652,
+   4022,
+   3692,
+   3728,
+   3866,
+   3850,
+   3822
+  ],
+  "HR_raw_retention": 1.0,
+  "HR_intact_pack_used_by_v71_diag": [
+   3652,
+   4022,
+   3692,
+   3728,
+   3866,
+   3850,
+   3693
+  ],
+  "O1_pack": [
+   3694,
+   3652,
+   3692,
+   3693,
+   3698,
+   3783,
+   3743
+  ],
+  "O1_retention": 0.5,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3694,
+    "rank_bm25": 10,
+    "rank_dense": 1,
+    "rank_sparse": 1,
+    "rank_a1_rrf": 1,
+    "rank_MMR_a1": 1,
+    "rank_O1": 1,
+    "rank_HR": 9,
+    "in_HR_raw_pack": false,
+    "HR_raw_pack_position": null,
+    "in_HR_intact_pack": false,
+    "in_O1_pack": true
+   },
+   {
+    "sid": "E2",
+    "chunk": 3866,
+    "rank_bm25": 37,
+    "rank_dense": 6,
+    "rank_sparse": 23,
+    "rank_a1_rrf": 13,
+    "rank_MMR_a1": 13,
+    "rank_O1": 13,
+    "rank_HR": 5,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 5,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": false
+   },
+   {
+    "sid": "E3",
+    "chunk": 3822,
+    "rank_bm25": null,
+    "rank_dense": 14,
+    "rank_sparse": null,
+    "rank_a1_rrf": 37,
+    "rank_MMR_a1": 39,
+    "rank_O1": 39,
+    "rank_HR": 7,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 7,
+    "in_HR_intact_pack": false,
+    "in_O1_pack": false
+   },
+   {
+    "sid": "E4",
+    "chunk": 3822,
+    "rank_bm25": null,
+    "rank_dense": 14,
+    "rank_sparse": null,
+    "rank_a1_rrf": 37,
+    "rank_MMR_a1": 39,
+    "rank_O1": 39,
+    "rank_HR": 7,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 7,
+    "in_HR_intact_pack": false,
+    "in_O1_pack": false
+   }
+  ]
+ },
+ {
+  "id": "V2-dev-RPT-fa-T3-003",
+  "HR_raw_pack": [
+   3871,
+   3870,
+   3917,
+   3914,
+   3865,
+   3866,
+   3783
+  ],
+  "HR_raw_retention": 0.5,
+  "HR_intact_pack_used_by_v71_diag": [
+   3871,
+   3870,
+   3917,
+   3914,
+   3865,
+   3866,
+   3873
+  ],
+  "O1_pack": [
+   3865,
+   3783,
+   4022,
+   3917,
+   4272,
+   3652,
+   3915
+  ],
+  "O1_retention": 0.5,
+  "spans": [
+   {
+    "sid": "E1",
+    "chunk": 3870,
+    "rank_bm25": null,
+    "rank_dense": 1,
+    "rank_sparse": 3,
+    "rank_a1_rrf": 18,
+    "rank_MMR_a1": 16,
+    "rank_O1": 16,
+    "rank_HR": 2,
+    "in_HR_raw_pack": true,
+    "HR_raw_pack_position": 2,
+    "in_HR_intact_pack": true,
+    "in_O1_pack": false
+   },
+   {
+    "sid": "E2",
+    "chunk": 3652,
+    "rank_bm25": 11,
+    "rank_dense": 36,
+    "rank_sparse": 5,
+    "rank_a1_rrf": 7,
+    "rank_MMR_a1": 6,
+    "rank_O1": 6,
+    "rank_HR": 8,
+    "in_HR_raw_pack": false,
+    "HR_raw_pack_position": null,
+    "in_HR_intact_pack": false,
+    "in_O1_pack": true
+   }
+  ]
+ }
+]

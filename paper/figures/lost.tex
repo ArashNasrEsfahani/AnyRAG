@@ -1,0 +1,58 @@
+% src: figures/data/lost_arms.dat, written by paper/analysis/figure_data_posthoc.py from work/posthoc_2026-11/S7_analysis/reach.json
+%      (S7 task 1: exact reader messages parsed; a gold item "reached" the reader if >= 90% of its quote occurs in the pack
+%      items of its own document; complete = every item of one annotated bundle, partial = some, none = no item).
+\newcommand{\lostx}{0}
+\newcommand{\lostseg}[4]{% value, fill, text colour, y
+  \pgfmathsetmacro{\lostxe}{\lostx+#1}%
+  \ifnum#1>0
+    \fill[#2] ({\lostx*0.112},{#4-0.21}) rectangle ({\lostxe*0.112},{#4+0.21});
+    \ifnum#1>2 \node[font=\footnotesize, text=#3, inner sep=0pt] at ({(\lostx+\lostxe)/2*0.112},{#4}) {#1};\fi
+  \fi
+  \xdef\lostx{\lostxe}}
+\begin{figure*}[t]
+\centering
+\pgfplotstableread{figures/data/lost_arms.dat}\losttab
+\begin{tikzpicture}
+\foreach \r in {0,...,8}{
+  \pgfplotstablegetelem{\r}{lab}\of\losttab \edef\vlab{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{hc}\of\losttab \edef\vhc{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{hp}\of\losttab \edef\vhp{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{hn}\of\losttab \edef\vhn{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{un}\of\losttab \edef\vun{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{mn}\of\losttab \edef\vmn{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{mp}\of\losttab \edef\vmp{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{mc}\of\losttab \edef\vmc{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{rc}\of\losttab \edef\vrc{\pgfplotsretval}
+  \pgfmathsetmacro{\yy}{-0.58*\r}
+  \xdef\lostx{0}
+  \node[font=\footnotesize, text=cInk, anchor=east] at (-0.15,\yy) {\vlab};
+  \lostseg{\vhc}{cHit}{cInk}{\yy}
+  \lostseg{\vhp}{cHit!60!white}{cInk}{\yy}
+  \lostseg{\vhn}{cHit!28!white}{cInk}{\yy}
+  \lostseg{\vun}{black!35}{white}{\yy}
+  \lostseg{\vmn}{cMiss!30!white}{cInk}{\yy}
+  \lostseg{\vmp}{cMiss!65!white}{cInk}{\yy}
+  \lostseg{\vmc}{cMiss}{white}{\yy}
+  \node[font=\footnotesize\bfseries, text=cInk, anchor=west] at ({92*0.112},\yy) {\vrc};
+}
+\draw[cAxis, line width=0.5pt] (0,-5.15) -- ({90*0.112},-5.15);
+\foreach \t in {0,20,40,60,80}{\draw[cAxis, line width=0.5pt] ({\t*0.112},-5.15) -- ({\t*0.112},-5.25) node[below, font=\footnotesize, text=cInk, inner sep=2pt] {\t};}
+\node[font=\footnotesize, text=cInk, anchor=north] at ({45*0.112},-5.65) {answerable questions (of 90)};
+\node[font=\footnotesize\bfseries, text=cInk, anchor=south west] at ({92*0.112-0.55},0.38) {complete};
+\node[font=\footnotesize, text=cInk, anchor=south west] at ({92*0.112-0.55},0.16) {bundle};
+% key
+\begin{scope}[font=\footnotesize, text=cInk, shift={(0,1.0)}]
+  \node[anchor=west] at (-4.1,0) {\textbf{Correct:}};
+  \fill[cHit] (-2.75,-0.09) rectangle (-2.45,0.09); \node[anchor=west, inner sep=2pt] at (-2.45,0) {all};
+  \fill[cHit!60!white] (-1.55,-0.09) rectangle (-1.25,0.09); \node[anchor=west, inner sep=2pt] at (-1.25,0) {part};
+  \fill[cHit!28!white] (-0.2,-0.09) rectangle (0.1,0.09); \node[anchor=west, inner sep=2pt] at (0.1,0) {none};
+  \fill[black!35] (1.2,-0.09) rectangle (1.5,0.09); \node[anchor=west, inner sep=2pt] at (1.5,0) {unresolved};
+  \node[anchor=west] at (4.0,0) {\textbf{Wrong:}};
+  \fill[cMiss!30!white] (5.2,-0.09) rectangle (5.5,0.09); \node[anchor=west, inner sep=2pt] at (5.5,0) {none};
+  \fill[cMiss!65!white] (6.5,-0.09) rectangle (6.8,0.09); \node[anchor=west, inner sep=2pt] at (6.8,0) {part};
+  \fill[cMiss] (7.8,-0.09) rectangle (8.1,0.09); \node[anchor=west, inner sep=2pt] at (8.1,0) {all};
+\end{scope}
+\end{tikzpicture}
+\caption{Post hoc. Where the answers are lost (GLM-5.3-flash, 90 answerable questions). Bars split each arm's questions by judged correct (blue) or wrong (orange) and by how much gold evidence was in the reader's pack; the number at right counts questions with a complete bundle. Packs are 6,000 characters, except the two search agents, which may show up to 15,500.}
+\label{fig:lost}
+\end{figure*}

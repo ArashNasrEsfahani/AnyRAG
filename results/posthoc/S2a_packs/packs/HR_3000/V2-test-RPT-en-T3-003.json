@@ -1,0 +1,18 @@
+{
+ "arm": "HR_3000",
+ "question_id": "V2-test-RPT-en-T3-003",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 3048 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "958acc6c83368e18a54f277b80eb78067700ad29cbf41b46fed0aa79ff19fcb9",
+ "evidence_chars": 2916
+}

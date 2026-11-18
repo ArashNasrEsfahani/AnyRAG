@@ -1,0 +1,114 @@
+{
+ "pools": {
+  "BOOK-en": {
+   "chunks": 9661,
+   "chars": 8119770,
+   "p50": 882,
+   "max": 999
+  },
+  "BOOK-fa": {
+   "chunks": 8905,
+   "chars": 7299743,
+   "p50": 855,
+   "max": 999
+  },
+  "LAW-en": {
+   "chunks": 5427,
+   "chars": 4296269,
+   "p50": 846,
+   "max": 1000
+  },
+  "LAW-fa": {
+   "chunks": 1619,
+   "chars": 1293581,
+   "p50": 848,
+   "max": 1000
+  },
+  "RPT-en": {
+   "chunks": 25685,
+   "chars": 20651471,
+   "p50": 849,
+   "max": 1000
+  },
+  "RPT-fa": {
+   "chunks": 6921,
+   "chars": 5305192,
+   "p50": 827,
+   "max": 1000
+  }
+ },
+ "questions": {
+  "V2-dev-BOOK-fa-T1-001": "BOOK-fa",
+  "V2-dev-BOOK-fa-T1-002": "BOOK-fa",
+  "V2-dev-BOOK-fa-T1-003": "BOOK-fa",
+  "V2-dev-BOOK-fa-T2-001": "BOOK-fa",
+  "V2-dev-BOOK-fa-T2-002": "BOOK-fa",
+  "V2-dev-BOOK-fa-T2-003": "BOOK-fa",
+  "V2-dev-BOOK-fa-T3-001": "BOOK-fa",
+  "V2-dev-BOOK-fa-T3-002": "BOOK-fa",
+  "V2-dev-BOOK-fa-T3-003": "BOOK-fa",
+  "V2-dev-BOOK-en-T1-001": "BOOK-en",
+  "V2-dev-BOOK-en-T1-002": "BOOK-en",
+  "V2-dev-BOOK-en-T1-003": "BOOK-en",
+  "V2-dev-BOOK-en-T2-001": "BOOK-en",
+  "V2-dev-BOOK-en-T2-002": "BOOK-en",
+  "V2-dev-BOOK-en-T2-003": "BOOK-en",
+  "V2-dev-BOOK-en-T3-001": "BOOK-en",
+  "V2-dev-BOOK-en-T3-002": "BOOK-en",
+  "V2-dev-BOOK-en-T3-003": "BOOK-en",
+  "V2-dev-LAW-fa-T1-001": "LAW-fa",
+  "V2-dev-LAW-fa-T1-002": "LAW-fa",
+  "V2-dev-LAW-fa-T1-003": "LAW-fa",
+  "V2-dev-LAW-fa-T2-001": "LAW-fa",
+  "V2-dev-LAW-fa-T2-002": "LAW-fa",
+  "V2-dev-LAW-fa-T2-003": "LAW-fa",
+  "V2-dev-LAW-fa-T3-001": "LAW-fa",
+  "V2-dev-LAW-fa-T3-002": "LAW-fa",
+  "V2-dev-LAW-fa-T3-003": "LAW-fa",
+  "V2-dev-LAW-en-T1-001": "LAW-en",
+  "V2-dev-LAW-en-T1-002": "LAW-en",
+  "V2-dev-LAW-en-T1-003": "LAW-en",
+  "V2-dev-LAW-en-T2-001": "LAW-en",
+  "V2-dev-LAW-en-T2-002": "LAW-en",
+  "V2-dev-LAW-en-T2-003": "LAW-en",
+  "V2-dev-LAW-en-T3-001": "LAW-en",
+  "V2-dev-LAW-en-T3-002": "LAW-en",
+  "V2-dev-LAW-en-T3-003": "LAW-en",
+  "V2-dev-RPT-fa-T1-001": "RPT-fa",
+  "V2-dev-RPT-fa-T1-002": "RPT-fa",
+  "V2-dev-RPT-fa-T1-003": "RPT-fa",
+  "V2-dev-RPT-fa-T2-001": "RPT-fa",
+  "V2-dev-RPT-fa-T2-002": "RPT-fa",
+  "V2-dev-RPT-fa-T2-003": "RPT-fa",
+  "V2-dev-RPT-fa-T3-001": "RPT-fa",
+  "V2-dev-RPT-fa-T3-002": "RPT-fa",
+  "V2-dev-RPT-fa-T3-003": "RPT-fa",
+  "V2-dev-RPT-en-T1-001": "RPT-en",
+  "V2-dev-RPT-en-T1-002": "RPT-en",
+  "V2-dev-RPT-en-T1-003": "RPT-en",
+  "V2-dev-RPT-en-T2-001": "RPT-en",
+  "V2-dev-RPT-en-T2-002": "RPT-en",
+  "V2-dev-RPT-en-T2-003": "RPT-en",
+  "V2-dev-RPT-en-T3-001": "RPT-en",
+  "V2-dev-RPT-en-T3-002": "RPT-en",
+  "V2-dev-RPT-en-T3-003": "RPT-en"
+ },
+ "u80": {
+  "BOOK-fa": 432,
+  "BOOK-en": 489,
+  "LAW-fa": 302,
+  "LAW-en": 390,
+  "RPT-fa": 328,
+  "RPT-en": 560
+ },
+ "u80_total": 2501,
+ "u200": {
+  "BOOK-fa": 1997,
+  "BOOK-en": 1483,
+  "LAW-fa": 1117,
+  "LAW-en": 1702,
+  "RPT-fa": 1281,
+  "RPT-en": 2484
+ },
+ "u200_total": 10064
+}

@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ragbench/datasets_v2/question-v2",
+  "title": "RAG study question, datasets v2 (three tiers, domain-neutral)",
+  "description": "One JSON object per line in work/datasets_v2/{dev,dev_check,dev_legacy,test}/*.jsonl. Agreed 2026-09-25 (DESIGN.md section 8). Methods may see only: id, question, language, pool_id and the run condition's scope. Everything else is evaluator-only. The review game shows question, expected_answer, requirements (answer points), evidence (highlighted in the source text), integration_operation, necessity_audit / absence_audit and notes.",
+  "type": "object",
+  "required": ["schema", "id", "revision", "split", "tier", "language", "domain", "pool_id", "doc_scope", "question",
+               "expected_answer", "answer_format", "answerable", "requirements", "evidence", "evidence_bundles",
+               "source_block", "source_family", "information_need_id", "wording", "provenance", "exposure", "review",
+               "content_hash"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "question-v2"},
+    "id": {
+      "type": "string",
+      "pattern": "^V2-(dev|chk|leg|test)-(RPT|BOOK|LAW)-(fa|en)-(T[123]|AB)-[0-9]{3}$",
+      "description": "e.g. V2-dev-LAW-fa-T2-004; AB = abstention (unanswerable)."
+    },
+    "revision": {"type": "integer", "minimum": 1, "description": "Incremented on every substantive edit (question, answer, requirements, evidence)."},
+    "split": {"enum": ["dev_open", "dev_check", "dev_legacy", "test"]},
+    "subset": {"type": "array", "items": {"enum": ["dev_fast", "doc_supplied_diag", "gold_evidence_diag", "reserve"]},
+               "description": "Pre-declared subsets; 'reserve' = over-produced replacement, with reserve_rank."},
+    "reserve_rank": {"type": ["integer", "null"], "description": "Replacement order inside the stratum (reserve items only)."},
+    "tier": {"enum": ["T1", "T2", "T3", null], "description": "Set by the simplest sufficient evidence in the frozen pool (DESIGN.md section 2). null for unanswerable questions."},
+    "intended_tier": {"enum": ["T1", "T2", "T3", null], "description": "For unanswerable questions: the task attempted. Otherwise equal to tier or null."},
+    "subtype": {
+      "enum": [null,
+               "T1_fact", "T1_list_local", "T1_table_cell",
+               "T2_definition_bridge", "T2_rule_exception", "T2_comparison_derivation", "T2_bounded_synthesis",
+               "T3_cross_time_version", "T3_cross_subject", "T3_cross_doc_bridge", "T3_bounded_aggregation"]
+    },
+    "language": {"enum": ["fa", "en"]},
+    "domain": {"enum": ["RPT", "BOOK", "LAW"]},
+    "pool_id": {"type": "string", "description": "Frozen pool manifest id: RPT-fa, RPT-en, BOOK-fa, BOOK-en, LAW-fa, LAW-en. Never gold-derived."},
+    "doc_scope": {
+      "description": "Primary run condition: 'pool' (the whole pool). The oracle scopes for the diagnostics are listed separately so the primary scope is never gold-derived.",
+      "type": "object",
+      "required": ["primary"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": {"const": "pool"},
+        "oracle_docs": {"type": "array", "items": {"type": "string"}, "description": "Diagnostic only: the source document (T1/T2) or a sufficient document set (T3)."}
+      }
+    },
+    "question": {"type": "string", "minLength": 5, "description": "In the question's language; native wording."},
+    "question_gloss_en": {"type": ["string", "null"], "description": "English gloss for Persian questions (review aid, never given to methods)."},
+    "expected_answer": {"type": "string", "description": "Reference answer in the question's language. States every required requirement; optional ones may appear."},
+    "expected_answer_gloss_en": {"type": ["string", "null"]},
+    "answer_format": {"enum": ["single", "list", "comparison", "series", "explanation", "abstain"],
+                      "description": "Shared answer contract (same format and output allowance for every method)."},
+    "answerable": {"type": "boolean"},
+    "requirements": {
+      "type": "array",
+      "description": "Atomic answer obligations. Empty for unanswerable questions. Operands that only support a derived result are required=false unless the question asks for them.",
+      "items": {
+        "type": "object",
+        "required": ["id", "proposition", "subject", "aspect", "constraints", "value", "unit", "value_type", "comparator", "required", "kind"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^R[0-9]+$"},
+          "proposition": {"type": "string", "description": "The obligation as one short sentence (shown in the game as an answer point)."},
+          "subject": {"type": "string", "description": "Entity the requirement is about: company, law/article, book/person/place, etc."},
+          "aspect": {
+            "type": "object",
+            "required": ["label", "type"],
+            "additionalProperties": false,
+            "properties": {
+              "label": {"type": "string", "description": "Property or relation name, e.g. 'employee headcount', 'notice period for dismissal', 'cause of the revolt'."},
+              "type": {"enum": ["property", "relation"]},
+              "object": {"type": ["string", "null"], "description": "For relations: the other entity."}
+            }
+          },
+          "constraints": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "All optional; null when not applicable.",
+            "properties": {
+              "time": {
+                "type": ["object", "null"],
+                "additionalProperties": false,
+                "properties": {
+                  "value": {"type": "string", "description": "e.g. '1402', '2024', '1906-1911', 'end of 1399'."},
+                  "kind": {"enum": ["fiscal_year", "calendar_year", "solar_hijri_year", "date", "period", "as_of", "publication", "effective"]}
+                }
+              },
+              "place": {"type": ["string", "null"]},
+              "version": {"type": ["string", "null"], "description": "Edition, revision, amendment or report year when it defines the source version."},
+              "population": {"type": ["string", "null"], "description": "Whose figure: employees vs users, drivers vs active drivers, etc."},
+              "unit": {"type": ["string", "null"], "description": "Reporting unit the question fixes (e.g. 'in million toman')."},
+              "condition": {"type": ["string", "null"], "description": "Applicability condition or scenario (e.g. 'if the employer is at fault')."},
+              "definition": {"type": ["string", "null"], "description": "Definition the source gives for the aspect (kept separate from condition)."}
+            }
+          },
+          "value": {"description": "Expected value: number, string, list of strings, boolean, or [low, high] for an interval.",
+                    "type": ["number", "string", "boolean", "array", "null"]},
+          "unit": {"type": ["string", "null"], "description": "Measurement unit of value (people, %, EUR million, days, articles...)."},
+          "value_type": {"enum": ["number", "text", "list", "boolean", "date", "interval", "entity"]},
+          "comparator": {"enum": ["exact", "approximately", ">", ">=", "<", "<=", "interval"]},
+          "precision": {"type": ["string", "null"], "description": "Permitted tolerance/rounding, e.g. '±0.1', 'integer', 'as stated'."},
+          "aliases": {"type": "array", "items": {"type": "string"}, "description": "Accepted alternative wordings/values."},
+          "required": {"type": "boolean", "description": "Must appear in a strictly correct answer."},
+          "kind": {"enum": ["fact", "operand", "derived", "item", "conclusion"]},
+          "derivation": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "properties": {
+              "operation": {"enum": ["difference", "sum", "ratio", "percent_change", "max", "min", "order", "count", "apply_definition", "apply_exception", "set_difference", "other"]},
+              "inputs": {"type": "array", "items": {"type": "string"}, "description": "Requirement ids used as inputs."},
+              "rounding": {"type": ["string", "null"]},
+              "comparability": {"type": "string", "description": "Why the inputs are comparable (same definition, period, population, currency)."}
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Every piece of source text the answer rests on, incl. binding labels (table headers, units, dates). Empty for unanswerable questions.",
+      "items": {
+        "type": "object",
+        "required": ["id", "doc_id", "unit_id", "quote", "role", "supports"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^E[0-9]+$"},
+          "doc_id": {"type": "string"},
+          "doc_title": {"type": ["string", "null"]},
+          "unit_id": {"type": "string", "description": "Extraction unit id (e.g. C.snapp_annual-report_1402.fa::p31_g1)."},
+          "quote": {"type": "string", "minLength": 1, "description": "Exact substring of the frozen document text."},
+          "start": {"type": ["integer", "null"], "description": "Document-relative Unicode code-point offset, half-open [start, end)."},
+          "end": {"type": ["integer", "null"]},
+          "text_sha256": {"type": ["string", "null"], "description": "sha256 of the frozen document text the offsets refer to."},
+          "role": {"enum": ["answer", "operand", "item", "bridge", "rule", "exception", "definition", "qualifier", "context"],
+                   "description": "answer (T1); operand/item (values or list items); bridge (links question to where the answer is); rule/exception/definition (legal and definitional integration); qualifier (unit, period, population, header binding a value); context."},
+          "region": {"type": ["string", "null"], "description": "Label of the evidence region (e.g. section path); regions define T2 integration."},
+          "supports": {"type": "array", "items": {"type": "string"}, "description": "Requirement ids this piece supports."}
+        }
+      }
+    },
+    "evidence_bundles": {
+      "type": "array",
+      "description": "Each bundle = a complete, sufficient set of evidence ids (all pieces needed); alternative bundles are interchangeable. At least one bundle for answerable questions.",
+      "items": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+    },
+    "accepted_alternatives": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}},
+                              "description": "requirement id -> accepted alternative answers (e.g. other units)."},
+    "integration_operation": {"type": ["string", "null"], "description": "T2/T3: the named operation (resolve definition and apply, rule + exception, compare and derive, bounded synthesis, cross-time comparison, bridge, aggregation)."},
+    "necessity_audit": {
+      "type": ["object", "null"],
+      "description": "Required for T2 and T3.",
+      "additionalProperties": false,
+      "properties": {
+        "regions": {"type": "array", "items": {"type": "string"}, "description": "T2: the distinct regions; T3: the documents."},
+        "removal_test": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "properties": {"removed": {"type": "string"}, "obligation_lost": {"type": "string"}}}},
+        "single_region_complete": {"type": "boolean", "description": "Must be false for T2/T3."},
+        "single_document_complete": {"type": "boolean", "description": "Must be false for T3; true for T2."},
+        "restatement_search": {"type": "string", "description": "What was searched for restated or derivable answers, where, and the result."},
+        "pool_hash": {"type": "string", "description": "sha256 of the frozen pool manifest the audit was run against."},
+        "auditor": {"type": "string"}
+      }
+    },
+    "absence_audit": {
+      "type": ["object", "null"],
+      "description": "Required for unanswerable questions.",
+      "additionalProperties": false,
+      "properties": {
+        "missing_obligation": {"type": "string"},
+        "search_variants": {"type": "array", "items": {"type": "string"}},
+        "inspected_locations": {"type": "array", "items": {"type": "string"}},
+        "neighbouring_facts": {"type": "array", "items": {"type": "string"}, "description": "Plausible traps (unit ids + what they say)."},
+        "pool_hash": {"type": "string"},
+        "auditor": {"type": "string"}
+      }
+    },
+    "descriptive": {
+      "type": "object",
+      "description": "Computed by the verifier; flags only, never tier gates.",
+      "properties": {
+        "n_evidence": {"type": "integer"}, "n_regions": {"type": "integer"}, "n_docs": {"type": "integer"},
+        "span_envelope_chars": {"type": ["integer", "null"]}, "lexical_overlap": {"type": "number"},
+        "flags": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "source_block": {"type": "string", "description": "Allocation and bootstrap unit; entirely in one split."},
+    "source_family": {"type": "string", "description": "Work/company family (all editions/volumes/years of one work or company)."},
+    "information_need_id": {"type": "string"},
+    "paraphrase_of": {"type": ["string", "null"]},
+    "wording": {"enum": ["ordinary", "paraphrase"]},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["curator", "writer", "created"],
+      "properties": {
+        "curator": {"type": "string"}, "writer": {"type": "string"}, "reviewer": {"type": ["string", "null"]},
+        "created": {"type": "string"}, "legacy_parent_id": {"type": ["string", "null"], "description": "e.g. MD-C-dev-003 for dev_legacy items."},
+        "source_versions": {"type": "object", "additionalProperties": {"type": "string"}, "description": "doc_id -> frozen text sha256."}
+      }
+    },
+    "exposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_exposure", "source_exposure"],
+      "properties": {
+        "fact_exposure": {"enum": ["none", "same_fact_elsewhere", "same_obligation_in_earlier_set"], "description": "Test questions must be 'none'."},
+        "source_exposure": {"enum": ["unseen", "indexed_only", "earlier_dev", "earlier_test_analysed"]},
+        "matches": {"type": "array", "items": {"type": "string"}, "description": "Earlier question ids / unit ids that triggered the class."}
+      }
+    },
+    "review": {
+      "type": "object",
+      "description": "Agent review, then the user's game verdict, bound to content_hash.",
+      "properties": {
+        "agent_verdict": {"enum": ["accept", "fix", "reject", null]},
+        "agent_notes": {"type": ["string", "null"]},
+        "user_verdict": {"enum": ["accept", "accept_after_edit", "fix", "reject", null]},
+        "user_rating": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "user_tags": {"type": "array", "items": {"type": "string"}},
+        "user_note": {"type": ["string", "null"]},
+        "reviewed_hash": {"type": ["string", "null"], "description": "content_hash at the time of the user's verdict; a mismatch voids acceptance."},
+        "reviewed_at": {"type": ["string", "null"]}
+      }
+    },
+    "content_hash": {"type": "string", "description": "sha256 over question, expected_answer, answer_format, requirements, evidence, evidence_bundles (canonical JSON)."},
+    "notes": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {"if": {"properties": {"answerable": {"const": false}}},
+     "then": {"properties": {"tier": {"const": null}, "answer_format": {"const": "abstain"}, "requirements": {"maxItems": 0}, "evidence": {"maxItems": 0}},
+              "required": ["absence_audit", "intended_tier"]}},
+    {"if": {"properties": {"tier": {"enum": ["T2", "T3"]}}},
+     "then": {"required": ["necessity_audit", "integration_operation"]}},
+    {"if": {"properties": {"split": {"const": "test"}}},
+     "then": {"properties": {"exposure": {"properties": {"fact_exposure": {"const": "none"}}}}}}
+  ]
+}

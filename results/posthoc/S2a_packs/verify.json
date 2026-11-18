@@ -1,0 +1,42 @@
+{
+ "HYBRID_6000": {
+  "sha_record": 96,
+  "sha_packfile": 96,
+  "npred_match": 96,
+  "n": 96
+ },
+ "HR_6000": {
+  "sha_record": 96,
+  "sha_packfile": 96,
+  "npred_match": 96,
+  "n": 96
+ },
+ "LEX5B_6000": {
+  "fallback_match": 96,
+  "fallback_exact_cost": 96,
+  "sha_record": 96,
+  "sha_packfile": 96,
+  "npred_match": 96,
+  "n": 96
+ },
+ "HYBRID_15500": {
+  "sha_record": 96,
+  "sha_packfile": 96,
+  "npred_match": 96,
+  "n": 96
+ },
+ "HR_15500": {
+  "sha_record": 96,
+  "sha_packfile": 96,
+  "npred_match": 96,
+  "n": 96
+ },
+ "LEX5B_15500": {
+  "fallback_match": 96,
+  "fallback_exact_cost": 96,
+  "sha_record": 96,
+  "sha_packfile": 96,
+  "npred_match": 96,
+  "n": 96
+ }
+}

@@ -1,0 +1,938 @@
+{
+ "arms": {
+  "LC-GOLD-DOCS": {
+   "n_run": 90,
+   "status_answerable": {
+    "judged": 90
+   },
+   "acc": {
+    "all": [
+     79,
+     79,
+     90
+    ],
+    "T1": [
+     27,
+     27,
+     30
+    ],
+    "T2": [
+     24,
+     24,
+     30
+    ],
+    "T3": [
+     28,
+     28,
+     30
+    ],
+    "fa": [
+     37,
+     37,
+     45
+    ],
+    "en": [
+     42,
+     42,
+     45
+    ]
+   },
+   "abstain_correct": null,
+   "prompt_tokens_per_q_mean": 29413,
+   "prompt_tokens_per_q_median": 31053.5,
+   "prompt_tokens_max": 41706,
+   "prompt_tokens_by_lang_mean": {
+    "fa": 30638,
+    "en": 28188
+   },
+   "prompt_tokens_per_char_median": {
+    "fa": 0.403,
+    "en": 0.2043
+   },
+   "fa_over_en_tokens_per_char": 1.973,
+   "completion_tokens_per_q_mean": 156,
+   "tokens_per_q_mean": 29569,
+   "calls_per_q": 1.0,
+   "reader_cost_usd_total": 0.40354,
+   "reader_latency_s": {
+    "median": 3.11,
+    "mean": 3.33,
+    "p90": 4.71,
+    "max": 6.34
+   },
+   "done_reason": {
+    "stop": 90
+   },
+   "abstained_answerable": 1,
+   "evidence_chars_mean": 104728,
+   "gold_units_retained": [
+    228,
+    228
+   ],
+   "questions_all_gold_units_retained": 90,
+   "questions_any_gold_doc_shown": 90,
+   "packs_all_docs_whole": 7,
+   "docs_per_pack_mean": 1.4,
+   "acc_when_gold_docs_whole": [
+    4,
+    4,
+    7
+   ]
+  },
+  "LC-BM25-DOCS": {
+   "n_run": 96,
+   "status_answerable": {
+    "judged": 90
+   },
+   "acc": {
+    "all": [
+     24,
+     24,
+     90
+    ],
+    "T1": [
+     13,
+     13,
+     30
+    ],
+    "T2": [
+     9,
+     9,
+     30
+    ],
+    "T3": [
+     2,
+     2,
+     30
+    ],
+    "fa": [
+     11,
+     11,
+     45
+    ],
+    "en": [
+     13,
+     13,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "prompt_tokens_per_q_mean": 30899,
+   "prompt_tokens_per_q_median": 31176.0,
+   "prompt_tokens_max": 36155,
+   "prompt_tokens_by_lang_mean": {
+    "fa": 32114,
+    "en": 29685
+   },
+   "prompt_tokens_per_char_median": {
+    "fa": 0.3976,
+    "en": 0.2045
+   },
+   "fa_over_en_tokens_per_char": 1.944,
+   "completion_tokens_per_q_mean": 68,
+   "tokens_per_q_mean": 30967,
+   "calls_per_q": 1.0,
+   "reader_cost_usd_total": 0.42131,
+   "reader_latency_s": {
+    "median": 2.88,
+    "mean": 3.12,
+    "p90": 4.08,
+    "max": 8.34
+   },
+   "done_reason": {
+    "stop": 96
+   },
+   "abstained_answerable": 50,
+   "evidence_chars_mean": 110892,
+   "gold_units_retained": [
+    62,
+    228
+   ],
+   "questions_all_gold_units_retained": 21,
+   "questions_any_gold_doc_shown": 82,
+   "packs_all_docs_whole": 2,
+   "docs_per_pack_mean": 1.09,
+   "acc_when_all_gold_retained": [
+    18,
+    18,
+    21
+   ],
+   "acc_when_not_all_gold_retained": [
+    6,
+    6,
+    69
+   ]
+  }
+ },
+ "comparisons": {
+  "LC-GOLD-DOCS vs HYBRID_6000": {
+   "net_bounds": [
+    16,
+    17
+   ],
+   "pp_bounds": [
+    17.78,
+    18.89
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0033,
+    0.0052
+   ],
+   "ci_pp_question": [
+    6.67,
+    30.0
+   ],
+   "ci_pp_component": [
+    4.88,
+    27.4
+   ],
+   "wins_losses_resolved": [
+    23,
+    7
+   ]
+  },
+  "LC-GOLD-DOCS vs HR_6000": {
+   "net_bounds": [
+    8,
+    10
+   ],
+   "pp_bounds": [
+    8.89,
+    11.11
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.0755,
+    0.1686
+   ],
+   "ci_pp_question": [
+    -2.22,
+    22.22
+   ],
+   "ci_pp_component": [
+    -5.17,
+    19.57
+   ],
+   "wins_losses_resolved": [
+    17,
+    8
+   ]
+  },
+  "LC-GOLD-DOCS vs LEX5B_6000": {
+   "net_bounds": [
+    10,
+    11
+   ],
+   "pp_bounds": [
+    11.11,
+    12.22
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0522,
+    0.0755
+   ],
+   "ci_pp_question": [
+    0.0,
+    23.33
+   ],
+   "ci_pp_component": [
+    -3.12,
+    21.85
+   ],
+   "wins_losses_resolved": [
+    18,
+    8
+   ]
+  },
+  "LC-GOLD-DOCS vs SETR_6000": {
+   "net_bounds": [
+    16,
+    16
+   ],
+   "pp_bounds": [
+    17.78,
+    17.78
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0004,
+    0.0004
+   ],
+   "ci_pp_question": [
+    8.89,
+    27.78
+   ],
+   "ci_pp_component": [
+    7.25,
+    26.47
+   ],
+   "wins_losses_resolved": [
+    18,
+    2
+   ]
+  },
+  "LC-GOLD-DOCS vs HYBRID_15500": {
+   "net_bounds": [
+    11,
+    11
+   ],
+   "pp_bounds": [
+    12.22,
+    12.22
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0347,
+    0.0347
+   ],
+   "ci_pp_question": [
+    2.22,
+    22.22
+   ],
+   "ci_pp_component": [
+    1.15,
+    21.15
+   ],
+   "wins_losses_resolved": [
+    17,
+    6
+   ]
+  },
+  "LC-GOLD-DOCS vs HR_15500": {
+   "net_bounds": [
+    9,
+    10
+   ],
+   "pp_bounds": [
+    10.0,
+    11.11
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0525,
+    0.0784
+   ],
+   "ci_pp_question": [
+    0.0,
+    21.11
+   ],
+   "ci_pp_component": [
+    1.43,
+    19.51
+   ],
+   "wins_losses_resolved": [
+    15,
+    6
+   ]
+  },
+  "LC-GOLD-DOCS vs LEX5B_15500": {
+   "net_bounds": [
+    12,
+    12
+   ],
+   "pp_bounds": [
+    13.33,
+    13.33
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0227,
+    0.0227
+   ],
+   "ci_pp_question": [
+    3.33,
+    24.44
+   ],
+   "ci_pp_component": [
+    1.61,
+    22.22
+   ],
+   "wins_losses_resolved": [
+    18,
+    6
+   ]
+  },
+  "LC-GOLD-DOCS vs SETR_15500": {
+   "net_bounds": [
+    12,
+    13
+   ],
+   "pp_bounds": [
+    13.33,
+    14.44
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0192,
+    0.029
+   ],
+   "ci_pp_question": [
+    2.22,
+    25.56
+   ],
+   "ci_pp_component": [
+    3.53,
+    22.99
+   ],
+   "wins_losses_resolved": [
+    19,
+    7
+   ]
+  },
+  "LC-BM25-DOCS vs HYBRID_6000": {
+   "net_bounds": [
+    -39,
+    -38
+   ],
+   "pp_bounds": [
+    -43.33,
+    -42.22
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -54.44,
+    -31.11
+   ],
+   "ci_pp_component": [
+    -52.38,
+    -30.14
+   ],
+   "wins_losses_resolved": [
+    1,
+    39
+   ]
+  },
+  "LC-BM25-DOCS vs HR_6000": {
+   "net_bounds": [
+    -47,
+    -45
+   ],
+   "pp_bounds": [
+    -52.22,
+    -50.0
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -63.33,
+    -37.78
+   ],
+   "ci_pp_component": [
+    -61.33,
+    -37.84
+   ],
+   "wins_losses_resolved": [
+    2,
+    48
+   ]
+  },
+  "LC-BM25-DOCS vs LEX5B_6000": {
+   "net_bounds": [
+    -45,
+    -44
+   ],
+   "pp_bounds": [
+    -50.0,
+    -48.89
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -61.11,
+    -36.67
+   ],
+   "ci_pp_component": [
+    -60.47,
+    -35.48
+   ],
+   "wins_losses_resolved": [
+    2,
+    47
+   ]
+  },
+  "LC-BM25-DOCS vs SETR_6000": {
+   "net_bounds": [
+    -39,
+    -39
+   ],
+   "pp_bounds": [
+    -43.33,
+    -43.33
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -55.56,
+    -31.11
+   ],
+   "ci_pp_component": [
+    -53.23,
+    -28.89
+   ],
+   "wins_losses_resolved": [
+    4,
+    43
+   ]
+  },
+  "LC-BM25-DOCS vs HYBRID_15500": {
+   "net_bounds": [
+    -44,
+    -44
+   ],
+   "pp_bounds": [
+    -48.89,
+    -48.89
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -60.0,
+    -37.78
+   ],
+   "ci_pp_component": [
+    -57.38,
+    -36.0
+   ],
+   "wins_losses_resolved": [
+    2,
+    46
+   ]
+  },
+  "LC-BM25-DOCS vs HR_15500": {
+   "net_bounds": [
+    -46,
+    -45
+   ],
+   "pp_bounds": [
+    -51.11,
+    -50.0
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -62.22,
+    -37.78
+   ],
+   "ci_pp_component": [
+    -61.96,
+    -32.84
+   ],
+   "wins_losses_resolved": [
+    2,
+    48
+   ]
+  },
+  "LC-BM25-DOCS vs LEX5B_15500": {
+   "net_bounds": [
+    -43,
+    -43
+   ],
+   "pp_bounds": [
+    -47.78,
+    -47.78
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -57.78,
+    -36.67
+   ],
+   "ci_pp_component": [
+    -57.83,
+    -33.33
+   ],
+   "wins_losses_resolved": [
+    1,
+    44
+   ]
+  },
+  "LC-BM25-DOCS vs SETR_15500": {
+   "net_bounds": [
+    -43,
+    -42
+   ],
+   "pp_bounds": [
+    -47.78,
+    -46.67
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    -58.89,
+    -34.44
+   ],
+   "ci_pp_component": [
+    -56.82,
+    -34.33
+   ],
+   "wins_losses_resolved": [
+    2,
+    44
+   ]
+  },
+  "LC-GOLD-DOCS vs LC-BM25-DOCS": {
+   "net_bounds": [
+    55,
+    55
+   ],
+   "pp_bounds": [
+    61.11,
+    61.11
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0,
+    0.0
+   ],
+   "ci_pp_question": [
+    50.0,
+    71.11
+   ],
+   "ci_pp_component": [
+    44.9,
+    71.29
+   ],
+   "wins_losses_resolved": [
+    56,
+    1
+   ]
+  }
+ },
+ "frozen": {
+  "HYBRID_6000": {
+   "acc": {
+    "all": [
+     62,
+     63,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     21,
+     30
+    ],
+    "T3": [
+     14,
+     14,
+     30
+    ],
+    "fa": [
+     35,
+     36,
+     45
+    ],
+    "en": [
+     27,
+     27,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    2216,
+    2216
+   ]
+  },
+  "HR_6000": {
+   "acc": {
+    "all": [
+     69,
+     71,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30
+    ],
+    "T3": [
+     18,
+     19,
+     30
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ],
+    "en": [
+     33,
+     35,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    2237,
+    2237
+   ]
+  },
+  "LEX5B_6000": {
+   "acc": {
+    "all": [
+     68,
+     69,
+     90
+    ],
+    "T1": [
+     29,
+     29,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     36,
+     37,
+     45
+    ],
+    "en": [
+     32,
+     32,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    4511,
+    5131
+   ]
+  },
+  "SETR_6000": {
+   "acc": {
+    "all": [
+     63,
+     63,
+     90
+    ],
+    "T1": [
+     27,
+     27,
+     30
+    ],
+    "T2": [
+     18,
+     18,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     33,
+     33,
+     45
+    ],
+    "en": [
+     30,
+     30,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    7503,
+    8128
+   ]
+  },
+  "HYBRID_15500": {
+   "acc": {
+    "all": [
+     68,
+     68,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     22,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     33,
+     33,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    5236,
+    5236
+   ]
+  },
+  "HR_15500": {
+   "acc": {
+    "all": [
+     69,
+     70,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     21,
+     22,
+     30
+    ],
+    "T3": [
+     20,
+     20,
+     30
+    ],
+    "fa": [
+     38,
+     38,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    5287,
+    5287
+   ]
+  },
+  "LEX5B_15500": {
+   "acc": {
+    "all": [
+     67,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ],
+    "en": [
+     31,
+     31,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    7542,
+    8155
+   ]
+  },
+  "SETR_15500": {
+   "acc": {
+    "all": [
+     66,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     23,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "tokens_per_q": [
+    10882,
+    10882
+   ]
+  }
+ }
+}

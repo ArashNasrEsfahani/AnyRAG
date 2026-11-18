@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-fa-T1-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79258 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "ebbaa693b9b67b8dac1cfcf6a2304006879e567d772316b4fc56c018fcdbd23c",
+ "evidence_chars": 79130,
+ "prompt_chars": 79974,
+ "est_prompt_tokens": 31633,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "K.wikisource_kasravi_tarikh-e-mashruteh.fa",
+    "score": 4.037
+   },
+   {
+    "doc": "K.wikisource_bahar_political-parties-vol1.fa",
+    "score": 3.709
+   },
+   {
+    "doc": "K.wikisource_kasravi_khuzestan-500-years.fa",
+    "score": 3.468
+   },
+   {
+    "doc": "K.wikisource_mahmoud_iran-britain-relations.fa",
+    "score": 2.387
+   },
+   {
+    "doc": "K.wikisource_christensen_iran-sasanian.fa",
+    "score": 1.685
+   },
+   {
+    "doc": "K.wikisource_pirnia_iran-e-bastan.fa",
+    "score": 1.476
+   },
+   {
+    "doc": "K.wikisource_foroughi_ancient-rome.fa",
+    "score": 0.815
+   },
+   {
+    "doc": "K.wikisource_kasravi_azari.fa",
+    "score": 0.515
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.wikisource_kasravi_tarikh-e-mashruteh.fa",
+    "doc_chars": 1546028,
+    "shown": 79101,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

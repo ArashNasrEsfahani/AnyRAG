@@ -1,0 +1,255 @@
+{
+ "at": "2026-10-01T22:44:44",
+ "frozen_questions": {
+  "path": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\FROZEN_questions.json",
+  "sha256": "341c181df18704f4423ce404b8fe86adb71bfd69c25e75b2a45a111366d19615",
+  "files": {
+   "questions/rpt_dev.jsonl": {
+    "sha256": "f23031bdd7e769095974bfd74ffa4f5e37eaf73da19ba5be03ead299c7d75ce1",
+    "frozen": "f23031bdd7e769095974bfd74ffa4f5e37eaf73da19ba5be03ead299c7d75ce1",
+    "ok": true,
+    "n": 20
+   },
+   "questions/rpt_test.jsonl": {
+    "sha256": "41327ecd6c1622879f4a63e261dc2197d41cd163d8d2bb2537496da48230fa16",
+    "frozen": "41327ecd6c1622879f4a63e261dc2197d41cd163d8d2bb2537496da48230fa16",
+    "ok": true,
+    "n": 32
+   },
+   "questions/book_dev.jsonl": {
+    "sha256": "f8bc900d8f61726d1b024317484ef33c6cc4bbcc554ba5270fe89e3bfd7f5952",
+    "frozen": "f8bc900d8f61726d1b024317484ef33c6cc4bbcc554ba5270fe89e3bfd7f5952",
+    "ok": true,
+    "n": 20
+   },
+   "questions/book_test.jsonl": {
+    "sha256": "560e7c4c0f470a64ba99f6645b8ac98071e8b01acc24c0a58b0ba462fb5108f5",
+    "frozen": "560e7c4c0f470a64ba99f6645b8ac98071e8b01acc24c0a58b0ba462fb5108f5",
+    "ok": true,
+    "n": 32
+   },
+   "questions/law_dev.jsonl": {
+    "sha256": "05a3821a9787a66dc9b7363220aadfaafa24c8f881bf008801e3ed0ae9f69d29",
+    "frozen": "05a3821a9787a66dc9b7363220aadfaafa24c8f881bf008801e3ed0ae9f69d29",
+    "ok": true,
+    "n": 20
+   },
+   "questions/law_test.jsonl": {
+    "sha256": "393d4a90aa88ea016dc988b1fb5cf8e0c38e1b01895c731fb8e895e40953433d",
+    "frozen": "393d4a90aa88ea016dc988b1fb5cf8e0c38e1b01895c731fb8e895e40953433d",
+    "ok": true,
+    "n": 32
+   }
+  }
+ },
+ "converted": {
+  "test_v2run_all.jsonl": {
+   "sha256": "14bc5d0227f26e9538fc557cf04c3cf331eb188a999d8bcb82835e0368a0b61e",
+   "n": 96,
+   "answerable": 90
+  },
+  "test_v2run_RPT-fa.jsonl": {
+   "sha256": "a74550c593e018915ea3f2077fdb6dd98719b90cac5bcb41a5467b3a74e7e666",
+   "n": 16,
+   "answerable": 15
+  },
+  "test_v2run_RPT-en.jsonl": {
+   "sha256": "97ef026dc95711fa353133e7ae4abb04e0ee2a322a03a52995c5532150b6cae8",
+   "n": 16,
+   "answerable": 15
+  },
+  "test_v2run_BOOK-fa.jsonl": {
+   "sha256": "ee3047661357b3c407f48da58bd1044454e8d70f883201c29983a397997cbe3d",
+   "n": 16,
+   "answerable": 15
+  },
+  "test_v2run_BOOK-en.jsonl": {
+   "sha256": "71c57b84b106ef02c308ef0c1e3ac71b716c3eea9f3a239f31b5b37aa5479f70",
+   "n": 16,
+   "answerable": 15
+  },
+  "test_v2run_LAW-fa.jsonl": {
+   "sha256": "bf5a6a5c62dd58f9fa91ffbfabaa9f202de0e274e60c719dff97837caef5ed74",
+   "n": 16,
+   "answerable": 15
+  },
+  "test_v2run_LAW-en.jsonl": {
+   "sha256": "c360b3443ea9dfea3f65ee2b42204b8598864a6b39877d307ceec1d228b92c97",
+   "n": 16,
+   "answerable": 15
+  },
+  "test_v2judge_all.jsonl": {
+   "sha256": "a65e275a071f6c56087526dfab70ae57b5d5ace0fecb40a1d51ea6c086179922",
+   "n": 96,
+   "answerable": 90
+  }
+ },
+ "verify_summary": {
+  "n": 96,
+  "errors": 0,
+  "flagged": 0,
+  "by_pool": {
+   "RPT-fa": 16,
+   "RPT-en": 16,
+   "BOOK-fa": 16,
+   "BOOK-en": 16,
+   "LAW-fa": 16,
+   "LAW-en": 16
+  },
+  "by_format": {
+   "v2_single": 35,
+   "v2_comparison": 28,
+   "v2_explanation": 29,
+   "v2_list": 3,
+   "v2_series": 1
+  },
+  "by_tier": {
+   "T1": 30,
+   "T2": 30,
+   "T3": 30,
+   "AB": 6
+  }
+ },
+ "verify_flags": {},
+ "experiment_id": "datasets-v2-test",
+ "pools": {
+  "RPT-fa": {
+   "path": "D:\\KareOne\\RAG Paper\\work\\multidoc\\pools\\RPT-fa.json",
+   "sha256": "5e5947dccc291105e2f17307b630848e6c0b2e503955d6b4ea971b0d538e7f62",
+   "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8",
+   "docs": 97,
+   "corpus": "C",
+   "setting": "fa-fa",
+   "verify": "OK",
+   "test_evidence_outside_pool": 0,
+   "test_questions": 16
+  },
+  "RPT-en": {
+   "path": "D:\\KareOne\\RAG Paper\\work\\multidoc\\pools\\RPT-en.json",
+   "sha256": "4dc13cc5b7644bcb233bed01555cdf6ae1cbae424d95f37fda6c91cf334a9e16",
+   "manifest_sha1": "083eaa34617784ea404f29d78c6ac03dc7097459",
+   "docs": 15,
+   "corpus": "D",
+   "setting": "en-en",
+   "verify": "OK",
+   "test_evidence_outside_pool": 0,
+   "test_questions": 16
+  },
+  "BOOK-fa": {
+   "path": "D:\\KareOne\\RAG Paper\\work\\multidoc\\pools\\BOOK-fa.json",
+   "sha256": "56820197833f5a71649c798806013462d07767166c5b356478b1e8525ab5b239",
+   "manifest_sha1": "cf74caccb4bec89c2e6f64e620cbbade49a6496b",
+   "docs": 9,
+   "corpus": "K",
+   "setting": "fa-fa",
+   "verify": "OK",
+   "test_evidence_outside_pool": 0,
+   "test_questions": 16
+  },
+  "BOOK-en": {
+   "path": "D:\\KareOne\\RAG Paper\\work\\multidoc\\pools\\BOOK-en.json",
+   "sha256": "419a751e28525dee32802f7c2edbac49b832fa06cca47cce1aa18a01fcb7fca8",
+   "manifest_sha1": "aa11d6c898b9bdfa106d9c97b01b47110eceb2c9",
+   "docs": 11,
+   "corpus": "K",
+   "setting": "en-en",
+   "verify": "OK",
+   "test_evidence_outside_pool": 0,
+   "test_questions": 16
+  },
+  "LAW-fa": {
+   "path": "D:\\KareOne\\RAG Paper\\work\\multidoc\\pools\\LAW-fa.json",
+   "sha256": "4d0078cab64d9039fafe70661acbfaecb75cea29d463929521ef0be78eb0358b",
+   "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e",
+   "docs": 13,
+   "corpus": "L",
+   "setting": "fa-fa",
+   "verify": "OK",
+   "test_evidence_outside_pool": 0,
+   "test_questions": 16
+  },
+  "LAW-en": {
+   "path": "D:\\KareOne\\RAG Paper\\work\\multidoc\\pools\\LAW-en.json",
+   "sha256": "70fdd85de9b073ecf5b3d4f0e70f2f130a138c9e530843d5b58e38ba998d0476",
+   "manifest_sha1": "dc6afa436672ddb75f8cc445e2d2104637b7cf83",
+   "docs": 10,
+   "corpus": "L",
+   "setting": "en-en",
+   "verify": "OK",
+   "test_evidence_outside_pool": 0,
+   "test_questions": 16
+  }
+ },
+ "dev_test_overlap": {
+  "evidence_docs": 0,
+  "source_blocks": 0,
+  "information_needs": 0,
+  "source_families": 0
+ },
+ "duplicate_audit": {
+  "at": "2026-10-01T22:44:42",
+  "pattern": "V2-test-",
+  "scanned": [
+   "runs_*.jsonl",
+   "ledger_*.jsonl",
+   "verdicts_*.jsonl",
+   "judge_failures_*.jsonl",
+   "needs_adjudication_*.jsonl"
+  ],
+  "root": "D:\\KareOne\\RAG Paper\\work",
+  "files_with_test_ids": {},
+  "clean": true
+ },
+ "indexes": {
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid": {
+   "files": 116,
+   "bytes": 593584934,
+   "tree_sha256": "82216cce766e49598a33e27fb0e37216b157ea83bc52ece931408c90a6665f12"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex8\\idx": {
+   "files": 60,
+   "bytes": 489358878,
+   "tree_sha256": "f23f1c4e673704020152f91168507b24a1447fd8b88e7610f6cfb2a693a60979"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex8\\synth": {
+   "files": 174,
+   "bytes": 191992744,
+   "tree_sha256": "f7101a54a9efd9b043741b38ee45c93ed8829363ba77bbb076c9ead1e8e59432"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\HYBRID": {
+   "files": 34,
+   "bytes": 16086,
+   "tree_sha256": "9d225fbeaee78ad3c8eec02e01e3a726068da7ec4f7927baceb4603e66b52bfb"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\HYBRID15500": {
+   "files": 12,
+   "bytes": 5693,
+   "tree_sha256": "fba6a4cb6037ee0ae6050c5a88483fb601c62da04dc44ffb96b38040bdbeabe2"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\HR15500": {
+   "files": 12,
+   "bytes": 5727,
+   "tree_sha256": "11fe861cff004b93f9a8d968bfd50aec938ff5afdcbf10f9b5d9d9cac4f59fd1"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX5B": {
+   "files": 24,
+   "bytes": 11358,
+   "tree_sha256": "4d4192e04e0113d059c1dee9a9bcc945c926c3ac9be663142c6700e7f847fe1e"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX5B_15500": {
+   "files": 24,
+   "bytes": 11424,
+   "tree_sha256": "6bebc2a7ab2040cd6ae46dee46ec1904fc4af46c14ef7da87a6f824b286f6e0f"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\SETR": {
+   "files": 12,
+   "bytes": 5663,
+   "tree_sha256": "7078784f72cdc1746512bcaa975104a3ea449e222e02c810f4d7d09ae995cb67"
+  },
+  "D:\\KareOne\\RAG Paper\\work\\indexes\\SETR_15500": {
+   "files": 12,
+   "bytes": 5699,
+   "tree_sha256": "579b399601ff220dd3959ba21f99031169f2f6c3968760df851fa5d51e386b87"
+  }
+ }
+}

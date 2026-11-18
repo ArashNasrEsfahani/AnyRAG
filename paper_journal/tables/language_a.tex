@@ -1,0 +1,23 @@
+% src: tab:tokenizers = work/posthoc_2026-11/S14_bilingual/RESULTS.md sec. 2.4 (tokjudge.json tokens: marginal prompt tokens per evidence character, per-language OLS on 768 calls per reader, 8 frozen arms x 96 questions)
+% src: tab:language = S15_crossling/RESULTS.md sec. 2 (results_tables.md, experiment X): complete gold bundle in the top 40 and in the 6,000-character pack, original -> translated query, 45 answerable questions per pool;
+%      end to end: HR_6000 69..71 -> 53..54 (fa pool 36 -> 28, en pool 33..35 -> 25..26); CLOSEDBOOK 26 -> 22..23 (fa 6 -> 4..5, en 20 -> 18)
+% src: tab:replication = S14_bilingual/compact_table.md and lang_tables.md (net A - B per half, GLM reader, judge 1; interaction = worst-case component-level permutation p over unresolved cells; Holm over 14 contrasts for the grep agent: .019)
+\begin{table}[tp]
+\caption{Post hoc. Reader prompt tokens per character of evidence in Persian and English}
+\label{tab:tokenizers}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{2.6cm}rrr@{}}
+\toprule
+Reader & Persian & English & Ratio \\
+\midrule
+GLM-5.3-flash (primary) & 0.409 & 0.228 & 1.80 \\
+DeepSeek-V4-flash & 0.396 & 0.226 & 1.75 \\
+Llama 3.3 70B & 0.348 & 0.226 & 1.53 \\
+gpt-oss-20b & 0.341 & 0.225 & 1.51 \\
+Gemma 3 27B & 0.354 & 0.242 & 1.46 \\
+Qwen3 235B & 0.758 & 0.254 & 2.99 \\
+\bottomrule
+\end{tabular}
+\end{table}

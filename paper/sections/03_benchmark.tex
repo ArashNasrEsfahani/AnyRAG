@@ -1,0 +1,63 @@
+\section{Experimental Setup}
+\label{sec:methods}
+% src: work/datasets_v2/DESIGN.md (tiers, schema, authoring pipeline); questions/*.jsonl (counts);
+%      TODO.md "User review (2026-09-25)" and review files (review outcomes); lex4_replay/REPLAY.md (decisive spans)
+% src: paper/analysis/revision_stats.md "Families" (labels 47, constituents 33, components 20, blocks 29)
+% src: RAG-Paper-upgrades/ragbench: retrieval/hybrid.py, config.yaml (chunking), approaches/hybrid.py (rerank),
+%      approaches/lex5b/{approach,views}.py, approaches/lex8/fusion.py; work/datasets_v2/setr/SETR.md;
+%      test_freeze/PROTOCOL.md sec. 2 and 9 (arms, readers, pins, gates); lex5b/LEX5B.md (token amendment)
+% src (dev record): lex4_replay/REPLAY.md, lex11/LEX11.md, lex5b/LEX5B.md, devrun/RESULTS_DEV.md; Table negative-full in Appendix
+% src (number check 2026-11-11): 48 of 54 = work/datasets_v2/lex8/LEX8.md "Diagnosis" (also lex9/LEX9.md); 32 of 156 (31 good, 1 fix) = work/TODO.md line 95;
+%      35 of 4,608 unresolved = TEST_RESULTS.md sec. 6 (35 cells) and S5_stats/RESULTS.md sec. 0; pool chars = work/multidoc/pools/<pool>.json (fa 11.64M, en 26.42M)
+% Rewrite 2026-11-10: benchmark, pipelines, readers, judge and protocol merged into one section; protocol history in one paragraph.
+
+Four things define the setup, namely the benchmark, the four pipelines, the readers and the judge, and the rules fixed before the test.
+
+\subsection{Benchmark}
+\label{sec:benchmark}
+The benchmark pairs natural Persian and English documents with questions of three difficulty tiers.
+\input{tables/tiers}
+\input{tables/pools}
+
+The documents come from three genres, each in Persian and in English: company reports, historical or expository non-fiction, and statutes. Table~\ref{tab:pools} lists the six search pools and their sources. We used only born-digital text or verified transcriptions, never scans, and every question is answered against its whole pool, with no document picked in advance.
+
+The tiers (Table~\ref{tab:tiers}) are defined by the simplest evidence that suffices anywhere in the pool. A T1 question asks for a local fact. A T2 question needs several regions of one document, so no single passage answers it. A T3 question needs at least two documents, so no single document answers it. Each genre and language holds the same number of questions per tier, and each split adds six unanswerable questions, one per pool. Our review budget set the split sizes: 60 questions for development (dev) and 96 for the test, of which 90 are answerable.
+
+Many test questions share source material, so we do not treat them as independent. Our confidence intervals resample whole groups of questions that share a source (20 groups in the test; Table~\ref{tab:composition}, Appendix~\ref{app:benchmark}). Test questions mix ordinary and paraphrased wording.
+
+Each question carries three kinds of annotation. These are the atomic requirements an answer must meet, the evidence passages with exact quotes and offsets into frozen text, and one or more \emph{evidence bundles}. A bundle is a set of passages that together suffice. A pipeline sees only the question, its language and its pool. The shared answer prompt also receives the expected answer format (single fact, list, comparison, series or explanation), identically for every pipeline and reader. Requirements, evidence and expected answers are visible only to the evaluator.
+
+% src: tables/pools.tex (Persian pools 4.76+5.70+1.18 = 11.64M characters, English 16.64+6.26+3.52 = 26.42M); 45 answerable test questions per language (tab:tiers); within-language detectable difference about 8 of 45: S14_bilingual/RESULTS.md sec. 2.3 (8.3 of 45 at discordance 0.2)
+\emph{What the two languages allow.} The Persian and English halves are not translations of each other. They use different documents, with about 12 million characters of Persian text and 26 million of English (Table~\ref{tab:pools}), and each half has 45 answerable test questions. A difference between the halves is therefore a difference between languages and sources together. The design supports three kinds of claim. The first concerns properties of a language or its tooling, such as the token cost of a character, which we measure directly. The second asks which findings appear in both halves, which is a form of replication. The third uses designs in which every question is its own control, such as asking every question in the other language. A paired comparison within one half detects only a difference of about 8 answers out of 45. We therefore treat any split by language as descriptive unless it comes from one of these designs.
+
+The questions were built in six steps, four automated and two by people. Claude Opus 5.5 agents wrote a specification for each question and drafted the question from it, and a mechanical verifier and a separate Claude Opus 5.5 source-review agent checked them. A native Persian speaker then reviewed the Persian wording, and we spot-checked 32 of the 156 questions (31 accepted, 1 fixed). Dev and test share no evidence document, source block or information need, but they share the searchable pools. Appendix~\ref{app:benchmark} gives the schema and the construction steps.
+
+\subsection{Pipelines}
+\label{sec:systems}
+Each pipeline turns a question into an \emph{evidence pack}, the retrieved text that the reader sees (Figure~\ref{fig:pipelines}, Table~\ref{tab:settings}). All four share the same chunking, answer prompts and readers. They differ in what they retrieve and how they pack it into the budget, so we compare whole pipelines and do not credit differences to single components. Sections~\ref{sec:components} and~\ref{sec:lost} vary some components afterwards.
+\input{figures/pipelines}
+\input{tables/settings}
+
+\hybrid{} retrieves chunks with BM25 and with dense bge-m3 vectors \citep{chen2024bgem3} and merges the two rankings by reciprocal rank fusion \citep{cormack2009rrf}. \hr{} rescores the merged list with a cross-encoder reranker, a trained model that scores each passage against the question and needs no LLM tokens. Both fill the budget in ranked order and clip the last chunk if enough of it fits.
+
+\lexb{} has four stages. It first merges BM25, dense and learned-sparse scores into one ranking, which is more sensitive to a strong single signal than rank fusion is. One LLM call then reads short excerpts of the top passages, splits the question into parts and, for each part, names a bundle of passages that together support it. A packer picks the combination of named bundles that covers the most parts within the budget and fills the rest with the next passages, always whole. If the call fails or misses its deadline, the pipeline falls back to the merged ranking.
+
+\setr{} adapts the published SetR selector \citep{lee2025setr}. One chain-of-thought call uses SetR's own prompt to pick a set from \hybrid's candidates. The selected chunks come first and \hybrid's list fills the rest of the budget. Our version uses an untuned selector model and adds the fill, so its results say nothing about the published system.
+
+\label{sec:negative}
+\lexb{} is the last of many designs tried on dev, and most variants failed there (Table~\ref{tab:negative-full} in Appendix~\ref{app:negative}). Two findings shaped the final design. First, the three candidate lists together already held a complete gold bundle for 48 of 54 answerable dev questions. Yet the packs of the non-LLM pipelines delivered far fewer, so on dev evidence was lost between candidate list and pack. On the test, more evidence is lost before the candidate list (Section~\ref{sec:lost}). Second, extra query-time lexical search added almost nothing, index-time enrichment did not transfer, and pruning the pack to the selected bundles alone lost evidence the selector had missed. A selection call over good candidates, with a fill, was what remained.
+
+\subsection{Readers and Judge}
+\label{sec:readers}
+One reader, GLM-5.3-flash, answers every question and also makes both selection calls. Five readers from other model families answer the identical evidence packs, so they add breadth but not independent replications (Table~\ref{tab:settings-full}). We use open models that a deployment without access to the large commercial APIs could run. A pinned LLM judge, which we call the first judge, scores every answer against a strict rubric. An answer counts as correct only if it meets every required point and contains no contradiction, wrong value, wrong subject or unsupported added claim. The judge occasionally returned a reply we could not parse. We leave these 35 of 4,608 answers unscored and report scores as ranges that cover every possible verdict for them. Judge prompts and settings are in Appendix~\ref{app:prompts}.
+
+\subsection{Protocol}
+\label{sec:protocol}
+Table~\ref{tab:protocol} lists the rules fixed before the test.
+\input{tables/protocol}
+All method development used the dev questions, and Claude Opus 5.5 agents implemented and ran our methods without ever reading the test files. Before the first test answer we froze the code, its inputs and the decision rules, and each test question was run once in every pipeline and budget. The freeze is a commit in our repository; it was not registered with a third party.
+
+Two gates and two tests were fixed in advance, all for the primary reader. An \emph{accuracy gate} required \lexb{} at 6,000 characters, which we call the tight budget, to beat each control, \hybrid{} and \hr, by at least 5 of the 90 answerable questions. A \emph{resource gate} limited its query-time LLM tokens. Two superiority tests covered the main comparisons, and everything else was descriptive. The protocol changed in a few places during development and after the test, mostly in operations, scoring and review. The most important change relaxed the token limit of the resource gate from 1.5 to 2.5 times \hybrid's tokens, before any \lexb{} result. Appendix~\ref{app:timeline} lists every change with its date and its timing relative to the results.
+
+After the machine results were known, the author reviewed answers blinded to the pipeline. The review covers every question on which the four 6,000-character pipelines received different judge verdicts, and all four pipelines on each such question, 30 questions in all. We call the result the \emph{symmetric merge}, because all four pipelines were reviewed on every selected question (an earlier, uneven review is described in Section~\ref{sec:stability}). On those questions the human verdicts replace the judge's, and on all others the judge's verdicts stand. The merge was built after the machine results were known, so it is post hoc.
+

@@ -1,0 +1,28 @@
+% src: work/posthoc_2026-11/S2b_variance/results.json exp1.cells (accuracy per replicate, between_rep_sd_count, flip_questions, resolved_all3), exp2 (selector repeats),
+%      exp3, exp4, exp5; RESULTS.md section 2. r0 = the saved October answers; r1 and r2 = the identical saved pack messages answered again by GLM-5.3-flash
+%      (1,536 answers) and judged by judge 1. SD = SD of the three counts (range over unresolved cells). Flips = questions whose verdict changes across the three draws,
+%      of the questions resolved in all three. Selector repeats: the saved selector prompt re-sent to the GLM selector twice (Lex-RAG) or once (SetR) and re-packed.
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrrr@{\hspace{1em}}lrrr@{}}
+\toprule
+\multicolumn{6}{@{}l}{\emph{Reader draws on identical packs (correct of 90)}} & \multicolumn{4}{l}{\emph{Selection call re-sent (6,000 characters)}} \\
+\cmidrule(r){1-6}\cmidrule(l){7-10}
+Arm & Saved & Draw 2 & Draw 3 & SD & Flips & & Saved & Re-send 1 & Re-send 2 \\
+\midrule
+\hybrid{}, 6,000 & 62--63 & 60 & 58--59 & 2.0--2.1 & 10/88 & \lexb{}: correct of 90 & 68--69 & 65 & 67--68 \\
+\hr{}, 6,000 & 69--71 & 65 & 67--68 & 2.0--3.0 & 10/87 & \lexb{}: packs changed (of 96) & -- & 44 & 50 \\
+\lexb{}, 6,000 & 68--69 & 63--64 & 63 & 2.9--3.2 & 8/88 & \lexb{}: deadline fallbacks & 15 & 7 & 10 \\
+\setr{}, 6,000 & 63 & 68--69 & 68 & 2.9--3.2 & 15/89 & \setr{}: correct of 90 & 63 & 68 & -- \\
+\hybrid{}, 15,500 & 68 & 68 & 66 & 1.2 & 10/90 & \setr{}: packs changed (of 96) & -- & 52 & -- \\
+\hr{}, 15,500 & 69--70 & 70--71 & 73 & 1.5--2.1 & 9/88 & & & & \\
+\lexb{}, 15,500 & 67 & 68 & 68 & 0.6 & 12/90 & & & & \\
+\setr{}, 15,500 & 66--67 & 67 & 72 & 2.9--3.2 & 13/89 & & & & \\
+\bottomrule
+\end{tabular}}
+\caption{Post hoc. Noise from re-running the reader (left, the same packs answered three times) and the selection call (right, selection prompt re-sent) on identical inputs. Saved answers are five weeks older than the two new draws.}
+\label{tab:variance}
+\end{table*}

@@ -1,0 +1,2 @@
+{"question_id": "V2-dev-BOOK-en-T2-001", "messages": [{"role": "system", "content": "[stripped: 709 chars]"}, {"role": "user", "content": "[stripped: 184 chars]"}], "num_predict": 640, "messages_sha256": "e92753a99396e051d4c0c78b2ee826eea5028e68b985ddbbb91990e16cf5bab1"}
+{"question_id": "V2-dev-LAW-fa-T2-001", "messages": [{"role": "system", "content": "[stripped: 717 chars]"}, {"role": "user", "content": "[stripped: 250 chars]"}], "num_predict": 640, "messages_sha256": "4f476f3472e3dc30b652ab38e83c8cde46b17f5790971872779780a9912c73b6"}

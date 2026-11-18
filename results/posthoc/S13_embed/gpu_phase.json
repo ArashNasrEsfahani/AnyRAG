@@ -1,0 +1,86 @@
+[
+ {
+  "mode": "probe",
+  "model": "intfloat/multilingual-e5-large",
+  "nvidia_smi_before": "2458 MiB, 8188 MiB",
+  "started": "2026-11-10T19:41:12",
+  "model_path": "D:\\KareOne\\RAG Paper\\work\\models\\hf\\hub\\models--intfloat--multilingual-e5-large\\snapshots\\3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "load_s": 7.6,
+  "probe_bs16": {
+   "n": 200,
+   "s": 6.38,
+   "chunks_per_s": 31.3,
+   "peak_alloc_mb": 1208.8,
+   "truncated": 0,
+   "nvidia_smi": "3892 MiB, 8188 MiB"
+  },
+  "probe_bs32": {
+   "n": 200,
+   "s": 5.29,
+   "chunks_per_s": 37.8,
+   "peak_alloc_mb": 1339.3,
+   "truncated": 0,
+   "nvidia_smi": "4224 MiB, 8188 MiB"
+  },
+  "probe_cos_example": 0.7774034738540649,
+  "peak_alloc_mb": 1339.3,
+  "nvidia_smi_end_loaded": "4224 MiB, 8188 MiB",
+  "gpu_wall_s": 22.0,
+  "nvidia_smi_after_unload": "2590 MiB, 8188 MiB"
+ },
+ {
+  "mode": "encode",
+  "model": "intfloat/multilingual-e5-large",
+  "nvidia_smi_before": "2458 MiB, 8188 MiB",
+  "started": "2026-11-10T19:42:00",
+  "model_path": "D:\\KareOne\\RAG Paper\\work\\models\\hf\\hub\\models--intfloat--multilingual-e5-large\\snapshots\\3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "load_s": 7.3,
+  "sets": {
+   "BOOK_en": {
+    "n": 9661,
+    "s": 147.6,
+    "truncated": 0,
+    "batch_end": 32
+   },
+   "BOOK_fa": {
+    "n": 8905,
+    "s": 165.7,
+    "truncated": 0,
+    "batch_end": 32
+   },
+   "C": {
+    "n": 6921,
+    "s": 128.7,
+    "truncated": 27,
+    "batch_end": 32
+   },
+   "D_en": {
+    "n": 25685,
+    "s": 495.1,
+    "truncated": 38,
+    "batch_end": 32
+   },
+   "LAW_en": {
+    "n": 5427,
+    "s": 86.5,
+    "truncated": 0,
+    "batch_end": 32
+   },
+   "LAW_fa": {
+    "n": 1619,
+    "s": 26.0,
+    "truncated": 0,
+    "batch_end": 32
+   }
+  },
+  "queries": {
+   "n": 156,
+   "s": 1.5,
+   "truncated": 0
+  },
+  "peak_alloc_mb": 1469.7,
+  "nvidia_smi_end_loaded": "3754 MiB, 8188 MiB",
+  "gpu_wall_s": 1058.8,
+  "nvidia_smi_after_unload": "926 MiB, 8188 MiB"
+ }
+]

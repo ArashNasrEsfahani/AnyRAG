@@ -1,0 +1,18 @@
+{
+ "arm": "KNAP_6000",
+ "question_id": "V2-test-RPT-fa-AB-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5619 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "3824775f761b0831e559017441be6ba6be2ab4f16e2296ea7cd6a72152b4f85f",
+ "evidence_chars": 5544
+}

@@ -1,0 +1,815 @@
+{
+ "approach": "LEX7",
+ "approach_base": "LEX7",
+ "flags": {},
+ "invocations": [
+  {
+   "run_id": "20260926-172516-34d5a3",
+   "started": "2026-09-26T17:25:19",
+   "argv": [
+    "--approach",
+    "lex7",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+    "--corpus",
+    "C",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "RPT-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex7-1-eval",
+    "--ids",
+    "V2-dev-RPT-fa-T2-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+   "questions_sha1": "5f9fdf18ba630702fdcae453ebc1069b73f6d391",
+   "corpus": "C",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "d537ac134d81d9204a18d1db13f59c3d618322ec",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "a02c834bc047520e67a5a672358f8da9dd2a75ea",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-fa",
+    "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8"
+   },
+   "identity": {
+    "experiment_id": "lex7-1-eval",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": false,
+    "version": null,
+    "chat_present": null,
+    "embed_present": null,
+    "chat_digest_match": null,
+    "embed_digest_match": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"
+   },
+   "finished": "2026-09-26T17:25:34",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3501,
+     "completion_tokens": 175,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1815.5,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 76,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1853.2,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7\\ledger_LEX7.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-172545-c2f241",
+   "started": "2026-09-26T17:25:48",
+   "argv": [
+    "--approach",
+    "lex7",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+    "--corpus",
+    "C",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "RPT-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex7-1-eval",
+    "--ids",
+    "V2-dev-RPT-fa-T1-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+   "questions_sha1": "5f9fdf18ba630702fdcae453ebc1069b73f6d391",
+   "corpus": "C",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "d537ac134d81d9204a18d1db13f59c3d618322ec",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "a02c834bc047520e67a5a672358f8da9dd2a75ea",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-fa",
+    "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8"
+   },
+   "identity": {
+    "experiment_id": "lex7-1-eval",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": false,
+    "version": null,
+    "chat_present": null,
+    "embed_present": null,
+    "chat_digest_match": null,
+    "embed_digest_match": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"
+   },
+   "finished": "2026-09-26T17:26:01",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3328,
+     "completion_tokens": 138,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1415.6,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 818.2,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7\\ledger_LEX7.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-172603-895436",
+   "started": "2026-09-26T17:26:05",
+   "argv": [
+    "--approach",
+    "lex7",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+    "--corpus",
+    "C",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "RPT-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex7-1-eval",
+    "--ids",
+    "V2-dev-RPT-fa-T2-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+   "questions_sha1": "5f9fdf18ba630702fdcae453ebc1069b73f6d391",
+   "corpus": "C",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "d537ac134d81d9204a18d1db13f59c3d618322ec",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "a02c834bc047520e67a5a672358f8da9dd2a75ea",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-fa",
+    "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8"
+   },
+   "identity": {
+    "experiment_id": "lex7-1-eval",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": false,
+    "version": null,
+    "chat_present": null,
+    "embed_present": null,
+    "chat_digest_match": null,
+    "embed_digest_match": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"
+   },
+   "finished": "2026-09-26T17:26:18",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3462,
+     "completion_tokens": 251,
+     "embed_tokens": 0,
+     "llm_wall_ms": 2082.8,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 848.7,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7\\ledger_LEX7.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-172619-4d9ed1",
+   "started": "2026-09-26T17:26:22",
+   "argv": [
+    "--approach",
+    "lex7",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+    "--corpus",
+    "C",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "RPT-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex7-1-eval",
+    "--ids",
+    "V2-dev-RPT-fa-T3-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+   "questions_sha1": "5f9fdf18ba630702fdcae453ebc1069b73f6d391",
+   "corpus": "C",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "d537ac134d81d9204a18d1db13f59c3d618322ec",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "a02c834bc047520e67a5a672358f8da9dd2a75ea",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-fa",
+    "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8"
+   },
+   "identity": {
+    "experiment_id": "lex7-1-eval",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": false,
+    "version": null,
+    "chat_present": null,
+    "embed_present": null,
+    "chat_digest_match": null,
+    "embed_digest_match": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"
+   },
+   "finished": "2026-09-26T17:26:37",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3403,
+     "completion_tokens": 288,
+     "embed_tokens": 0,
+     "llm_wall_ms": 3074.1,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 827.4,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7\\ledger_LEX7.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-172945-78bb74",
+   "started": "2026-09-26T17:29:48",
+   "argv": [
+    "--approach",
+    "lex7",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+    "--corpus",
+    "C",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "RPT-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex7-1-eval",
+    "--ids",
+    "V2-dev-RPT-fa-T1-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+   "questions_sha1": "5f9fdf18ba630702fdcae453ebc1069b73f6d391",
+   "corpus": "C",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "d537ac134d81d9204a18d1db13f59c3d618322ec",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "a02c834bc047520e67a5a672358f8da9dd2a75ea",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-fa",
+    "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8"
+   },
+   "identity": {
+    "experiment_id": "lex7-1-eval",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": false,
+    "version": null,
+    "chat_present": null,
+    "embed_present": null,
+    "chat_digest_match": null,
+    "embed_digest_match": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"
+   },
+   "finished": "2026-09-26T17:30:08",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3394,
+     "completion_tokens": 142,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1637.9,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 157,
+     "embed_tokens": 0,
+     "llm_wall_ms": 4765.7,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7\\ledger_LEX7.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-173009-926298",
+   "started": "2026-09-26T17:30:12",
+   "argv": [
+    "--approach",
+    "lex7",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+    "--corpus",
+    "C",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "RPT-fa",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex7-1-eval",
+    "--ids",
+    "V2-dev-RPT-fa-T3-001",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-fa.jsonl",
+   "questions_sha1": "5f9fdf18ba630702fdcae453ebc1069b73f6d391",
+   "corpus": "C",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "d537ac134d81d9204a18d1db13f59c3d618322ec",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "a02c834bc047520e67a5a672358f8da9dd2a75ea",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-fa",
+    "manifest_sha1": "847a5510e08afdcff9ead61e5d3753801cb653b8"
+   },
+   "identity": {
+    "experiment_id": "lex7-1-eval",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": false,
+    "version": null,
+    "chat_present": null,
+    "embed_present": null,
+    "chat_digest_match": null,
+    "embed_digest_match": null,
+    "error": "HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"
+   },
+   "finished": "2026-09-26T17:30:30",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 2,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3565,
+     "completion_tokens": 133,
+     "embed_tokens": 0,
+     "llm_wall_ms": 1751.3,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 3,
+     "embed_tokens": 0,
+     "llm_wall_ms": 938.3,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex7\\v71\\eval\\runs\\RPT-fa\\LEX7\\ledger_LEX7.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-dev-RPT-fa-T2-001": "8b642da15b229018",
+  "V2-dev-RPT-fa-T1-002": "85bc76c48be702ec",
+  "V2-dev-RPT-fa-T2-002": "55247654619a3039",
+  "V2-dev-RPT-fa-T3-002": "f0576990fdc126ca",
+  "V2-dev-RPT-fa-T1-001": "2a082acc8bba3979",
+  "V2-dev-RPT-fa-T3-001": "9a25c3e50b1c793a"
+ },
+ "question_sigs_v2": {
+  "V2-dev-RPT-fa-T2-001": "24361d64b6aa0116",
+  "V2-dev-RPT-fa-T1-002": "d56246f36e9dca20",
+  "V2-dev-RPT-fa-T2-002": "df3bf36fe174b769",
+  "V2-dev-RPT-fa-T3-002": "bf81adcadafa8ede",
+  "V2-dev-RPT-fa-T1-001": "3bcb11e295b2979c",
+  "V2-dev-RPT-fa-T3-001": "bf9f868ef785ceac"
+ }
+}

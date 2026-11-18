@@ -1,0 +1,56 @@
+{"at": "2026-11-10T17:54:23", "tag": "lexbud batch 0", "limit_remaining": 5.0568224100000005, "stream_spent": 0.0, "ok": true}
+{"at": "2026-11-10T17:54:30", "tag": "nodl batch 0", "limit_remaining": 5.0568224100000005, "stream_spent": 0.0025053, "ok": true}
+{"at": "2026-11-10T17:54:41", "tag": "selhr batch 0", "limit_remaining": 5.0568224100000005, "stream_spent": 0.00298905, "ok": true}
+{"at": "2026-11-10T17:54:51", "tag": "judge lexbud", "limit_remaining": 5.0543171099999995, "stream_spent": 0.00555959, "ok": true}
+{"at": "2026-11-10T17:55:04", "tag": "judge nodl", "limit_remaining": 5.0538333600000005, "stream_spent": 0.00566815, "ok": true}
+{"at": "2026-11-10T17:55:15", "tag": "judge selhr", "limit_remaining": 5.0538333600000005, "stream_spent": 0.00576993, "ok": true}
+{"at": "2026-11-10T17:55:51", "tag": "selhr batch 0", "limit_remaining": 5.053783203, "stream_spent": 0.00601161, "ok": true}
+{"at": "2026-11-10T17:55:51", "tag": "lexbud batch 0", "limit_remaining": 5.053783203, "stream_spent": 0.00601161, "ok": true}
+{"at": "2026-11-10T17:55:51", "tag": "nodl batch 0", "limit_remaining": 5.053783203, "stream_spent": 0.00601161, "ok": true}
+{"at": "2026-11-10T17:56:05", "tag": "lexbud batch 20", "limit_remaining": 5.050904364999999, "stream_spent": 0.01975058, "ok": true}
+{"at": "2026-11-10T17:56:15", "tag": "lexbud batch 40", "limit_remaining": 5.046603095, "stream_spent": 0.03504776, "ok": true}
+{"at": "2026-11-10T17:56:18", "tag": "nodl batch 20", "limit_remaining": 5.046603095, "stream_spent": 0.03891233, "ok": true}
+{"at": "2026-11-10T17:56:25", "tag": "lexbud batch 60", "limit_remaining": 5.022125252, "stream_spent": 0.04911934, "ok": true}
+{"at": "2026-11-10T17:56:28", "tag": "selhr batch 20", "limit_remaining": 5.022125252, "stream_spent": 0.05247755, "ok": true}
+{"at": "2026-11-10T17:56:40", "tag": "lexbud batch 80", "limit_remaining": 5.001402182, "stream_spent": 0.06718673, "ok": true}
+{"at": "2026-11-10T17:56:46", "tag": "nodl batch 40", "limit_remaining": 5.001402182, "stream_spent": 0.07606039, "ok": true}
+{"at": "2026-11-10T17:56:52", "tag": "judge2", "limit_remaining": 5.001402182, "stream_spent": 0.08480177, "ok": true}
+{"at": "2026-11-10T17:56:53", "tag": "lexbud batch 100", "limit_remaining": 5.001402182, "stream_spent": 0.08804782, "ok": true}
+{"at": "2026-11-10T17:57:01", "tag": "selhr batch 40", "limit_remaining": 4.993647832000001, "stream_spent": 0.09869127, "ok": true}
+{"at": "2026-11-10T17:57:08", "tag": "lexbud batch 120", "limit_remaining": 4.993647832000001, "stream_spent": 0.11199697, "ok": true}
+{"at": "2026-11-10T17:57:10", "tag": "nodl batch 60", "limit_remaining": 4.993647832000001, "stream_spent": 0.11366352, "ok": true}
+{"at": "2026-11-10T17:57:12", "tag": "lexbud batch 140", "limit_remaining": 4.993647832000001, "stream_spent": 0.11803723, "ok": true}
+{"at": "2026-11-10T17:57:27", "tag": "lexbud batch 160", "limit_remaining": 4.993647832000001, "stream_spent": 0.13506769, "ok": true}
+{"at": "2026-11-10T17:57:32", "tag": "nodl batch 80", "limit_remaining": 4.9755135720000006, "stream_spent": 0.13903318, "ok": true}
+{"at": "2026-11-10T17:57:33", "tag": "selhr batch 60", "limit_remaining": 4.9755135720000006, "stream_spent": 0.13903318, "ok": true}
+{"at": "2026-11-10T17:57:47", "tag": "lexbud batch 180", "limit_remaining": 4.942261902, "stream_spent": 0.15713425, "ok": true}
+{"at": "2026-11-10T17:57:52", "tag": "judge nodl", "limit_remaining": 4.942261902, "stream_spent": 0.16312302, "ok": true}
+{"at": "2026-11-10T17:57:54", "tag": "lexbud batch 200", "limit_remaining": 4.942261902, "stream_spent": 0.16745623, "ok": true}
+{"at": "2026-11-10T17:58:03", "tag": "selhr batch 80", "limit_remaining": 4.927187882, "stream_spent": 0.17750133, "ok": true}
+{"at": "2026-11-10T17:58:14", "tag": "lexbud batch 220", "limit_remaining": 4.915487182, "stream_spent": 0.19103218, "ok": true}
+{"at": "2026-11-10T17:58:28", "tag": "lexbud batch 240", "limit_remaining": 4.915487182, "stream_spent": 0.20444816, "ok": true}
+{"at": "2026-11-10T17:58:29", "tag": "judge selhr", "limit_remaining": 4.905221592, "stream_spent": 0.2045992, "ok": true}
+{"at": "2026-11-10T17:58:41", "tag": "lexbud batch 260", "limit_remaining": 4.905221592, "stream_spent": 0.21051834, "ok": true}
+{"at": "2026-11-10T17:58:55", "tag": "judge lexbud", "limit_remaining": 4.872117819, "stream_spent": 0.2158616, "ok": true}
+{"at": "2026-11-10T18:02:51", "tag": "devfusion 0", "limit_remaining": 4.830733735000001, "stream_spent": 0.22412111, "ok": true}
+{"at": "2026-11-10T18:03:17", "tag": "devfusion 30", "limit_remaining": 4.830309809999999, "stream_spent": 0.23437828, "ok": true}
+{"at": "2026-11-10T18:03:47", "tag": "devfusion judge", "limit_remaining": 4.822999702000001, "stream_spent": 0.24696112, "ok": true}
+{"at": "2026-11-10T18:07:47", "tag": "judge selhr", "limit_remaining": 4.796725502999999, "stream_spent": 0.25604774, "ok": true}
+{"at": "2026-11-10T18:10:09", "tag": "judge lexbud", "limit_remaining": 4.789839853, "stream_spent": 0.26028882, "ok": true}
+{"at": "2026-11-10T18:13:37", "tag": "devfusion judge", "limit_remaining": 4.782801882999999, "stream_spent": 0.26650021, "ok": true}
+{"at": "2026-11-10T18:19:47", "tag": "judge2", "limit_remaining": 4.77231776, "stream_spent": 0.28469093, "ok": true}
+{"at": "2026-11-10T18:19:48", "tag": "judge2", "limit_remaining": 4.771857124, "stream_spent": 0.28469093, "ok": true}
+{"at": "2026-11-10T18:20:46", "tag": "judge lexbud", "limit_remaining": 4.766612189, "stream_spent": 0.27346284, "ok": true}
+{"at": "2026-11-10T18:30:01", "tag": "judge lexbud", "limit_remaining": 4.751435207, "stream_spent": 0.27983876, "ok": true}
+{"at": "2026-11-10T19:03:12", "tag": "judge2", "limit_remaining": 4.705154589999999, "stream_spent": 0.32434969, "ok": true}
+{"at": "2026-11-10T19:20:38", "tag": "judge2", "limit_remaining": 4.56322376, "stream_spent": 0.37923509, "ok": true}
+{"at": "2026-11-10T19:27:31", "tag": "judge2", "limit_remaining": 4.501835023, "stream_spent": 0.43959129, "ok": true}
+{"at": "2026-11-10T19:35:22", "tag": "judge2", "limit_remaining": 4.432784087, "stream_spent": 0.5000387900000001, "ok": true}
+{"at": "2026-11-10T19:44:23", "tag": "judge2", "limit_remaining": 4.286089278, "stream_spent": 0.56226779, "ok": true}
+{"at": "2026-11-10T19:52:36", "tag": "judge2", "limit_remaining": 4.066686421, "stream_spent": 0.62498719, "ok": true}
+{"at": "2026-11-10T20:05:39", "tag": "judge2", "limit_remaining": 3.8800875149999996, "stream_spent": 0.68159389, "ok": true}
+{"at": "2026-11-10T20:13:20", "tag": "judge2", "limit_remaining": 3.6573936099999997, "stream_spent": 0.7435877900000001, "ok": true}
+{"at": "2026-11-10T20:21:07", "tag": "judge2", "limit_remaining": 3.5393891639999993, "stream_spent": 0.80305729, "ok": true}
+{"at": "2026-11-10T20:30:16", "tag": "judge2", "limit_remaining": 3.4483167550000005, "stream_spent": 0.86016529, "ok": true}
+{"at": "2026-11-10T20:41:14", "tag": "judge2", "limit_remaining": 3.2951573699999983, "stream_spent": 0.91466619, "ok": true}
+{"at": "2026-11-10T20:48:43", "tag": "judge2", "limit_remaining": 3.2347651739999996, "stream_spent": 0.96459859, "ok": true}

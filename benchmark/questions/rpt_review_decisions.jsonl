@@ -1,0 +1,68 @@
+{"id": "V2-dev-RPT-fa-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T1-003", "verdict": "accept", "tier_ok": true, "problems": ["answer paraphrase 'به دلیل' vs source 'تا رفع مشکل' (optional)"], "fix": null}
+{"id": "V2-dev-RPT-fa-T2-001", "verdict": "accept", "tier_ok": true, "problems": ["21.8M is a lower bound (optional wording)"], "fix": null}
+{"id": "V2-dev-RPT-fa-T2-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T2-003", "verdict": "fix", "tier_ok": true, "problems": ["record: derived R1/R2 have empty inputs; operands not requirements"], "fix": "Add optional operand requirements R4=30,000 active selling apps, R5=3,300 new, R6=6,700 active selling games, R7=1,730 new (supported by E1/E2); set R1.derivation.inputs=[R4,R5], R2.derivation.inputs=[R6,R7]."}
+{"id": "V2-dev-RPT-fa-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T3-002", "verdict": "fix", "tier_ok": true, "problems": ["period: 'end of 1400' not stated (source: 'in 1400')", "difference of two lower bounds presented as a firm value"], "fix": "question: 'تعداد نصب فعال کافه‌بازار از پایان سال ۱۳۹۷ تا سال ۱۴۰۰ تقریباً چقدر بیشتر شد؟' answer: 'از بیش از ۴۰ میلیون در پایان ۱۳۹۷ (ابتدای ۱۳۹۸) به بیش از ۵۳ میلیون در سال ۱۴۰۰ رسید؛ یعنی تقریباً ۱۳ میلیون (حدود ۳۳ درصد) بیشتر.' R2.constraints.time={value:'1400',kind:'solar_hijri_year'}; R3 approximately, tolerance 12-14 million."}
+{"id": "V2-dev-RPT-fa-T3-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T1-001", "verdict": "accept", "tier_ok": true, "problems": ["adjacent region read by a test_fresh unanswerable audit (different fact)"], "fix": null}
+{"id": "V2-dev-RPT-en-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Optional: add D.turkcell_form-20f_2024.en::p70_b5 as alternative unit."}
+{"id": "V2-dev-RPT-en-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T2-001", "verdict": "fix", "tier_ok": true, "problems": ["open 'balance sheet' aspect: accounting-policy material-right allocation is a competing answer", "answer asserts causation the source does not state"], "fix": "question: 'What did Zalando change about its Zalando Plus loyalty programme in 2024, and what year-end accrual connected with Zalando Plus does its annual report mention among its other liabilities?' answer: replace 'Because of this, it booked' with 'The notes also report increased accruals at year end for reimbursing Zalando Plus subscription fees to customers at the beginning of 2025 (in other current non-financial liabilities).'"}
+{"id": "V2-dev-RPT-en-T2-002", "verdict": "fix", "tier_ok": true, "problems": ["necessity audit wrong: p128_b9 alone gives R1 and R2; only the R3 range needs notes/auditor report"], "fix": "Correct necessity_audit (E3 removal loses R3 only); add p128_b9 quote 'Where the rider risk is deemed possible (but not probable), this has been disclosed as a contingency' as support for R2; add p225_b6 as alternative support for R3. Question/answer unchanged."}
+{"id": "V2-dev-RPT-en-T2-003", "verdict": "fix", "tier_ok": true, "problems": ["ambiguous denominator (customer balances 13.3bn vs Wise Account deposits 7.9bn)", "business deposits not dated at year end", "lower bound; answer says 40% and 41%"], "fix": "question: 'Wise's FY2024 annual report gives its total customer balances and, in the Wise Business section, the business deposits it holds. Roughly what share of total customer balances were business deposits?' answer: 'At least about 41%: over £5.4 billion of business deposits against £13.3 billion of customer balances.' R3 tolerance 40-41%."}
+{"id": "V2-dev-RPT-en-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T3-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T1-001", "verdict": "accept", "tier_ok": true, "problems": ["processing capacity is daily elsewhere; answer omits 'daily' (optional)"], "fix": null}
+{"id": "V2-test-RPT-fa-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T1-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T1-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T2-001", "verdict": "accept", "tier_ok": true, "problems": ["'میانگین جهانی' should be 'سهم جهانی' (optional)"], "fix": null}
+{"id": "V2-test-RPT-fa-T2-002", "verdict": "accept", "tier_ok": true, "problems": ["sanity flag: implies ~22k Tehran sellers; labels explicit"], "fix": null}
+{"id": "V2-test-RPT-fa-T2-003", "verdict": "reject", "tier_ok": false, "problems": ["three lookups in one local section; no integration operation (not T2)"], "fix": "Retier to T1 (T1_fact) and keep as reserve, or replace from the T2 reserve."}
+{"id": "V2-test-RPT-fa-T2-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T2-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Add C.snapp_annual-report_1402.fa::p215_b7 as alternative unit for R2."}
+{"id": "V2-test-RPT-fa-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T3-003", "verdict": "fix", "tier_ok": true, "problems": ["unit of '+5.72' NPS growth unstated (points vs percent); required derived 51.7 rests on an assumption"], "fix": "question: 'میانگین نمرهٔ شاخص NPS دیجی‌کالا در سال ۱۴۰۲ چند بود و گزارش سال ۱۴۰۳ چه رشدی برای این شاخص نسبت به ۱۴۰۲ اعلام کرد؟' answer: '۴۶ در ۱۴۰۲؛ گزارش ۱۴۰۳ رشد «+۵.۷۲» نسبت به ۱۴۰۲ را اعلام کرده است (واحدش ذکر نشده؛ اگر امتیاز باشد، حدود ۵۱.۷).' R3 -> optional."}
+{"id": "V2-test-RPT-fa-T3-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Optional: note Snapp 1403 Snapp Pro section as near-alternative (one year after launch)."}
+{"id": "V2-test-RPT-fa-T3-005", "verdict": "fix", "tier_ok": true, "problems": ["'Snapp trips' distance not bound to a service (Snapp Box/food/market/pharmacy distances also reported)"], "fix": "question: 'در سال ۱۴۰۳ مجموع مسافتی که مسافران اسنپ در سفرهای اسنپ‌خودرو پیمودند تقریباً چند برابر مسافتی بود که ناوگان دیجی‌اکسپرس دیجی‌کالا طی کرد؟' answer: 'سفرهای اسنپ‌خودرو' in place of 'سفرهای اسنپ'."}
+{"id": "V2-test-RPT-fa-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Optional: add ArcelorMittal 2023 unit as alternative."}
+{"id": "V2-test-RPT-en-T1-002", "verdict": "fix", "tier_ok": true, "problems": ["scope ambiguity: standalone 395/86 vs group-level 588 patents / 105 new products in the same report"], "fix": "question: 'How many patents were granted to Tata Steel Standalone (its India operations), and how many new products did it develop, in FY2023-24?' Note group figures 588/105 as a trap."}
+{"id": "V2-test-RPT-en-T1-003", "verdict": "accept", "tier_ok": true, "problems": ["'early 2025' is inferred (optional wording)"], "fix": null}
+{"id": "V2-test-RPT-en-T1-004", "verdict": "accept", "tier_ok": true, "problems": ["~20% also stated for 2022 and 2023 (non-discriminating, not wrong)"], "fix": null}
+{"id": "V2-test-RPT-en-T1-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T2-001", "verdict": "reject", "tier_ok": false, "problems": ["single unit p219_b35 (associates note) gives 28.4%, 27.89% year-end, EUR 14.64, EUR 960m ($1,048m): T1"], "fix": "Retier to T1 with bundle [p219_b35] (alt: p10_b9+p86_b39) or replace from the T2 reserve."}
+{"id": "V2-test-RPT-en-T2-002", "verdict": "reject", "tier_ok": false, "problems": ["p46_b12 alone answers the question as worded; required date/firm not asked and firm/date are in the same H&S section"], "fix": "Retier to T1 (R3=sale to QIC, R4=independent group-wide safety audit launched Dec 2023; dss+/22 Dec optional), bundle [p46_b12]; or replace."}
+{"id": "V2-test-RPT-en-T2-003", "verdict": "reject", "tier_ok": false, "problems": ["p25 passage gives 50% ownership + 40,439; note table p170_t1 gives 40,439 (100%) and 20,220 (50%) together: T1"], "fix": "Retier to T1 or replace from the T2 reserve."}
+{"id": "V2-test-RPT-en-T2-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Optional: add p123_b24 (seafarers 719+11,449=12,168) as alternative operand; accept 11-11.3%."}
+{"id": "V2-test-RPT-en-T2-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Optional: add p29_b3 as alternative unit for R1."}
+{"id": "V2-test-RPT-en-T3-001", "verdict": "fix", "tier_ok": true, "problems": ["wrong operand: Leroy 171,228 GWT is salmon+trout; salmon-only is 147,701 GWT (p173_t3); ratio 3.4 not 2.9"], "fix": "answer: 'Mowi harvested 501,530 tonnes gutted weight of salmon versus Lerøy's 147,701 GWT of salmon (171,228 GWT including trout, excluding its JV share) - Mowi's salmon volume was about 3.4 times Lerøy's.' R2=147,701 GWT (quote from p173_t3); R3=3.4 (accept 3.3-3.4)."}
+{"id": "V2-test-RPT-en-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T3-003", "verdict": "fix", "tier_ok": true, "problems": ["non-matching definitions: Rio FTE-based incl. equity-accounted share vs Maersk average headcount; Maersk FTE average 104,890 in note 2.2"], "fix": "R1 aliases 106,626 or 104,890; R3 tolerance 45,000-51,000 more / 1.8-1.9x (or make R3 optional, keep 'Maersk employed more' required); answer mentions the FTE figure; add Maersk note 2.2 as alternative evidence."}
+{"id": "V2-test-RPT-en-T3-004", "verdict": "fix", "tier_ok": true, "problems": ["2024 harvest table gives 303,501 GWT: shortfall 1.5k (0.5%) vs expected 1k (0.3%)"], "fix": "R2 aliases 304k / 303,501; R3 tolerance 1,000-1,500 GWT (0.3-0.5%); answer: '... a record 304k GWT (303,501 GWT in the harvest table) - about 1-1.5k GWT short of guidance.'"}
+{"id": "V2-test-RPT-en-T3-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T1-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T2-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-fa-T3-002", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T2-001", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T2-002", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-RPT-en-T2-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T3-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-fa-T3-005", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T1-002", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T3-001", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T3-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-RPT-en-T3-004", "round": 2, "verdict": "accept", "tier_ok": true, "problems": ["cosmetic: R3 proposition says 'about 1k' while precision is 1-1.5k"], "fix": "Optional: R3 proposition 'about 1-1.5k GWT below guidance'."}
+{"id": "V2-test-RPT-fa-T2-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": ["diversity: same Snapp 1403 glossary definition-bridge pattern as fa-T2-005"], "fix": null}
+{"id": "V2-test-RPT-en-T2-001", "round": 2, "verdict": "accept", "tier_ok": true, "problems": ["weak T2: two facts about one deal (price/settlement only in notes; volume only in text)"], "fix": null}
+{"id": "V2-test-RPT-en-T2-002", "round": 2, "verdict": "accept", "tier_ok": true, "problems": ["concentration: 3 of 5 en test T2s from Maersk"], "fix": null}
+{"id": "V2-test-RPT-en-T2-003", "round": 2, "verdict": "accept", "tier_ok": true, "problems": ["concentration: 3 of 5 en test T2s from Maersk; same glossary template as en-T2-002"], "fix": "Recommended swap: replace with ArcelorMittal 2024 LTIFR definition bridge (value 0.70 p35_b10 + glossary p187_t1#table.0 definition: LTI per 1,000,000 worked hours, own personnel and contractors; LTI prevents return to next scheduled shift). Move the Maersk question to reserve. Note adjacent exposure: test_fresh AM 2023 Europe LTIFR."}

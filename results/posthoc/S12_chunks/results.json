@@ -1,0 +1,5504 @@
+{
+ "table": [
+  {
+   "arm": "HYBRID_C500_6000",
+   "size": 500,
+   "acc90": [
+    58,
+    59
+   ],
+   "unresolved": 1,
+   "status": {
+    "judged": 95,
+    "needs_adjudication": 1
+   },
+   "abstain_correct6": [
+    6,
+    6
+   ],
+   "chars_mean": 5907.6,
+   "items_mean": 11.5,
+   "answer_prompt_tokens_mean": 2098.6,
+   "answer_prompt_tokens_en": 1560.5,
+   "answer_prompt_tokens_fa": 2636.6,
+   "completion_tokens_mean": 116.4,
+   "llm_calls_mean": 1.0,
+   "tokens_unknown": 0
+  },
+  {
+   "arm": "HYBRID_6000",
+   "size": 1000,
+   "acc90": [
+    62,
+    63
+   ],
+   "unresolved": 1,
+   "status": {
+    "judged": 95,
+    "needs_adjudication": 1
+   },
+   "abstain_correct6": [
+    6,
+    6
+   ],
+   "chars_mean": 5955.8,
+   "items_mean": 6.7,
+   "answer_prompt_tokens_mean": 2093.1,
+   "answer_prompt_tokens_en": 1531.3,
+   "answer_prompt_tokens_fa": 2655.0,
+   "completion_tokens_mean": 123.1,
+   "llm_calls_mean": 1.0,
+   "tokens_unknown": 0
+  },
+  {
+   "arm": "HYBRID_C2000_6000",
+   "size": 2000,
+   "acc90": [
+    49,
+    49
+   ],
+   "unresolved": 0,
+   "status": {
+    "judged": 96
+   },
+   "abstain_correct6": [
+    6,
+    6
+   ],
+   "chars_mean": 5960.6,
+   "items_mean": 3.7,
+   "answer_prompt_tokens_mean": 2086.3,
+   "answer_prompt_tokens_en": 1524.2,
+   "answer_prompt_tokens_fa": 2648.4,
+   "completion_tokens_mean": 111.6,
+   "llm_calls_mean": 1.0,
+   "tokens_unknown": 0
+  },
+  {
+   "arm": "HR_C500_6000",
+   "size": 500,
+   "acc90": [
+    62,
+    62
+   ],
+   "unresolved": 0,
+   "status": {
+    "judged": 96
+   },
+   "abstain_correct6": [
+    6,
+    6
+   ],
+   "chars_mean": 5897.5,
+   "items_mean": 11.4,
+   "answer_prompt_tokens_mean": 2109.8,
+   "answer_prompt_tokens_en": 1558.7,
+   "answer_prompt_tokens_fa": 2660.9,
+   "completion_tokens_mean": 124.1,
+   "llm_calls_mean": 1.0,
+   "tokens_unknown": 0
+  },
+  {
+   "arm": "HR_6000",
+   "size": 1000,
+   "acc90": [
+    69,
+    71
+   ],
+   "unresolved": 2,
+   "status": {
+    "judged": 94,
+    "needs_adjudication": 2
+   },
+   "abstain_correct6": [
+    6,
+    6
+   ],
+   "chars_mean": 5958.1,
+   "items_mean": 6.6,
+   "answer_prompt_tokens_mean": 2111.1,
+   "answer_prompt_tokens_en": 1553.1,
+   "answer_prompt_tokens_fa": 2669.0,
+   "completion_tokens_mean": 125.5,
+   "llm_calls_mean": 1.0,
+   "tokens_unknown": 0
+  },
+  {
+   "arm": "HR_C2000_6000",
+   "size": 2000,
+   "acc90": [
+    51,
+    51
+   ],
+   "unresolved": 0,
+   "status": {
+    "judged": 96
+   },
+   "abstain_correct6": [
+    6,
+    6
+   ],
+   "chars_mean": 5956.7,
+   "items_mean": 3.7,
+   "answer_prompt_tokens_mean": 2077.1,
+   "answer_prompt_tokens_en": 1506.7,
+   "answer_prompt_tokens_fa": 2647.4,
+   "completion_tokens_mean": 116.4,
+   "llm_calls_mean": 1.0,
+   "tokens_unknown": 0
+  }
+ ],
+ "groups": {
+  "HYBRID_C500_6000": {
+   "tier": {
+    "T1": [
+     26,
+     26,
+     30
+    ],
+    "T2": [
+     18,
+     18,
+     30
+    ],
+    "T3": [
+     14,
+     15,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     25,
+     26,
+     45
+    ],
+    "fa": [
+     33,
+     33,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     19,
+     19,
+     30
+    ],
+    "LAW": [
+     20,
+     21,
+     30
+    ],
+    "RPT": [
+     19,
+     19,
+     30
+    ]
+   }
+  },
+  "HYBRID_6000": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     21,
+     30
+    ],
+    "T3": [
+     14,
+     14,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     27,
+     27,
+     45
+    ],
+    "fa": [
+     35,
+     36,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     19,
+     19,
+     30
+    ],
+    "LAW": [
+     22,
+     22,
+     30
+    ],
+    "RPT": [
+     21,
+     22,
+     30
+    ]
+   }
+  },
+  "HYBRID_C2000_6000": {
+   "tier": {
+    "T1": [
+     26,
+     26,
+     30
+    ],
+    "T2": [
+     12,
+     12,
+     30
+    ],
+    "T3": [
+     11,
+     11,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     20,
+     20,
+     45
+    ],
+    "fa": [
+     29,
+     29,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     15,
+     15,
+     30
+    ],
+    "LAW": [
+     16,
+     16,
+     30
+    ],
+    "RPT": [
+     18,
+     18,
+     30
+    ]
+   }
+  },
+  "HR_C500_6000": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     18,
+     18,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     28,
+     28,
+     45
+    ],
+    "fa": [
+     34,
+     34,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     19,
+     19,
+     30
+    ],
+    "LAW": [
+     22,
+     22,
+     30
+    ],
+    "RPT": [
+     21,
+     21,
+     30
+    ]
+   }
+  },
+  "HR_6000": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30
+    ],
+    "T3": [
+     18,
+     19,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     33,
+     35,
+     45
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     20,
+     20,
+     30
+    ],
+    "LAW": [
+     23,
+     24,
+     30
+    ],
+    "RPT": [
+     26,
+     27,
+     30
+    ]
+   }
+  },
+  "HR_C2000_6000": {
+   "tier": {
+    "T1": [
+     26,
+     26,
+     30
+    ],
+    "T2": [
+     13,
+     13,
+     30
+    ],
+    "T3": [
+     12,
+     12,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     24,
+     24,
+     45
+    ],
+    "fa": [
+     27,
+     27,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     15,
+     15,
+     30
+    ],
+    "LAW": [
+     18,
+     18,
+     30
+    ],
+    "RPT": [
+     18,
+     18,
+     30
+    ]
+   }
+  }
+ },
+ "compare": {
+  "HYBRID_C500_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -5,
+    -3
+   ],
+   "net_enum": [
+    -5,
+    -3
+   ],
+   "pp_bounds": [
+    -5.555555555555555,
+    -3.3333333333333335
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.2265625,
+    0.548828125
+   ],
+   "ci_pp_question": [
+    -13.333333333333334,
+    3.3333333333333335
+   ],
+   "ci_pp_component": [
+    -12.987012987012987,
+    1.9801980198019802
+   ],
+   "ci_pp_block": [
+    -11.11111111111111,
+    2.3529411764705883
+   ],
+   "better_worse_resolved": [
+    3,
+    7
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     0,
+     2
+    ],
+    "tier=T2": [
+     2,
+     4
+    ],
+    "tier=T3": [
+     1,
+     1
+    ],
+    "lang=en": [
+     2,
+     4
+    ],
+    "lang=fa": [
+     1,
+     3
+    ],
+    "genre=BOOK": [
+     2,
+     2
+    ],
+    "genre=LAW": [
+     0,
+     2
+    ],
+    "genre=RPT": [
+     1,
+     3
+    ]
+   }
+  },
+  "HYBRID_C500_6000 vs HR_6000": {
+   "net_bounds": [
+    -13,
+    -10
+   ],
+   "net_enum": [
+    -13,
+    -10
+   ],
+   "pp_bounds": [
+    -14.444444444444445,
+    -11.11111111111111
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.002349853515625,
+    0.012939453125
+   ],
+   "ci_pp_question": [
+    -23.333333333333332,
+    -3.3333333333333335
+   ],
+   "ci_pp_component": [
+    -25.53191489361702,
+    -5.714285714285714
+   ],
+   "ci_pp_block": [
+    -24.096385542168676,
+    -4.109589041095891
+   ],
+   "better_worse_resolved": [
+    2,
+    12
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     0,
+     2
+    ],
+    "tier=T2": [
+     1,
+     6
+    ],
+    "tier=T3": [
+     1,
+     4
+    ],
+    "lang=en": [
+     2,
+     9
+    ],
+    "lang=fa": [
+     0,
+     3
+    ],
+    "genre=BOOK": [
+     1,
+     2
+    ],
+    "genre=LAW": [
+     1,
+     3
+    ],
+    "genre=RPT": [
+     0,
+     7
+    ]
+   }
+  },
+  "HR_C500_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -1,
+    0
+   ],
+   "net_enum": [
+    -1,
+    0
+   ],
+   "pp_bounds": [
+    -1.1111111111111112,
+    0.0
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -11.11111111111111,
+    10.0
+   ],
+   "ci_pp_component": [
+    -10.256410256410257,
+    7.608695652173913
+   ],
+   "ci_pp_block": [
+    -8.98876404494382,
+    7.894736842105263
+   ],
+   "better_worse_resolved": [
+    10,
+    11
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     2,
+     2
+    ],
+    "tier=T2": [
+     4,
+     7
+    ],
+    "tier=T3": [
+     4,
+     2
+    ],
+    "lang=en": [
+     5,
+     4
+    ],
+    "lang=fa": [
+     5,
+     7
+    ],
+    "genre=BOOK": [
+     3,
+     3
+    ],
+    "genre=LAW": [
+     3,
+     3
+    ],
+    "genre=RPT": [
+     4,
+     5
+    ]
+   }
+  },
+  "HR_C500_6000 vs HR_6000": {
+   "net_bounds": [
+    -9,
+    -7
+   ],
+   "net_enum": [
+    -9,
+    -7
+   ],
+   "pp_bounds": [
+    -10.0,
+    -7.777777777777778
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.049041748046875,
+    0.11846923828125
+   ],
+   "ci_pp_question": [
+    -18.88888888888889,
+    0.0
+   ],
+   "ci_pp_component": [
+    -18.055555555555557,
+    -2.2222222222222223
+   ],
+   "ci_pp_block": [
+    -17.647058823529413,
+    -1.0
+   ],
+   "better_worse_resolved": [
+    4,
+    11
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     1,
+     1
+    ],
+    "tier=T2": [
+     1,
+     6
+    ],
+    "tier=T3": [
+     2,
+     4
+    ],
+    "lang=en": [
+     1,
+     6
+    ],
+    "lang=fa": [
+     3,
+     5
+    ],
+    "genre=BOOK": [
+     2,
+     3
+    ],
+    "genre=LAW": [
+     2,
+     3
+    ],
+    "genre=RPT": [
+     0,
+     5
+    ]
+   }
+  },
+  "HR_C500_6000 vs HYBRID_C500_6000": {
+   "net_bounds": [
+    3,
+    4
+   ],
+   "net_enum": [
+    3,
+    4
+   ],
+   "pp_bounds": [
+    3.3333333333333335,
+    4.444444444444445
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.454498291015625,
+    0.60723876953125
+   ],
+   "ci_pp_question": [
+    -4.444444444444445,
+    13.333333333333334
+   ],
+   "ci_pp_component": [
+    -2.3529411764705883,
+    10.909090909090908
+   ],
+   "ci_pp_block": [
+    -2.2988505747126435,
+    10.843373493975903
+   ],
+   "better_worse_resolved": [
+    9,
+    6
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     3,
+     1
+    ],
+    "tier=T2": [
+     3,
+     3
+    ],
+    "tier=T3": [
+     3,
+     2
+    ],
+    "lang=en": [
+     3,
+     1
+    ],
+    "lang=fa": [
+     6,
+     5
+    ],
+    "genre=BOOK": [
+     3,
+     3
+    ],
+    "genre=LAW": [
+     2,
+     1
+    ],
+    "genre=RPT": [
+     4,
+     2
+    ]
+   }
+  },
+  "HYBRID_C2000_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -14,
+    -13
+   ],
+   "net_enum": [
+    -14,
+    -13
+   ],
+   "pp_bounds": [
+    -15.555555555555555,
+    -14.444444444444445
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.0025768280029296875,
+    0.004425048828125
+   ],
+   "ci_pp_question": [
+    -25.555555555555557,
+    -5.555555555555555
+   ],
+   "ci_pp_component": [
+    -24.65753424657534,
+    -5.9523809523809526
+   ],
+   "ci_pp_block": [
+    -25.555555555555557,
+    -6.382978723404255
+   ],
+   "better_worse_resolved": [
+    3,
+    16
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     1,
+     3
+    ],
+    "tier=T2": [
+     1,
+     9
+    ],
+    "tier=T3": [
+     1,
+     4
+    ],
+    "lang=en": [
+     2,
+     9
+    ],
+    "lang=fa": [
+     1,
+     7
+    ],
+    "genre=BOOK": [
+     1,
+     5
+    ],
+    "genre=LAW": [
+     0,
+     6
+    ],
+    "genre=RPT": [
+     2,
+     5
+    ]
+   }
+  },
+  "HYBRID_C2000_6000 vs HR_6000": {
+   "net_bounds": [
+    -22,
+    -20
+   ],
+   "net_enum": [
+    -22,
+    -20
+   ],
+   "pp_bounds": [
+    -24.444444444444443,
+    -22.22222222222222
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    2.744048833847046e-05,
+    8.797645568847656e-05
+   ],
+   "ci_pp_question": [
+    -34.44444444444444,
+    -12.222222222222221
+   ],
+   "ci_pp_component": [
+    -37.362637362637365,
+    -10.416666666666666
+   ],
+   "ci_pp_block": [
+    -36.36363636363637,
+    -12.62135922330097
+   ],
+   "better_worse_resolved": [
+    3,
+    23
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     1,
+     3
+    ],
+    "tier=T2": [
+     0,
+     11
+    ],
+    "tier=T3": [
+     2,
+     9
+    ],
+    "lang=en": [
+     1,
+     14
+    ],
+    "lang=fa": [
+     2,
+     9
+    ],
+    "genre=BOOK": [
+     1,
+     6
+    ],
+    "genre=LAW": [
+     1,
+     8
+    ],
+    "genre=RPT": [
+     1,
+     9
+    ]
+   }
+  },
+  "HR_C2000_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -12,
+    -11
+   ],
+   "net_enum": [
+    -12,
+    -11
+   ],
+   "pp_bounds": [
+    -13.333333333333334,
+    -12.222222222222221
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.01690053939819336,
+    0.02660369873046875
+   ],
+   "ci_pp_question": [
+    -23.333333333333332,
+    -2.2222222222222223
+   ],
+   "ci_pp_component": [
+    -23.45679012345679,
+    -3.9473684210526314
+   ],
+   "ci_pp_block": [
+    -21.428571428571427,
+    -4.25531914893617
+   ],
+   "better_worse_resolved": [
+    5,
+    16
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     0,
+     2
+    ],
+    "tier=T2": [
+     2,
+     9
+    ],
+    "tier=T3": [
+     3,
+     5
+    ],
+    "lang=en": [
+     4,
+     7
+    ],
+    "lang=fa": [
+     1,
+     9
+    ],
+    "genre=BOOK": [
+     1,
+     5
+    ],
+    "genre=LAW": [
+     2,
+     6
+    ],
+    "genre=RPT": [
+     2,
+     5
+    ]
+   }
+  },
+  "HR_C2000_6000 vs HR_6000": {
+   "net_bounds": [
+    -20,
+    -18
+   ],
+   "net_enum": [
+    -20,
+    -18
+   ],
+   "pp_bounds": [
+    -22.22222222222222,
+    -20.0
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    3.5881996154785156e-05,
+    0.00012111663818359375
+   ],
+   "ci_pp_question": [
+    -32.22222222222222,
+    -11.11111111111111
+   ],
+   "ci_pp_component": [
+    -33.333333333333336,
+    -13.445378151260504
+   ],
+   "ci_pp_block": [
+    -32.608695652173914,
+    -11.11111111111111
+   ],
+   "better_worse_resolved": [
+    2,
+    20
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     0,
+     2
+    ],
+    "tier=T2": [
+     2,
+     12
+    ],
+    "tier=T3": [
+     0,
+     6
+    ],
+    "lang=en": [
+     1,
+     10
+    ],
+    "lang=fa": [
+     1,
+     10
+    ],
+    "genre=BOOK": [
+     1,
+     6
+    ],
+    "genre=LAW": [
+     1,
+     6
+    ],
+    "genre=RPT": [
+     0,
+     8
+    ]
+   }
+  },
+  "HR_C2000_6000 vs HYBRID_C2000_6000": {
+   "net_bounds": [
+    2,
+    2
+   ],
+   "net_enum": [
+    2,
+    2
+   ],
+   "pp_bounds": [
+    2.2222222222222223,
+    2.2222222222222223
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.8318119049072266,
+    0.8318119049072266
+   ],
+   "ci_pp_question": [
+    -7.777777777777778,
+    12.222222222222221
+   ],
+   "ci_pp_component": [
+    -11.475409836065573,
+    15.315315315315315
+   ],
+   "ci_pp_block": [
+    -7.5,
+    12.195121951219512
+   ],
+   "better_worse_resolved": [
+    12,
+    10
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     2,
+     2
+    ],
+    "tier=T2": [
+     4,
+     3
+    ],
+    "tier=T3": [
+     6,
+     5
+    ],
+    "lang=en": [
+     8,
+     4
+    ],
+    "lang=fa": [
+     4,
+     6
+    ],
+    "genre=BOOK": [
+     4,
+     4
+    ],
+    "genre=LAW": [
+     6,
+     4
+    ],
+    "genre=RPT": [
+     2,
+     2
+    ]
+   }
+  },
+  "HYBRID_C2000_6000 vs HYBRID_C500_6000": {
+   "net_bounds": [
+    -10,
+    -9
+   ],
+   "net_enum": [
+    -10,
+    -9
+   ],
+   "pp_bounds": [
+    -11.11111111111111,
+    -10.0
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.052478790283203125,
+    0.0783538818359375
+   ],
+   "ci_pp_question": [
+    -21.11111111111111,
+    0.0
+   ],
+   "ci_pp_component": [
+    -21.05263157894737,
+    1.2195121951219512
+   ],
+   "ci_pp_block": [
+    -21.333333333333332,
+    0.0
+   ],
+   "better_worse_resolved": [
+    6,
+    15
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     2,
+     2
+    ],
+    "tier=T2": [
+     2,
+     8
+    ],
+    "tier=T3": [
+     2,
+     5
+    ],
+    "lang=en": [
+     3,
+     8
+    ],
+    "lang=fa": [
+     3,
+     7
+    ],
+    "genre=BOOK": [
+     3,
+     7
+    ],
+    "genre=LAW": [
+     1,
+     5
+    ],
+    "genre=RPT": [
+     2,
+     3
+    ]
+   }
+  },
+  "HR_C2000_6000 vs HR_C500_6000": {
+   "net_bounds": [
+    -11,
+    -11
+   ],
+   "net_enum": [
+    -11,
+    -11
+   ],
+   "pp_bounds": [
+    -12.222222222222221,
+    -12.222222222222221
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.02660369873046875,
+    0.02660369873046875
+   ],
+   "ci_pp_question": [
+    -22.22222222222222,
+    -3.3333333333333335
+   ],
+   "ci_pp_component": [
+    -20.43010752688172,
+    -4.166666666666667
+   ],
+   "ci_pp_block": [
+    -20.987654320987655,
+    -3.0303030303030303
+   ],
+   "better_worse_resolved": [
+    5,
+    16
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     1,
+     3
+    ],
+    "tier=T2": [
+     2,
+     7
+    ],
+    "tier=T3": [
+     2,
+     6
+    ],
+    "lang=en": [
+     2,
+     6
+    ],
+    "lang=fa": [
+     3,
+     10
+    ],
+    "genre=BOOK": [
+     2,
+     6
+    ],
+    "genre=LAW": [
+     1,
+     5
+    ],
+    "genre=RPT": [
+     2,
+     5
+    ]
+   }
+  },
+  "HR_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    6,
+    9
+   ],
+   "net_enum": [
+    6,
+    9
+   ],
+   "pp_bounds": [
+    6.666666666666667,
+    10.0
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.049041748046875,
+    0.1795654296875
+   ],
+   "ci_pp_question": [
+    -1.1111111111111112,
+    18.88888888888889
+   ],
+   "ci_pp_component": [
+    -0.970873786407767,
+    21.153846153846153
+   ],
+   "ci_pp_block": [
+    -1.1235955056179776,
+    20.0
+   ],
+   "better_worse_resolved": [
+    10,
+    4
+   ],
+   "wins_losses_resolved_by_group": {
+    "tier=T1": [
+     1,
+     1
+    ],
+    "tier=T2": [
+     4,
+     2
+    ],
+    "tier=T3": [
+     5,
+     1
+    ],
+    "lang=en": [
+     8,
+     2
+    ],
+    "lang=fa": [
+     2,
+     2
+    ],
+    "genre=BOOK": [
+     1,
+     0
+    ],
+    "genre=LAW": [
+     4,
+     3
+    ],
+    "genre=RPT": [
+     5,
+     1
+    ]
+   }
+  }
+ },
+ "coverage": {
+  "text_pack": {
+   "HYBRID_C500_6000": {
+    "all": {
+     "complete": 55,
+     "partial": 30,
+     "none": 5
+    },
+    "tier=T1": {
+     "complete": 28,
+     "none": 2
+    },
+    "tier=T2": {
+     "complete": 15,
+     "partial": 14,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 12,
+     "partial": 16,
+     "none": 2
+    },
+    "lang=en": {
+     "complete": 24,
+     "none": 3,
+     "partial": 18
+    },
+    "lang=fa": {
+     "complete": 31,
+     "partial": 12,
+     "none": 2
+    },
+    "genre=BOOK": {
+     "complete": 18,
+     "none": 2,
+     "partial": 10
+    },
+    "genre=LAW": {
+     "complete": 19,
+     "partial": 11
+    },
+    "genre=RPT": {
+     "complete": 18,
+     "partial": 9,
+     "none": 3
+    }
+   },
+   "HYBRID_6000": {
+    "all": {
+     "complete": 57,
+     "none": 7,
+     "partial": 26
+    },
+    "tier=T1": {
+     "complete": 27,
+     "none": 3
+    },
+    "tier=T2": {
+     "complete": 18,
+     "partial": 11,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 12,
+     "none": 3,
+     "partial": 15
+    },
+    "lang=en": {
+     "complete": 24,
+     "none": 3,
+     "partial": 18
+    },
+    "lang=fa": {
+     "complete": 33,
+     "none": 4,
+     "partial": 8
+    },
+    "genre=BOOK": {
+     "complete": 17,
+     "none": 3,
+     "partial": 10
+    },
+    "genre=LAW": {
+     "complete": 21,
+     "partial": 8,
+     "none": 1
+    },
+    "genre=RPT": {
+     "complete": 19,
+     "none": 3,
+     "partial": 8
+    }
+   },
+   "HYBRID_C2000_6000": {
+    "all": {
+     "complete": 46,
+     "none": 10,
+     "partial": 34
+    },
+    "tier=T1": {
+     "complete": 26,
+     "none": 4
+    },
+    "tier=T2": {
+     "complete": 11,
+     "partial": 17,
+     "none": 2
+    },
+    "tier=T3": {
+     "complete": 9,
+     "partial": 17,
+     "none": 4
+    },
+    "lang=en": {
+     "complete": 19,
+     "none": 5,
+     "partial": 21
+    },
+    "lang=fa": {
+     "complete": 27,
+     "none": 5,
+     "partial": 13
+    },
+    "genre=BOOK": {
+     "complete": 14,
+     "partial": 13,
+     "none": 3
+    },
+    "genre=LAW": {
+     "complete": 18,
+     "none": 2,
+     "partial": 10
+    },
+    "genre=RPT": {
+     "complete": 14,
+     "none": 5,
+     "partial": 11
+    }
+   },
+   "HR_C500_6000": {
+    "all": {
+     "none": 3,
+     "complete": 59,
+     "partial": 28
+    },
+    "tier=T1": {
+     "none": 2,
+     "complete": 28
+    },
+    "tier=T2": {
+     "complete": 16,
+     "partial": 13,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 15,
+     "partial": 15
+    },
+    "lang=en": {
+     "complete": 27,
+     "none": 2,
+     "partial": 16
+    },
+    "lang=fa": {
+     "none": 1,
+     "complete": 32,
+     "partial": 12
+    },
+    "genre=BOOK": {
+     "complete": 18,
+     "partial": 12
+    },
+    "genre=LAW": {
+     "complete": 21,
+     "partial": 9
+    },
+    "genre=RPT": {
+     "none": 3,
+     "complete": 20,
+     "partial": 7
+    }
+   },
+   "HR_6000": {
+    "all": {
+     "complete": 63,
+     "partial": 23,
+     "none": 4
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 15,
+     "none": 2,
+     "partial": 13
+    },
+    "lang=en": {
+     "complete": 29,
+     "none": 4,
+     "partial": 12
+    },
+    "lang=fa": {
+     "complete": 34,
+     "partial": 11
+    },
+    "genre=BOOK": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "genre=LAW": {
+     "complete": 22,
+     "partial": 7,
+     "none": 1
+    },
+    "genre=RPT": {
+     "complete": 22,
+     "partial": 6,
+     "none": 2
+    }
+   },
+   "HR_C2000_6000": {
+    "all": {
+     "complete": 51,
+     "none": 5,
+     "partial": 34
+    },
+    "tier=T1": {
+     "complete": 27,
+     "none": 3
+    },
+    "tier=T2": {
+     "complete": 12,
+     "partial": 16,
+     "none": 2
+    },
+    "tier=T3": {
+     "complete": 12,
+     "partial": 18
+    },
+    "lang=en": {
+     "complete": 21,
+     "none": 2,
+     "partial": 22
+    },
+    "lang=fa": {
+     "complete": 30,
+     "none": 3,
+     "partial": 12
+    },
+    "genre=BOOK": {
+     "complete": 16,
+     "partial": 14
+    },
+    "genre=LAW": {
+     "complete": 20,
+     "none": 1,
+     "partial": 9
+    },
+    "genre=RPT": {
+     "complete": 15,
+     "none": 4,
+     "partial": 11
+    }
+   }
+  },
+  "offset_pack": {
+   "HYBRID_C500_6000": {
+    "all": {
+     "complete": 53,
+     "partial": 32,
+     "none": 5
+    },
+    "tier=T1": {
+     "complete": 28,
+     "none": 2
+    },
+    "tier=T2": {
+     "complete": 15,
+     "partial": 14,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 10,
+     "partial": 18,
+     "none": 2
+    },
+    "lang=en": {
+     "complete": 22,
+     "none": 3,
+     "partial": 20
+    },
+    "lang=fa": {
+     "complete": 31,
+     "partial": 12,
+     "none": 2
+    },
+    "genre=BOOK": {
+     "complete": 17,
+     "none": 2,
+     "partial": 11
+    },
+    "genre=LAW": {
+     "complete": 18,
+     "partial": 12
+    },
+    "genre=RPT": {
+     "complete": 18,
+     "partial": 9,
+     "none": 3
+    }
+   },
+   "HYBRID_6000": {
+    "all": {
+     "complete": 57,
+     "none": 8,
+     "partial": 25
+    },
+    "tier=T1": {
+     "complete": 27,
+     "none": 3
+    },
+    "tier=T2": {
+     "complete": 18,
+     "partial": 11,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 12,
+     "none": 4,
+     "partial": 14
+    },
+    "lang=en": {
+     "complete": 24,
+     "none": 4,
+     "partial": 17
+    },
+    "lang=fa": {
+     "complete": 33,
+     "none": 4,
+     "partial": 8
+    },
+    "genre=BOOK": {
+     "complete": 17,
+     "none": 3,
+     "partial": 10
+    },
+    "genre=LAW": {
+     "complete": 21,
+     "partial": 8,
+     "none": 1
+    },
+    "genre=RPT": {
+     "complete": 19,
+     "none": 4,
+     "partial": 7
+    }
+   },
+   "HYBRID_C2000_6000": {
+    "all": {
+     "complete": 46,
+     "none": 10,
+     "partial": 34
+    },
+    "tier=T1": {
+     "complete": 26,
+     "none": 4
+    },
+    "tier=T2": {
+     "complete": 11,
+     "partial": 17,
+     "none": 2
+    },
+    "tier=T3": {
+     "complete": 9,
+     "partial": 17,
+     "none": 4
+    },
+    "lang=en": {
+     "complete": 19,
+     "none": 5,
+     "partial": 21
+    },
+    "lang=fa": {
+     "complete": 27,
+     "none": 5,
+     "partial": 13
+    },
+    "genre=BOOK": {
+     "complete": 14,
+     "partial": 13,
+     "none": 3
+    },
+    "genre=LAW": {
+     "complete": 18,
+     "none": 2,
+     "partial": 10
+    },
+    "genre=RPT": {
+     "complete": 14,
+     "none": 5,
+     "partial": 11
+    }
+   },
+   "HR_C500_6000": {
+    "all": {
+     "none": 4,
+     "complete": 57,
+     "partial": 29
+    },
+    "tier=T1": {
+     "none": 2,
+     "complete": 28
+    },
+    "tier=T2": {
+     "complete": 16,
+     "partial": 13,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 13,
+     "partial": 16,
+     "none": 1
+    },
+    "lang=en": {
+     "complete": 25,
+     "none": 3,
+     "partial": 17
+    },
+    "lang=fa": {
+     "none": 1,
+     "complete": 32,
+     "partial": 12
+    },
+    "genre=BOOK": {
+     "complete": 18,
+     "partial": 12
+    },
+    "genre=LAW": {
+     "complete": 20,
+     "partial": 10
+    },
+    "genre=RPT": {
+     "none": 4,
+     "complete": 19,
+     "partial": 7
+    }
+   },
+   "HR_6000": {
+    "all": {
+     "complete": 63,
+     "partial": 23,
+     "none": 4
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 15,
+     "none": 2,
+     "partial": 13
+    },
+    "lang=en": {
+     "complete": 29,
+     "none": 4,
+     "partial": 12
+    },
+    "lang=fa": {
+     "complete": 34,
+     "partial": 11
+    },
+    "genre=BOOK": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "genre=LAW": {
+     "complete": 22,
+     "partial": 7,
+     "none": 1
+    },
+    "genre=RPT": {
+     "complete": 22,
+     "partial": 6,
+     "none": 2
+    }
+   },
+   "HR_C2000_6000": {
+    "all": {
+     "complete": 51,
+     "none": 7,
+     "partial": 32
+    },
+    "tier=T1": {
+     "complete": 27,
+     "none": 3
+    },
+    "tier=T2": {
+     "complete": 12,
+     "partial": 16,
+     "none": 2
+    },
+    "tier=T3": {
+     "complete": 12,
+     "none": 2,
+     "partial": 16
+    },
+    "lang=en": {
+     "complete": 21,
+     "none": 4,
+     "partial": 20
+    },
+    "lang=fa": {
+     "complete": 30,
+     "none": 3,
+     "partial": 12
+    },
+    "genre=BOOK": {
+     "complete": 16,
+     "partial": 14
+    },
+    "genre=LAW": {
+     "complete": 20,
+     "none": 1,
+     "partial": 9
+    },
+    "genre=RPT": {
+     "complete": 15,
+     "none": 6,
+     "partial": 9
+    }
+   }
+  },
+  "offset_top40": {
+   "HYBRID_C500_6000": {
+    "all": {
+     "complete": 65,
+     "partial": 24,
+     "none": 1
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 19,
+     "partial": 11
+    },
+    "tier=T3": {
+     "complete": 17,
+     "partial": 13
+    },
+    "lang=en": {
+     "complete": 29,
+     "none": 1,
+     "partial": 15
+    },
+    "lang=fa": {
+     "complete": 36,
+     "partial": 9
+    },
+    "genre=BOOK": {
+     "complete": 19,
+     "partial": 11
+    },
+    "genre=LAW": {
+     "complete": 25,
+     "partial": 5
+    },
+    "genre=RPT": {
+     "complete": 21,
+     "partial": 8,
+     "none": 1
+    }
+   },
+   "HYBRID_6000": {
+    "all": {
+     "complete": 72,
+     "none": 1,
+     "partial": 17
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 26,
+     "partial": 4
+    },
+    "tier=T3": {
+     "complete": 17,
+     "partial": 13
+    },
+    "lang=en": {
+     "complete": 33,
+     "none": 1,
+     "partial": 11
+    },
+    "lang=fa": {
+     "complete": 39,
+     "partial": 6
+    },
+    "genre=BOOK": {
+     "complete": 20,
+     "partial": 10
+    },
+    "genre=LAW": {
+     "complete": 26,
+     "partial": 4
+    },
+    "genre=RPT": {
+     "complete": 26,
+     "none": 1,
+     "partial": 3
+    }
+   },
+   "HYBRID_C2000_6000": {
+    "all": {
+     "complete": 79,
+     "partial": 10,
+     "none": 1
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 27,
+     "partial": 3
+    },
+    "tier=T3": {
+     "complete": 23,
+     "partial": 7
+    },
+    "lang=en": {
+     "complete": 39,
+     "none": 1,
+     "partial": 5
+    },
+    "lang=fa": {
+     "complete": 40,
+     "partial": 5
+    },
+    "genre=BOOK": {
+     "complete": 22,
+     "partial": 8
+    },
+    "genre=LAW": {
+     "complete": 30
+    },
+    "genre=RPT": {
+     "complete": 27,
+     "partial": 2,
+     "none": 1
+    }
+   },
+   "HR_C500_6000": {
+    "all": {
+     "complete": 66,
+     "partial": 23,
+     "none": 1
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 20,
+     "partial": 10
+    },
+    "tier=T3": {
+     "complete": 17,
+     "partial": 13
+    },
+    "lang=en": {
+     "complete": 29,
+     "none": 1,
+     "partial": 15
+    },
+    "lang=fa": {
+     "complete": 37,
+     "partial": 8
+    },
+    "genre=BOOK": {
+     "complete": 19,
+     "partial": 11
+    },
+    "genre=LAW": {
+     "complete": 24,
+     "partial": 6
+    },
+    "genre=RPT": {
+     "complete": 23,
+     "partial": 6,
+     "none": 1
+    }
+   },
+   "HR_6000": {
+    "all": {
+     "complete": 75,
+     "none": 1,
+     "partial": 14
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 27,
+     "partial": 3
+    },
+    "tier=T3": {
+     "complete": 19,
+     "partial": 11
+    },
+    "lang=en": {
+     "complete": 36,
+     "none": 1,
+     "partial": 8
+    },
+    "lang=fa": {
+     "complete": 39,
+     "partial": 6
+    },
+    "genre=BOOK": {
+     "complete": 20,
+     "partial": 10
+    },
+    "genre=LAW": {
+     "complete": 28,
+     "partial": 2
+    },
+    "genre=RPT": {
+     "complete": 27,
+     "none": 1,
+     "partial": 2
+    }
+   },
+   "HR_C2000_6000": {
+    "all": {
+     "complete": 80,
+     "none": 1,
+     "partial": 9
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 28,
+     "partial": 2
+    },
+    "tier=T3": {
+     "complete": 23,
+     "partial": 7
+    },
+    "lang=en": {
+     "complete": 39,
+     "none": 1,
+     "partial": 5
+    },
+    "lang=fa": {
+     "complete": 41,
+     "partial": 4
+    },
+    "genre=BOOK": {
+     "complete": 22,
+     "partial": 8
+    },
+    "genre=LAW": {
+     "complete": 30
+    },
+    "genre=RPT": {
+     "complete": 28,
+     "none": 1,
+     "partial": 1
+    }
+   }
+  },
+  "offset_top8": {
+   "HYBRID_C500_6000": {
+    "all": {
+     "complete": 49,
+     "partial": 33,
+     "none": 8
+    },
+    "tier=T1": {
+     "complete": 26,
+     "none": 4
+    },
+    "tier=T2": {
+     "complete": 14,
+     "partial": 15,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 9,
+     "partial": 18,
+     "none": 3
+    },
+    "lang=en": {
+     "none": 5,
+     "complete": 19,
+     "partial": 21
+    },
+    "lang=fa": {
+     "complete": 30,
+     "partial": 12,
+     "none": 3
+    },
+    "genre=BOOK": {
+     "complete": 16,
+     "none": 2,
+     "partial": 12
+    },
+    "genre=LAW": {
+     "complete": 16,
+     "partial": 12,
+     "none": 2
+    },
+    "genre=RPT": {
+     "complete": 17,
+     "partial": 9,
+     "none": 4
+    }
+   },
+   "HYBRID_6000": {
+    "all": {
+     "complete": 58,
+     "none": 6,
+     "partial": 26
+    },
+    "tier=T1": {
+     "complete": 27,
+     "none": 3
+    },
+    "tier=T2": {
+     "complete": 18,
+     "partial": 12
+    },
+    "tier=T3": {
+     "complete": 13,
+     "partial": 14,
+     "none": 3
+    },
+    "lang=en": {
+     "complete": 25,
+     "none": 3,
+     "partial": 17
+    },
+    "lang=fa": {
+     "complete": 33,
+     "none": 3,
+     "partial": 9
+    },
+    "genre=BOOK": {
+     "complete": 17,
+     "none": 2,
+     "partial": 11
+    },
+    "genre=LAW": {
+     "complete": 22,
+     "partial": 7,
+     "none": 1
+    },
+    "genre=RPT": {
+     "complete": 19,
+     "none": 3,
+     "partial": 8
+    }
+   },
+   "HYBRID_C2000_6000": {
+    "all": {
+     "complete": 61,
+     "none": 4,
+     "partial": 25
+    },
+    "tier=T1": {
+     "complete": 28,
+     "none": 2
+    },
+    "tier=T2": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "tier=T3": {
+     "complete": 14,
+     "partial": 15,
+     "none": 1
+    },
+    "lang=en": {
+     "complete": 28,
+     "none": 2,
+     "partial": 15
+    },
+    "lang=fa": {
+     "complete": 33,
+     "none": 2,
+     "partial": 10
+    },
+    "genre=BOOK": {
+     "complete": 20,
+     "none": 1,
+     "partial": 9
+    },
+    "genre=LAW": {
+     "complete": 23,
+     "partial": 7
+    },
+    "genre=RPT": {
+     "complete": 18,
+     "none": 3,
+     "partial": 9
+    }
+   },
+   "HR_C500_6000": {
+    "all": {
+     "none": 8,
+     "complete": 52,
+     "partial": 30
+    },
+    "tier=T1": {
+     "none": 2,
+     "complete": 28
+    },
+    "tier=T2": {
+     "complete": 13,
+     "none": 3,
+     "partial": 14
+    },
+    "tier=T3": {
+     "complete": 11,
+     "none": 3,
+     "partial": 16
+    },
+    "lang=en": {
+     "complete": 23,
+     "none": 6,
+     "partial": 16
+    },
+    "lang=fa": {
+     "none": 2,
+     "complete": 29,
+     "partial": 14
+    },
+    "genre=BOOK": {
+     "complete": 16,
+     "partial": 13,
+     "none": 1
+    },
+    "genre=LAW": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "genre=RPT": {
+     "none": 6,
+     "complete": 17,
+     "partial": 7
+    }
+   },
+   "HR_6000": {
+    "all": {
+     "complete": 66,
+     "partial": 21,
+     "none": 3
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 20,
+     "partial": 10
+    },
+    "tier=T3": {
+     "complete": 17,
+     "none": 2,
+     "partial": 11
+    },
+    "lang=en": {
+     "complete": 29,
+     "none": 3,
+     "partial": 13
+    },
+    "lang=fa": {
+     "complete": 37,
+     "partial": 8
+    },
+    "genre=BOOK": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "genre=LAW": {
+     "complete": 24,
+     "partial": 6
+    },
+    "genre=RPT": {
+     "complete": 23,
+     "partial": 5,
+     "none": 2
+    }
+   },
+   "HR_C2000_6000": {
+    "all": {
+     "complete": 64,
+     "partial": 24,
+     "none": 2
+    },
+    "tier=T1": {
+     "complete": 29,
+     "none": 1
+    },
+    "tier=T2": {
+     "complete": 18,
+     "partial": 12
+    },
+    "tier=T3": {
+     "complete": 17,
+     "none": 1,
+     "partial": 12
+    },
+    "lang=en": {
+     "complete": 27,
+     "none": 2,
+     "partial": 16
+    },
+    "lang=fa": {
+     "complete": 37,
+     "partial": 8
+    },
+    "genre=BOOK": {
+     "complete": 21,
+     "partial": 9
+    },
+    "genre=LAW": {
+     "complete": 24,
+     "partial": 6
+    },
+    "genre=RPT": {
+     "complete": 19,
+     "partial": 9,
+     "none": 2
+    }
+   }
+  },
+  "per_q": {
+   "HYBRID_C500_6000": {
+    "V2-test-RPT-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-fa-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-002": [
+     "none",
+     "none",
+     "none"
+    ],
+    "V2-test-RPT-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T2-005": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-001": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-004": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-001": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-001": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-002": [
+     "complete",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-005": [
+     "complete",
+     "partial",
+     "complete"
+    ]
+   },
+   "HYBRID_6000": {
+    "V2-test-RPT-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-002": [
+     "none",
+     "none",
+     "none"
+    ],
+    "V2-test-RPT-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-001": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-004": [
+     "partial",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-003": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-001": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-003": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ]
+   },
+   "HYBRID_C2000_6000": {
+    "V2-test-RPT-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-002": [
+     "none",
+     "none",
+     "none"
+    ],
+    "V2-test-RPT-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-001": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-004": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-003": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-001": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-002": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-003": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-001": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ]
+   },
+   "HR_C500_6000": {
+    "V2-test-RPT-fa-T1-001": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-fa-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-002": [
+     "none",
+     "none",
+     "none"
+    ],
+    "V2-test-RPT-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-005": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-001": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-004": [
+     "complete",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-001": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-001": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T2-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-005": [
+     "complete",
+     "partial",
+     "complete"
+    ]
+   },
+   "HR_6000": {
+    "V2-test-RPT-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-002": [
+     "none",
+     "none",
+     "none"
+    ],
+    "V2-test-RPT-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-001": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-001": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-003": [
+     "none",
+     "none",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-002": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ]
+   },
+   "HR_C2000_6000": {
+    "V2-test-RPT-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T1-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-003": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-fa-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-002": [
+     "none",
+     "none",
+     "none"
+    ],
+    "V2-test-RPT-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T2-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-001": [
+     "partial",
+     "none",
+     "partial"
+    ],
+    "V2-test-RPT-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-004": [
+     "partial",
+     "none",
+     "complete"
+    ],
+    "V2-test-RPT-en-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-002": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-fa-T3-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-fa-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T2-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-001": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-BOOK-en-T3-003": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-004": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-BOOK-en-T3-005": [
+     "partial",
+     "partial",
+     "partial"
+    ],
+    "V2-test-LAW-fa-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T1-005": [
+     "none",
+     "none",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T2-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-fa-T3-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-004": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T1-005": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-002": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-003": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T2-005": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-001": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-002": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-003": [
+     "complete",
+     "complete",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-004": [
+     "partial",
+     "partial",
+     "complete"
+    ],
+    "V2-test-LAW-en-T3-005": [
+     "complete",
+     "complete",
+     "complete"
+    ]
+   }
+  },
+  "text_vs_offset_agree": {
+   "HYBRID_C500_6000": 88,
+   "HYBRID_6000": 89,
+   "HYBRID_C2000_6000": 90,
+   "HR_C500_6000": 88,
+   "HR_6000": 90,
+   "HR_C2000_6000": 88
+  }
+ },
+ "index": {
+  "chunks": {
+   "500|C": 14267,
+   "500|D_en": 52553,
+   "500|BOOK_fa": 18078,
+   "500|BOOK_en": 19997,
+   "500|LAW_fa": 3442,
+   "500|LAW_en": 10971,
+   "1000|C": 6921,
+   "1000|D_en": 25685,
+   "1000|BOOK_fa": 8905,
+   "1000|BOOK_en": 9661,
+   "1000|LAW_fa": 1619,
+   "1000|LAW_en": 5427,
+   "2000|C": 3236,
+   "2000|D_en": 12400,
+   "2000|BOOK_fa": 4319,
+   "2000|BOOK_en": 4876,
+   "2000|LAW_fa": 758,
+   "2000|LAW_en": 2616
+  },
+  "chunk_chars": {
+   "500|C": {
+    "chars_mean": 393.2,
+    "chars_p50": 416,
+    "chars_max": 500,
+    "n_window": 11687,
+    "n_packed": 2580
+   },
+   "500|D_en": {
+    "chars_mean": 402.4,
+    "chars_p50": 417,
+    "chars_max": 500,
+    "n_window": 51270,
+    "n_packed": 1283
+   },
+   "500|BOOK_fa": {
+    "chars_mean": 408.2,
+    "chars_p50": 421,
+    "chars_max": 500,
+    "n_window": 18017,
+    "n_packed": 61
+   },
+   "500|BOOK_en": {
+    "chars_mean": 409.0,
+    "chars_p50": 422,
+    "chars_max": 499,
+    "n_window": 19977,
+    "n_packed": 20
+   },
+   "500|LAW_fa": {
+    "chars_mean": 389.9,
+    "chars_p50": 405,
+    "chars_max": 500,
+    "n_window": 2102,
+    "n_packed": 1340
+   },
+   "500|LAW_en": {
+    "chars_mean": 403.0,
+    "chars_p50": 417,
+    "chars_max": 500,
+    "n_window": 10583,
+    "n_packed": 388
+   },
+   "1000|C": {
+    "chars_mean": 766.5,
+    "chars_p50": 827,
+    "chars_max": 1000,
+    "n_window": 3930,
+    "n_packed": 2991
+   },
+   "1000|D_en": {
+    "chars_mean": 804.0,
+    "chars_p50": 849,
+    "chars_max": 1000,
+    "n_window": 23596,
+    "n_packed": 2089
+   },
+   "1000|BOOK_fa": {
+    "chars_mean": 819.7,
+    "chars_p50": 855,
+    "chars_max": 999,
+    "n_window": 8779,
+    "n_packed": 126
+   },
+   "1000|BOOK_en": {
+    "chars_mean": 840.5,
+    "chars_p50": 882,
+    "chars_max": 999,
+    "n_window": 9627,
+    "n_packed": 34
+   },
+   "1000|LAW_fa": {
+    "chars_mean": 799.0,
+    "chars_p50": 848,
+    "chars_max": 1000,
+    "n_window": 738,
+    "n_packed": 881
+   },
+   "1000|LAW_en": {
+    "chars_mean": 791.6,
+    "chars_p50": 846,
+    "chars_max": 1000,
+    "n_window": 4832,
+    "n_packed": 595
+   },
+   "2000|C": {
+    "chars_mean": 1568.5,
+    "chars_p50": 1688,
+    "chars_max": 2000,
+    "n_window": 1101,
+    "n_packed": 2135
+   },
+   "2000|D_en": {
+    "chars_mean": 1604.1,
+    "chars_p50": 1729,
+    "chars_max": 2000,
+    "n_window": 10064,
+    "n_packed": 2336
+   },
+   "2000|BOOK_fa": {
+    "chars_mean": 1648.9,
+    "chars_p50": 1752,
+    "chars_max": 1999,
+    "n_window": 4142,
+    "n_packed": 177
+   },
+   "2000|BOOK_en": {
+    "chars_mean": 1663.5,
+    "chars_p50": 1760,
+    "chars_max": 1999,
+    "n_window": 4849,
+    "n_packed": 27
+   },
+   "2000|LAW_fa": {
+    "chars_mean": 1655.9,
+    "chars_p50": 1804,
+    "chars_max": 2000,
+    "n_window": 245,
+    "n_packed": 513
+   },
+   "2000|LAW_en": {
+    "chars_mean": 1564.0,
+    "chars_p50": 1709,
+    "chars_max": 2000,
+    "n_window": 1839,
+    "n_packed": 777
+   }
+  },
+  "gpu": {
+   "index_500": {
+    "per_set_wall_s": {
+     "BOOK_en": 1407.6,
+     "BOOK_fa": 387.7,
+     "C": 276.3,
+     "D_en": 834.0,
+     "LAW_en": 174.9,
+     "LAW_fa": 55.0
+    },
+    "wall_s_total": 3135.5,
+    "ollama_embed_ms_total": 3026873.0,
+    "embedded_texts": 112917,
+    "embed_tokens": 14618452,
+    "probe": [
+     {
+      "phase": "probe",
+      "size": 500,
+      "n": 200,
+      "chars": 103581,
+      "wall_s": 3.4,
+      "stats": {
+       "unique_texts": 200,
+       "todo": 200,
+       "embedded_now": 200,
+       "batches": 13,
+       "commits": 13,
+       "tokens_now": 26436,
+       "wall_ms_now": 3296.6
+      },
+      "nvsmi_before": "787 MiB, 8188 MiB",
+      "nvsmi_after": "787 MiB, 8188 MiB",
+      "t": "2026-11-10T19:36:42"
+     }
+    ],
+    "ledger_embed_calls_ok": 7459,
+    "ledger_embed_calls_failed": 1,
+    "ledger_texts_embedded": 119293,
+    "ledger_embed_tokens": 15568205,
+    "ledger_ollama_wall_s": 3229.2,
+    "ledger_first_last": [
+     "2026-11-10T19:36:39",
+     "2026-11-10T20:33:13"
+    ],
+    "retries": []
+   },
+   "index_2000": {
+    "per_set_wall_s": {
+     "BOOK_en": 184.4,
+     "BOOK_fa": 404.2,
+     "C": 288.3,
+     "D_en": 5.5,
+     "LAW_en": 97.3,
+     "LAW_fa": 31.2
+    },
+    "wall_s_total": 1010.9,
+    "ollama_embed_ms_total": 981735.3,
+    "embedded_texts": 15781,
+    "embed_tokens": 7073393,
+    "probe": [
+     {
+      "phase": "probe",
+      "size": 2000,
+      "n": 200,
+      "chars": 347715,
+      "wall_s": 5.8,
+      "stats": {
+       "unique_texts": 200,
+       "todo": 200,
+       "embedded_now": 200,
+       "batches": 13,
+       "commits": 13,
+       "tokens_now": 85971,
+       "wall_ms_now": 5744.5
+      },
+      "nvsmi_before": "787 MiB, 8188 MiB",
+      "nvsmi_after": "787 MiB, 8188 MiB",
+      "t": "2026-11-10T19:36:51"
+     }
+    ],
+    "ledger_embed_calls_ok": 1766,
+    "ledger_embed_calls_failed": 1,
+    "ledger_texts_embedded": 28205,
+    "ledger_embed_tokens": 12156609,
+    "ledger_ollama_wall_s": 1691.0,
+    "ledger_first_last": [
+     "2026-11-10T19:36:46",
+     "2026-11-10T20:06:22"
+    ],
+    "retries": []
+   },
+   "phases": [
+    {
+     "phase": "qvec",
+     "n": 96,
+     "wall_s": 50.5,
+     "nvsmi": "787 MiB, 8188 MiB",
+     "t": "2026-11-10T19:39:45"
+    },
+    {
+     "phase": "rerank",
+     "n_questions": 96,
+     "wall_s": 96.0,
+     "peak_alloc_mb": 1271.3,
+     "nvsmi_end": "3032 MiB, 8188 MiB",
+     "device": "cuda",
+     "fp16": true,
+     "batch_size": 16,
+     "load_ms": 23273.7,
+     "sizes": [
+      1000
+     ],
+     "t": "2026-11-10T19:42:07"
+    },
+    {
+     "phase": "rerank",
+     "n_questions": 96,
+     "wall_s": 153.9,
+     "peak_alloc_mb": 1271.3,
+     "nvsmi_end": "4052 MiB, 8188 MiB",
+     "device": "cuda",
+     "fp16": true,
+     "batch_size": 16,
+     "load_ms": 22468.1,
+     "sizes": [
+      2000
+     ],
+     "t": "2026-11-10T20:09:46"
+    },
+    {
+     "phase": "rerank",
+     "n_questions": 96,
+     "wall_s": 31.9,
+     "peak_alloc_mb": 1192.6,
+     "nvsmi_end": "2262 MiB, 8188 MiB",
+     "device": "cuda",
+     "fp16": true,
+     "batch_size": 16,
+     "load_ms": 16231.1,
+     "sizes": [
+      500
+     ],
+     "t": "2026-11-10T20:34:13"
+    }
+   ],
+   "rerank_by_size": {
+    "1000": {
+     "ms": 91354.1,
+     "tokens_nonpad": 1212893,
+     "tokens_padded": 1452098
+    },
+    "2000": {
+     "ms": 148118.9,
+     "tokens_nonpad": 2128361,
+     "tokens_padded": 2348884
+    },
+    "500": {
+     "ms": 28406.6,
+     "tokens_nonpad": 714354,
+     "tokens_padded": 835516
+    }
+   }
+  },
+  "chunks_in_question_scope": {
+   "500|C": [
+    14267
+   ],
+   "500|D_en": [
+    52553
+   ],
+   "500|BOOK_fa": [
+    18078
+   ],
+   "500|BOOK_en": [
+    19997
+   ],
+   "500|LAW_fa": [
+    3442
+   ],
+   "500|LAW_en": [
+    10971
+   ],
+   "1000|C": [
+    6921
+   ],
+   "1000|D_en": [
+    25685
+   ],
+   "1000|BOOK_fa": [
+    8905
+   ],
+   "1000|BOOK_en": [
+    9661
+   ],
+   "1000|LAW_fa": [
+    1619
+   ],
+   "1000|LAW_en": [
+    5427
+   ],
+   "2000|C": [
+    3236
+   ],
+   "2000|D_en": [
+    12400
+   ],
+   "2000|BOOK_fa": [
+    4319
+   ],
+   "2000|BOOK_en": [
+    4876
+   ],
+   "2000|LAW_fa": [
+    758
+   ],
+   "2000|LAW_en": [
+    2616
+   ]
+  }
+ },
+ "same_as_frozen_packs": {
+  "HYBRID_C500_6000": 0,
+  "HR_C500_6000": 0,
+  "HYBRID_C2000_6000": 0,
+  "HR_C2000_6000": 0
+ },
+ "last_item_cut": {
+  "HYBRID_C500_6000": 39,
+  "HR_C500_6000": 38,
+  "HYBRID_C2000_6000": 73,
+  "HR_C2000_6000": 71
+ }
+}

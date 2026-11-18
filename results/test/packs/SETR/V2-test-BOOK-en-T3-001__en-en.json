@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-BOOK-en-T3-001",
+ "variant": "SETR",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "402aa5d6620d8d81a698",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6068 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "purpose": "answer",
+ "messages_sha256": "f87dcbc3c4c5896cd92d8b48e30f16cbe05215277cb4b9c1338315d687e88e98",
+ "evidence_chars": 5830,
+ "at": "2026-10-04T20:21:03"
+}

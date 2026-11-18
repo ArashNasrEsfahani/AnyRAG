@@ -1,0 +1,127 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T2-001",
+ "arm": "LC-POOL",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 1183779 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "87b7787a324deff596f906ee68f472051a93b7b0391dee93684b4e9f52e5285a",
+ "evidence_chars": 1183546,
+ "prompt_chars": 1184495,
+ "est_prompt_tokens": 468519,
+ "build_ms": 13.6,
+ "info": {
+  "budget_chars": null,
+  "docs": [
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "doc_chars": 217746,
+    "shown": 217746,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "L.wikisource_civil-service-employment-1345.fa",
+    "doc_chars": 71158,
+    "shown": 71158,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1303.fa",
+    "doc_chars": 104151,
+    "shown": 104151,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "doc_chars": 224893,
+    "shown": 224893,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "doc_chars": 75276,
+    "shown": 75276,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_cooperatives-1350.fa",
+    "doc_chars": 58321,
+    "shown": 58321,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "doc_chars": 171437,
+    "shown": 171437,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "doc_chars": 48211,
+    "shown": 48211,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_guild-system-amendment-1392.fa",
+    "doc_chars": 38185,
+    "shown": 38185,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_press-bill-1334.fa",
+    "doc_chars": 22848,
+    "shown": 22848,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "doc_chars": 15381,
+    "shown": 15381,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "doc_chars": 77588,
+    "shown": 77588,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "doc_chars": 57947,
+    "shown": 57947,
+    "whole": true,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}

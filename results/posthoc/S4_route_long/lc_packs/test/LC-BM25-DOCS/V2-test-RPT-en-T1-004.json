@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T1-004",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142823 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "75fd1d28fd65c04772329f9179d39d9ab42bf1ab33a600e97aa83cf0098cbef1",
+ "evidence_chars": 142719,
+ "prompt_chars": 143346,
+ "est_prompt_tokens": 31398,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "D.mowi_integrated-annual-report_2024.en",
+    "score": 5.563
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2023.en",
+    "score": 5.56
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2022.en",
+    "score": 5.547
+   },
+   {
+    "doc": "D.leroy_annual-report_2024.en",
+    "score": 3.313
+   },
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "score": 0.804
+   },
+   {
+    "doc": "D.arcelormittal_annual-report_2023.en",
+    "score": 0.801
+   },
+   {
+    "doc": "D.riotinto_annual-report_2024.en",
+    "score": 0.472
+   },
+   {
+    "doc": "D.zalando_annual-report_2024.en",
+    "score": 0.422
+   }
+  ],
+  "docs": [
+   {
+    "doc": "D.mowi_integrated-annual-report_2024.en",
+    "doc_chars": 1115403,
+    "shown": 142676,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

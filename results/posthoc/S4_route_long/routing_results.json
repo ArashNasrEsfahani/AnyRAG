@@ -1,0 +1,1995 @@
+{
+ "router_test": {
+  "accuracy_answerable": [
+   66,
+   90
+  ],
+  "confusion": {
+   "T1": {
+    "T1": 8,
+    "T23": 22
+   },
+   "T23": {
+    "T1": 2,
+    "T23": 58
+   }
+  },
+  "ab_routed_T1": 5,
+  "router_tokens_total": 18520,
+  "router_cost_usd": 0.00225,
+  "format_rule_accuracy_answerable": [
+   76,
+   90
+  ]
+ },
+ "policies": [
+  {
+   "policy": "always HYBRID_6000",
+   "acc": {
+    "all": [
+     62,
+     63,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     21,
+     30
+    ],
+    "T3": [
+     14,
+     14,
+     30
+    ],
+    "fa": [
+     35,
+     36,
+     45
+    ],
+    "en": [
+     27,
+     27,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    2216,
+    2216
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 2.8,
+   "share_cheap": 1.0
+  },
+  {
+   "policy": "always HR_6000",
+   "acc": {
+    "all": [
+     69,
+     71,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30
+    ],
+    "T3": [
+     18,
+     19,
+     30
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ],
+    "en": [
+     33,
+     35,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    2237,
+    2237
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 3.97,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "always LEX5B_6000",
+   "acc": {
+    "all": [
+     68,
+     69,
+     90
+    ],
+    "T1": [
+     29,
+     29,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     36,
+     37,
+     45
+    ],
+    "en": [
+     32,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    4511,
+    5131
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 2.0,
+   "mean_latency_s": 4.45,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "always HYBRID_15500",
+   "acc": {
+    "all": [
+     68,
+     68,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     22,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     33,
+     33,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    5236,
+    5236
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 3.09,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "always HR_15500",
+   "acc": {
+    "all": [
+     69,
+     70,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     21,
+     22,
+     30
+    ],
+    "T3": [
+     20,
+     20,
+     30
+    ],
+    "fa": [
+     38,
+     38,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    5287,
+    5287
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 4.68,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "always LEX5B_15500",
+   "acc": {
+    "all": [
+     67,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ],
+    "en": [
+     31,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    7542,
+    8155
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 2.0,
+   "mean_latency_s": 4.57,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "always SETR_6000",
+   "acc": {
+    "all": [
+     63,
+     63,
+     90
+    ],
+    "T1": [
+     27,
+     27,
+     30
+    ],
+    "T2": [
+     18,
+     18,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     33,
+     33,
+     45
+    ],
+    "en": [
+     30,
+     30,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    7503,
+    8128
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 2.0,
+   "mean_latency_s": 6.83,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "always SETR_15500",
+   "acc": {
+    "all": [
+     66,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     23,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    10882,
+    10882
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 2.0,
+   "mean_latency_s": 6.19,
+   "share_cheap": 0.0
+  },
+  {
+   "policy": "oracle T1->HYBRID_6000, T2/T3->HR_15500",
+   "acc": {
+    "all": [
+     69,
+     70,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     21,
+     22,
+     30
+    ],
+    "T3": [
+     20,
+     20,
+     30
+    ],
+    "fa": [
+     38,
+     38,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    4167,
+    4167
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 4.06,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "GLM router v1: T1->HYBRID_6000, else HR_15500",
+   "acc": {
+    "all": [
+     68,
+     69,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     21,
+     22,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     38,
+     38,
+     45
+    ],
+    "en": [
+     30,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    5065,
+    5065
+   ],
+   "router_tokens_per_q": 193,
+   "calls_per_q": 2.0,
+   "mean_latency_s": 6.12,
+   "share_cheap": 0.156
+  },
+  {
+   "policy": "format rule (v2_single->T1): HYBRID_6000 / HR_15500",
+   "acc": {
+    "all": [
+     67,
+     68,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     21,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     37,
+     37,
+     45
+    ],
+    "en": [
+     30,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    4153,
+    4153
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 3.72,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "oracle T1->HYBRID_6000, T2/T3->LEX5B_15500",
+   "acc": {
+    "all": [
+     67,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ],
+    "en": [
+     31,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    5531,
+    6021
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.635,
+   "mean_latency_s": 4.12,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "GLM router v1: T1->HYBRID_6000, else LEX5B_15500",
+   "acc": {
+    "all": [
+     66,
+     66,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     19,
+     19,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     31,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    6977,
+    7508
+   ],
+   "router_tokens_per_q": 193,
+   "calls_per_q": 2.844,
+   "mean_latency_s": 5.93,
+   "share_cheap": 0.156
+  },
+  {
+   "policy": "format rule (v2_single->T1): HYBRID_6000 / LEX5B_15500",
+   "acc": {
+    "all": [
+     65,
+     65,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     18,
+     18,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     30,
+     30,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    5546,
+    5996
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.635,
+   "mean_latency_s": 4.02,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "oracle T1->HYBRID_6000, T2/T3->SETR_15500",
+   "acc": {
+    "all": [
+     66,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     23,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    7753,
+    7753
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.635,
+   "mean_latency_s": 5.32,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "GLM router v1: T1->HYBRID_6000, else SETR_15500",
+   "acc": {
+    "all": [
+     66,
+     67,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     23,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     31,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    9896,
+    9896
+   ],
+   "router_tokens_per_q": 193,
+   "calls_per_q": 2.844,
+   "mean_latency_s": 7.33,
+   "share_cheap": 0.156
+  },
+  {
+   "policy": "format rule (v2_single->T1): HYBRID_6000 / SETR_15500",
+   "acc": {
+    "all": [
+     65,
+     66,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     21,
+     22,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30
+    ],
+    "fa": [
+     35,
+     35,
+     45
+    ],
+    "en": [
+     30,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    7719,
+    7719
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.635,
+   "mean_latency_s": 5.15,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "oracle T1->HYBRID_6000, T2/T3->HYBRID_15500",
+   "acc": {
+    "all": [
+     68,
+     68,
+     90
+    ],
+    "T1": [
+     28,
+     28,
+     30
+    ],
+    "T2": [
+     22,
+     22,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     36,
+     36,
+     45
+    ],
+    "en": [
+     32,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    4143,
+    4143
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 3.16,
+   "share_cheap": 0.365
+  },
+  {
+   "policy": "GLM router v1: T1->HYBRID_6000, else HYBRID_15500",
+   "acc": {
+    "all": [
+     66,
+     66,
+     90
+    ],
+    "T1": [
+     27,
+     27,
+     30
+    ],
+    "T2": [
+     21,
+     21,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     34,
+     34,
+     45
+    ],
+    "en": [
+     32,
+     32,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    5011,
+    5011
+   ],
+   "router_tokens_per_q": 193,
+   "calls_per_q": 2.0,
+   "mean_latency_s": 4.62,
+   "share_cheap": 0.156
+  },
+  {
+   "policy": "format rule (v2_single->T1): HYBRID_6000 / HYBRID_15500",
+   "acc": {
+    "all": [
+     65,
+     65,
+     90
+    ],
+    "T1": [
+     27,
+     27,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30
+    ],
+    "fa": [
+     34,
+     34,
+     45
+    ],
+    "en": [
+     31,
+     31,
+     45
+    ]
+   },
+   "abstain_correct": [
+    6,
+    6,
+    6
+   ],
+   "tokens_per_q": [
+    4128,
+    4128
+   ],
+   "router_tokens_per_q": 0,
+   "calls_per_q": 1.0,
+   "mean_latency_s": 3.03,
+   "share_cheap": 0.365
+  }
+ ],
+ "comparisons": {
+  "oracle T1->HYBRID_6000, T2/T3->HR_15500 | vs always HR_15500": {
+   "net_bounds": [
+    -1,
+    1
+   ],
+   "pp_bounds": [
+    -1.11,
+    1.11
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -4.44,
+    5.56
+   ],
+   "ci_pp_component": [
+    -4.76,
+    6.45
+   ],
+   "wins_losses_resolved": [
+    1,
+    1
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->HR_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    6,
+    8
+   ],
+   "pp_bounds": [
+    6.67,
+    8.89
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.0574,
+    0.1796
+   ],
+   "ci_pp_question": [
+    -1.11,
+    16.67
+   ],
+   "ci_pp_component": [
+    -1.23,
+    14.85
+   ],
+   "wins_losses_resolved": [
+    10,
+    3
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->HR_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -2,
+    1
+   ],
+   "pp_bounds": [
+    -2.22,
+    1.11
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.7905,
+    1.0
+   ],
+   "ci_pp_question": [
+    -10.0,
+    8.89
+   ],
+   "ci_pp_component": [
+    -12.96,
+    8.16
+   ],
+   "wins_losses_resolved": [
+    6,
+    5
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else HR_15500 | vs always HR_15500": {
+   "net_bounds": [
+    -2,
+    0
+   ],
+   "pp_bounds": [
+    -2.22,
+    0.0
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.5,
+    1.0
+   ],
+   "ci_pp_question": [
+    -5.56,
+    3.33
+   ],
+   "ci_pp_component": [
+    -5.61,
+    3.85
+   ],
+   "wins_losses_resolved": [
+    0,
+    1
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else HR_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    5,
+    7
+   ],
+   "pp_bounds": [
+    5.56,
+    7.78
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.1185,
+    0.3018
+   ],
+   "ci_pp_question": [
+    -2.22,
+    16.67
+   ],
+   "ci_pp_component": [
+    -3.9,
+    15.05
+   ],
+   "wins_losses_resolved": [
+    10,
+    4
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else HR_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -3,
+    0
+   ],
+   "pp_bounds": [
+    -3.33,
+    0.0
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.6072,
+    1.0
+   ],
+   "ci_pp_question": [
+    -12.22,
+    7.78
+   ],
+   "ci_pp_component": [
+    -15.22,
+    8.0
+   ],
+   "wins_losses_resolved": [
+    6,
+    6
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / HR_15500 | vs always HR_15500": {
+   "net_bounds": [
+    -3,
+    -1
+   ],
+   "pp_bounds": [
+    -3.33,
+    -1.11
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.25,
+    1.0
+   ],
+   "ci_pp_question": [
+    -7.78,
+    2.22
+   ],
+   "ci_pp_component": [
+    -7.69,
+    3.09
+   ],
+   "wins_losses_resolved": [
+    0,
+    2
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / HR_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    4,
+    6
+   ],
+   "pp_bounds": [
+    4.44,
+    6.67
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.1796,
+    0.424
+   ],
+   "ci_pp_question": [
+    -3.33,
+    14.44
+   ],
+   "ci_pp_component": [
+    -4.48,
+    12.5
+   ],
+   "wins_losses_resolved": [
+    9,
+    4
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / HR_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -4,
+    -1
+   ],
+   "pp_bounds": [
+    -4.44,
+    -1.11
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.424,
+    1.0
+   ],
+   "ci_pp_question": [
+    -12.22,
+    6.67
+   ],
+   "ci_pp_component": [
+    -16.13,
+    5.75
+   ],
+   "wins_losses_resolved": [
+    5,
+    6
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->LEX5B_15500 | vs always LEX5B_15500": {
+   "net_bounds": [
+    0,
+    0
+   ],
+   "pp_bounds": [
+    0.0,
+    0.0
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -3.33,
+    3.33
+   ],
+   "ci_pp_component": [
+    -2.61,
+    3.8
+   ],
+   "wins_losses_resolved": [
+    1,
+    1
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->LEX5B_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    4,
+    5
+   ],
+   "pp_bounds": [
+    4.44,
+    5.56
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.3323,
+    0.4807
+   ],
+   "ci_pp_question": [
+    -4.44,
+    14.44
+   ],
+   "ci_pp_component": [
+    -4.67,
+    14.13
+   ],
+   "wins_losses_resolved": [
+    11,
+    6
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->LEX5B_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -4,
+    -2
+   ],
+   "pp_bounds": [
+    -4.44,
+    -2.22
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.4807,
+    0.8145
+   ],
+   "ci_pp_question": [
+    -13.33,
+    6.67
+   ],
+   "ci_pp_component": [
+    -13.79,
+    6.49
+   ],
+   "wins_losses_resolved": [
+    7,
+    10
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else LEX5B_15500 | vs always LEX5B_15500": {
+   "net_bounds": [
+    -1,
+    -1
+   ],
+   "pp_bounds": [
+    -1.11,
+    -1.11
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -3.33,
+    0.0
+   ],
+   "ci_pp_component": [
+    -3.7,
+    0.0
+   ],
+   "wins_losses_resolved": [
+    0,
+    1
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else LEX5B_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    3,
+    4
+   ],
+   "pp_bounds": [
+    3.33,
+    4.44
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.4807,
+    0.6476
+   ],
+   "ci_pp_question": [
+    -6.67,
+    13.33
+   ],
+   "ci_pp_component": [
+    -7.14,
+    13.04
+   ],
+   "wins_losses_resolved": [
+    11,
+    7
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else LEX5B_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -5,
+    -3
+   ],
+   "pp_bounds": [
+    -5.56,
+    -3.33
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.3593,
+    0.6476
+   ],
+   "ci_pp_question": [
+    -15.56,
+    5.56
+   ],
+   "ci_pp_component": [
+    -15.94,
+    5.26
+   ],
+   "wins_losses_resolved": [
+    7,
+    11
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / LEX5B_15500 | vs always LEX5B_15500": {
+   "net_bounds": [
+    -2,
+    -2
+   ],
+   "pp_bounds": [
+    -2.22,
+    -2.22
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.5,
+    0.5
+   ],
+   "ci_pp_question": [
+    -5.56,
+    0.0
+   ],
+   "ci_pp_component": [
+    -6.15,
+    0.0
+   ],
+   "wins_losses_resolved": [
+    0,
+    2
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / LEX5B_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    2,
+    3
+   ],
+   "pp_bounds": [
+    2.22,
+    3.33
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.6291,
+    0.8145
+   ],
+   "ci_pp_question": [
+    -6.67,
+    12.22
+   ],
+   "ci_pp_component": [
+    -8.93,
+    12.05
+   ],
+   "wins_losses_resolved": [
+    10,
+    7
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / LEX5B_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -6,
+    -4
+   ],
+   "pp_bounds": [
+    -6.67,
+    -4.44
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.2632,
+    0.5034
+   ],
+   "ci_pp_question": [
+    -16.67,
+    5.56
+   ],
+   "ci_pp_component": [
+    -18.42,
+    4.62
+   ],
+   "wins_losses_resolved": [
+    7,
+    12
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->SETR_15500 | vs always SETR_15500": {
+   "net_bounds": [
+    -1,
+    1
+   ],
+   "pp_bounds": [
+    -1.11,
+    1.11
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -5.56,
+    4.44
+   ],
+   "ci_pp_component": [
+    -3.94,
+    5.33
+   ],
+   "wins_losses_resolved": [
+    1,
+    1
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->SETR_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    3,
+    5
+   ],
+   "pp_bounds": [
+    3.33,
+    5.56
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.3018,
+    0.6072
+   ],
+   "ci_pp_question": [
+    -5.56,
+    14.44
+   ],
+   "ci_pp_component": [
+    -4.35,
+    14.06
+   ],
+   "wins_losses_resolved": [
+    9,
+    5
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->SETR_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -5,
+    -2
+   ],
+   "pp_bounds": [
+    -5.56,
+    -2.22
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.3018,
+    0.8036
+   ],
+   "ci_pp_question": [
+    -14.44,
+    6.67
+   ],
+   "ci_pp_component": [
+    -15.29,
+    7.59
+   ],
+   "wins_losses_resolved": [
+    5,
+    9
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else SETR_15500 | vs always SETR_15500": {
+   "net_bounds": [
+    -1,
+    1
+   ],
+   "pp_bounds": [
+    -1.11,
+    1.11
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -3.33,
+    3.33
+   ],
+   "ci_pp_component": [
+    -3.19,
+    3.19
+   ],
+   "wins_losses_resolved": [
+    0,
+    0
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else SETR_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    3,
+    5
+   ],
+   "pp_bounds": [
+    3.33,
+    5.56
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.3323,
+    0.6291
+   ],
+   "ci_pp_question": [
+    -5.56,
+    14.44
+   ],
+   "ci_pp_component": [
+    -5.43,
+    13.64
+   ],
+   "wins_losses_resolved": [
+    10,
+    6
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else SETR_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -5,
+    -2
+   ],
+   "pp_bounds": [
+    -5.56,
+    -2.22
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.3018,
+    0.8036
+   ],
+   "ci_pp_question": [
+    -14.44,
+    6.67
+   ],
+   "ci_pp_component": [
+    -15.94,
+    6.52
+   ],
+   "wins_losses_resolved": [
+    5,
+    9
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / SETR_15500 | vs always SETR_15500": {
+   "net_bounds": [
+    -2,
+    0
+   ],
+   "pp_bounds": [
+    -2.22,
+    0.0
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.5,
+    1.0
+   ],
+   "ci_pp_question": [
+    -5.56,
+    3.33
+   ],
+   "ci_pp_component": [
+    -5.68,
+    2.7
+   ],
+   "wins_losses_resolved": [
+    0,
+    1
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / SETR_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    2,
+    4
+   ],
+   "pp_bounds": [
+    2.22,
+    4.44
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.4545,
+    0.8036
+   ],
+   "ci_pp_question": [
+    -6.67,
+    13.33
+   ],
+   "ci_pp_component": [
+    -6.58,
+    11.86
+   ],
+   "wins_losses_resolved": [
+    9,
+    6
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / SETR_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -6,
+    -3
+   ],
+   "pp_bounds": [
+    -6.67,
+    -3.33
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.2101,
+    0.6291
+   ],
+   "ci_pp_question": [
+    -15.56,
+    5.56
+   ],
+   "ci_pp_component": [
+    -17.5,
+    5.56
+   ],
+   "wins_losses_resolved": [
+    5,
+    10
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->HYBRID_15500 | vs always HYBRID_15500": {
+   "net_bounds": [
+    0,
+    0
+   ],
+   "pp_bounds": [
+    0.0,
+    0.0
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -3.33,
+    3.33
+   ],
+   "ci_pp_component": [
+    -3.49,
+    3.39
+   ],
+   "wins_losses_resolved": [
+    1,
+    1
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->HYBRID_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    5,
+    6
+   ],
+   "pp_bounds": [
+    5.56,
+    6.67
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.146,
+    0.2668
+   ],
+   "ci_pp_question": [
+    -2.22,
+    14.44
+   ],
+   "ci_pp_component": [
+    -2.94,
+    13.68
+   ],
+   "wins_losses_resolved": [
+    9,
+    3
+   ]
+  },
+  "oracle T1->HYBRID_6000, T2/T3->HYBRID_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -3,
+    -1
+   ],
+   "pp_bounds": [
+    -3.33,
+    -1.11
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.6291,
+    1.0
+   ],
+   "ci_pp_question": [
+    -12.22,
+    7.78
+   ],
+   "ci_pp_component": [
+    -13.43,
+    6.14
+   ],
+   "wins_losses_resolved": [
+    7,
+    8
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else HYBRID_15500 | vs always HYBRID_15500": {
+   "net_bounds": [
+    -2,
+    -2
+   ],
+   "pp_bounds": [
+    -2.22,
+    -2.22
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.5,
+    0.5
+   ],
+   "ci_pp_question": [
+    -5.56,
+    0.0
+   ],
+   "ci_pp_component": [
+    -6.15,
+    0.0
+   ],
+   "wins_losses_resolved": [
+    0,
+    2
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else HYBRID_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    3,
+    4
+   ],
+   "pp_bounds": [
+    3.33,
+    4.44
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.3877,
+    0.5811
+   ],
+   "ci_pp_question": [
+    -4.44,
+    12.22
+   ],
+   "ci_pp_component": [
+    -6.06,
+    11.69
+   ],
+   "wins_losses_resolved": [
+    8,
+    4
+   ]
+  },
+  "GLM router v1: T1->HYBRID_6000, else HYBRID_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -5,
+    -3
+   ],
+   "pp_bounds": [
+    -5.56,
+    -3.33
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.3323,
+    0.6072
+   ],
+   "ci_pp_question": [
+    -14.44,
+    4.44
+   ],
+   "ci_pp_component": [
+    -16.13,
+    3.95
+   ],
+   "wins_losses_resolved": [
+    6,
+    9
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / HYBRID_15500 | vs always HYBRID_15500": {
+   "net_bounds": [
+    -3,
+    -3
+   ],
+   "pp_bounds": [
+    -3.33,
+    -3.33
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.25,
+    0.25
+   ],
+   "ci_pp_question": [
+    -7.78,
+    0.0
+   ],
+   "ci_pp_component": [
+    -8.47,
+    0.0
+   ],
+   "wins_losses_resolved": [
+    0,
+    3
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / HYBRID_15500 | vs always HYBRID_6000": {
+   "net_bounds": [
+    2,
+    3
+   ],
+   "pp_bounds": [
+    2.22,
+    3.33
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.5488,
+    0.7744
+   ],
+   "ci_pp_question": [
+    -5.56,
+    10.0
+   ],
+   "ci_pp_component": [
+    -7.14,
+    10.0
+   ],
+   "wins_losses_resolved": [
+    7,
+    4
+   ]
+  },
+  "format rule (v2_single->T1): HYBRID_6000 / HYBRID_15500 | vs always HR_6000": {
+   "net_bounds": [
+    -6,
+    -4
+   ],
+   "pp_bounds": [
+    -6.67,
+    -4.44
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.2379,
+    0.4545
+   ],
+   "ci_pp_question": [
+    -15.56,
+    4.44
+   ],
+   "ci_pp_component": [
+    -17.74,
+    3.0
+   ],
+   "wins_losses_resolved": [
+    6,
+    10
+   ]
+  }
+ },
+ "router_dev": {
+  "v1": {
+   "accuracy": [
+    40,
+    54
+   ],
+   "T1_to_T23": 12,
+   "T23_to_T1": 2
+  },
+  "v2": {
+   "accuracy": [
+    40,
+    54
+   ],
+   "T1_to_T23": 5,
+   "T23_to_T1": 9
+  },
+  "v3": {
+   "accuracy": [
+    44,
+    54
+   ],
+   "T1_to_T23": 4,
+   "T23_to_T1": 6
+  },
+  "format_rule": {
+   "accuracy": [
+    45,
+    54
+   ],
+   "T1_to_T23": 4,
+   "T23_to_T1": 5
+  }
+ }
+}

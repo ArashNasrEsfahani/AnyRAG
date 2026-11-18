@@ -1,0 +1,413 @@
+{
+ "approach": "HYBRID",
+ "approach_base": "HYBRID",
+ "flags": {},
+ "invocations": [
+  {
+   "run_id": "20260926-124114-ea1876",
+   "started": "2026-09-26T12:41:15",
+   "argv": [
+    "--approach",
+    "hybrid",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+    "--corpus",
+    "D",
+    "--settings",
+    "en-en",
+    "--pool",
+    "RPT-en",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex5-pilot",
+    "--ids",
+    "V2-dev-RPT-en-T1-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex5_pilot\\runs\\RPT-en\\HYBRID"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+   "questions_sha1": "9616a1f0551cd0f838d0eabe4a39ac119b084544",
+   "corpus": "D",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "39334a011dae46432f2511a366022bab4476165a",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "ef001f9c13d3f89208683bbaf65ed7273d2b6925",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-en",
+    "manifest_sha1": "083eaa34617784ea404f29d78c6ac03dc7097459"
+   },
+   "identity": {
+    "experiment_id": "lex5-pilot",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-09-26T12:41:18",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 1428,
+     "completion_tokens": 39,
+     "embed_tokens": 41,
+     "llm_wall_ms": 1225.7,
+     "load_ms": 1.5,
+     "lock_wait_ms": 0.1,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 32,
+     "embed_tokens": 4,
+     "llm_wall_ms": 1070.1,
+     "load_ms": 2.7,
+     "lock_wait_ms": 0.1,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex5_pilot\\runs\\RPT-en\\HYBRID\\ledger_HYBRID.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-124207-3c7748",
+   "started": "2026-09-26T12:42:08",
+   "argv": [
+    "--approach",
+    "hybrid",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+    "--corpus",
+    "D",
+    "--settings",
+    "en-en",
+    "--pool",
+    "RPT-en",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex5-pilot",
+    "--ids",
+    "V2-dev-RPT-en-T2-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex5_pilot\\runs\\RPT-en\\HYBRID"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+   "questions_sha1": "9616a1f0551cd0f838d0eabe4a39ac119b084544",
+   "corpus": "D",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "39334a011dae46432f2511a366022bab4476165a",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_explanation": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "ef001f9c13d3f89208683bbaf65ed7273d2b6925",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-en",
+    "manifest_sha1": "083eaa34617784ea404f29d78c6ac03dc7097459"
+   },
+   "identity": {
+    "experiment_id": "lex5-pilot",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-09-26T12:42:12",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 1425,
+     "completion_tokens": 170,
+     "embed_tokens": 54,
+     "llm_wall_ms": 1668.2,
+     "load_ms": 1.8,
+     "lock_wait_ms": 0.1,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 89,
+     "embed_tokens": 4,
+     "llm_wall_ms": 1839.4,
+     "load_ms": 3.8,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex5_pilot\\runs\\RPT-en\\HYBRID\\ledger_HYBRID.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  },
+  {
+   "run_id": "20260926-124311-f7845a",
+   "started": "2026-09-26T12:43:12",
+   "argv": [
+    "--approach",
+    "hybrid",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+    "--corpus",
+    "D",
+    "--settings",
+    "en-en",
+    "--pool",
+    "RPT-en",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--experiment",
+    "lex5-pilot",
+    "--ids",
+    "V2-dev-RPT-en-T3-002",
+    "--out",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex5_pilot\\runs\\RPT-en\\HYBRID"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+   "questions_sha1": "9616a1f0551cd0f838d0eabe4a39ac119b084544",
+   "corpus": "D",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 1,
+   "n_todo": 1,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "39334a011dae46432f2511a366022bab4476165a",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": "0.32.15",
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "ef001f9c13d3f89208683bbaf65ed7273d2b6925",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-en",
+    "manifest_sha1": "083eaa34617784ea404f29d78c6ac03dc7097459"
+   },
+   "identity": {
+    "experiment_id": "lex5-pilot",
+    "replicate": 0
+   },
+   "ollama": {
+    "reachable": true,
+    "version": "0.32.15",
+    "chat_present": false,
+    "embed_present": true,
+    "chat_digest_match": false,
+    "embed_digest_match": true,
+    "error": null
+   },
+   "finished": "2026-09-26T12:43:16",
+   "status": "ok",
+   "n_ok": 1,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 1947,
+     "completion_tokens": 128,
+     "embed_tokens": 38,
+     "llm_wall_ms": 1594.4,
+     "load_ms": 0.6,
+     "lock_wait_ms": 0.1,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 1,
+     "embed_calls": 1,
+     "judge_calls": 0,
+     "prompt_tokens": 16,
+     "completion_tokens": 17,
+     "embed_tokens": 4,
+     "llm_wall_ms": 1596.1,
+     "load_ms": 3.2,
+     "lock_wait_ms": 0.2,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\lex5_pilot\\runs\\RPT-en\\HYBRID\\ledger_HYBRID.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-dev-RPT-en-T1-002": "e65f8cc0c60348f1",
+  "V2-dev-RPT-en-T2-002": "9f3f451a154f47a3",
+  "V2-dev-RPT-en-T3-002": "5d9b26d0e4312f41"
+ },
+ "question_sigs_v2": {
+  "V2-dev-RPT-en-T1-002": "90ee4ceaad46a34b",
+  "V2-dev-RPT-en-T2-002": "c175bb34d3021524",
+  "V2-dev-RPT-en-T3-002": "61a9630b8ddbab7c"
+ }
+}

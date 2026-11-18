@@ -1,0 +1,18 @@
+{
+ "arm": "DENSE_15500",
+ "question_id": "V2-test-LAW-fa-AB-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 15593 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "740c09d4c0868de32942de19a39608c73ca365af76051774e40a9346a86b70fc",
+ "evidence_chars": 15500
+}

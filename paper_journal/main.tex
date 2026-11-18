@@ -1,0 +1,28 @@
+% Journal version (Elsevier elsarticle). Compile with XeLaTeX (Persian examples): latexmk -xelatex main.tex
+% Structure follows the MISE journal paper (D:\Personal\Master's Project\docs\paper\journal_v2) and STYLE_TALE_MASOULEH_v2.md;
+% writing brief: work/rewrite_journal/BRIEF.md
+\documentclass[preprint,12pt]{elsarticle}
+\input{preamble}
+
+\begin{document}
+% \linenumbers
+\begin{frontmatter}
+\input{sections/j00_front}
+\end{frontmatter}
+
+\input{sections/j1_introduction}
+\input{sections/j2_methodology}
+\input{sections/j3_results}
+\input{sections/j4_conclusion}
+\input{sections/j5_backmatter}
+
+\appendix
+% Elsevier style: tables and figures numbered per appendix (Table A.1, Table B.1, ...)
+\counterwithin*{table}{section}\counterwithin*{figure}{section}
+\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\input{sections/jA_appendix}
+
+\bibliographystyle{elsarticle-num}
+\bibliography{refs}
+\end{document}

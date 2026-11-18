@@ -1,0 +1,956 @@
+{
+ "n_answerable": 90,
+ "n_unanswerable": 6,
+ "totals": {
+  "HYDE_6000": [
+   61,
+   61
+  ],
+  "MQ_6000": [
+   58,
+   59
+  ],
+  "HYBRID_6000": [
+   62,
+   63
+  ],
+  "HR_6000": [
+   69,
+   71
+  ],
+  "HYBRID_15500": [
+   68,
+   68
+  ]
+ },
+ "status_counts": {
+  "HYDE_6000": {
+   "judged": 96
+  },
+  "MQ_6000": {
+   "judged": 95,
+   "needs_adjudication": 1
+  },
+  "HYBRID_6000": {
+   "judged": 95,
+   "needs_adjudication": 1
+  },
+  "HR_6000": {
+   "judged": 94,
+   "needs_adjudication": 2
+  },
+  "HYBRID_15500": {
+   "judged": 96
+  }
+ },
+ "unanswerable": {
+  "HYDE_6000": [
+   6,
+   6
+  ],
+  "MQ_6000": [
+   6,
+   6
+  ],
+  "HYBRID_6000": [
+   6,
+   6
+  ],
+  "HR_6000": [
+   6,
+   6
+  ],
+  "HYBRID_15500": [
+   6,
+   6
+  ]
+ },
+ "abstained_unanswerable": {
+  "HYDE_6000": 5,
+  "MQ_6000": 6
+ },
+ "paired": {
+  "HYDE_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -2,
+    -1
+   ],
+   "net_enum": [
+    -2,
+    -1
+   ],
+   "pp_bounds": [
+    -2.2222222222222223,
+    -1.1111111111111112
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.8145294189453125,
+    1.0
+   ],
+   "ci_pp_question": [
+    -11.11111111111111,
+    7.777777777777778
+   ],
+   "ci_pp_component": [
+    -17.647058823529413,
+    8.860759493670885
+   ],
+   "ci_pp_block": [
+    -14.814814814814815,
+    9.195402298850574
+   ],
+   "better_worse_resolved": [
+    8,
+    9
+   ]
+  },
+  "HYDE_6000 vs HR_6000": {
+   "net_bounds": [
+    -10,
+    -8
+   ],
+   "net_enum": [
+    -10,
+    -8
+   ],
+   "pp_bounds": [
+    -11.11111111111111,
+    -8.88888888888889
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.04138946533203125,
+    0.09625244140625
+   ],
+   "ci_pp_question": [
+    -21.11111111111111,
+    0.0
+   ],
+   "ci_pp_component": [
+    -26.38888888888889,
+    0.0
+   ],
+   "ci_pp_block": [
+    -23.25581395348837,
+    2.3255813953488373
+   ],
+   "better_worse_resolved": [
+    5,
+    13
+   ]
+  },
+  "HYDE_6000 vs HYBRID_15500": {
+   "net_bounds": [
+    -7,
+    -7
+   ],
+   "net_enum": [
+    -7,
+    -7
+   ],
+   "pp_bounds": [
+    -7.777777777777778,
+    -7.777777777777778
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.11846923828125,
+    0.11846923828125
+   ],
+   "ci_pp_question": [
+    -16.666666666666668,
+    0.0
+   ],
+   "ci_pp_component": [
+    -20.0,
+    1.4492753623188406
+   ],
+   "ci_pp_block": [
+    -17.56756756756757,
+    1.1764705882352942
+   ],
+   "better_worse_resolved": [
+    4,
+    11
+   ]
+  },
+  "HYDE_6000 vs MQ_6000": {
+   "net_bounds": [
+    2,
+    3
+   ],
+   "net_enum": [
+    2,
+    3
+   ],
+   "pp_bounds": [
+    2.2222222222222223,
+    3.3333333333333335
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.629058837890625,
+    0.803619384765625
+   ],
+   "ci_pp_question": [
+    -6.666666666666667,
+    12.222222222222221
+   ],
+   "ci_pp_component": [
+    -11.764705882352942,
+    11.764705882352942
+   ],
+   "ci_pp_block": [
+    -10.112359550561798,
+    15.217391304347826
+   ],
+   "better_worse_resolved": [
+    9,
+    7
+   ]
+  },
+  "MQ_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -5,
+    -3
+   ],
+   "net_enum": [
+    -5,
+    -3
+   ],
+   "pp_bounds": [
+    -5.555555555555555,
+    -3.3333333333333335
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.332305908203125,
+    0.60723876953125
+   ],
+   "ci_pp_question": [
+    -14.444444444444445,
+    4.444444444444445
+   ],
+   "ci_pp_component": [
+    -14.864864864864865,
+    6.349206349206349
+   ],
+   "ci_pp_block": [
+    -16.176470588235293,
+    6.666666666666667
+   ],
+   "better_worse_resolved": [
+    6,
+    9
+   ]
+  },
+  "MQ_6000 vs HR_6000": {
+   "net_bounds": [
+    -13,
+    -10
+   ],
+   "net_enum": [
+    -13,
+    -10
+   ],
+   "pp_bounds": [
+    -14.444444444444445,
+    -11.11111111111111
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.002349853515625,
+    0.012939453125
+   ],
+   "ci_pp_question": [
+    -23.333333333333332,
+    -3.3333333333333335
+   ],
+   "ci_pp_component": [
+    -21.21212121212121,
+    -6.451612903225806
+   ],
+   "ci_pp_block": [
+    -22.78481012658228,
+    -3.3707865168539324
+   ],
+   "better_worse_resolved": [
+    2,
+    12
+   ]
+  },
+  "MQ_6000 vs HYBRID_15500": {
+   "net_bounds": [
+    -10,
+    -9
+   ],
+   "net_enum": [
+    -10,
+    -9
+   ],
+   "pp_bounds": [
+    -11.11111111111111,
+    -10.0
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.021270751953125,
+    0.03515625
+   ],
+   "ci_pp_question": [
+    -20.0,
+    -2.2222222222222223
+   ],
+   "ci_pp_component": [
+    -18.42105263157895,
+    -1.5151515151515151
+   ],
+   "ci_pp_block": [
+    -20.0,
+    -1.2195121951219512
+   ],
+   "better_worse_resolved": [
+    3,
+    12
+   ]
+  },
+  "MQ_6000 vs HYDE_6000": {
+   "net_bounds": [
+    -3,
+    -2
+   ],
+   "net_enum": [
+    -3,
+    -2
+   ],
+   "pp_bounds": [
+    -3.3333333333333335,
+    -2.2222222222222223
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.629058837890625,
+    0.803619384765625
+   ],
+   "ci_pp_question": [
+    -12.222222222222221,
+    6.666666666666667
+   ],
+   "ci_pp_component": [
+    -11.764705882352942,
+    11.764705882352942
+   ],
+   "ci_pp_block": [
+    -15.217391304347826,
+    10.112359550561798
+   ],
+   "better_worse_resolved": [
+    7,
+    9
+   ]
+  }
+ },
+ "breakdown": {
+  "genre=BOOK": {
+   "n": 30,
+   "HYDE_6000": [
+    19,
+    19
+   ],
+   "MQ_6000": [
+    16,
+    16
+   ],
+   "HYBRID_6000": [
+    19,
+    19
+   ],
+   "HR_6000": [
+    20,
+    20
+   ],
+   "HYBRID_15500": [
+    20,
+    20
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    0,
+    0
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    2,
+    2
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    -3,
+    -3
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    1,
+    4
+   ]
+  },
+  "genre=LAW": {
+   "n": 30,
+   "HYDE_6000": [
+    24,
+    24
+   ],
+   "MQ_6000": [
+    19,
+    20
+   ],
+   "HYBRID_6000": [
+    22,
+    22
+   ],
+   "HR_6000": [
+    23,
+    24
+   ],
+   "HYBRID_15500": [
+    24,
+    24
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    2,
+    2
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    4,
+    2
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    -3,
+    -2
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    2,
+    4
+   ]
+  },
+  "genre=RPT": {
+   "n": 30,
+   "HYDE_6000": [
+    18,
+    18
+   ],
+   "MQ_6000": [
+    23,
+    23
+   ],
+   "HYBRID_6000": [
+    21,
+    22
+   ],
+   "HR_6000": [
+    26,
+    27
+   ],
+   "HYBRID_15500": [
+    24,
+    24
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    -4,
+    -3
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    2,
+    5
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    1,
+    2
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    3,
+    1
+   ]
+  },
+  "lang=en": {
+   "n": 45,
+   "HYDE_6000": [
+    30,
+    30
+   ],
+   "MQ_6000": [
+    29,
+    29
+   ],
+   "HYBRID_6000": [
+    27,
+    27
+   ],
+   "HR_6000": [
+    33,
+    35
+   ],
+   "HYBRID_15500": [
+    33,
+    33
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    3,
+    3
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    6,
+    3
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    2,
+    2
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    5,
+    3
+   ]
+  },
+  "lang=fa": {
+   "n": 45,
+   "HYDE_6000": [
+    31,
+    31
+   ],
+   "MQ_6000": [
+    29,
+    30
+   ],
+   "HYBRID_6000": [
+    35,
+    36
+   ],
+   "HR_6000": [
+    36,
+    36
+   ],
+   "HYBRID_15500": [
+    35,
+    35
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    -5,
+    -4
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    2,
+    6
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    -7,
+    -5
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    1,
+    6
+   ]
+  },
+  "tier=T1": {
+   "n": 30,
+   "HYDE_6000": [
+    27,
+    27
+   ],
+   "MQ_6000": [
+    26,
+    26
+   ],
+   "HYBRID_6000": [
+    28,
+    28
+   ],
+   "HR_6000": [
+    28,
+    28
+   ],
+   "HYBRID_15500": [
+    28,
+    28
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    -1,
+    -1
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    1,
+    2
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    -2,
+    -2
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    0,
+    2
+   ]
+  },
+  "tier=T2": {
+   "n": 30,
+   "HYDE_6000": [
+    18,
+    18
+   ],
+   "MQ_6000": [
+    17,
+    18
+   ],
+   "HYBRID_6000": [
+    20,
+    21
+   ],
+   "HR_6000": [
+    23,
+    24
+   ],
+   "HYBRID_15500": [
+    22,
+    22
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    -3,
+    -2
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    3,
+    5
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    -4,
+    -2
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    3,
+    5
+   ]
+  },
+  "tier=T3": {
+   "n": 30,
+   "HYDE_6000": [
+    16,
+    16
+   ],
+   "MQ_6000": [
+    15,
+    15
+   ],
+   "HYBRID_6000": [
+    14,
+    14
+   ],
+   "HR_6000": [
+    18,
+    19
+   ],
+   "HYBRID_15500": [
+    18,
+    18
+   ],
+   "net_HYDE_6000_vs_HYBRID_6000": [
+    2,
+    2
+   ],
+   "bw_HYDE_6000_vs_HYBRID_6000": [
+    4,
+    2
+   ],
+   "net_MQ_6000_vs_HYBRID_6000": [
+    1,
+    1
+   ],
+   "bw_MQ_6000_vs_HYBRID_6000": [
+    3,
+    2
+   ]
+  }
+ },
+ "tokens": {
+  "HYDE_6000": {
+   "mean_lower": 2551.2,
+   "mean_upper": 2551.2,
+   "median_lower": 2724.5,
+   "n_questions": 96,
+   "mean_rewrite_prompt": 150.0,
+   "mean_rewrite_completion": 195.5,
+   "mean_rewrite_reasoning": 6.8,
+   "mean_answer_prompt": 2086.9,
+   "mean_answer_completion": 118.8,
+   "mean_n_calls": 2,
+   "mean_cost": 0.000468,
+   "total_cost_usd": 0.04493
+  },
+  "MQ_6000": {
+   "mean_lower": 2438.2,
+   "mean_upper": 2438.2,
+   "median_lower": 2560.0,
+   "n_questions": 96,
+   "mean_rewrite_prompt": 153.0,
+   "mean_rewrite_completion": 69.8,
+   "mean_rewrite_reasoning": 0.1,
+   "mean_answer_prompt": 2101.4,
+   "mean_answer_completion": 113.9,
+   "mean_n_calls": 2,
+   "mean_cost": 0.000413,
+   "total_cost_usd": 0.03965
+  },
+  "HYBRID_6000": {
+   "mean_lower": 2216.3,
+   "mean_upper": 2216.3,
+   "median_lower": 2451.0,
+   "n_questions": 96,
+   "llm_calls_mean": 1
+  },
+  "HR_6000": {
+   "mean_lower": 2236.6,
+   "mean_upper": 2236.6,
+   "median_lower": 2337.0,
+   "n_questions": 96,
+   "llm_calls_mean": 1
+  },
+  "HYBRID_15500": {
+   "mean_lower": 5235.5,
+   "mean_upper": 5235.5,
+   "median_lower": 5627.5,
+   "n_questions": 96,
+   "llm_calls_mean": 1
+  }
+ },
+ "coverage": {
+  "HYDE_6000": {
+   "all": {
+    "complete": 51,
+    "partial": 31,
+    "none": 8
+   },
+   "by_group": {
+    "T1": {
+     "complete": 26,
+     "partial": 0,
+     "none": 4
+    },
+    "fa": {
+     "complete": 26,
+     "partial": 13,
+     "none": 6
+    },
+    "T2": {
+     "complete": 14,
+     "partial": 14,
+     "none": 2
+    },
+    "T3": {
+     "complete": 11,
+     "partial": 17,
+     "none": 2
+    },
+    "en": {
+     "complete": 25,
+     "partial": 18,
+     "none": 2
+    }
+   },
+   "vs_HYBRID_6000_complete_gained_lost": [
+    2,
+    8
+   ]
+  },
+  "MQ_6000": {
+   "all": {
+    "complete": 54,
+    "partial": 27,
+    "none": 9
+   },
+   "by_group": {
+    "T1": {
+     "complete": 26,
+     "partial": 0,
+     "none": 4
+    },
+    "fa": {
+     "complete": 28,
+     "partial": 10,
+     "none": 7
+    },
+    "T2": {
+     "complete": 16,
+     "partial": 12,
+     "none": 2
+    },
+    "T3": {
+     "complete": 12,
+     "partial": 15,
+     "none": 3
+    },
+    "en": {
+     "complete": 26,
+     "partial": 17,
+     "none": 2
+    }
+   },
+   "vs_HYBRID_6000_complete_gained_lost": [
+    4,
+    7
+   ]
+  },
+  "HYBRID_6000": {
+   "all": {
+    "complete": 57,
+    "partial": 26,
+    "none": 7
+   },
+   "by_group": {
+    "T1": {
+     "complete": 27,
+     "partial": 0,
+     "none": 3
+    },
+    "fa": {
+     "complete": 33,
+     "partial": 8,
+     "none": 4
+    },
+    "T2": {
+     "complete": 18,
+     "partial": 11,
+     "none": 1
+    },
+    "T3": {
+     "complete": 12,
+     "partial": 15,
+     "none": 3
+    },
+    "en": {
+     "complete": 24,
+     "partial": 18,
+     "none": 3
+    }
+   }
+  },
+  "HR_6000": {
+   "all": {
+    "complete": 63,
+    "partial": 23,
+    "none": 4
+   },
+   "by_group": {
+    "T1": {
+     "complete": 29,
+     "partial": 0,
+     "none": 1
+    },
+    "fa": {
+     "complete": 34,
+     "partial": 11,
+     "none": 0
+    },
+    "T2": {
+     "complete": 19,
+     "partial": 10,
+     "none": 1
+    },
+    "T3": {
+     "complete": 15,
+     "partial": 13,
+     "none": 2
+    },
+    "en": {
+     "complete": 29,
+     "partial": 12,
+     "none": 4
+    }
+   }
+  },
+  "HYBRID_15500": {
+   "all": {
+    "complete": 65,
+    "partial": 22,
+    "none": 3
+   },
+   "by_group": {
+    "T1": {
+     "complete": 28,
+     "partial": 0,
+     "none": 2
+    },
+    "fa": {
+     "complete": 36,
+     "partial": 7,
+     "none": 2
+    },
+    "T2": {
+     "complete": 21,
+     "partial": 9,
+     "none": 0
+    },
+    "T3": {
+     "complete": 16,
+     "partial": 13,
+     "none": 1
+    },
+    "en": {
+     "complete": 29,
+     "partial": 15,
+     "none": 1
+    }
+   }
+  }
+ },
+ "rewrites": {
+  "hyde_chars_mean": 648.9,
+  "mq_n_rewrites": {
+   "1": 0,
+   "2": 0,
+   "3": 96
+  },
+  "n_ok": {
+   "HYDE": 96,
+   "MQ": 96
+  }
+ },
+ "pack_identical_to_HYBRID_6000": {
+  "HYDE_6000": 1,
+  "MQ_6000": 1
+ },
+ "repro": {
+  "search_eq_channel_code": 96,
+  "saved_sha_equal": 96,
+  "bytes_equal": 96,
+  "n": 96
+ },
+ "gpu_phases": [
+  {
+   "ts": "2026-11-10T19:38:38",
+   "split": "dev",
+   "n_texts": 25,
+   "n_questions": 5,
+   "wall_s": 14.3,
+   "nvidia_smi_before": "787 MiB, 8188 MiB",
+   "nvidia_smi_after": "787 MiB, 8188 MiB",
+   "orig_vs_S9_n": 5,
+   "orig_vs_S9_bit_equal": 5,
+   "orig_vs_S9_cos_min": 1.0,
+   "embed_model": "bge-m3:latest",
+   "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  },
+  {
+   "ts": "2026-11-10T20:00:25",
+   "split": "test",
+   "n_texts": 480,
+   "n_questions": 96,
+   "wall_s": 557.19,
+   "nvidia_smi_before": "3754 MiB, 8188 MiB",
+   "nvidia_smi_after": "793 MiB, 8188 MiB",
+   "orig_vs_S9_n": 96,
+   "orig_vs_S9_bit_equal": 75,
+   "orig_vs_S9_cos_min": 0.9999999,
+   "embed_model": "bge-m3:latest",
+   "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  }
+ ],
+ "spent": {
+  "glm_usd": 0.08948,
+  "judge_usd": 0.02251,
+  "total_usd": 0.11199
+ }
+}

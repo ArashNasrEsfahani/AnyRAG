@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T3-002",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 78877 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "df26ed5d9c4f6f01dc360aacc493465db5bbf578620b744374f450f6907cf7de",
+ "evidence_chars": 78711,
+ "prompt_chars": 79708,
+ "est_prompt_tokens": 31528,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "doc_chars": 82311,
+    "shown": 39178,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "doc_chars": 151042,
+    "shown": 39455,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

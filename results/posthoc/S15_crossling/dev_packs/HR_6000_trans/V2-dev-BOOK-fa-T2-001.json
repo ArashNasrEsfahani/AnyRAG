@@ -1,0 +1,17 @@
+{
+ "question_id": "V2-dev-BOOK-fa-T2-001",
+ "setting": "en-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6214 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "80e4117ac0ed8e9601d602232ce499dc20070dda016540ee70ddd888fc8356df",
+ "evidence_chars": 6000
+}

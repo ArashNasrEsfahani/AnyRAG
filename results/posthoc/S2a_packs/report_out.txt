@@ -1,0 +1,62 @@
+HYBRID_3000   acc (49, 51)/90 unres 2 chars 2941.6 ptok en 857.3 fa 1415.5 all 1238.7 calls 1.0 unk 0 abst (6, 6)
+HYBRID_6000   acc (62, 63)/90 unres 1 chars 5955.8 ptok en 1531.3 fa 2655.0 all 2216.3 calls 1.0 unk 0 abst (6, 6)
+HYBRID_10000  acc (63, 64)/90 unres 1 chars 9950.6 ptok en 2457.4 fa 4265.4 all 3481.9 calls 1.0 unk 0 abst (6, 6)
+HYBRID_15500  acc (68, 68)/90 unres 0 chars 15451.3 ptok en 3683.3 fa 6527.1 all 5235.5 calls 1.0 unk 0 abst (6, 6)
+HYBRID_24000  acc (72, 72)/90 unres 0 chars 23946.2 ptok en 5606.7 fa 9978.9 all 7924.7 calls 1.0 unk 0 abst (6, 6)
+HR_3000       acc (56, 56)/90 unres 0 chars 2937.3 ptok en 849.9 fa 1420.8 all 1236.9 calls 1.0 unk 0 abst (6, 6)
+HR_6000       acc (69, 71)/90 unres 2 chars 5958.1 ptok en 1553.1 fa 2669.0 all 2236.6 calls 1.0 unk 0 abst (6, 6)
+HR_10000      acc (70, 70)/90 unres 0 chars 9941.1 ptok en 2489.8 fa 4308.0 all 3527.5 calls 1.0 unk 0 abst (6, 6)
+HR_15500      acc (69, 70)/90 unres 1 chars 15439.1 ptok en 3750.8 fa 6560.5 all 5286.8 calls 1.0 unk 0 abst (6, 6)
+HR_24000      acc (66, 66)/90 unres 0 chars 23935.4 ptok en 5672.5 fa 10024.3 all 7984.7 calls 1.0 unk 0 abst (6, 6)
+FUSION_3000   acc (43, 44)/90 unres 1 chars 2795.9 ptok en 821.7 fa 1353.6 all 1189.6 calls 1.0 unk 0 abst (6, 6)
+FUSION_6000   acc (58, 59)/90 unres 1 chars 5764.9 ptok en 1476.1 fa 2584.3 all 2149.8 calls 1.0 unk 0 abst (6, 6)
+FUSION_10000  acc (66, 66)/90 unres 0 chars 9740.0 ptok en 2384.8 fa 4213.0 all 3425.6 calls 1.0 unk 0 abst (6, 6)
+FUSION_15500  acc (65, 65)/90 unres 0 chars 15220.5 ptok en 3630.6 fa 6470.8 all 5182.8 calls 1.0 unk 0 abst (6, 6)
+FUSION_24000  acc (70, 70)/90 unres 0 chars 23730.6 ptok en 5550.9 fa 9922.5 all 7865.2 calls 1.0 unk 0 abst (6, 6)
+LEX5B_6000    acc (68, 69)/90 unres 1 chars 5771.7 ptok en 1507.1 fa 2569.6 all 4511.2 calls 2.0 unk 0 abst (6, 6)
+LEX5B_15500   acc (67, 67)/90 unres 0 chars 15213.5 ptok en 3629.2 fa 6462.6 all 7541.7 calls 2.0 unk 0 abst (6, 6)
+SETR_6000     acc (63, 63)/90 unres 0 chars 5948.7 ptok en 1545.8 fa 2655.5 all 7502.7 calls 2.0 unk 0 abst (6, 6)
+SETR_15500    acc (66, 67)/90 unres 1 chars 15450.0 ptok en 3687.8 fa 6528.4 all 10881.6 calls 2.0 unk 0 abst (6, 6)
+GOLD          acc (83, 83)/90 unres 0 chars 572.0 ptok en 363.2 fa 395.7 all 481.1 calls 1.0 unk 6 abst (0, 6)
+KNAP_6000     acc (44, 44)/90 unres 0 chars 5638.5 ptok en 1447.5 fa 2550.9 all 2116.1 calls 1.0 unk 0 abst (6, 6)
+MMR_6000      acc (60, 60)/90 unres 0 chars 5788.3 ptok en 1489.7 fa 2588.2 all 2157.6 calls 1.0 unk 0 abst (6, 6)
+FUSION_6000 vs LEX5B_6000    net [-11, -9] p [0.0074, 0.0352] ci_q [-20.0, -2.2] ci_comp [-20.6, -3.3] bw [2, 12]
+LEX5B_6000 vs FUSION_6000    net [9, 11] p [0.0074, 0.0352] ci_q [2.2, 20.0] ci_comp [3.3, 20.6] bw [12, 2]
+FUSION_6000 vs HYBRID_6000   net [-5, -3] p [0.2266, 0.5078] ci_q [-13.3, 3.3] ci_comp [-13.9, 1.4] bw [3, 6]
+FUSION_6000 vs HR_6000       net [-13, -10] p [0.0106, 0.0414] ci_q [-24.4, -2.2] ci_comp [-24.4, -5.4] bw [5, 15]
+FUSION_15500 vs LEX5B_15500  net [-2, -2] p [0.7905, 0.7905] ci_q [-10.0, 5.6] ci_comp [-9.5, 5.6] bw [6, 8]
+LEX5B_15500 vs FUSION_15500  net [2, 2] p [0.7905, 0.7905] ci_q [-5.6, 10.0] ci_comp [-5.6, 9.5] bw [8, 6]
+FUSION_15500 vs HYBRID_15500 net [-3, -3] p [0.5488, 0.5488] ci_q [-10.0, 3.3] ci_comp [-8.8, 2.6] bw [4, 7]
+FUSION_15500 vs HR_15500     net [-5, -4] p [0.2668, 0.3877] ci_q [-13.3, 3.3] ci_comp [-12.2, 3.2] bw [4, 8]
+GOLD vs LEX5B_6000           net [14, 15] p [0.0015, 0.0026] ci_q [6.7, 25.6] ci_comp [5.3, 23.1] bw [17, 3]
+GOLD vs HYBRID_15500         net [15, 15] p [0.0015, 0.0015] ci_q [7.8, 26.7] ci_comp [7.8, 26.3] bw [18, 3]
+HYBRID_6000 vs HYBRID_3000   net [11, 14] p [0.0005, 0.0074] ci_q [4.4, 24.4] ci_comp [5.6, 24.1] bw [13, 1]
+HYBRID_10000 vs HYBRID_6000  net [0, 2] p [0.7539, 1.0] ci_q [-6.7, 8.9] ci_comp [-8.0, 9.1] bw [5, 4]
+HYBRID_15500 vs HYBRID_10000 net [4, 5] p [0.1797, 0.2891] ci_q [-1.1, 12.2] ci_comp [0.0, 11.5] bw [6, 2]
+HYBRID_24000 vs HYBRID_15500 net [4, 4] p [0.2891, 0.2891] ci_q [-1.1, 11.1] ci_comp [0.9, 10.6] bw [6, 2]
+HR_6000 vs HR_3000           net [13, 15] p [0.0007, 0.0023] ci_q [6.7, 25.6] ci_comp [7.8, 25.3] bw [15, 2]
+HR_10000 vs HR_6000          net [-1, 1] p [1.0, 1.0] ci_q [-8.9, 8.9] ci_comp [-10.4, 7.1] bw [6, 5]
+HR_15500 vs HR_10000         net [-1, 0] p [1.0, 1.0] ci_q [-5.6, 4.4] ci_comp [-5.4, 4.5] bw [1, 2]
+HR_24000 vs HR_15500         net [-4, -3] p [0.3438, 0.5488] ci_q [-11.1, 4.4] ci_comp [-10.6, 6.5] bw [3, 7]
+FUSION_6000 vs FUSION_3000   net [14, 16] p [0.0009, 0.0043] ci_q [6.7, 27.8] ci_comp [7.0, 23.4] bw [18, 3]
+FUSION_10000 vs FUSION_6000  net [7, 8] p [0.0574, 0.0923] ci_q [0.0, 16.7] ci_comp [1.8, 17.7] bw [10, 3]
+FUSION_15500 vs FUSION_10000 net [-1, -1] p [1.0, 1.0] ci_q [-6.7, 4.4] ci_comp [-8.0, 4.3] bw [3, 4]
+FUSION_24000 vs FUSION_15500 net [5, 5] p [0.2668, 0.2668] ci_q [-2.2, 13.3] ci_comp [-1.4, 15.9] bw [9, 4]
+FUSION_3000 vs HYBRID_3000   net [-8, -5] p [0.0574, 0.2266] ci_q [-16.7, 1.1] ci_comp [-16.5, 0.0] bw [3, 8]
+FUSION_3000 vs HR_3000       net [-13, -12] p [0.0044, 0.0075] ci_q [-23.3, -4.4] ci_comp [-22.9, -6.1] bw [3, 15]
+HR_3000 vs HYBRID_3000       net [5, 7] p [0.1185, 0.2668] ci_q [-2.2, 16.7] ci_comp [-0.9, 16.9] bw [9, 4]
+FUSION_10000 vs HYBRID_10000 net [2, 3] p [0.375, 0.6875] ci_q [-3.3, 8.9] ci_comp [-2.7, 9.4] bw [4, 1]
+FUSION_10000 vs HR_10000     net [-4, -4] p [0.424, 0.424] ci_q [-12.2, 3.3] ci_comp [-9.7, 3.6] bw [5, 9]
+HR_10000 vs HYBRID_10000     net [6, 7] p [0.0391, 0.0703] ci_q [1.1, 14.4] ci_comp [2.2, 12.2] bw [7, 1]
+FUSION_24000 vs HYBRID_24000 net [-2, -2] p [0.7539, 0.7539] ci_q [-8.9, 4.4] ci_comp [-7.7, 5.1] bw [4, 6]
+FUSION_24000 vs HR_24000     net [4, 4] p [0.4545, 0.4545] ci_q [-4.4, 13.3] ci_comp [-3.9, 14.6] bw [10, 6]
+HR_24000 vs HYBRID_24000     net [-6, -6] p [0.2101, 0.2101] ci_q [-15.6, 2.2] ci_comp [-15.2, 0.8] bw [5, 11]
+KNAP_6000 vs FUSION_6000     net [-15, -14] p [0.0041, 0.0094] ci_q [-26.7, -4.4] ci_comp [-24.4, -7.7] bw [5, 20]
+KNAP_6000 vs LEX5B_6000      net [-25, -24] p [0.0, 0.0] ci_q [-38.9, -15.6] ci_comp [-39.6, -17.1] bw [3, 28]
+KNAP_6000 vs HYBRID_6000     net [-19, -18] p [0.0002, 0.0003] ci_q [-31.1, -10.0] ci_comp [-30.3, -14.7] bw [3, 21]
+KNAP_6000 vs HR_6000         net [-27, -25] p [0.0, 0.0] ci_q [-41.1, -16.7] ci_comp [-43.0, -19.2] bw [4, 29]
+MMR_6000 vs FUSION_6000      net [1, 2] p [0.625, 1.0] ci_q [-3.3, 6.7] ci_comp [-3.1, 4.9] bw [3, 1]
+MMR_6000 vs LEX5B_6000       net [-9, -8] p [0.0352, 0.0574] ci_q [-18.9, -1.1] ci_comp [-18.8, -3.6] bw [3, 11]
+MMR_6000 vs HYBRID_6000      net [-3, -2] p [0.5488, 0.7539] ci_q [-11.1, 4.4] ci_comp [-12.1, 3.4] bw [4, 6]
+MMR_6000 vs HR_6000          net [-11, -9] p [0.0266, 0.0636] ci_q [-22.2, -1.1] ci_comp [-23.3, -2.6] bw [5, 14]
+{"fusion_pack_identical_to_lex5b": {"6000": 37, "15500": 38}, "lex5b_6000_selector": {"ok_same_pack": 18, "ok_diff_pack": 59, "fallback": 19}, "status_counts": {"HYBRID_3000": {"judged": 94, "needs_adjudication": 2}, "HYBRID_10000": {"judged": 95, "needs_adjudication": 1}, "HYBRID_24000": {"judged": 96}, "HR_3000": {"judged": 96}, "HR_10000": {"judged": 96}, "HR_24000": {"judged": 96}, "FUSION_3000": {"judged": 95, "needs_adjudication": 1}, "FUSION_6000": {"frozen": 37, "judged": 58, "needs_adjudication": 1}, "FUSION_10000": {"judged": 96}, "FUSION_15500": {"judged": 58, "frozen": 38}, "FUSION_24000": {"judged": 96}, "GOLD": {"judged": 90, "missing": 6}, "KNAP_6000": {"judged": 96}, "MMR_6000": {"judged": 87, "frozen": 9}}}

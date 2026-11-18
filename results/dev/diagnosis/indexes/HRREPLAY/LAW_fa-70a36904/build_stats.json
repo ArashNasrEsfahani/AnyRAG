@@ -1,0 +1,35 @@
+{
+ "approach": "HRREPLAY",
+ "corpus_set": "LAW_fa",
+ "fingerprint": "70a369046176c1dd79467ba0c9a7a7afe3aa72a4",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T01:56:19",
+   "ok": true,
+   "build_ms": 0.0,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 0,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T01:56:19",
+ "size_bytes": 0
+}

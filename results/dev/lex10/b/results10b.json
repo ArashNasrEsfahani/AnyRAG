@@ -1,0 +1,300 @@
+{
+ "n": 54,
+ "B_ss": 15500,
+ "B_lang": {
+  "fa": 12000,
+  "en": 21500
+ },
+ "arms": {
+  "HYBRID": {
+   "span": 0.72,
+   "full": 32,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 15
+   },
+   "complete_by_tier": {
+    "T1": 16,
+    "T2": 8,
+    "T3": 8
+   },
+   "t3_docs": 12,
+   "bw_HR": [
+    6,
+    13
+   ],
+   "bw_matched": [
+    "HYBRID",
+    0,
+    0
+   ],
+   "groups": {
+    "fa": 0.7222,
+    "en": 0.7177,
+    "T1": 0.9259,
+    "T2": 0.6228,
+    "T3": 0.6111,
+    "RPT-fa": 0.5556
+   },
+   "chars_mean": null,
+   "items_mean": null
+  },
+  "HR": {
+   "span": 0.8065,
+   "full": 35,
+   "complete_by_lang": {
+    "fa": 20,
+    "en": 15
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 9,
+    "T3": 9
+   },
+   "t3_docs": 13,
+   "bw_HR": [
+    0,
+    0
+   ],
+   "bw_matched": [
+    "HYBRID",
+    13,
+    6
+   ],
+   "groups": {
+    "fa": 0.8765,
+    "en": 0.7364,
+    "T1": 0.9815,
+    "T2": 0.7481,
+    "T3": 0.6898,
+    "RPT-fa": 0.8889
+   },
+   "chars_mean": null,
+   "items_mean": null
+  },
+  "F2@6000": {
+   "span": 0.7792,
+   "full": 33,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 16
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 8,
+    "T3": 8
+   },
+   "t3_docs": 13,
+   "bw_HR": [
+    6,
+    8
+   ],
+   "bw_matched": [
+    "HYBRID",
+    7,
+    1
+   ],
+   "groups": {
+    "fa": 0.7963,
+    "en": 0.7621,
+    "T1": 0.9815,
+    "T2": 0.6784,
+    "T3": 0.6778,
+    "RPT-fa": 0.7222
+   },
+   "chars_mean": 5962.8,
+   "items_mean": 6.56
+  },
+  "F2@8500": {
+   "span": 0.808,
+   "full": 36,
+   "complete_by_lang": {
+    "fa": 19,
+    "en": 17
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 10,
+    "T3": 9
+   },
+   "t3_docs": 13,
+   "bw_HR": [
+    8,
+    6
+   ],
+   "bw_matched": [
+    "HYBRID",
+    12,
+    0
+   ],
+   "groups": {
+    "fa": 0.821,
+    "en": 0.7951,
+    "T1": 0.9815,
+    "T2": 0.7231,
+    "T3": 0.7194,
+    "RPT-fa": 0.7222
+   },
+   "chars_mean": 8478.0,
+   "items_mean": 9.3
+  },
+  "HYBRID@B**": {
+   "span": 0.8471,
+   "full": 39,
+   "complete_by_lang": {
+    "fa": 22,
+    "en": 17
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 12,
+    "T3": 10
+   },
+   "t3_docs": 15,
+   "bw_HR": [
+    8,
+    2
+   ],
+   "bw_matched": [
+    "HYBRID",
+    14,
+    0
+   ],
+   "groups": {
+    "fa": 0.8704,
+    "en": 0.8239,
+    "T1": 0.9815,
+    "T2": 0.796,
+    "T3": 0.7639,
+    "RPT-fa": 0.8333
+   },
+   "chars_mean": 15458.1,
+   "items_mean": 16.83
+  },
+  "F2@B**": {
+   "span": 0.8824,
+   "full": 42,
+   "complete_by_lang": {
+    "fa": 22,
+    "en": 20
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 13,
+    "T3": 12
+   },
+   "t3_docs": 15,
+   "bw_HR": [
+    11,
+    3
+   ],
+   "bw_matched": [
+    "HYBRID@B**",
+    7,
+    2
+   ],
+   "groups": {
+    "fa": 0.9012,
+    "en": 0.8636,
+    "T1": 0.9815,
+    "T2": 0.8407,
+    "T3": 0.825,
+    "RPT-fa": 0.8889
+   },
+   "chars_mean": 15418.8,
+   "items_mean": 16.57
+  },
+  "HYBRID@lang": {
+   "span": 0.8457,
+   "full": 40,
+   "complete_by_lang": {
+    "fa": 20,
+    "en": 20
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 13,
+    "T3": 10
+   },
+   "t3_docs": 15,
+   "bw_HR": [
+    11,
+    4
+   ],
+   "bw_matched": [
+    "HYBRID",
+    15,
+    0
+   ],
+   "groups": {
+    "fa": 0.8333,
+    "en": 0.858,
+    "T1": 0.9815,
+    "T2": 0.7944,
+    "T3": 0.7611,
+    "RPT-fa": 0.7222
+   },
+   "chars_mean": 16693.4,
+   "items_mean": 18.11
+  },
+  "F2@lang": {
+   "span": 0.8824,
+   "full": 43,
+   "complete_by_lang": {
+    "fa": 22,
+    "en": 21
+   },
+   "complete_by_tier": {
+    "T1": 17,
+    "T2": 13,
+    "T3": 13
+   },
+   "t3_docs": 14,
+   "bw_HR": [
+    12,
+    2
+   ],
+   "bw_matched": [
+    "HYBRID@lang",
+    6,
+    1
+   ],
+   "groups": {
+    "fa": 0.8827,
+    "en": 0.8821,
+    "T1": 0.9815,
+    "T2": 0.813,
+    "T3": 0.8528,
+    "RPT-fa": 0.8333
+   },
+   "chars_mean": 16705.2,
+   "items_mean": 18.0
+  }
+ },
+ "chosen": "F2@B**",
+ "chosen_pred_tokens": 5135.2,
+ "chosen_pred_ratio": 2.3675,
+ "admission": {
+  "retention>=0.8065": true,
+  "complete>=38": true,
+  "fa>=20": true,
+  "en>=15": true,
+  "pred_tokens<=2.5x": true
+ },
+ "admitted": true,
+ "only_complete": {
+  "F2@B**": [
+   "V2-dev-BOOK-en-T2-001",
+   "V2-dev-BOOK-en-T3-003",
+   "V2-dev-LAW-fa-T2-002",
+   "V2-dev-LAW-fa-T2-003",
+   "V2-dev-LAW-en-T2-001",
+   "V2-dev-LAW-en-T2-002",
+   "V2-dev-RPT-fa-T3-003",
+   "V2-dev-RPT-en-T3-003"
+  ],
+  "HR": [
+   "V2-dev-RPT-fa-T2-003"
+  ]
+ }
+}

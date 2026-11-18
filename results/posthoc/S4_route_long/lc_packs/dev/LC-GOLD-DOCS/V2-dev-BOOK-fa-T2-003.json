@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-fa-T2-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79153 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "e5fb095904c58ef0dbd7db74176a1d0d7e3db503a0f50e001165034e958071d8",
+ "evidence_chars": 78981,
+ "prompt_chars": 79869,
+ "est_prompt_tokens": 31592,
+ "build_ms": 1.7,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "K.wikisource_kasravi_azari.fa",
+    "doc_chars": 111248,
+    "shown": 78943,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

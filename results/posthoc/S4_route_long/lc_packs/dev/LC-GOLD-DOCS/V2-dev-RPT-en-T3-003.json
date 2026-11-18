@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143082 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "0318855caa6cd0a2e930e6f2b6470af5e36e2ead9a04855a042fecb7a7f83839",
+ "evidence_chars": 142878,
+ "prompt_chars": 143905,
+ "est_prompt_tokens": 31520,
+ "build_ms": 1.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.deliveryhero_annual-report_2024.en",
+    "doc_chars": 832803,
+    "shown": 71449,
+    "ranges": 2,
+    "whole": false
+   },
+   {
+    "doc": "D.zalando_annual-report_2024.en",
+    "doc_chars": 994143,
+    "shown": 71332,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 2
+ }
+}

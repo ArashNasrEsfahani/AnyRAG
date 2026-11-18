@@ -1,0 +1,18 @@
+{
+ "arm": "FUSION_10000",
+ "question_id": "V2-test-LAW-en-T1-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 9682 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "f8cc464295936995e9789dcadca4e665c1eb0efacd6cbe36a9611872deac306d",
+ "evidence_chars": 9525
+}

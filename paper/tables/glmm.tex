@@ -1,0 +1,35 @@
+% src: work/posthoc_2026-11/S5_stats/tables.md "Contrasts: Laplace, question + pack intercepts, answerable90, form 0" and "LRTs (question + pack model)"
+%      (glmm_pack_results.json); MDE rows from stats_results.json -> mde (exact two-sided sign test, alpha .05, power .80, n = 90, GLM reader).
+%      Logistic mixed model, all six readers pooled (4,320 answers), random intercepts for question and for pack (question x arm),
+%      reader as a fixed effect; unresolved judge cells all counted wrong or all counted right.
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lccrr@{}}
+\toprule
+ & \multicolumn{2}{c}{Unresolved = wrong} & \multicolumn{2}{c}{= right} \\
+Odds ratio & OR [95\% CI] & $p$ & OR & $p$ \\
+\midrule
+\lexb{} vs.\ \hybrid{} & 2.11 [1.24, 3.60] & .006 & 2.02 & .008 \\
+\lexb{} vs.\ \hr{} & 1.61 [0.94, 2.73] & .080 & 1.41 & .191 \\
+\hr{} vs.\ \hybrid{} & 1.31 [0.78, 2.22] & .308 & 1.43 & .163 \\
+\setr{} vs.\ \lexb{} & 0.75 [0.44, 1.28] & .297 & 0.77 & .315 \\
+Budget, \hybrid{} & 1.77 [1.04, 3.01] & .034 & 1.86 & .017 \\
+Budget, \hr{} & 1.61 [0.95, 2.71] & .076 & 1.43 & .164 \\
+Budget, \lexb{} & 1.13 [0.66, 1.94] & .649 & 1.20 & .498 \\
+Budget, \setr{} & 1.08 [0.64, 1.83] & .779 & 1.05 & .848 \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Does the pipeline effect depend on the reader?}} \\
+Pipeline $\times$ reader & $\chi^2_{15}$ 12.4 & .648 & 13.0 & .602 \\
+All reader terms & $\chi^2_{35}$ 26.8 & .838 & 31.6 & .631 \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Detectable with 90 questions (80\% power)}} \\
+ & \multicolumn{2}{c}{Answers of 90} & \multicolumn{2}{c}{Questions for 5} \\
+\lexb{} vs.\ \hybrid{} & \multicolumn{2}{c}{11.1} & \multicolumn{2}{c}{458} \\
+\lexb{} vs.\ \hr{} & \multicolumn{2}{c}{10.4} & \multicolumn{2}{c}{401} \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. Six readers pooled in one mixed logistic model, at 6,000 characters unless marked. Budget rows compare 15,500 with 6,000; interaction rows are likelihood-ratio tests; the last block gives the detectable difference and the questions needed. $p$-values are uncorrected.}
+\label{tab:glmm}
+\end{table}

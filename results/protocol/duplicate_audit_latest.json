@@ -1,0 +1,14 @@
+{
+ "at": "2026-10-01T15:02:56",
+ "pattern": "V2-test-",
+ "scanned": [
+  "runs_*.jsonl",
+  "ledger_*.jsonl",
+  "verdicts_*.jsonl",
+  "judge_failures_*.jsonl",
+  "needs_adjudication_*.jsonl"
+ ],
+ "root": "D:\\KareOne\\RAG Paper\\work",
+ "files_with_test_ids": {},
+ "clean": true
+}

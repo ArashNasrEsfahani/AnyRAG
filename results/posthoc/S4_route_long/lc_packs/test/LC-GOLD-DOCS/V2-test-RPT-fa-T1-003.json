@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79303 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "e7c1f0ab0d63cf7ed4b1246aba691867057bf7db2fbda34321b0d92e97daab2d",
+ "evidence_chars": 79187,
+ "prompt_chars": 79834,
+ "est_prompt_tokens": 31578,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "doc_chars": 111267,
+    "shown": 79130,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

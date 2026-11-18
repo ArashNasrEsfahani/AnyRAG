@@ -1,0 +1,43 @@
+{
+ "rule": "Every saved strict-correct verdict on a calculation/comparison question (93 cells, 13 questions; answer lenses only) was read against the question's requirements. A cell is adjudicated 0 only when the requested derived answer is wrong (direction/operand roles/value). Lost bounds or omitted magnitudes with a correct direction and value are flagged but kept at 1. Original strict scores are never changed; this file adds a column.",
+ "default_note": "read: operands, direction and derived value consistent with the requirements; no unsupported extra found",
+ "questions": {
+  "V2-dev-BOOK-en-T3-003": {
+   "adjudicated_strict": 1,
+   "flag": "magnitude_omitted_minor",
+   "note": "direction correct (Douglass younger); none of the 3 cells states the 4-5 year gap, which the requirement gives only in parentheses"
+  },
+  "V2-dev-LAW-fa-T3-003": {
+   "adjudicated_strict": 1,
+   "flag": "ok",
+   "note": "conclusions correct; HR (D60) carries two stray 'NOT_FOUND' header lines the judge counted as extra (noise, not a wrong claim)"
+  }
+ },
+ "cells": {
+  "devrun/judge/AGENTIC5/verdicts_openai__gpt-oss-120b.jsonl|V2-dev-RPT-en-T2-003|AGENTIC5": {
+   "adjudicated_strict": 0,
+   "flag": "inverse_ratio_false_positive",
+   "note": "Answer reports total customer balances / business deposits = 13.3/5.4 = 2.463 as the ratio; the question asks the share of balances that were business deposits: >= 5.4/13.3 = ~41% (lower bound: 'over GBP 5.4 billion'). Operand roles inverted and the bound turned into a point value (agentic5/arith.py _pair takes requirements in existing order; compute divides first by second). The judge marked R3 correct: a judge false positive. This is the AGENTIC 'arithmetic win' cited in WIN_LOSS.md (d) and in the LEX11 brief."
+  },
+  "devrun/judge/HYBRID+rerank/verdicts_openai__gpt-oss-120b.jsonl|V2-dev-RPT-fa-T3-002|HYBRID+rerank": {
+   "adjudicated_strict": 1,
+   "flag": "bounds_dropped_minor",
+   "note": "operands given as exactly 40 and 53 million (source: 'over' / 'more than') and the increase stated as exactly ('equal to') 13 million; the reference itself is 'roughly 13 million', so the value is right but the lower-bound qualifier is lost"
+  },
+  "idea_test/judge/verdicts_openai__gpt-oss-120b.jsonl|V2-dev-RPT-fa-T3-002|HYBRID+rerank": {
+   "adjudicated_strict": 1,
+   "flag": "bounds_dropped_minor",
+   "note": "end-1397 operand given as 40 million without 'over'; derived 'about 13 million' correct"
+  },
+  "lex5_pilot/judge/verdicts_openai__gpt-oss-120b.jsonl|V2-dev-RPT-fa-T3-002|HYBRID+rerank": {
+   "adjudicated_strict": 1,
+   "flag": "bounds_dropped_minor",
+   "note": "end-1397 operand given as 40 million without 'over'; derived 'about 13 million' correct"
+  },
+  "lex10/b/eval/judge/verdicts_openai__gpt-oss-120b.jsonl|V2-dev-RPT-fa-T3-002|LEX10": {
+   "adjudicated_strict": 1,
+   "flag": "bounds_dropped_minor",
+   "note": "end-1397 operand given as 40 million without 'over'; derived 'about 13 million' correct"
+  }
+ }
+}

@@ -1,0 +1,488 @@
+{
+ "accuracy": {
+  "local gemma4:e4b + HYBRID+rerank (dev)": {
+   "T2": {
+    "strict": 2,
+    "n": 18,
+    "unjudged": [
+     "V2-dev-BOOK-fa-T2-001"
+    ],
+    "abstained": 4,
+    "mean_recall": 0.366
+   },
+   "T3": {
+    "strict": 6,
+    "n": 18,
+    "unjudged": [
+     "V2-dev-LAW-en-T3-001"
+    ],
+    "abstained": 7,
+    "mean_recall": 0.406
+   }
+  },
+  "gpt-oss-20b + HYBRID+rerank evidence (replay)": {
+   "T2": {
+    "strict": 5,
+    "n": 18,
+    "unjudged": [
+     "V2-dev-RPT-fa-T2-003"
+    ],
+    "abstained": 2,
+    "mean_recall": 0.565
+   },
+   "T3": {
+    "strict": 6,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 3,
+    "mean_recall": 0.496
+   }
+  },
+  "gpt-oss-20b + GOLD evidence": {
+   "T2": {
+    "strict": 10,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 1,
+    "mean_recall": 0.819
+   },
+   "T3": {
+    "strict": 11,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 0,
+    "mean_recall": 0.833
+   }
+  },
+  "glm-5.3-flash + GOLD evidence": {
+   "T2": {
+    "strict": 12,
+    "n": 18,
+    "unjudged": [
+     "V2-dev-RPT-fa-T2-003"
+    ],
+    "abstained": 0,
+    "mean_recall": 0.852
+   },
+   "T3": {
+    "strict": 17,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 0,
+    "mean_recall": 1.0
+   }
+  },
+  "local gemma4:e4b + HYBRID (dev)": {
+   "T2": {
+    "strict": 2,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 5,
+    "mean_recall": 0.324
+   },
+   "T3": {
+    "strict": 5,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 6,
+    "mean_recall": 0.438
+   }
+  },
+  "local gemma4:e4b + LEX3 (dev)": {
+   "T2": {
+    "strict": 4,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 6,
+    "mean_recall": 0.394
+   },
+   "T3": {
+    "strict": 5,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 6,
+    "mean_recall": 0.415
+   }
+  },
+  "local gemma4:e4b + AGENTIC5 (dev)": {
+   "T2": {
+    "strict": 3,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 4,
+    "mean_recall": 0.333
+   },
+   "T3": {
+    "strict": 4,
+    "n": 18,
+    "unjudged": [],
+    "abstained": 4,
+    "mean_recall": 0.39
+   }
+  }
+ },
+ "rows": [
+  {
+   "qid": "V2-dev-BOOK-en-T2-001",
+   "subtype": "T2_definition_bridge",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "x(R4:wro)",
+   "oss_replay": "OK",
+   "oss_gold": "x()",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-en-T2-002",
+   "subtype": "T2_bounded_synthesis",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-en-T2-003",
+   "subtype": "T2_bounded_synthesis",
+   "format": "explanation",
+   "hr_cov": "PART",
+   "local_HR": "x(R1:wro,R2:wro)",
+   "oss_replay": "ABST",
+   "oss_gold": "x(R1:wro)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-en-T3-001",
+   "subtype": "T3_cross_doc_bridge",
+   "format": "explanation",
+   "hr_cov": "PART",
+   "local_HR": "ABST",
+   "oss_replay": "ABST",
+   "oss_gold": "x(R2:mis)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-en-T3-002",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "NONE",
+   "local_HR": "ABST",
+   "oss_replay": "x(R1:wro,R2:mis,R3:mis,R4:mis)",
+   "oss_gold": "x(R2:wro,R4:wro)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-en-T3-003",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "PART",
+   "local_HR": "x(R1:mis,R2:mis,R3:mis)",
+   "oss_replay": "x(R1:wro,R3:mis)",
+   "oss_gold": "x(R3:wro)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-fa-T2-001",
+   "subtype": "T2_bounded_synthesis",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "?",
+   "oss_replay": "x(R2:mis)",
+   "oss_gold": "x(R2:mis)",
+   "glm_gold": "x(R2:mis)"
+  },
+  {
+   "qid": "V2-dev-BOOK-fa-T2-002",
+   "subtype": "T2_comparison_derivation",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "x(R3:mis,R4:wro)",
+   "oss_replay": "x(R1:mis,R2:mis,R3:mis,R4:mis)",
+   "oss_gold": "x(R1:wro,R3:wro)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-fa-T2-003",
+   "subtype": "T2_comparison_derivation",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "x(R1:mis,R2:mis,R3:wro,R4:wro)",
+   "oss_replay": "x(R1:mis,R2:mis)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-fa-T3-001",
+   "subtype": "T3_bounded_aggregation",
+   "format": "single",
+   "hr_cov": "FULL",
+   "local_HR": "ABST",
+   "oss_replay": "x(R1:mis,R2:mis,R3:wro)",
+   "oss_gold": "x(R1:mis,R2:mis,R3:wro)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-fa-T3-002",
+   "subtype": "T3_cross_doc_bridge",
+   "format": "explanation",
+   "hr_cov": "PART",
+   "local_HR": "ABST",
+   "oss_replay": "ABST",
+   "oss_gold": "x(R1:mis)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-BOOK-fa-T3-003",
+   "subtype": "T3_bounded_aggregation",
+   "format": "explanation",
+   "hr_cov": "PART",
+   "local_HR": "ABST",
+   "oss_replay": "x(R1:wro)",
+   "oss_gold": "OK",
+   "glm_gold": "x()"
+  },
+  {
+   "qid": "V2-dev-LAW-en-T2-001",
+   "subtype": "T2_definition_bridge",
+   "format": "explanation",
+   "hr_cov": "NONE",
+   "local_HR": "ABST",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-en-T2-002",
+   "subtype": "T2_rule_exception",
+   "format": "explanation",
+   "hr_cov": "PART",
+   "local_HR": "x(R1:mis,R6:mis)",
+   "oss_replay": "x(R1:wro,R5:mis,R6:mis)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-en-T2-003",
+   "subtype": "T2_rule_exception",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "x(R1:wro)",
+   "oss_gold": "OK",
+   "glm_gold": "x()"
+  },
+  {
+   "qid": "V2-dev-LAW-en-T3-001",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "?",
+   "oss_replay": "x()",
+   "oss_gold": "x(R1:wro)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-en-T3-002",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "NONE",
+   "local_HR": "ABST",
+   "oss_replay": "x(R1:mis,R2:mis,R3:mis,R4:mis)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-en-T3-003",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "NONE",
+   "local_HR": "x(R1:wro,R2:wro,R3:mis)",
+   "oss_replay": "x(R1:wro,R2:wro,R3:mis)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-fa-T2-001",
+   "subtype": "T2_rule_exception",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "x(R4:mis,R5:mis)",
+   "oss_replay": "x(R2:mis,R4:mis,R5:mis)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-fa-T2-002",
+   "subtype": "T2_rule_exception",
+   "format": "explanation",
+   "hr_cov": "NONE",
+   "local_HR": "x(R3:mis,R4:mis)",
+   "oss_replay": "x(R3:mis,R4:wro)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-fa-T2-003",
+   "subtype": "T2_rule_exception",
+   "format": "explanation",
+   "hr_cov": "PART",
+   "local_HR": "x(R2:wro)",
+   "oss_replay": "x(R2:con,R4:wro)",
+   "oss_gold": "x(R1:mis,R2:wro)",
+   "glm_gold": "x(R2:con)"
+  },
+  {
+   "qid": "V2-dev-LAW-fa-T3-001",
+   "subtype": "T3_cross_time_version",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-fa-T3-002",
+   "subtype": "T3_cross_time_version",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "x(R1:wro,R2:wro,R5:mis)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-LAW-fa-T3-003",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-en-T2-001",
+   "subtype": "T2_bounded_synthesis",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "x(R2:wro,R4:mis)",
+   "oss_replay": "OK",
+   "oss_gold": "x(R2:wro,R4:mis)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-en-T2-002",
+   "subtype": "T2_rule_exception",
+   "format": "explanation",
+   "hr_cov": "FULL",
+   "local_HR": "x(R3:mis)",
+   "oss_replay": "x(R3:mis)",
+   "oss_gold": "x(R3:mis)",
+   "glm_gold": "x()"
+  },
+  {
+   "qid": "V2-dev-RPT-en-T2-003",
+   "subtype": "T2_comparison_derivation",
+   "format": "single",
+   "hr_cov": "FULL",
+   "local_HR": "ABST",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-en-T3-001",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "OK",
+   "oss_gold": "x(R2:wro,R5:mis)",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-en-T3-002",
+   "subtype": "T3_cross_time_version",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "x(R1:mis,R4:wro)",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-en-T3-003",
+   "subtype": "T3_cross_subject",
+   "format": "comparison",
+   "hr_cov": "PART",
+   "local_HR": "x(R4:mis)",
+   "oss_replay": "x(R3:wro,R4:con)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-fa-T2-001",
+   "subtype": "T2_comparison_derivation",
+   "format": "single",
+   "hr_cov": "NONE",
+   "local_HR": "ABST",
+   "oss_replay": "ABST",
+   "oss_gold": "ABST",
+   "glm_gold": "x(R3:mis)"
+  },
+  {
+   "qid": "V2-dev-RPT-fa-T2-002",
+   "subtype": "T2_bounded_synthesis",
+   "format": "single",
+   "hr_cov": "FULL",
+   "local_HR": "x(R1:mis,R2:wro,R3:mis)",
+   "oss_replay": "x(R1:mis,R2:mis,R3:wro)",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-fa-T2-003",
+   "subtype": "T2_comparison_derivation",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "ABST",
+   "oss_replay": "?",
+   "oss_gold": "OK",
+   "glm_gold": "?"
+  },
+  {
+   "qid": "V2-dev-RPT-fa-T3-001",
+   "subtype": "T3_cross_time_version",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-fa-T3-002",
+   "subtype": "T3_cross_time_version",
+   "format": "comparison",
+   "hr_cov": "FULL",
+   "local_HR": "OK",
+   "oss_replay": "OK",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  },
+  {
+   "qid": "V2-dev-RPT-fa-T3-003",
+   "subtype": "T3_cross_doc_bridge",
+   "format": "single",
+   "hr_cov": "PART",
+   "local_HR": "ABST",
+   "oss_replay": "ABST",
+   "oss_gold": "OK",
+   "glm_gold": "OK"
+  }
+ ],
+ "either_gold_correct": 32,
+ "both_gold_correct": 18
+}

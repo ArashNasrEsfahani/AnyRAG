@@ -1,0 +1,38 @@
+# secrets
+.env
+.env.*
+auth.json
+*.key
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+# local data and caches (corpora are not redistributed)
+/corpus/
+/work/
+*.sqlite
+*.npz
+*.pkl
+*.log
+!results/protocol/*.log
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.out
+paper/*.xdv
+paper/*.synctex.gz
+# LaTeX build products (journal version)
+paper_journal/*.aux
+paper_journal/*.bbl
+paper_journal/*.blg
+paper_journal/*.fdb_latexmk
+paper_journal/*.fls
+paper_journal/*.out
+paper_journal/*.xdv
+paper_journal/*.spl
+paper_journal/*.log

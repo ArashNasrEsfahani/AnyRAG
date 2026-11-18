@@ -1,0 +1,49 @@
+{
+ "approach": "SETR",
+ "corpus_set": "LAW_en",
+ "fingerprint": "684eb9c36d790c362b3bc4116eab4dbf70b9e8d0",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-10-01T15:26:28",
+   "ok": true,
+   "build_ms": 1431.5,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 1431.5,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-10-01T15:26:29",
+ "size_bytes": 257,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\SETR\\LAW_en-684eb9c3",
+ "corpus_stats": {
+  "name": "LAW_en",
+  "docs": 10,
+  "sections": 1869,
+  "units": 17142,
+  "chars": 3523474,
+  "skipped": 0
+ },
+ "copied_at": "2026-10-04T21:35:55",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

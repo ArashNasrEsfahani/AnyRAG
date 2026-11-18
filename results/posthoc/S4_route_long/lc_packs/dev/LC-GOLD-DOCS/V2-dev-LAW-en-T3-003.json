@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-en-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143136 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "a965c49073c7e6a2e531b51f8d134a17389eb1553ad3bfd95e13290b77915a67",
+ "evidence_chars": 142903,
+ "prompt_chars": 143959,
+ "est_prompt_tokens": 31532,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "L.ukpga-2010-23_bribery-act.en",
+    "doc_chars": 36047,
+    "shown": 36047,
+    "ranges": 1,
+    "whole": true
+   },
+   {
+    "doc": "L.ukpga-2015-30_modern-slavery-act.en",
+    "doc_chars": 174430,
+    "shown": 106801,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 5,
+  "gold_units_retained": 5,
+  "gold_docs_shown": 2
+ }
+}

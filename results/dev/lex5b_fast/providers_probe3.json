@@ -1,0 +1,92 @@
+{
+ "note": "probe3 stopped by its own $0.03 guard (measured on the SHARED reader file, which also moved with Step A and the parallel agent) after 16 endpoints; result computed from probe3.log",
+ "together_median_ms": 1811,
+ "medians": {
+  "together": {
+   "n": 3,
+   "median_wall_ms": 1811,
+   "all_parse": true
+  },
+  "relace": {
+   "n": 3,
+   "median_wall_ms": 6352,
+   "all_parse": true
+  },
+  "novita/fp8": {
+   "n": 3,
+   "median_wall_ms": 7240,
+   "all_parse": true
+  },
+  "streamlake/fp8": {
+   "n": 3,
+   "median_wall_ms": 5407,
+   "all_parse": false
+  },
+  "gmicloud/fp8": {
+   "n": 3,
+   "median_wall_ms": 5404,
+   "all_parse": true
+  },
+  "near-ai/fp8": {
+   "n": 3,
+   "median_wall_ms": 2908,
+   "all_parse": true
+  },
+  "phala/fp8": {
+   "n": 3,
+   "median_wall_ms": 9291,
+   "all_parse": true
+  },
+  "baseten/fp8": {
+   "n": 3,
+   "median_wall_ms": 2679,
+   "all_parse": true
+  },
+  "atlas-cloud/fp8": {
+   "n": 3,
+   "median_wall_ms": 3845,
+   "all_parse": false
+  },
+  "fireworks": {
+   "n": 3,
+   "median_wall_ms": 4068,
+   "all_parse": false
+  },
+  "friendli": {
+   "n": 3,
+   "median_wall_ms": 2044,
+   "all_parse": true
+  },
+  "siliconflow/fp8": {
+   "n": 3,
+   "median_wall_ms": 5834,
+   "all_parse": false
+  },
+  "digitalocean": {
+   "n": 3,
+   "median_wall_ms": 4154,
+   "all_parse": true
+  },
+  "reka": {
+   "n": 3,
+   "median_wall_ms": 2467,
+   "all_parse": true
+  },
+  "parasail/fp8": {
+   "n": 3,
+   "median_wall_ms": 2800,
+   "all_parse": true
+  },
+  "venice": {
+   "n": 3,
+   "median_wall_ms": 10015,
+   "all_parse": false
+  }
+ },
+ "qualifiers": [],
+ "choice": {
+  "best": null,
+  "switch": false,
+  "pin": null
+ }
+}

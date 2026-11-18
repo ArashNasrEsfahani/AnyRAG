@@ -1,0 +1,18 @@
+{
+ "arm": "HYBRID_10000",
+ "question_id": "V2-test-LAW-en-T1-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 10170 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "b2256cac884a3a5c3e824f3cff73005a1f8105459b47c6cd7f40f7b2bff13ffa",
+ "evidence_chars": 10000
+}

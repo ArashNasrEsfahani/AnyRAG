@@ -1,0 +1,18 @@
+{
+ "arm": "BM25_6000",
+ "question_id": "V2-test-RPT-fa-T1-005",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6120 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "3c76f8d0a93207d3577b3e493403de1986694d5111a97bf56cc4c51295104ff7",
+ "evidence_chars": 6000
+}

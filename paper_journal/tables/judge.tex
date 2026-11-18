@@ -1,0 +1,23 @@
+% src: test_run/TEST_RESULTS_HUMAN_SYM.md sec. 4 (test, 120 cells incl. 2 inherited; first review 78 cells; symmetric
+%      completion 40 cells; per arm); TEST_RESULTS_HUMAN.md sec. 3 (dev: 31 agree, 14 strict, 1 lenient, 1 unsure)
+\begin{table}[tp]
+\caption{First judge against human review on reviewed answers}
+\label{tab:judge}
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Split / pipeline & Agree & Judge stricter & Judge laxer & n.c. \\
+\midrule
+Test, all 120 cells & 79 & 37 & 0 & 4 \\
+\quad \hybrid & 20 & 9 & 0 & 1 \\
+\quad \hr & 22 & 6 & 0 & 2 \\
+\quad \lexb & 22 & 7 & 0 & 1 \\
+\quad \setr & 15 & 15 & 0 & 0 \\
+\quad first review (78) & 49 & 25 & 0 & 4 \\
+\quad completion (42) & 30 & 12 & 0 & 0 \\
+Dev, all (47) & 31 & 14 & 1 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}

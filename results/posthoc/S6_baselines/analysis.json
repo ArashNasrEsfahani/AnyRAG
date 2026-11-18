@@ -1,0 +1,1969 @@
+{
+ "n_answerable": 90,
+ "n_unanswerable": 6,
+ "groups_n": {
+  "all": 90,
+  "T1": 30,
+  "T2": 30,
+  "T3": 30,
+  "fa": 45,
+  "en": 45,
+  "BOOK": 30,
+  "LAW": 30,
+  "RPT": 30,
+  "BOOK-fa": 15,
+  "BOOK-en": 15,
+  "LAW-fa": 15,
+  "LAW-en": 15,
+  "RPT-fa": 15,
+  "RPT-en": 15
+ },
+ "accuracy": {
+  "CLOSEDBOOK": {
+   "all": [
+    26,
+    26
+   ],
+   "T1": [
+    9,
+    9
+   ],
+   "T2": [
+    8,
+    8
+   ],
+   "T3": [
+    9,
+    9
+   ],
+   "fa": [
+    6,
+    6
+   ],
+   "en": [
+    20,
+    20
+   ],
+   "BOOK": [
+    12,
+    12
+   ],
+   "LAW": [
+    14,
+    14
+   ],
+   "RPT": [
+    0,
+    0
+   ],
+   "BOOK-fa": [
+    3,
+    3
+   ],
+   "BOOK-en": [
+    9,
+    9
+   ],
+   "LAW-fa": [
+    3,
+    3
+   ],
+   "LAW-en": [
+    11,
+    11
+   ],
+   "RPT-fa": [
+    0,
+    0
+   ],
+   "RPT-en": [
+    0,
+    0
+   ]
+  },
+  "LISTWISE": {
+   "all": [
+    66,
+    67
+   ],
+   "T1": [
+    28,
+    28
+   ],
+   "T2": [
+    21,
+    21
+   ],
+   "T3": [
+    17,
+    18
+   ],
+   "fa": [
+    33,
+    34
+   ],
+   "en": [
+    33,
+    33
+   ],
+   "BOOK": [
+    19,
+    19
+   ],
+   "LAW": [
+    22,
+    23
+   ],
+   "RPT": [
+    25,
+    25
+   ],
+   "BOOK-fa": [
+    8,
+    8
+   ],
+   "BOOK-en": [
+    11,
+    11
+   ],
+   "LAW-fa": [
+    11,
+    12
+   ],
+   "LAW-en": [
+    11,
+    11
+   ],
+   "RPT-fa": [
+    14,
+    14
+   ],
+   "RPT-en": [
+    11,
+    11
+   ]
+  },
+  "SETR_NOFILL": {
+   "all": [
+    63,
+    63
+   ],
+   "T1": [
+    27,
+    27
+   ],
+   "T2": [
+    18,
+    18
+   ],
+   "T3": [
+    18,
+    18
+   ],
+   "fa": [
+    31,
+    31
+   ],
+   "en": [
+    32,
+    32
+   ],
+   "BOOK": [
+    17,
+    17
+   ],
+   "LAW": [
+    22,
+    22
+   ],
+   "RPT": [
+    24,
+    24
+   ],
+   "BOOK-fa": [
+    6,
+    6
+   ],
+   "BOOK-en": [
+    11,
+    11
+   ],
+   "LAW-fa": [
+    12,
+    12
+   ],
+   "LAW-en": [
+    10,
+    10
+   ],
+   "RPT-fa": [
+    13,
+    13
+   ],
+   "RPT-en": [
+    11,
+    11
+   ]
+  },
+  "HYBRID_6000": {
+   "all": [
+    62,
+    63
+   ],
+   "T1": [
+    28,
+    28
+   ],
+   "T2": [
+    20,
+    21
+   ],
+   "T3": [
+    14,
+    14
+   ],
+   "fa": [
+    35,
+    36
+   ],
+   "en": [
+    27,
+    27
+   ],
+   "BOOK": [
+    19,
+    19
+   ],
+   "LAW": [
+    22,
+    22
+   ],
+   "RPT": [
+    21,
+    22
+   ],
+   "BOOK-fa": [
+    8,
+    8
+   ],
+   "BOOK-en": [
+    11,
+    11
+   ],
+   "LAW-fa": [
+    14,
+    14
+   ],
+   "LAW-en": [
+    8,
+    8
+   ],
+   "RPT-fa": [
+    13,
+    14
+   ],
+   "RPT-en": [
+    8,
+    8
+   ]
+  },
+  "HR_6000": {
+   "all": [
+    69,
+    71
+   ],
+   "T1": [
+    28,
+    28
+   ],
+   "T2": [
+    23,
+    24
+   ],
+   "T3": [
+    18,
+    19
+   ],
+   "fa": [
+    36,
+    36
+   ],
+   "en": [
+    33,
+    35
+   ],
+   "BOOK": [
+    20,
+    20
+   ],
+   "LAW": [
+    23,
+    24
+   ],
+   "RPT": [
+    26,
+    27
+   ],
+   "BOOK-fa": [
+    9,
+    9
+   ],
+   "BOOK-en": [
+    11,
+    11
+   ],
+   "LAW-fa": [
+    12,
+    12
+   ],
+   "LAW-en": [
+    11,
+    12
+   ],
+   "RPT-fa": [
+    15,
+    15
+   ],
+   "RPT-en": [
+    11,
+    12
+   ]
+  },
+  "LEX5B_6000": {
+   "all": [
+    68,
+    69
+   ],
+   "T1": [
+    29,
+    29
+   ],
+   "T2": [
+    23,
+    24
+   ],
+   "T3": [
+    16,
+    16
+   ],
+   "fa": [
+    36,
+    37
+   ],
+   "en": [
+    32,
+    32
+   ],
+   "BOOK": [
+    20,
+    20
+   ],
+   "LAW": [
+    22,
+    23
+   ],
+   "RPT": [
+    26,
+    26
+   ],
+   "BOOK-fa": [
+    10,
+    10
+   ],
+   "BOOK-en": [
+    10,
+    10
+   ],
+   "LAW-fa": [
+    12,
+    13
+   ],
+   "LAW-en": [
+    10,
+    10
+   ],
+   "RPT-fa": [
+    14,
+    14
+   ],
+   "RPT-en": [
+    12,
+    12
+   ]
+  },
+  "SETR_6000": {
+   "all": [
+    63,
+    63
+   ],
+   "T1": [
+    27,
+    27
+   ],
+   "T2": [
+    18,
+    18
+   ],
+   "T3": [
+    18,
+    18
+   ],
+   "fa": [
+    33,
+    33
+   ],
+   "en": [
+    30,
+    30
+   ],
+   "BOOK": [
+    20,
+    20
+   ],
+   "LAW": [
+    19,
+    19
+   ],
+   "RPT": [
+    24,
+    24
+   ],
+   "BOOK-fa": [
+    8,
+    8
+   ],
+   "BOOK-en": [
+    12,
+    12
+   ],
+   "LAW-fa": [
+    12,
+    12
+   ],
+   "LAW-en": [
+    7,
+    7
+   ],
+   "RPT-fa": [
+    13,
+    13
+   ],
+   "RPT-en": [
+    11,
+    11
+   ]
+  }
+ },
+ "cell_status": {
+  "CLOSEDBOOK": {
+   "judged": 96
+  },
+  "LISTWISE": {
+   "judged": 95,
+   "needs_adjudication": 1
+  },
+  "SETR_NOFILL": {
+   "judged": 96
+  },
+  "HYBRID_6000": {
+   "judged": 95,
+   "needs_adjudication": 1
+  },
+  "HR_6000": {
+   "judged": 94,
+   "needs_adjudication": 2
+  },
+  "LEX5B_6000": {
+   "judged": 95,
+   "needs_adjudication": 1
+  },
+  "SETR_6000": {
+   "judged": 96
+  }
+ },
+ "unanswerable": {
+  "CLOSEDBOOK": {
+   "correct": [
+    3,
+    3
+   ],
+   "abstained": 3,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      0,
+      0
+     ],
+     "abstained": false,
+     "answer_head": "پالایشگاه نفت آبادان در سال ۱۹۱۲ (۱۲۹۱ خورشیدی) ساخته و راه‌اندازی شد."
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      0,
+      0
+     ],
+     "abstained": false,
+     "answer_head": "On the Origin of Species, first edition - November 1859: 1,250 copies\nOn the Origin of Species, sixth edition - 1872: 3,000 copies\n\nThe first edition had 1,250 "
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      0,
+      0
+     ],
+     "abstained": false,
+     "answer_head": "14 days."
+    }
+   ]
+  },
+  "LISTWISE": {
+   "correct": [
+    6,
+    6
+   ],
+   "abstained": 6,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    }
+   ]
+  },
+  "SETR_NOFILL": {
+   "correct": [
+    6,
+    6
+   ],
+   "abstained": 6,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    }
+   ]
+  },
+  "HYBRID_6000": {
+   "correct": [
+    6,
+    6
+   ],
+   "abstained": 5,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": false,
+     "answer_head": "در قانون تجارت ۱۳۰۳ حداقل سرمایه‌ای برای تأسیس شرکت سهامی تعیین نشده بود؛ فقط مقرر شده بود که اگر سرمایه از بیست هزار تومان تجاوز نکند، سهام نباید کمتر از پنج ت"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    }
+   ]
+  },
+  "HR_6000": {
+   "correct": [
+    6,
+    6
+   ],
+   "abstained": 5,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": false,
+     "answer_head": "On the Origin of Species - 1st edition (1859): NOT_FOUND\nOn the Origin of Species - 6th edition (1872): NOT_FOUND\n\nNOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    }
+   ]
+  },
+  "LEX5B_6000": {
+   "correct": [
+    6,
+    6
+   ],
+   "abstained": 6,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    }
+   ]
+  },
+  "SETR_6000": {
+   "correct": [
+    6,
+    6
+   ],
+   "abstained": 6,
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-RPT-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-BOOK-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-fa-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    },
+    {
+     "q": "V2-test-LAW-en-AB-001",
+     "strict": [
+      1,
+      1
+     ],
+     "abstained": true,
+     "answer_head": "NOT_FOUND"
+    }
+   ]
+  }
+ },
+ "closedbook_abstained_answerable": {
+  "all": 22,
+  "T1": 9,
+  "T2": 7,
+  "T3": 6,
+  "fa": 17,
+  "en": 5,
+  "BOOK": 3,
+  "LAW": 0,
+  "RPT": 19,
+  "BOOK-fa": 3,
+  "BOOK-en": 0,
+  "LAW-fa": 0,
+  "LAW-en": 0,
+  "RPT-fa": 14,
+  "RPT-en": 5
+ },
+ "closedbook_vs_hybrid_cells": {
+  "cb0_hyb1": 44,
+  "cb0_hyb0": 19,
+  "unresolved": 1,
+  "cb1_hyb1": 18,
+  "cb1_hyb0": 8
+ },
+ "closedbook_correct_qids": [
+  "V2-test-BOOK-fa-T2-002",
+  "V2-test-BOOK-fa-T2-005",
+  "V2-test-BOOK-fa-T3-005",
+  "V2-test-BOOK-en-T1-001",
+  "V2-test-BOOK-en-T1-002",
+  "V2-test-BOOK-en-T1-004",
+  "V2-test-BOOK-en-T2-001",
+  "V2-test-BOOK-en-T2-003",
+  "V2-test-BOOK-en-T3-002",
+  "V2-test-BOOK-en-T3-003",
+  "V2-test-BOOK-en-T3-004",
+  "V2-test-BOOK-en-T3-005",
+  "V2-test-LAW-fa-T1-001",
+  "V2-test-LAW-fa-T1-002",
+  "V2-test-LAW-fa-T2-005",
+  "V2-test-LAW-en-T1-001",
+  "V2-test-LAW-en-T1-002",
+  "V2-test-LAW-en-T1-003",
+  "V2-test-LAW-en-T1-005",
+  "V2-test-LAW-en-T2-001",
+  "V2-test-LAW-en-T2-003",
+  "V2-test-LAW-en-T2-005",
+  "V2-test-LAW-en-T3-001",
+  "V2-test-LAW-en-T3-002",
+  "V2-test-LAW-en-T3-003",
+  "V2-test-LAW-en-T3-005"
+ ],
+ "paired": {
+  "CLOSEDBOOK vs HYBRID_6000": {
+   "net_bounds": [
+    -37,
+    -36
+   ],
+   "pp_bounds": [
+    -41.111111111111114,
+    -40.0
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    2.3683513772354559e-07,
+    4.0393217393130953e-07
+   ],
+   "ci_pp_question": [
+    -54.44444444444444,
+    -26.666666666666668
+   ],
+   "ci_pp_component": [
+    -66.66666666666667,
+    -20.863309352517987
+   ],
+   "better_worse_resolved": [
+    8,
+    44
+   ],
+   "net_T1": [
+    -19,
+    -19
+   ],
+   "bw_T1": [
+    0,
+    19
+   ],
+   "net_T2": [
+    -13,
+    -12
+   ],
+   "bw_T2": [
+    2,
+    14
+   ],
+   "net_T3": [
+    -5,
+    -5
+   ],
+   "bw_T3": [
+    6,
+    11
+   ],
+   "net_fa": [
+    -30,
+    -29
+   ],
+   "bw_fa": [
+    1,
+    30
+   ],
+   "net_en": [
+    -7,
+    -7
+   ],
+   "bw_en": [
+    7,
+    14
+   ]
+  },
+  "LISTWISE vs HYBRID_6000": {
+   "net_bounds": [
+    3,
+    5
+   ],
+   "pp_bounds": [
+    3.3333333333333335,
+    5.555555555555555
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.359283447265625,
+    0.6636238098144531
+   ],
+   "ci_pp_question": [
+    -6.666666666666667,
+    15.555555555555555
+   ],
+   "ci_pp_component": [
+    -6.666666666666667,
+    15.517241379310345
+   ],
+   "better_worse_resolved": [
+    12,
+    7
+   ],
+   "net_T1": [
+    0,
+    0
+   ],
+   "bw_T1": [
+    2,
+    2
+   ],
+   "net_T2": [
+    0,
+    1
+   ],
+   "bw_T2": [
+    5,
+    4
+   ],
+   "net_T3": [
+    3,
+    4
+   ],
+   "bw_T3": [
+    5,
+    1
+   ],
+   "net_fa": [
+    -3,
+    -1
+   ],
+   "bw_fa": [
+    4,
+    5
+   ],
+   "net_en": [
+    6,
+    6
+   ],
+   "bw_en": [
+    8,
+    2
+   ]
+  },
+  "LISTWISE vs HR_6000": {
+   "net_bounds": [
+    -5,
+    -2
+   ],
+   "pp_bounds": [
+    -5.555555555555555,
+    -2.2222222222222223
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.359283447265625,
+    0.8145294189453125
+   ],
+   "ci_pp_question": [
+    -14.444444444444445,
+    6.666666666666667
+   ],
+   "ci_pp_component": [
+    -11.594202898550725,
+    4.597701149425287
+   ],
+   "better_worse_resolved": [
+    7,
+    10
+   ],
+   "net_T1": [
+    0,
+    0
+   ],
+   "bw_T1": [
+    2,
+    2
+   ],
+   "net_T2": [
+    -3,
+    -2
+   ],
+   "bw_T2": [
+    2,
+    5
+   ],
+   "net_T3": [
+    -2,
+    0
+   ],
+   "bw_T3": [
+    3,
+    3
+   ],
+   "net_fa": [
+    -3,
+    -2
+   ],
+   "bw_fa": [
+    4,
+    6
+   ],
+   "net_en": [
+    -2,
+    0
+   ],
+   "bw_en": [
+    3,
+    4
+   ]
+  },
+  "HR_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    6,
+    9
+   ],
+   "pp_bounds": [
+    6.666666666666667,
+    10.0
+   ],
+   "unresolved_cells": 3,
+   "sign_p_range": [
+    0.049041748046875,
+    0.1795654296875
+   ],
+   "ci_pp_question": [
+    -1.1111111111111112,
+    18.88888888888889
+   ],
+   "ci_pp_component": [
+    -0.970873786407767,
+    21.153846153846153
+   ],
+   "better_worse_resolved": [
+    10,
+    4
+   ],
+   "net_T1": [
+    0,
+    0
+   ],
+   "bw_T1": [
+    1,
+    1
+   ],
+   "net_T2": [
+    2,
+    4
+   ],
+   "bw_T2": [
+    4,
+    2
+   ],
+   "net_T3": [
+    4,
+    5
+   ],
+   "bw_T3": [
+    5,
+    1
+   ],
+   "net_fa": [
+    0,
+    1
+   ],
+   "bw_fa": [
+    2,
+    2
+   ],
+   "net_en": [
+    6,
+    8
+   ],
+   "bw_en": [
+    8,
+    2
+   ]
+  },
+  "LISTWISE vs LEX5B_6000": {
+   "net_bounds": [
+    -3,
+    -1
+   ],
+   "pp_bounds": [
+    -3.3333333333333335,
+    -1.1111111111111112
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.629058837890625,
+    1.0
+   ],
+   "ci_pp_question": [
+    -12.222222222222221,
+    7.777777777777778
+   ],
+   "ci_pp_component": [
+    -11.666666666666666,
+    6.956521739130435
+   ],
+   "better_worse_resolved": [
+    7,
+    9
+   ],
+   "net_T1": [
+    -1,
+    -1
+   ],
+   "bw_T1": [
+    1,
+    2
+   ],
+   "net_T2": [
+    -3,
+    -2
+   ],
+   "bw_T2": [
+    2,
+    5
+   ],
+   "net_T3": [
+    1,
+    2
+   ],
+   "bw_T3": [
+    4,
+    2
+   ],
+   "net_fa": [
+    -4,
+    -2
+   ],
+   "bw_fa": [
+    2,
+    5
+   ],
+   "net_en": [
+    1,
+    1
+   ],
+   "bw_en": [
+    5,
+    4
+   ]
+  },
+  "LISTWISE vs SETR_6000": {
+   "net_bounds": [
+    3,
+    4
+   ],
+   "pp_bounds": [
+    3.3333333333333335,
+    4.444444444444445
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.454498291015625,
+    0.629058837890625
+   ],
+   "ci_pp_question": [
+    -5.555555555555555,
+    13.333333333333334
+   ],
+   "ci_pp_component": [
+    -7.563025210084033,
+    14.864864864864865
+   ],
+   "better_worse_resolved": [
+    10,
+    6
+   ],
+   "net_T1": [
+    1,
+    1
+   ],
+   "bw_T1": [
+    3,
+    2
+   ],
+   "net_T2": [
+    3,
+    3
+   ],
+   "bw_T2": [
+    6,
+    3
+   ],
+   "net_T3": [
+    -1,
+    0
+   ],
+   "bw_T3": [
+    1,
+    1
+   ],
+   "net_fa": [
+    0,
+    1
+   ],
+   "bw_fa": [
+    4,
+    3
+   ],
+   "net_en": [
+    3,
+    3
+   ],
+   "bw_en": [
+    6,
+    3
+   ]
+  },
+  "SETR_NOFILL vs SETR_6000": {
+   "net_bounds": [
+    0,
+    0
+   ],
+   "pp_bounds": [
+    0.0,
+    0.0
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -6.666666666666667,
+    6.666666666666667
+   ],
+   "ci_pp_component": [
+    -6.666666666666667,
+    7.936507936507937
+   ],
+   "better_worse_resolved": [
+    4,
+    4
+   ],
+   "net_T1": [
+    0,
+    0
+   ],
+   "bw_T1": [
+    0,
+    0
+   ],
+   "net_T2": [
+    0,
+    0
+   ],
+   "bw_T2": [
+    3,
+    3
+   ],
+   "net_T3": [
+    0,
+    0
+   ],
+   "bw_T3": [
+    1,
+    1
+   ],
+   "net_fa": [
+    -2,
+    -2
+   ],
+   "bw_fa": [
+    1,
+    3
+   ],
+   "net_en": [
+    2,
+    2
+   ],
+   "bw_en": [
+    3,
+    1
+   ]
+  },
+  "SETR_NOFILL vs HYBRID_6000": {
+   "net_bounds": [
+    0,
+    1
+   ],
+   "pp_bounds": [
+    0.0,
+    1.1111111111111112
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -10.0,
+    10.0
+   ],
+   "ci_pp_component": [
+    -10.9375,
+    11.475409836065573
+   ],
+   "better_worse_resolved": [
+    10,
+    9
+   ],
+   "net_T1": [
+    -1,
+    -1
+   ],
+   "bw_T1": [
+    0,
+    1
+   ],
+   "net_T2": [
+    -3,
+    -2
+   ],
+   "bw_T2": [
+    5,
+    7
+   ],
+   "net_T3": [
+    4,
+    4
+   ],
+   "bw_T3": [
+    5,
+    1
+   ],
+   "net_fa": [
+    -5,
+    -4
+   ],
+   "bw_fa": [
+    2,
+    6
+   ],
+   "net_en": [
+    5,
+    5
+   ],
+   "bw_en": [
+    8,
+    3
+   ]
+  },
+  "SETR_NOFILL vs LEX5B_6000": {
+   "net_bounds": [
+    -6,
+    -5
+   ],
+   "pp_bounds": [
+    -6.666666666666667,
+    -5.555555555555555
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.237884521484375,
+    0.359283447265625
+   ],
+   "ci_pp_question": [
+    -15.555555555555555,
+    3.3333333333333335
+   ],
+   "ci_pp_component": [
+    -17.441860465116278,
+    3.6144578313253013
+   ],
+   "better_worse_resolved": [
+    6,
+    12
+   ],
+   "net_T1": [
+    -2,
+    -2
+   ],
+   "bw_T1": [
+    0,
+    2
+   ],
+   "net_T2": [
+    -6,
+    -5
+   ],
+   "bw_T2": [
+    2,
+    8
+   ],
+   "net_T3": [
+    2,
+    2
+   ],
+   "bw_T3": [
+    4,
+    2
+   ],
+   "net_fa": [
+    -6,
+    -5
+   ],
+   "bw_fa": [
+    1,
+    7
+   ],
+   "net_en": [
+    0,
+    0
+   ],
+   "bw_en": [
+    5,
+    5
+   ]
+  },
+  "SETR_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    0,
+    1
+   ],
+   "pp_bounds": [
+    0.0,
+    1.1111111111111112
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    1.0,
+    1.0
+   ],
+   "ci_pp_question": [
+    -8.88888888888889,
+    10.0
+   ],
+   "ci_pp_component": [
+    -9.333333333333334,
+    9.45945945945946
+   ],
+   "better_worse_resolved": [
+    8,
+    7
+   ],
+   "net_T1": [
+    -1,
+    -1
+   ],
+   "bw_T1": [
+    0,
+    1
+   ],
+   "net_T2": [
+    -3,
+    -2
+   ],
+   "bw_T2": [
+    4,
+    6
+   ],
+   "net_T3": [
+    4,
+    4
+   ],
+   "bw_T3": [
+    4,
+    0
+   ],
+   "net_fa": [
+    -3,
+    -2
+   ],
+   "bw_fa": [
+    2,
+    4
+   ],
+   "net_en": [
+    3,
+    3
+   ],
+   "bw_en": [
+    6,
+    3
+   ]
+  }
+ },
+ "tokens_s6": {
+  "CLOSEDBOOK": {
+   "answer|fa": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 10017.0,
+    "completion": 4895.0,
+    "reasoning": 593.0,
+    "cost": 0.003911649999999999,
+    "wall_ms": 112855.80000000002,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 208.6875,
+    "per_q_completion": 101.97916666666667,
+    "per_q_calls": 1.0
+   },
+   "answer|all": {
+    "calls": 96.0,
+    "ok": 96.0,
+    "prompt": 19114.0,
+    "completion": 11367.0,
+    "reasoning": 3142.0,
+    "cost": 0.008450759999999998,
+    "wall_ms": 226556.20000000007,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 199.10416666666666,
+    "per_q_completion": 118.40625,
+    "per_q_calls": 1.0
+   },
+   "answer|en": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 9097.0,
+    "completion": 6472.0,
+    "reasoning": 2549.0,
+    "cost": 0.004539110000000002,
+    "wall_ms": 113700.40000000002,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 189.52083333333334,
+    "per_q_completion": 134.83333333333334,
+    "per_q_calls": 1.0
+   }
+  },
+  "LISTWISE": {
+   "listwise_rank|fa": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 284113.0,
+    "completion": 6848.0,
+    "reasoning": 2952.0,
+    "cost": 0.04604095000000001,
+    "wall_ms": 125195.89999999997,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 5919.020833333333,
+    "per_q_completion": 142.66666666666666,
+    "per_q_calls": 1.0
+   },
+   "listwise_rank|all": {
+    "calls": 96.0,
+    "ok": 96.0,
+    "prompt": 448818.0,
+    "completion": 13303.0,
+    "reasoning": 5508.0,
+    "cost": 0.07397419999999999,
+    "wall_ms": 220323.5999999999,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 4675.1875,
+    "per_q_completion": 138.57291666666666,
+    "per_q_calls": 1.0
+   },
+   "answer|fa": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 126954.0,
+    "completion": 6212.0,
+    "reasoning": 156.0,
+    "cost": 0.021358059999999998,
+    "wall_ms": 118236.90000000004,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 2644.875,
+    "per_q_completion": 129.41666666666666,
+    "per_q_calls": 1.0
+   },
+   "answer|all": {
+    "calls": 96.0,
+    "ok": 96.0,
+    "prompt": 201506.0,
+    "completion": 11075.0,
+    "reasoning": 512.0,
+    "cost": 0.034611400000000014,
+    "wall_ms": 215847.09999999998,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 2099.0208333333335,
+    "per_q_completion": 115.36458333333333,
+    "per_q_calls": 1.0
+   },
+   "listwise_rank|en": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 164705.0,
+    "completion": 6455.0,
+    "reasoning": 2556.0,
+    "cost": 0.027933250000000007,
+    "wall_ms": 95127.70000000003,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 3431.3541666666665,
+    "per_q_completion": 134.47916666666666,
+    "per_q_calls": 1.0
+   },
+   "answer|en": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 74552.0,
+    "completion": 4863.0,
+    "reasoning": 356.0,
+    "cost": 0.013253339999999999,
+    "wall_ms": 97610.19999999998,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 1553.1666666666667,
+    "per_q_completion": 101.3125,
+    "per_q_calls": 1.0
+   }
+  },
+  "SETR_NOFILL": {
+   "answer|fa": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 69552.0,
+    "completion": 6403.0,
+    "reasoning": 179.0,
+    "cost": 0.012344059999999999,
+    "wall_ms": 108779.60000000002,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 1449.0,
+    "per_q_completion": 133.39583333333334,
+    "per_q_calls": 1.0
+   },
+   "answer|all": {
+    "calls": 96.0,
+    "ok": 96.0,
+    "prompt": 112362.0,
+    "completion": 10892.0,
+    "reasoning": 388.0,
+    "cost": 0.02041870000000001,
+    "wall_ms": 209379.80000000002,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 1170.4375,
+    "per_q_completion": 113.45833333333333,
+    "per_q_calls": 1.0
+   },
+   "answer|en": {
+    "calls": 48.0,
+    "ok": 48.0,
+    "prompt": 42810.0,
+    "completion": 4489.0,
+    "reasoning": 209.0,
+    "cost": 0.00807464,
+    "wall_ms": 100600.2,
+    "unknown_usage": 0.0,
+    "length": 0.0,
+    "per_q_prompt": 891.875,
+    "per_q_completion": 93.52083333333333,
+    "per_q_calls": 1.0
+   }
+  }
+ },
+ "tokens_frozen_ref": {
+  "HYBRID_6000": {
+   "answer": {
+    "calls": 96.0,
+    "prompt": 200942.0,
+    "completion": 11822.0,
+    "reasoning": 1108.0,
+    "unknown_usage": 0.0,
+    "per_q_prompt": 2093.1458333333335,
+    "per_q_completion": 123.14583333333333,
+    "per_q_calls": 1.0
+   }
+  },
+  "HR_6000": {
+   "answer": {
+    "calls": 96.0,
+    "prompt": 202662.0,
+    "completion": 12051.0,
+    "reasoning": 1366.0,
+    "unknown_usage": 0.0,
+    "per_q_prompt": 2111.0625,
+    "per_q_completion": 125.53125,
+    "per_q_calls": 1.0
+   }
+  },
+  "LEX5B_6000": {
+   "selector": {
+    "calls": 96.0,
+    "prompt": 219283.0,
+    "completion": 5728.0,
+    "reasoning": 3768.0,
+    "unknown_usage": 15.0,
+    "per_q_prompt": 2284.1979166666665,
+    "per_q_completion": 59.666666666666664,
+    "per_q_calls": 1.0
+   },
+   "answer": {
+    "calls": 96.0,
+    "prompt": 195681.0,
+    "completion": 12379.0,
+    "reasoning": 1333.0,
+    "unknown_usage": 0.0,
+    "per_q_prompt": 2038.34375,
+    "per_q_completion": 128.94791666666666,
+    "per_q_calls": 1.0
+   }
+  },
+  "SETR_6000": {
+   "selector": {
+    "calls": 96.0,
+    "prompt": 485739.0,
+    "completion": 21204.0,
+    "reasoning": 1808.0,
+    "unknown_usage": 6.0,
+    "per_q_prompt": 5059.78125,
+    "per_q_completion": 220.875,
+    "per_q_calls": 1.0
+   },
+   "answer": {
+    "calls": 96.0,
+    "prompt": 201662.0,
+    "completion": 11654.0,
+    "reasoning": 548.0,
+    "unknown_usage": 0.0,
+    "per_q_prompt": 2100.6458333333335,
+    "per_q_completion": 121.39583333333333,
+    "per_q_calls": 1.0
+   }
+  }
+ },
+ "descriptives": {
+  "listwise_ranker": {
+   "cells": 96,
+   "fallback": 0,
+   "status": {
+    "ok": 96
+   },
+   "full_permutation": 96,
+   "passages_cut_mean": 15.84375,
+   "prompt_chars_mean": 14901.666666666666,
+   "t_rank_ms_median": 2000.1,
+   "finish_length": 0
+  },
+  "listwise_pack_jaccard_mean": {
+   "vs_HR": 0.4174553744866245,
+   "vs_HYBRID": 0.44161217833092836,
+   "identical_order_to_HYBRID": 0
+  },
+  "setr_nofill": {
+   "cells": 96,
+   "selector_fallback": 6,
+   "identical_to_setr_pack": 7,
+   "n_selected_mean": 3.0444444444444443,
+   "n_selected_hist": {
+    "0": 0,
+    "1": 8,
+    "2": 22,
+    "3": 30,
+    "4": 20,
+    "5": 8,
+    "6": 2,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 0,
+    "20": 0
+   },
+   "evidence_chars_mean": 3055.875,
+   "evidence_chars_mean_setr": 5948.666666666667,
+   "last_item_cut": 6,
+   "abstained_answerable": 6,
+   "abstained_answerable_setr": 4
+  },
+  "abstained_answerable": {
+   "CLOSEDBOOK": 22,
+   "LISTWISE": 7,
+   "SETR_NOFILL": 6,
+   "HYBRID_6000": 9,
+   "HR_6000": 4,
+   "LEX5B_6000": 4,
+   "SETR_6000": 4
+  },
+  "errors": {
+   "CLOSEDBOOK": 0,
+   "LISTWISE": 0,
+   "SETR_NOFILL": 0
+  },
+  "answer_length_cutoff": {
+   "CLOSEDBOOK": 0,
+   "LISTWISE": 0,
+   "SETR_NOFILL": 0
+  }
+ }
+}

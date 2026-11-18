@@ -1,0 +1,5924 @@
+{
+ "family": [],
+ "table": {
+  "DENSE_6000": {
+   "acc90": [
+    53,
+    53
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    53,
+    53
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 96
+   },
+   "evidence_chars_mean": 5937.3,
+   "answer_prompt_tokens_mean": 2109.6,
+   "answer_completion_tokens_mean": 127.1,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "DENSE_15500": {
+   "acc90": [
+    63,
+    63
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    63,
+    63
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 96
+   },
+   "evidence_chars_mean": 15436.9,
+   "answer_prompt_tokens_mean": 5143.1,
+   "answer_completion_tokens_mean": 139.8,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "BM25_6000": {
+   "acc90": [
+    48,
+    48
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    48,
+    48
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 95,
+    "frozen": 1
+   },
+   "evidence_chars_mean": 5952.9,
+   "answer_prompt_tokens_mean": 2085.2,
+   "answer_completion_tokens_mean": 118.1,
+   "tokens_n": 89,
+   "llm_calls_per_question": 1
+  },
+  "BM25_15500": {
+   "acc90": [
+    61,
+    61
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    61,
+    61
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": {
+    "judged": 96
+   },
+   "evidence_chars_mean": 15450.9,
+   "answer_prompt_tokens_mean": 5051.8,
+   "answer_completion_tokens_mean": 128.1,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HYBRID_6000": {
+   "acc90": [
+    62,
+    63
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    62,
+    63
+   ],
+   "unresolved": 1,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 5952.8,
+   "answer_prompt_tokens_mean": 2096.8,
+   "answer_completion_tokens_mean": 130.3,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HR_6000": {
+   "acc90": [
+    69,
+    71
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    69,
+    71
+   ],
+   "unresolved": 2,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 5955.3,
+   "answer_prompt_tokens_mean": 2115.9,
+   "answer_completion_tokens_mean": 132.3,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HYBRID_15500": {
+   "acc90": [
+    68,
+    68
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    68,
+    68
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 15448.1,
+   "answer_prompt_tokens_mean": 5112.5,
+   "answer_completion_tokens_mean": 137.0,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "HR_15500": {
+   "acc90": [
+    69,
+    70
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    69,
+    70
+   ],
+   "unresolved": 1,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 15440.0,
+   "answer_prompt_tokens_mean": 5164.8,
+   "answer_completion_tokens_mean": 139.6,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "LEX5B_6000": {
+   "acc90": [
+    68,
+    69
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    68,
+    69
+   ],
+   "unresolved": 1,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 5768.6,
+   "answer_prompt_tokens_mean": 2041.5,
+   "answer_completion_tokens_mean": 137.3,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  },
+  "LEX5B_15500": {
+   "acc90": [
+    67,
+    67
+   ],
+   "answered_of_90": 90,
+   "acc_on_answered": [
+    67,
+    67
+   ],
+   "unresolved": 0,
+   "abstain_correct": [
+    6,
+    6
+   ],
+   "abstain_run": 6,
+   "status": null,
+   "evidence_chars_mean": 15213.2,
+   "answer_prompt_tokens_mean": 5055.6,
+   "answer_completion_tokens_mean": 143.6,
+   "tokens_n": 90,
+   "llm_calls_per_question": 1
+  }
+ },
+ "groups": {
+  "DENSE_6000": {
+   "tier": {
+    "T1": [
+     24,
+     24,
+     30,
+     30
+    ],
+    "T2": [
+     15,
+     15,
+     30,
+     30
+    ],
+    "T3": [
+     14,
+     14,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     26,
+     26,
+     45,
+     45
+    ],
+    "fa": [
+     27,
+     27,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     17,
+     17,
+     30,
+     30
+    ],
+    "LAW": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "RPT": [
+     16,
+     16,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "LAW-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "RPT-en": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     8,
+     8,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     22,
+     22,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     1,
+     1,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     6,
+     6,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     3,
+     3,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     1,
+     1,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     2,
+     2,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     10,
+     10,
+     11,
+     11
+    ]
+   }
+  },
+  "DENSE_15500": {
+   "tier": {
+    "T1": [
+     27,
+     27,
+     30,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     29,
+     29,
+     45,
+     45
+    ],
+    "fa": [
+     34,
+     34,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     16,
+     16,
+     30,
+     30
+    ],
+    "LAW": [
+     24,
+     24,
+     30,
+     30
+    ],
+    "RPT": [
+     23,
+     23,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     7,
+     7,
+     15,
+     15
+    ],
+    "LAW-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     15,
+     15,
+     15,
+     15
+    ],
+    "RPT-en": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     12,
+     12,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     24,
+     24,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     0,
+     0,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     9,
+     9,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     6,
+     6,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     2,
+     2,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     3,
+     3,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     10,
+     10,
+     11,
+     11
+    ]
+   }
+  },
+  "BM25_6000": {
+   "tier": {
+    "T1": [
+     26,
+     26,
+     30,
+     30
+    ],
+    "T2": [
+     13,
+     13,
+     30,
+     30
+    ],
+    "T3": [
+     9,
+     9,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     24,
+     24,
+     45,
+     45
+    ],
+    "fa": [
+     24,
+     24,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     14,
+     14,
+     30,
+     30
+    ],
+    "LAW": [
+     17,
+     17,
+     30,
+     30
+    ],
+    "RPT": [
+     17,
+     17,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     5,
+     5,
+     15,
+     15
+    ],
+    "LAW-en": [
+     7,
+     7,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "RPT-en": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     9,
+     9,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     24,
+     24,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     5,
+     5,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     3,
+     3,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     3,
+     3,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     0,
+     0,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     2,
+     2,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     1,
+     1,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     6,
+     6,
+     11,
+     11
+    ]
+   }
+  },
+  "BM25_15500": {
+   "tier": {
+    "T1": [
+     27,
+     27,
+     30,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "T3": [
+     14,
+     14,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     28,
+     28,
+     45,
+     45
+    ],
+    "fa": [
+     33,
+     33,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     19,
+     19,
+     30,
+     30
+    ],
+    "LAW": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "RPT": [
+     22,
+     22,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "LAW-en": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     12,
+     12,
+     15,
+     15
+    ],
+    "RPT-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     13,
+     13,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     25,
+     25,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     1,
+     1,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     9,
+     9,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     6,
+     6,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     4,
+     4,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     2,
+     2,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     2,
+     2,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     9,
+     9,
+     11,
+     11
+    ]
+   }
+  },
+  "HYBRID_6000": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30,
+     30
+    ],
+    "T2": [
+     20,
+     21,
+     30,
+     30
+    ],
+    "T3": [
+     14,
+     14,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     27,
+     27,
+     45,
+     45
+    ],
+    "fa": [
+     35,
+     36,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     19,
+     19,
+     30,
+     30
+    ],
+    "LAW": [
+     22,
+     22,
+     30,
+     30
+    ],
+    "RPT": [
+     21,
+     22,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "LAW-en": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     14,
+     14,
+     15,
+     15
+    ],
+    "RPT-en": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     13,
+     14,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     25,
+     25,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     1,
+     1,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     8,
+     8,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     6,
+     7,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     2,
+     2,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     2,
+     2,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     9,
+     9,
+     11,
+     11
+    ]
+   }
+  },
+  "HR_6000": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30,
+     30
+    ],
+    "T3": [
+     18,
+     19,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     33,
+     35,
+     45,
+     45
+    ],
+    "fa": [
+     36,
+     36,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "LAW": [
+     23,
+     24,
+     30,
+     30
+    ],
+    "RPT": [
+     26,
+     27,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "LAW-en": [
+     11,
+     12,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     12,
+     12,
+     15,
+     15
+    ],
+    "RPT-en": [
+     11,
+     12,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     15,
+     15,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     26,
+     26,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     11,
+     11,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     6,
+     6,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     4,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     3,
+     3,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     5,
+     6,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     9,
+     9,
+     11,
+     11
+    ]
+   }
+  },
+  "HYBRID_15500": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30,
+     30
+    ],
+    "T2": [
+     22,
+     22,
+     30,
+     30
+    ],
+    "T3": [
+     18,
+     18,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     33,
+     33,
+     45,
+     45
+    ],
+    "fa": [
+     35,
+     35,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "LAW": [
+     24,
+     24,
+     30,
+     30
+    ],
+    "RPT": [
+     24,
+     24,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     12,
+     12,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     8,
+     8,
+     15,
+     15
+    ],
+    "LAW-en": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     13,
+     13,
+     15,
+     15
+    ],
+    "RPT-en": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     14,
+     14,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     26,
+     26,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     1,
+     1,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     10,
+     10,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     6,
+     6,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     3,
+     3,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     4,
+     4,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     10,
+     10,
+     11,
+     11
+    ]
+   }
+  },
+  "HR_15500": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30,
+     30
+    ],
+    "T2": [
+     21,
+     22,
+     30,
+     30
+    ],
+    "T3": [
+     20,
+     20,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     31,
+     32,
+     45,
+     45
+    ],
+    "fa": [
+     38,
+     38,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     23,
+     23,
+     30,
+     30
+    ],
+    "LAW": [
+     22,
+     22,
+     30,
+     30
+    ],
+    "RPT": [
+     24,
+     25,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     12,
+     12,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "LAW-en": [
+     9,
+     9,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     13,
+     13,
+     15,
+     15
+    ],
+    "RPT-en": [
+     10,
+     11,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     14,
+     14,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     26,
+     26,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     9,
+     10,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     5,
+     5,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     0,
+     0,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     5,
+     5,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     10,
+     10,
+     11,
+     11
+    ]
+   }
+  },
+  "LEX5B_6000": {
+   "tier": {
+    "T1": [
+     29,
+     29,
+     30,
+     30
+    ],
+    "T2": [
+     23,
+     24,
+     30,
+     30
+    ],
+    "T3": [
+     16,
+     16,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     32,
+     32,
+     45,
+     45
+    ],
+    "fa": [
+     36,
+     37,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "LAW": [
+     22,
+     23,
+     30,
+     30
+    ],
+    "RPT": [
+     26,
+     26,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "LAW-en": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     12,
+     13,
+     15,
+     15
+    ],
+    "RPT-en": [
+     12,
+     12,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     14,
+     14,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     27,
+     27,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     10,
+     11,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     6,
+     6,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     2,
+     2,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     2,
+     2,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     11,
+     11,
+     11,
+     11
+    ]
+   }
+  },
+  "LEX5B_15500": {
+   "tier": {
+    "T1": [
+     28,
+     28,
+     30,
+     30
+    ],
+    "T2": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "T3": [
+     19,
+     19,
+     30,
+     30
+    ]
+   },
+   "lang": {
+    "en": [
+     31,
+     31,
+     45,
+     45
+    ],
+    "fa": [
+     36,
+     36,
+     45,
+     45
+    ]
+   },
+   "genre": {
+    "BOOK": [
+     20,
+     20,
+     30,
+     30
+    ],
+    "LAW": [
+     22,
+     22,
+     30,
+     30
+    ],
+    "RPT": [
+     25,
+     25,
+     30,
+     30
+    ]
+   },
+   "pool": {
+    "BOOK-en": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "BOOK-fa": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "LAW-en": [
+     10,
+     10,
+     15,
+     15
+    ],
+    "LAW-fa": [
+     12,
+     12,
+     15,
+     15
+    ],
+    "RPT-en": [
+     11,
+     11,
+     15,
+     15
+    ],
+    "RPT-fa": [
+     14,
+     14,
+     15,
+     15
+    ]
+   },
+   "subtype": {
+    "T1_fact": [
+     26,
+     26,
+     27,
+     27
+    ],
+    "T1_list_local": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "T1_table_cell": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_bounded_synthesis": [
+     2,
+     2,
+     2,
+     2
+    ],
+    "T2_comparison_derivation": [
+     10,
+     10,
+     13,
+     13
+    ],
+    "T2_definition_bridge": [
+     3,
+     3,
+     8,
+     8
+    ],
+    "T2_rule_exception": [
+     5,
+     5,
+     7,
+     7
+    ],
+    "T3_bounded_aggregation": [
+     1,
+     1,
+     3,
+     3
+    ],
+    "T3_cross_doc_bridge": [
+     3,
+     3,
+     7,
+     7
+    ],
+    "T3_cross_subject": [
+     5,
+     5,
+     9,
+     9
+    ],
+    "T3_cross_time_version": [
+     10,
+     10,
+     11,
+     11
+    ]
+   }
+  }
+ },
+ "compare": {
+  "DENSE_6000 vs BM25_6000": {
+   "net_bounds": [
+    5,
+    5
+   ],
+   "net_enum": [
+    5,
+    5
+   ],
+   "pp_bounds": [
+    5.555555555555555,
+    5.555555555555555
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.47312965989112854,
+    0.47312965989112854
+   ],
+   "ci_pp_question": [
+    -6.666666666666667,
+    17.77777777777778
+   ],
+   "ci_pp_component": [
+    -5.633802816901408,
+    13.385826771653543
+   ],
+   "ci_pp_block": [
+    -4.2105263157894735,
+    16.049382716049383
+   ],
+   "better_worse_resolved": [
+    18,
+    13
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    53,
+    53
+   ],
+   "acc_b": [
+    48,
+    48
+   ]
+  },
+  "DENSE_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -10,
+    -9
+   ],
+   "net_enum": [
+    -10,
+    -9
+   ],
+   "pp_bounds": [
+    -11.11111111111111,
+    -10.0
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.06391465663909912,
+    0.0931396484375
+   ],
+   "ci_pp_question": [
+    -21.11111111111111,
+    0.0
+   ],
+   "ci_pp_component": [
+    -25.0,
+    -1.075268817204301
+   ],
+   "ci_pp_block": [
+    -22.916666666666668,
+    0.0
+   ],
+   "better_worse_resolved": [
+    7,
+    16
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    53,
+    53
+   ],
+   "acc_b": [
+    62,
+    63
+   ]
+  },
+  "BM25_6000 vs HYBRID_6000": {
+   "net_bounds": [
+    -15,
+    -14
+   ],
+   "net_enum": [
+    -15,
+    -14
+   ],
+   "pp_bounds": [
+    -16.666666666666668,
+    -15.555555555555555
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.000728607177734375,
+    0.001312255859375
+   ],
+   "ci_pp_question": [
+    -25.555555555555557,
+    -6.666666666666667
+   ],
+   "ci_pp_component": [
+    -24.731182795698924,
+    -7.142857142857143
+   ],
+   "ci_pp_block": [
+    -25.892857142857142,
+    -6.756756756756757
+   ],
+   "better_worse_resolved": [
+    2,
+    16
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    48,
+    48
+   ],
+   "acc_b": [
+    62,
+    63
+   ]
+  },
+  "DENSE_6000 vs HR_6000": {
+   "net_bounds": [
+    -18,
+    -16
+   ],
+   "net_enum": [
+    -18,
+    -16
+   ],
+   "pp_bounds": [
+    -20.0,
+    -17.77777777777778
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    0.0005335211753845215,
+    0.001543879508972168
+   ],
+   "ci_pp_question": [
+    -30.0,
+    -7.777777777777778
+   ],
+   "ci_pp_component": [
+    -33.80281690140845,
+    -10.144927536231885
+   ],
+   "ci_pp_block": [
+    -32.05128205128205,
+    -6.666666666666667
+   ],
+   "better_worse_resolved": [
+    4,
+    20
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    53,
+    53
+   ],
+   "acc_b": [
+    69,
+    71
+   ]
+  },
+  "BM25_6000 vs HR_6000": {
+   "net_bounds": [
+    -23,
+    -21
+   ],
+   "net_enum": [
+    -23,
+    -21
+   ],
+   "pp_bounds": [
+    -25.555555555555557,
+    -23.333333333333332
+   ],
+   "unresolved_cells": 2,
+   "sign_p_range": [
+    5.647540092468262e-06,
+    1.9431114196777344e-05
+   ],
+   "ci_pp_question": [
+    -35.55555555555556,
+    -13.333333333333334
+   ],
+   "ci_pp_component": [
+    -33.333333333333336,
+    -15.384615384615385
+   ],
+   "ci_pp_block": [
+    -34.31372549019608,
+    -14.285714285714286
+   ],
+   "better_worse_resolved": [
+    2,
+    23
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    48,
+    48
+   ],
+   "acc_b": [
+    69,
+    71
+   ]
+  },
+  "DENSE_15500 vs BM25_15500": {
+   "net_bounds": [
+    2,
+    2
+   ],
+   "net_enum": [
+    2,
+    2
+   ],
+   "pp_bounds": [
+    2.2222222222222223,
+    2.2222222222222223
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.7744140625,
+    0.7744140625
+   ],
+   "ci_pp_question": [
+    -5.555555555555555,
+    10.0
+   ],
+   "ci_pp_component": [
+    -4.878048780487805,
+    11.267605633802816
+   ],
+   "ci_pp_block": [
+    -4.2105263157894735,
+    9.876543209876543
+   ],
+   "better_worse_resolved": [
+    7,
+    5
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    63,
+    63
+   ],
+   "acc_b": [
+    61,
+    61
+   ]
+  },
+  "DENSE_15500 vs HYBRID_15500": {
+   "net_bounds": [
+    -5,
+    -5
+   ],
+   "net_enum": [
+    -5,
+    -5
+   ],
+   "pp_bounds": [
+    -5.555555555555555,
+    -5.555555555555555
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.266845703125,
+    0.266845703125
+   ],
+   "ci_pp_question": [
+    -13.333333333333334,
+    2.2222222222222223
+   ],
+   "ci_pp_component": [
+    -12.582781456953642,
+    3.9215686274509802
+   ],
+   "ci_pp_block": [
+    -11.940298507462687,
+    1.2658227848101267
+   ],
+   "better_worse_resolved": [
+    4,
+    9
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    63,
+    63
+   ],
+   "acc_b": [
+    68,
+    68
+   ]
+  },
+  "BM25_15500 vs HYBRID_15500": {
+   "net_bounds": [
+    -7,
+    -7
+   ],
+   "net_enum": [
+    -7,
+    -7
+   ],
+   "pp_bounds": [
+    -7.777777777777778,
+    -7.777777777777778
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.0390625,
+    0.0390625
+   ],
+   "ci_pp_question": [
+    -14.444444444444445,
+    -2.2222222222222223
+   ],
+   "ci_pp_component": [
+    -13.513513513513514,
+    -1.7857142857142858
+   ],
+   "ci_pp_block": [
+    -13.793103448275861,
+    -3.125
+   ],
+   "better_worse_resolved": [
+    1,
+    8
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    61,
+    61
+   ],
+   "acc_b": [
+    68,
+    68
+   ]
+  },
+  "DENSE_15500 vs HR_15500": {
+   "net_bounds": [
+    -7,
+    -6
+   ],
+   "net_enum": [
+    -7,
+    -6
+   ],
+   "pp_bounds": [
+    -7.777777777777778,
+    -6.666666666666667
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.143463134765625,
+    0.237884521484375
+   ],
+   "ci_pp_question": [
+    -16.666666666666668,
+    2.2222222222222223
+   ],
+   "ci_pp_component": [
+    -16.52892561983471,
+    5.813953488372093
+   ],
+   "ci_pp_block": [
+    -16.666666666666668,
+    3.260869565217391
+   ],
+   "better_worse_resolved": [
+    5,
+    12
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    63,
+    63
+   ],
+   "acc_b": [
+    69,
+    70
+   ]
+  },
+  "BM25_15500 vs HR_15500": {
+   "net_bounds": [
+    -9,
+    -8
+   ],
+   "net_enum": [
+    -9,
+    -8
+   ],
+   "pp_bounds": [
+    -10.0,
+    -8.88888888888889
+   ],
+   "unresolved_cells": 1,
+   "sign_p_range": [
+    0.03515625,
+    0.076812744140625
+   ],
+   "ci_pp_question": [
+    -18.88888888888889,
+    0.0
+   ],
+   "ci_pp_component": [
+    -15.503875968992247,
+    -1.3513513513513513
+   ],
+   "ci_pp_block": [
+    -17.28395061728395,
+    -1.4492753623188406
+   ],
+   "better_worse_resolved": [
+    3,
+    12
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    61,
+    61
+   ],
+   "acc_b": [
+    69,
+    70
+   ]
+  },
+  "DENSE_15500 vs DENSE_6000": {
+   "net_bounds": [
+    10,
+    10
+   ],
+   "net_enum": [
+    10,
+    10
+   ],
+   "pp_bounds": [
+    11.11111111111111,
+    11.11111111111111
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.04138946533203125,
+    0.04138946533203125
+   ],
+   "ci_pp_question": [
+    2.2222222222222223,
+    21.11111111111111
+   ],
+   "ci_pp_component": [
+    2.7522935779816513,
+    23.880597014925375
+   ],
+   "ci_pp_block": [
+    2.3529411764705883,
+    19.736842105263158
+   ],
+   "better_worse_resolved": [
+    15,
+    5
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    63,
+    63
+   ],
+   "acc_b": [
+    53,
+    53
+   ]
+  },
+  "BM25_15500 vs BM25_6000": {
+   "net_bounds": [
+    13,
+    13
+   ],
+   "net_enum": [
+    13,
+    13
+   ],
+   "pp_bounds": [
+    14.444444444444445,
+    14.444444444444445
+   ],
+   "unresolved_cells": 0,
+   "sign_p_range": [
+    0.004425048828125,
+    0.004425048828125
+   ],
+   "ci_pp_question": [
+    5.555555555555555,
+    23.333333333333332
+   ],
+   "ci_pp_component": [
+    5.797101449275362,
+    20.43010752688172
+   ],
+   "ci_pp_block": [
+    4.878048780487805,
+    23.25581395348837
+   ],
+   "better_worse_resolved": [
+    16,
+    3
+   ],
+   "n_questions": 90,
+   "acc_a": [
+    61,
+    61
+   ],
+   "acc_b": [
+    48,
+    48
+   ]
+  }
+ },
+ "reach": {
+  "DENSE_6000": {
+   "all": {
+    "complete": 47,
+    "none": 7,
+    "partial": 36
+   },
+   "T1": {
+    "complete": 25,
+    "none": 5
+   },
+   "T2": {
+    "complete": 11,
+    "partial": 19
+   },
+   "T3": {
+    "complete": 11,
+    "partial": 17,
+    "none": 2
+   },
+   "en": {
+    "complete": 21,
+    "none": 1,
+    "partial": 23
+   },
+   "fa": {
+    "complete": 26,
+    "none": 6,
+    "partial": 13
+   },
+   "BOOK": {
+    "complete": 13,
+    "none": 3,
+    "partial": 14
+   },
+   "LAW": {
+    "complete": 18,
+    "none": 1,
+    "partial": 11
+   },
+   "RPT": {
+    "complete": 16,
+    "none": 3,
+    "partial": 11
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "none",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "partial",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "partial",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "partial",
+    "V2-test-RPT-en-T2-002": "partial",
+    "V2-test-RPT-en-T2-003": "partial",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "none",
+    "V2-test-BOOK-fa-T2-001": "partial",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "partial",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "none",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "partial",
+    "V2-test-BOOK-en-T2-003": "partial",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "none",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "partial",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "partial",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "DENSE_15500": {
+   "all": {
+    "complete": 62,
+    "none": 4,
+    "partial": 24
+   },
+   "T1": {
+    "complete": 27,
+    "none": 3
+   },
+   "T2": {
+    "complete": 20,
+    "partial": 10
+   },
+   "T3": {
+    "complete": 15,
+    "partial": 14,
+    "none": 1
+   },
+   "en": {
+    "complete": 27,
+    "none": 1,
+    "partial": 17
+   },
+   "fa": {
+    "complete": 35,
+    "none": 3,
+    "partial": 7
+   },
+   "BOOK": {
+    "complete": 17,
+    "partial": 12,
+    "none": 1
+   },
+   "LAW": {
+    "complete": 24,
+    "partial": 6
+   },
+   "RPT": {
+    "complete": 21,
+    "none": 3,
+    "partial": 6
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "none",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "partial",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "partial",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "none",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "BM25_6000": {
+   "all": {
+    "complete": 45,
+    "none": 13,
+    "partial": 32
+   },
+   "T1": {
+    "complete": 26,
+    "none": 4
+   },
+   "T2": {
+    "partial": 15,
+    "none": 4,
+    "complete": 11
+   },
+   "T3": {
+    "complete": 8,
+    "partial": 17,
+    "none": 5
+   },
+   "en": {
+    "complete": 20,
+    "none": 8,
+    "partial": 17
+   },
+   "fa": {
+    "complete": 25,
+    "none": 5,
+    "partial": 15
+   },
+   "BOOK": {
+    "complete": 14,
+    "none": 4,
+    "partial": 12
+   },
+   "LAW": {
+    "complete": 17,
+    "partial": 11,
+    "none": 2
+   },
+   "RPT": {
+    "complete": 14,
+    "none": 7,
+    "partial": 9
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "partial",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "none",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "partial",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "partial",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "partial",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "none",
+    "V2-test-RPT-en-T2-004": "partial",
+    "V2-test-RPT-en-T2-005": "none",
+    "V2-test-RPT-en-T3-001": "none",
+    "V2-test-RPT-en-T3-002": "none",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "partial",
+    "V2-test-RPT-en-T3-005": "partial",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "none",
+    "V2-test-BOOK-fa-T2-001": "partial",
+    "V2-test-BOOK-fa-T2-002": "partial",
+    "V2-test-BOOK-fa-T2-003": "none",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "partial",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "partial",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "none",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "partial",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "none",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "partial",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "partial",
+    "V2-test-LAW-en-T3-003": "none",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "BM25_15500": {
+   "all": {
+    "complete": 59,
+    "partial": 23,
+    "none": 8
+   },
+   "T1": {
+    "complete": 28,
+    "none": 2
+   },
+   "T2": {
+    "complete": 18,
+    "partial": 10,
+    "none": 2
+   },
+   "T3": {
+    "complete": 13,
+    "none": 4,
+    "partial": 13
+   },
+   "en": {
+    "complete": 26,
+    "none": 5,
+    "partial": 14
+   },
+   "fa": {
+    "complete": 33,
+    "partial": 9,
+    "none": 3
+   },
+   "BOOK": {
+    "complete": 18,
+    "none": 4,
+    "partial": 8
+   },
+   "LAW": {
+    "complete": 21,
+    "partial": 8,
+    "none": 1
+   },
+   "RPT": {
+    "complete": 20,
+    "partial": 7,
+    "none": 3
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "partial",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "partial",
+    "V2-test-RPT-en-T2-005": "none",
+    "V2-test-RPT-en-T3-001": "none",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "partial",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "none",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "none",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "none",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "none",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HYBRID_6000": {
+   "all": {
+    "complete": 57,
+    "none": 7,
+    "partial": 26
+   },
+   "T1": {
+    "complete": 27,
+    "none": 3
+   },
+   "T2": {
+    "complete": 18,
+    "partial": 11,
+    "none": 1
+   },
+   "T3": {
+    "complete": 12,
+    "none": 3,
+    "partial": 15
+   },
+   "en": {
+    "complete": 24,
+    "none": 3,
+    "partial": 18
+   },
+   "fa": {
+    "complete": 33,
+    "none": 4,
+    "partial": 8
+   },
+   "BOOK": {
+    "complete": 17,
+    "none": 3,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 21,
+    "partial": 8,
+    "none": 1
+   },
+   "RPT": {
+    "complete": 19,
+    "none": 3,
+    "partial": 8
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "partial",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "partial",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "none",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "partial",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "none",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "none",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "none",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HR_6000": {
+   "all": {
+    "complete": 63,
+    "partial": 23,
+    "none": 4
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 19,
+    "partial": 10,
+    "none": 1
+   },
+   "T3": {
+    "complete": 15,
+    "none": 2,
+    "partial": 13
+   },
+   "en": {
+    "complete": 29,
+    "none": 4,
+    "partial": 12
+   },
+   "fa": {
+    "complete": 34,
+    "partial": 11
+   },
+   "BOOK": {
+    "complete": 19,
+    "partial": 10,
+    "none": 1
+   },
+   "LAW": {
+    "complete": 22,
+    "partial": 7,
+    "none": 1
+   },
+   "RPT": {
+    "complete": 22,
+    "partial": 6,
+    "none": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "partial",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "none",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "none",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "partial",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "none",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "complete",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HYBRID_15500": {
+   "all": {
+    "complete": 65,
+    "none": 3,
+    "partial": 22
+   },
+   "T1": {
+    "complete": 28,
+    "none": 2
+   },
+   "T2": {
+    "complete": 21,
+    "partial": 9
+   },
+   "T3": {
+    "complete": 16,
+    "partial": 13,
+    "none": 1
+   },
+   "en": {
+    "complete": 29,
+    "none": 1,
+    "partial": 15
+   },
+   "fa": {
+    "complete": 36,
+    "none": 2,
+    "partial": 7
+   },
+   "BOOK": {
+    "complete": 18,
+    "partial": 11,
+    "none": 1
+   },
+   "LAW": {
+    "complete": 24,
+    "partial": 6
+   },
+   "RPT": {
+    "complete": 23,
+    "none": 2,
+    "partial": 5
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HR_15500": {
+   "all": {
+    "complete": 70,
+    "none": 2,
+    "partial": 18
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 24,
+    "partial": 6
+   },
+   "T3": {
+    "complete": 17,
+    "partial": 12,
+    "none": 1
+   },
+   "en": {
+    "complete": 32,
+    "none": 2,
+    "partial": 11
+   },
+   "fa": {
+    "complete": 38,
+    "partial": 7
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 9,
+    "none": 1
+   },
+   "LAW": {
+    "complete": 25,
+    "partial": 5
+   },
+   "RPT": {
+    "complete": 25,
+    "none": 1,
+    "partial": 4
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "partial",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "none",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "complete",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "complete",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "LEX5B_6000": {
+   "all": {
+    "complete": 64,
+    "partial": 23,
+    "none": 3
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 20,
+    "partial": 10
+   },
+   "T3": {
+    "complete": 15,
+    "partial": 13,
+    "none": 2
+   },
+   "en": {
+    "complete": 29,
+    "none": 3,
+    "partial": 13
+   },
+   "fa": {
+    "complete": 35,
+    "partial": 10
+   },
+   "BOOK": {
+    "complete": 18,
+    "partial": 12
+   },
+   "LAW": {
+    "complete": 22,
+    "partial": 7,
+    "none": 1
+   },
+   "RPT": {
+    "complete": 24,
+    "partial": 4,
+    "none": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "none",
+    "V2-test-RPT-en-T3-003": "complete",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "partial",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "none",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "LEX5B_15500": {
+   "all": {
+    "complete": 68,
+    "partial": 21,
+    "none": 1
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 21,
+    "partial": 9
+   },
+   "T3": {
+    "complete": 18,
+    "partial": 12
+   },
+   "en": {
+    "complete": 31,
+    "none": 1,
+    "partial": 13
+   },
+   "fa": {
+    "complete": 37,
+    "partial": 8
+   },
+   "BOOK": {
+    "complete": 19,
+    "partial": 11
+   },
+   "LAW": {
+    "complete": 25,
+    "partial": 5
+   },
+   "RPT": {
+    "complete": 24,
+    "partial": 5,
+    "none": 1
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "complete",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  }
+ },
+ "list_reach": {
+  "DENSE_6000": {
+   "all": {
+    "complete": 71,
+    "none": 2,
+    "partial": 17
+   },
+   "T1": {
+    "complete": 28,
+    "none": 2
+   },
+   "T2": {
+    "complete": 25,
+    "partial": 5
+   },
+   "T3": {
+    "complete": 18,
+    "partial": 12
+   },
+   "en": {
+    "complete": 33,
+    "none": 1,
+    "partial": 11
+   },
+   "fa": {
+    "complete": 38,
+    "none": 1,
+    "partial": 6
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 26,
+    "partial": 4
+   },
+   "RPT": {
+    "complete": 25,
+    "none": 2,
+    "partial": 3
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "complete",
+    "V2-test-RPT-en-T3-003": "complete",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "complete",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "complete",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "complete",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "DENSE_15500": {
+   "all": {
+    "complete": 71,
+    "none": 2,
+    "partial": 17
+   },
+   "T1": {
+    "complete": 28,
+    "none": 2
+   },
+   "T2": {
+    "complete": 25,
+    "partial": 5
+   },
+   "T3": {
+    "complete": 18,
+    "partial": 12
+   },
+   "en": {
+    "complete": 33,
+    "none": 1,
+    "partial": 11
+   },
+   "fa": {
+    "complete": 38,
+    "none": 1,
+    "partial": 6
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 26,
+    "partial": 4
+   },
+   "RPT": {
+    "complete": 25,
+    "none": 2,
+    "partial": 3
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "none",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "complete",
+    "V2-test-RPT-en-T3-003": "complete",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "complete",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "complete",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "complete",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "BM25_6000": {
+   "all": {
+    "complete": 66,
+    "partial": 20,
+    "none": 4
+   },
+   "T1": {
+    "complete": 30
+   },
+   "T2": {
+    "complete": 21,
+    "partial": 8,
+    "none": 1
+   },
+   "T3": {
+    "complete": 15,
+    "none": 3,
+    "partial": 12
+   },
+   "en": {
+    "complete": 29,
+    "partial": 14,
+    "none": 2
+   },
+   "fa": {
+    "complete": 37,
+    "partial": 6,
+    "none": 2
+   },
+   "BOOK": {
+    "complete": 19,
+    "none": 2,
+    "partial": 9
+   },
+   "LAW": {
+    "complete": 23,
+    "partial": 7
+   },
+   "RPT": {
+    "complete": 24,
+    "partial": 4,
+    "none": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "complete",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "partial",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "none",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "none",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "none",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "BM25_15500": {
+   "all": {
+    "complete": 66,
+    "partial": 20,
+    "none": 4
+   },
+   "T1": {
+    "complete": 30
+   },
+   "T2": {
+    "complete": 21,
+    "partial": 8,
+    "none": 1
+   },
+   "T3": {
+    "complete": 15,
+    "none": 3,
+    "partial": 12
+   },
+   "en": {
+    "complete": 29,
+    "partial": 14,
+    "none": 2
+   },
+   "fa": {
+    "complete": 37,
+    "partial": 6,
+    "none": 2
+   },
+   "BOOK": {
+    "complete": 19,
+    "none": 2,
+    "partial": 9
+   },
+   "LAW": {
+    "complete": 23,
+    "partial": 7
+   },
+   "RPT": {
+    "complete": 24,
+    "partial": 4,
+    "none": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "complete",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "partial",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "none",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "none",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "none",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "none",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "partial",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HYBRID_6000": {
+   "all": {
+    "complete": 72,
+    "none": 1,
+    "partial": 17
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 26,
+    "partial": 4
+   },
+   "T3": {
+    "complete": 17,
+    "partial": 13
+   },
+   "en": {
+    "complete": 33,
+    "none": 1,
+    "partial": 11
+   },
+   "fa": {
+    "complete": 39,
+    "partial": 6
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 26,
+    "partial": 4
+   },
+   "RPT": {
+    "complete": 26,
+    "none": 1,
+    "partial": 3
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "complete",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HR_6000": {
+   "all": {
+    "complete": 75,
+    "none": 1,
+    "partial": 14
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 27,
+    "partial": 3
+   },
+   "T3": {
+    "complete": 19,
+    "partial": 11
+   },
+   "en": {
+    "complete": 36,
+    "none": 1,
+    "partial": 8
+   },
+   "fa": {
+    "complete": 39,
+    "partial": 6
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 28,
+    "partial": 2
+   },
+   "RPT": {
+    "complete": 27,
+    "none": 1,
+    "partial": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "complete",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "complete",
+    "V2-test-LAW-en-T2-003": "complete",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "complete",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HYBRID_15500": {
+   "all": {
+    "complete": 72,
+    "none": 1,
+    "partial": 17
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 26,
+    "partial": 4
+   },
+   "T3": {
+    "complete": 17,
+    "partial": 13
+   },
+   "en": {
+    "complete": 33,
+    "none": 1,
+    "partial": 11
+   },
+   "fa": {
+    "complete": 39,
+    "partial": 6
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 26,
+    "partial": 4
+   },
+   "RPT": {
+    "complete": 26,
+    "none": 1,
+    "partial": 3
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "complete",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "HR_15500": {
+   "all": {
+    "complete": 75,
+    "none": 1,
+    "partial": 14
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 27,
+    "partial": 3
+   },
+   "T3": {
+    "complete": 19,
+    "partial": 11
+   },
+   "en": {
+    "complete": 36,
+    "none": 1,
+    "partial": 8
+   },
+   "fa": {
+    "complete": 39,
+    "partial": 6
+   },
+   "BOOK": {
+    "complete": 20,
+    "partial": 10
+   },
+   "LAW": {
+    "complete": 28,
+    "partial": 2
+   },
+   "RPT": {
+    "complete": 27,
+    "none": 1,
+    "partial": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "complete",
+    "V2-test-RPT-fa-T2-003": "complete",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "complete",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "complete",
+    "V2-test-RPT-en-T3-003": "partial",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "complete",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "complete",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "complete",
+    "V2-test-LAW-en-T2-003": "complete",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "complete",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "LEX5B_6000": {
+   "all": {
+    "complete": 61,
+    "partial": 26,
+    "none": 3
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 19,
+    "partial": 11
+   },
+   "T3": {
+    "complete": 13,
+    "partial": 15,
+    "none": 2
+   },
+   "en": {
+    "complete": 27,
+    "none": 3,
+    "partial": 15
+   },
+   "fa": {
+    "complete": 34,
+    "partial": 11
+   },
+   "BOOK": {
+    "complete": 16,
+    "partial": 14
+   },
+   "LAW": {
+    "complete": 21,
+    "partial": 8,
+    "none": 1
+   },
+   "RPT": {
+    "complete": 24,
+    "partial": 4,
+    "none": 2
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "none",
+    "V2-test-RPT-en-T3-003": "complete",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "partial",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "partial",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "partial",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "partial",
+    "V2-test-LAW-fa-T3-005": "partial",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "partial",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "none",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  },
+  "LEX5B_15500": {
+   "all": {
+    "complete": 67,
+    "partial": 22,
+    "none": 1
+   },
+   "T1": {
+    "complete": 29,
+    "none": 1
+   },
+   "T2": {
+    "complete": 21,
+    "partial": 9
+   },
+   "T3": {
+    "complete": 17,
+    "partial": 13
+   },
+   "en": {
+    "complete": 31,
+    "none": 1,
+    "partial": 13
+   },
+   "fa": {
+    "complete": 36,
+    "partial": 9
+   },
+   "BOOK": {
+    "complete": 19,
+    "partial": 11
+   },
+   "LAW": {
+    "complete": 24,
+    "partial": 6
+   },
+   "RPT": {
+    "complete": 24,
+    "partial": 5,
+    "none": 1
+   },
+   "_per_q": {
+    "V2-test-RPT-fa-T1-001": "complete",
+    "V2-test-RPT-fa-T1-002": "complete",
+    "V2-test-RPT-fa-T1-003": "complete",
+    "V2-test-RPT-fa-T1-004": "complete",
+    "V2-test-RPT-fa-T1-005": "complete",
+    "V2-test-RPT-fa-T2-001": "complete",
+    "V2-test-RPT-fa-T2-002": "partial",
+    "V2-test-RPT-fa-T2-003": "partial",
+    "V2-test-RPT-fa-T2-004": "complete",
+    "V2-test-RPT-fa-T2-005": "complete",
+    "V2-test-RPT-fa-T3-001": "complete",
+    "V2-test-RPT-fa-T3-002": "complete",
+    "V2-test-RPT-fa-T3-003": "complete",
+    "V2-test-RPT-fa-T3-004": "complete",
+    "V2-test-RPT-fa-T3-005": "complete",
+    "V2-test-RPT-en-T1-001": "complete",
+    "V2-test-RPT-en-T1-002": "none",
+    "V2-test-RPT-en-T1-003": "complete",
+    "V2-test-RPT-en-T1-004": "complete",
+    "V2-test-RPT-en-T1-005": "complete",
+    "V2-test-RPT-en-T2-001": "complete",
+    "V2-test-RPT-en-T2-002": "complete",
+    "V2-test-RPT-en-T2-003": "complete",
+    "V2-test-RPT-en-T2-004": "complete",
+    "V2-test-RPT-en-T2-005": "partial",
+    "V2-test-RPT-en-T3-001": "partial",
+    "V2-test-RPT-en-T3-002": "partial",
+    "V2-test-RPT-en-T3-003": "complete",
+    "V2-test-RPT-en-T3-004": "complete",
+    "V2-test-RPT-en-T3-005": "complete",
+    "V2-test-BOOK-fa-T1-001": "complete",
+    "V2-test-BOOK-fa-T1-002": "complete",
+    "V2-test-BOOK-fa-T1-003": "complete",
+    "V2-test-BOOK-fa-T1-004": "complete",
+    "V2-test-BOOK-fa-T1-005": "complete",
+    "V2-test-BOOK-fa-T2-001": "complete",
+    "V2-test-BOOK-fa-T2-002": "complete",
+    "V2-test-BOOK-fa-T2-003": "partial",
+    "V2-test-BOOK-fa-T2-004": "complete",
+    "V2-test-BOOK-fa-T2-005": "complete",
+    "V2-test-BOOK-fa-T3-001": "partial",
+    "V2-test-BOOK-fa-T3-002": "partial",
+    "V2-test-BOOK-fa-T3-003": "partial",
+    "V2-test-BOOK-fa-T3-004": "partial",
+    "V2-test-BOOK-fa-T3-005": "partial",
+    "V2-test-BOOK-en-T1-001": "complete",
+    "V2-test-BOOK-en-T1-002": "complete",
+    "V2-test-BOOK-en-T1-003": "complete",
+    "V2-test-BOOK-en-T1-004": "complete",
+    "V2-test-BOOK-en-T1-005": "complete",
+    "V2-test-BOOK-en-T2-001": "partial",
+    "V2-test-BOOK-en-T2-002": "complete",
+    "V2-test-BOOK-en-T2-003": "complete",
+    "V2-test-BOOK-en-T2-004": "partial",
+    "V2-test-BOOK-en-T2-005": "complete",
+    "V2-test-BOOK-en-T3-001": "complete",
+    "V2-test-BOOK-en-T3-002": "complete",
+    "V2-test-BOOK-en-T3-003": "partial",
+    "V2-test-BOOK-en-T3-004": "partial",
+    "V2-test-BOOK-en-T3-005": "partial",
+    "V2-test-LAW-fa-T1-001": "complete",
+    "V2-test-LAW-fa-T1-002": "complete",
+    "V2-test-LAW-fa-T1-003": "complete",
+    "V2-test-LAW-fa-T1-004": "complete",
+    "V2-test-LAW-fa-T1-005": "complete",
+    "V2-test-LAW-fa-T2-001": "complete",
+    "V2-test-LAW-fa-T2-002": "complete",
+    "V2-test-LAW-fa-T2-003": "complete",
+    "V2-test-LAW-fa-T2-004": "complete",
+    "V2-test-LAW-fa-T2-005": "complete",
+    "V2-test-LAW-fa-T3-001": "complete",
+    "V2-test-LAW-fa-T3-002": "complete",
+    "V2-test-LAW-fa-T3-003": "partial",
+    "V2-test-LAW-fa-T3-004": "complete",
+    "V2-test-LAW-fa-T3-005": "complete",
+    "V2-test-LAW-en-T1-001": "complete",
+    "V2-test-LAW-en-T1-002": "complete",
+    "V2-test-LAW-en-T1-003": "complete",
+    "V2-test-LAW-en-T1-004": "complete",
+    "V2-test-LAW-en-T1-005": "complete",
+    "V2-test-LAW-en-T2-001": "complete",
+    "V2-test-LAW-en-T2-002": "partial",
+    "V2-test-LAW-en-T2-003": "partial",
+    "V2-test-LAW-en-T2-004": "complete",
+    "V2-test-LAW-en-T2-005": "partial",
+    "V2-test-LAW-en-T3-001": "complete",
+    "V2-test-LAW-en-T3-002": "complete",
+    "V2-test-LAW-en-T3-003": "partial",
+    "V2-test-LAW-en-T3-004": "partial",
+    "V2-test-LAW-en-T3-005": "complete"
+   }
+  }
+ },
+ "wins": {
+  "6000": {
+   "n": 90,
+   "dense_only": 18,
+   "bm25_only": 13,
+   "both_right": 35,
+   "both_wrong": 24,
+   "by": {
+    "tier": {
+     "T1": [
+      2,
+      4
+     ],
+     "T2": [
+      8,
+      6
+     ],
+     "T3": [
+      8,
+      3
+     ]
+    },
+    "lang": {
+     "en": [
+      9,
+      7
+     ],
+     "fa": [
+      9,
+      6
+     ]
+    },
+    "genre": {
+     "BOOK": [
+      6,
+      3
+     ],
+     "LAW": [
+      7,
+      4
+     ],
+     "RPT": [
+      5,
+      6
+     ]
+    },
+    "subtype": {
+     "T1_fact": [
+      2,
+      4
+     ],
+     "T2_bounded_synthesis": [
+      0,
+      1
+     ],
+     "T2_comparison_derivation": [
+      4,
+      3
+     ],
+     "T2_definition_bridge": [
+      1,
+      1
+     ],
+     "T2_rule_exception": [
+      3,
+      1
+     ],
+     "T3_bounded_aggregation": [
+      1,
+      0
+     ],
+     "T3_cross_doc_bridge": [
+      1,
+      2
+     ],
+     "T3_cross_subject": [
+      1,
+      0
+     ],
+     "T3_cross_time_version": [
+      5,
+      1
+     ]
+    }
+   },
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-T1-003",
+     "winner": "BM25",
+     "tier": "T1",
+     "lang": "fa",
+     "genre": "RPT",
+     "subtype": "T1_fact",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "none",
+     "reach_bm25": "complete",
+     "gloss": "In 1404, on average how many seconds did Snapp drivers take to accept a ride request?"
+    },
+    {
+     "q": "V2-test-RPT-fa-T1-005",
+     "winner": "BM25",
+     "tier": "T1",
+     "lang": "fa",
+     "genre": "RPT",
+     "subtype": "T1_fact",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "none",
+     "reach_bm25": "none",
+     "gloss": "In 1401, how many villages did Irancell's network cover, and roughly how many rural people?"
+    },
+    {
+     "q": "V2-test-RPT-fa-T2-001",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "RPT",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "In 1403, what was online retail's share of Iran's total retail, and how many percentage points behind the global share (2024) was it?"
+    },
+    {
+     "q": "V2-test-RPT-fa-T3-001",
+     "winner": "BM25",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "RPT",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "How much did the total distance travelled by the Digi Express fleet change in 1403 compared with 1402?"
+    },
+    {
+     "q": "V2-test-RPT-fa-T3-002",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "RPT",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "In Digikala's post-purchase surveys, what share of customers recommended Digikala to others in 1399, and what was it in 1403?"
+    },
+    {
+     "q": "V2-test-RPT-en-T2-001",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T2_bounded_synthesis",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "complete",
+     "gloss": "What is Mowi paying to raise its stake in the Norwegian salmon farmer Nova Sea from 49% to 95%, how will the price be settled, and what harv"
+    },
+    {
+     "q": "V2-test-RPT-en-T2-002",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T2_definition_bridge",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "complete",
+     "gloss": "What return on invested capital (as reported, not the underlying ROIC) did A.P. Moller - Maersk report for the group for 2024, how did it co"
+    },
+    {
+     "q": "V2-test-RPT-en-T2-004",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Roughly what share of Maersk's workforce at the end of 2024 were seafarers?"
+    },
+    {
+     "q": "V2-test-RPT-en-T2-005",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "none",
+     "gloss": "By how much did Lerøy's wild-catch volume fall in 2024, and what does the company say about the outlook for that business?"
+    },
+    {
+     "q": "V2-test-RPT-en-T3-004",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Going into 2024, what harvest volume did Mowi guide for its Norwegian farming unit for that year, and how close did the actual 2024 harvest "
+    },
+    {
+     "q": "V2-test-RPT-en-T3-005",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "What did ArcelorMittal expect to spend on decarbonization capital expenditure in 2024, and how much did it actually spend that year?"
+    },
+    {
+     "q": "V2-test-BOOK-fa-T1-002",
+     "winner": "DENSE",
+     "tier": "T1",
+     "lang": "fa",
+     "genre": "BOOK",
+     "subtype": "T1_fact",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "In the first Majlis, how large was the annual budget deficit and what two remedies did the Majlis commission consider?"
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-001",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "BOOK",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "Pirnia counts Cyrus's reign as 22 years but Herodotus gives 28 and Ctesias 30. What explains the gap, and how long had Cyrus ruled Anshan be"
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-002",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "BOOK",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "How many years after taking Hamadan did Cyrus capture Babylon?"
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-005",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "BOOK",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Per Bahar, under the northern oil concession law, what would happen if Standard Oil transferred the concession to another foreign government"
+    },
+    {
+     "q": "V2-test-BOOK-fa-T3-002",
+     "winner": "BM25",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "BOOK",
+     "subtype": "T3_cross_doc_bridge",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "none",
+     "reach_bm25": "partial",
+     "gloss": "The man elected first vice-president of the first Majlis: what was his role in the 1919 agreement, and per Britain's later claim, what sum h"
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-001",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "BOOK",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "Under Mill's principle of liberty, may someone forcibly stop a person who is about to cross a bridge known to be unsafe? Explain when force "
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-003",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "BOOK",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "complete",
+     "gloss": "Using the 1830 figures in Democracy in America, roughly what share of New York State's population lived in the city of New York?"
+    },
+    {
+     "q": "V2-test-BOOK-en-T3-002",
+     "winner": "BM25",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "BOOK",
+     "subtype": "T3_cross_doc_bridge",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "complete",
+     "gloss": "Darwin describes the struggle for existence as the doctrine of a particular writer applied to the whole animal and vegetable kingdoms. Accor"
+    },
+    {
+     "q": "V2-test-BOOK-en-T3-005",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "BOOK",
+     "subtype": "T3_cross_subject",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "What does Mill say majority feeling in the United States does to people with large incomes who would like to live showily, and how does Vebl"
+    },
+    {
+     "q": "V2-test-LAW-fa-T1-005",
+     "winner": "BM25",
+     "tier": "T1",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T1_fact",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "none",
+     "reach_bm25": "complete",
+     "gloss": "Under the current (1311) Commercial Code, can a merchant who dies while in cessation of payments be declared bankrupt after death, and until"
+    },
+    {
+     "q": "V2-test-LAW-fa-T2-004",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T2_definition_bridge",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "A barber's permanent licence has expired; the union sent a notice but the owner did not renew, and he is advertising on Instagram. Under the"
+    },
+    {
+     "q": "V2-test-LAW-fa-T2-005",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "Founders want to set up a public joint-stock company with the minimum allowed capital. Under the Commercial Code's joint-stock rules, what i"
+    },
+    {
+     "q": "V2-test-LAW-fa-T3-002",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Within how many days, and to which court, must a merchant who has stopped paying his debts declare it? Compare the 1303 and the current (131"
+    },
+    {
+     "q": "V2-test-LAW-fa-T3-003",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "Under the 1345 Direct Taxes Law, what was the top income-tax rate (on annual taxable income above 50 million rials)? What did the 1351 amend"
+    },
+    {
+     "q": "V2-test-LAW-en-T1-001",
+     "winner": "DENSE",
+     "tier": "T1",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T1_fact",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "none",
+     "gloss": "Under the GDPR, how long does a controller have to act on a data subject's request (for example an access request), and can that period be e"
+    },
+    {
+     "q": "V2-test-LAW-en-T1-004",
+     "winner": "BM25",
+     "tier": "T1",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T1_fact",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "Under the Consumer Rights Act 2015, if a consumer and a trader have agreed no delivery date, by when must the trader deliver the goods?"
+    },
+    {
+     "q": "V2-test-LAW-en-T2-002",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "A university lab builds an AI system that infers workers' emotions from webcam video, developed and put into service solely for scientific r"
+    },
+    {
+     "q": "V2-test-LAW-en-T2-004",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "A platform company's core platform service crosses all the Digital Markets Act gatekeeper thresholds, but the company does not tell the Comm"
+    },
+    {
+     "q": "V2-test-LAW-en-T3-002",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T3_bounded_aggregation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Rank these maximum fines, expressed as a share of total worldwide annual turnover: the AI Act's fine for engaging in a prohibited AI practic"
+    },
+    {
+     "q": "V2-test-LAW-en-T3-003",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T3_cross_doc_bridge",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "none",
+     "gloss": "The AI Act does not write out its own definition of 'personal data'. Which definition does it use, and what does that definition say?"
+    }
+   ],
+   "oracle_either": 66
+  },
+  "15500": {
+   "n": 90,
+   "dense_only": 7,
+   "bm25_only": 5,
+   "both_right": 56,
+   "both_wrong": 22,
+   "by": {
+    "tier": {
+     "T1": [
+      1,
+      1
+     ],
+     "T2": [
+      3,
+      3
+     ],
+     "T3": [
+      3,
+      1
+     ]
+    },
+    "lang": {
+     "en": [
+      4,
+      3
+     ],
+     "fa": [
+      3,
+      2
+     ]
+    },
+    "genre": {
+     "BOOK": [
+      0,
+      3
+     ],
+     "LAW": [
+      4,
+      0
+     ],
+     "RPT": [
+      3,
+      2
+     ]
+    },
+    "subtype": {
+     "T1_fact": [
+      0,
+      1
+     ],
+     "T1_list_local": [
+      1,
+      0
+     ],
+     "T2_bounded_synthesis": [
+      0,
+      1
+     ],
+     "T2_comparison_derivation": [
+      1,
+      1
+     ],
+     "T2_rule_exception": [
+      2,
+      1
+     ],
+     "T3_cross_doc_bridge": [
+      1,
+      1
+     ],
+     "T3_cross_subject": [
+      1,
+      0
+     ],
+     "T3_cross_time_version": [
+      1,
+      0
+     ]
+    }
+   },
+   "rows": [
+    {
+     "q": "V2-test-RPT-fa-T1-003",
+     "winner": "BM25",
+     "tier": "T1",
+     "lang": "fa",
+     "genre": "RPT",
+     "subtype": "T1_fact",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "none",
+     "reach_bm25": "complete",
+     "gloss": "In 1404, on average how many seconds did Snapp drivers take to accept a ride request?"
+    },
+    {
+     "q": "V2-test-RPT-en-T2-001",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T2_bounded_synthesis",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "complete",
+     "gloss": "What is Mowi paying to raise its stake in the Norwegian salmon farmer Nova Sea from 49% to 95%, how will the price be settled, and what harv"
+    },
+    {
+     "q": "V2-test-RPT-en-T2-004",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Roughly what share of Maersk's workforce at the end of 2024 were seafarers?"
+    },
+    {
+     "q": "V2-test-RPT-en-T3-002",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T3_cross_subject",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "Compare the crude steel output of ArcelorMittal in calendar 2024 with that of the Tata Steel Group in FY2023-24. Roughly how many times larg"
+    },
+    {
+     "q": "V2-test-RPT-en-T3-004",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "en",
+     "genre": "RPT",
+     "subtype": "T3_cross_time_version",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "Going into 2024, what harvest volume did Mowi guide for its Norwegian farming unit for that year, and how close did the actual 2024 harvest "
+    },
+    {
+     "q": "V2-test-BOOK-fa-T3-002",
+     "winner": "BM25",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "BOOK",
+     "subtype": "T3_cross_doc_bridge",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "none",
+     "reach_bm25": "partial",
+     "gloss": "The man elected first vice-president of the first Majlis: what was his role in the 1919 agreement, and per Britain's later claim, what sum h"
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-001",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "BOOK",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "partial",
+     "reach_bm25": "partial",
+     "gloss": "Under Mill's principle of liberty, may someone forcibly stop a person who is about to cross a bridge known to be unsafe? Explain when force "
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-002",
+     "winner": "BM25",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "BOOK",
+     "subtype": "T2_comparison_derivation",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "According to Malthus, how long do the principal states of modern Europe take to double their population, how long did the American back sett"
+    },
+    {
+     "q": "V2-test-LAW-fa-T1-002",
+     "winner": "DENSE",
+     "tier": "T1",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T1_list_local",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "Under the Constitution, how many seats in the Islamic Consultative Assembly do the religious minorities have in total, and how are they divi"
+    },
+    {
+     "q": "V2-test-LAW-fa-T2-003",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      0,
+      0
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "complete",
+     "gloss": "A property already entered in the property register was sold by an ordinary written agreement that was never registered with a notary. Under"
+    },
+    {
+     "q": "V2-test-LAW-fa-T3-005",
+     "winner": "DENSE",
+     "tier": "T3",
+     "lang": "fa",
+     "genre": "LAW",
+     "subtype": "T3_cross_doc_bridge",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "In the 1345 Direct Taxes Law, 'legal books' for tax purposes included the books named in the Commercial Code. Which books does the Commercia"
+    },
+    {
+     "q": "V2-test-LAW-en-T2-004",
+     "winner": "DENSE",
+     "tier": "T2",
+     "lang": "en",
+     "genre": "LAW",
+     "subtype": "T2_rule_exception",
+     "hybrid": [
+      1,
+      1
+     ],
+     "reach_dense": "complete",
+     "reach_bm25": "partial",
+     "gloss": "A platform company's core platform service crosses all the Digital Markets Act gatekeeper thresholds, but the company does not tell the Comm"
+    }
+   ],
+   "oracle_either": 68
+  }
+ },
+ "family_size": 12,
+ "bonferroni_alpha": 0.004166666666666667
+}

@@ -1,0 +1,1134 @@
+{
+ "model_id": "z-ai/glm-5.3-flash",
+ "endpoints": [
+  {
+   "tag": "relace",
+   "provider_name": "Relace",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.000000015",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "inference-net/fp4",
+   "provider_name": "InferenceNet",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp4",
+   "pricing": {
+    "prompt": "[stripped: 11 chars]",
+    "completion": "0.00000014",
+    "input_cache_read": "0.00000001",
+    "discount": 0.5
+   }
+  },
+  {
+   "tag": "sail-research/us",
+   "provider_name": "Sail Research",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 11 chars]",
+    "completion": "0.0000006",
+    "input_cache_read": "0.0000000285",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "sail-research/fp8",
+   "provider_name": "Sail Research",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 11 chars]",
+    "completion": "0.0000006",
+    "input_cache_read": "0.0000000285",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "open-inference/fp4",
+   "provider_name": "OpenInference",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp4",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000002",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "deepinfra/fp4",
+   "provider_name": "DeepInfra",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp4",
+   "pricing": {
+    "prompt": "[stripped: 11 chars]",
+    "completion": "0.00000025",
+    "input_cache_read": "0.000000015",
+    "discount": 0.5
+   }
+  },
+  {
+   "tag": "gmicloud/fp8",
+   "provider_name": "GMICloud",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000003",
+    "input_cache_read": "0.000000018",
+    "discount": 0.4
+   }
+  },
+  {
+   "tag": "inceptron/fp8",
+   "provider_name": "Inceptron",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.00000045",
+    "input_cache_read": "0.00000007",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "novita/fp8",
+   "provider_name": "Novita",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 12 chars]",
+    "completion": "0.000000375",
+    "input_cache_read": "0.0000000225",
+    "discount": 0.25
+   }
+  },
+  {
+   "tag": "decart/fp4",
+   "provider_name": "Decart",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp4",
+   "pricing": {
+    "prompt": "[stripped: 12 chars]",
+    "completion": "0.000000425",
+    "input_cache_read": "0.0000000255",
+    "discount": 0.15
+   }
+  },
+  {
+   "tag": "phala/fp8",
+   "provider_name": "Phala",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 12 chars]",
+    "completion": "0.000000425",
+    "input_cache_read": "0.0000000255",
+    "discount": 0.15
+   }
+  },
+  {
+   "tag": "streamlake/fp8",
+   "provider_name": "StreamLake",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 11 chars]",
+    "completion": "0.00000047",
+    "input_cache_read": "0.0000000282",
+    "discount": 0.06
+   }
+  },
+  {
+   "tag": "modal/nvfp4",
+   "provider_name": "Modal",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "nvfp4",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "baseten/fp8",
+   "provider_name": "BaseTen",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "near-ai/fp8",
+   "provider_name": "Near AI",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.000000035",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "crusoe/fp4",
+   "provider_name": "Crusoe",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp4",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "coreweave/nvfp4",
+   "provider_name": "CoreWeave",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "nvfp4",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000005",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "atlas-cloud/fp8",
+   "provider_name": "AtlasCloud",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "fireworks",
+   "provider_name": "Fireworks",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "friendli",
+   "provider_name": "Friendli",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "siliconflow/fp8",
+   "provider_name": "SiliconFlow",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "digitalocean",
+   "provider_name": "DigitalOcean",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "together",
+   "provider_name": "Together",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "reka",
+   "provider_name": "Reka",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "parasail/fp8",
+   "provider_name": "Parasail",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "baseten/fp8",
+   "provider_name": "BaseTen",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "venice",
+   "provider_name": "Venice",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "io-net/fp8",
+   "provider_name": "Io Net",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "z-ai/fp8",
+   "provider_name": "Z.AI",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "morph/fp8",
+   "provider_name": "Morph",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 13 chars]",
+    "completion": "0.00000056826",
+    "input_cache_read": "0.000000032472",
+    "discount": 0.1882
+   }
+  },
+  {
+   "tag": "nextbit/fp8",
+   "provider_name": "NextBit",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "fp8",
+   "pricing": {
+    "prompt": "[stripped: 11 chars]",
+    "completion": "0.00000055",
+    "input_cache_read": "0.000000033",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "cloudflare",
+   "provider_name": "Cloudflare",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 9 chars]",
+    "completion": "0.000001",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  },
+  {
+   "tag": "wafer",
+   "provider_name": "Wafer",
+   "model_name": "Z.ai: GLM 5.3 Flash",
+   "quantization": "unknown",
+   "pricing": {
+    "prompt": "[stripped: 10 chars]",
+    "completion": "0.0000005",
+    "input_cache_read": "0.00000003",
+    "discount": 0
+   }
+  }
+ ],
+ "prompts": [
+  {
+   "pool": "RPT-fa",
+   "question": "گزارش درباره ریسک‌های اصلی شرکت و برنامه‌های کاهش آن‌ها چه می‌گوید؟",
+   "cap": 200,
+   "est": 2494,
+   "chars": 7559
+  },
+  {
+   "pool": "RPT-en",
+   "question": "What does the report say about the main risks the company faces and how they are managed?",
+   "cap": 340,
+   "est": 2529,
+   "chars": 10622
+  },
+  {
+   "pool": "LAW-en",
+   "question": "Which conditions must be met before an exemption applies, and who decides on it?",
+   "cap": 320,
+   "est": 2512,
+   "chars": 10551
+  }
+ ],
+ "warmup_round": {
+  "note": "probe_glm.py round 0 (all endpoints, 3 prompts each), from ledger_probe.jsonl",
+  "medians_ms": {
+   "relace": 3688.1,
+   "inference-net/fp4": 6225.65,
+   "sail-research/us": 13261.4,
+   "sail-research/fp8": 11852.7,
+   "open-inference/fp4": 7262.0,
+   "gmicloud/fp8": 6877.4,
+   "novita/fp8": 3690.1,
+   "decart/fp4": 6457.4,
+   "phala/fp8": 5759.6,
+   "streamlake/fp8": 5148.3,
+   "modal/nvfp4": 2220.0,
+   "baseten/fp8": 2571.6499999999996,
+   "near-ai/fp8": 4376.6,
+   "crusoe/fp4": 1617.1,
+   "coreweave/nvfp4": 2356.4,
+   "atlas-cloud/fp8": 3215.8,
+   "friendli": 2725.0,
+   "siliconflow/fp8": 2878.5,
+   "digitalocean": 3322.4,
+   "together": 2427.5,
+   "parasail/fp8": 3349.9,
+   "venice": 18380.3,
+   "io-net/fp8": 20786.9,
+   "z-ai/fp8": 3818.2,
+   "morph/fp8": 4725.8,
+   "nextbit/fp8": 3878.0,
+   "cloudflare": 3167.2,
+   "wafer": 23467.7
+  },
+  "calls": {
+   "relace": [
+    {
+     "ok": true,
+     "wall_ms": 8867.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 10669.9
+    },
+    {
+     "ok": true,
+     "wall_ms": 3969.7
+    },
+    {
+     "ok": true,
+     "wall_ms": 2971.5
+    },
+    {
+     "ok": true,
+     "wall_ms": 3406.5
+    },
+    {
+     "ok": true,
+     "wall_ms": 2854.5
+    }
+   ],
+   "inference-net/fp4": [
+    {
+     "ok": true,
+     "wall_ms": 6017.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 5189.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 18325.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 3520.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 7978.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 6434.3
+    }
+   ],
+   "sail-research/us": [
+    {
+     "ok": true,
+     "wall_ms": 7782.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 15988.5
+    },
+    {
+     "ok": true,
+     "wall_ms": 14613.7
+    },
+    {
+     "ok": true,
+     "wall_ms": 7102.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 13261.4
+    }
+   ],
+   "sail-research/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 4129.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 11852.7
+    },
+    {
+     "ok": true,
+     "wall_ms": 14487.6
+    }
+   ],
+   "open-inference/fp4": [
+    {
+     "ok": true,
+     "wall_ms": 6401.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 9683.8
+    },
+    {
+     "ok": true,
+     "wall_ms": 7262.0
+    }
+   ],
+   "deepinfra/fp4": [
+    {
+     "ok": false,
+     "wall_ms": 1426.4
+    },
+    {
+     "ok": false,
+     "wall_ms": 1051.6
+    },
+    {
+     "ok": false,
+     "wall_ms": 1041.2
+    }
+   ],
+   "gmicloud/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 3623.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 6877.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 13620.5
+    }
+   ],
+   "inceptron/fp8": [
+    {
+     "ok": false,
+     "wall_ms": 6156.2
+    },
+    {
+     "ok": false,
+     "wall_ms": 5920.7
+    },
+    {
+     "ok": false,
+     "wall_ms": 5760.3
+    }
+   ],
+   "novita/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 3690.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 3525.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 6363.7
+    }
+   ],
+   "decart/fp4": [
+    {
+     "ok": true,
+     "wall_ms": 5512.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 6457.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 9080.8
+    }
+   ],
+   "phala/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 3901.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 6259.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 5759.6
+    }
+   ],
+   "streamlake/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 4048.9
+    },
+    {
+     "ok": true,
+     "wall_ms": 5148.3
+    },
+    {
+     "ok": true,
+     "wall_ms": 5509.3
+    }
+   ],
+   "modal/nvfp4": [
+    {
+     "ok": true,
+     "wall_ms": 1994.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 2220.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 4076.5
+    }
+   ],
+   "baseten/fp8": [
+    {
+     "ok": false,
+     "wall_ms": 1281.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 2024.7
+    },
+    {
+     "ok": true,
+     "wall_ms": 2643.6
+    },
+    {
+     "ok": false,
+     "wall_ms": 1492.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 2499.7
+    },
+    {
+     "ok": true,
+     "wall_ms": 3065.9
+    }
+   ],
+   "near-ai/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 4376.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 3485.3
+    },
+    {
+     "ok": true,
+     "wall_ms": 9618.4
+    }
+   ],
+   "crusoe/fp4": [
+    {
+     "ok": true,
+     "wall_ms": 1617.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 1549.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 2135.5
+    }
+   ],
+   "coreweave/nvfp4": [
+    {
+     "ok": true,
+     "wall_ms": 2064.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 3846.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 2356.4
+    }
+   ],
+   "atlas-cloud/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 5912.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 3215.8
+    },
+    {
+     "ok": true,
+     "wall_ms": 3172.1
+    }
+   ],
+   "fireworks": [
+    {
+     "ok": false,
+     "wall_ms": 1100.0
+    },
+    {
+     "ok": false,
+     "wall_ms": 1294.8
+    },
+    {
+     "ok": false,
+     "wall_ms": 1132.8
+    }
+   ],
+   "friendli": [
+    {
+     "ok": true,
+     "wall_ms": 2725.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 1684.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 3375.9
+    }
+   ],
+   "siliconflow/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 5791.8
+    },
+    {
+     "ok": true,
+     "wall_ms": 2878.5
+    },
+    {
+     "ok": true,
+     "wall_ms": 2554.2
+    }
+   ],
+   "digitalocean": [
+    {
+     "ok": true,
+     "wall_ms": 3248.6
+    },
+    {
+     "ok": true,
+     "wall_ms": 14007.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 3322.4
+    }
+   ],
+   "together": [
+    {
+     "ok": true,
+     "wall_ms": 2427.5
+    },
+    {
+     "ok": true,
+     "wall_ms": 2368.8
+    },
+    {
+     "ok": true,
+     "wall_ms": 3135.2
+    }
+   ],
+   "reka": [
+    {
+     "ok": false,
+     "wall_ms": 1531.6
+    },
+    {
+     "ok": false,
+     "wall_ms": 1150.1
+    },
+    {
+     "ok": false,
+     "wall_ms": 30006.0
+    }
+   ],
+   "parasail/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 3349.9
+    },
+    {
+     "ok": true,
+     "wall_ms": 2493.7
+    },
+    {
+     "ok": true,
+     "wall_ms": 3920.5
+    }
+   ],
+   "venice": [
+    {
+     "ok": true,
+     "wall_ms": 19317.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 18380.3
+    },
+    {
+     "ok": true,
+     "wall_ms": 17413.0
+    }
+   ],
+   "io-net/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 20786.9
+    },
+    {
+     "ok": true,
+     "wall_ms": 23418.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 19869.9
+    }
+   ],
+   "z-ai/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 2720.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 3818.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 6002.7
+    }
+   ],
+   "morph/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 3914.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 4725.8
+    },
+    {
+     "ok": true,
+     "wall_ms": 6312.7
+    }
+   ],
+   "nextbit/fp8": [
+    {
+     "ok": true,
+     "wall_ms": 3351.4
+    },
+    {
+     "ok": true,
+     "wall_ms": 3878.0
+    },
+    {
+     "ok": true,
+     "wall_ms": 5601.2
+    }
+   ],
+   "cloudflare": [
+    {
+     "ok": true,
+     "wall_ms": 3167.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 2776.2
+    },
+    {
+     "ok": true,
+     "wall_ms": 5535.6
+    }
+   ],
+   "wafer": [
+    {
+     "ok": true,
+     "wall_ms": 24960.0
+    },
+    {
+     "ok": false,
+     "wall_ms": 30009.1
+    },
+    {
+     "ok": true,
+     "wall_ms": 21975.4
+    }
+   ]
+  }
+ },
+ "rule": "dev60 step 2b: measured round of the GLM provider probe (probe_glm.py round 0 = warm-up over all 33 endpoints; the\nprocess was stopped before its measured round because that round would have crossed the probe's own $0.05 guard).\nRule fixed after the warm-up walls, before any measured call (recorded in PROGRESS.md):\n  eligible = identical model id (every endpoint of z-ai/glm-5.3-flash) AND quantization not a declared sub-fp8 format\n             (fp4 / nvfp4 excluded: a different numeric model); fp8 / unknown allowed (the current pin, together, is\n             'unknown')\n  shortlist = eligible endpoints with >= 2 ok warm-up replies and warm-up median wall <= 1.25x together's\n  measured = the same 3 non-dev prompts, same settings, sequential; choice = lowest median among shortlisted\n             endpoints whose 3 replies all parse; switch only if faster than together.\n-> providers_probe.json (warm-up rows from ledger_probe.jsonl + measured rows + choice)",
+ "shortlist": [
+  "baseten/fp8",
+  "friendli",
+  "siliconflow/fp8",
+  "together"
+ ],
+ "measured": [
+  {
+   "tag": "baseten/fp8",
+   "prompt": 0,
+   "ok": false,
+   "wall_ms": 1560,
+   "error": "OpenRouter HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"z-ai/glm-5.3-flash is temporarily rate-limited upstream. Please retry shortly, or add your own key to a"
+  },
+  {
+   "tag": "baseten/fp8",
+   "prompt": 1,
+   "ok": true,
+   "wall_ms": 1763,
+   "provider": "BaseTen",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2385,
+   "completion_tokens": 50,
+   "cost_usd": 0.00038275
+  },
+  {
+   "tag": "baseten/fp8",
+   "prompt": 2,
+   "ok": false,
+   "wall_ms": 1087,
+   "error": "OpenRouter HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"z-ai/glm-5.3-flash is temporarily rate-limited upstream. Please retry shortly, or add your own key to a"
+  },
+  {
+   "tag": "friendli",
+   "prompt": 0,
+   "ok": true,
+   "wall_ms": 8649,
+   "provider": "Friendli",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2839,
+   "completion_tokens": 39,
+   "cost_usd": 0.00044535
+  },
+  {
+   "tag": "friendli",
+   "prompt": 1,
+   "ok": false,
+   "wall_ms": 6956,
+   "error": "OpenRouter HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"z-ai/glm-5.3-flash is temporarily rate-limited upstream. Please retry shortly, or add your own key to a"
+  },
+  {
+   "tag": "friendli",
+   "prompt": 2,
+   "ok": true,
+   "wall_ms": 7232,
+   "provider": "Friendli",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2379,
+   "completion_tokens": 96,
+   "cost_usd": 0.00040485
+  },
+  {
+   "tag": "siliconflow/fp8",
+   "prompt": 0,
+   "ok": true,
+   "wall_ms": 5795,
+   "provider": "SiliconFlow",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2839,
+   "completion_tokens": 130,
+   "cost_usd": 0.00015293
+  },
+  {
+   "tag": "siliconflow/fp8",
+   "prompt": 1,
+   "ok": true,
+   "wall_ms": 2882,
+   "provider": "SiliconFlow",
+   "finish": "stop",
+   "parse": "fail",
+   "prompt_tokens": 2384,
+   "completion_tokens": 61,
+   "cost_usd": 0.00010394
+  },
+  {
+   "tag": "siliconflow/fp8",
+   "prompt": 2,
+   "ok": true,
+   "wall_ms": 7283,
+   "provider": "SiliconFlow",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2379,
+   "completion_tokens": 146,
+   "cost_usd": 0.00014569
+  },
+  {
+   "tag": "together",
+   "prompt": 0,
+   "ok": false,
+   "wall_ms": 3031,
+   "error": "OpenRouter HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"z-ai/glm-5.3-flash is temporarily rate-limited upstream. Please retry shortly, or add your own key to a"
+  },
+  {
+   "tag": "together",
+   "prompt": 1,
+   "ok": true,
+   "wall_ms": 5480,
+   "provider": "Together",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2384,
+   "completion_tokens": 189,
+   "cost_usd": 0.0004521
+  },
+  {
+   "tag": "together",
+   "prompt": 2,
+   "ok": true,
+   "wall_ms": 5602,
+   "provider": "Together",
+   "finish": "stop",
+   "parse": "ok",
+   "prompt_tokens": 2379,
+   "completion_tokens": 186,
+   "cost_usd": 0.00044985
+  }
+ ],
+ "medians": {
+  "baseten/fp8": {
+   "median_wall_ms": 1560,
+   "walls": [
+    1560,
+    1763,
+    1087
+   ],
+   "all_parse": false,
+   "quantization": "fp8"
+  },
+  "friendli": {
+   "median_wall_ms": 7232,
+   "walls": [
+    8649,
+    6956,
+    7232
+   ],
+   "all_parse": false,
+   "quantization": "unknown"
+  },
+  "siliconflow/fp8": {
+   "median_wall_ms": 5795,
+   "walls": [
+    5795,
+    2882,
+    7283
+   ],
+   "all_parse": false,
+   "quantization": "fp8"
+  },
+  "together": {
+   "median_wall_ms": 5480,
+   "walls": [
+    3031,
+    5480,
+    5602
+   ],
+   "all_parse": false,
+   "quantization": "unknown"
+  }
+ },
+ "choice": {
+  "current": "together",
+  "current_median_ms": 5480,
+  "best": null,
+  "switch": false,
+  "pin": null
+ },
+ "spent_usd_measured_round": 0.00254
+}

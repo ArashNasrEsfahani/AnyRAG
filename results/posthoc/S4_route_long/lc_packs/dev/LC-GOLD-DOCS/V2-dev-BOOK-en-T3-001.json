@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143203 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "90887a5ad00357f6fd7373d6810576f8d2f7dc38d53d2f4ae3f828b61eb88e84",
+ "evidence_chars": 142990,
+ "prompt_chars": 143911,
+ "est_prompt_tokens": 31521,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-14474_faraday_chemical-history-of-a-candle.en",
+    "doc_chars": 220892,
+    "shown": 71450,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "doc_chars": 405298,
+    "shown": 71450,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 2
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142760 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "fa9ea26f2d1715f44af0e284486fc5eb7eff82838f78d4ab650262d3bbc5ee58",
+ "evidence_chars": 142511,
+ "prompt_chars": 143583,
+ "est_prompt_tokens": 31449,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "doc_chars": 405298,
+    "shown": 70932,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "doc_chars": 223767,
+    "shown": 71450,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 2
+ }
+}

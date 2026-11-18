@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T1-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143067 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "f01c84054f79abcf9066aa3cbefffa05b80a82677dfb2e2499b7ad7fa57a509d",
+ "evidence_chars": 142899,
+ "prompt_chars": 143590,
+ "est_prompt_tokens": 31451,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "D.turkcell_form-20f_2024.en",
+    "score": 5.331
+   },
+   {
+    "doc": "D.deliveryhero_annual-report_2024.en",
+    "score": 2.279
+   },
+   {
+    "doc": "D.vodafone_annual-report_2024.en",
+    "score": 1.838
+   },
+   {
+    "doc": "D.tatasteel_integrated-report_2024.en",
+    "score": 1.199
+   },
+   {
+    "doc": "D.zalando_annual-report_2023.en",
+    "score": 1.048
+   },
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "score": 0.84
+   },
+   {
+    "doc": "D.leroy_annual-report_2024.en",
+    "score": 0.497
+   },
+   {
+    "doc": "D.arcelormittal_annual-report_2023.en",
+    "score": 0.474
+   }
+  ],
+  "docs": [
+   {
+    "doc": "D.turkcell_form-20f_2024.en",
+    "doc_chars": 1164334,
+    "shown": 142848,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

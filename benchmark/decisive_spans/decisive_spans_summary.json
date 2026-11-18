@@ -1,0 +1,18 @@
+{
+ "questions": 60,
+ "answerable": 54,
+ "spans": 158,
+ "methods": {
+  "key": 63,
+  "quote": 89,
+  "key+line": 1,
+  "key+quote": 1,
+  "key+window": 2,
+  "quote+window": 2
+ },
+ "span_chars_p50": 113,
+ "span_chars_max": 390,
+ "unresolved": [],
+ "questions_without_spans": [],
+ "required_reqs_without_span": []
+}

@@ -1,0 +1,16 @@
+{
+ "qid": "V2-test-RPT-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6112 chars]"
+  }
+ ],
+ "messages_sha256": "3ddac36574b1b0a8ceb6baf8512dfb013d9bcd9697eea90b5ebea9efe59cf629",
+ "num_predict": 768
+}

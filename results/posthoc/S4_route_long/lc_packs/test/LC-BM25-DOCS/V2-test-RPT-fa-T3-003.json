@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T3-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 78973 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "310b475afd506808e877c0b4b72c8cced250da98c6cfa356ac54480dd8763af6",
+ "evidence_chars": 78836,
+ "prompt_chars": 79804,
+ "est_prompt_tokens": 31566,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 9.222
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 8.808
+   },
+   {
+    "doc": "C.dataak_annual-report_1404.fa",
+    "score": 7.862
+   },
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "score": 6.48
+   },
+   {
+    "doc": "C.digikala_human-capital-report_1399.fa",
+    "score": 6.026
+   },
+   {
+    "doc": "C.khanoumi_annual-report_1404.fa",
+    "score": 5.842
+   },
+   {
+    "doc": "C.payman_direct-debit-annual-report_1402.fa",
+    "score": 5.59
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1403.fa",
+    "score": 5.217
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "doc_chars": 178537,
+    "shown": 78802,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

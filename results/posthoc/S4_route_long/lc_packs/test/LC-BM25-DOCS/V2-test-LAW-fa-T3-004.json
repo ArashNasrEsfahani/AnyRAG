@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T3-004",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79327 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "54cfbaf8b0dbd821686803c955b02fc3f501391dd24eb1fdfaa0ea21c13be1a7",
+ "evidence_chars": 79095,
+ "prompt_chars": 80158,
+ "est_prompt_tokens": 31706,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "score": 6.715
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "score": 6.625
+   },
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "score": 4.818
+   },
+   {
+    "doc": "L.wikisource_cooperatives-1350.fa",
+    "score": 4.552
+   },
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "score": 4.305
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "score": 3.468
+   },
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "score": 3.429
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1303.fa",
+    "score": 3.251
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "doc_chars": 48211,
+    "shown": 48211,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "doc_chars": 171437,
+    "shown": 30800,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

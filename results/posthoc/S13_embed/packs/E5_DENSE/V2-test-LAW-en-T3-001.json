@@ -1,0 +1,18 @@
+{
+ "arm": "E5_DENSE",
+ "question_id": "V2-test-LAW-en-T3-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6200 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "63480d704ea4ccc0a8ae1ffd3d7cf8a697e068857097dc35fb555adf51e63a0d",
+ "evidence_chars": 5999
+}

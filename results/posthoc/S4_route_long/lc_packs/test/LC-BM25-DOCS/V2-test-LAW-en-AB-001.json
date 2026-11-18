@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-en-AB-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": false,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143048 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "9d415577b97d5224b13cddadc2a30c649e98710c7c8d36945c530f81656ceba7",
+ "evidence_chars": 142875,
+ "prompt_chars": 143571,
+ "est_prompt_tokens": 31447,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "L.ukpga-2015-15_consumer-rights-act.en",
+    "score": 2.901
+   },
+   {
+    "doc": "L.eurlex-32023R2854_data-act.en",
+    "score": 2.068
+   },
+   {
+    "doc": "L.eurlex-32022R1925_dma.en",
+    "score": 1.886
+   },
+   {
+    "doc": "L.ukpga-2018-12_data-protection-act.en",
+    "score": 1.727
+   },
+   {
+    "doc": "L.eurlex-32022R2065_dsa.en",
+    "score": 1.707
+   },
+   {
+    "doc": "L.eurlex-32024R1689_ai-act.en",
+    "score": 1.678
+   },
+   {
+    "doc": "L.ukpga-2015-30_modern-slavery-act.en",
+    "score": 1.619
+   },
+   {
+    "doc": "L.eurlex-32022R0868_data-governance-act.en",
+    "score": 1.174
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.ukpga-2015-15_consumer-rights-act.en",
+    "doc_chars": 377548,
+    "shown": 142841,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 0,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142223 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "d8feab95e8b452d3c90ff071126a171b7a7b3003856cda92be3f8005450b5525",
+ "evidence_chars": 142120,
+ "prompt_chars": 143046,
+ "est_prompt_tokens": 31332,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.leroy_annual-report_2024.en",
+    "doc_chars": 771091,
+    "shown": 70941,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2024.en",
+    "doc_chars": 1115403,
+    "shown": 71076,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

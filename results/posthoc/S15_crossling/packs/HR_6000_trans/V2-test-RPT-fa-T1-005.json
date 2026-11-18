@@ -1,0 +1,18 @@
+{
+ "arm": "HR_6000_trans",
+ "question_id": "V2-test-RPT-fa-T1-005",
+ "setting": "en-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6148 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "66d3bae07bd59d67960d5709f33aa1802a901f0097e91bda414206b68375bd21",
+ "evidence_chars": 6000
+}

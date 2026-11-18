@@ -1,0 +1,24 @@
+% src: work/posthoc_2026-11/S17_goldmiss/RESULTS.md (one row per question; classes are one reading of the saved records, no second annotator).
+%      Reader answers: S2a_packs/answers.jsonl (arm GOLD) and S2a_packs/packs/GOLD/<id>.json; judge 1: S2a_packs/judge/GOLD/verdicts_openai__gpt-oss-120b.jsonl (83 of 90);
+%      judge 2: S8_factorial/judge2/GOLD/verdicts_mistralai__mistral-large-2512.jsonl (88 resolved, 82 correct; RPT-en-T3-002 and LAW-en-T1-004 unresolved);
+%      questions and gold bundles: datasets_v2/test_freeze/questions/test_v2run_all.jsonl. Counts: S2a_packs/RESULTS.md sec. 2.4 (T1 27/30, T2 30/30, T3 26/30; en 40/45, fa 43/45).
+\begin{table*}[tp]
+\caption{Post hoc. The seven answerable test questions that the reader missed with the gold bundle. Persian answers are given in English}
+\label{tab:goldmiss}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{1.75cm}cc>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.15cm}>{\raggedright\arraybackslash}p{1.15cm}>{\raggedright\arraybackslash}p{4.6cm}@{}}
+\toprule
+Question & Tier & Lang. & Expected answer & Given answer & Judge 1 & Judge 2 & Class and reason \\
+\midrule
+RPT-en-T3-002 & T3 & en & ArcelorMittal 57.9 Mt in 2024, Tata Steel Group 29.94 Mt in FY2023-24, ratio about 1.9 & Tata value correct; ArcelorMittal ``NOT\_FOUND''; no ratio & wrong & unresolved & \emph{Bundle not sufficient.} The pack holds 57.9 only as the bare row ``Total 43.5 14.4 57.9'' and a separate caption, so nothing says it is the company total. \\
+RPT-en-T3-001 & T3 & en & Mowi 501,530 t and Ler\o y 147,701 t of salmon, ratio about 3.4 & Mowi value correct; Ler\o y ``NOT\_FOUND'' & wrong & wrong & \emph{Bundle not sufficient.} The Ler\o y figure is the row ``Salmon Trout $|$ 147 701'' with its column header in another item, and the total row that would resolve it is not in the bundle. \\
+BOOK-en-T1-005 & T1 & en & Population starts at about 7 million; after fifty years 28 million, subsistence for 21 million & Starts at 7 million; gives 28 and 21 million for ``after twenty-five years''; fifty years ``NOT\_FOUND'' & wrong & wrong & \emph{Bundle not sufficient.} The quoted sentence says ``in the next twenty-five years''. The passage that makes it the second period is not in the bundle. \\
+BOOK-fa-T3-002 & T3 & fa & Vosough al-Dowleh was first vice-president of the first Majlis, concluded the 1919 agreement, and 130,000 lira was divided among three men & The same three facts, each with a source note & wrong & wrong & \emph{Judge strictness.} Every requirement is present. Judge 1 faulted the unit, which the source gives as lira. Judge 2 graded all requirements correct and failed a restated source sentence as unsupported. \\
+LAW-fa-T1-002 & T1 & fa & Five minority seats: Zoroastrians 1, Jews 1, Assyrian and Chaldean Christians 1, Armenian Christians 1 each in the south and the north & Total of 5 with the same five lines & wrong & correct & \emph{Judge strictness.} Judge 1 marked the Jews requirement missing, although the answer states it, and gave the line no requirement. Judge 2 accepts the answer. \\
+LAW-en-T1-004 & T1 & en & ``Without undue delay'' and in any event within 30 days (Consumer Rights Act 2015, s.28(3)) & Only the 30-day limit & wrong & unresolved & \emph{Reader error.} The pack holds both limbs. The answer is true but omits the first required point. \\
+LAW-en-T3-004 & T3 & en & Police force: higher maximum amount, \pounds 17,500,000; EU company: EUR 20 million or 4\% of turnover & Higher maximum amount ``not stated''; EU figure correct & wrong & wrong & \emph{Bundle not sufficient.} The \pounds 17.5 million sentence appears before its parent line ``The higher maximum amount is'', and the pack lacks the clause for an undertaking. \\
+\bottomrule
+\end{tabularx}
+\end{table*}

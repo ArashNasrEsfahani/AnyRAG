@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T2-005",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143104 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "1f01d3ca744709dd83d175fac6de714f9122288f09c384538a38c9f324d58c01",
+ "evidence_chars": 142960,
+ "prompt_chars": 143812,
+ "est_prompt_tokens": 31500,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.leroy_annual-report_2024.en",
+    "doc_chars": 771091,
+    "shown": 142898,
+    "ranges": 2,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

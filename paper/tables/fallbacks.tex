@@ -1,0 +1,25 @@
+% src: paper/analysis/fallback_table.md (fallback_table.py over test_run/runs/<pool>/LEX5B_{6000,15500}/runs_*.jsonl,
+%      GLM primary reader; record choice as report_test.load; fallback = selector status not ok/all_none).
+%      Totals match TEST_RESULTS.md sec. 4 (6,000: 19 fallbacks, 15 deadlines; 15,500: 17, 15). Recomputed 2026-10-06.
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+ & & \multicolumn{2}{c}{\lexb\textsubscript{6000}} & \multicolumn{2}{c}{\lexb\textsubscript{15500}} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Group & $n$ & Deadl. & All fb. & Deadl. & All fb. \\
+\midrule
+All questions & 96 & 15 & 19 & 15 & 17 \\
+\quad Persian & 48 & 11 & 13 & 6 & 6 \\
+\quad English & 48 & 4 & 6 & 9 & 11 \\
+\quad Answerable T1 & 30 & 2 & 3 & 1 & 3 \\
+\quad Answerable T2 & 30 & 5 & 5 & 3 & 3 \\
+\quad Answerable T3 & 30 & 7 & 10 & 9 & 9 \\
+\quad Unanswerable & 6 & 1 & 1 & 2 & 2 \\
+\bottomrule
+\end{tabular}
+\caption{Selector fallbacks of \lexb{} on test (GLM, one call per question and budget). \emph{Deadl.}: 3-second deadline; \emph{All fb.}: every fallback to the fusion-ordered pack. Valid all-\texttt{NONE} replies (6 at each budget) are not counted.}
+\label{tab:fallbacks}
+\end{table}

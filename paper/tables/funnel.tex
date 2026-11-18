@@ -1,0 +1,25 @@
+% src: S10_retrieval/RESULTS.md sec. 2.4 'Gold-bundle coverage' (top-40 list and delivered 6,000-character pack: BM25 66 and 45, dense 71 and 47, hybrid 72 and 57, HR 75 and 63, of 90);
+%      S7_analysis/RESULTS.md sec. 1 (packs: Lex-RAG 64, Lex-RAG without selection 53, GOLD 90 complete) and sec. 5 (Lex-RAG F2 top 40 = 40 + 35 = 75, also the candidates of Lex-RAG without selection);
+%      correct of 90 (machine judge 1): S10 (BM25 48, dense 53), S2a_packs/S8_factorial tables.md (hybrid 62..63, HR 69..71, Lex-RAG without selection 58..59, Lex-RAG 68..69, gold 83).
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+ & \multicolumn{2}{c}{Complete bundle} & Correct \\
+\cmidrule(lr){2-3}
+Pipeline & Top 40 & Pack & answers \\
+\midrule
+BM25 & 66 & 45 & 48 \\
+Dense & 71 & 47 & 53 \\
+\hybrid{} & 72 & 57 & 62--63 \\
+\hr{} & 75 & 63 & 69--71 \\
+Lex-RAG without selection & 75 & 53 & 58--59 \\
+\lexb{} & 75 & 64 & 68--69 \\
+Gold evidence (reference) & -- & 90 & 83 \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. Questions out of 90 whose top 40 candidates hold a complete gold evidence bundle, whose 6,000-character pack holds one, and that were answered correctly. The gold evidence row gives the first annotated bundle only, so its pack is complete by construction.}
+\label{tab:funnel}
+\end{table}

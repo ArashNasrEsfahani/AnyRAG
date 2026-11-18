@@ -1,0 +1,18 @@
+{
+ "arm": "DENSE_15500",
+ "question_id": "V2-test-BOOK-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 15741 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "d41d1c425bf609255868d82374041852ec9535208d018101e2af80bbf5d18eba",
+ "evidence_chars": 15499
+}

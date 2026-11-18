@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T1-005",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79251 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "38874af408a3bcd80cc5feb7e0b120e2e4326267c2177f310020a8cc8b79bb1d",
+ "evidence_chars": 79068,
+ "prompt_chars": 79782,
+ "est_prompt_tokens": 31557,
+ "build_ms": 0.8,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "doc_chars": 224893,
+    "shown": 79043,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

@@ -1,0 +1,22 @@
+% src: work/posthoc_2026-11/S2a_packs/results.json table: acc90 = bounds over unresolved judge cells (of 90); tokens = mean query-time LLM tokens per question (all calls, thousands). Lex-RAG at 6,000 and 15,500 characters are frozen cells; Lex-RAG at 3,000, 10,000, 24,000 from work/posthoc_2026-11/S8_factorial/results.json acc_j1, token position approximate (see script)
+pipe;cls;budget;mid;lo;hi;tok;calls
+HYBRID;1;3000;50.00;49;51;1.239;1.0
+HYBRID;1;6000;62.50;62;63;2.216;1.0
+HYBRID;1;10000;63.50;63;64;3.482;1.0
+HYBRID;1;15500;68.00;68;68;5.236;1.0
+HYBRID;1;24000;72.00;72;72;7.925;1.0
+HR;2;3000;56.00;56;56;1.237;1.0
+HR;2;6000;70.00;69;71;2.237;1.0
+HR;2;10000;70.00;70;70;3.527;1.0
+HR;2;15500;69.50;69;70;5.287;1.0
+HR;2;24000;66.00;66;66;7.985;1.0
+FUSION;5;3000;43.50;43;44;1.190;1.0
+FUSION;5;6000;58.50;58;59;2.150;1.0
+FUSION;5;10000;66.00;66;66;3.426;1.0
+FUSION;5;15500;65.00;65;65;5.183;1.0
+FUSION;5;24000;70.00;70;70;7.865;1.0
+LEX5B;3;3000;59.00;59;59;3.551;2.0
+LEX5B;3;6000;68.50;68;69;4.511;2.0
+LEX5B;3;10000;69.50;69;70;5.787;2.0
+LEX5B;3;15500;67.00;67;67;7.542;2.0
+LEX5B;3;24000;72.00;72;72;10.227;2.0

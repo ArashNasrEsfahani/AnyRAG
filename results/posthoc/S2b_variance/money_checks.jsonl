@@ -1,0 +1,107 @@
+{"at": "2026-11-10T16:39:41", "tag": "exp1 answer batch 0", "limit_remaining": 9.573335651, "stream_spent": 0.0, "ok": true}
+{"at": "2026-11-10T16:40:34", "tag": "exp1 answer batch 0", "limit_remaining": 9.532243571, "stream_spent": 0.01720118, "ok": true}
+{"at": "2026-11-10T16:40:52", "tag": "exp1 answer batch 48", "limit_remaining": 9.514545171, "stream_spent": 0.03359033, "ok": true}
+{"at": "2026-11-10T16:41:09", "tag": "exp1 answer batch 96", "limit_remaining": 9.495655191, "stream_spent": 0.05082906, "ok": true}
+{"at": "2026-11-10T16:41:26", "tag": "exp1 answer batch 144", "limit_remaining": 9.475604301, "stream_spent": 0.06623542, "ok": true}
+{"at": "2026-11-10T16:41:45", "tag": "exp1 answer batch 192", "limit_remaining": 9.448987361, "stream_spent": 0.07980202, "ok": true}
+{"at": "2026-11-10T16:41:59", "tag": "exp5 batch 0", "limit_remaining": 9.413758871, "stream_spent": 0.09495606, "ok": true}
+{"at": "2026-11-10T16:42:01", "tag": "exp1 answer batch 240", "limit_remaining": 9.413758871, "stream_spent": 0.09614614, "ok": true}
+{"at": "2026-11-10T16:42:18", "tag": "exp1 answer batch 288", "limit_remaining": 9.384517651, "stream_spent": 0.11545423, "ok": true}
+{"at": "2026-11-10T16:42:32", "tag": "exp5 batch 0", "limit_remaining": 9.355521431, "stream_spent": 0.12934571, "ok": true}
+{"at": "2026-11-10T16:42:35", "tag": "exp3 batch 0", "limit_remaining": 9.355521431, "stream_spent": 0.13242813, "ok": true}
+{"at": "2026-11-10T16:42:36", "tag": "exp1 answer batch 336", "limit_remaining": 9.323380821, "stream_spent": 0.13242813, "ok": true}
+{"at": "2026-11-10T16:42:53", "tag": "exp1 answer batch 384", "limit_remaining": 9.323380821, "stream_spent": 0.14751201, "ok": true}
+{"at": "2026-11-10T16:43:08", "tag": "exp3 batch 0", "limit_remaining": 9.297428461, "stream_spent": 0.16340744, "ok": true}
+{"at": "2026-11-10T16:43:09", "tag": "exp1 answer batch 432", "limit_remaining": 9.297428461, "stream_spent": 0.16373216, "ok": true}
+{"at": "2026-11-10T16:43:24", "tag": "exp3 batch 0", "limit_remaining": 9.280445569, "stream_spent": 0.18007573, "ok": true}
+{"at": "2026-11-10T16:43:28", "tag": "exp1 answer batch 480", "limit_remaining": 9.254680743, "stream_spent": 0.18361676, "ok": true}
+{"at": "2026-11-10T16:43:48", "tag": "exp1 answer batch 528", "limit_remaining": 9.225139722, "stream_spent": 0.19946249, "ok": true}
+{"at": "2026-11-10T16:44:07", "tag": "exp1 answer batch 576", "limit_remaining": 9.203292421, "stream_spent": 0.21453272, "ok": true}
+{"at": "2026-11-10T16:44:07", "tag": "exp4 batch 0", "limit_remaining": 9.203292421, "stream_spent": 0.21453272, "ok": true}
+{"at": "2026-11-10T16:44:25", "tag": "exp1 answer batch 624", "limit_remaining": 9.195011027, "stream_spent": 0.25793105, "ok": true}
+{"at": "2026-11-10T16:44:26", "tag": "exp5 batch 0", "limit_remaining": 9.143555311, "stream_spent": 0.25793105, "ok": true}
+{"at": "2026-11-10T16:44:35", "tag": "exp5 batch 24", "limit_remaining": 9.143555311, "stream_spent": 0.27892834, "ok": true}
+{"at": "2026-11-10T16:44:46", "tag": "exp5 batch 48", "limit_remaining": 9.092345627, "stream_spent": 0.30446534, "ok": true}
+{"at": "2026-11-10T16:44:46", "tag": "exp1 answer batch 672", "limit_remaining": 9.092345627, "stream_spent": 0.30446534, "ok": true}
+{"at": "2026-11-10T16:45:01", "tag": "exp5 batch 72", "limit_remaining": 9.056117461, "stream_spent": 0.34230261, "ok": true}
+{"at": "2026-11-10T16:45:05", "tag": "exp1 answer batch 720", "limit_remaining": 9.056117461, "stream_spent": 0.35078298, "ok": true}
+{"at": "2026-11-10T16:45:12", "tag": "exp5 batch 96", "limit_remaining": 9.003220253, "stream_spent": 0.36874875, "ok": true}
+{"at": "2026-11-10T16:45:29", "tag": "exp1 answer batch 768", "limit_remaining": 8.967279592, "stream_spent": 0.39489122, "ok": true}
+{"at": "2026-11-10T16:45:30", "tag": "exp5 batch 120", "limit_remaining": 8.967279592, "stream_spent": 0.39517989, "ok": true}
+{"at": "2026-11-10T16:45:44", "tag": "exp5 batch 144", "limit_remaining": 8.918261722, "stream_spent": 0.43401148, "ok": true}
+{"at": "2026-11-10T16:45:47", "tag": "exp1 answer batch 816", "limit_remaining": 8.918261722, "stream_spent": 0.43681614, "ok": true}
+{"at": "2026-11-10T16:45:56", "tag": "exp5 batch 168", "limit_remaining": 8.906997572, "stream_spent": 0.45465793, "ok": true}
+{"at": "2026-11-10T16:46:08", "tag": "exp3 batch 0", "limit_remaining": 8.866415837, "stream_spent": 0.48124034, "ok": true}
+{"at": "2026-11-10T16:46:08", "tag": "exp1 answer batch 864", "limit_remaining": 8.866415837, "stream_spent": 0.48124034, "ok": true}
+{"at": "2026-11-10T16:46:27", "tag": "exp1 answer batch 912", "limit_remaining": 8.845344845, "stream_spent": 0.53347829, "ok": true}
+{"at": "2026-11-10T16:46:41", "tag": "exp3 batch 24", "limit_remaining": 8.772610105, "stream_spent": 0.55976645, "ok": true}
+{"at": "2026-11-10T16:46:48", "tag": "exp1 answer batch 960", "limit_remaining": 8.772610105, "stream_spent": 0.57743276, "ok": true}
+{"at": "2026-11-10T16:47:03", "tag": "exp1 answer batch 1008", "limit_remaining": 8.772610105, "stream_spent": 0.62278861, "ok": true}
+{"at": "2026-11-10T16:47:13", "tag": "exp3 batch 48", "limit_remaining": 8.59816971, "stream_spent": 0.64430214, "ok": true}
+{"at": "2026-11-10T16:47:23", "tag": "exp1 answer batch 1056", "limit_remaining": 8.59816971, "stream_spent": 0.67378887, "ok": true}
+{"at": "2026-11-10T16:47:42", "tag": "exp1 answer batch 1104", "limit_remaining": 8.473194739, "stream_spent": 0.72660098, "ok": true}
+{"at": "2026-11-10T16:47:44", "tag": "exp3 batch 72", "limit_remaining": 8.473194739, "stream_spent": 0.7279535, "ok": true}
+{"at": "2026-11-10T16:48:00", "tag": "exp1 answer batch 1152", "limit_remaining": 8.317182191, "stream_spent": 0.75986829, "ok": true}
+{"at": "2026-11-10T16:48:13", "tag": "exp4 batch 0", "limit_remaining": 8.266790168, "stream_spent": 0.78038054, "ok": true}
+{"at": "2026-11-10T16:48:17", "tag": "exp1 answer batch 1200", "limit_remaining": 8.266790168, "stream_spent": 0.78169523, "ok": true}
+{"at": "2026-11-10T16:48:34", "tag": "exp1 answer batch 1248", "limit_remaining": 8.197921862, "stream_spent": 0.80281791, "ok": true}
+{"at": "2026-11-10T16:48:51", "tag": "exp1 answer batch 1296", "limit_remaining": 8.135086195, "stream_spent": 0.81836189, "ok": true}
+{"at": "2026-11-10T16:49:08", "tag": "exp1 answer batch 1344", "limit_remaining": 8.070554298, "stream_spent": 0.83965688, "ok": true}
+{"at": "2026-11-10T16:49:30", "tag": "exp1 answer batch 1392", "limit_remaining": 7.917565631, "stream_spent": 0.87324948, "ok": true}
+{"at": "2026-11-10T16:49:49", "tag": "exp1 answer batch 1440", "limit_remaining": 7.86050988, "stream_spent": 0.90586664, "ok": true}
+{"at": "2026-11-10T16:50:07", "tag": "exp1 answer batch 1488", "limit_remaining": 7.806862412999999, "stream_spent": 0.93827659, "ok": true}
+{"at": "2026-11-10T16:50:07", "tag": "judge round", "limit_remaining": 7.806862412999999, "stream_spent": 0.93827659, "ok": true}
+{"at": "2026-11-10T16:53:02", "tag": "judge round", "limit_remaining": 7.348405699000001, "stream_spent": 0.95528331, "ok": true}
+{"at": "2026-11-10T16:53:27", "tag": "exp2 batch 0", "limit_remaining": 7.314066005999999, "stream_spent": 0.95568736, "ok": true}
+{"at": "2026-11-10T16:53:48", "tag": "exp2 batch 0", "limit_remaining": 7.276565223, "stream_spent": 0.9583387, "ok": true}
+{"at": "2026-11-10T16:54:14", "tag": "exp2 batch 24", "limit_remaining": 7.252018903, "stream_spent": 0.9704822, "ok": true}
+{"at": "2026-11-10T16:54:44", "tag": "exp2 batch 48", "limit_remaining": 7.219072832, "stream_spent": 0.98399572, "ok": true}
+{"at": "2026-11-10T16:55:12", "tag": "exp2 batch 72", "limit_remaining": 7.175600214999999, "stream_spent": 0.99617775, "ok": true}
+{"at": "2026-11-10T16:55:46", "tag": "exp2 batch 96", "limit_remaining": 7.105329524, "stream_spent": 1.00792905, "ok": true}
+{"at": "2026-11-10T16:56:10", "tag": "exp2 batch 120", "limit_remaining": 7.092159366000001, "stream_spent": 1.01356221, "ok": true}
+{"at": "2026-11-10T16:56:17", "tag": "judge round", "limit_remaining": 7.082661878, "stream_spent": 1.01508161, "ok": true}
+{"at": "2026-11-10T16:56:36", "tag": "exp6 batch 0", "limit_remaining": 7.064985587000001, "stream_spent": 1.02036641, "ok": true}
+{"at": "2026-11-10T16:56:39", "tag": "exp2 batch 144", "limit_remaining": 7.064985587000001, "stream_spent": 1.02073847, "ok": true}
+{"at": "2026-11-10T16:57:05", "tag": "exp2 batch 168", "limit_remaining": 7.023400820000001, "stream_spent": 1.03054364, "ok": true}
+{"at": "2026-11-10T16:57:29", "tag": "judge round", "limit_remaining": 6.996823625999999, "stream_spent": 1.03517501, "ok": true}
+{"at": "2026-11-10T16:58:54", "tag": "judge round", "limit_remaining": 6.779529012999999, "stream_spent": 1.04362082, "ok": true}
+{"at": "2026-11-10T16:59:36", "tag": "judge round", "limit_remaining": 6.625179891, "stream_spent": 1.04920277, "ok": true}
+{"at": "2026-11-10T16:59:55", "tag": "judge round", "limit_remaining": 6.625179891, "stream_spent": 1.05123039, "ok": true}
+{"at": "2026-11-10T17:00:48", "tag": "judge round", "limit_remaining": 6.489151005, "stream_spent": 1.05698147, "ok": true}
+{"at": "2026-11-10T17:01:08", "tag": "judge round", "limit_remaining": 6.434356513999999, "stream_spent": 1.05854589, "ok": true}
+{"at": "2026-11-10T17:02:21", "tag": "judge round", "limit_remaining": 6.284668084, "stream_spent": 1.06672447, "ok": true}
+{"at": "2026-11-10T17:03:08", "tag": "judge round", "limit_remaining": 6.166761810000001, "stream_spent": 1.06824496, "ok": true}
+{"at": "2026-11-10T17:05:20", "tag": "judge round", "limit_remaining": 5.8679453630000005, "stream_spent": 1.07630672, "ok": true}
+{"at": "2026-11-10T17:05:31", "tag": "judge round", "limit_remaining": 5.8332102379999995, "stream_spent": 1.07664793, "ok": true}
+{"at": "2026-11-10T17:07:46", "tag": "judge round", "limit_remaining": 5.596712524999999, "stream_spent": 1.08437304, "ok": true}
+{"at": "2026-11-10T17:09:47", "tag": "judge round", "limit_remaining": 5.554923865999999, "stream_spent": 1.09241034, "ok": true}
+{"at": "2026-11-10T17:11:42", "tag": "judge round", "limit_remaining": 5.537295832, "stream_spent": 1.0995003, "ok": true}
+{"at": "2026-11-10T17:12:05", "tag": "judge round", "limit_remaining": 5.53528174, "stream_spent": 1.09997475, "ok": true}
+{"at": "2026-11-10T17:13:58", "tag": "judge round", "limit_remaining": 5.381517141, "stream_spent": 1.10660635, "ok": true}
+{"at": "2026-11-10T17:15:58", "tag": "judge round", "limit_remaining": 5.300301235999999, "stream_spent": 1.11448315, "ok": true}
+{"at": "2026-11-10T17:17:28", "tag": "exp6 batch 0", "limit_remaining": 5.2929986929999995, "stream_spent": 1.11981494, "ok": true}
+{"at": "2026-11-10T17:18:06", "tag": "judge round", "limit_remaining": 5.274152453999999, "stream_spent": 1.14574444, "ok": true}
+{"at": "2026-11-10T17:18:09", "tag": "exp6 batch 24", "limit_remaining": 5.2641116409999995, "stream_spent": 1.14698309, "ok": true}
+{"at": "2026-11-10T17:18:48", "tag": "exp6 batch 48", "limit_remaining": 5.237612641, "stream_spent": 1.17851805, "ok": true}
+{"at": "2026-11-10T17:19:37", "tag": "exp6 batch 72", "limit_remaining": 5.207722435999999, "stream_spent": 1.20760808, "ok": true}
+{"at": "2026-11-10T17:20:06", "tag": "judge round", "limit_remaining": 5.187086300000001, "stream_spent": 1.22480171, "ok": true}
+{"at": "2026-11-10T17:21:05", "tag": "judge round", "limit_remaining": 5.1716716819999995, "stream_spent": 1.23187003, "ok": true}
+{"at": "2026-11-10T17:22:52", "tag": "judge round", "limit_remaining": 5.163795479999999, "stream_spent": 1.2361104, "ok": true}
+{"at": "2026-11-10T17:23:46", "tag": "judge round", "limit_remaining": 5.158934286999999, "stream_spent": 1.24043087, "ok": true}
+{"at": "2026-11-10T17:25:10", "tag": "judge round", "limit_remaining": 5.151043701000001, "stream_spent": 1.24529287, "ok": true}
+{"at": "2026-11-10T17:26:10", "tag": "judge round", "limit_remaining": 5.145845080999999, "stream_spent": 1.25023881, "ok": true}
+{"at": "2026-11-10T17:27:06", "tag": "judge round", "limit_remaining": 5.139709076000001, "stream_spent": 1.25376522, "ok": true}
+{"at": "2026-11-10T17:29:21", "tag": "judge round", "limit_remaining": 5.128106857000001, "stream_spent": 1.26161182, "ok": true}
+{"at": "2026-11-10T17:31:30", "tag": "judge round", "limit_remaining": 5.1216176319999995, "stream_spent": 1.26880292, "ok": true}
+{"at": "2026-11-10T17:32:06", "tag": "judge round", "limit_remaining": 5.118347919, "stream_spent": 1.27121024, "ok": true}
+{"at": "2026-11-10T17:33:38", "tag": "judge round", "limit_remaining": 5.110520053, "stream_spent": 1.27594377, "ok": true}
+{"at": "2026-11-10T17:35:02", "tag": "judge round", "limit_remaining": 5.106766963, "stream_spent": 1.28164983, "ok": true}
+{"at": "2026-11-10T17:35:49", "tag": "judge round", "limit_remaining": 5.103576193, "stream_spent": 1.28319649, "ok": true}
+{"at": "2026-11-10T17:37:22", "tag": "judge round", "limit_remaining": 5.094928495, "stream_spent": 1.2899574, "ok": true}
+{"at": "2026-11-10T17:39:12", "tag": "judge round", "limit_remaining": 5.088385146, "stream_spent": 1.2970186, "ok": true}
+{"at": "2026-11-10T17:40:52", "tag": "judge round", "limit_remaining": 5.081160690999999, "stream_spent": 1.30389975, "ok": true}
+{"at": "2026-11-10T17:42:12", "tag": "judge round", "limit_remaining": 5.075228643999999, "stream_spent": 1.31023856, "ok": true}
+{"at": "2026-11-10T17:43:38", "tag": "judge round", "limit_remaining": 5.069703671999999, "stream_spent": 1.31565467, "ok": true}
+{"at": "2026-11-10T17:45:14", "tag": "judge round", "limit_remaining": 5.064803754, "stream_spent": 1.31994272, "ok": true}
+{"at": "2026-11-10T17:46:39", "tag": "judge round", "limit_remaining": 5.058287526999999, "stream_spent": 1.32311316, "ok": true}
+{"at": "2026-11-10T17:47:23", "tag": "judge round", "limit_remaining": 5.05717462, "stream_spent": 1.32387021, "ok": true}

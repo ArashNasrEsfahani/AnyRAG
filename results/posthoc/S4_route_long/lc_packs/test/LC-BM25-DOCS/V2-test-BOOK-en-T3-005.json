@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T3-005",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143120 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "564906610180aba24bbdcbd7e7590be0b8f2279919edcb748123d7a4f0b33448",
+ "evidence_chars": 142899,
+ "prompt_chars": 143943,
+ "est_prompt_tokens": 31528,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "score": 3.156
+   },
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "score": 2.443
+   },
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "score": 2.334
+   },
+   {
+    "doc": "K.gutenberg-4239_malthus_essay-on-population.en",
+    "score": 1.836
+   },
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "score": 1.814
+   },
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "score": 1.505
+   },
+   {
+    "doc": "K.gutenberg-14474_faraday_chemical-history-of-a-candle.en",
+    "score": 1.333
+   },
+   {
+    "doc": "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "score": 1.18
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "doc_chars": 305911,
+    "shown": 142878,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

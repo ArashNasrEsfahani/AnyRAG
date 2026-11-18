@@ -1,0 +1,48 @@
+{
+ "judge": "openai/gpt-oss-120b",
+ "provider_pin": "deepinfra/bf16",
+ "routing": {
+  "order": [
+   "deepinfra/bf16"
+  ],
+  "allow_fallbacks": false,
+  "require_parameters": true
+ },
+ "sent_params": [
+  "seed",
+  "temperature",
+  "top_p"
+ ],
+ "generation": {
+  "temperature": 0,
+  "top_p": 1.0,
+  "seed": 42
+ },
+ "probe_calls": [
+  {
+   "expected": true,
+   "parsed": true,
+   "reason": "Exact number and unit match gold answer",
+   "provider": "DeepInfra",
+   "provider_match": true,
+   "prompt_tokens": 533,
+   "completion_tokens": 34,
+   "cost_usd": 2.5501e-05,
+   "wall_ms": 1973
+  },
+  {
+   "expected": false,
+   "parsed": false,
+   "reason": "Incorrect number for 2031; contradicts gold answer",
+   "provider": "DeepInfra",
+   "provider_match": true,
+   "prompt_tokens": 533,
+   "completion_tokens": 65,
+   "cost_usd": 3.0771e-05,
+   "wall_ms": 1592
+  }
+ ],
+ "probe_cost_usd": 5.6e-05,
+ "pin_confirmed": true,
+ "note": "synthetic fictional-company text only; no dev/test question or answer was sent"
+}

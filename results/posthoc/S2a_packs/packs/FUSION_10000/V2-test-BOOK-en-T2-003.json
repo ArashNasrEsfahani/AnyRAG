@@ -1,0 +1,18 @@
+{
+ "arm": "FUSION_10000",
+ "question_id": "V2-test-BOOK-en-T2-003",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 9530 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "acdf9f72ade9cbf6327d62c6ac1d5a1f3c508e603fe6619b41ededb343c91c17",
+ "evidence_chars": 9380
+}

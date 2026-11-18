@@ -1,0 +1,72 @@
+% src: code-derived schematic, no estimated quantities. RAG-Paper-upgrades/ragbench: retrieval/hybrid.py,
+%      approaches/hybrid.py (RRF depth 40; rerank: 50 fused candidates rescored, top 40 packed), approaches/lex5b/approach.py
+%      (depth 40, top 24 shown, view 'literal', 3 s deadline, fallback = fusion order), approaches/lex5/bundles.py (exact
+%      bundle packing + fill), approaches/lex5b/views.py, approaches/setr/approach.py (top 20, PASSAGE_CAP 1500, 8 s,
+%      fallback = HYBRID order); test_freeze/PROTOCOL.md sec. 2 and 9 (readers, judge, human review GLM 6,000, 30 q).
+\begin{figure*}[tp]
+\centering
+\begin{tikzpicture}[
+  x=1cm, y=1cm,
+  box/.style={stage=#1, text width=2.25cm, minimum height=1.3cm},
+  neutral/.style={draw=cAxis!70, line width=0.8pt, rounded corners=4pt, fill=black!4, align=center, font=\footnotesize,
+    inner sep=3pt, text width=2.25cm, minimum height=1.3cm, text=cInk},
+  ghost/.style={draw=cAxis!45, line width=0.8pt, dashed, rounded corners=4pt, align=center, font=\footnotesize,
+    inner sep=3pt, text width=2.25cm, minimum height=1.3cm, text=cAxis},
+  head/.style={font=\small\bfseries, text=cInk, anchor=south, text width=2.6cm, align=center},
+  tag/.style={draw=#1, fill=white, line width=0.8pt, rounded corners=2pt, font=\scriptsize\bfseries, text=#1,
+    inner sep=1.6pt},
+]
+\def\cA{3.05}\def\cB{5.85}\def\cC{8.65}\def\cD{11.50}
+% ---------------------------------------------------------------- column headers
+\node[head] at (\cA,1.12) {Candidates};
+\node[head] at (\cB,1.12) {System-specific step};
+\node[head] at (\cC,1.12) {Evidence pack ($\le B$)};
+\node[head] at (\cD,1.12) {Reader and scoring};
+\draw[cGrid, line width=0.6pt] (0.1,1.06) -- (12.70,1.06);
+% ---------------------------------------------------------------- lane labels
+\foreach \y/\c/\n/\s in {0/cHyb/\hybrid/no extra call, -2.9/cHR/\hr/cross-encoder, -5.8/cLex/\lexb/1 LLM call, -8.7/cSetR/\setr/1 LLM call}{
+  \node[lanelabel=\c] at (1.8,\y+0.14) {\n};
+  \node[font=\footnotesize, text=cAxis, anchor=east] at (1.8,\y-0.26) {\s};
+}
+% ---------------------------------------------------------------- candidates
+\node[neutral] (r1) at (\cA,0)     {BM25 top 40 + dense top 40, rank fusion (RRF)};
+\node[neutral] (r2) at (\cA,-2.9) {same retrieval; up to 50 fused candidates};
+\node[box=cLex] (r3) at (\cA,-5.8) {BM25 + dense + learned sparse; score fusion, 40 evidence units};
+\node[neutral] (r4) at (\cA,-8.7) {\hybrid{} candidates: top 20 chunks, shown whole};
+% ---------------------------------------------------------------- system-specific step
+\node[ghost] (s1) at (\cB,0) {no selection step};
+\node[box=cHR] (s2) at (\cB,-2.9) {cross-encoder rescores the 50; keeps the top 40};
+\node[box=cLex] (s3) at (\cB,-5.8) {reads excerpts of the top 24 of the 40 evidence units; names bundles};
+\node[box=cSetR] (s4) at (\cB,-8.7) {SetR prompt with chain of thought selects a set};
+\node[tag=cHR]   at (s2.north west) [xshift=0.42cm, anchor=south, yshift=-0.5pt] {CE};
+\node[tag=cLex]  at (s3.north west) [xshift=0.42cm, anchor=south, yshift=-0.5pt] {LLM};
+\node[tag=cSetR] at (s4.north west) [xshift=0.42cm, anchor=south, yshift=-0.5pt] {LLM};
+\node[tag=cLex]  at (s3.north east) [xshift=-0.62cm, anchor=south, yshift=-0.5pt] {3\,s limit};
+\node[tag=cSetR] at (s4.north east) [xshift=-0.62cm, anchor=south, yshift=-0.5pt] {8\,s limit};
+% ---------------------------------------------------------------- packing
+\node[neutral] (p1) at (\cC,0)     {ranked chunks, fused order; last chunk clipped};
+\node[neutral] (p2) at (\cC,-2.9) {ranked chunks, reranked order; last chunk clipped};
+\node[box=cLex] (p3) at (\cC,-5.8) {exact bundle packing of whole units, then fill; no clipping};
+\node[neutral] (p4) at (\cC,-8.7) {selected set first, then \hybrid{} fill; last chunk clipped};
+% ---------------------------------------------------------------- flows
+\foreach \i/\c in {1/cHyb,2/cHR,3/cLex,4/cSetR}{
+  \draw[flow=\c] (r\i) -- (s\i);
+  \draw[flow=\c] (s\i) -- (p\i);
+}
+% fallbacks: a missed time limit or an unusable reply skips the selection
+\draw[fallback=cLex] (r3.south) -- ++(0,-0.17) -| node[pos=0.25, fill=white, inner sep=1pt, font=\footnotesize, text=cLex] {fallback: fusion order} (p3.south);
+\draw[fallback=cSetR] (r4.south) -- ++(0,-0.17) -| node[pos=0.25, fill=white, inner sep=1pt, font=\footnotesize, text=cSetR] {fallback: \hybrid{} order} (p4.south);
+% ---------------------------------------------------------------- shared reader and scoring
+\node[shared, text width=2.2cm, minimum height=2.6cm] (reader) at (\cD,-1.45)
+  {\textbf{Reader}\\[1pt] one answer prompt; GLM-5.3-flash (primary); 5 more readers answer the same packs};
+\node[shared, text width=2.2cm, minimum height=2.6cm] (judge) at (\cD,-7.25)
+  {\textbf{Scoring}\\[1pt] strict LLM judge on every answer; human review: GLM, 6,000 chars, 30 selected questions};
+\coordinate (bus) at (10.12,0);
+\foreach \i in {1,2,3,4}{\draw[line width=1.1pt, cAxis] (p\i.east) -- (p\i.east -| bus);}
+\draw[line width=1.1pt, cAxis] (p1.east -| bus) -- (p4.east -| bus);
+\draw[flow] (bus |- reader.west) -- (reader.west);
+\draw[flow] (reader) -- (judge);
+\end{tikzpicture}
+\caption{The four pipelines. All share chunking, an answer prompt and a maximum evidence budget $B$, and coloured boxes mark steps specific to one pipeline. The two language-model selectors fall back on a timeout or an unusable reply. Five more readers answer the packs of the primary run. The selector of the proposed pipeline has a deadline of 3 seconds and that of the set selector of 8 seconds.}
+\label{fig:pipelines}
+\end{figure*}

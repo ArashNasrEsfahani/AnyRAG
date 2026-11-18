@@ -1,0 +1,18 @@
+{
+ "arm": "FUSION_10000",
+ "question_id": "V2-test-BOOK-fa-T1-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 9870 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "bfbb293cb3c1e7282261e9cd606a5bdc5826dcd2ce721b68928c461c6524ddd4",
+ "evidence_chars": 9784
+}

@@ -1,0 +1,26 @@
+% src: work/datasets_v2/test_freeze/PROTOCOL.md (sections 1-10); lex5b/LEX5B.md (token amendment);
+%      TEST_RESULTS_HUMAN_SYM.md (symmetric review: 30 questions x 4 pipelines = 120 cells). Same facts as the R3 protocol prose.
+\begin{table}[tbp]
+\caption{Rules fixed before the test}
+\label{tab:protocol}
+\centering
+\small
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\columnwidth}{@{}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Element & Rule \\
+\midrule
+Development & 60 dev questions only; test files never read by the implementing agents (Claude Opus 5.5) \\
+Freeze & code commit in the author's repository, manifest of input hashes, pipelines, readers, decision rules; runner refuses any other commit (re-fixed once, at the pre-test re-freeze) \\
+Test run & 96 questions $\times$ 8 configurations of pipeline and budget, each run once; an answered question is never re-run \\
+\midrule
+Accuracy gate & \lexb\textsubscript{6000} $\ge$ +5 of 90 against \emph{each} of \hybrid\textsubscript{6000} and \hr\textsubscript{6000} (scaled from +3/54 on dev) \\
+Resource gate & \lexb\textsubscript{6000} query-time LLM tokens (selector + reader, reasoning included) $\le 2.5\times$ \hybrid\textsubscript{6000} (relaxed from $1.5\times$ during development) \\
+Superiority & two-sided exact sign tests on discordant pairs, Holm-corrected over the two primary comparisons; paired bootstrap intervals \\
+Descriptive & \setr, budget effects, other readers, language / genre / tier subgroups \\
+\midrule
+Unresolved judge cells & reported as ranges $a$..$b$ that cover every possible verdict; sign-test $p$ as the range over every assignment; intervals clustered by the 20 groups of questions that share a source (all added after the freeze) \\
+Human review & after the judge scores, blinded to the method: all four 6,000-character pipelines on the 30 questions with different judge verdicts (120 answers) \\
+\bottomrule
+\end{tabularx}
+\end{table}

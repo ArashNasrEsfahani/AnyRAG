@@ -1,0 +1,4 @@
+x;stage;holm_lex_vs_hybrid;lab;netlo;nethi
+1;machine;0.2369;.237--.665;5;7
+2;asym_human_old;0.0430;.043;8;8
+3;sym_human_new;0.3594;.359;5;5

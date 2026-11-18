@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-en-T3-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143100 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "d6dff9ad42a56aa61496f45962b39062fd5d0e4b52e3212305a960067958c2c3",
+ "evidence_chars": 142899,
+ "prompt_chars": 143923,
+ "est_prompt_tokens": 31524,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "L.eurlex-32022R2065_dsa.en",
+    "score": 3.317
+   },
+   {
+    "doc": "L.eurlex-32022R1925_dma.en",
+    "score": 2.742
+   },
+   {
+    "doc": "L.ukpga-2015-15_consumer-rights-act.en",
+    "score": 2.706
+   },
+   {
+    "doc": "L.ukpga-2018-12_data-protection-act.en",
+    "score": 2.387
+   },
+   {
+    "doc": "L.eurlex-32023R2854_data-act.en",
+    "score": 1.201
+   },
+   {
+    "doc": "L.eurlex-32022R0868_data-governance-act.en",
+    "score": 1.174
+   },
+   {
+    "doc": "L.eurlex-32024R1689_ai-act.en",
+    "score": 1.137
+   },
+   {
+    "doc": "L.eurlex-32016R0679_gdpr.en",
+    "score": 0.977
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.eurlex-32022R2065_dsa.en",
+    "doc_chars": 414799,
+    "shown": 142840,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

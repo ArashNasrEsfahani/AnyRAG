@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-BOOK-fa-T2-004",
+ "variant": "HYBRID",
+ "setting": "fa-fa",
+ "q_lang": "fa",
+ "rid": "b3675a35fa9da54baccb",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6131 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "purpose": "answer",
+ "messages_sha256": "2947f5c6cd40337cb09bbf42dbf9460fa3d256ffb12e46e8d5c7ab7addbaabc0",
+ "evidence_chars": 6000,
+ "at": "2026-10-04T19:11:36"
+}

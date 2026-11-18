@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 3774 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "13e3ffff0e6d928c183eeb77acd7fca074336f261b313d7d9564006cf76fcae5",
+ "evidence_chars": 3677,
+ "prompt_chars": 4305,
+ "est_prompt_tokens": 1703,
+ "build_ms": 0.1,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "C.cafebazaar_annual-report_1401.fa",
+    "doc_chars": 3652,
+    "shown": 3652,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

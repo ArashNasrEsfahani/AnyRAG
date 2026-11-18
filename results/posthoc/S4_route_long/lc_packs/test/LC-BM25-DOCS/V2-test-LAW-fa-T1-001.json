@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T1-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79276 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "d9c0964715390cf43de3b45f7a2c1e7314bc9ff9e049a5ee4f034b5a129b5637",
+ "evidence_chars": 79100,
+ "prompt_chars": 79807,
+ "est_prompt_tokens": 31567,
+ "build_ms": 690.8,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "score": 5.465
+   },
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "score": 4.066
+   },
+   {
+    "doc": "L.wikisource_civil-service-employment-1345.fa",
+    "score": 3.153
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "score": 2.667
+   },
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "score": 2.609
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "score": 2.221
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "score": 1.925
+   },
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "score": 1.696
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "doc_chars": 217746,
+    "shown": 79080,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

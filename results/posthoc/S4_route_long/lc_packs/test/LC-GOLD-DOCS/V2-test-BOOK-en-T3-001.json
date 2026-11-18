@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142731 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "73b93bf07ecbef65f28e88c9ae195acad3437add3f6faacc3d203827b6112e9a",
+ "evidence_chars": 142493,
+ "prompt_chars": 143554,
+ "est_prompt_tokens": 31443,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en",
+    "doc_chars": 932548,
+    "shown": 70923,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "doc_chars": 1257331,
+    "shown": 71450,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

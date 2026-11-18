@@ -1,0 +1,1567 @@
+{
+ "tokens_per_char_glm_answer_median": {
+  "fa": 0.3955432592358438,
+  "en": 0.2190332490988961
+ },
+ "n_calls": {
+  "fa": 384,
+  "en": 384
+ },
+ "tokens_per_char_glm_answer_p90": {
+  "fa": 0.419223212936376,
+  "en": 0.25820460326322975
+ },
+ "fa_over_en": 1.805859433958592,
+ "pools": {
+  "RPT-fa": {
+   "docs": 97,
+   "chars": 4760118,
+   "est_tokens": 1882833,
+   "doc_chars_min": 2584,
+   "doc_chars_median": 26507,
+   "doc_chars_max": 376360,
+   "doc_est_tokens_max": 148867
+  },
+  "RPT-en": {
+   "docs": 15,
+   "chars": 16638928,
+   "est_tokens": 3644478,
+   "doc_chars_min": 501838,
+   "doc_chars_median": 1013327,
+   "doc_chars_max": 1994276,
+   "doc_est_tokens_max": 436813
+  },
+  "BOOK-fa": {
+   "docs": 9,
+   "chars": 5695311,
+   "est_tokens": 2252742,
+   "doc_chars_min": 36740,
+   "doc_chars_median": 485161,
+   "doc_chars_max": 1546028,
+   "doc_est_tokens_max": 611521
+  },
+  "BOOK-en": {
+   "docs": 11,
+   "chars": 6263617,
+   "est_tokens": 1371940,
+   "doc_chars_min": 125209,
+   "doc_chars_median": 405298,
+   "doc_chars_max": 1257331,
+   "doc_est_tokens_max": 275397
+  },
+  "LAW-fa": {
+   "docs": 13,
+   "chars": 1183142,
+   "est_tokens": 467984,
+   "doc_chars_min": 15381,
+   "doc_chars_median": 71158,
+   "doc_chars_max": 224893,
+   "doc_est_tokens_max": 88955
+  },
+  "LAW-en": {
+   "docs": 10,
+   "chars": 3523474,
+   "est_tokens": 771758,
+   "doc_chars_min": 36047,
+   "doc_chars_median": 321199.0,
+   "doc_chars_max": 852926,
+   "doc_est_tokens_max": 186819
+  }
+ },
+ "questions": {
+  "V2-test-RPT-fa-T1-001": {
+   "pool": "RPT-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1403.fa::p223_t2#table.0"
+   ],
+   "units_missing": [],
+   "gold_chars": 151042,
+   "gold_est_tokens": 59744
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "pool": "RPT-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1403.fa::p97_b6"
+   ],
+   "units_missing": [],
+   "gold_chars": 151042,
+   "gold_est_tokens": 59744
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "pool": "RPT-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "C.snapp_annual-report_1404.fa"
+   ],
+   "gold_units": [
+    "C.snapp_annual-report_1404.fa::p46_b19"
+   ],
+   "units_missing": [],
+   "gold_chars": 111267,
+   "gold_est_tokens": 44011
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "pool": "RPT-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "C.mci_management-interpretive-report_1401.fa"
+   ],
+   "gold_units": [
+    "C.mci_management-interpretive-report_1401.fa::p28_b4"
+   ],
+   "units_missing": [],
+   "gold_chars": 58657,
+   "gold_est_tokens": 23201
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "pool": "RPT-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "C.irancell_sustainability-report_1401.fa",
+    "C.irancell_sustainability-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.irancell_sustainability-report_1401.fa::p12_b23",
+    "C.irancell_sustainability-report_1403.fa::p72_b12"
+   ],
+   "units_missing": [],
+   "gold_chars": 328428,
+   "gold_est_tokens": 129907
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "pool": "RPT-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1403.fa::p13_b12",
+    "C.digikala_annual-report_1403.fa::p11_b3"
+   ],
+   "units_missing": [],
+   "gold_chars": 151042,
+   "gold_est_tokens": 59744
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "pool": "RPT-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1403.fa::p17_g2",
+    "C.digikala_annual-report_1403.fa::p255_g1"
+   ],
+   "units_missing": [],
+   "gold_chars": 151042,
+   "gold_est_tokens": 59744
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "pool": "RPT-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "C.snapp_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.snapp_annual-report_1403.fa::p55_g3",
+    "C.snapp_annual-report_1403.fa::p141_b37",
+    "C.snapp_annual-report_1403.fa::p141_b39",
+    "C.snapp_annual-report_1403.fa::p55_g2"
+   ],
+   "units_missing": [],
+   "gold_chars": 98752,
+   "gold_est_tokens": 39061
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "pool": "RPT-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "C.mci_financial-statements_1401.fa"
+   ],
+   "gold_units": [
+    "C.mci_financial-statements_1401.fa::p27_b9",
+    "C.mci_financial-statements_1401.fa::p29_b9"
+   ],
+   "units_missing": [],
+   "gold_chars": 140873,
+   "gold_est_tokens": 55721
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "pool": "RPT-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "C.snapp_annual-report_1402.fa",
+    "C.snapp_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.snapp_annual-report_1403.fa::p57_b8",
+    "C.snapp_annual-report_1403.fa::p57_b9",
+    "C.snapp_annual-report_1403.fa::p57_b11",
+    "C.snapp_annual-report_1403.fa::p57_b13",
+    "C.snapp_annual-report_1403.fa::p141_b23",
+    "C.snapp_annual-report_1403.fa::p141_b25",
+    "C.snapp_annual-report_1402.fa::p215_b7"
+   ],
+   "units_missing": [],
+   "gold_chars": 177473,
+   "gold_est_tokens": 70198
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "pool": "RPT-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1402.fa",
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1402.fa::p219_g1",
+    "C.digikala_annual-report_1403.fa::p236_g1"
+   ],
+   "units_missing": [],
+   "gold_chars": 329579,
+   "gold_est_tokens": 130363
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "pool": "RPT-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1399.fa",
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1399.fa::p52_b28",
+    "C.digikala_annual-report_1403.fa::p106_g4"
+   ],
+   "units_missing": [],
+   "gold_chars": 233353,
+   "gold_est_tokens": 92301
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "pool": "RPT-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1402.fa",
+    "C.digikala_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.digikala_annual-report_1402.fa::p76_g1",
+    "C.digikala_annual-report_1403.fa::p103_g1"
+   ],
+   "units_missing": [],
+   "gold_chars": 329579,
+   "gold_est_tokens": 130363
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "pool": "RPT-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "C.snapp_annual-report_1402.fa",
+    "C.snapp_annual-report_1404.fa"
+   ],
+   "gold_units": [
+    "C.snapp_annual-report_1402.fa::p80_b4",
+    "C.snapp_annual-report_1404.fa::p20_b7",
+    "C.snapp_annual-report_1404.fa::p20_b8",
+    "C.snapp_annual-report_1404.fa::p20_b9"
+   ],
+   "units_missing": [],
+   "gold_chars": 189988,
+   "gold_est_tokens": 75148
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "pool": "RPT-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "C.digikala_annual-report_1403.fa",
+    "C.snapp_annual-report_1403.fa"
+   ],
+   "gold_units": [
+    "C.snapp_annual-report_1403.fa::p56_b15",
+    "C.digikala_annual-report_1403.fa::p236_g1"
+   ],
+   "units_missing": [],
+   "gold_chars": 249794,
+   "gold_est_tokens": 98804
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "pool": "RPT-fa",
+   "tier": null,
+   "lang": "fa",
+   "gold_docs": [],
+   "gold_units": [],
+   "units_missing": [],
+   "gold_chars": 0,
+   "gold_est_tokens": 0
+  },
+  "V2-test-RPT-en-T1-001": {
+   "pool": "RPT-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "D.arcelormittal_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.arcelormittal_annual-report_2024.en::p72_b7"
+   ],
+   "units_missing": [],
+   "gold_chars": 1328555,
+   "gold_est_tokens": 290998
+  },
+  "V2-test-RPT-en-T1-002": {
+   "pool": "RPT-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "D.tatasteel_integrated-report_2024.en"
+   ],
+   "gold_units": [
+    "D.tatasteel_integrated-report_2024.en::p9_b23",
+    "D.tatasteel_integrated-report_2024.en::p9_b24"
+   ],
+   "units_missing": [],
+   "gold_chars": 1994276,
+   "gold_est_tokens": 436813
+  },
+  "V2-test-RPT-en-T1-003": {
+   "pool": "RPT-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "D.riotinto_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.riotinto_annual-report_2024.en::p6_b10"
+   ],
+   "units_missing": [],
+   "gold_chars": 1574815,
+   "gold_est_tokens": 344937
+  },
+  "V2-test-RPT-en-T1-004": {
+   "pool": "RPT-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "D.mowi_integrated-annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.mowi_integrated-annual-report_2024.en::p3_b5"
+   ],
+   "units_missing": [],
+   "gold_chars": 1115403,
+   "gold_est_tokens": 244310
+  },
+  "V2-test-RPT-en-T1-005": {
+   "pool": "RPT-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "D.leroy_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.leroy_annual-report_2024.en::p31_b7"
+   ],
+   "units_missing": [],
+   "gold_chars": 771091,
+   "gold_est_tokens": 168895
+  },
+  "V2-test-RPT-en-T2-001": {
+   "pool": "RPT-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "D.mowi_integrated-annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.mowi_integrated-annual-report_2024.en::p145_b6",
+    "D.mowi_integrated-annual-report_2024.en::p47_b16",
+    "D.mowi_integrated-annual-report_2024.en::p48_b14",
+    "D.mowi_integrated-annual-report_2024.en::p7_b17",
+    "D.mowi_integrated-annual-report_2024.en::p51_b11"
+   ],
+   "units_missing": [],
+   "gold_chars": 1115403,
+   "gold_est_tokens": 244310
+  },
+  "V2-test-RPT-en-T2-002": {
+   "pool": "RPT-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "D.maersk_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.maersk_annual-report_2024.en::p28_b6",
+    "D.maersk_annual-report_2024.en::p203_b66",
+    "D.maersk_annual-report_2024.en::p26_b32"
+   ],
+   "units_missing": [],
+   "gold_chars": 762402,
+   "gold_est_tokens": 166991
+  },
+  "V2-test-RPT-en-T2-003": {
+   "pool": "RPT-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "D.arcelormittal_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.arcelormittal_annual-report_2024.en::p35_b11",
+    "D.arcelormittal_annual-report_2024.en::p035_t1#table.0",
+    "D.arcelormittal_annual-report_2024.en::p187_t1#table.3"
+   ],
+   "units_missing": [],
+   "gold_chars": 1328555,
+   "gold_est_tokens": 290998
+  },
+  "V2-test-RPT-en-T2-004": {
+   "pool": "RPT-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "D.maersk_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.maersk_annual-report_2024.en::p119_b20",
+    "D.maersk_annual-report_2024.en::p120_b31"
+   ],
+   "units_missing": [],
+   "gold_chars": 762402,
+   "gold_est_tokens": 166991
+  },
+  "V2-test-RPT-en-T2-005": {
+   "pool": "RPT-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "D.leroy_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.leroy_annual-report_2024.en::p123_t1#table.0",
+    "D.leroy_annual-report_2024.en::p31_b7"
+   ],
+   "units_missing": [],
+   "gold_chars": 771091,
+   "gold_est_tokens": 168895
+  },
+  "V2-test-RPT-en-T3-001": {
+   "pool": "RPT-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "D.leroy_annual-report_2024.en",
+    "D.mowi_integrated-annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.mowi_integrated-annual-report_2024.en::p16_b9",
+    "D.leroy_annual-report_2024.en::p173_t3#table.0"
+   ],
+   "units_missing": [],
+   "gold_chars": 1886494,
+   "gold_est_tokens": 413205
+  },
+  "V2-test-RPT-en-T3-002": {
+   "pool": "RPT-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "D.arcelormittal_annual-report_2024.en",
+    "D.tatasteel_integrated-report_2024.en"
+   ],
+   "gold_units": [
+    "D.arcelormittal_annual-report_2024.en::p061_t1#table.0",
+    "D.tatasteel_integrated-report_2024.en::p157_b10"
+   ],
+   "units_missing": [],
+   "gold_chars": 3322831,
+   "gold_est_tokens": 727810
+  },
+  "V2-test-RPT-en-T3-003": {
+   "pool": "RPT-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "D.maersk_annual-report_2024.en",
+    "D.riotinto_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.maersk_annual-report_2024.en::p119_b20",
+    "D.riotinto_annual-report_2024.en::p210_t1#table.0",
+    "D.riotinto_annual-report_2024.en::p210_b4",
+    "D.maersk_annual-report_2024.en::p149_t1#table.1"
+   ],
+   "units_missing": [],
+   "gold_chars": 2337217,
+   "gold_est_tokens": 511928
+  },
+  "V2-test-RPT-en-T3-004": {
+   "pool": "RPT-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "D.mowi_integrated-annual-report_2023.en",
+    "D.mowi_integrated-annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.mowi_integrated-annual-report_2023.en::p152_b15",
+    "D.mowi_integrated-annual-report_2024.en::p48_b6",
+    "D.mowi_integrated-annual-report_2024.en::p18_b31"
+   ],
+   "units_missing": [],
+   "gold_chars": 2128730,
+   "gold_est_tokens": 466263
+  },
+  "V2-test-RPT-en-T3-005": {
+   "pool": "RPT-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "D.arcelormittal_annual-report_2023.en",
+    "D.arcelormittal_annual-report_2024.en"
+   ],
+   "gold_units": [
+    "D.arcelormittal_annual-report_2023.en::p76_b5",
+    "D.arcelormittal_annual-report_2024.en::p74_b14",
+    "D.arcelormittal_annual-report_2024.en::p117_b2"
+   ],
+   "units_missing": [],
+   "gold_chars": 3120464,
+   "gold_est_tokens": 683485
+  },
+  "V2-test-RPT-en-AB-001": {
+   "pool": "RPT-en",
+   "tier": null,
+   "lang": "en",
+   "gold_docs": [],
+   "gold_units": [],
+   "units_missing": [],
+   "gold_chars": 0,
+   "gold_est_tokens": 0
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "pool": "BOOK-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_pirnia_iran-e-bastan.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b2050"
+   ],
+   "units_missing": [],
+   "gold_chars": 1123002,
+   "gold_est_tokens": 444196
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "pool": "BOOK-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa::p1_b1217",
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa::p1_b1074",
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa::p1_b2560"
+   ],
+   "units_missing": [],
+   "gold_chars": 1546028,
+   "gold_est_tokens": 611521
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "pool": "BOOK-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_kasravi_khuzestan-500-years.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_kasravi_khuzestan-500-years.fa::p1_b837"
+   ],
+   "units_missing": [],
+   "gold_chars": 485161,
+   "gold_est_tokens": 191902
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "pool": "BOOK-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_mahmoud_iran-britain-relations.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_mahmoud_iran-britain-relations.fa::p1_b2616"
+   ],
+   "units_missing": [],
+   "gold_chars": 884542,
+   "gold_est_tokens": 349875
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "pool": "BOOK-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_bahar_political-parties-vol1.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b751"
+   ],
+   "units_missing": [],
+   "gold_chars": 392458,
+   "gold_est_tokens": 155234
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "pool": "BOOK-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_pirnia_iran-e-bastan.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b1467",
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b1470",
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b936"
+   ],
+   "units_missing": [],
+   "gold_chars": 1123002,
+   "gold_est_tokens": 444196
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "pool": "BOOK-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_pirnia_iran-e-bastan.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b936",
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b1257",
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b1276",
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b1470"
+   ],
+   "units_missing": [],
+   "gold_chars": 1123002,
+   "gold_est_tokens": 444196
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "pool": "BOOK-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa::p1_b862",
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa::p1_b1027"
+   ],
+   "units_missing": [],
+   "gold_chars": 1546028,
+   "gold_est_tokens": 611521
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "pool": "BOOK-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_kasravi_khuzestan-500-years.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_kasravi_khuzestan-500-years.fa::p1_b544",
+    "K.wikisource_kasravi_khuzestan-500-years.fa::p1_b565",
+    "K.wikisource_kasravi_khuzestan-500-years.fa::p1_b573"
+   ],
+   "units_missing": [],
+   "gold_chars": 485161,
+   "gold_est_tokens": 191902
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "pool": "BOOK-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_bahar_political-parties-vol1.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b1330",
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b1466"
+   ],
+   "units_missing": [],
+   "gold_chars": 392458,
+   "gold_est_tokens": 155234
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "pool": "BOOK-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_kasravi_khuzestan-500-years.fa",
+    "K.wikisource_mahmoud_iran-britain-relations.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_mahmoud_iran-britain-relations.fa::p1_b2296",
+    "K.wikisource_kasravi_khuzestan-500-years.fa::p1_b656"
+   ],
+   "units_missing": [],
+   "gold_chars": 1369703,
+   "gold_est_tokens": 541777
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "pool": "BOOK-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_bahar_political-parties-vol1.fa",
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_kasravi_tarikh-e-mashruteh.fa::p1_b878",
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b290",
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b1168"
+   ],
+   "units_missing": [],
+   "gold_chars": 1938486,
+   "gold_est_tokens": 766755
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "pool": "BOOK-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_bahar_political-parties-vol1.fa",
+    "K.wikisource_mahmoud_iran-britain-relations.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b1286",
+    "K.wikisource_mahmoud_iran-britain-relations.fa::p1_b1464",
+    "K.wikisource_mahmoud_iran-britain-relations.fa::p1_b1482"
+   ],
+   "units_missing": [],
+   "gold_chars": 1277000,
+   "gold_est_tokens": 505109
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "pool": "BOOK-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_bahar_political-parties-vol1.fa",
+    "K.wikisource_kasravi_khuzestan-500-years.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_bahar_political-parties-vol1.fa::p1_b386",
+    "K.wikisource_kasravi_khuzestan-500-years.fa::p1_b917"
+   ],
+   "units_missing": [],
+   "gold_chars": 877619,
+   "gold_est_tokens": 347136
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "pool": "BOOK-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "K.wikisource_mahmoud_iran-britain-relations.fa",
+    "K.wikisource_pirnia_iran-e-bastan.fa"
+   ],
+   "gold_units": [
+    "K.wikisource_mahmoud_iran-britain-relations.fa::p1_b698",
+    "K.wikisource_mahmoud_iran-britain-relations.fa::p1_b700",
+    "K.wikisource_pirnia_iran-e-bastan.fa::p1_b1471"
+   ],
+   "units_missing": [],
+   "gold_chars": 2007544,
+   "gold_est_tokens": 794070
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "pool": "BOOK-fa",
+   "tier": null,
+   "lang": "fa",
+   "gold_docs": [],
+   "gold_units": [],
+   "units_missing": [],
+   "gold_chars": 0,
+   "gold_est_tokens": 0
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "pool": "BOOK-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-1015_parkman_oregon-trail.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-1015_parkman_oregon-trail.en::p1_b329"
+   ],
+   "units_missing": [],
+   "gold_chars": 722370,
+   "gold_est_tokens": 158223
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "pool": "BOOK-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-34901_mill_on-liberty.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-34901_mill_on-liberty.en::p1_b43"
+   ],
+   "units_missing": [],
+   "gold_chars": 305911,
+   "gold_est_tokens": 67005
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "pool": "BOOK-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b292"
+   ],
+   "units_missing": [],
+   "gold_chars": 1110035,
+   "gold_est_tokens": 243135
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "pool": "BOOK-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en::p1_b156"
+   ],
+   "units_missing": [],
+   "gold_chars": 642053,
+   "gold_est_tokens": 140631
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "pool": "BOOK-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-4239_malthus_essay-on-population.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b55"
+   ],
+   "units_missing": [],
+   "gold_chars": 318203,
+   "gold_est_tokens": 69697
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "pool": "BOOK-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-34901_mill_on-liberty.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-34901_mill_on-liberty.en::p1_b43",
+    "K.gutenberg-34901_mill_on-liberty.en::p1_b156",
+    "K.gutenberg-34901_mill_on-liberty.en::p1_b44"
+   ],
+   "units_missing": [],
+   "gold_chars": 305911,
+   "gold_est_tokens": 67005
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "pool": "BOOK-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-4239_malthus_essay-on-population.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b98",
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b144",
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b231"
+   ],
+   "units_missing": [],
+   "gold_chars": 318203,
+   "gold_est_tokens": 69697
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "pool": "BOOK-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b1359",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b1034"
+   ],
+   "units_missing": [],
+   "gold_chars": 1110035,
+   "gold_est_tokens": 243135
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "pool": "BOOK-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-1015_parkman_oregon-trail.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-1015_parkman_oregon-trail.en::p1_b34",
+    "K.gutenberg-1015_parkman_oregon-trail.en::p1_b33",
+    "K.gutenberg-1015_parkman_oregon-trail.en::p1_b355"
+   ],
+   "units_missing": [],
+   "gold_chars": 722370,
+   "gold_est_tokens": 158223
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "pool": "BOOK-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en::p1_b203",
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en::p1_b219"
+   ],
+   "units_missing": [],
+   "gold_chars": 642053,
+   "gold_est_tokens": 140631
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "pool": "BOOK-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en",
+    "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en::p1_b256",
+    "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en::p1_b211"
+   ],
+   "units_missing": [],
+   "gold_chars": 2189879,
+   "gold_est_tokens": 479656
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "pool": "BOOK-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en",
+    "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "K.gutenberg-4239_malthus_essay-on-population.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en::p1_b255",
+    "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en::p1_b210",
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b35",
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b49"
+   ],
+   "units_missing": [],
+   "gold_chars": 2508082,
+   "gold_est_tokens": 549353
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "pool": "BOOK-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-34901_mill_on-liberty.en",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-34901_mill_on-liberty.en::p1_b39",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b1247"
+   ],
+   "units_missing": [],
+   "gold_chars": 1415946,
+   "gold_est_tokens": 310139
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "pool": "BOOK-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-4239_malthus_essay-on-population.en",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b49",
+    "K.gutenberg-4239_malthus_essay-on-population.en::p1_b144",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b1832",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b1841",
+    "K.gutenberg-815_tocqueville_democracy-in-america-part1.en::p1_b1831"
+   ],
+   "units_missing": [],
+   "gold_chars": 1428238,
+   "gold_est_tokens": 312832
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "pool": "BOOK-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "K.gutenberg-34901_mill_on-liberty.en",
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en"
+   ],
+   "gold_units": [
+    "K.gutenberg-34901_mill_on-liberty.en::p1_b144",
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en::p1_b105",
+    "K.gutenberg-833_veblen_theory-of-leisure-class.en::p1_b51"
+   ],
+   "units_missing": [],
+   "gold_chars": 947964,
+   "gold_est_tokens": 207636
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "pool": "BOOK-en",
+   "tier": null,
+   "lang": "en",
+   "gold_docs": [],
+   "gold_units": [],
+   "units_missing": [],
+   "gold_chars": 0,
+   "gold_est_tokens": 0
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "pool": "LAW-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_civil-code.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_civil-code.fa::p1_b2739",
+    "L.wikisource_civil-code.fa::p1_b2740"
+   ],
+   "units_missing": [],
+   "gold_chars": 217746,
+   "gold_est_tokens": 86128
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "pool": "LAW-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_constitution-1368.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_constitution-1368.fa::p1_b224"
+   ],
+   "units_missing": [],
+   "gold_chars": 75276,
+   "gold_est_tokens": 29775
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "pool": "LAW-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_registration-of-deeds-1310.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_registration-of-deeds-1310.fa::p1_b44"
+   ],
+   "units_missing": [],
+   "gold_chars": 77588,
+   "gold_est_tokens": 30689
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "pool": "LAW-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_guild-system-amendment-1392.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_guild-system-amendment-1392.fa::p1_b13"
+   ],
+   "units_missing": [],
+   "gold_chars": 38185,
+   "gold_est_tokens": 15104
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "pool": "LAW-fa",
+   "tier": "T1",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_commercial-code-1311.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_commercial-code-1311.fa::p1_b1689"
+   ],
+   "units_missing": [],
+   "gold_chars": 224893,
+   "gold_est_tokens": 88955
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "pool": "LAW-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_civil-code.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_civil-code.fa::p1_b2164",
+    "L.wikisource_civil-code.fa::p1_b2173",
+    "L.wikisource_civil-code.fa::p1_b2085"
+   ],
+   "units_missing": [],
+   "gold_chars": 217746,
+   "gold_est_tokens": 86128
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "pool": "LAW-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_constitution-1368.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_constitution-1368.fa::p1_b298",
+    "L.wikisource_constitution-1368.fa::p1_b287",
+    "L.wikisource_constitution-1368.fa::p1_b288"
+   ],
+   "units_missing": [],
+   "gold_chars": 75276,
+   "gold_est_tokens": 29775
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "pool": "LAW-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_registration-of-deeds-1310.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_registration-of-deeds-1310.fa::p1_b190",
+    "L.wikisource_registration-of-deeds-1310.fa::p1_b191",
+    "L.wikisource_registration-of-deeds-1310.fa::p1_b198"
+   ],
+   "units_missing": [],
+   "gold_chars": 77588,
+   "gold_est_tokens": 30689
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "pool": "LAW-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_guild-system-amendment-1392.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_guild-system-amendment-1392.fa::p1_b14",
+    "L.wikisource_guild-system-amendment-1392.fa::p1_b23"
+   ],
+   "units_missing": [],
+   "gold_chars": 38185,
+   "gold_est_tokens": 15104
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "pool": "LAW-fa",
+   "tier": "T2",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_commercial-code-1311.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_commercial-code-1311.fa::p1_b81",
+    "L.wikisource_commercial-code-1311.fa::p1_b84"
+   ],
+   "units_missing": [],
+   "gold_chars": 224893,
+   "gold_est_tokens": 88955
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "pool": "LAW-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_commercial-code-1303.fa",
+    "L.wikisource_commercial-code-1311.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_commercial-code-1303.fa::p1_b39",
+    "L.wikisource_commercial-code-1311.fa::p1_b48"
+   ],
+   "units_missing": [],
+   "gold_chars": 329044,
+   "gold_est_tokens": 130151
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "pool": "LAW-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_commercial-code-1303.fa",
+    "L.wikisource_commercial-code-1311.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_commercial-code-1303.fa::p1_b386",
+    "L.wikisource_commercial-code-1311.fa::p1_b1692"
+   ],
+   "units_missing": [],
+   "gold_chars": 329044,
+   "gold_est_tokens": 130151
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "pool": "LAW-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_direct-taxes-1345.fa",
+    "L.wikisource_direct-taxes-amendment-1351.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_direct-taxes-1345.fa::p1_b564",
+    "L.wikisource_direct-taxes-1345.fa::p1_b576",
+    "L.wikisource_direct-taxes-amendment-1351.fa::p1_b155",
+    "L.wikisource_direct-taxes-amendment-1351.fa::p1_b169",
+    "L.wikisource_direct-taxes-amendment-1351.fa::p1_b170"
+   ],
+   "units_missing": [],
+   "gold_chars": 219648,
+   "gold_est_tokens": 86880
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "pool": "LAW-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_direct-taxes-1345.fa",
+    "L.wikisource_direct-taxes-amendment-1351.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_direct-taxes-1345.fa::p1_b91",
+    "L.wikisource_direct-taxes-amendment-1351.fa::p1_b14"
+   ],
+   "units_missing": [],
+   "gold_chars": 219648,
+   "gold_est_tokens": 86880
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "pool": "LAW-fa",
+   "tier": "T3",
+   "lang": "fa",
+   "gold_docs": [
+    "L.wikisource_commercial-code-1303.fa",
+    "L.wikisource_commercial-code-1311.fa",
+    "L.wikisource_direct-taxes-1345.fa",
+    "L.wikisource_direct-taxes-amendment-1351.fa"
+   ],
+   "gold_units": [
+    "L.wikisource_direct-taxes-1345.fa::p1_b207",
+    "L.wikisource_commercial-code-1311.fa::p1_b33",
+    "L.wikisource_commercial-code-1311.fa::p1_b34",
+    "L.wikisource_commercial-code-1311.fa::p1_b35",
+    "L.wikisource_commercial-code-1311.fa::p1_b36",
+    "L.wikisource_commercial-code-1311.fa::p1_b37",
+    "L.wikisource_direct-taxes-amendment-1351.fa::p1_b32",
+    "L.wikisource_commercial-code-1303.fa::p1_b28",
+    "L.wikisource_commercial-code-1303.fa::p1_b29",
+    "L.wikisource_commercial-code-1303.fa::p1_b30",
+    "L.wikisource_commercial-code-1303.fa::p1_b31",
+    "L.wikisource_commercial-code-1303.fa::p1_b32",
+    "L.wikisource_commercial-code-1311.fa::p1_b65"
+   ],
+   "units_missing": [],
+   "gold_chars": 548692,
+   "gold_est_tokens": 217031
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "pool": "LAW-fa",
+   "tier": null,
+   "lang": "fa",
+   "gold_docs": [],
+   "gold_units": [],
+   "units_missing": [],
+   "gold_chars": 0,
+   "gold_est_tokens": 0
+  },
+  "V2-test-LAW-en-T1-001": {
+   "pool": "LAW-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32016R0679_gdpr.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32016R0679_gdpr.en::p1_b301"
+   ],
+   "units_missing": [],
+   "gold_chars": 350933,
+   "gold_est_tokens": 76866
+  },
+  "V2-test-LAW-en-T1-002": {
+   "pool": "LAW-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32024R1689_ai-act.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32024R1689_ai-act.en::p1_b193",
+    "L.eurlex-32024R1689_ai-act.en::p1_b1346",
+    "L.eurlex-32024R1689_ai-act.en::p1_b1348"
+   ],
+   "units_missing": [],
+   "gold_chars": 582624,
+   "gold_est_tokens": 127614
+  },
+  "V2-test-LAW-en-T1-003": {
+   "pool": "LAW-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32022R2065_dsa.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32022R2065_dsa.en::p1_b409"
+   ],
+   "units_missing": [],
+   "gold_chars": 414799,
+   "gold_est_tokens": 90855
+  },
+  "V2-test-LAW-en-T1-004": {
+   "pool": "LAW-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "L.ukpga-2015-15_consumer-rights-act.en"
+   ],
+   "gold_units": [
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b381",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b382",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b383"
+   ],
+   "units_missing": [],
+   "gold_chars": 377548,
+   "gold_est_tokens": 82696
+  },
+  "V2-test-LAW-en-T1-005": {
+   "pool": "LAW-en",
+   "tier": "T1",
+   "lang": "en",
+   "gold_docs": [
+    "L.ukpga-2018-12_data-protection-act.en"
+   ],
+   "gold_units": [
+    "L.ukpga-2018-12_data-protection-act.en::p1_b3434",
+    "L.ukpga-2018-12_data-protection-act.en::p1_b3438"
+   ],
+   "units_missing": [],
+   "gold_chars": 852926,
+   "gold_est_tokens": 186819
+  },
+  "V2-test-LAW-en-T2-001": {
+   "pool": "LAW-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32016R0679_gdpr.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32016R0679_gdpr.en::p1_b220",
+    "L.eurlex-32016R0679_gdpr.en::p1_b45",
+    "L.eurlex-32016R0679_gdpr.en::p1_b269"
+   ],
+   "units_missing": [],
+   "gold_chars": 350933,
+   "gold_est_tokens": 76866
+  },
+  "V2-test-LAW-en-T2-002": {
+   "pool": "LAW-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32024R1689_ai-act.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32024R1689_ai-act.en::p1_b222",
+    "L.eurlex-32024R1689_ai-act.en::p1_b303",
+    "L.eurlex-32024R1689_ai-act.en::p1_b309"
+   ],
+   "units_missing": [],
+   "gold_chars": 582624,
+   "gold_est_tokens": 127614
+  },
+  "V2-test-LAW-en-T2-003": {
+   "pool": "LAW-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32022R2065_dsa.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32022R2065_dsa.en::p1_b310",
+    "L.eurlex-32022R2065_dsa.en::p1_b311",
+    "L.eurlex-32022R2065_dsa.en::p1_b321",
+    "L.eurlex-32022R2065_dsa.en::p1_b336",
+    "L.eurlex-32022R2065_dsa.en::p1_b341"
+   ],
+   "units_missing": [],
+   "gold_chars": 414799,
+   "gold_est_tokens": 90855
+  },
+  "V2-test-LAW-en-T2-004": {
+   "pool": "LAW-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32022R1925_dma.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32022R1925_dma.en::p1_b183",
+    "L.eurlex-32022R1925_dma.en::p1_b465",
+    "L.eurlex-32022R1925_dma.en::p1_b467"
+   ],
+   "units_missing": [],
+   "gold_chars": 257810,
+   "gold_est_tokens": 56469
+  },
+  "V2-test-LAW-en-T2-005": {
+   "pool": "LAW-en",
+   "tier": "T2",
+   "lang": "en",
+   "gold_docs": [
+    "L.ukpga-2015-15_consumer-rights-act.en"
+   ],
+   "gold_units": [
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b280",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b193",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b194",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b296",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b297",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b218",
+    "L.ukpga-2015-15_consumer-rights-act.en::p1_b219"
+   ],
+   "units_missing": [],
+   "gold_chars": 377548,
+   "gold_est_tokens": 82696
+  },
+  "V2-test-LAW-en-T3-001": {
+   "pool": "LAW-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32022R1925_dma.en",
+    "L.eurlex-32022R2065_dsa.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32022R2065_dsa.en::p1_b478",
+    "L.eurlex-32022R1925_dma.en::p1_b181"
+   ],
+   "units_missing": [],
+   "gold_chars": 672609,
+   "gold_est_tokens": 147324
+  },
+  "V2-test-LAW-en-T3-002": {
+   "pool": "LAW-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32022R1925_dma.en",
+    "L.eurlex-32022R2065_dsa.en",
+    "L.eurlex-32024R1689_ai-act.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32022R1925_dma.en::p1_b458",
+    "L.eurlex-32024R1689_ai-act.en::p1_b1229",
+    "L.eurlex-32022R2065_dsa.en::p1_b900"
+   ],
+   "units_missing": [],
+   "gold_chars": 1255233,
+   "gold_est_tokens": 274938
+  },
+  "V2-test-LAW-en-T3-003": {
+   "pool": "LAW-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32016R0679_gdpr.en",
+    "L.eurlex-32024R1689_ai-act.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32024R1689_ai-act.en::p1_b280",
+    "L.eurlex-32016R0679_gdpr.en::p1_b210"
+   ],
+   "units_missing": [],
+   "gold_chars": 933557,
+   "gold_est_tokens": 204480
+  },
+  "V2-test-LAW-en-T3-004": {
+   "pool": "LAW-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32016R0679_gdpr.en",
+    "L.ukpga-2018-12_data-protection-act.en"
+   ],
+   "gold_units": [
+    "L.ukpga-2018-12_data-protection-act.en::p1_b442",
+    "L.ukpga-2018-12_data-protection-act.en::p1_b2519",
+    "L.ukpga-2018-12_data-protection-act.en::p1_b2520",
+    "L.ukpga-2018-12_data-protection-act.en::p1_b2529",
+    "L.ukpga-2018-12_data-protection-act.en::p1_b2527",
+    "L.eurlex-32016R0679_gdpr.en::p1_b1023",
+    "L.eurlex-32016R0679_gdpr.en::p1_b1024"
+   ],
+   "units_missing": [],
+   "gold_chars": 1203859,
+   "gold_est_tokens": 263685
+  },
+  "V2-test-LAW-en-T3-005": {
+   "pool": "LAW-en",
+   "tier": "T3",
+   "lang": "en",
+   "gold_docs": [
+    "L.eurlex-32016R0679_gdpr.en",
+    "L.eurlex-32024R1689_ai-act.en"
+   ],
+   "gold_units": [
+    "L.eurlex-32024R1689_ai-act.en::p1_b1027",
+    "L.eurlex-32016R0679_gdpr.en::p1_b514"
+   ],
+   "units_missing": [],
+   "gold_chars": 933557,
+   "gold_est_tokens": 204480
+  },
+  "V2-test-LAW-en-AB-001": {
+   "pool": "LAW-en",
+   "tier": null,
+   "lang": "en",
+   "gold_docs": [],
+   "gold_units": [],
+   "units_missing": [],
+   "gold_chars": 0,
+   "gold_est_tokens": 0
+  }
+ }
+}

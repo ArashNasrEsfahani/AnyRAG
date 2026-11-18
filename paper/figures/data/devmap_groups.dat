@@ -1,0 +1,9 @@
+y;label
+-1.0000;Per-requirement retrieval
+-4.2500;Listwise LLM selection
+-8.5000;\lexb{} selector views
+-13.7500;bge-m3 channels
+-18.0000;Small LLM order fixer
+-21.2500;Score fusion and index-time units
+-28.5000;Learned ranker
+-30.7500;\lexb{} pack ablations

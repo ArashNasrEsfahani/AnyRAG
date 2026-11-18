@@ -1,0 +1,16 @@
+{
+ "qid": "V2-test-BOOK-fa-T2-003",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6084 chars]"
+  }
+ ],
+ "messages_sha256": "69048895181021ffd44ec9ee7f1257d249d59d31acee5403296dceacbc2f50ac",
+ "num_predict": 256
+}

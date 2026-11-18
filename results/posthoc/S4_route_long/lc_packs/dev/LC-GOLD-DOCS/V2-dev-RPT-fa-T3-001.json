@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79077 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "4e8d5f4b53bd39441b6d5a871c93f4a0f4b3ad9c30be5b48ce10330800fd4f29",
+ "evidence_chars": 78944,
+ "prompt_chars": 79908,
+ "est_prompt_tokens": 31607,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "doc_chars": 77645,
+    "shown": 63956,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "C.divar_annual-report_1400.fa",
+    "doc_chars": 14926,
+    "shown": 14926,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

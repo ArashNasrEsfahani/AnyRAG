@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T2-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79109 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "a962c6f4b63843fccef9b9fb61173ad53dee1fda8ba43adf96d0e3974935c97f",
+ "evidence_chars": 78982,
+ "prompt_chars": 79640,
+ "est_prompt_tokens": 31501,
+ "build_ms": 1.4,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.cafebazaar_annual-report_1398.fa",
+    "score": 8.228
+   },
+   {
+    "doc": "C.cafebazaar_annual-report_1397.fa",
+    "score": 7.643
+   },
+   {
+    "doc": "C.yektanet_digital-marketing-report_1402.fa",
+    "score": 6.079
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1403.fa",
+    "score": 5.951
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1402.fa",
+    "score": 5.917
+   },
+   {
+    "doc": "C.taline_annual-report_1403.fa",
+    "score": 5.847
+   },
+   {
+    "doc": "C.myket_annual-report_1403.fa",
+    "score": 5.513
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1400.fa",
+    "score": 5.005
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.cafebazaar_annual-report_1398.fa",
+    "doc_chars": 60539,
+    "shown": 60539,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "C.cafebazaar_annual-report_1397.fa",
+    "doc_chars": 22287,
+    "shown": 18290,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

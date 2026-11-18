@@ -1,0 +1,57 @@
+{
+ "sets": {
+  "BOOK_en": {
+   "n": 9661,
+   "n_frozen": 9661,
+   "fingerprint_equal": true,
+   "vocab": 22295,
+   "vocab_frozen": 22296,
+   "sig_equal_ignoring_paths": true
+  },
+  "BOOK_fa": {
+   "n": 8905,
+   "n_frozen": 8905,
+   "fingerprint_equal": true,
+   "vocab": 51545,
+   "vocab_frozen": 51546,
+   "sig_equal_ignoring_paths": true
+  },
+  "C": {
+   "n": 6921,
+   "n_frozen": 6921,
+   "fingerprint_equal": true,
+   "vocab": 47774,
+   "vocab_frozen": 47775,
+   "sig_equal_ignoring_paths": true
+  },
+  "D_en": {
+   "n": 25685,
+   "n_frozen": 25685,
+   "fingerprint_equal": true,
+   "vocab": 61715,
+   "vocab_frozen": 61716,
+   "sig_equal_ignoring_paths": true
+  },
+  "LAW_en": {
+   "n": 5427,
+   "n_frozen": 5427,
+   "fingerprint_equal": true,
+   "vocab": 7148,
+   "vocab_frozen": 7149,
+   "sig_equal_ignoring_paths": true
+  },
+  "LAW_fa": {
+   "n": 1619,
+   "n_frozen": 1619,
+   "fingerprint_equal": true,
+   "vocab": 11376,
+   "vocab_frozen": 11377,
+   "sig_equal_ignoring_paths": true
+  }
+ },
+ "reembed": {
+  "n": 66,
+  "max_abs_diff": 0.0,
+  "min_cos": 0.9999998807907104
+ }
+}

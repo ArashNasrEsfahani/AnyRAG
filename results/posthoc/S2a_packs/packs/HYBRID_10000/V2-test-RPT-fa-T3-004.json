@@ -1,0 +1,18 @@
+{
+ "arm": "HYBRID_10000",
+ "question_id": "V2-test-RPT-fa-T3-004",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 9902 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "4d817c4230759c38e98d092cc8c414a2e0c8354146b85949ede99d7a1db53794",
+ "evidence_chars": 9761
+}

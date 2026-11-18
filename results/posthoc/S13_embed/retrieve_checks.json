@@ -1,0 +1,19 @@
+{
+ "n": 96,
+ "m3_hybrid_top_equal_trace": 96,
+ "m3_hybrid_pack_sha_equal_frozen": 96,
+ "setting_equal_frozen": 96,
+ "bm25_ranks_consistent": 96,
+ "arms": {
+  "E5_DENSE": {
+   "n": 96,
+   "mean_chars": 5923,
+   "pack_identical_to_frozen": 0
+  },
+  "E5_HYBRID": {
+   "n": 96,
+   "mean_chars": 5923,
+   "pack_identical_to_frozen": 0
+  }
+ }
+}

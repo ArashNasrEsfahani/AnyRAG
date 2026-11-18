@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-en-T3-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_series",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 746 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143206 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "ce66585d2bee5a3910affa5ec81292c2dc61ec08cd15f96e046ff817302a327d",
+ "evidence_chars": 142847,
+ "prompt_chars": 143952,
+ "est_prompt_tokens": 31530,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "L.eurlex-32022R1925_dma.en",
+    "score": 6.614
+   },
+   {
+    "doc": "L.eurlex-32024R1689_ai-act.en",
+    "score": 5.807
+   },
+   {
+    "doc": "L.eurlex-32022R2065_dsa.en",
+    "score": 5.475
+   },
+   {
+    "doc": "L.eurlex-32023R2854_data-act.en",
+    "score": 4.682
+   },
+   {
+    "doc": "L.eurlex-32016R0679_gdpr.en",
+    "score": 4.002
+   },
+   {
+    "doc": "L.ukpga-2015-30_modern-slavery-act.en",
+    "score": 4.0
+   },
+   {
+    "doc": "L.eurlex-32022R0868_data-governance-act.en",
+    "score": 3.047
+   },
+   {
+    "doc": "L.ukpga-2018-12_data-protection-act.en",
+    "score": 2.955
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.eurlex-32022R1925_dma.en",
+    "doc_chars": 257810,
+    "shown": 142791,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

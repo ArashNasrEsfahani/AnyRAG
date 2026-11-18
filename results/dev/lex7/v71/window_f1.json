@@ -1,0 +1,590 @@
+{
+ "summary": {
+  "base12": 0.8204,
+  "f1": 0.8151,
+  "rptfa_base12": 0.7222,
+  "rptfa_f1": 0.7778,
+  "up": [
+   "V2-dev-BOOK-en-T2-001",
+   "V2-dev-RPT-fa-T2-001",
+   "V2-dev-RPT-fa-T3-003"
+  ],
+  "down": [
+   "V2-dev-BOOK-en-T2-002",
+   "V2-dev-LAW-fa-T3-002",
+   "V2-dev-RPT-fa-T2-003",
+   "V2-dev-RPT-en-T2-003"
+  ],
+  "adopt": false
+ },
+ "rows": [
+  {
+   "id": "V2-dev-BOOK-fa-T1-001",
+   "pool": "BOOK-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3346,
+    3340,
+    3322
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T1-002",
+   "pool": "BOOK-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    2428,
+    2424,
+    2389,
+    2459
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T1-003",
+   "pool": "BOOK-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    5279,
+    953,
+    814
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T2-001",
+   "pool": "BOOK-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3341,
+    3319,
+    3350
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T2-002",
+   "pool": "BOOK-fa",
+   "base12": 0.3333,
+   "f1": 0.3333,
+   "added": [
+    2291,
+    2103,
+    1714
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T2-003",
+   "pool": "BOOK-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    2657
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T3-001",
+   "pool": "BOOK-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    724,
+    2296,
+    757
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T3-002",
+   "pool": "BOOK-fa",
+   "base12": 0.5,
+   "f1": 0.5,
+   "added": [
+    1636,
+    895,
+    724
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-fa-T3-003",
+   "pool": "BOOK-fa",
+   "base12": 0.5,
+   "f1": 0.5,
+   "added": [
+    2430,
+    3325
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T1-001",
+   "pool": "BOOK-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    2614,
+    2774,
+    2775
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T1-002",
+   "pool": "BOOK-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    5568,
+    5564,
+    2984
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T1-003",
+   "pool": "BOOK-en",
+   "base12": 0.6667,
+   "f1": 0.6667,
+   "added": [
+    5870,
+    5923,
+    5918,
+    5760
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T2-001",
+   "pool": "BOOK-en",
+   "base12": 0.5,
+   "f1": 0.75,
+   "added": [
+    5283,
+    5290
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T2-002",
+   "pool": "BOOK-en",
+   "base12": 0.8,
+   "f1": 0.6,
+   "added": [
+    5878
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T2-003",
+   "pool": "BOOK-en",
+   "base12": 0.0,
+   "f1": 0.0,
+   "added": [
+    2659
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T3-001",
+   "pool": "BOOK-en",
+   "base12": 0.25,
+   "f1": 0.25,
+   "added": [
+    2651,
+    5591,
+    2752,
+    2608
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T3-002",
+   "pool": "BOOK-en",
+   "base12": 0.5,
+   "f1": 0.5,
+   "added": [
+    5068,
+    5007,
+    5029
+   ]
+  },
+  {
+   "id": "V2-dev-BOOK-en-T3-003",
+   "pool": "BOOK-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    5047,
+    5674
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T1-001",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    1588,
+    1541,
+    1586
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T1-002",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    292,
+    326,
+    256
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T1-003",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    986
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T2-001",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    1611,
+    1554
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T2-002",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    254,
+    264,
+    329
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T2-003",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    1256
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T3-001",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    1419,
+    1427
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T3-002",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 0.6667,
+   "added": [
+    1425,
+    1380,
+    1388
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-fa-T3-003",
+   "pool": "LAW-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    323,
+    324,
+    1544
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T1-001",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    4036,
+    4051,
+    4010
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T1-002",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    734,
+    708
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T1-003",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    4662
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T2-001",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3292
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T2-002",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    2272
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T2-003",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    670,
+    664,
+    663
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T3-001",
+   "pool": "LAW-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    4370,
+    4216,
+    2154
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T3-002",
+   "pool": "LAW-en",
+   "base12": 0.0,
+   "f1": 0.0,
+   "added": [
+    4059,
+    3935,
+    3937
+   ]
+  },
+  {
+   "id": "V2-dev-LAW-en-T3-003",
+   "pool": "LAW-en",
+   "base12": 0.0,
+   "f1": 0.0,
+   "added": [
+    3907,
+    4076,
+    3297
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T1-001",
+   "pool": "RPT-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3538
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T1-002",
+   "pool": "RPT-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    4192,
+    4091
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T1-003",
+   "pool": "RPT-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3785,
+    3794,
+    3719,
+    3724
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T2-001",
+   "pool": "RPT-fa",
+   "base12": 0.0,
+   "f1": 0.5,
+   "added": [
+    3657,
+    3659,
+    3565
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T2-002",
+   "pool": "RPT-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3785
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T2-003",
+   "pool": "RPT-fa",
+   "base12": 0.5,
+   "f1": 0.0,
+   "added": [
+    3785,
+    3735,
+    3789
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T3-001",
+   "pool": "RPT-fa",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    3532,
+    3542,
+    3576
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T3-002",
+   "pool": "RPT-fa",
+   "base12": 0.5,
+   "f1": 0.5,
+   "added": [
+    3711,
+    3705,
+    3785
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-fa-T3-003",
+   "pool": "RPT-fa",
+   "base12": 0.5,
+   "f1": 1.0,
+   "added": [
+    3916,
+    3870,
+    3871,
+    3866
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T1-001",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    16866,
+    16278
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T1-002",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    15333,
+    14741,
+    14818
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T1-003",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    17847,
+    18828,
+    19465
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T2-001",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    2640
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T2-002",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    17276,
+    17381
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T2-003",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 0.5,
+   "added": [
+    19598,
+    25091,
+    19604,
+    19567
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T3-001",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    19475,
+    15172,
+    15469
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T3-002",
+   "pool": "RPT-en",
+   "base12": 1.0,
+   "f1": 1.0,
+   "added": [
+    5378,
+    6412,
+    5984
+   ]
+  },
+  {
+   "id": "V2-dev-RPT-en-T3-003",
+   "pool": "RPT-en",
+   "base12": 0.75,
+   "f1": 0.75,
+   "added": [
+    16844,
+    17440
+   ]
+  }
+ ]
+}

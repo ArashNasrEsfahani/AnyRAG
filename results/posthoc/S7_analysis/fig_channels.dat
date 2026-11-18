@@ -1,0 +1,12 @@
+# S7 task 5: gold-bundle recall@40 per channel and language (45 answerable each); channels.json
+lang channel complete partial none items_hit items
+fa bm 37 6 2 85 106
+fa dense_known 37 7 1 95 106
+fa bm_or_dense 39 6 0 99 106
+fa hyb40 39 6 0 98 106
+fa f2 40 5 0 100 106
+en bm 29 14 2 88 124
+en dense_known 31 13 1 96 124
+en bm_or_dense 37 8 0 105 124
+en hyb40 33 11 1 98 124
+en f2 35 9 1 101 124

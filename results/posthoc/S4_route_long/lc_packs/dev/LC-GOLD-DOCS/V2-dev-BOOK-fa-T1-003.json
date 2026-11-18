@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-fa-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79113 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "04ec7dc3d95e3a4085978b176130085dcdba107e9c9837986825bd25b830d3e7",
+ "evidence_chars": 78959,
+ "prompt_chars": 79644,
+ "est_prompt_tokens": 31503,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "K.wikisource_christensen_iran-sasanian.fa",
+    "doc_chars": 690548,
+    "shown": 78924,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

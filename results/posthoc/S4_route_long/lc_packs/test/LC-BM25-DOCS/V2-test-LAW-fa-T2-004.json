@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T2-004",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79010 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "8fed2641fcbaf9fae662483aafc5c9671b459e1b225fdeb668e41cb327b6d25b",
+ "evidence_chars": 78746,
+ "prompt_chars": 79726,
+ "est_prompt_tokens": 31535,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "L.wikisource_guild-system-amendment-1392.fa",
+    "score": 6.89
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "score": 6.174
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "score": 5.776
+   },
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "score": 4.1
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "score": 3.848
+   },
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "score": 3.754
+   },
+   {
+    "doc": "L.wikisource_cooperatives-1350.fa",
+    "score": 3.684
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "score": 3.266
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.wikisource_guild-system-amendment-1392.fa",
+    "doc_chars": 38185,
+    "shown": 38185,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "doc_chars": 48211,
+    "shown": 40473,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

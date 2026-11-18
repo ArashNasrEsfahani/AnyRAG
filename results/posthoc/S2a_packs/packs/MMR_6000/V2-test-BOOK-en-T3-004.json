@@ -1,0 +1,18 @@
+{
+ "arm": "MMR_6000",
+ "question_id": "V2-test-BOOK-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6109 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "6b81cddb002abe368b156dea99e78bdc35ba6811902d357f2a1620e435b7244c",
+ "evidence_chars": 5867
+}

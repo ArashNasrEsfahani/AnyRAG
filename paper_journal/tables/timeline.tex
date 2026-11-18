@@ -1,0 +1,27 @@
+% src: moved from sections_old/B_protocol.tex
+\begin{table*}[tp]
+\caption{Dated record of protocol changes}
+\label{tab:timeline}
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}p{1.6cm}Xp{5.4cm}@{}}
+\toprule
+Date (2026) & Change & Timing relative to results \\
+\midrule
+09-25 & Benchmark frozen; dev run with 11 pipelines and a local reader; development gates fixed (+3/54 vs.\ each control; tokens, p50, p95 $\le1.5\times$) & before any method result on the benchmark \\
+09-26 & Development reader switched to GLM-5.3-flash via API & after a diagnosis showed the local 4B reader was the bottleneck \\
+09-26 & Token gate 1.5$\times\to$2.5$\times$ \hybrid{} tokens & before any \lexb{} result; after the full-passage selector pilot showed 3.5--4.3$\times$ \\
+09-26 & Evidence budget made a study variable (6,000 and 15,500 chars for every pipeline) & after \hybrid@15,500 scored 19/24 on the screen \\
+09-26 & \lexb{} latency reported as a trade-off, not a gate & after \lexb{} failed the latency gate on the 24-question screen \\
+10-01 & Test protocol frozen (commit b31cd4c): pipelines, gates, judge fixed to one model version, first-verdict-final rule, policy for unresolved judge cells; dev record corrections declared (a contradictory dev verdict; an offline replay under the frozen parser) & before any test answer \\
+10-01 & Re-freeze (commit 77924d4): \setr{} added as a no-gate baseline; five more readers; shared answer packs & before any test answer; after \setr{} led on dev \\
+10-01 -- 10-04 & Test run interrupted by the author (GPU needed elsewhere) at about question 4 of 96 and resumed on the same commit; one hung cell killed before writing a record and re-run & during the test; no answered cell re-run \\
+10-04 & Infrastructure clean-up: cells whose every record was an HTTP 429 or a local connection error retried (concurrency 1, back-off, $\le$5 tries; 61 tries, all succeeded) & after all cells were attempted \\
+10-04 & Report-script fixes (verdict lookup by answer, token calibration for non-primary readers, file encoding) & before the report was generated; gate numbers unaffected \\
+10-05 & Blinded human review of 77 test items; rule ``half correct = wrong, unsure = judge verdict'' applied to dev and test & after the judge scores were known \\
+10-06 & The first human review was found to cover the pipelines unequally (\lexb{} 30 reviewed cells, controls 15--17); the 42 missing cells of the same 30 questions were reviewed blind (39 items) and the merged scores of the complete review replaced those of the first review & after the result of the unequal review (+8, Holm .043) had been reported in the draft; no test answer changed \\
+10-06 & Paper statistics revised: bounds instead of zero-filled points, sign-test ranges over unresolved cells, intervals over source groups; the frozen report is unchanged & after all results; gate decision unchanged \\
+\bottomrule
+\end{tabularx}
+
+\end{table*}

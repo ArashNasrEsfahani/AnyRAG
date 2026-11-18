@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142708 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "31a69a5d7088e9ecbd9cfffb77397fb2b62f7892329214e3a27cf6b7036abd4f",
+ "evidence_chars": 142551,
+ "prompt_chars": 143231,
+ "est_prompt_tokens": 31372,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.riotinto_annual-report_2024.en",
+    "doc_chars": 1574815,
+    "shown": 142514,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "arm": "KNAP_6000",
+ "question_id": "V2-test-LAW-fa-T3-005",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 514 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6073 chars]"
+  }
+ ],
+ "num_predict": 900,
+ "messages_sha256": "7d8c1b631066e97d45a645a5b8832db6744d1ce5f01e214d617ae7edb2d1949c",
+ "evidence_chars": 5836
+}

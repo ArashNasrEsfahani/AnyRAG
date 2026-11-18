@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T2-002",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 85999 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "bc40c4491970fb69e42dd815a1aca73e0625798641d17b3a5e345e2e4cbb8e44",
+ "evidence_chars": 85736,
+ "prompt_chars": 86707,
+ "est_prompt_tokens": 18992,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.deliveryhero_annual-report_2024.en",
+    "doc_chars": 832803,
+    "shown": 85667,
+    "ranges": 4,
+    "whole": false
+   }
+  ],
+  "gold_units": 7,
+  "gold_units_retained": 7,
+  "gold_docs_shown": 1
+ }
+}

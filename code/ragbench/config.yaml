@@ -1,0 +1,159 @@
+# ragbench shared configuration. FROZEN after the foundation build: other agents
+# send change requests instead of editing. Relative paths resolve against
+# `paths.project_root`. Override the whole file with env RAGBENCH_CONFIG.
+
+paths:
+  project_root: "D:/KareOne/RAG Paper"
+  kareone_root: "corpus/frozen/kareone"   # corpus A (an early development corpus of internal reports) is not part
+                                     # of the public release; this path is a placeholder and no report is listed below.
+  manifest: "corpus/natural/manifest.csv"
+  extracted_root: "corpus/extracted"
+  work_root: "work"                  # every cache lives under here
+  corpus_cache: "work/corpus"        # serialised Documents + set manifests
+  index_root: "work/indexes"         # work/indexes/<approach-variant>/<set>-<fp8>/
+  store_root: "work/stores"          # plain section stores for grep
+  runs_root: "work/runs"             # per-question RunRecord JSONL
+  ledger_root: "work/ledger"         # one JSONL line per model call
+  locks_root: "work/locks"
+  questions_root: "ragbench/data/questions"
+  env_file: ".env"                   # OPENROUTER_API_KEY lives here; never print it
+  rg: "tools/bin/rg.exe"             # ripgrep 14.1.1 official Windows build
+
+models:
+  # The study names "gemma4:e4b"; the tag actually installed on this machine is the
+  # QAT instruction-tuned build below (7.5B params, Q4_0, 6.1 GB). Digests pin it.
+  chat: "gemma4:e4b-it-qat"
+  chat_digest: "ee665637121887cf3befff38abbb1be4ee117c7db867d97a67e29049ecd7e15f"
+  embed: "bge-m3:latest"
+  embed_digest: "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+
+ollama:
+  host: "http://127.0.0.1:11434"
+  connect_timeout_s: 10
+  read_timeout_s: 900                # index-time enrichment of a long section can be slow
+  retries: 3                         # extra attempts after the first, on connection errors / 5xx / timeouts
+  retry_backoff_s: 5
+  keep_alive: "30m"
+  think: false                       # gemma4 has a thinking mode; off for every approach
+  cross_process_lock: true           # serialise calls across Python processes, not only threads
+
+generation:                          # identical for every chat call of every approach
+  temperature: 0
+  seed: 42
+  top_p: 1.0
+  top_k: 1
+  num_ctx: 8192
+  num_predict_default: 512
+  num_predict_answer: 256            # the shared final answer call (every question except timeline ones: see `answer`)
+  # Do not add keys to `generation`: the OURS enrichment/L1 caches and the B4 summary cache and index fingerprint
+  # key on this whole section, so a new key here would invalidate hours of cached index work.
+
+answer:                              # the shared final answer call per question format (contracts.answer_num_predict)
+  # timeline questions (type "timeline", series answers): prompt contracts.ANSWER_TIMELINE_SYSTEM
+  # (answer-timeline-v1), one line per period; answer-v2's 256 tokens cut 7-period answers short
+  # (2 of 345 answer calls hit the limit, both AGENTIC Snapp timelines). Same for every approach.
+  timeline_num_predict: 768
+
+embedding:
+  batch_size: 16
+  truncate: true
+  num_ctx: 8192
+
+evidence:
+  max_chars: 6000                    # THE evidence budget: length of the rendered evidence block
+  min_item_chars: 200                # a cut item keeps at least this many text chars, else it is dropped
+  abstain_token: "NOT_FOUND"
+  use_doc_scope: true                # every approach (not only B1) receives question.doc_scope
+
+chunking:                            # B2 (BM25) and B3 (vector)
+  chunk_chars: 1000
+  overlap_chars: 200
+  top_k: 8
+
+caps:
+  tree_nav_max_calls: 10             # B4: navigation calls + the answer call
+  tree_nav_summary_chars: 200        # B4 node summary length shown to the model
+  grep_agent_max_steps: 8            # B5: model calls per question INCLUDING the shared final answer call (7 agent steps + 1 answer)
+  grep_tool_output_chars: 2000       # B5: characters of one tool result shown to the model
+  grep_max_hits: 50
+  ours_max_calls: 3                  # OURS: plan + answer + at most one widened retry
+  ours_patterns_min: 2
+  ours_patterns_max: 5               # per language list since plan prompt ours-plan-v3 (was: all patterns)
+  agentic_max_calls: 8               # AGENTIC: plan (+1 repair) + verify batches + <= 1 gap batch + the answer call
+  agentic2_max_calls: 4              # AGENTIC2 (v2, 2026-09-16): plan + verify (1, at most 2; a plan repair takes the 2nd) + answer
+  agentic2_max_seconds: 60           # AGENTIC2 query clock per question (lazy first-touch embedding excluded, reported apart)
+  agentic3_max_calls: 4              # AGENTIC3 (v3, 2026-09-20): plan + verify (0-2, a gap batch takes the 2nd) + answer
+  agentic3_max_seconds: 60           # AGENTIC3 query clock per question (same rule as v2; the wall clock WITH the
+                                     # first-touch embedding is reported next to it, trace.timing.wall_with_embedding_ms)
+  agentic4_max_calls: 4              # AGENTIC4 (v4, 2026-09-21): v3's budget; the graph path makes no model call
+  agentic4_max_seconds: 60           # (adding these two keys gives the records a FOURTH config hash, as v2 and v3 did)
+
+kb:
+  # The AGENTIC3 knowledge base (ragbench/kb): ONE persistent SQLite file, shared by every corpus set and by the
+  # `python -m ragbench.kb` CLI. Not part of the records' config hash (it is a path, not a method parameter);
+  # it is in the AGENTIC3 index fingerprint together with the kb component versions.
+  path: "work/kb/kb.sqlite"
+  inbox: "corpus/inbox"              # `kb watch` polls this folder and ingests whatever is dropped in
+  embed: "lazy"                      # vectors are filled by the first question that escalates, never at ingestion
+
+judge:
+  provider: "openrouter"
+  base_url: "https://openrouter.ai/api/v1"
+  model: "google/gemini-2.5-flash-lite"   # configurable; pick any cheap model id
+  temperature: 0
+  max_tokens: 160                    # the verdict JSON with a short reason (eval/judge.py DEFAULT_MAX_TOKENS)
+  timeout_s: 60
+  budget_file: "work/judge_budget.json"   # persisted across processes and agents
+  max_calls_total: 10                # hard cap for the whole build workflow (smoke tests)
+  max_cost_usd: 0.10                 # hard cap on reported cost across the workflow
+
+settings: ["fa-fa", "en-en", "fa-en", "en-fa"]   # question language - document language
+
+final:
+  # What `ragbench.run --final` accepts: the CORE PLAN (decided 2026-09-16; replaces the full 316-question run).
+  # A test question file (ragbench/data/questions/test*.jsonl) runs only with --final, and --final refuses anything
+  # not declared here: other question files or variants, a variant excluded for its question file, settings outside
+  # the corpus's list, --ids/--limit/--docs subsets, --allow-mixed, --no-health, answer prompt versions other than
+  # `answer_prompts`, or a config file other than this one (run.py final_problems).
+  # Not part of the records' config hash (models, generation, evidence, chunking, caps, answer).
+  docs_from_questions: true          # author's decision: index and search only the documents that have questions
+  question_files: ["test_core.jsonl", "test_timeline.jsonl",   # file names (ragbench/data/questions/)
+                   "test_fresh.jsonl"]   # 2026-09-23: the fresh holdout (work/final/PREREG.md), monolingual only
+  # (public release: test_core.jsonl and test_fresh.jsonl include development-corpus-A questions and are not released)
+  variants: ["B0", "B1", "B2", "B3", "B4", "B5",
+             "OURS+index_level=L0", "OURS+index_level=L1", "OURS", "AGENTIC",
+             "OURS+monolingual_patterns",   # the one ablation; OURS = index level L3 (full enrichment)
+             "AGENTIC2",                    # AGENTIC v2 (added 2026-09-16 after the core test; stage v2test); it uses
+                                            # the shared answer prompts declared in answer_prompts below
+             "AGENTIC3",                    # AGENTIC v3 (added 2026-09-20; stage v3test), same shared answer prompts
+             "AGENTIC4",                    # AGENTIC v4 (added 2026-09-21; stage v4test), same shared answer prompts
+             # 2026-09-23, fresh holdout (PREREG.md): LEX2 (lex-v6) and its two matched ablations
+             "LEX2", "LEX2+llm_regex", "LEX2+free_keywords"]
+  settings:                          # per corpus; one --final invocation may run any subset of its corpus's list
+    A: ["fa-fa", "en-en", "fa-en", "en-fa"]
+    B: ["fa-fa", "en-en"]            # Digikala 1401: no cross-lingual settings in the core plan
+    C: ["fa-fa"]                     # Persian-only corpus (timeline questions included)
+    D: ["en-en"]                     # English-only corpus (natural reports of global companies, fresh holdout)
+  exclude_variants:                  # question file -> variants refused on it
+    # no L3 enrichment is built for the timeline documents (cost); OURS+monolingual_patterns reads the L3 store
+    test_timeline.jsonl: ["OURS", "OURS+monolingual_patterns"]
+  answer_prompts: {default: "answer-v2", timeline: "answer-timeline-v1"}   # must equal contracts.ANSWER_PROMPT_VERSIONS
+
+corpora:
+  adapter_version: 1
+  table_rows_per_unit: 20            # large tables split into units of this many rows (header repeated)
+  A:
+    # corpus A (early development corpus of internal reports): not part of the public release
+    reports: []
+  B:
+    # human-written fa/en pairs; document-aligned only (NOT unit-aligned)
+    pairs:
+      - {key: "digikala-h1-1398", fa: "digikala/digikala_half-year-report-h1_1398_fa.pdf", en: "digikala/digikala_half-year-report-h1_1398_en.pdf"}
+      - {key: "digikala-1398",    fa: "digikala/digikala_annual-report_1398_fa.pdf",       en: "digikala/digikala_annual-report_1398_en.pdf"}
+      - {key: "digikala-1400",    fa: "digikala/digikala_annual-report_1400_fa.pdf",       en: "digikala/digikala_annual-report_1400_en.pdf"}
+      - {key: "digikala-1401",    fa: "digikala/digikala_annual-report_1401_fa.pdf",       en: "digikala/digikala_annual-report_1401_en.pdf"}
+      - {key: "techrasa-adtech",  fa: "techrasa/techrasa_digital-advertising-industry-report_1399_fa.pdf", en: "techrasa/techrasa_iran-adtech-report_2020_en.pdf"}
+  C:
+    # Persian-only: manifest language fa, no parallel_file, complete full extraction
+    exclude_verdicts: ["fail"]
+    allow_partial_extractions: false

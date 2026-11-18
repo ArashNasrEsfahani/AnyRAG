@@ -1,0 +1,49 @@
+{
+ "approach": "SETR",
+ "corpus_set": "LAW_fa",
+ "fingerprint": "7104784e342005580dd413163535444945352c95",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-10-01T15:36:15",
+   "ok": true,
+   "build_ms": 1569.1,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 1569.1,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-10-01T15:36:17",
+ "size_bytes": 257,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\SETR\\LAW_fa-7104784e",
+ "corpus_stats": {
+  "name": "LAW_fa",
+  "docs": 13,
+  "sections": 3198,
+  "units": 6572,
+  "chars": 1183142,
+  "skipped": 0
+ },
+ "copied_at": "2026-10-01T15:37:45",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

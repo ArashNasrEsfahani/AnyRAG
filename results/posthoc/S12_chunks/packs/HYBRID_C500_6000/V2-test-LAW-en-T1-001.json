@@ -1,0 +1,16 @@
+{
+ "qid": "V2-test-LAW-en-T1-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5988 chars]"
+  }
+ ],
+ "messages_sha256": "e3e144e747cd468493c3a558c6b9e1df9974668f743ed7ee7859fc817d08f611",
+ "num_predict": 256
+}

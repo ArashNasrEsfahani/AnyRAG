@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T3-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143077 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "99904f5614cd4b3d6c09c93a5f431a2e97c269b27c5070bf568c18522a3286ee",
+ "evidence_chars": 142899,
+ "prompt_chars": 143900,
+ "est_prompt_tokens": 31519,
+ "build_ms": 1.6,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "D.zalando_annual-report_2024.en",
+    "score": 2.917
+   },
+   {
+    "doc": "D.zalando_annual-report_2023.en",
+    "score": 2.068
+   },
+   {
+    "doc": "D.maersk_annual-report_2024.en",
+    "score": 1.41
+   },
+   {
+    "doc": "D.tatasteel_integrated-report_2024.en",
+    "score": 1.14
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2024.en",
+    "score": 1.06
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2022.en",
+    "score": 1.003
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2023.en",
+    "score": 0.981
+   },
+   {
+    "doc": "D.riotinto_annual-report_2024.en",
+    "score": 0.974
+   }
+  ],
+  "docs": [
+   {
+    "doc": "D.zalando_annual-report_2024.en",
+    "doc_chars": 994143,
+    "shown": 142862,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

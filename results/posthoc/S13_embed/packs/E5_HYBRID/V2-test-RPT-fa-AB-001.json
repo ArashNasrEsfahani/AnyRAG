@@ -1,0 +1,18 @@
+{
+ "arm": "E5_HYBRID",
+ "question_id": "V2-test-RPT-fa-AB-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6059 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "de06e95146e8d7ef5ee75bf760cffbb0842d7729deeba73b96464149e125e401",
+ "evidence_chars": 5984
+}

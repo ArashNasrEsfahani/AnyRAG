@@ -1,0 +1,78 @@
+% src: work/posthoc_2026-11/S2a_packs/RESULTS.md sec. 1 (FUSION, GOLD, MMR, KNAP, budgets); S6_baselines/RESULTS.md sec. 1 (CLOSEDBOOK, LISTWISE, SETR_NOFILL);
+%      S3_agentic/RESULTS.md sec. 1 (agents); S4_route_long/RESULTS.md sec. 1 (routing, long context); S2b_variance/RESULTS.md sec. 1 (variance runs);
+%      S1_evaluator/RESULTS.md sec. 1 (second judge). Reader GLM-5.3-flash (Together pin) and judge gpt-oss-120b (deepinfra/bf16, temperature 0, seed 42) as in the frozen test.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}p{2.9cm}Xp{2.8cm}@{}}
+\toprule
+Arm & Input & Procedure & Settings \\
+\midrule
+\lexb{} without selection & The 40 fused evidence packages of \lexb{} & Whole packages in fusion order until the exact rendered cost reaches the budget; never clipped; no LLM call & Budgets 3,000; 6,000; 10,000; 15,500; 24,000 characters \\
+\hybrid{}, \hr{} at new budgets & Saved top 40 (fused; reranked) & The frozen packing rule at each budget & 3,000; 10,000; 24,000 characters \\
+Gold evidence & First annotated evidence bundle & Quote text taken from the corpus offsets, one item per evidence unit, in bundle order & Mean 572 characters; 90 answerable questions \\
+MMR packer & The same 40 packages & Maximal marginal relevance: relevance is the min-max normalised fusion score, redundancy the largest cosine to packages already chosen (saved bge-m3 embeddings); whole packages only & $\lambda=0.7$, set a priori; 6,000 characters \\
+Knapsack packer & The same 40 packages & Greedy by fusion score per rendered character; whole packages only & 6,000 characters \\
+Closed book & The question only & The answer prompt without evidence: ``answer from your own knowledge'', otherwise \texttt{NOT\_FOUND} & One call \\
+Listwise LLM reranker & \hybrid{}'s top 20 chunks & One RankGPT call with the published multi-turn prompt; passages cut to 700 characters; chunks 21--40 follow in \hybrid{} order; the packer then fills as for \hybrid{} & Reasoning effort low; 2,000 tokens; no deadline \\
+SetR, selected set only & \setr{}'s saved selected set & The set is offered alone to the packer, without the \hybrid{} fill; where \setr{} had fallen back (6 questions), its own fallback pack & Mean 3.04 chunks, 3,056 characters (against 5,949 with fill) \\
+Second judge & The 768 saved GLM answers & Same rubric, prompt, parser and retries as judge 1; a reply that does not parse after three tries is unresolved & Mistral Large (2512), pin \texttt{mistral/zdr}, temperature 0, seed 42 \\
+\bottomrule
+\end{tabularx}
+\caption{Post hoc. Settings of the pack, baseline and judge arms. All arms use the frozen answer prompt, the frozen judge question file and the pinned judge; each ran once on the test set. Scores cover the 90 answerable questions, with the six unanswerable questions reported separately.}
+\label{tab:posthoc-settings}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}p{2.9cm}Xp{2.8cm}@{}}
+\toprule
+Arm & Input & Procedure & Settings \\
+\midrule
+BM25 search agent & The frozen 1,000-character chunks of the question's pool & Tool \texttt{search(query)} returns the top 8 chunks (BM25 channel only, CPU); \texttt{finish(chunk ids)} hands evidence to the answer call, packed at 15,500 characters & GLM-5.3-flash; at most 5 rounds, 3 tool calls per round; median evidence 2,735 characters \\
+Grep agent & Raw document text of the pool; documents named D1, D2, \ldots & Tools \texttt{grep} (regular expression, at most 20 lines), \texttt{read} (at most 2,500 characters), \texttt{list\_docs}, \texttt{finish} (spans of at most 4,000 characters); Persian letters and digits folded to one form & As above; median evidence 1,652 characters \\
+Long context, gold documents & The documents that hold the gold evidence & Equal share of the prompt per document, cut to a window around the gold units, so every gold unit is shown (228 of 228) & 32,000 prompt tokens; 90 questions \\
+Long context, BM25 documents & Pool documents ranked by document-level BM25 & Whole documents added until the limit; the first that does not fit is cut to its head & 32,000 prompt tokens; 96 questions; gold units kept: 62 of 228 \\
+Long context, whole pool & The whole pool & Only the two LAW pools fit the 1,048,575-token context & 3 questions (LAW-fa), 464,389 prompt tokens each \\
+Router model & The question text only & Reply A (one fact, route to \hybrid{} 6,000) or B (combine evidence, route to the wide pipeline); the prompt was chosen on dev out of three & 600 tokens; 193 tokens per question \\
+Router by tier, by answer format & Annotated tier; the answer format already given to every pipeline & Tier 1 to \hybrid{} at 6,000, tiers 2 and 3 to the wide pipeline; the format rule sends single-fact answers to tier 1 & No model call \\
+Reader repeated & The identical saved pack messages of all 8 cells & Sent again twice to the same reader and judged & 1,536 answers \\
+Selection call re-sent & The saved selector prompt & Re-sent to the GLM selector with the frozen settings, re-packed; unchanged packs reuse the matching reader answer & \lexb{} twice, \setr{} once \\
+Selector swapped & The same selector prompt & \texttt{gemini-3.1-flash-lite} chooses the passages; the GLM reader answers & Same deadline, cap and strict grammar \\
+Selection call without deadline (15 timed-out calls) & The 15 questions whose selector call timed out & The GLM selector with no deadline, then re-pack and answer & 600-token cap kept \\
+One selection, both budgets & The saved 6,000 and 15,500 selector replies & Each reply packed at the other budget & 82 answers \\
+\lexb{} at other budgets & The saved 6,000-character selector reply & Re-packed with the frozen code at the new budget; the selector prompt does not depend on the budget (checked byte for byte), so there are no new selection calls & 3,000; 10,000; 24,000 characters \\
+Whole pipeline without deadline (all 96 questions) & The saved selector prompt, all 96 questions & Re-sent to the GLM selector with no deadline, re-packed and answered; an unchanged pack reuses the frozen answer & 600-token cap; 14 of 96 calls took over 3 seconds \\
+Selection over the reranker's candidates & The reranker's top 24 in the frozen selector view & The same selection call without deadline, strict grammar, exact bundle packing, and fill and fallback in reranked order & 6,000 characters; 4 fallbacks \\
+Fusion pack on development data & The 60 development questions, saved \lexb{} traces & The fusion pack rebuilt from the saved candidates (equals the saved fallback pack in 60 of 60), answered and judged as on test & 54 answerable questions \\
+\bottomrule
+\end{tabularx}
+\caption{Post hoc. Settings of the search, long-context, routing and variance arms. The agents use the same model for searching and answering. The BM25 agent is the CPU-only stand-in for an agent over the hybrid index; it has no dense channel and no reranker.}
+\label{tab:posthoc-settings2}
+\end{table*}
+
+% src: work/posthoc_2026-11/S10_retrieval/RESULTS.md sec. 1; S11_rewrite sec. 1; S12_chunks sec. 1; S13_embed sec. 1; S14_bilingual sec. 1; S15_crossling sec. 1. Reader GLM-5.3-flash (Together pin), judge gpt-oss-120b as in the frozen test.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}p{2.9cm}Xp{2.8cm}@{}}
+\toprule
+Arm & Input & Procedure & Settings \\
+\midrule
+Dense only, BM25 only & The frozen \hybrid{} index (chunk vectors, BM25) and the saved query vectors & Top 40 of one channel, which keeps its order through rank fusion; \hybrid{}'s packer and answer prompt unchanged; the BM25 pack at 6,000 equals a frozen pack for one question and reuses its verdict & 6,000 and 15,500 characters; no new embedding, no GPU; 383 reader calls \\
+HyDE & The question and the genre of its pool & One LLM call writes a hypothetical passage of 60 to 120 words in the question's language; dense search uses the passage vector, BM25 the question; rank fusion and the frozen packer follow & One passage, not averaged with the question vector; mean 649 characters; 6,000 characters \\
+Multi-query & The question & One LLM call writes three paraphrases or sub-queries; BM25 and dense lists for the original and each rewrite (eight lists) are merged by rank fusion and the top 40 packed & All 96 questions received three rewrites; 6,000 characters \\
+Chunk size & The documents of the six pools & New indexes with chunks of 500 (overlap 100) and 2,000 (overlap 400) characters; same BM25, bge-m3, fusion and reranker; the 1,000-character arms are the frozen cells, reproduced byte for byte & 119,308 and 28,205 chunks; packer top 8 and 40 candidates unchanged; 6,000 characters \\
+Second embedding model & All 58,218 chunks and the questions & multilingual-e5-large with the model's passage and query prefixes, fp16, mean pooling; dense only, and fused with the frozen BM25; frozen packer & Commit 3d7cfbd; 512 tokens (65 chunks truncated); 6,000 characters \\
+Translated questions & The 96 test questions & One plain translation call per question, fixed on five dev questions, with names and numbers kept (numbers identical for 96 of 96); BM25, dense, fused and reranked retrieval against the original pool; the reranked pipeline and closed book answer in the language asked, and the judge sees the original question & 20 of 45 translations of English-pool questions keep Latin-script names; 6,000 characters \\
+Spelling variants & The 45 Persian test questions & Arabic letters in place of Persian ones, zero-width non-joiner removed or replaced by a space, digits set to Persian, Arabic-Indic or Latin, and one combined variant (Arabic letters, non-joiner removed, Arabic-Indic digits); BM25 with the frozen and with a plain tokenizer, dense with and without normalisation, and fused & Retrieval only, no reader calls; top 40 and 6,000-character pack \\
+Language splits and judges by language & Saved verdicts, ledgers and packs & Net answers and an exact sign test per half; permutation test of language by arm over the 20 source groups, with Holm correction over 14 contrasts; prompt tokens per evidence character by regression for six readers; judge agreement and kappa by language & No model calls; second judge as a snapshot of its run \\
+\bottomrule
+\end{tabularx}
+\caption{Post hoc. Settings of the retrieval-component and language arms. All arms use the frozen answer prompt, the frozen judge question file and the pinned judge; each ran once on the test set.}
+\label{tab:posthoc-settings3}
+\end{table*}

@@ -1,0 +1,468 @@
+{
+ "seed": 7,
+ "source": "dev60/dev60_results.json per_q @6000",
+ "items": [
+  {
+   "item": "D01",
+   "qid": "V2-dev-RPT-fa-T3-003",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D02",
+   "qid": "V2-dev-BOOK-en-T3-003",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D03",
+   "qid": "V2-dev-BOOK-en-T1-001",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D04",
+   "qid": "V2-dev-LAW-en-T2-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D05",
+   "qid": "V2-dev-RPT-en-T2-001",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D06",
+   "qid": "V2-dev-LAW-en-T3-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D07",
+   "qid": "V2-dev-RPT-en-T2-001",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D08",
+   "qid": "V2-dev-LAW-en-T2-001",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D09",
+   "qid": "V2-dev-LAW-en-T2-002",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 1
+   }
+  },
+  {
+   "item": "D10",
+   "qid": "V2-dev-RPT-en-T2-003",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D11",
+   "qid": "V2-dev-LAW-fa-T2-003",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 0
+   }
+  },
+  {
+   "item": "D12",
+   "qid": "V2-dev-LAW-fa-T3-002",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 0
+   }
+  },
+  {
+   "item": "D13",
+   "qid": "V2-dev-BOOK-fa-T3-003",
+   "arms": [
+    "HYBRID@6000",
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0,
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D14",
+   "qid": "V2-dev-BOOK-en-T2-002",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D15",
+   "qid": "V2-dev-RPT-fa-T2-002",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D16",
+   "qid": "V2-dev-RPT-fa-T3-003",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D17",
+   "qid": "V2-dev-RPT-fa-T2-003",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D18",
+   "qid": "V2-dev-BOOK-en-T1-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D19",
+   "qid": "V2-dev-RPT-en-T2-003",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D20",
+   "qid": "V2-dev-BOOK-en-AB-001",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D21",
+   "qid": "V2-dev-LAW-en-T3-001",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D22",
+   "qid": "V2-dev-BOOK-fa-T1-001",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 1
+   }
+  },
+  {
+   "item": "D23",
+   "qid": "V2-dev-BOOK-en-AB-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D24",
+   "qid": "V2-dev-BOOK-en-T3-001",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D25",
+   "qid": "V2-dev-RPT-fa-T2-002",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D26",
+   "qid": "V2-dev-BOOK-fa-T3-003",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D27",
+   "qid": "V2-dev-BOOK-en-T3-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D28",
+   "qid": "V2-dev-BOOK-fa-T1-001",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 1
+   }
+  },
+  {
+   "item": "D29",
+   "qid": "V2-dev-BOOK-en-T2-002",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D30",
+   "qid": "V2-dev-BOOK-en-T2-001",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 1
+   }
+  },
+  {
+   "item": "D31",
+   "qid": "V2-dev-LAW-fa-T2-003",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 1
+   }
+  },
+  {
+   "item": "D32",
+   "qid": "V2-dev-BOOK-fa-T1-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 0
+   }
+  },
+  {
+   "item": "D33",
+   "qid": "V2-dev-RPT-en-T2-002",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D34",
+   "qid": "V2-dev-RPT-fa-T2-002",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D35",
+   "qid": "V2-dev-BOOK-en-T1-001",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D36",
+   "qid": "V2-dev-BOOK-en-T2-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 0
+   }
+  },
+  {
+   "item": "D37",
+   "qid": "V2-dev-LAW-en-T2-002",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 0
+   }
+  },
+  {
+   "item": "D38",
+   "qid": "V2-dev-RPT-fa-T3-003",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D39",
+   "qid": "V2-dev-RPT-en-T2-002",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 0
+   }
+  },
+  {
+   "item": "D40",
+   "qid": "V2-dev-BOOK-en-T3-003",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D41",
+   "qid": "V2-dev-RPT-fa-T3-002",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 1
+   }
+  },
+  {
+   "item": "D42",
+   "qid": "V2-dev-RPT-fa-T3-002",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 0
+   }
+  },
+  {
+   "item": "D43",
+   "qid": "V2-dev-LAW-fa-T3-002",
+   "arms": [
+    "HR@6000"
+   ],
+   "strict_verdicts": {
+    "HR@6000": 1
+   }
+  },
+  {
+   "item": "D44",
+   "qid": "V2-dev-RPT-en-T2-003",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  },
+  {
+   "item": "D45",
+   "qid": "V2-dev-RPT-en-T2-001",
+   "arms": [
+    "LEX5B@6000"
+   ],
+   "strict_verdicts": {
+    "LEX5B@6000": 1
+   }
+  },
+  {
+   "item": "D46",
+   "qid": "V2-dev-RPT-fa-T2-003",
+   "arms": [
+    "HYBRID@6000"
+   ],
+   "strict_verdicts": {
+    "HYBRID@6000": 0
+   }
+  }
+ ]
+}

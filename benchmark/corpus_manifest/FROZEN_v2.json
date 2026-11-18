@@ -1,0 +1,2106 @@
+{
+ "frozen_at": "2026-09-25T03:10:18",
+ "manifest": "corpus/natural/manifest_v2.csv",
+ "manifest_sha256": "81e481fd1b8badf1490b8363b090bc3b5bbd4430dc266a43cdf92e27912dba7a",
+ "why": "ragbench.tools.freeze_extend writes only into the frozen study manifest (corpus/frozen) and takes no manifest argument; v2 sources are recorded here instead",
+ "documents": [
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-1015_parkman_oregon-trail_en.html",
+   "sha256": "fd352bd875fcd65917462461e11871dfb2c5f18c4e6d15e27ace1cabe7b22cf4",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg1015-images.html",
+     "sha256": "35fbadd9a3f6cde219ab4a3201e65708dd0e8d3374d907df93af4469769473b9"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-1015_parkman_oregon-trail_en/document.json",
+     "sha256": "916309ec0e7cca00a862e74d83f43baff4759171a0bfbcceb60f680a9f052277"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-1015_parkman_oregon-trail_en/document.md",
+     "sha256": "489b3a426c34ea96d589843b91a06ccc69d751055c88308938505c48e33c2a8b"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-1228_darwin_origin-of-species-1st-ed_en.html",
+   "sha256": "9d223a344bde7767f6825f6e83d66736c184e4b851a21d99ad26d43c13f154a2",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg1228-images.html",
+     "sha256": "a7392dcb4424840a7d670fd830b1dcee5adf9c5ddc6c67fb5f0a15bf38416bbb"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-1228_darwin_origin-of-species-1st-ed_en/document.json",
+     "sha256": "6630f0f87d958e73261e23596cb774de7f801c767680116d100182aa3ee34109"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-1228_darwin_origin-of-species-1st-ed_en/document.md",
+     "sha256": "8624b13f5e77f10a34fa062e2f417e862a1c65f11c9da40a6a04c68475299740"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-1228_darwin_origin-of-species-1st-ed_en/tables/p001_t1.json",
+     "sha256": "d421901fb2fd4f32fc86876c32327d503f5118d979792b427a9514714bde4653"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-1228_darwin_origin-of-species-1st-ed_en/tables/p001_t2.json",
+     "sha256": "5e67384315dc5a8a5b2e68a8a421045f17e67de944be7a595c1b3c2baddf6446"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-14474_faraday_chemical-history-of-a-candle_en.html",
+   "sha256": "95958e8675b75848c91373a156084e167925d36a83a10eadb5778facf9a683d7",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg14474-images.html",
+     "sha256": "ccdf88ee0489ce3d7595fe84886d1444da671c7b44db57545fcf5d10be3ea9a0"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-14474_faraday_chemical-history-of-a-candle_en/document.json",
+     "sha256": "87bc085b49953bcb8ff52139bbc978b9cd6d08c43fefa1b4da30bd419fa65ca9"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-14474_faraday_chemical-history-of-a-candle_en/document.md",
+     "sha256": "65eb0f6a80b32473d0b18eea5470a2efe5c3f937c1e1e1cf668634c15b095f96"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-147_paine_common-sense_en.html",
+   "sha256": "df171cd7f9dee879a967cf09b16ad9f6d95712bc1bbcc2100dcebf053dd3c9f9",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg147-images.html",
+     "sha256": "101952e6c658b381453178edd5f77e10025ee35770afa788f6d5d5e44c908f11"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-147_paine_common-sense_en/document.json",
+     "sha256": "9bb0e1a95fc610620b55294b3df0e39ca8a83ce14466cd54f0059a56646fa5bf"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-147_paine_common-sense_en/document.md",
+     "sha256": "2a3494399c04b4bdc6a6fb9ae6afeef885094d421d394ebea3c19782df531cbc"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-147_paine_common-sense_en/tables/p001_t1.json",
+     "sha256": "ecb08de85416e251cf3e9304d77363c00fc5825004c0ce186f260d46116a8991"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-2009_darwin_origin-of-species-6th-ed_en.html",
+   "sha256": "8e18b4cc9a2070a57dcbb3af58155335846304a537fd175d5641f16366cee4d8",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg2009-images.html",
+     "sha256": "a823cca9e927fd79ec6eaac3c8018fa0adeef1825b75673e7e138827232ca3e5"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-2009_darwin_origin-of-species-6th-ed_en/document.json",
+     "sha256": "fbb9f5e0836d1a43741ff9a733c1e31907ec2974e386993a785c798eeddd193f"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-2009_darwin_origin-of-species-6th-ed_en/document.md",
+     "sha256": "d24487bd09e836b9d75008827459c6030229025fb12ecb14181d67094d217849"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-2009_darwin_origin-of-species-6th-ed_en/tables/p001_t1.json",
+     "sha256": "d421901fb2fd4f32fc86876c32327d503f5118d979792b427a9514714bde4653"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-2009_darwin_origin-of-species-6th-ed_en/tables/p001_t2.json",
+     "sha256": "c36d369c831b5b2196ef91901bf7fb547b45c5dd401c3ab2a696d91651baa12c"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-2009_darwin_origin-of-species-6th-ed_en/tables/p001_t3.json",
+     "sha256": "a899e64cd8227c7653f9e6652b35085b37bb50ebbfad59760a1b23478583c40c"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-20203_franklin_autobiography_en.html",
+   "sha256": "b2f245a0f388bc0c1c3b2ca3668d3780f7e26351cf47f297c56999e945d43ece",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg20203-images.html",
+     "sha256": "061e402cd1c247d6626d250780e94cffee0a4548cd9fdbbd2458975cc509c2ec"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/document.json",
+     "sha256": "d9d1424f9a033198bb0e5488a2f20b481c5ec980a23a6168ba99fd3e40bee5bf"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/document.md",
+     "sha256": "d8bda18755af87dfa110b2ac81773679c61cd7972c3cbdd875ac0f1c64de60c3"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t1.json",
+     "sha256": "f70a2e91061fb1cfd26e06141c082666b72915075148477ead177bf1eb4146cc"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t10.json",
+     "sha256": "6cd0f04379caa4c9c2094f7e9f503704f7c6c544566c5494684330eb55a65df0"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t11.json",
+     "sha256": "4d230e5c856a8089e58add72eab46b29c1ff41b7f9165fb8a629f079b647c301"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t12.json",
+     "sha256": "5a6caf5ba49b473374cf57ff43d2a10f13ee5d5f3bdea5a20eba76ca177940eb"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t13.json",
+     "sha256": "8f53f7866de37c12aaf337bd094b771e76da9259c3ba506dfda647383ffbe33a"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t14.json",
+     "sha256": "5a8414cf3fc76f04b2aee3235493c1a58bf74bd66f03b5e23e0e1cd3a4ce014e"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t15.json",
+     "sha256": "c22c00cb8835cdac4a8b8a19484dd519da4c919df02c502860956f53a78ff6c8"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t16.json",
+     "sha256": "565ff716199ad64dbc32cfa12dceb36dc79e51d322ec541eec373c1f115d92ae"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t17.json",
+     "sha256": "26cc424d3e5219b435211687734cb18777cd58af3910effec90a15fbdb20dd1b"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t18.json",
+     "sha256": "cf5d0576dde7b8317d48c4445aee120ec9f1dabff2ea064d9e433961eb9aa93f"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t2.json",
+     "sha256": "71c8f5c81143c655d4d03460a888211d0b383390c7377a2927e8a953d198efb5"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t3.json",
+     "sha256": "bdcf93e798e2dc4661798c1ed8d385cde40954590531f993cf31a05a4e187699"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t4.json",
+     "sha256": "a4e9e1cb55bc347e6b888f99d7d7b9cb90218c98db5c6db280b127bab002786e"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t5.json",
+     "sha256": "47d5a70a42d494d11f426c99654943e48cc9a186ccd312e14d357d8fc21ff437"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t6.json",
+     "sha256": "70f7e2da31c91d33519da33a89735af7c3ceddce7eb39912e03442392420da44"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t7.json",
+     "sha256": "0fcae6a90156d275e804a340bd0fcd685847402ce349ef170e9baa49a58437d4"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t8.json",
+     "sha256": "7a0dbb607ee6d529100bfb5a3b60f32142cc92b673cfb63ee181afd6c3cdba12"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-20203_franklin_autobiography_en/tables/p001_t9.json",
+     "sha256": "6613194f98bce94af40b31d3984a054827e925b265f4155da20a56c5b3461a92"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-23_douglass_narrative_en.html",
+   "sha256": "c539feaca894dfb2725dac70273874da3a578b5564a3cdf98c9f63e1fdeb5a7d",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg23-images.html",
+     "sha256": "a2dd63f1c05c536036eee9fa3e341bf63ba6f07d17594f03ecbb780823bc6243"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-23_douglass_narrative_en/document.json",
+     "sha256": "ed1d4cca43f38f2c726d3b711caba6d7fe88c84f799bdd062827d80a99240879"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-23_douglass_narrative_en/document.md",
+     "sha256": "d567401ba65671a4eeeef5f953988ca514c4d3be24f7030275affb108defd1da"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-23_douglass_narrative_en/tables/p001_t1.json",
+     "sha256": "5c3fdd5fc3d15d661a7f8c1ea2155464e3679042ad0b6bbe366828f5e69fa9e2"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-34901_mill_on-liberty_en.html",
+   "sha256": "c5bf514648ea7d8bb18f70ac18dead37b51e289eef703eaa43e89bc58198533b",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg34901-images.html",
+     "sha256": "7c8597716a89dac2dfd17cc73d3402e24d71eb97c2d46f2b1e8dddfd16794c18"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-34901_mill_on-liberty_en/document.json",
+     "sha256": "53273d3bed3612981df85123f76e4d88d108160d7d264bc6f000ae9bb4597f84"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-34901_mill_on-liberty_en/document.md",
+     "sha256": "7ec51f0b31c2c06a8085c8732849d7a6c1f78903f464732f09cb27dd15051d61"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-34901_mill_on-liberty_en/tables/p001_t1.json",
+     "sha256": "272d5f5e0d2439d0077ad03324b467266bdfdb2f0629dea960abc4c7fdf0338e"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-4239_malthus_essay-on-population_en.html",
+   "sha256": "971beca29c2259e5170c12556f753dc5c11c9904256f9a7921fb5b57e995b9cc",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg4239-images.html",
+     "sha256": "8ee76b293b610bc28513c8db45f7ad6794fd41014344f3272285c80d73d872bb"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-4239_malthus_essay-on-population_en/document.json",
+     "sha256": "30c6a870b0b18bc540eb5bb4b7cd36c3d5acad933b9b0c419765b2ee84b44e2d"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-4239_malthus_essay-on-population_en/document.md",
+     "sha256": "b89d01037aea73d994e5e6ca1bc2f61b35b29f847e286a882de4ffea0279dc03"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-815_tocqueville_democracy-in-america-part1_en.html",
+   "sha256": "006c3480f0fbb8ded621ed2b296fa4039ba7e77075b3726695ed62ad1466b9ca",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg815-images.html",
+     "sha256": "424224c5cf442751f57cf6dde3d547dcaf1870420e0c0589a3165291df2e0079"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-815_tocqueville_democracy-in-america-part1_en/document.json",
+     "sha256": "4700d73862b6c581ca5acdb8fa73b9b848c69c775983958f0013e5e157d7b196"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-815_tocqueville_democracy-in-america-part1_en/document.md",
+     "sha256": "94fef4b77b1c30875c2df91c534bc3685b9101bb778f9e6a1b7f1f5c7d490444"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-815_tocqueville_democracy-in-america-part1_en/tables/p001_t1.json",
+     "sha256": "b855298860eff7a48b4313eb1be71f1fd6f4105a7d0aaec43fd4d2aa68387652"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_en",
+   "local_path": "corpus/natural/book_en/gutenberg-833_veblen_theory-of-leisure-class_en.html",
+   "sha256": "ba7c40b9eb51ce0510c5afea229b04f68305e05265e82fadf92a5df4c2633b2f",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg833-images.html",
+     "sha256": "33cc35add07281014f48b94ab620de7c888b3c085e9870d4043e1fb0e4abe806"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_en/gutenberg-833_veblen_theory-of-leisure-class_en/document.json",
+     "sha256": "6fec57d05af5f18eaf57a33dc96dd88497b4e79dc0fb19e9eec56a2730424d80"
+    },
+    {
+     "path": "corpus/extracted/book_en/gutenberg-833_veblen_theory-of-leisure-class_en/document.md",
+     "sha256": "189f2bad72dafb0c0b40ca32f3afc0c9081fcce8d0495021f81238d619a4a374"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_bahar_political-parties-vol1_fa.html",
+   "sha256": "bd41f6a1ee0e25d964c905b23a710ed05d2be40aad9b8450a2178d99c69a6ab5",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_مختصر_احزاب_سیاسی_ایران_جلد_اول.json",
+     "sha256": "a60f708465126dadaf61af23767e5a43d2fab445e9fc053e370488a7cc841527"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/document.json",
+     "sha256": "126601ba4d38a8cbd61aecd3fbb48ec326e31a4745c4fe211306ca54476d294c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/document.md",
+     "sha256": "bfa47fb72161eefa3e66d97dc65f68f1efd5629797005675d7de64dad047b485"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t1.json",
+     "sha256": "4f96563d35304b07f67dccde3e9fbcaa2be5e3fd0452f8500f6cbf7dfe96178c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t10.json",
+     "sha256": "7cd92a9c50a6f0b1c2c2c0db81ed0474457bd9c4dd5b09994756bc2f1b845e9b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t11.json",
+     "sha256": "bd9a9613cf33c14376e880fdbb179f2afe8283bdd4dafa5c7dd494567a4e1b2b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t12.json",
+     "sha256": "c5e381529e7a24e4dc36645e60894e66bfbf06330b659f0e631af8f460fb9b8c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t13.json",
+     "sha256": "2c8ba44f15e7833fea31d96bb47f56ab02b9342927c024efcd25cce8d5eb7a88"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t14.json",
+     "sha256": "b541e5756cd6b04332e0c92410607e93c9e95fafb6b46a5d985d7f379be14388"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t15.json",
+     "sha256": "0b5cedecccaf12878f27114315953a8e493d2a0cf4f527a7d53932df30ea56b1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t16.json",
+     "sha256": "f672f9e60b852120a65e5df807374293c572411fb7090119a9c89ec3a027557a"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t17.json",
+     "sha256": "f0117a2f80c5e5502ea00e8829ffe55e60ec913c201b14a4308a4797fd2f7bb4"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t18.json",
+     "sha256": "f075484ba42db43dbfa5c5b6b31736dad749e2e57a52cdd5c7479e43dc18d7c3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t19.json",
+     "sha256": "641745a642aa5a4ddeedc97d53aa3804aa050b9190f313c7fa1e547d2e135be5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t2.json",
+     "sha256": "e3cf71b70ce5187ef93be7dc2529553da8d70dfe05c4664e2334e167865fbe1b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t20.json",
+     "sha256": "19f9aa64860bdbf3e02ddf1b706862b2c4594368d0ec78c162962582073b5f1d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t21.json",
+     "sha256": "98890495f89481fade80324b5841f8dad8372954eec912dc6ce287cce448576f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t22.json",
+     "sha256": "5f94c4d2aa9324f477327382c71ccdd48dc2b37455d75744011289d2e3ad3b83"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t23.json",
+     "sha256": "ce9ff6119a300b7cdc6ec2812f066bb39456ef97f2253e689fb1cd6026959412"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t24.json",
+     "sha256": "dbed1aafbc5cd8facb8f6d9656f772e22bd27bfe50e9beb6cd6d0ef273719df8"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t25.json",
+     "sha256": "2596ad54a998ade3917e153b30b7555986c1754c9c7bdb4cf4645e68f6b85fc4"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t26.json",
+     "sha256": "d89821b61ba2d68219e7813af3177b6d84a3214913b0fb844748d39431beae8b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t27.json",
+     "sha256": "428b74d58f4c1ab034601f1be9fc5ec389982654ab1a87f9df993683d6874c52"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t28.json",
+     "sha256": "afd28330b4d9982953d4f273c94c71fcdb64dfe342ead6fa19f4e1266312c743"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t29.json",
+     "sha256": "05b3cba1a828f8b2caf5882a90954c32421f2c4f6c6dbd85cfa0811a143162a2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t3.json",
+     "sha256": "0b6e0c483c2ccf30bf07f0c8f0d29e7639163be0201782dd4e003a6f200e8d97"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t30.json",
+     "sha256": "a029516c92499181eb212c2b6bc14fdbe58c5acbaeb0c8852f8fa59818e46007"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t31.json",
+     "sha256": "bee1287bdeb40faac577b272f8fbde64c84df90894c26d1dbf01b2a5cb5d9042"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t32.json",
+     "sha256": "d4c704fd57592f2df55b9af3abd8c9c04b921787152cfc40064dc0ed59931f55"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t33.json",
+     "sha256": "417a413bd2321ec97d2f7adfaa7e4fdda83582484fb0baa55bcb655553f94e8c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t34.json",
+     "sha256": "3334115903a0809394ed9fba57098b1994b215e93d0dcfaf40c05ec31c702ec5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t35.json",
+     "sha256": "1ea519ac50625fb40386ed1d833fbccd3df1330a4fb6d98cd79f35db74d4a325"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t36.json",
+     "sha256": "e2853cc7bbdd2f0b5379517f3bd7f8b28650e22035d8528bcef45a0bc0b9b84d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t37.json",
+     "sha256": "83e754d169666139f94d500f6aab043b83eb77885659fd2202d7f6bb0f42c4a2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t38.json",
+     "sha256": "51c13770fc44d83d133d8a94a10c4e3f5d70af968aa7bf6f94b22459fcfeef80"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t39.json",
+     "sha256": "649d1981b858919fb548d392d7c305ddab3dcd39b828714355dfc189fe1477fa"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t4.json",
+     "sha256": "fdf0abcdae49ed2df66c08659ba6aaf734d7e3e375a359598f3df0d86934b9ca"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t40.json",
+     "sha256": "af7e7366968f1e578642cc25caafa3f6a1810f27a7b3d4fc3739736805a64ee9"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t41.json",
+     "sha256": "1a4edc243f305442b8acef8c4946709300bc53dbbc9920a1dea6e752c1cdc1eb"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t42.json",
+     "sha256": "f4cb9a8bd6719561494dc6be64a98f8825111c14e5f03f8d4cde71d3a88ee995"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t43.json",
+     "sha256": "d0a45f2f7e760a6f568b8ee73f77b5bc6b3e35dc4d894bd761de8e4b5e9f9641"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t44.json",
+     "sha256": "65a5dc632760a322655d9ffe27a9f76bbc558bbeef45e84583a144d21221a5e6"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t45.json",
+     "sha256": "f2bd27f473540685562d071208291e7f08aebf67a18723f19de5142868d7a816"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t46.json",
+     "sha256": "0a9744ba9f6e5b112c7430ec49204eab4be99f79158d26baf4aa0db12e056dc3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t47.json",
+     "sha256": "adff2d240ab10e99d49766cdb83760befff2009bee4399effc9c1328315f8003"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t5.json",
+     "sha256": "e8c8407db103481198e5fdfadf2670fa3950c381ff911d8bc227dd6ca94ced6c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t6.json",
+     "sha256": "3f8148343c27d2de1f753029f718a4a49ce14d2c8bf6703042ab96fad194fcc1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t7.json",
+     "sha256": "8d8282497512296200efdb7fd988f821fbfdff282702a495d84d13b6defedf5c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t8.json",
+     "sha256": "417bb7c9b1b2ae35ba72a7c51cc31e013eb316acf16974e7dfe2e47d4a244775"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_bahar_political-parties-vol1_fa/tables/p001_t9.json",
+     "sha256": "01e55b3cc38fb1eb2c3956e9b4ca775a53a78a175ec9251f83001f3928456fce"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_christensen_iran-sasanian_fa.html",
+   "sha256": "59e9e01abc7b6bc31bc57e7d362c5e39f32ecdf2139c0341d2f82de7865456c1",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_ایران_در_زمان_ساسانیان.json",
+     "sha256": "5e3337bffb92d8cdc6ec7cd5a91864d622d12429f5d14fa3ac9b704d858100ea"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/document.json",
+     "sha256": "10cb766eb32ee6491268b0e45406b6b45109c8a2f6bfd33f5d2963d0e2a8156e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/document.md",
+     "sha256": "2f473620af2112397cbe632f07ad61a23459852c03691c22bfd9866f665320f0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t1.json",
+     "sha256": "2598ed86f1e9e9ca9e8a6a105830713307d8044a8928580a5eb4a8b8bff11c2f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t10.json",
+     "sha256": "66ab6d994202f5030b8ea52708cb0a147046a73d846c2a69ce5ef0d19bc826b7"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t11.json",
+     "sha256": "32046413a49ee937ed1f3890a2be649fc689451c743a01dad6e88668836b45ae"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t12.json",
+     "sha256": "ae104198328257ac43242e95bf260a765bf18846e5eed8beffd13234d17cdb46"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t13.json",
+     "sha256": "cc2e7e102e417a4412c4de2870487be0ae8e06f924b2ed836aaf44109f4b5c0d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t14.json",
+     "sha256": "2af000b13bb9b917228c262ba588f9812444c7e0934a2d6e35a709ce7974acf1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t15.json",
+     "sha256": "939d9d28cd412f500344b92a8d41c205b529de332b5c5693b0d85658644bced0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t16.json",
+     "sha256": "db0ec9b12ed7e0f91d6cc6ca6a2d51311d949db6557a89ef65eb69b0c847fbf5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t2.json",
+     "sha256": "f781e5322a91e4bbe6eb5a1b074a50eaefa4d326bf1a8d60f9e708d996947e2d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t3.json",
+     "sha256": "e104fc916350e3fab2f17e8bca0a98a4352f38aa41b678ea2d25cab068036219"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t4.json",
+     "sha256": "3309f766aefdf05530b4a6c6626bd3426daf5f5b3e186e654019b15fc414999b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t5.json",
+     "sha256": "9075315cb47d623e8c42a0735ef58a38f20c075ed30b2a2c789749eb8a9d7ac5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t6.json",
+     "sha256": "ece5fc3606a8fb1df585cfa5216cf151c01c7d2eba505363dd91c49203486d2e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t7.json",
+     "sha256": "5458f766c2bcac5232fb6ed0584a0e223b67bd710add6f88cdb139262949d832"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t8.json",
+     "sha256": "63af31a0d7db5af406cfa9bf1fa7fc9c5533b69ebc720a3835ebb1b60f58dde3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_christensen_iran-sasanian_fa/tables/p001_t9.json",
+     "sha256": "a8ca1566659b8a38ef8efb15e9abdef08305eceeea3a927f25266edcf3e48ac2"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_foroughi_ancient-rome_fa.html",
+   "sha256": "695ee74522179f1a8c8e1a22d5e1b1cbe334493eb4384b3a6f65fec2ac57c6de",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_مختصر_دولت_قدیم_روم.json",
+     "sha256": "5fa897d670696896c5a747ec18e924e1e9da0f8c5515192a0773ea1fd9cd7da2"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_foroughi_ancient-rome_fa/document.json",
+     "sha256": "3543a9e061c1dcd729b1ee543f655e99e12c71812f0bb242ecc97ec81bc9e9f5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_foroughi_ancient-rome_fa/document.md",
+     "sha256": "88fbc8aff3cbf94e34936558bae00e735769a3eaa3a77e088536efcc18bbb5e5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_foroughi_ancient-rome_fa/tables/p001_t1.json",
+     "sha256": "0fd6dedda30de3e4d01c4faf18219f06546b8d1dd3d3c46ffb98e18d1ed8b223"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_kasravi_azari_fa.html",
+   "sha256": "e6a97c385505f1478d14db39b5922da9039249b045732f8eed8345a960c005d8",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_آذری_یا_زبان_باستان_آذربایجان.json",
+     "sha256": "d4be24a0afca28cb04d6a9b37431e3a970fb2defc6fef1e5ab25de9671d8c5bc"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/document.json",
+     "sha256": "b530d34df7e09d780c3f1e803c4c9c817b036a2d4ccee37355b5e3fcc59f431f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/document.md",
+     "sha256": "e1f460e1cf0f911b25dda688321930828138506b2543efab4c1054d2e3802871"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t1.json",
+     "sha256": "3ed22cdf8055c1a2ea78052f61c9b9f799f5caf5f66856e123c961164106c81d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t10.json",
+     "sha256": "087d205d3380a8dd41ea232b8651a50cd87b2f0eab6ae16198687d0babd84bb5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t11.json",
+     "sha256": "543a9cb3bf01144bcba0ccc343cee32506cf52aa81e782d6d827553894afb30b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t12.json",
+     "sha256": "773614793207b031924e7d766fc8147a8d8778308bfee65e042152aad4bd126c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t13.json",
+     "sha256": "861e9df1f609a1a72c0896ad1f9f67455c8b2f6e7699acb26349ff262ff326ac"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t14.json",
+     "sha256": "bce33814eb89a3436be6594dde2cbc88ce9bbc01464f916b7eace5788dd65625"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t15.json",
+     "sha256": "21bb0f2f913085ba736a1edccf6ff9acd799b2a10e21c8be53533f3f5a8202fa"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t16.json",
+     "sha256": "6e15a2bc7f4aa17f47385cb0ee11e50ccf719c864cbc8f228b29fc80ea80d168"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t17.json",
+     "sha256": "affcea812b30c22dbeef76ba293a612cb521a0e6f81bda8d8ddf817850782313"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t18.json",
+     "sha256": "eafec160a0ca6b5934c7c830f30818b55b567a3507cfec51235428e21e76fc09"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t19.json",
+     "sha256": "2e0ff28e442d49ecf6a5155424b7090958309e0d8ee972bb315eac5486c96c40"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t2.json",
+     "sha256": "bc25447c4dc40409c5b38613cc9df85946b1203afd7ba185eca2b4effa81e851"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t20.json",
+     "sha256": "5a8642842e58da336e0bfe918131b33916f55da8ac36aa530f60eb2248e814ed"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t21.json",
+     "sha256": "952570a5da2798f3760fbf28c4358db1701220b29c4ee945091b3221e3c4a31e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t22.json",
+     "sha256": "8138a405e8296d1caf7339384a24916c44879bd05234c1b14afccaf949c9be7d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t23.json",
+     "sha256": "6d5fc9b25aa658d8a6ff2a8fc90fe9ca610212dfe4b74cfc37ba72e94879228d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t24.json",
+     "sha256": "4a403a7edb230002149466d114f56f7936429491f0e6c6cd00e169dc4fbe5388"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t25.json",
+     "sha256": "925731b8174aa40d9b1303db84f4eb84cc42b569e3c125c2c004f0d3069a9b56"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t26.json",
+     "sha256": "d406fc19efca2e399aae4192cbbdbd5a604e2a1a035e5a7069771a2b181526ed"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t27.json",
+     "sha256": "c83be2e3d3298c6779ca04c5ac8472a2b923f35415261fe65030de7b88158457"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t28.json",
+     "sha256": "2cf28250e123dbdd6cfd5542d673a17d20b04244cdba9c1de0a73375fa19dd1a"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t29.json",
+     "sha256": "f4f8b6724a46f9b185d60a42892ae2981184b213a3f297dd16c1b374947d3215"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t3.json",
+     "sha256": "a4cbcf9e6fde5950840e066d7b7b7ed91754478af1dfa4ef8d4b5e84600b571d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t30.json",
+     "sha256": "55012792569ce8c28c358b15f120154b44815274fb3c653568706b60dd70b133"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t31.json",
+     "sha256": "cf0d6f3fe5ee1c4dec50a4604675fc57a4856b337924aac6a6be0415f4326d08"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t32.json",
+     "sha256": "125fef60b07c448ec9e92cb7e1382affd2bf0edeb467f5029d332bad2c7af25d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t33.json",
+     "sha256": "89c4ce52ab603b1262c409600ec150e81418923b0ed4c61a094e495bdd6297b3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t34.json",
+     "sha256": "62717839d10253389e23833d60b3a4cce626a53f3d8b8015a5820c21ddf35f8a"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t35.json",
+     "sha256": "671537da2925ccf89e66e6862f41a9a9da6bc82a8a5567de49ee2aa69b9c85d1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t36.json",
+     "sha256": "32ec87de1a9a9244bb0239b23f3dc24104fb819c3257565068048ff9bca642e0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t37.json",
+     "sha256": "171cf2ea18ad6c58b6ad67119c5b99a46fd6cce9c045f9f86b3fc3f3539a24db"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t38.json",
+     "sha256": "e048ffc78eb399668a1c9995f57f668d26f49d0ea8f79f1cd9a2f614fffe22a6"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t39.json",
+     "sha256": "1721d3e83fa9f8a2448f5a9f3f5af5a611d71ac7a175b8978a8b20f7790c29b1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t4.json",
+     "sha256": "b330272453487a09c7ce276ab66872b6d80a06eae32b9cdaa8a69fc4a8a84e18"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t40.json",
+     "sha256": "b1e4cb1d522c2acb80f8b2d8bc8cb5d83a4a614fb4b7c9ef81bd3a6baa6d3f69"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t41.json",
+     "sha256": "b23b3baef85959d48a4a2446a27338e744be75d6b18aa4a3e17c609186df9b56"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t42.json",
+     "sha256": "9f5c82d7d67c7a5c329780ba3344e545fb8467b23b187be8d47ea4ba002458e2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t43.json",
+     "sha256": "639bfa162d55ee858b072f180b9f17ed9bea3f258af887a895faceeba599296e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t5.json",
+     "sha256": "2b47846a684b996172509353591a0889f9d2f83ee70518977a5ccbe4ea8833aa"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t6.json",
+     "sha256": "d9bdf3d413e4626785239f5d476a250b34017bcb86ec8eeedafce005347960e9"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t7.json",
+     "sha256": "d3ddc8c58e29098e3655aaa8f20de9e598697103ecff49b387fc753e799d03ef"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t8.json",
+     "sha256": "8ab2d8acac10b4e95b1e5d01c3b0d269a1c45549c30e67295467c8c07a8c5ebd"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_azari_fa/tables/p001_t9.json",
+     "sha256": "0858dc87637bcaa2e2a95cb0eb2f74f9482854e05363327f0d40f60684703558"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_kasravi_khuzestan-500-years_fa.html",
+   "sha256": "d672b9367974e014d354e7b29e545c20e0a848c9e7091f2121cac02639061a7e",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_پانصد_ساله_خوزستان.json",
+     "sha256": "844b56a109f7b7758cf922847adcbc55784ae336c7babab7bd2ccf318e0399c6"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/document.json",
+     "sha256": "2f4526bc9f7d5da7e8e6ffbd528a0d9e52b023c95991a77e0578795cb13b03ff"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/document.md",
+     "sha256": "e4f5c1cec74a417e5f28aeae3f9f9834a79e5b0b95c66d1b7b18a351a1b0e5d3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t1.json",
+     "sha256": "268a09c1fad6f5e30bacc6c688554584cb77b42f186c6b78a0a1985458793e78"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t10.json",
+     "sha256": "1f367bbbc95c43278553e8337d2a3b29061501b2e42c46f618af5b60de62049d"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t2.json",
+     "sha256": "30487ae2d7985aca572673e3f5260d59339946b4fd3f8efe5053b549ef32252e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t3.json",
+     "sha256": "5f6fccffcb6a2ed0093d69f0e045b7814883428bbedb76e226cd706e6dfd46ed"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t4.json",
+     "sha256": "6b460a37303cf4fff98ee6acdf5cb6c7ccadf92af921dd3374f8ff86f5627351"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t5.json",
+     "sha256": "0267fb1d28d71546a794d40fa0f948f2057ce6bbe86f18e93442e14086be11c2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t6.json",
+     "sha256": "346406baae466e5f9206c0ab3b3cb425714aaf38c5f52c9b145e677e5b7c111a"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t7.json",
+     "sha256": "4232d7986245eb916063f0e2e2bc1b427da093a6c471c04493721d556aad9a6b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t8.json",
+     "sha256": "f349a9066b7979024d47f1a434a193e8a466f98c764ce38da73dbbe59d0e73b6"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_khuzestan-500-years_fa/tables/p001_t9.json",
+     "sha256": "90959ca5f0cef6cc81ee5781a8c5480eac5098e9a8bf0828b1a252739ae99ab6"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_kasravi_shir-o-khorshid_fa.html",
+   "sha256": "c6219eefddd9821cd4b1581509d100d4ff5630b1186f70d64543a864d182ff5c",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخچه_شیر_و_خورشید.json",
+     "sha256": "ba66bb4a11e8744aaeef374dd07b03f6ddd1e3f3dc0e80c5b7b610770bd83696"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/document.json",
+     "sha256": "b7006f30b23d8a34f283ca232097e42024c9957f4b520d87fdefea471857f454"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/document.md",
+     "sha256": "596e4d3b9845c1882c0a76bffa007be9656f1780739f26adfdb46a764578ca96"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t1.json",
+     "sha256": "bd2fe7e3ac9b209b231446a265faeb943afe042e61b9175f5b1d7e6a017d8c17"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t10.json",
+     "sha256": "b7dab9857ec98dd0f58a44c3599a8530dcfb8a3acf3d6f4fca7b2e1a09ecb91c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t11.json",
+     "sha256": "367f8a5eba84dea30f7964e2aff289ae455eb1ce242b83984abb54ec11cdb9e2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t12.json",
+     "sha256": "521e335bb59d8682600845df6f7e78b3b08472cbfd258c988f9d8e94cc312428"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t13.json",
+     "sha256": "c84cc2a6bc32c23ea52d96a396f17d3e33f70a0e32cde958789fa49273e9a4b0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t14.json",
+     "sha256": "55c17941588bebb6b339a2acb3a9346c963dc4f87d80ed6e718adf9958659aa4"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t15.json",
+     "sha256": "0802cf589dbc4a2b3516404bf3ea7ed2f18fc3d6681df179772e2d765111beb3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t2.json",
+     "sha256": "00c51f2e90f5bc8ed9ba990e3c2db90a1d06467dff00e7fa53ce305de0721185"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t3.json",
+     "sha256": "14bac98f8ec0e153002e855ab9537db520a7a57b3712e28193098dbd6b2774be"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t4.json",
+     "sha256": "13b3124d52934966ba45422bd9d6742afb671729bdb19b2c6a8a133ad65fa091"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t5.json",
+     "sha256": "e18b08d9cab6059e5d49e769e5bb83314b9d88cac36e21e065f21569722a7521"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t6.json",
+     "sha256": "c9d031968f4d1a2cffe645009a68401c04cb96aab2649f76663dee1e9c4e2934"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t7.json",
+     "sha256": "e40e0b60fa8cb5485ef59610952ab7ec64a367e4e2e6a6c34352c864b882536c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t8.json",
+     "sha256": "8e822b1a189d57f472df7281a5837ec3165df28ee4bdf919361a5869cece0d01"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_shir-o-khorshid_fa/tables/p001_t9.json",
+     "sha256": "99f984d73cf98c27e2ad4475af977b3b9ad76a8c8262ca8e8fb160169171532a"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa.html",
+   "sha256": "74f09522976e1639e6e9adf537f44ede7f0a2236d0b02e9c77ba16b7f42a8cf6",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_مشروطه_ایران.json",
+     "sha256": "89ce0fd8a118d31435a4f4cd0d8c93d9d58e0a1231dea76cea3a8b260df6852b"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/document.json",
+     "sha256": "41c1c5eecdb1ea011da70fc05f93abb9e6a585ca17cc41c2caf6c877dbfdd8e1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/document.md",
+     "sha256": "1e9419ff8b5c8a1d6c072ded4c1743486958fb4fa90e14cd1a2ec2bb5cbb3c4f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t1.json",
+     "sha256": "5b7f61c67f1497291367790a285a0a0c75d9c6bef92c380378ab7af5eb4b9448"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t10.json",
+     "sha256": "85a26a826213749adc0ce3c656d23936623fee6b6b9046deac9170fe442c420e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t11.json",
+     "sha256": "95b263cf22013e3d026f3c2b5c5b99df5d3aa4fa33e9a682d18245ac3a03b26a"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t12.json",
+     "sha256": "93714754b6de8f65ebf24d8c5ec0e61b9833643529ecb755c0c50038a451f9a0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t13.json",
+     "sha256": "828e4cabd7cfe7e597be800ecfc44984c67df7cb8e628fa94fe687066ef6dcb8"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t14.json",
+     "sha256": "deceab063d77588495236182eefceb8c51e2acf644460b58e4e07dbcd45c46e0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t15.json",
+     "sha256": "7d53fc976ce1070f6c918d840cca45affda5a0fa7dfc74b621a9773fd390e0ff"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t16.json",
+     "sha256": "682fe32b6380aea4ea564614acd630ed75b106b356a773aff188aa04136d276c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t17.json",
+     "sha256": "2d0f8c0734412148150ec0bd1104556dcf191af2ffcc8fe5edbcb345f70bc9d8"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t18.json",
+     "sha256": "9ab8edf41d33be17ab2d51d44db7783a46e22aa86b2f34d8d4f71a5b657b2e02"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t19.json",
+     "sha256": "bc72b515a5af08d3d6a297e4075502043f1b9468bebe846b2104e28137778fca"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t2.json",
+     "sha256": "6ccae094f35d0bdffab56f8c6a5b1f84668215f780cfb116516d8eed70e91eb5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t20.json",
+     "sha256": "385f7900cba1c40891bac75c9122d866d7c19e9a37a9782577952c7d9b53e365"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t21.json",
+     "sha256": "cb9981b66a193534b36b82444c05d31a4aca20e5ac5b3d8803102b3a43a3c939"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t22.json",
+     "sha256": "4467b6723f83025f2e760cbeceaed88b2563b070c1c17ea4ab181cafb3ab07f8"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t23.json",
+     "sha256": "81990314a6aabd0fcc1774b6424360c86e91b212ad4c0115e9c1107e5c2e509b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t24.json",
+     "sha256": "121ec928cb38330fb971559c318ddc02936a30b93af1c29a9db308552faa06fa"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t25.json",
+     "sha256": "3faa2d78fcc6eb3bdb90a5a9c4a0356877e0017ecff6c55476fe1974858d1313"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t26.json",
+     "sha256": "0afcd84aca71a1a232ee06dd11f90220781df6f7a3abd5d9c72aa4dbdf7aaa0e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t27.json",
+     "sha256": "241bcf8540574eaa4da110eb69f454c74cd7924b2e061a118b3c5bcc38e32ed2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t28.json",
+     "sha256": "4857413754e2293d1bb63291a9e8d6bb10b292678e6c7b328a0d1029f6374561"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t29.json",
+     "sha256": "b2d65a8dc44a669c7a573e364ea9654192d729cf2e3e90876fcbd45dc585f992"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t3.json",
+     "sha256": "614ff388465185e3680312629d1ff41d680ebeb899873578da54a925c431c1e6"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t30.json",
+     "sha256": "a36bd97961c0c4746912e46d61bad3f8f5c788fa3180cd9efc3c5bac5317f9c3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t31.json",
+     "sha256": "3c15530519a19e50d8954aa71b4e64e20c0c83550c7c0a853eea88cfecb4f9b4"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t32.json",
+     "sha256": "0b6bfebca77090608ebbae5101d1b0569529ba33bc3e5dbdfdfb03568996e873"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t33.json",
+     "sha256": "571126e4aa7fb623a0ac62b44098a28aee483716ae685ff0e3626071f0362e4b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t34.json",
+     "sha256": "5091773686ee1cd1b2959604cbb883ebb247d0d0f86910b623e1e4be5716a7f3"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t35.json",
+     "sha256": "3fd3c9aa057a83fc7739e8191edd4168bcc2169c18ac1da4d49b80d75846fbfb"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t36.json",
+     "sha256": "85f88b116e6ef554a796ed39c01e5e71bb060cd8b4605e2fe0ce9cf409b319c5"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t37.json",
+     "sha256": "76438f3fcc0a1aef1f213254c772ac50bc73564e705269405b3af9b97d19359f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t38.json",
+     "sha256": "359650075252d631ad59e80d009d236e9c62d033f3edfef8b262f65b2fc2c770"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t39.json",
+     "sha256": "0631a7ccc0f43f803e725438f27577d127cc796a368d9f16a84760e62ffd66ef"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t4.json",
+     "sha256": "98479fe9c95e29023126ded491ccc694fe20596e38a945780478aaca38a5ad40"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t40.json",
+     "sha256": "0443ecc7cc8ffec3bdd65381e051ece65cc154389b3df92aa67318c31c71d979"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t41.json",
+     "sha256": "f3f42fdcaeb94e8dee46e3e2632edfa8b4caa9e8e836da024dea393b6d9883ac"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t42.json",
+     "sha256": "6ad71d3a42509117fc33f22f4bf6b18d904d99af208f58048aeee558ec768f46"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t43.json",
+     "sha256": "a353348bd76677d02497cc1eccac51a8ace4fa09e7bd1fa6f6e383b27bea97a0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t44.json",
+     "sha256": "80d685a8fe5b68c4b39c4dd8d407f488fb167044d206b405fcc1325500ba4404"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t45.json",
+     "sha256": "78c47f5ab84855ee3cf6254c77008da369cccdb177e82588ba16dba006dacb89"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t46.json",
+     "sha256": "5971d852b5bc0cf20876a5440907a3f564e460753624bdc759bff835f5638e3e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t47.json",
+     "sha256": "7851928a50808ce5868ec83b0b34af850b45ef8b5de157c9f6ec57801d79c914"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t48.json",
+     "sha256": "1021aaa7bd2334ae185a63893dd43ceb6e0b82043615c89a2c711cc56228cd06"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t49.json",
+     "sha256": "57b7ec6762f0274b168e1381497e381b177c0c6eb7c372c1dfb7be66b4d3cae1"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t5.json",
+     "sha256": "387f1678b1af715b070fcb4292c7e17b52b589eb5e228b939e62e2180f8f4e9e"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t50.json",
+     "sha256": "0bf340df6d52cdf14aca449980f171a9369724650f7b046f42b84b60470c9ac6"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t51.json",
+     "sha256": "43a3ec221f8229a7d78178ae2eb674913b4f799cd6eef427b6153e1a3c5aa9b2"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t52.json",
+     "sha256": "0aba249dd7ad44d578ef2d7dddb48c0e836067b7c067b3700bd4816c8bda6a73"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t53.json",
+     "sha256": "f7ecb309295dc017940e2b8d580c82c18093bcefc75036cc8658c003a5f76f78"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t54.json",
+     "sha256": "2f6364109fd8195a2a04db602e7d10630cd65e2c2abcd39beecb3fee95825917"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t55.json",
+     "sha256": "8a19bbbb6a78412411a619c73901212109a861df9b84197f9f56b19a1b831b56"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t56.json",
+     "sha256": "ee46daab10515ba70501241e57293b916de213e1e216289784c3f7b9ca6cfe7c"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t57.json",
+     "sha256": "77ce22cbd6dd4da48ddbe1fac9601295c2d32136ac6b7595b7c7c35e08af16e7"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t58.json",
+     "sha256": "594394baef8d858c1cedc994ed1745b1692b66838b0467f4afb123670fcb059f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t59.json",
+     "sha256": "84fcb6141b403f195048d402280da4d705121246a6253d93d6b7fba59902c106"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t6.json",
+     "sha256": "280adc04c99946bbfcd03ba458dff29c310fad1ef36a23bb8aab5ea9311d488b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t60.json",
+     "sha256": "6b4a61ed08d24f542706bd8422804f3976d15d0c70446ef1d3398cdce4a39536"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t61.json",
+     "sha256": "95cd2b77f9479e3a8f11100bf8de5cdb926d84922c498e8a3da29d80867592dc"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t62.json",
+     "sha256": "56efbc5348a2827de784d40fe91eb5f10a5afcac81dd579056824df9354f353f"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t63.json",
+     "sha256": "12569eaa0e3bfddff09538596e81f87bf1b32d0904e7b6987cd2da5b2b3281f0"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t64.json",
+     "sha256": "ae4295b675e12a02c02224b94aca61fd535af08e129bff31eda17caa11ff653b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t7.json",
+     "sha256": "1e3be6f4ad6426dc7bac622fc9af73b09964d6d0fd0750228d8390777c154ef9"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t8.json",
+     "sha256": "1ecef0de6e13045118928c6933743e748a1c5f12002101615cf89c119147072a"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_kasravi_tarikh-e-mashruteh_fa/tables/p001_t9.json",
+     "sha256": "e3b4b1968d12691ecbd1f6dbd97c4d1a77f33adec1b4bbb04e09ed24bf32fcab"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_mahmoud_iran-britain-relations_fa.html",
+   "sha256": "b75b50b2f959591959018d53c82f13be6b4b37ae0ce44cf6423dead714f06a64",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_روابط_سیاسی_ایران_و_انگلیس_در_قرن_نوزدهم_میلادی.json",
+     "sha256": "7e74a120b353584db7f1015a4d066697aff3e91b9edf72938ac6a6b13437fcb3"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_mahmoud_iran-britain-relations_fa/document.json",
+     "sha256": "e89200bb52b19c2027b21d5112765fb273b4c85d581e3627a2822309a46520b9"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_mahmoud_iran-britain-relations_fa/document.md",
+     "sha256": "0c8ecb80b1e81916e34d215a38e3f78bc8e751fbdfaa6041b60aa49a4dd06ed2"
+    }
+   ]
+  },
+  {
+   "lane": "BOOK_fa",
+   "local_path": "corpus/natural/book_fa/wikisource_pirnia_iran-e-bastan_fa.html",
+   "sha256": "8f1f8c362739b6a82c7eb0b85b557eb7bf3ce152337f288cee77c7eaac0ba45b",
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_ایران_باستان.json",
+     "sha256": "18460759fb811b836dab1012b11d0fc0414b52234120a2e1c5ee453d35852986"
+    }
+   ],
+   "verdict": "suspect",
+   "extraction": [
+    {
+     "path": "corpus/extracted/book_fa/wikisource_pirnia_iran-e-bastan_fa/document.json",
+     "sha256": "5c1f229eaa2b8eeacc7f3a430da9558335b8bc531f251390446d9f9dc9186840"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_pirnia_iran-e-bastan_fa/document.md",
+     "sha256": "4b764f2c24fba37c7c3ba292541049d8244b9cf72d571e5a24e53e9fc1a5eb1b"
+    },
+    {
+     "path": "corpus/extracted/book_fa/wikisource_pirnia_iran-e-bastan_fa/tables/p001_t1.json",
+     "sha256": "0aa4c4ec6827c6062cfc7f9bb78157235eb4d6315a08c1823c7eaf537c1da240"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/eurlex-32016R0679_gdpr_en.html",
+   "sha256": "9993061b8d03ab824c6ad1332adfae159fc701b7a4bcb8f2f0be9920052d6b90",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32016R0679.html",
+     "sha256": "e36cfee2e5131238b184ebd07cb432fb880df878c00f90e319a8cdfe6cd0e440"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/eurlex-32016R0679_gdpr_en/document.json",
+     "sha256": "3b211d6d334d2daf2bc3cf55bbf23932aab89226f9bf4661288a502f574fdec8"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32016R0679_gdpr_en/document.md",
+     "sha256": "dce577f2f28b6f2dcea26d35ebe1447b983788913f4c515719d08542512a00dd"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32016R0679_gdpr_en/tables/p001_t1.json",
+     "sha256": "2c05ecff0927575a9be4c8c9407634559319b2350219445ee2ed94c5422f1357"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/eurlex-32022R0868_data-governance-act_en.html",
+   "sha256": "2ab6a09a2cb02aac0f8618fca0d237af3c237be862e2ca95189d294bb7d2e3c9",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32022R0868.html",
+     "sha256": "7f02d705ba70b568de1309ec68bbac7def2b23cd0147863440d4ce17af9c9915"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R0868_data-governance-act_en/document.json",
+     "sha256": "47ff02a41cd58878d1080b80283dafef6047bee4b62bba81b26187122c2ff1d9"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R0868_data-governance-act_en/document.md",
+     "sha256": "59461f0f13562f291b8ce3fa80932ced460f0edd9899fb71c2709f4aaaba44ba"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R0868_data-governance-act_en/tables/p001_t1.json",
+     "sha256": "2c05ecff0927575a9be4c8c9407634559319b2350219445ee2ed94c5422f1357"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R0868_data-governance-act_en/tables/p001_t2.json",
+     "sha256": "952d0c5758b7ffa6b234bcb4437bb55b2ad8e320f853ca7ed8f83a29a18c125d"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/eurlex-32022R1925_dma_en.html",
+   "sha256": "cfa60a61b37806a6fb5b0048e1948d215e82848cd381444599255e40112a64fc",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32022R1925.html",
+     "sha256": "614161c34c0fd262da3738e5a79ad2e51283ca0d1815494b6b6bd3e9e1fa9029"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/document.json",
+     "sha256": "713518b748c2dc5d264d58ed317283db634c75bb93550949508b6ce36c04fad8"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/document.md",
+     "sha256": "4416ed6b8119d073b4e49a04775cade07b42c21164b2530f3bdc01a600429bf4"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t1.json",
+     "sha256": "2c05ecff0927575a9be4c8c9407634559319b2350219445ee2ed94c5422f1357"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t2.json",
+     "sha256": "fcd3e5f0e59cd59608d72d865a3581b806b1d7b8390c55fa3dc6827214ca9668"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t3.json",
+     "sha256": "a33b70973dd3961466d1e52fe1ebf1418ada8c96cb0260100d62c2e7421e2c8c"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t4.json",
+     "sha256": "8f597072ad36d29897d3bf45be5f4636616489ec3e4c1d741f52c53221e89ac7"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t5.json",
+     "sha256": "f0f1d853bba30f29b2fe0e6bf1782e2dfc3833b17d9165f0ea6850744196a6d4"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t6.json",
+     "sha256": "8709df85345ed81ecbd9a6684eef1bf126946adc9cee242aa29d3e438949cbd6"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t7.json",
+     "sha256": "44fd1a7df1349d2b554f1d66a014b0c2a963760204d4a8a86013398dd817068b"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t8.json",
+     "sha256": "7a0736341c13ce78b40c48788cf9c088c99a5903cc06c8ba1a43fb63bb5bdebd"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R1925_dma_en/tables/p001_t9.json",
+     "sha256": "bcb495ed66c3181bfa1b731b195612469fcbdd5271050e5880c072a4ce0f89b5"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/eurlex-32022R2065_dsa_en.html",
+   "sha256": "b53e88ca0f350ac4b11172410f56b316fccce4a03f2dcb1d21ec4617e3f593fd",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32022R2065.html",
+     "sha256": "0297b5833354554e394d3a39093675c53b6817f5e6189cb40d52b1fe4f2614f2"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R2065_dsa_en/document.json",
+     "sha256": "479c9a45a67443a9fe2060630710fdb5c7c1b35ccd15bd94e935478a61b87b2c"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R2065_dsa_en/document.md",
+     "sha256": "1740d7872def4a6c55fd9f366ef9977c4d64d59f2af8c5aa04aa4201b26b0d8a"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32022R2065_dsa_en/tables/p001_t1.json",
+     "sha256": "2c05ecff0927575a9be4c8c9407634559319b2350219445ee2ed94c5422f1357"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/eurlex-32023R2854_data-act_en.html",
+   "sha256": "06f63e856407b932cc742d1d19cb7cb1bb7109b60cc0d4dae9184eaa13793cb6",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32023R2854.html",
+     "sha256": "ff866c9ee79fcc98d1fea1bc660fa1c17e7c91224c2de6a66d86ad6e0a0f3cca"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/eurlex-32023R2854_data-act_en/document.json",
+     "sha256": "9e22e494611e920f54fb8007b443a5c0b4e57b51220e787a8c87c90bab9de1a7"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32023R2854_data-act_en/document.md",
+     "sha256": "16137edabfad9933c37cf0546f940f6fef646195d5d50c65c2a12e575a1cd4cd"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32023R2854_data-act_en/tables/p001_t1.json",
+     "sha256": "2b6b403f581712e1f2432e2cfee759cf4e42cc5b2591974468877d6114addbdd"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/eurlex-32024R1689_ai-act_en.html",
+   "sha256": "3dbb09ef6e52e7abf582ff515c8b47b0a7a8996566e82f97403a7145108c3aee",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32024R1689.html",
+     "sha256": "6e7fd1137e51ba9d0185d951e15352177ef8872f07ffc864523d1ed23778fb7c"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/document.json",
+     "sha256": "12479ea9187e7942b2cac1b630b58ef6e41ad5e9c39d91ec21bc37c372513f15"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/document.md",
+     "sha256": "ff5726eedd0c2893036b48144d2acc6e66a1a9f743c9474868053532f1e42433"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t1.json",
+     "sha256": "2b6b403f581712e1f2432e2cfee759cf4e42cc5b2591974468877d6114addbdd"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t10.json",
+     "sha256": "f4aa7dd7103fcf81fa5f3a82534d7e04f6bbfe498fe9ea72f3758aa64c99319e"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t11.json",
+     "sha256": "d445b33ec6c40fa19cc40ae21487c2338de89d18288eb3d36400fd844e19161a"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t12.json",
+     "sha256": "911aa0e006310593e5af29bcbdc9bc8b9d4e8412b7c38a2d680fc38d1dfb0e40"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t13.json",
+     "sha256": "658fa307396f0d09f7ebe5a6875cab8f4f43b2f5f410f19b5f38f5589e6abee1"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t14.json",
+     "sha256": "72ed7839f46d8e5dbb135ba0503783efdd1101c159dcede86a33401eee33055d"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t15.json",
+     "sha256": "01d844f40f5b7b0f8da2013158794e4448eba824dfbc1dfc670e90cc627c68cb"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t16.json",
+     "sha256": "d23ed77c3853fc882719138395fcdb3975c6091e0bcdb1600482b1050f22334b"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t17.json",
+     "sha256": "dc786e298e5b303ff0f3c0ce4b325cb527e75a7a45a4c4d53457453c4af8456f"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t18.json",
+     "sha256": "3a200e9e952a8cbafed3b671d92e4ae13c6cc77d96b19af1a6ebdac88d48f504"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t19.json",
+     "sha256": "0dcd2ccbf15412494d3a426c58694b19e60a61c9bc6c7938a85ced8992c876e3"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t2.json",
+     "sha256": "2395c2e2d961e359138970bb726402cbd0e2b2a84da6bc0a24d03d5d92bc84bd"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t20.json",
+     "sha256": "d0a800e309741590e62aa5d2fee7aa2566fce7fa061fadaebf47aa631d3d1ade"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t21.json",
+     "sha256": "a89f7b40595f91478acfc2694a2c6aa7996b16b8428b70cb9bcf39b448ced283"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t22.json",
+     "sha256": "0328335051a297108aa422a6c81752ca0db7c25b13f1870347518f6c6ca34234"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t23.json",
+     "sha256": "c62891aa51da955621cc48d9a311e558f87e168276ede811803b9a8be85e3212"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t24.json",
+     "sha256": "7189b18c0301b2c9d82303865ac2c71cd55b02a2478e1c2d8c7239768a98e103"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t25.json",
+     "sha256": "d2f5bff271fe4e27e9612ac8bad7fa0cad001fd29f0f789626ee8693c9f13273"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t26.json",
+     "sha256": "dead7c52e3692b87312568727b7449145551c21ef9d35be3484f9a6abd539065"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t27.json",
+     "sha256": "fdeb2d9e8231d45a647ac4b2e0b6851d144254718bf33bb723d1951f19d6cdf9"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t28.json",
+     "sha256": "600c5307e1a542a2254e814a44624f2cdf96ae0dc22f09e1de82a8242fd7b829"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t29.json",
+     "sha256": "54eb32459459c3bbd161b15bc4dc6d3c2421cbf16dda776add9a465ca7e84941"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t3.json",
+     "sha256": "e1b5720218e540e360567f030cac03962529f347ad6acfc425b73901a421bdb0"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t30.json",
+     "sha256": "976619c0fad0c032093a81e598b736500929f0766c3e29c32e124d2a757a2ea8"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t31.json",
+     "sha256": "204f8d7294a30c0d599ac8c0413978155254b061d04a7bc3167ff853d0baba41"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t32.json",
+     "sha256": "27da2b330061fab970e209e3931d4c5e5b0eb724a17083ac8ec3e4b9d3b5f42f"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t33.json",
+     "sha256": "f3544097f9e6e218cd05d17949995daad6c1097af44d6860ad43496d1b614a3a"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t34.json",
+     "sha256": "9cdd42dd0e1fcb9484187d726f7b9c086db5311aa1c44e056f8c32ff2ded567f"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t35.json",
+     "sha256": "0c8473c3ffbb96d34fcc720f4edcb91972983062475290a786182fbc75a1f146"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t36.json",
+     "sha256": "3fa3efa7c1509d35af26e32fa50bce31fab6f4770f5fec43055ad32b90a0bdc8"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t37.json",
+     "sha256": "4491012192b8fb591ffed8c95bfed53bb1910cd0f36f3b625106baa04a8e4ca4"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t38.json",
+     "sha256": "e731be1e61eef50bc8e37720794262dfc77d0a2413a10524d9d0220bf96869d4"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t4.json",
+     "sha256": "bde86f7f33f549f2187b4300e7c8c67f4dbaa5fc08c5dfc649794440e5505b4d"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t5.json",
+     "sha256": "d0f3cbf839e236b56572e5b8c44e208f001cce3956b50767bdf843a5249d0cfa"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t6.json",
+     "sha256": "0320e286950fa7967eef8f8fd51ab8ea5bd5fa51d7b4a4cc4af6c3607c25b23a"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t7.json",
+     "sha256": "cb9c76e5838fd4904a40141748ae6699e82ef160bf3789efeca87dd0122366cc"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t8.json",
+     "sha256": "c1af965d03212105f2740f0b66ae968a7817dd1edf5473873f1c6380528e17d0"
+    },
+    {
+     "path": "corpus/extracted/law_en/eurlex-32024R1689_ai-act_en/tables/p001_t9.json",
+     "sha256": "e7bbf9830b4a1d373e324f0343994c584ccf106f01691530288283df88129c30"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/ukpga-2010-23_bribery-act_en.html",
+   "sha256": "c041aa2f506f77d0b9729ab9d20e6c4f35fcc9514266cbd59c57d37a3080a053",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2010-23.xht",
+     "sha256": "aa644a71a05a8aece7c1e3fcd4fa7baa4f9ae582ef1260ecf5c0ce5ff8d12b74"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/ukpga-2010-23_bribery-act_en/document.json",
+     "sha256": "b8e2ce72c5af0f6e5d562ab24113331d16645aa9e62f75db36c51c1305e28ee2"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2010-23_bribery-act_en/document.md",
+     "sha256": "ac8dee7fc68e8437873e34517857188dd9ab7b8141ebf44c50b61adcd2c1c4be"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2010-23_bribery-act_en/tables/p001_t1.json",
+     "sha256": "a7dd5170db5003760e1126035edf9da0e8e7f08baf58716f21c646d736e56e54"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/ukpga-2015-15_consumer-rights-act_en.html",
+   "sha256": "090c1e5f3ac274cab3013f51109c0f4d2ac8e7c0fe9cea8f4ea1c2cadbeb568b",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2015-15.xht",
+     "sha256": "380d48af0c944fa5a7e0acfdffd9f666ba2943866fa7e35ec9c4ac72b812e88d"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/ukpga-2015-15_consumer-rights-act_en/document.json",
+     "sha256": "7dc54927373b52b046a67766601fda1b07d10558f0b02e1f6bca2a9255a7520a"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2015-15_consumer-rights-act_en/document.md",
+     "sha256": "6ae66c536ea09d74d50c48a01ed1f11e0c28cb388997586203947ee0af9445a7"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2015-15_consumer-rights-act_en/tables/p001_t1.json",
+     "sha256": "543fc87c5f662dab6c2755e61a7dd398a13b5c4c8694b47e822065d9e1bd4c93"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2015-15_consumer-rights-act_en/tables/p001_t2.json",
+     "sha256": "c8b00393d1883e7739b83dda57c542e2d824afd0bc42533a16eb834a5abef089"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/ukpga-2015-30_modern-slavery-act_en.html",
+   "sha256": "1aa518cde944ab175a8b44936f988cc419d863baacb470f000a2b82d76238b8b",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2015-30.xht",
+     "sha256": "1f284f794a1e772b142f316c3fab1cf1aaffed2c90b0fe29c994b091b674e1cb"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/ukpga-2015-30_modern-slavery-act_en/document.json",
+     "sha256": "3c6addc29ff949534ff1f3d272949a44350e551fe7a2b8adf3e4065a6b290fdc"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2015-30_modern-slavery-act_en/document.md",
+     "sha256": "cdf0ebd126311c763b52865d037315cc1f70bb372a576968576336ccb2d41ea5"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_en",
+   "local_path": "corpus/natural/law_en/ukpga-2018-12_data-protection-act_en.html",
+   "sha256": "4c5be98189674ce4bab9454f305d063f3f738e5f8ea7e964d9b0cfa236497b41",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2018-12.xht",
+     "sha256": "df4955324c5201f07372ed82c04eb967baa945c82cfea8ba86de684e2824c25b"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/document.json",
+     "sha256": "8d9aabc18635ec7ff8619a1b273507dae709c296ba412fa2409165c3a3fb3055"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/document.md",
+     "sha256": "1ec9f8a8ab3e7e7753685d59a7c67c37083f3dbcaa1c5e15b9b20f05bd979326"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t1.json",
+     "sha256": "e6b74a36f611b6574f12735f2a3cda92ed00703d324f21875cdbbf447793a69c"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t2.json",
+     "sha256": "de0a40eb35f255a0fdf1268b2762a00f1771c2e82e03cfe1d06de8253f0fa2c5"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t3.json",
+     "sha256": "3895fdf46f0dc73a6b0ed463c09bafd5cef13793d4e72decb18a92c2806dd44a"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t4.json",
+     "sha256": "c656e8c80a88e13285f0687fa00760f0854786d9615cee11c2883b38c9e1ca3b"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t5.json",
+     "sha256": "1c102ad46319e99b44e639a54f3f755fdaa9ea66ce53baa9c02f51fefe0ea8ad"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t6.json",
+     "sha256": "10189dc5c71651ce2739362fff8c0c4bf1196a16cce0b636dbe9f9e15678d290"
+    },
+    {
+     "path": "corpus/extracted/law_en/ukpga-2018-12_data-protection-act_en/tables/p001_t7.json",
+     "sha256": "2ca831723e31b6a295723ef9e237eef2f0fca347062120ab92dd825a46189ad4"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_civil-code_fa.html",
+   "sha256": "fd75e1a51472735403c479df327cce8fc8e6d8a9d471bf0d4132fac0e6545323",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_مدنی_۱۳۷۶.json",
+     "sha256": "4bfff63fdd1ac8258cf1caed4e7e5cded196b6794f671570d98b971dc87b6621"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_civil-code_fa/document.json",
+     "sha256": "53d9a60fbbe04e0aa4331e1a462bd991d96f7c55247248c3b83d2c3d76fcf03e"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_civil-code_fa/document.md",
+     "sha256": "370463ac84caf49f32a16bdcf91fe0c25c7018ab8a5adb20d0c219cd4faa5d79"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_civil-service-employment-1345_fa.html",
+   "sha256": "ef164f7a562866422d81eb68f5148f27331dc4debefca15394516693002e2c67",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_استخدام_کشوری.json",
+     "sha256": "eb2157687ff4a675134d26ca2f79a7e1b71162f87bf2ca0c061653273ffe7c3f"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_civil-service-employment-1345_fa/document.json",
+     "sha256": "4f5ef5e32d6403b4d8c5e60e83177686a0ddc8e8c5b556534f14a710c202d85d"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_civil-service-employment-1345_fa/document.md",
+     "sha256": "d25fa925452d39de99d95a5f79d5ad48b4bbe65bf88584fdfc6c521d31d0f1d0"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_commercial-code-1303_fa.html",
+   "sha256": "2a8943940e641bd9ba40134985803c399b8746ab72c5f874f298146cf033aeba",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_تجارت.json",
+     "sha256": "1abcbe163a192ce9f3f9295fb252dd8d89dab74c37e8465a2c1686755c46e5ad"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_commercial-code-1303_fa/document.json",
+     "sha256": "fe598cb55ede44d8345ea113ac483d977aeac09d6e6d4c08acc72a16d3722cfc"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_commercial-code-1303_fa/document.md",
+     "sha256": "79d25e85f8826ffae9c2bf4a0382be18ac9d2182a5689ce63739e74b607b8199"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_commercial-code-1311_fa.html",
+   "sha256": "319e257498f958dda5fd6b25010787d353379dbc1bcd1c7994335fc904659343",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_تجارت_ایران.json",
+     "sha256": "233ce332e115e74dadb0ac187bc06c48c13ae59e60df4f90768d9749ae73bec7"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_commercial-code-1311_fa/document.json",
+     "sha256": "c8a80ced66ebd7001abaa1b465c564ad088e9b876cef21ae0d410340a47168f7"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_commercial-code-1311_fa/document.md",
+     "sha256": "9cac08e6f7c735bfe752c9150952ed447c9f6fd002c6dd91e15abb900f9af082"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_commercial-code-1311_fa/tables/p001_t1.json",
+     "sha256": "06b42ef9d634e2dec75386d5504a1b9f71fc1da5f45470b05ff9bd93c5452dda"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_constitution-1368_fa.html",
+   "sha256": "d9780dfde92e2856d0b132a74d903d43668624c00596760344d570ef365ff338",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_اساسی_جمهوری_اسلامی_ایران_مصوب_۱۳۶۸.json",
+     "sha256": "f9bd604cf5dfca745b2746a3626146a01e763b3b5583d04bfe5c22b1e2d40697"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_constitution-1368_fa/document.json",
+     "sha256": "26e21b5ed1cc3ad0f938f983ef91441d4cf35931977211b1ac31d9a2e4b37d85"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_constitution-1368_fa/document.md",
+     "sha256": "080a45c661430ee806a9ee3b7628479de3a99b39e1d9c5e382bdbc09dc7c3251"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_cooperatives-1350_fa.html",
+   "sha256": "0dc287c1f0d29d705510dc9c37bae699540a8194e2635ae8b70c6e2b1d72841b",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_شرکت_های_تعاونی.json",
+     "sha256": "40a781c36cb4087ec84dd13d27ce43a24ec23b69bbbe04f7bb7ebc6243af28e4"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_cooperatives-1350_fa/document.json",
+     "sha256": "7765afe8172d094367f772cb1bfb6e66474f29d21e365fc0a45b182abfaf1bfe"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_cooperatives-1350_fa/document.md",
+     "sha256": "38e2b0cae9f0daeb7f3adc46d0d33ff310451b611a0798ced0750e6e2954de8e"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_direct-taxes-1345_fa.html",
+   "sha256": "450ae047d6b638019d455b4acd05eab953d14d6f6f3134610e172626aa4f5282",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_مالیات_های_مستقیم_۱۳۴۵.json",
+     "sha256": "c1bc9defc1b90c30534e71955568196da9a7a72c5b9cdc5da62ee59dfe64d084"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_direct-taxes-1345_fa/document.json",
+     "sha256": "1db459a1fa23f191227b4b1d31d23e20a943966c5204f8054aca1471c20e2144"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_direct-taxes-1345_fa/document.md",
+     "sha256": "c098d71b8b955839ee526761be658556c36ba046003a4f25673a8b960c2a0d9b"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_direct-taxes-amendment-1351_fa.html",
+   "sha256": "c33ee5240219a32dbef2835358e18ea307da3b51a40ad2abb900a78f4a648d1c",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_اصلاح_قانون_مالیات_های_مستقیم_۱۳۵۱.json",
+     "sha256": "dcf211edb3f3ac6195f3bc3cf2715a2d2f9ab7ab52f0a47f164fb3d8c029002f"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_direct-taxes-amendment-1351_fa/document.json",
+     "sha256": "5595ec301b1ef072a1ae44dd3375ae77b53ed4ba833c47d1118d3d8f647ec81c"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_direct-taxes-amendment-1351_fa/document.md",
+     "sha256": "0ab127ae0f2f7000255ca0645bf989ffcc3c1ca3ca412f8907ca0c630f43691b"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_guild-system-amendment-1392_fa.html",
+   "sha256": "c0478172b587404499a31beb444a54f4ea3691fbb5b33798f1ae11fb8431812f",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_اصلاح_قانون_نظام_صنفی_کشور.json",
+     "sha256": "c9b1d00e8e7fa0dc98ba54bc21e1a1632171644e3a7244d5ee622cdf5d7fef35"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_guild-system-amendment-1392_fa/document.json",
+     "sha256": "e595bbc453ce0c2db721bccd3709ed0b58761fc668c91dba2a0077d1a02df1ee"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_guild-system-amendment-1392_fa/document.md",
+     "sha256": "e0753226178d755a8f9bfcce3e3b684e1b9da633bb7e669f93556f6bc3b65e6f"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_press-bill-1334_fa.html",
+   "sha256": "bf32adb000f831cda8b6301f7d2b9da51b927ae23adcd5d1a2a4dae8af9e14bc",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_لایحه_قانونی_مطبوعات_۱۳۳۴.json",
+     "sha256": "2095a2a7be78f7243ca6f4a4914371a5e635fe6d5ce16c827e0efc9fb24630be"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_press-bill-1334_fa/document.json",
+     "sha256": "76a6975cd9afda2698a1d92fcfd33d3b32b6e33c9663498da7ebe65abde4fb0a"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_press-bill-1334_fa/document.md",
+     "sha256": "f7845c96626d3d9a5371be4e989179c8a6e48f02eeebd948d42a000e08aa6abf"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_press-law-1364_fa.html",
+   "sha256": "f1949fc796fc77df54975be38238e6bea69707a7a9f34b6b4f5f6f33b948e5b4",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_مطبوعات.json",
+     "sha256": "381198f78ca15661fd6067fd0b3bcb14f087ec03678ca827ce01744687c86a54"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_press-law-1364_fa/document.json",
+     "sha256": "ea676e6019b0ec9d9f62ef34d059a31e99c3146c1c7a2bd4b2f5a25be6576fa8"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_press-law-1364_fa/document.md",
+     "sha256": "1e9fdea663f57264a5a0b55b3887818acac83dd2626c0946e859562f9d56d5ae"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_registration-of-deeds-1310_fa.html",
+   "sha256": "eaba5463cdec33897fcd7576b676ee4c864bf82d2d84ecd83584b0323b745ae8",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_ثبت_اسناد_و_املاک.json",
+     "sha256": "83fd4b71a66d22591ff83479ac7be60762014b4b21d8dd3e25c1337fdd00054e"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_registration-of-deeds-1310_fa/document.json",
+     "sha256": "c56f0472785b951f6bb297677ed098589584643e0472a7fc9b941b005d7102dd"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_registration-of-deeds-1310_fa/document.md",
+     "sha256": "d3f5bd19d783dd417089c997b43333e7d97820f955e8be9b092b617ba867cc8c"
+    }
+   ]
+  },
+  {
+   "lane": "LAW_fa",
+   "local_path": "corpus/natural/law_fa/wikisource_social-security-1354_fa.html",
+   "sha256": "dbae26891fef96b0e38bf5dea31fbc03bfe74bcb97860778b69eab95f8b66b0d",
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_تامین_اجتماعی.json",
+     "sha256": "79a3bea1906cbb5e475aa9e3088487d78b01e656fadb45845066c2941e3b5b3c"
+    }
+   ],
+   "verdict": "ok",
+   "extraction": [
+    {
+     "path": "corpus/extracted/law_fa/wikisource_social-security-1354_fa/document.json",
+     "sha256": "63bc4b90db8295da23d6be3f2fc85ceaea07b045cfa554878139437cb1f79873"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_social-security-1354_fa/document.md",
+     "sha256": "b85b1a7e80f8980b9c80768e65ee182bfda4469151c297e663c855c5ed488422"
+    },
+    {
+     "path": "corpus/extracted/law_fa/wikisource_social-security-1354_fa/tables/p001_t1.json",
+     "sha256": "8305168583606879e63d2af725af5143e72224cbd071a8188ad725b52c61d60b"
+    }
+   ]
+  }
+ ]
+}

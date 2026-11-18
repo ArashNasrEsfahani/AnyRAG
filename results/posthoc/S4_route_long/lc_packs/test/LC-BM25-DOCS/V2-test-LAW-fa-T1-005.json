@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T1-005",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79236 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "479e570e306fcbf8963d5a7b797b928ef87ca092fe9c154f048520269403c79b",
+ "evidence_chars": 79053,
+ "prompt_chars": 79767,
+ "est_prompt_tokens": 31551,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "score": 4.64
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1303.fa",
+    "score": 4.006
+   },
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "score": 3.687
+   },
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "score": 1.919
+   },
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "score": 1.823
+   },
+   {
+    "doc": "L.wikisource_civil-service-employment-1345.fa",
+    "score": 1.676
+   },
+   {
+    "doc": "L.wikisource_guild-system-amendment-1392.fa",
+    "score": 1.42
+   },
+   {
+    "doc": "L.wikisource_cooperatives-1350.fa",
+    "score": 1.374
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "doc_chars": 224893,
+    "shown": 79032,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

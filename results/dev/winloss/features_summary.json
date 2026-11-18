@@ -1,0 +1,64 @@
+{
+ "answer_type": {
+  "number": 7,
+  "explanation": 19,
+  "calculation": 11,
+  "comparison": 9,
+  "name-entity": 4,
+  "abstain": 6,
+  "list": 4
+ },
+ "tier": {
+  "T1": 18,
+  "T2": 18,
+  "T3": 18,
+  "None": 6
+ },
+ "table_evidence": {
+  "False": 56,
+  "True": 4
+ },
+ "paraphrase_gap": {
+  "False": 44,
+  "True": 10,
+  "None": 6
+ },
+ "c_year": {
+  "True": 36,
+  "False": 24
+ },
+ "c_source": {
+  "False": 37,
+  "True": 23
+ },
+ "c_numeric": {
+  "False": 43,
+  "True": 17
+ },
+ "negation": {
+  "False": 50,
+  "True": 10
+ },
+ "wording": {
+  "ordinary": 26,
+  "paraphrase": 34
+ },
+ "n_gold_docs": {
+  "1": 36,
+  "2": 17,
+  "3": 1,
+  "0": 6
+ },
+ "n_req": {
+  "2": 20,
+  "1": 9,
+  "3": 16,
+  "0": 6,
+  "4": 7,
+  "5": 2
+ },
+ "screen24": {
+  "True": 24,
+  "False": 36
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T2-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142963 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "500c03224705a67f3c10b0fda144b23f28b00ef4c1a3bdda2bd816b9179279dc",
+ "evidence_chars": 142767,
+ "prompt_chars": 143671,
+ "est_prompt_tokens": 31469,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "score": 6.198
+   },
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "score": 3.05
+   },
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "score": 2.334
+   },
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "score": 2.239
+   },
+   {
+    "doc": "K.gutenberg-4239_malthus_essay-on-population.en",
+    "score": 2.214
+   },
+   {
+    "doc": "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en",
+    "score": 1.958
+   },
+   {
+    "doc": "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "score": 1.88
+   },
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "score": 1.363
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "doc_chars": 405298,
+    "shown": 142724,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

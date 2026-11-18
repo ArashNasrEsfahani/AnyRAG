@@ -1,0 +1,264 @@
+{
+ "T2": {
+  "counts": {
+   "abstain_no_coverage": 13,
+   "uncovered_req_retrieved_but_cut_by_budget": 26,
+   "covered_req_wrong_fact": 10,
+   "covered_req_omitted_fact": 10,
+   "abstain_with_full_coverage": 6,
+   "uncovered_req_partly_retrieved": 2,
+   "covered_req_omitted_derived": 8,
+   "uncovered_req_never_retrieved": 25,
+   "covered_req_wrong_derived": 8
+  },
+  "examples": {
+   "abstain_no_coverage": [
+    "RPT-fa-T2-001/H",
+    "RPT-fa-T2-003/H",
+    "BOOK-fa-T2-002/H",
+    "RPT-fa-T2-001/HR",
+    "LAW-en-T2-001/HR",
+    "RPT-fa-T2-001/L3",
+    "RPT-fa-T2-002/L3",
+    "RPT-fa-T2-003/L3",
+    "BOOK-fa-T2-002/L3",
+    "RPT-fa-T2-001/A5",
+    "RPT-fa-T2-003/A5",
+    "BOOK-fa-T2-002/A5"
+   ],
+   "uncovered_req_retrieved_but_cut_by_budget": [
+    "RPT-fa-T2-001/H:R3",
+    "RPT-fa-T2-002/H:R3",
+    "RPT-fa-T2-003/H:R1",
+    "RPT-fa-T2-003/H:R2",
+    "RPT-fa-T2-003/H:R3",
+    "BOOK-fa-T2-002/H:R4",
+    "BOOK-en-T2-002/H:R3",
+    "BOOK-en-T2-003/H:R2",
+    "LAW-fa-T2-002/H:R4",
+    "LAW-fa-T2-002/HR:R4",
+    "LAW-fa-T2-003/HR:R2",
+    "LAW-en-T2-001/HR:R1"
+   ],
+   "covered_req_wrong_fact": [
+    "RPT-en-T2-001/H:R2",
+    "RPT-en-T2-002/H:R1",
+    "BOOK-fa-T2-001/H:R1",
+    "BOOK-fa-T2-003/H:R4",
+    "RPT-en-T2-001/HR:R2",
+    "BOOK-fa-T2-002/HR:R4",
+    "BOOK-fa-T2-003/HR:R4",
+    "BOOK-en-T2-003/HR:R2",
+    "RPT-en-T2-001/L3:R2",
+    "BOOK-fa-T2-003/A5:R4"
+   ],
+   "covered_req_omitted_fact": [
+    "RPT-en-T2-002/H:R3",
+    "BOOK-fa-T2-001/H:R2",
+    "LAW-en-T2-002/H:R2",
+    "LAW-en-T2-002/H:R4",
+    "RPT-en-T2-002/HR:R3",
+    "RPT-en-T2-002/L3:R3",
+    "BOOK-fa-T2-001/L3:R2",
+    "RPT-en-T2-002/A5:R3",
+    "BOOK-fa-T2-001/A5:R2",
+    "LAW-en-T2-002/A5:R4"
+   ],
+   "abstain_with_full_coverage": [
+    "RPT-en-T2-003/H",
+    "BOOK-en-T2-001/H",
+    "RPT-fa-T2-003/HR",
+    "RPT-en-T2-003/HR",
+    "RPT-en-T2-003/L3",
+    "BOOK-fa-T2-003/L3"
+   ],
+   "uncovered_req_partly_retrieved": [
+    "BOOK-fa-T2-002/H:R3",
+    "RPT-en-T2-002/A5:R2"
+   ],
+   "covered_req_omitted_derived": [
+    "BOOK-fa-T2-003/H:R3",
+    "LAW-en-T2-001/H:R4",
+    "RPT-fa-T2-002/HR:R3",
+    "BOOK-fa-T2-002/HR:R3",
+    "LAW-en-T2-001/L3:R4",
+    "BOOK-fa-T2-003/A5:R3",
+    "LAW-fa-T2-001/A5:R2",
+    "LAW-en-T2-002/A5:R3"
+   ],
+   "uncovered_req_never_retrieved": [
+    "BOOK-en-T2-003/H:R1",
+    "RPT-fa-T2-001/HR:R3",
+    "BOOK-en-T2-003/HR:R1",
+    "RPT-fa-T2-001/L3:R3",
+    "RPT-fa-T2-002/L3:R3",
+    "RPT-fa-T2-003/L3:R1",
+    "RPT-fa-T2-003/L3:R2",
+    "RPT-fa-T2-003/L3:R3",
+    "RPT-en-T2-002/L3:R1",
+    "RPT-en-T2-002/L3:R2",
+    "BOOK-fa-T2-002/L3:R3",
+    "BOOK-fa-T2-002/L3:R4"
+   ],
+   "covered_req_wrong_derived": [
+    "LAW-fa-T2-003/H:R2",
+    "BOOK-fa-T2-003/HR:R3",
+    "BOOK-en-T2-001/HR:R4",
+    "BOOK-en-T2-001/L3:R4",
+    "RPT-fa-T2-002/A5:R3",
+    "LAW-fa-T2-003/A5:R2",
+    "LAW-en-T2-001/A5:R1",
+    "LAW-en-T2-001/A5:R4"
+   ]
+  }
+ },
+ "T3": {
+  "counts": {
+   "uncovered_req_retrieved_but_cut_by_budget": 41,
+   "T3_one_doc_missing": 26,
+   "abstain_no_coverage": 9,
+   "T3_no_doc_evidenced": 11,
+   "covered_req_wrong_fact": 6,
+   "T3_all_docs_evidenced": 15,
+   "abstain_with_full_coverage": 4,
+   "abstain_partial_coverage": 10,
+   "uncovered_req_never_retrieved": 35,
+   "covered_req_omitted_fact": 9,
+   "covered_req_wrong_derived": 4,
+   "covered_req_omitted_derived": 2,
+   "uncovered_req_partly_retrieved": 1
+  },
+  "examples": {
+   "uncovered_req_retrieved_but_cut_by_budget": [
+    "RPT-fa-T3-002/H:R2",
+    "RPT-fa-T3-002/H:R3",
+    "RPT-fa-T3-003/H:R1",
+    "RPT-fa-T3-003/H:R2",
+    "RPT-en-T3-003/H:R4",
+    "BOOK-fa-T3-003/H:R2",
+    "BOOK-en-T3-001/H:R1",
+    "LAW-fa-T3-002/H:R1",
+    "LAW-fa-T3-002/H:R4",
+    "LAW-en-T3-002/H:R1",
+    "LAW-en-T3-002/H:R3",
+    "LAW-en-T3-003/H:R1"
+   ],
+   "T3_one_doc_missing": [
+    "RPT-fa-T3-002/H",
+    "BOOK-fa-T3-002/H",
+    "BOOK-fa-T3-003/H",
+    "BOOK-en-T3-001/H",
+    "LAW-fa-T3-002/H",
+    "RPT-fa-T3-003/HR",
+    "RPT-en-T3-003/HR",
+    "BOOK-fa-T3-002/HR",
+    "BOOK-fa-T3-003/HR",
+    "BOOK-en-T3-001/HR",
+    "BOOK-en-T3-003/HR",
+    "RPT-fa-T3-002/L3"
+   ],
+   "abstain_no_coverage": [
+    "RPT-fa-T3-003/H",
+    "BOOK-fa-T3-003/H",
+    "LAW-en-T3-002/H",
+    "BOOK-en-T3-002/HR",
+    "LAW-en-T3-002/HR",
+    "RPT-fa-T3-003/L3",
+    "LAW-en-T3-002/L3",
+    "BOOK-fa-T3-003/A5",
+    "BOOK-en-T3-002/A5"
+   ],
+   "T3_no_doc_evidenced": [
+    "RPT-fa-T3-003/H",
+    "LAW-en-T3-002/H",
+    "LAW-en-T3-003/H",
+    "BOOK-en-T3-002/HR",
+    "LAW-en-T3-002/HR",
+    "LAW-en-T3-003/HR",
+    "RPT-fa-T3-003/L3",
+    "LAW-en-T3-002/L3",
+    "BOOK-fa-T3-003/A5",
+    "BOOK-en-T3-002/A5",
+    "LAW-en-T3-002/A5"
+   ],
+   "covered_req_wrong_fact": [
+    "RPT-en-T3-002/H:R1",
+    "BOOK-en-T3-002/H:R4",
+    "BOOK-en-T3-002/L3:R2",
+    "BOOK-en-T3-002/L3:R4",
+    "RPT-fa-T3-003/A5:R1",
+    "LAW-fa-T3-002/A5:R2"
+   ],
+   "T3_all_docs_evidenced": [
+    "RPT-en-T3-002/H",
+    "RPT-en-T3-003/H",
+    "BOOK-fa-T3-001/H",
+    "BOOK-en-T3-002/H",
+    "LAW-fa-T3-003/H",
+    "RPT-en-T3-002/HR",
+    "BOOK-fa-T3-001/HR",
+    "LAW-en-T3-001/HR",
+    "RPT-en-T3-003/L3",
+    "BOOK-fa-T3-001/L3",
+    "BOOK-en-T3-002/L3",
+    "LAW-fa-T3-003/L3"
+   ],
+   "abstain_with_full_coverage": [
+    "BOOK-fa-T3-001/H",
+    "BOOK-fa-T3-001/HR",
+    "BOOK-fa-T3-001/L3",
+    "BOOK-fa-T3-001/A5"
+   ],
+   "abstain_partial_coverage": [
+    "BOOK-fa-T3-002/H",
+    "BOOK-en-T3-001/H",
+    "RPT-fa-T3-003/HR",
+    "BOOK-fa-T3-002/HR",
+    "BOOK-fa-T3-003/HR",
+    "BOOK-en-T3-001/HR",
+    "BOOK-fa-T3-002/L3",
+    "BOOK-fa-T3-003/L3",
+    "BOOK-en-T3-001/L3",
+    "BOOK-en-T3-001/A5"
+   ],
+   "uncovered_req_never_retrieved": [
+    "BOOK-fa-T3-002/H:R2",
+    "BOOK-fa-T3-002/H:R3",
+    "BOOK-fa-T3-003/H:R1",
+    "LAW-en-T3-002/H:R2",
+    "BOOK-fa-T3-002/HR:R2",
+    "BOOK-fa-T3-002/HR:R3",
+    "BOOK-fa-T3-003/HR:R1",
+    "LAW-en-T3-002/HR:R2",
+    "RPT-fa-T3-002/L3:R2",
+    "RPT-fa-T3-002/L3:R3",
+    "RPT-fa-T3-003/L3:R1",
+    "RPT-fa-T3-003/L3:R2"
+   ],
+   "covered_req_omitted_fact": [
+    "BOOK-en-T3-002/H:R1",
+    "BOOK-en-T3-002/H:R2",
+    "BOOK-en-T3-002/H:R3",
+    "RPT-en-T3-002/HR:R1",
+    "RPT-en-T3-003/L3:R4",
+    "BOOK-en-T3-002/L3:R1",
+    "BOOK-en-T3-002/L3:R3",
+    "LAW-fa-T3-002/L3:R2",
+    "RPT-en-T3-003/A5:R3"
+   ],
+   "covered_req_wrong_derived": [
+    "LAW-fa-T3-003/H:R1",
+    "RPT-fa-T3-002/L3:R1",
+    "LAW-fa-T3-003/L3:R1",
+    "RPT-fa-T3-002/A5:R1"
+   ],
+   "covered_req_omitted_derived": [
+    "BOOK-en-T3-003/HR:R2",
+    "RPT-fa-T3-002/A5:R3"
+   ],
+   "uncovered_req_partly_retrieved": [
+    "LAW-en-T3-003/A5:R2"
+   ]
+  }
+ }
+}

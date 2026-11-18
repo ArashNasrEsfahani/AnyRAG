@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-fa-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 38436 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "bb17a258c02ebd5206f12fec87b26b3ab543bf9cfcd0613d99f6e2971a9a173f",
+ "evidence_chars": 38284,
+ "prompt_chars": 39267,
+ "est_prompt_tokens": 15532,
+ "build_ms": 0.6,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_press-bill-1334.fa",
+    "doc_chars": 22848,
+    "shown": 22848,
+    "ranges": 1,
+    "whole": true
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "doc_chars": 15381,
+    "shown": 15381,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 2
+ }
+}

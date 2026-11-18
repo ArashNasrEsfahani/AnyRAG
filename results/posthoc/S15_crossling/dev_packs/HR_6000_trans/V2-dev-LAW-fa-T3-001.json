@@ -1,0 +1,17 @@
+{
+ "question_id": "V2-dev-LAW-fa-T3-001",
+ "setting": "en-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6169 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "ea343bf0382e8079984ea18dad01181b7bd0a41116303115b6ec00ffc8315b78",
+ "evidence_chars": 6000
+}

@@ -1,0 +1,18 @@
+{
+ "arm": "E5_DENSE",
+ "question_id": "V2-test-RPT-en-T1-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6104 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "a2ddca881e707d1e38512a43fd69f72ef12d91a4439936ffbbb38c3e9df72fc2",
+ "evidence_chars": 6000
+}

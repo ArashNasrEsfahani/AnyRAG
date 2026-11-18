@@ -1,0 +1,18 @@
+{
+ "arm": "KNAP_6000",
+ "question_id": "V2-test-BOOK-en-T3-005",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5770 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "b92715e0081d08895556082c6b02cca817a71e5e90b02c6234da327bcbb9089b",
+ "evidence_chars": 5549
+}

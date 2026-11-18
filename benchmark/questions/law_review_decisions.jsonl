@@ -1,0 +1,52 @@
+{"id": "V2-dev-LAW-fa-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-T2-001", "verdict": "fix", "tier_ok": true, "problems": ["record: R2 derived with empty inputs; threshold not a requirement"], "fix": "Add optional operand R5 (first-instance ruling final at <= 200,000 rials; value 200000 rial) supported by E2; set R2.derivation.inputs=[\"R5\"]."}
+{"id": "V2-dev-LAW-fa-T2-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-T2-003", "verdict": "fix", "tier_ok": true, "problems": ["unbound scope: Art. 111 fully exempts workers' housing cooperatives"], "fix": "Question: 'یک شرکت تعاونی مسکن' -> 'یک شرکت تعاونی مسکن کارمندی (نه تعاونی کارگری)'; gloss to match; note the Art. 111 trap."}
+{"id": "V2-dev-LAW-fa-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-T3-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-fa-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T2-001", "verdict": "accept", "tier_ok": true, "problems": ["minor: s.1 may also apply"], "fix": "Optional: R1 alias 's.6 (s.1 may also apply)'."}
+{"id": "V2-dev-LAW-en-T2-002", "verdict": "fix", "tier_ok": true, "problems": ["record: R3 derived with empty inputs"], "fix": "Add optional operand R6 (reduced charges allowed 2024-01-11 to 2027-01-12) supported by E3; R3.derivation.inputs=[\"R6\"]."}
+{"id": "V2-dev-LAW-en-T2-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-T3-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-LAW-en-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": "Optional: add Art. 17 (p1_b46) to trap notes."}
+{"id": "V2-test-LAW-fa-T1-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T1-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T2-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T2-002", "verdict": "reject", "tier_ok": false, "problems": ["T2 answered by one provision: Art. 95 states the 10-day base, the 10-day extension, hence 20"], "fix": "Keep as T1 reserve. Possible T2: Art. 94 (bill found contrary -> returned to Majlis) + Art. 96 (majorities: fuqaha for Islam, all members for Constitution)."}
+{"id": "V2-test-LAW-fa-T2-003", "verdict": "reject", "tier_ok": false, "problems": ["two independent lookups, no integration", "12% cap restated in Art. 34 note 5 and Art. 36"], "fix": "Split into two T1 reserves."}
+{"id": "V2-test-LAW-fa-T2-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T2-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-fa-T3-003", "verdict": "reject", "tier_ok": false, "problems": ["1351 unit p1_b48 quotes both 12% and 8% for Art. 79; 1345 only confirms the label the question already gives"], "fix": "Replace with Art. 134 top bracket: 1345 = 55% above 50m rials (p1_b564, p1_b576); 1351 item 44 = 60% above 50m rials (p1_b155, p1_b169), effective for income from 1352 (p1_b170). Trap: the 1351 table's 30-50m bracket is 55%."}
+{"id": "V2-test-LAW-fa-T3-004", "verdict": "accept", "tier_ok": true, "problems": ["weak but holds: amendment edits phrases, the rule is only in 1345"], "fix": null}
+{"id": "V2-test-LAW-fa-T3-005", "verdict": "fix", "tier_ok": true, "problems": ["really 2-document: the amendment quotes the replaced phrase; DT 1345 supports only optional R1", "necessity audit wrong for DT 1345"], "fix": "Bundles [[E2,E3,E4,E5,E6,E7],[E7,E8,E9,E10,E11,E12]] (E1 context only); necessity_audit regions = amendment 1351 + commercial code; count as 2-doc T3."}
+{"id": "V2-test-LAW-fa-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T1-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T1-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T2-001", "verdict": "fix", "tier_ok": true, "problems": ["record: R1 derived with empty inputs"], "fix": "Add optional operand R4 (consent needs statement/clear affirmative action; pre-ticked boxes are not consent) supported by E1,E2; R1.derivation.inputs=[\"R4\"]."}
+{"id": "V2-test-LAW-en-T2-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T2-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T2-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T2-005", "verdict": "fix", "tier_ok": true, "problems": ["record: R1 derived with empty inputs"], "fix": "Add optional operand R6 (short-term right to reject ends 30 days after ownership/delivery/installation) supported by E1; R1.derivation.inputs=[\"R6\"]."}
+{"id": "V2-test-LAW-en-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T3-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T3-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-T3-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-LAW-en-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}

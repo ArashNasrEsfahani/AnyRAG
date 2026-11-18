@@ -1,0 +1,76 @@
+% src: every row from work/posthoc_2026-11/S*/RESULTS.md (section 3 cost, section 4 failed or skipped, section 2 results); dates from the ledger.jsonl
+%      timestamps of each stream (all 2026-11-10; the date column was dropped, REVIEW2 item 4.4); costs are sums of usage.cost in each stream's ledger (S1 0.8325; S2a 0.842 = reader 0.695 + judge 0.147;
+%      S2b 1.3239; S3 0.274; S4 1.084; S6 0.1760; S5 and S7 no API calls). Per-arm costs where the RESULTS file gives them (S3: GREP test 0.1173, ITER test 0.1151;
+%      S4: LC-GOLD 0.414, LC-BM25 0.435, LC-POOL 0.209, router 0.008; S6: CLOSEDBOOK reader 0.0085).
+% Added 2026-11-11: S9 rows (S9_gpu/RESULTS.md sec. 3: cost 0.127, 77/90, 9,070 tokens; job 1 alignment: 16/96 HYBRID_6000 packs would change) and the S8 second-judge row (S8_factorial/tables.md); S10-S15 rows: S10 0.2763, S11 0.112, S12 0.1798, S13 0.0920, S15 0.078 (RESULTS.md sec. 3 of each); S14 and the spelling variants of S15 make no API call.
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}p{4.4cm}rXr@{}}
+\toprule
+Arm or analysis & USD & Outcome & Reported in \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Packs and budgets (block cost 0.84)}} \\
+Rebuild of the 576 frozen packs & 0 & All 576 match the saved packs byte for byte & App.~\ref{app:posthoc} \\
+\lexb{} without selection, five budgets & -- & 58--59 at 6,000 against 68--69 with selection; 65 against 67 at 15,500 & Sec.~\ref{sec:lost} \\
+\hybrid{} and \hr{} at 3,000, 10,000, 24,000 & -- & \hybrid{} rises from 49--51 to 72; \hr{} is flat from 6,000 and falls to 66 at 24,000 & Sec.~\ref{sec:budget} \\
+Gold evidence only & -- & 83 of 90 & Sec.~\ref{sec:lost} \\
+MMR packer & -- & 60; does not replace the selector & Sec.~\ref{sec:lost} \\
+Knapsack packer & -- & 44; far below the fusion order & Sec.~\ref{sec:lost} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Other baselines (block cost 0.18)}} \\
+Closed book & 0.01 & 26 of 90; 3 of 6 abstentions & Sec.~\ref{sec:lost} \\
+Listwise LLM reranker & 0.11 & 66--67; no difference from \hybrid{} or \hr{} & Sec.~\ref{sec:lost} \\
+SetR, selected set only & 0.02 & 63, the same as \setr{} with fill & Sec.~\ref{sec:lost} \\
+First judge pass of these arms & -- & Stopped after 5 verdicts to run in parallel; not used & -- \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Selection across budgets and candidate sources (block cost 0.28 for the first four steps)}} \\
+\lexb{} at 3,000, 10,000, 24,000 (saved selection re-packed) & -- & 59, 69--70, 72; the gain over Lex-RAG without selection is large at 3,000 (+15..+16) and gone from 15,500 & Sec.~\ref{sec:budget} \\
+Whole pipeline re-run with no selection deadline (all 96 questions) & -- & 71--72 against 68--69; the gain comes from the 19 saved fallbacks & Sec.~\ref{sec:lost} \\
+Selection over the reranker's candidates & -- & 70; no gain over the reranker's own pack & Sec.~\ref{sec:lost} \\
+Fusion pack on the 60 development questions & -- & 29 against 37 for \lexb{} on the 54 answerable ones (+8, sign $p$ .021) & App.~\ref{app:posthoc} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Searching harder (block cost 1.36)}} \\
+BM25 search agent & 0.12 & 73 of 90 at 9,285 tokens per question & Sec.~\ref{sec:search} \\
+Grep agent & 0.12 & 68 of 90 at 12,338 tokens per question & Sec.~\ref{sec:search} \\
+Long context, gold documents & 0.41 & 79 of 90; uses the annotation & Sec.~\ref{sec:search} \\
+Long context, BM25-ranked documents & 0.44 & 24 of 90; the cut text lost most of the evidence & Sec.~\ref{sec:search} \\
+Long context, whole pool & 0.21 & Three questions only (cost); all correct; only two of six pools fit the context & App.~\ref{app:posthoc} \\
+Routing by tier, by a router model, by answer format & 0.01 & Cheaper by about a fifth at best, and only with the annotated tier & Sec.~\ref{sec:search} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Hybrid-index agent and vector check (block cost 0.13)}} \\
+Hybrid-index search agent (reranker as search tool) & 0.13 & 77 of 90 at 9,070 tokens per question; 6 to 8 above \hr{}, not significant & Sec.~\ref{sec:search} \\
+Ollama against Hugging Face bge-m3 vectors & 0 & The same model up to numerical noise; with the other vectors 16 of 96 \hybrid{} packs at 6,000 characters would change & App.~\ref{app:posthoc} \\
+Second judge on the post hoc arms (Mistral Large) & -- & Lex-RAG without selection 57--59 against 65--67 for \lexb{}; the selector-over-reranker and no-deadline arms were not scored & Sec.~\ref{sec:lost} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Retrieval components (block cost 0.66)}} \\
+Dense only and BM25 only, 6,000 and 15,500 characters & 0.28 & 53 and 48 at 6,000, 63 and 61 at 15,500, against \hybrid{} 62--63 and 68; no GPU used & Sec.~\ref{sec:components} \\
+HyDE passage and multi-query rewriting & 0.11 & 61 and 58--59 against 62--63; fewer complete bundles in Persian & Sec.~\ref{sec:components} \\
+Chunks of 500 and 2,000 characters, \hybrid{} and \hr{} & 0.18 & 1,000 best; 2,000 loses 13--14 (\hybrid{}) and 18--20 (\hr{}); two indexes of 119,308 and 28,205 chunks embedded & Sec.~\ref{sec:components} \\
+multilingual-e5-large in place of bge-m3, hybrid and dense only & 0.09 & 58 and 54--55 against 62--63 and 53; 58,218 chunks embedded in 17.6 minutes of GPU time & Sec.~\ref{sec:components} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Persian and English (block cost 0.08)}} \\
+Questions asked in the other language (translation, four retrieval arms, reranked pipeline, closed book) & 0.08 & BM25 finds a complete bundle for 2 and 8 of 45; reranked pipeline 53--54 against 69--71 & Sec.~\ref{sec:language} \\
+Spelling variants of the 45 Persian questions (retrieval only) & 0 & Normalised retrieval loses at most 1 bundle; BM25 without normalisation loses 5 to 8 & Sec.~\ref{sec:language} \\
+Language splits, permutation tests, tokens per reader, judges by language (saved data) & 0 & Grep agent split survives correction; tokens per character 1.5 to 3.0 times higher in Persian & Sec.~\ref{sec:language} \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Stability of the ranking (block cost 2.16: second judge 0.83, variance runs 1.32)}} \\
+Second judge (Mistral Large) on 768 answers & 0.83 & 91.2\% agreement; the last place of \setr{} does not reproduce & Sec.~\ref{sec:stability} \\
+Human-review packets for a second reviewer & 0 & Built and tested on synthetic data; no human verdicts yet & App.~\ref{app:posthoc} \\
+Reader repeated twice on identical packs (1,536 answers) & -- & Standard deviation about two answers per cell & Sec.~\ref{sec:stability} \\
+Selector re-sent twice (\lexb{}) and once (\setr{}) & -- & The pack changes for 44--50 of 96 questions; accuracy within reader noise & Sec.~\ref{sec:stability} \\
+Selector swapped for a smaller model & -- & 59; the model breaks the answer format on 40 questions & Sec.~\ref{sec:lost} \\
+Selection call re-run without the deadline (the 15 timed-out calls) & -- & 14 of 15 valid replies; 7 against 5 correct & App.~\ref{app:variance} \\
+One selection packed at both budgets & -- & No budget gain for \lexb{} either way & App.~\ref{app:variance} \\
+Discarded first run of the selector swap & 0.003 & Harness error; rows discarded, run repeated from scratch & -- \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Analyses of saved data (no model calls)}} \\
+Mixed models, equivalence tests, detectable effect & 0 & Pooled effect of selection over \hybrid{}; no reader interaction & Sec.~\ref{sec:stability} \\
+Earlier non-adaptive mixed model & 0 & Did not converge in the variance terms; superseded & -- \\
+Evidence reach, contamination, tokens, errors, Persian channels & 0 & See Appendix~\ref{app:analysis} & Sec.~\ref{sec:lost} \\
+\bottomrule
+\end{tabularx}
+\caption{Post hoc. Every arm and analysis run after the frozen test. Each arm ran once. Costs are as reported by the provider (-- marks costs not itemised). Scores are out of 90 answerable questions, machine judge.}
+\label{tab:posthoc-log}
+\end{table*}

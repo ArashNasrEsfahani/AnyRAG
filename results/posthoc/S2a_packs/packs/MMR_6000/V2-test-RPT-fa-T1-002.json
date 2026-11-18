@@ -1,0 +1,18 @@
+{
+ "arm": "MMR_6000",
+ "question_id": "V2-test-RPT-fa-T1-002",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6067 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "afcf63d82eb50cc8ad6a6aab090118db3b5f40732d5163ad9ca442b8b3443f25",
+ "evidence_chars": 5908
+}

@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T3-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142980 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "e75b1bb3f9c336255221c407eec5f3cbe7f7bcaac9fd2895b4da075978bf0736",
+ "evidence_chars": 142767,
+ "prompt_chars": 143688,
+ "est_prompt_tokens": 31472,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "score": 7.688
+   },
+   {
+    "doc": "K.gutenberg-14474_faraday_chemical-history-of-a-candle.en",
+    "score": 6.195
+   },
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "score": 2.151
+   },
+   {
+    "doc": "K.gutenberg-147_paine_common-sense.en",
+    "score": 1.614
+   },
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "score": 1.294
+   },
+   {
+    "doc": "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "score": 1.237
+   },
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "score": 0.863
+   },
+   {
+    "doc": "K.gutenberg-1015_parkman_oregon-trail.en",
+    "score": 0.837
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "doc_chars": 405298,
+    "shown": 142724,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

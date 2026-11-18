@@ -1,0 +1,5394 @@
+{
+ "HYBRID_6000": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 2695,
+   "tok_hi": 2695,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1186.5
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 2660,
+   "tok_hi": 2660,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1634.9
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 2872,
+   "tok_hi": 2872,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1053.5
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 2458,
+   "tok_hi": 2458,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1248.6
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 2601,
+   "tok_hi": 2601,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1230.9
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 2850,
+   "tok_hi": 2850,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1798.5
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 2588,
+   "tok_hi": 2588,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1295.6
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 2784,
+   "tok_hi": 2784,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2496.5
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 3209,
+   "tok_hi": 3209,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1648.7
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 2971,
+   "tok_hi": 2971,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2712.0
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 2883,
+   "tok_hi": 2883,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1431.2
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 2941,
+   "tok_hi": 2941,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2896.0
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 2745,
+   "tok_hi": 2745,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1732.7
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 2953,
+   "tok_hi": 2953,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2562.2
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 2974,
+   "tok_hi": 2974,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1911.3
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 2625,
+   "tok_hi": 2625,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1904.8
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 1557,
+   "tok_hi": 1557,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1252.8
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 1873,
+   "tok_hi": 1873,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1164.4
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 1423,
+   "tok_hi": 1423,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 844.6
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 1534,
+   "tok_hi": 1534,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 856.2
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 1669,
+   "tok_hi": 1669,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1709.0
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 1541,
+   "tok_hi": 1541,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1114.0
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 2581,
+   "tok_hi": 2581,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2314.8
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 1799,
+   "tok_hi": 1799,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1111.2
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 1952,
+   "tok_hi": 1952,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2378.8
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 1859,
+   "tok_hi": 1859,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3027.2
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 1831,
+   "tok_hi": 1831,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3170.7
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 1786,
+   "tok_hi": 1786,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3287.5
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 2018,
+   "tok_hi": 2018,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1949.0
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 1735,
+   "tok_hi": 1735,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 28627.2
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 1617,
+   "tok_hi": 1617,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1521.2
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 1672,
+   "tok_hi": 1672,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1596.5
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 2818,
+   "tok_hi": 2818,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3396.8
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 2878,
+   "tok_hi": 2878,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4623.6
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 2648,
+   "tok_hi": 2648,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3393.6
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 2672,
+   "tok_hi": 2672,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1063.6
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 3052,
+   "tok_hi": 3052,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2577.9
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 3038,
+   "tok_hi": 3038,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2954.1
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 2721,
+   "tok_hi": 2721,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2004.1
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 2567,
+   "tok_hi": 2567,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1350.9
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 3150,
+   "tok_hi": 3150,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6871.4
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 2918,
+   "tok_hi": 2918,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5870.0
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 2702,
+   "tok_hi": 2702,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1477.4
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 3092,
+   "tok_hi": 3092,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4005.4
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 2722,
+   "tok_hi": 2722,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1211.1
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 2601,
+   "tok_hi": 2601,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 928.9
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 3123,
+   "tok_hi": 3123,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5997.1
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 2512,
+   "tok_hi": 2512,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1498.8
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 1655,
+   "tok_hi": 1655,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1360.8
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 1384,
+   "tok_hi": 1384,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 766.0
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 1462,
+   "tok_hi": 1462,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 850.2
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 1583,
+   "tok_hi": 1583,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7336.1
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 1641,
+   "tok_hi": 1641,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1616.2
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 1636,
+   "tok_hi": 1636,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2055.2
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 1548,
+   "tok_hi": 1548,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1897.5
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 1481,
+   "tok_hi": 1481,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1762.6
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 1503,
+   "tok_hi": 1503,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 789.5
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 1602,
+   "tok_hi": 1602,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2643.6
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 1668,
+   "tok_hi": 1668,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2868.3
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 1565,
+   "tok_hi": 1565,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1717.3
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 1583,
+   "tok_hi": 1583,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1807.3
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 1576,
+   "tok_hi": 1576,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1426.9
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 1651,
+   "tok_hi": 1651,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2217.6
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 1614,
+   "tok_hi": 1614,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 975.0
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 2727,
+   "tok_hi": 2727,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1780.8
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 2571,
+   "tok_hi": 2571,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1272.9
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 2623,
+   "tok_hi": 2623,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 26376.7
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 2540,
+   "tok_hi": 2540,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 938.7
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 2736,
+   "tok_hi": 2736,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1415.7
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 3053,
+   "tok_hi": 3053,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2826.0
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 2624,
+   "tok_hi": 2624,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1705.6
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 2925,
+   "tok_hi": 2925,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2808.8
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 2881,
+   "tok_hi": 2881,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3736.1
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 2655,
+   "tok_hi": 2655,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2261.1
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 2929,
+   "tok_hi": 2929,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5446.1
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 2910,
+   "tok_hi": 2910,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3613.1
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 2981,
+   "tok_hi": 2981,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3951.4
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 2904,
+   "tok_hi": 2904,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2431.4
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 2604,
+   "tok_hi": 2604,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1359.9
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 2444,
+   "tok_hi": 2444,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1414.5
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 1505,
+   "tok_hi": 1505,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2501.7
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 1340,
+   "tok_hi": 1340,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 982.0
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 1343,
+   "tok_hi": 1343,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1087.9
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 1509,
+   "tok_hi": 1509,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 755.8
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 1401,
+   "tok_hi": 1401,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 780.3
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 1613,
+   "tok_hi": 1613,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2517.4
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 1688,
+   "tok_hi": 1688,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5285.6
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 1583,
+   "tok_hi": 1583,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3269.5
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 1584,
+   "tok_hi": 1584,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5564.9
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 1993,
+   "tok_hi": 1993,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3621.3
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 1647,
+   "tok_hi": 1647,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3642.7
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 1610,
+   "tok_hi": 1610,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1262.5
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 1537,
+   "tok_hi": 1537,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2772.5
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 1623,
+   "tok_hi": 1623,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2517.5
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 1596,
+   "tok_hi": 1596,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1877.1
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 1463,
+   "tok_hi": 1463,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1509.9
+  }
+ },
+ "HR_6000": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 2677,
+   "tok_hi": 2677,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3208.4
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 2694,
+   "tok_hi": 2694,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4175.7
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 2904,
+   "tok_hi": 2904,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3465.7
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 2483,
+   "tok_hi": 2483,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3702.4
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 2588,
+   "tok_hi": 2588,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3642.6
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 2810,
+   "tok_hi": 2810,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5089.0
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 2695,
+   "tok_hi": 2695,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3337.1
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 3027,
+   "tok_hi": 3027,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3406.4
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 3160,
+   "tok_hi": 3160,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3772.9
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 2807,
+   "tok_hi": 2807,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4797.1
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 3115,
+   "tok_hi": 3115,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2257.3
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 2953,
+   "tok_hi": 2953,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2855.6
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 2774,
+   "tok_hi": 2774,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2909.2
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 3014,
+   "tok_hi": 3014,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3142.7
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 3063,
+   "tok_hi": 3063,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3216.9
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 2547,
+   "tok_hi": 2547,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1512.8
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 1599,
+   "tok_hi": 1599,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2390.1
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 1954,
+   "tok_hi": 1954,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1693.3
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 1570,
+   "tok_hi": 1570,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1540.8
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 1717,
+   "tok_hi": 1717,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1500.2
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 1685,
+   "tok_hi": 1685,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2722.3
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 1526,
+   "tok_hi": 1526,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2977.1
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 2222,
+   "tok_hi": 2222,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2782.9
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 2024,
+   "tok_hi": 2024,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2325.6
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 1850,
+   "tok_hi": 1850,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2686.6
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 1915,
+   "tok_hi": 1915,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 16614.6
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 1815,
+   "tok_hi": 1815,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3417.6
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 1752,
+   "tok_hi": 1752,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2661.6
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 1799,
+   "tok_hi": 1799,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2930.2
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 1740,
+   "tok_hi": 1740,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5909.4
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 1663,
+   "tok_hi": 1663,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2272.9
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 1618,
+   "tok_hi": 1618,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3966.9
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 2687,
+   "tok_hi": 2687,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2677.9
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 2836,
+   "tok_hi": 2836,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4846.5
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 2670,
+   "tok_hi": 2670,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2713.1
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 2700,
+   "tok_hi": 2700,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2530.6
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 2999,
+   "tok_hi": 2999,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3742.0
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 3083,
+   "tok_hi": 3083,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6313.5
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 2680,
+   "tok_hi": 2680,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2808.7
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 2722,
+   "tok_hi": 2722,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3471.0
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 2894,
+   "tok_hi": 2894,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3009.0
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 2849,
+   "tok_hi": 2849,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5349.7
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 2797,
+   "tok_hi": 2797,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4845.3
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 3191,
+   "tok_hi": 3191,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5126.6
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 3294,
+   "tok_hi": 3294,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7699.5
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 2750,
+   "tok_hi": 2750,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 14200.7
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 2735,
+   "tok_hi": 2735,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2192.0
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 2535,
+   "tok_hi": 2535,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1749.6
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 1650,
+   "tok_hi": 1650,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2669.1
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 1407,
+   "tok_hi": 1407,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4690.1
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 1561,
+   "tok_hi": 1561,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3139.7
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 1586,
+   "tok_hi": 1586,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4790.7
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 1597,
+   "tok_hi": 1597,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4553.9
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 1732,
+   "tok_hi": 1732,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5189.9
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 1528,
+   "tok_hi": 1528,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4860.5
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 1534,
+   "tok_hi": 1534,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3472.8
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 1494,
+   "tok_hi": 1494,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3438.8
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 1613,
+   "tok_hi": 1613,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5166.2
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 1795,
+   "tok_hi": 1795,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2885.6
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 1553,
+   "tok_hi": 1553,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3330.3
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 1610,
+   "tok_hi": 1610,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2986.2
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 1786,
+   "tok_hi": 1786,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2063.0
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 1717,
+   "tok_hi": 1717,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2976.0
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 1752,
+   "tok_hi": 1752,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2695.8
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 2794,
+   "tok_hi": 2794,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3586.6
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 2611,
+   "tok_hi": 2611,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2457.7
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 2658,
+   "tok_hi": 2658,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2403.6
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 2588,
+   "tok_hi": 2588,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1811.0
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 2748,
+   "tok_hi": 2748,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2573.3
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 3046,
+   "tok_hi": 3046,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4553.0
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 2557,
+   "tok_hi": 2557,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4834.4
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 2945,
+   "tok_hi": 2945,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3530.8
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 2946,
+   "tok_hi": 2946,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3611.2
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 2687,
+   "tok_hi": 2687,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2487.4
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 2895,
+   "tok_hi": 2895,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3709.8
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 2880,
+   "tok_hi": 2880,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3664.4
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 2999,
+   "tok_hi": 2999,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4321.5
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 2835,
+   "tok_hi": 2835,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2909.0
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 2624,
+   "tok_hi": 2624,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1536.4
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 2452,
+   "tok_hi": 2452,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1882.0
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 1448,
+   "tok_hi": 1448,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1869.4
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 1428,
+   "tok_hi": 1428,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3462.8
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 1338,
+   "tok_hi": 1338,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2200.8
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 1544,
+   "tok_hi": 1544,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2742.8
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 1396,
+   "tok_hi": 1396,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2200.8
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 1666,
+   "tok_hi": 1666,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3592.1
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 1599,
+   "tok_hi": 1599,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4180.8
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 1498,
+   "tok_hi": 1498,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3014.9
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 1596,
+   "tok_hi": 1596,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 34908.0
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 1981,
+   "tok_hi": 1981,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5531.4
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 1603,
+   "tok_hi": 1603,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3116.0
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 1640,
+   "tok_hi": 1640,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4203.7
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 1624,
+   "tok_hi": 1624,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5408.1
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 1998,
+   "tok_hi": 1998,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5799.1
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 1527,
+   "tok_hi": 1527,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2461.0
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 1465,
+   "tok_hi": 1465,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1871.1
+  }
+ },
+ "LEX5B_6000": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 5747,
+   "tok_hi": 5747,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6562.6
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 5524,
+   "tok_hi": 5524,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3442.8
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 5997,
+   "tok_hi": 5997,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2054.1
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 5199,
+   "tok_hi": 5199,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2122.9
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 5756,
+   "tok_hi": 5756,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3530.6
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 2676,
+   "tok_hi": 6822,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4834.7
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 5536,
+   "tok_hi": 5536,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5239.6
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 2822,
+   "tok_hi": 6905,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5262.9
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 6260,
+   "tok_hi": 6260,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3798.0
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 6155,
+   "tok_hi": 6155,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4373.3
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 5861,
+   "tok_hi": 5861,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3776.0
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 5852,
+   "tok_hi": 5852,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4258.5
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 5882,
+   "tok_hi": 5882,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5518.2
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 6106,
+   "tok_hi": 6106,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5634.6
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 2893,
+   "tok_hi": 7056,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5138.7
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 5597,
+   "tok_hi": 5597,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1662.5
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 4018,
+   "tok_hi": 4018,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1962.0
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 4852,
+   "tok_hi": 4852,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5397.3
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 3836,
+   "tok_hi": 3836,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1437.9
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 4272,
+   "tok_hi": 4272,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 11789.2
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 4385,
+   "tok_hi": 4385,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2418.3
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 4350,
+   "tok_hi": 4350,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2972.6
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 5228,
+   "tok_hi": 5228,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2153.9
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 4984,
+   "tok_hi": 4984,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2806.5
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 4321,
+   "tok_hi": 4321,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2562.2
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 4615,
+   "tok_hi": 4615,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5145.4
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 4856,
+   "tok_hi": 4856,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5335.5
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 1616,
+   "tok_hi": 5506,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4909.5
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 4776,
+   "tok_hi": 4776,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4402.3
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 4618,
+   "tok_hi": 4618,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2845.2
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 4188,
+   "tok_hi": 4188,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3420.4
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 4395,
+   "tok_hi": 4395,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1746.8
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 5953,
+   "tok_hi": 5953,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2358.7
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 5552,
+   "tok_hi": 5552,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7342.2
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 2767,
+   "tok_hi": 6763,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 6708.6
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 5616,
+   "tok_hi": 5616,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3430.4
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 5870,
+   "tok_hi": 5870,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3972.1
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 6298,
+   "tok_hi": 6298,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4505.5
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 2489,
+   "tok_hi": 6569,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 18058.0
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 5898,
+   "tok_hi": 5898,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4531.2
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 5827,
+   "tok_hi": 5827,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4454.5
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 5806,
+   "tok_hi": 5806,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6395.6
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 2824,
+   "tok_hi": 6730,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 6981.8
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 6094,
+   "tok_hi": 6094,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7276.4
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 2763,
+   "tok_hi": 6806,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 6190.5
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 2613,
+   "tok_hi": 6537,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5605.4
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 5996,
+   "tok_hi": 5996,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4938.5
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 5402,
+   "tok_hi": 5402,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2559.9
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 4059,
+   "tok_hi": 4059,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2466.9
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 3867,
+   "tok_hi": 3867,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2021.5
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 4117,
+   "tok_hi": 4117,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1842.6
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 4043,
+   "tok_hi": 4043,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2078.9
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 4196,
+   "tok_hi": 4196,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3958.8
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 4181,
+   "tok_hi": 4181,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4706.0
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 1439,
+   "tok_hi": 5250,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5265.4
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 4222,
+   "tok_hi": 4222,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2974.8
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 1499,
+   "tok_hi": 5315,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 13388.9
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 3954,
+   "tok_hi": 3954,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5065.9
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 4221,
+   "tok_hi": 4221,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3586.4
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 3886,
+   "tok_hi": 3886,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2979.8
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 3990,
+   "tok_hi": 3990,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2959.9
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 4276,
+   "tok_hi": 4276,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4225.4
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 3905,
+   "tok_hi": 3905,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4952.1
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 4226,
+   "tok_hi": 4226,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2638.0
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 5759,
+   "tok_hi": 5759,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3192.6
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 5361,
+   "tok_hi": 5361,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4393.8
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 2646,
+   "tok_hi": 6583,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4245.2
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 5314,
+   "tok_hi": 5314,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2070.8
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 5664,
+   "tok_hi": 5664,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1964.0
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 6280,
+   "tok_hi": 6280,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6846.4
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 5395,
+   "tok_hi": 5395,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4577.1
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 5842,
+   "tok_hi": 5842,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7684.5
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 5824,
+   "tok_hi": 5824,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5454.7
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 5351,
+   "tok_hi": 5351,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4124.8
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 5960,
+   "tok_hi": 5960,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3174.2
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 5963,
+   "tok_hi": 5963,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4472.6
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 5802,
+   "tok_hi": 5802,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3436.5
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 5710,
+   "tok_hi": 5710,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3681.9
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 2622,
+   "tok_hi": 6536,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4506.0
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 2386,
+   "tok_hi": 6364,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5288.8
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 3871,
+   "tok_hi": 3871,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3120.6
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 3577,
+   "tok_hi": 3577,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2275.5
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 3380,
+   "tok_hi": 3380,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2074.6
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 3883,
+   "tok_hi": 3883,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2020.1
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 3694,
+   "tok_hi": 3694,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1235.0
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 3970,
+   "tok_hi": 3970,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3435.6
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 4176,
+   "tok_hi": 4176,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7230.2
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 3610,
+   "tok_hi": 3610,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3743.9
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 3582,
+   "tok_hi": 3582,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2276.0
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 4849,
+   "tok_hi": 4849,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5661.8
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 4061,
+   "tok_hi": 4061,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 11438.8
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 4043,
+   "tok_hi": 4043,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3035.1
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 1552,
+   "tok_hi": 5367,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 14786.0
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 4197,
+   "tok_hi": 4197,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3239.2
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 3923,
+   "tok_hi": 3923,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1902.9
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 3802,
+   "tok_hi": 3802,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1680.9
+  }
+ },
+ "HYBRID_15500": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 6533,
+   "tok_hi": 6533,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1625.0
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 6492,
+   "tok_hi": 6492,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2321.1
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 7033,
+   "tok_hi": 7033,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2990.2
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 6095,
+   "tok_hi": 6095,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1475.1
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 6507,
+   "tok_hi": 6507,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1842.6
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 6745,
+   "tok_hi": 6745,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3597.1
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 6602,
+   "tok_hi": 6602,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2041.1
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 6814,
+   "tok_hi": 6814,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4517.0
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 7912,
+   "tok_hi": 7912,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3248.7
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 6778,
+   "tok_hi": 6778,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2777.8
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 7066,
+   "tok_hi": 7066,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2124.3
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 6717,
+   "tok_hi": 6717,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3037.0
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 6610,
+   "tok_hi": 6610,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2095.5
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 7074,
+   "tok_hi": 7074,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4541.0
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 7088,
+   "tok_hi": 7088,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2394.3
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 6379,
+   "tok_hi": 6379,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1669.1
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 3596,
+   "tok_hi": 3596,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1373.8
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 4393,
+   "tok_hi": 4393,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1320.9
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 3530,
+   "tok_hi": 3530,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1376.1
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 3793,
+   "tok_hi": 3793,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1166.2
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 4074,
+   "tok_hi": 4074,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1844.6
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 4140,
+   "tok_hi": 4140,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2058.1
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 5202,
+   "tok_hi": 5202,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2310.3
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 4665,
+   "tok_hi": 4665,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2378.9
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 3996,
+   "tok_hi": 3996,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1383.5
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 4177,
+   "tok_hi": 4177,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3533.2
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 4249,
+   "tok_hi": 4249,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1766.0
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 4161,
+   "tok_hi": 4161,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3217.4
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 5212,
+   "tok_hi": 5212,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3065.6
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 4265,
+   "tok_hi": 4265,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3014.2
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 3668,
+   "tok_hi": 3668,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3249.2
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 4012,
+   "tok_hi": 4012,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1369.1
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 6900,
+   "tok_hi": 6900,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4003.9
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 6517,
+   "tok_hi": 6517,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5163.6
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 6586,
+   "tok_hi": 6586,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4517.5
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 6602,
+   "tok_hi": 6602,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2242.0
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 6952,
+   "tok_hi": 6952,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4307.1
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 7202,
+   "tok_hi": 7202,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3487.7
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 6642,
+   "tok_hi": 6642,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1759.7
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 6501,
+   "tok_hi": 6501,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2232.5
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 7018,
+   "tok_hi": 7018,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3794.4
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 6653,
+   "tok_hi": 6653,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6139.9
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 6561,
+   "tok_hi": 6561,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2370.7
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 6817,
+   "tok_hi": 6817,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3978.1
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 7006,
+   "tok_hi": 7006,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7967.7
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 6596,
+   "tok_hi": 6596,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 9269.8
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 6950,
+   "tok_hi": 6950,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6191.4
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 6296,
+   "tok_hi": 6296,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1690.3
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 3792,
+   "tok_hi": 3792,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2141.3
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 3421,
+   "tok_hi": 3421,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1152.4
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 3750,
+   "tok_hi": 3750,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1340.0
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 3643,
+   "tok_hi": 3643,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1780.1
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 3512,
+   "tok_hi": 3512,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1539.8
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 3773,
+   "tok_hi": 3773,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 12522.7
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 3462,
+   "tok_hi": 3462,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3110.6
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 3787,
+   "tok_hi": 3787,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3122.7
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 3747,
+   "tok_hi": 3747,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2564.8
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 3564,
+   "tok_hi": 3564,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2718.6
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 3829,
+   "tok_hi": 3829,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2968.0
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 3442,
+   "tok_hi": 3442,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1924.7
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 3597,
+   "tok_hi": 3597,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2296.1
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 3746,
+   "tok_hi": 3746,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2231.0
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 3604,
+   "tok_hi": 3604,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2663.6
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 3917,
+   "tok_hi": 3917,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1773.0
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 6656,
+   "tok_hi": 6656,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2408.3
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 6104,
+   "tok_hi": 6104,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2167.2
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 6410,
+   "tok_hi": 6410,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3762.9
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 6313,
+   "tok_hi": 6313,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2842.8
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 6565,
+   "tok_hi": 6565,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2572.6
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 7072,
+   "tok_hi": 7072,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5212.1
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 6275,
+   "tok_hi": 6275,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2717.6
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 6728,
+   "tok_hi": 6728,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 20285.9
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 6742,
+   "tok_hi": 6742,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3666.7
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 6197,
+   "tok_hi": 6197,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2228.4
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 6694,
+   "tok_hi": 6694,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1892.0
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 6772,
+   "tok_hi": 6772,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3245.2
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 6593,
+   "tok_hi": 6593,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2557.4
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 6628,
+   "tok_hi": 6628,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3044.2
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 6393,
+   "tok_hi": 6393,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2180.1
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 6043,
+   "tok_hi": 6043,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2877.5
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 3591,
+   "tok_hi": 3591,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1650.3
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 3242,
+   "tok_hi": 3242,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1752.0
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 3179,
+   "tok_hi": 3179,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1245.1
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 3640,
+   "tok_hi": 3640,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3040.2
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 3392,
+   "tok_hi": 3392,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 796.0
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 3469,
+   "tok_hi": 3469,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2741.6
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 3548,
+   "tok_hi": 3548,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4943.3
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 3293,
+   "tok_hi": 3293,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1740.3
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 3538,
+   "tok_hi": 3538,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2967.7
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 4219,
+   "tok_hi": 4219,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3416.8
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 3480,
+   "tok_hi": 3480,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2411.8
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 3649,
+   "tok_hi": 3649,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2830.8
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 3638,
+   "tok_hi": 3638,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5632.0
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 3636,
+   "tok_hi": 3636,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1383.5
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 3440,
+   "tok_hi": 3440,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1738.7
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 3507,
+   "tok_hi": 3507,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2663.1
+  }
+ },
+ "HR_15500": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 6565,
+   "tok_hi": 6565,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3412.4
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 6654,
+   "tok_hi": 6654,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4692.2
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 6915,
+   "tok_hi": 6915,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3821.0
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 6852,
+   "tok_hi": 6852,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4239.9
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 6489,
+   "tok_hi": 6489,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5777.8
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 6702,
+   "tok_hi": 6702,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2786.6
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 6522,
+   "tok_hi": 6522,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2241.5
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 6957,
+   "tok_hi": 6957,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3536.9
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 7838,
+   "tok_hi": 7838,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4986.4
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 7148,
+   "tok_hi": 7148,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3728.5
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 7237,
+   "tok_hi": 7237,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2761.8
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 6787,
+   "tok_hi": 6787,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3328.8
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 6712,
+   "tok_hi": 6712,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2390.2
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 7067,
+   "tok_hi": 7067,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4067.4
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 7145,
+   "tok_hi": 7145,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2877.5
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 6348,
+   "tok_hi": 6348,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2150.4
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 3573,
+   "tok_hi": 3573,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2258.9
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 4036,
+   "tok_hi": 4036,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1856.7
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 4871,
+   "tok_hi": 4871,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1619.4
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 4055,
+   "tok_hi": 4055,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2388.3
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 4387,
+   "tok_hi": 4387,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2948.8
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 4020,
+   "tok_hi": 4020,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1984.5
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 5310,
+   "tok_hi": 5310,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3806.1
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 4805,
+   "tok_hi": 4805,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4775.9
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 4214,
+   "tok_hi": 4214,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7426.0
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 4367,
+   "tok_hi": 4367,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 10879.6
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 4334,
+   "tok_hi": 4334,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5405.2
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 4368,
+   "tok_hi": 4368,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7630.1
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 4825,
+   "tok_hi": 4825,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7912.4
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 4276,
+   "tok_hi": 4276,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4012.6
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 3720,
+   "tok_hi": 3720,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3116.1
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 3958,
+   "tok_hi": 3958,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2676.1
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 6812,
+   "tok_hi": 6812,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2785.3
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 6564,
+   "tok_hi": 6564,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 8210.6
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 6465,
+   "tok_hi": 6465,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 10473.6
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 6603,
+   "tok_hi": 6603,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2124.9
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 7003,
+   "tok_hi": 7003,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3356.0
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 7198,
+   "tok_hi": 7198,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5529.9
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 6694,
+   "tok_hi": 6694,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7908.6
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 6554,
+   "tok_hi": 6554,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3658.1
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 6480,
+   "tok_hi": 6480,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3475.9
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 6716,
+   "tok_hi": 6716,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5835.7
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 6777,
+   "tok_hi": 6777,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6107.6
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 7040,
+   "tok_hi": 7040,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5735.5
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 7153,
+   "tok_hi": 7153,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 15129.9
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 6614,
+   "tok_hi": 6614,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 28177.7
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 6980,
+   "tok_hi": 6980,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6453.4
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 6181,
+   "tok_hi": 6181,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2885.7
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 3854,
+   "tok_hi": 3854,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2950.4
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 3442,
+   "tok_hi": 3442,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4298.7
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 3820,
+   "tok_hi": 3820,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 31004.0
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 3643,
+   "tok_hi": 3643,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3512.2
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 3539,
+   "tok_hi": 3539,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5010.7
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 3659,
+   "tok_hi": 3659,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5713.0
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 3561,
+   "tok_hi": 3561,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 6015.1
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 3804,
+   "tok_hi": 3804,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3386.1
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 3745,
+   "tok_hi": 3745,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4885.7
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 3600,
+   "tok_hi": 3600,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5201.9
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 3863,
+   "tok_hi": 3863,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4586.8
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 3527,
+   "tok_hi": 3527,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2803.5
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 3671,
+   "tok_hi": 3671,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2799.6
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 3829,
+   "tok_hi": 3829,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3773.5
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 3676,
+   "tok_hi": 3676,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3369.1
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 4141,
+   "tok_hi": 4141,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3511.3
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 6692,
+   "tok_hi": 6692,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4007.3
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 6265,
+   "tok_hi": 6265,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2621.9
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 6311,
+   "tok_hi": 6311,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2946.8
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 6274,
+   "tok_hi": 6274,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1980.7
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 6588,
+   "tok_hi": 6588,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2081.9
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 6930,
+   "tok_hi": 6930,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5222.0
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 6294,
+   "tok_hi": 6294,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3364.5
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 6684,
+   "tok_hi": 6684,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4089.2
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 6696,
+   "tok_hi": 6696,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3826.8
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 6368,
+   "tok_hi": 6368,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4420.4
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 6703,
+   "tok_hi": 6703,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3075.7
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 6702,
+   "tok_hi": 6702,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3919.4
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 6708,
+   "tok_hi": 6708,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 7933.7
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 6733,
+   "tok_hi": 6733,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3447.9
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 6415,
+   "tok_hi": 6415,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2250.1
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 5954,
+   "tok_hi": 5954,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2136.6
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 3562,
+   "tok_hi": 3562,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2663.0
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 3373,
+   "tok_hi": 3373,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2501.8
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 3198,
+   "tok_hi": 3198,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1462.3
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 3681,
+   "tok_hi": 3681,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2337.9
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 3526,
+   "tok_hi": 3526,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2746.3
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 3569,
+   "tok_hi": 3569,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5276.8
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 3491,
+   "tok_hi": 3491,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 5365.4
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 3322,
+   "tok_hi": 3322,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3723.8
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 3461,
+   "tok_hi": 3461,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3037.9
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 4130,
+   "tok_hi": 4130,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4956.0
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 3395,
+   "tok_hi": 3395,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 3283.3
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 3576,
+   "tok_hi": 3576,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2965.6
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 3582,
+   "tok_hi": 3582,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4255.8
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 4076,
+   "tok_hi": 4076,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 4108.5
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 3456,
+   "tok_hi": 3456,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 2792.4
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 3551,
+   "tok_hi": 3551,
+   "unknown_calls": 0,
+   "calls": 1,
+   "latency_ms": 1952.7
+  }
+ },
+ "LEX5B_15500": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 9616,
+   "tok_hi": 9616,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3701.2
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 9390,
+   "tok_hi": 9390,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2710.0
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 10182,
+   "tok_hi": 10182,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2672.4
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 9445,
+   "tok_hi": 9445,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3097.1
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 9511,
+   "tok_hi": 9511,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2962.4
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 9799,
+   "tok_hi": 9799,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3216.9
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 9470,
+   "tok_hi": 9470,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3196.1
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 6588,
+   "tok_hi": 10671,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 7554.4
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 11212,
+   "tok_hi": 11212,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3364.9
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 10133,
+   "tok_hi": 10133,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3976.1
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 10136,
+   "tok_hi": 10136,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4739.5
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 9660,
+   "tok_hi": 9660,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6152.4
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 9585,
+   "tok_hi": 9585,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4013.8
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 10090,
+   "tok_hi": 10090,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3366.8
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 7188,
+   "tok_hi": 11351,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5103.1
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 6346,
+   "tok_hi": 10451,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4108.9
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 6043,
+   "tok_hi": 6043,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2752.2
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 7276,
+   "tok_hi": 7276,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5888.6
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 5997,
+   "tok_hi": 5997,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1519.7
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 6712,
+   "tok_hi": 6712,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2217.7
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 6820,
+   "tok_hi": 6820,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3365.9
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 6766,
+   "tok_hi": 6766,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3834.1
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 8165,
+   "tok_hi": 8165,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3620.9
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 7776,
+   "tok_hi": 7776,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3367.1
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 3935,
+   "tok_hi": 7741,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 7383.9
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 7031,
+   "tok_hi": 7031,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6202.4
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 4095,
+   "tok_hi": 7934,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5430.4
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 4087,
+   "tok_hi": 7977,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 11323.0
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 7396,
+   "tok_hi": 7396,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4259.1
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 6950,
+   "tok_hi": 6950,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3084.1
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 6264,
+   "tok_hi": 6264,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8784.6
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 6632,
+   "tok_hi": 6632,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3053.4
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 10059,
+   "tok_hi": 10059,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3538.1
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 9436,
+   "tok_hi": 9436,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7772.7
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 9493,
+   "tok_hi": 9493,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5965.5
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 9628,
+   "tok_hi": 9628,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6067.8
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 9948,
+   "tok_hi": 9948,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6115.4
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 10168,
+   "tok_hi": 10168,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5396.0
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 9801,
+   "tok_hi": 9801,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3248.2
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 9555,
+   "tok_hi": 9555,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4323.2
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 9909,
+   "tok_hi": 9909,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7539.0
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 9378,
+   "tok_hi": 9378,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6165.2
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 6674,
+   "tok_hi": 10580,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 7484.5
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 9966,
+   "tok_hi": 9966,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8602.2
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 6960,
+   "tok_hi": 11003,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 11506.8
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 6313,
+   "tok_hi": 10237,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 7840.8
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 9678,
+   "tok_hi": 9678,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4835.8
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 9140,
+   "tok_hi": 9140,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2947.8
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 6346,
+   "tok_hi": 6346,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3473.3
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 5782,
+   "tok_hi": 5782,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1991.0
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 6312,
+   "tok_hi": 6312,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1577.3
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 5986,
+   "tok_hi": 5986,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3441.1
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 3637,
+   "tok_hi": 7557,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4466.1
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 6142,
+   "tok_hi": 6142,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3207.1
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 3491,
+   "tok_hi": 7302,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5105.2
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 6255,
+   "tok_hi": 6255,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3178.3
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 6445,
+   "tok_hi": 6445,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3993.2
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 5990,
+   "tok_hi": 5990,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3817.4
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 6428,
+   "tok_hi": 6428,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3121.5
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 5877,
+   "tok_hi": 5877,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2552.7
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 5966,
+   "tok_hi": 5966,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5435.9
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 3609,
+   "tok_hi": 7471,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5355.2
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 6052,
+   "tok_hi": 6052,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3853.3
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 6504,
+   "tok_hi": 6504,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2690.2
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 9594,
+   "tok_hi": 9594,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2712.9
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 8970,
+   "tok_hi": 8970,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4264.1
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 9380,
+   "tok_hi": 9380,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8428.4
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 9259,
+   "tok_hi": 9259,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2851.8
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 9722,
+   "tok_hi": 9722,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2713.1
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 10214,
+   "tok_hi": 10214,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6060.8
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 9232,
+   "tok_hi": 9232,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8884.5
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 9678,
+   "tok_hi": 9678,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4812.6
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 9465,
+   "tok_hi": 9465,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4535.4
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 8951,
+   "tok_hi": 8951,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4594.2
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 9867,
+   "tok_hi": 9867,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4144.2
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 9730,
+   "tok_hi": 9730,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5989.5
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 9490,
+   "tok_hi": 9490,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7086.3
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 9564,
+   "tok_hi": 9564,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7599.5
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 9240,
+   "tok_hi": 9240,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4632.3
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 8753,
+   "tok_hi": 8753,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4548.3
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 5949,
+   "tok_hi": 5949,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1778.2
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 5499,
+   "tok_hi": 5499,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2562.5
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 5158,
+   "tok_hi": 5158,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1927.4
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 6000,
+   "tok_hi": 6000,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 1514.2
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 5749,
+   "tok_hi": 5749,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2889.8
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 5906,
+   "tok_hi": 5906,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3118.6
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 5760,
+   "tok_hi": 5760,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4406.1
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 5362,
+   "tok_hi": 5362,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3138.1
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 5444,
+   "tok_hi": 5444,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3148.6
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 6624,
+   "tok_hi": 6624,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5997.3
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 5989,
+   "tok_hi": 5989,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4613.4
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 3472,
+   "tok_hi": 7334,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 5167.8
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 5889,
+   "tok_hi": 5889,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4003.2
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 3686,
+   "tok_hi": 7530,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 4064.3
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 5794,
+   "tok_hi": 5794,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3353.7
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 3391,
+   "tok_hi": 7199,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 6485.6
+  }
+ },
+ "SETR_6000": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 9004,
+   "tok_hi": 9004,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4397.6
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 9410,
+   "tok_hi": 9410,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4067.5
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 10152,
+   "tok_hi": 10152,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8552.1
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 9595,
+   "tok_hi": 9595,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6964.9
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 2601,
+   "tok_hi": 11976,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 9597.2
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 2866,
+   "tok_hi": 12439,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 22780.8
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 9519,
+   "tok_hi": 9519,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5921.0
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 10100,
+   "tok_hi": 10100,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4569.9
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 12355,
+   "tok_hi": 12355,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4146.2
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 10249,
+   "tok_hi": 10249,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7583.9
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 9861,
+   "tok_hi": 9861,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5458.7
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 9156,
+   "tok_hi": 9156,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5675.3
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 8445,
+   "tok_hi": 8445,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5712.6
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 10019,
+   "tok_hi": 10019,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 10480.4
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 10580,
+   "tok_hi": 10580,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7696.0
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 8688,
+   "tok_hi": 8688,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4967.9
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 5435,
+   "tok_hi": 5435,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3856.0
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 6872,
+   "tok_hi": 6872,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4687.6
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 5547,
+   "tok_hi": 5547,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2741.6
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 5948,
+   "tok_hi": 5948,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4402.9
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 6715,
+   "tok_hi": 6715,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6850.4
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 6439,
+   "tok_hi": 6439,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3834.5
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 8393,
+   "tok_hi": 8393,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4098.4
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 6826,
+   "tok_hi": 6826,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3554.8
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 5956,
+   "tok_hi": 5956,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3709.9
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 6406,
+   "tok_hi": 6406,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6678.0
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 6634,
+   "tok_hi": 6634,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5949.8
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 6295,
+   "tok_hi": 6295,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4203.0
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 7498,
+   "tok_hi": 7498,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9331.7
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 6444,
+   "tok_hi": 6444,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5420.0
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 5631,
+   "tok_hi": 5631,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7159.5
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 6053,
+   "tok_hi": 6053,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4969.8
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 2818,
+   "tok_hi": 12996,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 21678.4
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 9840,
+   "tok_hi": 9840,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 10571.8
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 10052,
+   "tok_hi": 10052,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6496.9
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 10036,
+   "tok_hi": 10036,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4132.0
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 10166,
+   "tok_hi": 10166,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7668.6
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 10845,
+   "tok_hi": 10845,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4539.1
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 10206,
+   "tok_hi": 10206,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3873.9
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 10153,
+   "tok_hi": 10153,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4834.8
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 10825,
+   "tok_hi": 10825,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 11040.0
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 9843,
+   "tok_hi": 9843,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 12084.6
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 10017,
+   "tok_hi": 10017,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6139.9
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 10463,
+   "tok_hi": 10463,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7965.7
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 10629,
+   "tok_hi": 10629,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8455.7
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 9923,
+   "tok_hi": 9923,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2711.5
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 10471,
+   "tok_hi": 10471,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8344.8
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 9349,
+   "tok_hi": 9349,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3391.4
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 6131,
+   "tok_hi": 6131,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4249.6
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 1384,
+   "tok_hi": 12324,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 8947.5
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 5499,
+   "tok_hi": 5499,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3651.1
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 5640,
+   "tok_hi": 5640,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5558.4
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 5489,
+   "tok_hi": 5489,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 32897.6
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 5572,
+   "tok_hi": 5572,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5784.5
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 5512,
+   "tok_hi": 5512,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 40623.5
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 5681,
+   "tok_hi": 5681,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3967.1
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 6315,
+   "tok_hi": 6315,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6547.4
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 5701,
+   "tok_hi": 5701,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6199.6
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 5431,
+   "tok_hi": 5431,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5728.0
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 5362,
+   "tok_hi": 5362,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4212.4
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 5645,
+   "tok_hi": 5645,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5888.9
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 5686,
+   "tok_hi": 5686,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4995.6
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 5501,
+   "tok_hi": 5501,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3333.2
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 5162,
+   "tok_hi": 5162,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2897.8
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 10139,
+   "tok_hi": 10139,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4574.1
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 2571,
+   "tok_hi": 12214,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 12649.1
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 9946,
+   "tok_hi": 9946,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4651.8
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 9782,
+   "tok_hi": 9782,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9940.1
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 9903,
+   "tok_hi": 9903,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5254.5
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 10458,
+   "tok_hi": 10458,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6463.6
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 9348,
+   "tok_hi": 9348,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7778.6
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 10115,
+   "tok_hi": 10115,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6368.7
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 10504,
+   "tok_hi": 10504,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6255.0
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 9081,
+   "tok_hi": 9081,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4337.0
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 10175,
+   "tok_hi": 10175,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4894.7
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 10192,
+   "tok_hi": 10192,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7862.9
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 10342,
+   "tok_hi": 10342,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5546.7
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 10052,
+   "tok_hi": 10052,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5460.3
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 9993,
+   "tok_hi": 9993,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4014.0
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 9033,
+   "tok_hi": 9033,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6038.4
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 5549,
+   "tok_hi": 5549,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3502.0
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 4802,
+   "tok_hi": 4802,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3546.6
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 4872,
+   "tok_hi": 4872,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3760.8
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 5344,
+   "tok_hi": 5344,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2610.4
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 5100,
+   "tok_hi": 5100,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3834.0
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 5305,
+   "tok_hi": 5305,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5519.5
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 5191,
+   "tok_hi": 5191,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4946.8
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 5342,
+   "tok_hi": 5342,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6489.9
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 5326,
+   "tok_hi": 5326,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5373.1
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 6306,
+   "tok_hi": 6306,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5670.6
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 5106,
+   "tok_hi": 5106,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5189.6
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 1606,
+   "tok_hi": 11914,
+   "unknown_calls": 1,
+   "calls": 2,
+   "latency_ms": 14534.3
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 5535,
+   "tok_hi": 5535,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5938.4
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 5872,
+   "tok_hi": 5872,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5852.8
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 5030,
+   "tok_hi": 5030,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3951.3
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 5300,
+   "tok_hi": 5300,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3500.9
+  }
+ },
+ "SETR_15500": {
+  "V2-test-RPT-fa-T1-001": {
+   "tok_lo": 12868,
+   "tok_hi": 12868,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4873.3
+  },
+  "V2-test-RPT-fa-T1-002": {
+   "tok_lo": 13265,
+   "tok_hi": 13265,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6235.3
+  },
+  "V2-test-RPT-fa-T1-003": {
+   "tok_lo": 14210,
+   "tok_hi": 14210,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4053.2
+  },
+  "V2-test-RPT-fa-T1-004": {
+   "tok_lo": 13224,
+   "tok_hi": 13224,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3651.3
+  },
+  "V2-test-RPT-fa-T1-005": {
+   "tok_lo": 13054,
+   "tok_hi": 13054,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4366.7
+  },
+  "V2-test-RPT-fa-T2-001": {
+   "tok_lo": 13548,
+   "tok_hi": 13548,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8967.0
+  },
+  "V2-test-RPT-fa-T2-002": {
+   "tok_lo": 13310,
+   "tok_hi": 13310,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6362.5
+  },
+  "V2-test-RPT-fa-T2-003": {
+   "tok_lo": 14080,
+   "tok_hi": 14080,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6550.7
+  },
+  "V2-test-RPT-fa-T2-004": {
+   "tok_lo": 17061,
+   "tok_hi": 17061,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4192.2
+  },
+  "V2-test-RPT-fa-T2-005": {
+   "tok_lo": 14108,
+   "tok_hi": 14108,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6390.5
+  },
+  "V2-test-RPT-fa-T3-001": {
+   "tok_lo": 14038,
+   "tok_hi": 14038,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5177.5
+  },
+  "V2-test-RPT-fa-T3-002": {
+   "tok_lo": 12871,
+   "tok_hi": 12871,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5475.3
+  },
+  "V2-test-RPT-fa-T3-003": {
+   "tok_lo": 12316,
+   "tok_hi": 12316,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4628.5
+  },
+  "V2-test-RPT-fa-T3-004": {
+   "tok_lo": 14113,
+   "tok_hi": 14113,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 10073.9
+  },
+  "V2-test-RPT-fa-T3-005": {
+   "tok_lo": 14709,
+   "tok_hi": 14709,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9671.7
+  },
+  "V2-test-RPT-fa-AB-001": {
+   "tok_lo": 12488,
+   "tok_hi": 12488,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5454.8
+  },
+  "V2-test-RPT-en-T1-001": {
+   "tok_lo": 7508,
+   "tok_hi": 7508,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3600.1
+  },
+  "V2-test-RPT-en-T1-002": {
+   "tok_lo": 9289,
+   "tok_hi": 9289,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5098.0
+  },
+  "V2-test-RPT-en-T1-003": {
+   "tok_lo": 7661,
+   "tok_hi": 7661,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2457.0
+  },
+  "V2-test-RPT-en-T1-004": {
+   "tok_lo": 8135,
+   "tok_hi": 8135,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3425.6
+  },
+  "V2-test-RPT-en-T1-005": {
+   "tok_lo": 9085,
+   "tok_hi": 9085,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3644.4
+  },
+  "V2-test-RPT-en-T2-001": {
+   "tok_lo": 8950,
+   "tok_hi": 8950,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3480.7
+  },
+  "V2-test-RPT-en-T2-002": {
+   "tok_lo": 11043,
+   "tok_hi": 11043,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4982.3
+  },
+  "V2-test-RPT-en-T2-003": {
+   "tok_lo": 9639,
+   "tok_hi": 9639,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4975.7
+  },
+  "V2-test-RPT-en-T2-004": {
+   "tok_lo": 8253,
+   "tok_hi": 8253,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9171.0
+  },
+  "V2-test-RPT-en-T2-005": {
+   "tok_lo": 8772,
+   "tok_hi": 8772,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7890.9
+  },
+  "V2-test-RPT-en-T3-001": {
+   "tok_lo": 8972,
+   "tok_hi": 8972,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7279.2
+  },
+  "V2-test-RPT-en-T3-002": {
+   "tok_lo": 8734,
+   "tok_hi": 8734,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 27274.6
+  },
+  "V2-test-RPT-en-T3-003": {
+   "tok_lo": 10477,
+   "tok_hi": 10477,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 13071.8
+  },
+  "V2-test-RPT-en-T3-004": {
+   "tok_lo": 9015,
+   "tok_hi": 9015,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7114.1
+  },
+  "V2-test-RPT-en-T3-005": {
+   "tok_lo": 7629,
+   "tok_hi": 7629,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6917.9
+  },
+  "V2-test-RPT-en-AB-001": {
+   "tok_lo": 8347,
+   "tok_hi": 8347,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4933.9
+  },
+  "V2-test-BOOK-fa-T1-001": {
+   "tok_lo": 14568,
+   "tok_hi": 14568,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4238.6
+  },
+  "V2-test-BOOK-fa-T1-002": {
+   "tok_lo": 13702,
+   "tok_hi": 13702,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8446.7
+  },
+  "V2-test-BOOK-fa-T1-003": {
+   "tok_lo": 13937,
+   "tok_hi": 13937,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5427.9
+  },
+  "V2-test-BOOK-fa-T1-004": {
+   "tok_lo": 13936,
+   "tok_hi": 13936,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4277.1
+  },
+  "V2-test-BOOK-fa-T1-005": {
+   "tok_lo": 14163,
+   "tok_hi": 14163,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 10795.5
+  },
+  "V2-test-BOOK-fa-T2-001": {
+   "tok_lo": 14936,
+   "tok_hi": 14936,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5990.6
+  },
+  "V2-test-BOOK-fa-T2-002": {
+   "tok_lo": 14161,
+   "tok_hi": 14161,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7009.8
+  },
+  "V2-test-BOOK-fa-T2-003": {
+   "tok_lo": 14020,
+   "tok_hi": 14020,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6245.9
+  },
+  "V2-test-BOOK-fa-T2-004": {
+   "tok_lo": 14714,
+   "tok_hi": 14714,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7085.5
+  },
+  "V2-test-BOOK-fa-T2-005": {
+   "tok_lo": 13433,
+   "tok_hi": 13433,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 12335.3
+  },
+  "V2-test-BOOK-fa-T3-001": {
+   "tok_lo": 14293,
+   "tok_hi": 14293,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8851.9
+  },
+  "V2-test-BOOK-fa-T3-002": {
+   "tok_lo": 14377,
+   "tok_hi": 14377,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9701.1
+  },
+  "V2-test-BOOK-fa-T3-003": {
+   "tok_lo": 14542,
+   "tok_hi": 14542,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6199.1
+  },
+  "V2-test-BOOK-fa-T3-004": {
+   "tok_lo": 13985,
+   "tok_hi": 13985,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4313.9
+  },
+  "V2-test-BOOK-fa-T3-005": {
+   "tok_lo": 14262,
+   "tok_hi": 14262,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 11184.2
+  },
+  "V2-test-BOOK-fa-AB-001": {
+   "tok_lo": 13205,
+   "tok_hi": 13205,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9131.3
+  },
+  "V2-test-BOOK-en-T1-001": {
+   "tok_lo": 8276,
+   "tok_hi": 8276,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5427.9
+  },
+  "V2-test-BOOK-en-T1-002": {
+   "tok_lo": 7538,
+   "tok_hi": 7538,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4036.6
+  },
+  "V2-test-BOOK-en-T1-003": {
+   "tok_lo": 7796,
+   "tok_hi": 7796,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4402.4
+  },
+  "V2-test-BOOK-en-T1-004": {
+   "tok_lo": 7701,
+   "tok_hi": 7701,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3420.0
+  },
+  "V2-test-BOOK-en-T1-005": {
+   "tok_lo": 7320,
+   "tok_hi": 7320,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3829.6
+  },
+  "V2-test-BOOK-en-T2-001": {
+   "tok_lo": 7618,
+   "tok_hi": 7618,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8904.3
+  },
+  "V2-test-BOOK-en-T2-002": {
+   "tok_lo": 7409,
+   "tok_hi": 7409,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3180.0
+  },
+  "V2-test-BOOK-en-T2-003": {
+   "tok_lo": 7934,
+   "tok_hi": 7934,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4275.8
+  },
+  "V2-test-BOOK-en-T2-004": {
+   "tok_lo": 8452,
+   "tok_hi": 8452,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 9271.2
+  },
+  "V2-test-BOOK-en-T2-005": {
+   "tok_lo": 7615,
+   "tok_hi": 7615,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6350.0
+  },
+  "V2-test-BOOK-en-T3-001": {
+   "tok_lo": 7492,
+   "tok_hi": 7492,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5837.5
+  },
+  "V2-test-BOOK-en-T3-002": {
+   "tok_lo": 7252,
+   "tok_hi": 7252,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3708.8
+  },
+  "V2-test-BOOK-en-T3-003": {
+   "tok_lo": 7703,
+   "tok_hi": 7703,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5912.8
+  },
+  "V2-test-BOOK-en-T3-004": {
+   "tok_lo": 7815,
+   "tok_hi": 7815,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5256.8
+  },
+  "V2-test-BOOK-en-T3-005": {
+   "tok_lo": 7414,
+   "tok_hi": 7414,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4211.9
+  },
+  "V2-test-BOOK-en-AB-001": {
+   "tok_lo": 7341,
+   "tok_hi": 7341,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3182.8
+  },
+  "V2-test-LAW-fa-T1-001": {
+   "tok_lo": 14091,
+   "tok_hi": 14091,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6445.1
+  },
+  "V2-test-LAW-fa-T1-002": {
+   "tok_lo": 12414,
+   "tok_hi": 12414,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4571.0
+  },
+  "V2-test-LAW-fa-T1-003": {
+   "tok_lo": 13765,
+   "tok_hi": 13765,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5913.9
+  },
+  "V2-test-LAW-fa-T1-004": {
+   "tok_lo": 13588,
+   "tok_hi": 13588,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3564.1
+  },
+  "V2-test-LAW-fa-T1-005": {
+   "tok_lo": 13706,
+   "tok_hi": 13706,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4552.2
+  },
+  "V2-test-LAW-fa-T2-001": {
+   "tok_lo": 14500,
+   "tok_hi": 14500,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5966.0
+  },
+  "V2-test-LAW-fa-T2-002": {
+   "tok_lo": 13122,
+   "tok_hi": 13122,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7200.5
+  },
+  "V2-test-LAW-fa-T2-003": {
+   "tok_lo": 13697,
+   "tok_hi": 13697,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6482.9
+  },
+  "V2-test-LAW-fa-T2-004": {
+   "tok_lo": 14253,
+   "tok_hi": 14253,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5929.5
+  },
+  "V2-test-LAW-fa-T2-005": {
+   "tok_lo": 12620,
+   "tok_hi": 12620,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5231.5
+  },
+  "V2-test-LAW-fa-T3-001": {
+   "tok_lo": 13974,
+   "tok_hi": 13974,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 8089.9
+  },
+  "V2-test-LAW-fa-T3-002": {
+   "tok_lo": 14001,
+   "tok_hi": 14001,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7373.7
+  },
+  "V2-test-LAW-fa-T3-003": {
+   "tok_lo": 14104,
+   "tok_hi": 14104,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 10801.1
+  },
+  "V2-test-LAW-fa-T3-004": {
+   "tok_lo": 13720,
+   "tok_hi": 13720,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6599.6
+  },
+  "V2-test-LAW-fa-T3-005": {
+   "tok_lo": 13762,
+   "tok_hi": 13762,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 3516.2
+  },
+  "V2-test-LAW-fa-AB-001": {
+   "tok_lo": 12805,
+   "tok_hi": 12805,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5801.5
+  },
+  "V2-test-LAW-en-T1-001": {
+   "tok_lo": 7711,
+   "tok_hi": 7711,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4406.6
+  },
+  "V2-test-LAW-en-T1-002": {
+   "tok_lo": 6700,
+   "tok_hi": 6700,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4281.8
+  },
+  "V2-test-LAW-en-T1-003": {
+   "tok_lo": 6676,
+   "tok_hi": 6676,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4278.5
+  },
+  "V2-test-LAW-en-T1-004": {
+   "tok_lo": 7441,
+   "tok_hi": 7441,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2154.1
+  },
+  "V2-test-LAW-en-T1-005": {
+   "tok_lo": 7078,
+   "tok_hi": 7078,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4245.4
+  },
+  "V2-test-LAW-en-T2-001": {
+   "tok_lo": 7307,
+   "tok_hi": 7307,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6316.9
+  },
+  "V2-test-LAW-en-T2-002": {
+   "tok_lo": 7172,
+   "tok_hi": 7172,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6486.0
+  },
+  "V2-test-LAW-en-T2-003": {
+   "tok_lo": 7039,
+   "tok_hi": 7039,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4399.2
+  },
+  "V2-test-LAW-en-T2-004": {
+   "tok_lo": 7324,
+   "tok_hi": 7324,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 5762.9
+  },
+  "V2-test-LAW-en-T2-005": {
+   "tok_lo": 8403,
+   "tok_hi": 8403,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7280.5
+  },
+  "V2-test-LAW-en-T3-001": {
+   "tok_lo": 7134,
+   "tok_hi": 7134,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6227.0
+  },
+  "V2-test-LAW-en-T3-002": {
+   "tok_lo": 7443,
+   "tok_hi": 7443,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 6798.8
+  },
+  "V2-test-LAW-en-T3-003": {
+   "tok_lo": 7459,
+   "tok_hi": 7459,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4908.2
+  },
+  "V2-test-LAW-en-T3-004": {
+   "tok_lo": 7788,
+   "tok_hi": 7788,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 7850.2
+  },
+  "V2-test-LAW-en-T3-005": {
+   "tok_lo": 6904,
+   "tok_hi": 6904,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 4247.1
+  },
+  "V2-test-LAW-en-AB-001": {
+   "tok_lo": 7247,
+   "tok_hi": 7247,
+   "unknown_calls": 0,
+   "calls": 2,
+   "latency_ms": 2898.8
+  }
+ }
+}

@@ -1,0 +1,2086 @@
+{
+ "about": "Provenance of the datasets_v2 BOOK and LAW pools (DESIGN.md source rule 2). One entry per manifest_v2 local_path.",
+ "sources": {
+  "book_en\\gutenberg-1228_darwin_origin-of-species-1st-ed_en.html": {
+   "edition": "Charles Darwin; John Murray, London, 1st ed.",
+   "published": "1859",
+   "url": "https://www.gutenberg.org/ebooks/1228",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg1228-images.html",
+     "sha256": "a7392dcb4424840a7d670fd830b1dcee5adf9c5ddc6c67fb5f0a15bf38416bbb"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "On the Origin of Species (1st edition, 1859)",
+   "input_sha256": "9d223a344bde7767f6825f6e83d66736c184e4b851a21d99ad26d43c13f154a2"
+  },
+  "book_en\\gutenberg-2009_darwin_origin-of-species-6th-ed_en.html": {
+   "edition": "Charles Darwin; 6th London ed. with additions and corrections",
+   "published": "1872",
+   "url": "https://www.gutenberg.org/ebooks/2009",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg2009-images.html",
+     "sha256": "a823cca9e927fd79ec6eaac3c8018fa0adeef1825b75673e7e138827232ca3e5"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "On the Origin of Species (6th edition, 1872)",
+   "input_sha256": "8e18b4cc9a2070a57dcbb3af58155335846304a537fd175d5641f16366cee4d8"
+  },
+  "book_en\\gutenberg-34901_mill_on-liberty_en.html": {
+   "edition": "John Stuart Mill; Longman, Green 1869 printing",
+   "published": "1859",
+   "url": "https://www.gutenberg.org/ebooks/34901",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg34901-images.html",
+     "sha256": "7c8597716a89dac2dfd17cc73d3402e24d71eb97c2d46f2b1e8dddfd16794c18"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "On Liberty",
+   "input_sha256": "c5bf514648ea7d8bb18f70ac18dead37b51e289eef703eaa43e89bc58198533b"
+  },
+  "book_en\\gutenberg-4239_malthus_essay-on-population_en.html": {
+   "edition": "Thomas Malthus; 1st ed.",
+   "published": "1798",
+   "url": "https://www.gutenberg.org/ebooks/4239",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg4239-images.html",
+     "sha256": "8ee76b293b610bc28513c8db45f7ad6794fd41014344f3272285c80d73d872bb"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "An Essay on the Principle of Population (1798)",
+   "input_sha256": "971beca29c2259e5170c12556f753dc5c11c9904256f9a7921fb5b57e995b9cc"
+  },
+  "book_en\\gutenberg-815_tocqueville_democracy-in-america-part1_en.html": {
+   "edition": "Alexis de Tocqueville; tr. Henry Reeve",
+   "published": "1835",
+   "url": "https://www.gutenberg.org/ebooks/815",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg815-images.html",
+     "sha256": "424224c5cf442751f57cf6dde3d547dcaf1870420e0c0589a3165291df2e0079"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "Democracy in America, Volume 1",
+   "input_sha256": "006c3480f0fbb8ded621ed2b296fa4039ba7e77075b3726695ed62ad1466b9ca"
+  },
+  "book_en\\gutenberg-1015_parkman_oregon-trail_en.html": {
+   "edition": "Francis Parkman Jr.",
+   "published": "1849",
+   "url": "https://www.gutenberg.org/ebooks/1015",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg1015-images.html",
+     "sha256": "35fbadd9a3f6cde219ab4a3201e65708dd0e8d3374d907df93af4469769473b9"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "The Oregon Trail",
+   "input_sha256": "fd352bd875fcd65917462461e11871dfb2c5f18c4e6d15e27ace1cabe7b22cf4"
+  },
+  "book_en\\gutenberg-20203_franklin_autobiography_en.html": {
+   "edition": "Benjamin Franklin; ed. Frank Woodworth Pine 1916",
+   "published": "1791",
+   "url": "https://www.gutenberg.org/ebooks/20203",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg20203-images.html",
+     "sha256": "061e402cd1c247d6626d250780e94cffee0a4548cd9fdbbd2458975cc509c2ec"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "Autobiography of Benjamin Franklin",
+   "input_sha256": "b2f245a0f388bc0c1c3b2ca3668d3780f7e26351cf47f297c56999e945d43ece"
+  },
+  "book_en\\gutenberg-23_douglass_narrative_en.html": {
+   "edition": "Frederick Douglass",
+   "published": "1845",
+   "url": "https://www.gutenberg.org/ebooks/23",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg23-images.html",
+     "sha256": "a2dd63f1c05c536036eee9fa3e341bf63ba6f07d17594f03ecbb780823bc6243"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+   "input_sha256": "c539feaca894dfb2725dac70273874da3a578b5564a3cdf98c9f63e1fdeb5a7d"
+  },
+  "book_en\\gutenberg-833_veblen_theory-of-leisure-class_en.html": {
+   "edition": "Thorstein Veblen",
+   "published": "1899",
+   "url": "https://www.gutenberg.org/ebooks/833",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg833-images.html",
+     "sha256": "33cc35add07281014f48b94ab620de7c888b3c085e9870d4043e1fb0e4abe806"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "The Theory of the Leisure Class",
+   "input_sha256": "ba7c40b9eb51ce0510c5afea229b04f68305e05265e82fadf92a5df4c2633b2f"
+  },
+  "book_en\\gutenberg-14474_faraday_chemical-history-of-a-candle_en.html": {
+   "edition": "Michael Faraday; ed. William Crookes",
+   "published": "1861",
+   "url": "https://www.gutenberg.org/ebooks/14474",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg14474-images.html",
+     "sha256": "ccdf88ee0489ce3d7595fe84886d1444da671c7b44db57545fcf5d10be3ea9a0"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "The Chemical History of a Candle",
+   "input_sha256": "95958e8675b75848c91373a156084e167925d36a83a10eadb5778facf9a683d7"
+  },
+  "book_en\\gutenberg-147_paine_common-sense_en.html": {
+   "edition": "Thomas Paine",
+   "published": "1776",
+   "url": "https://www.gutenberg.org/ebooks/147",
+   "completeness": "complete book text as published by Project Gutenberg",
+   "reuse_basis": "public domain (USA; author died >70 years ago, so PD in most jurisdictions); Project Gutenberg trademark licence boilerplate removed",
+   "converter": "scratch conv_gut.py (stdlib DOM simplifier)",
+   "originals": [
+    {
+     "path": "book_en/_orig/pg147-images.html",
+     "sha256": "101952e6c658b381453178edd5f77e10025ee35770afa788f6d5d5e44c908f11"
+    }
+   ],
+   "lane": "BOOK_en",
+   "title": "Common Sense",
+   "input_sha256": "df171cd7f9dee879a967cf09b16ad9f6d95712bc1bbcc2100dcebf053dd3c9f9"
+  },
+  "law_en\\eurlex-32016R0679_gdpr_en.html": {
+   "edition": "Official Journal text as adopted (original act, not a consolidated version)",
+   "published": "2016",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679",
+   "completeness": "complete act incl. recitals and annexes",
+   "reuse_basis": "EUR-Lex content reusable under Commission Decision 2011/833/EU (reuse permitted with source acknowledgement); EU legislation",
+   "converter": "scratch conv_law_en.py eu()",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32016R0679.html",
+     "sha256": "e36cfee2e5131238b184ebd07cb432fb880df878c00f90e319a8cdfe6cd0e440"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Regulation (EU) 2016/679 (General Data Protection Regulation)",
+   "input_sha256": "9993061b8d03ab824c6ad1332adfae159fc701b7a4bcb8f2f0be9920052d6b90"
+  },
+  "law_en\\eurlex-32024R1689_ai-act_en.html": {
+   "edition": "Official Journal text as adopted (original act, not a consolidated version)",
+   "published": "2024",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+   "completeness": "complete act incl. recitals and annexes",
+   "reuse_basis": "EUR-Lex content reusable under Commission Decision 2011/833/EU (reuse permitted with source acknowledgement); EU legislation",
+   "converter": "scratch conv_law_en.py eu()",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32024R1689.html",
+     "sha256": "6e7fd1137e51ba9d0185d951e15352177ef8872f07ffc864523d1ed23778fb7c"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+   "input_sha256": "3dbb09ef6e52e7abf582ff515c8b47b0a7a8996566e82f97403a7145108c3aee"
+  },
+  "law_en\\eurlex-32022R2065_dsa_en.html": {
+   "edition": "Official Journal text as adopted (original act, not a consolidated version)",
+   "published": "2022",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2065",
+   "completeness": "complete act incl. recitals and annexes",
+   "reuse_basis": "EUR-Lex content reusable under Commission Decision 2011/833/EU (reuse permitted with source acknowledgement); EU legislation",
+   "converter": "scratch conv_law_en.py eu()",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32022R2065.html",
+     "sha256": "0297b5833354554e394d3a39093675c53b6817f5e6189cb40d52b1fe4f2614f2"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Regulation (EU) 2022/2065 (Digital Services Act)",
+   "input_sha256": "b53e88ca0f350ac4b11172410f56b316fccce4a03f2dcb1d21ec4617e3f593fd"
+  },
+  "law_en\\eurlex-32022R1925_dma_en.html": {
+   "edition": "Official Journal text as adopted (original act, not a consolidated version)",
+   "published": "2022",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1925",
+   "completeness": "complete act incl. recitals and annexes",
+   "reuse_basis": "EUR-Lex content reusable under Commission Decision 2011/833/EU (reuse permitted with source acknowledgement); EU legislation",
+   "converter": "scratch conv_law_en.py eu()",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32022R1925.html",
+     "sha256": "614161c34c0fd262da3738e5a79ad2e51283ca0d1815494b6b6bd3e9e1fa9029"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Regulation (EU) 2022/1925 (Digital Markets Act)",
+   "input_sha256": "cfa60a61b37806a6fb5b0048e1948d215e82848cd381444599255e40112a64fc"
+  },
+  "law_en\\eurlex-32022R0868_data-governance-act_en.html": {
+   "edition": "Official Journal text as adopted (original act, not a consolidated version)",
+   "published": "2022",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868",
+   "completeness": "complete act incl. recitals and annexes",
+   "reuse_basis": "EUR-Lex content reusable under Commission Decision 2011/833/EU (reuse permitted with source acknowledgement); EU legislation",
+   "converter": "scratch conv_law_en.py eu()",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32022R0868.html",
+     "sha256": "7f02d705ba70b568de1309ec68bbac7def2b23cd0147863440d4ce17af9c9915"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Regulation (EU) 2022/868 (Data Governance Act)",
+   "input_sha256": "2ab6a09a2cb02aac0f8618fca0d237af3c237be862e2ca95189d294bb7d2e3c9"
+  },
+  "law_en\\eurlex-32023R2854_data-act_en.html": {
+   "edition": "Official Journal text as adopted (original act, not a consolidated version)",
+   "published": "2023",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2854",
+   "completeness": "complete act incl. recitals and annexes",
+   "reuse_basis": "EUR-Lex content reusable under Commission Decision 2011/833/EU (reuse permitted with source acknowledgement); EU legislation",
+   "converter": "scratch conv_law_en.py eu()",
+   "originals": [
+    {
+     "path": "law_en/_orig/eurlex_32023R2854.html",
+     "sha256": "ff866c9ee79fcc98d1fea1bc660fa1c17e7c91224c2de6a66d86ad6e0a0f3cca"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Regulation (EU) 2023/2854 (Data Act)",
+   "input_sha256": "06f63e856407b932cc742d1d19cb7cb1bb7109b60cc0d4dae9184eaa13793cb6"
+  },
+  "law_en\\ukpga-2015-30_modern-slavery-act_en.html": {
+   "edition": "latest revised version on legislation.gov.uk at retrieval (2026-09-25)",
+   "published": "2015",
+   "url": "https://www.legislation.gov.uk/ukpga/2015/30",
+   "completeness": "complete act incl. schedules; editorial annotations dropped",
+   "reuse_basis": "Open Government Licence v3.0 (Crown copyright), UK",
+   "converter": "scratch conv_law_en.py uk()",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2015-30.xht",
+     "sha256": "1f284f794a1e772b142f316c3fab1cf1aaffed2c90b0fe29c994b091b674e1cb"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Modern Slavery Act 2015",
+   "input_sha256": "1aa518cde944ab175a8b44936f988cc419d863baacb470f000a2b82d76238b8b"
+  },
+  "law_en\\ukpga-2015-15_consumer-rights-act_en.html": {
+   "edition": "latest revised version on legislation.gov.uk at retrieval (2026-09-25)",
+   "published": "2015",
+   "url": "https://www.legislation.gov.uk/ukpga/2015/15",
+   "completeness": "complete act incl. schedules; editorial annotations dropped",
+   "reuse_basis": "Open Government Licence v3.0 (Crown copyright), UK",
+   "converter": "scratch conv_law_en.py uk()",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2015-15.xht",
+     "sha256": "380d48af0c944fa5a7e0acfdffd9f666ba2943866fa7e35ec9c4ac72b812e88d"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Consumer Rights Act 2015",
+   "input_sha256": "090c1e5f3ac274cab3013f51109c0f4d2ac8e7c0fe9cea8f4ea1c2cadbeb568b"
+  },
+  "law_en\\ukpga-2018-12_data-protection-act_en.html": {
+   "edition": "latest revised version on legislation.gov.uk at retrieval (2026-09-25)",
+   "published": "2018",
+   "url": "https://www.legislation.gov.uk/ukpga/2018/12",
+   "completeness": "complete act incl. schedules; editorial annotations dropped",
+   "reuse_basis": "Open Government Licence v3.0 (Crown copyright), UK",
+   "converter": "scratch conv_law_en.py uk()",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2018-12.xht",
+     "sha256": "df4955324c5201f07372ed82c04eb967baa945c82cfea8ba86de684e2824c25b"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Data Protection Act 2018",
+   "input_sha256": "4c5be98189674ce4bab9454f305d063f3f738e5f8ea7e964d9b0cfa236497b41"
+  },
+  "law_en\\ukpga-2010-23_bribery-act_en.html": {
+   "edition": "latest revised version on legislation.gov.uk at retrieval (2026-09-25)",
+   "published": "2010",
+   "url": "https://www.legislation.gov.uk/ukpga/2010/23",
+   "completeness": "complete act incl. schedules; editorial annotations dropped",
+   "reuse_basis": "Open Government Licence v3.0 (Crown copyright), UK",
+   "converter": "scratch conv_law_en.py uk()",
+   "originals": [
+    {
+     "path": "law_en/_orig/legislation-gov-uk_ukpga-2010-23.xht",
+     "sha256": "aa644a71a05a8aece7c1e3fcd4fa7baa4f9ae582ef1260ecf5c0ce5ff8d12b74"
+    }
+   ],
+   "lane": "LAW_en",
+   "title": "Bribery Act 2010",
+   "input_sha256": "c041aa2f506f77d0b9729ab9d20e6c4f35fcc9514266cbd59c57d37a3080a053"
+  },
+  "law_fa\\wikisource_civil-code_fa.html": {
+   "edition": "Civil Code, text as amended (Wikisource 1376 edition)",
+   "published": "۱۳۰۷-۱۳۱۴ (با اصلاحات بعدی)",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_مدنی_۱۳۷۶",
+   "wikisource_pages_used": [
+    [
+     "قانون مدنی ۱۳۷۶/مقدمه",
+     144728
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۱ - در بیان اموال و مالکیت به طور کلی",
+     144723
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۲ - در اسباب تملک - قسمت ۱",
+     144724
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۲ - در اسباب تملک - قسمت ۲ - باب ۱ و ۲",
+     169633
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۲ - در اسباب تملک - قسمت ۲ - باب ۳ - فصول ۱ تا ۷",
+     169634
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۲ - در اسباب تملک - قسمت ۲ - باب ۳ - فصول ۸ تا ۱۹",
+     74191
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۲ - در اسباب تملک - قسمت ۳",
+     72687
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۲ - در اسباب تملک - قسمت ۴",
+     169635
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۱ - کتاب ۳ - در مقررات مختلفه",
+     72689
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۱ - در کلیات",
+     72690
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۲ - در تابعیت",
+     169636
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۳ - در اسناد سجل احوال",
+     72693
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۴ - در اقامتگاه",
+     72694
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۵ - در غایب مفقودالاثر",
+     72695
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۶ - در قرابت",
+     73187
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۷ - در نکاح و طلاق",
+     80140
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۸ - در اولاد",
+     92219
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۹ - در خانواده",
+     72699
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۲ - کتاب ۱۰ - در حجر و قیمومت",
+     100849
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۳ - در ادله اثبات دعوی",
+     72700
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۳ - کتاب ۱ - در اقرار",
+     144727
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۳ - کتاب ۲ - در اسناد",
+     203993
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۳ - کتاب ۳ - در شهادت",
+     141864
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۳ - کتاب ۴ - در امارات",
+     72704
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/جلد ۳ - کتاب ۵ - در قسم",
+     72705
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "قانون مدنی ۱۳۷۶/ازدواج و طلاق",
+     "index/excluded"
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/استفساریه تبصره ماده ۱۰۸۲",
+     "index/excluded"
+    ],
+    [
+     "قانون مدنی ۱۳۷۶/اموال و مالکیت",
+     "index/excluded"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_مدنی_۱۳۷۶.json",
+     "sha256": "4bfff63fdd1ac8258cf1caed4e7e5cded196b6794f671570d98b971dc87b6621"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Civil Code of Iran (as amended)",
+   "input_sha256": "fd75e1a51472735403c479df327cce8fc8e6d8a9d471bf0d4132fac0e6545323"
+  },
+  "law_fa\\wikisource_commercial-code-1303_fa.html": {
+   "edition": "original text as enacted 1303-1304; repealed 1311",
+   "published": "۱۳۰۳-۱۳۰۴",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_تجارت",
+   "wikisource_pages_used": [
+    [
+     "قانون تجارت",
+     179636
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_تجارت.json",
+     "sha256": "1abcbe163a192ce9f3f9295fb252dd8d89dab74c37e8465a2c1686755c46e5ad"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Commercial Code of 1303-1304 (repealed 1311)",
+   "input_sha256": "2a8943940e641bd9ba40134985803c399b8746ab72c5f874f298146cf033aeba"
+  },
+  "law_fa\\wikisource_commercial-code-1311_fa.html": {
+   "edition": "current Commercial Code (1311) incl. 1347 amendment of the joint-stock company section",
+   "published": "۱۳۱۱",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_تجارت_ایران",
+   "wikisource_pages_used": [
+    [
+     "قانون تجارت ایران/تجار و معاملات تجارتی",
+     207004
+    ],
+    [
+     "قانون تجارت ایران/دفاتر تجارتی و دفتر ثبت تجارتی",
+     195482
+    ],
+    [
+     "قانون تجارت ایران/شرکت سهامی",
+     196226
+    ],
+    [
+     "قانون تجارت ایران/شرکت با مسئولیت محدود",
+     99905
+    ],
+    [
+     "قانون تجارت ایران/شرکت تضامنی",
+     169426
+    ],
+    [
+     "قانون تجارت ایران/شرکت مختلط غیرسهامی",
+     72666
+    ],
+    [
+     "قانون تجارت ایران/شرکت مختلط سهامی",
+     88281
+    ],
+    [
+     "قانون تجارت ایران/شرکت نسبی",
+     23723
+    ],
+    [
+     "قانون تجارت ایران/شرکت‌های تعاونی تولید و مصرف",
+     72667
+    ],
+    [
+     "قانون تجارت ایران/در مقررات راجعه به ثبت شرکت‌ها و نشر شرکتنامه",
+     72658
+    ],
+    [
+     "قانون تجارت ایران/در تصفیه امور شرکت‌ها",
+     72657
+    ],
+    [
+     "قانون تجارت ایران/مقررات مختلفه (شرکت‌های تجاری)",
+     72673
+    ],
+    [
+     "قانون تجارت ایران/برات",
+     263137
+    ],
+    [
+     "قانون تجارت ایران/فته‌طلب",
+     72669
+    ],
+    [
+     "قانون تجارت ایران/چک",
+     72675
+    ],
+    [
+     "قانون تجارت ایران/مرور زمان",
+     72672
+    ],
+    [
+     "قانون تجارت ایران/اسناد در وجه حامل",
+     72652
+    ],
+    [
+     "قانون تجارت ایران/دلالی",
+     72662
+    ],
+    [
+     "قانون تجارت ایران/حق‌العمل‌کاری",
+     72655
+    ],
+    [
+     "قانون تجارت ایران/قرارداد حمل و نقل",
+     89321
+    ],
+    [
+     "قانون تجارت ایران/قائم‌مقام تجارتی و سایر نمایندگان تجارتی",
+     72670
+    ],
+    [
+     "قانون تجارت ایران/ضمانت",
+     72668
+    ],
+    [
+     "قانون تجارت ایران/در ورشکستگی",
+     141845
+    ],
+    [
+     "قانون تجارت ایران/در ورشکستگی به تقصیر و ورشکستگی به تقلب",
+     72660
+    ],
+    [
+     "قانون تجارت ایران/در اعاده اعتبار",
+     144633
+    ],
+    [
+     "قانون تجارت ایران/اسم تجارتی",
+     72651
+    ],
+    [
+     "قانون تجارت ایران/شخصیت حقوقی",
+     72663
+    ],
+    [
+     "قانون تجارت ایران/مقررات نهایی",
+     169428
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "قانون تجارت ایران",
+     "main page (table of contents)"
+    ],
+    [
+     "قانون تجارت ایران/شرکت‌های تجاری",
+     "all content duplicated elsewhere"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_تجارت_ایران.json",
+     "sha256": "233ce332e115e74dadb0ac187bc06c48c13ae59e60df4f90768d9749ae73bec7"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Commercial Code of Iran (1311, with the 1347 joint-stock companies bill)",
+   "input_sha256": "319e257498f958dda5fd6b25010787d353379dbc1bcd1c7994335fc904659343"
+  },
+  "law_fa\\wikisource_constitution-1368_fa.html": {
+   "edition": "Constitution as revised in 1368",
+   "published": "۱۳۵۸، بازنگری ۱۳۶۸",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_اساسی_جمهوری_اسلامی_ایران_(مصوب_۱۳۶۸)",
+   "wikisource_pages_used": [
+    [
+     "قانون اساسی جمهوری اسلامی ایران (مصوب ۱۳۶۸)",
+     291450
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_اساسی_جمهوری_اسلامی_ایران_مصوب_۱۳۶۸.json",
+     "sha256": "f9bd604cf5dfca745b2746a3626146a01e763b3b5583d04bfe5c22b1e2d40697"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Constitution of the Islamic Republic of Iran (as revised 1368/1989)",
+   "input_sha256": "d9780dfde92e2856d0b132a74d903d43668624c00596760344d570ef365ff338"
+  },
+  "law_fa\\wikisource_social-security-1354_fa.html": {
+   "edition": "as enacted 1354 (Wikisource text)",
+   "published": "۱۳۵۴",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_تامین_اجتماعی",
+   "wikisource_pages_used": [
+    [
+     "قانون تامین اجتماعی",
+     179627
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_تامین_اجتماعی.json",
+     "sha256": "79a3bea1906cbb5e475aa9e3088487d78b01e656fadb45845066c2941e3b5b3c"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Social Security Law (1354)",
+   "input_sha256": "dbae26891fef96b0e38bf5dea31fbc03bfe74bcb97860778b69eab95f8b66b0d"
+  },
+  "law_fa\\wikisource_registration-of-deeds-1310_fa.html": {
+   "edition": "1310 with later amendments",
+   "published": "۱۳۱۰",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_ثبت_اسناد_و_املاک",
+   "wikisource_pages_used": [
+    [
+     "قانون ثبت اسناد و املاک",
+     290806
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_ثبت_اسناد_و_املاک.json",
+     "sha256": "83fd4b71a66d22591ff83479ac7be60762014b4b21d8dd3e25c1337fdd00054e"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Registration of Deeds and Property Law (1310, as amended)",
+   "input_sha256": "eaba5463cdec33897fcd7576b676ee4c864bf82d2d84ecd83584b0323b745ae8"
+  },
+  "law_fa\\wikisource_direct-taxes-1345_fa.html": {
+   "edition": "as enacted 1345",
+   "published": "۱۳۴۵",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_مالیات‌های_مستقیم_۱۳۴۵",
+   "wikisource_pages_used": [
+    [
+     "قانون مالیات‌های مستقیم ۱۳۴۵",
+     179829
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_مالیات_های_مستقیم_۱۳۴۵.json",
+     "sha256": "c1bc9defc1b90c30534e71955568196da9a7a72c5b9cdc5da62ee59dfe64d084"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Direct Taxes Law (1345)",
+   "input_sha256": "450ae047d6b638019d455b4acd05eab953d14d6f6f3134610e172626aa4f5282"
+  },
+  "law_fa\\wikisource_direct-taxes-amendment-1351_fa.html": {
+   "edition": "amending act as enacted 1351",
+   "published": "۱۳۵۱",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_اصلاح_قانون_مالیات‌های_مستقیم_۱۳۵۱",
+   "wikisource_pages_used": [
+    [
+     "قانون اصلاح قانون مالیات‌های مستقیم ۱۳۵۱",
+     179484
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_اصلاح_قانون_مالیات_های_مستقیم_۱۳۵۱.json",
+     "sha256": "dcf211edb3f3ac6195f3bc3cf2715a2d2f9ab7ab52f0a47f164fb3d8c029002f"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Amendment of the Direct Taxes Law (1351)",
+   "input_sha256": "c33ee5240219a32dbef2835358e18ea307da3b51a40ad2abb900a78f4a648d1c"
+  },
+  "law_fa\\wikisource_press-law-1364_fa.html": {
+   "edition": "as enacted 1364 (Wikisource text; later 1379 amendments not included)",
+   "published": "۱۳۶۴",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_مطبوعات",
+   "wikisource_pages_used": [
+    [
+     "قانون مطبوعات",
+     290808
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_مطبوعات.json",
+     "sha256": "381198f78ca15661fd6067fd0b3bcb14f087ec03678ca827ce01744687c86a54"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Press Law (1364)",
+   "input_sha256": "f1949fc796fc77df54975be38238e6bea69707a7a9f34b6b4f5f6f33b948e5b4"
+  },
+  "law_fa\\wikisource_press-bill-1334_fa.html": {
+   "edition": "as enacted 1334",
+   "published": "۱۳۳۴",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/لایحه_قانونی_مطبوعات_۱۳۳۴",
+   "wikisource_pages_used": [
+    [
+     "لایحه قانونی مطبوعات ۱۳۳۴",
+     179998
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_لایحه_قانونی_مطبوعات_۱۳۳۴.json",
+     "sha256": "2095a2a7be78f7243ca6f4a4914371a5e635fe6d5ce16c827e0efc9fb24630be"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Press Legal Bill (1334)",
+   "input_sha256": "bf32adb000f831cda8b6301f7d2b9da51b927ae23adcd5d1a2a4dae8af9e14bc"
+  },
+  "law_fa\\wikisource_civil-service-employment-1345_fa.html": {
+   "edition": "as enacted 1345 (Wikisource text)",
+   "published": "۱۳۴۵",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_استخدام_کشوری",
+   "wikisource_pages_used": [
+    [
+     "قانون استخدام کشوری",
+     105927
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_استخدام_کشوری.json",
+     "sha256": "eb2157687ff4a675134d26ca2f79a7e1b71162f87bf2ca0c061653273ffe7c3f"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Civil Service Employment Law (1345)",
+   "input_sha256": "ef164f7a562866422d81eb68f5148f27331dc4debefca15394516693002e2c67"
+  },
+  "law_fa\\wikisource_cooperatives-1350_fa.html": {
+   "edition": "as enacted 1350",
+   "published": "۱۳۵۰",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_شرکت‌های_تعاونی",
+   "wikisource_pages_used": [
+    [
+     "قانون شرکت‌های تعاونی",
+     197614
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_شرکت_های_تعاونی.json",
+     "sha256": "40a781c36cb4087ec84dd13d27ce43a24ec23b69bbbe04f7bb7ebc6243af28e4"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Cooperative Companies Law (1350)",
+   "input_sha256": "0dc287c1f0d29d705510dc9c37bae699540a8194e2635ae8b70c6e2b1d72841b"
+  },
+  "law_fa\\wikisource_guild-system-amendment-1392_fa.html": {
+   "edition": "amending act as enacted 1392",
+   "published": "۱۳۹۲",
+   "completeness": "complete per Wikisource page (not checked article-by-article against the official gazette)",
+   "reuse_basis": "Iranian statute: official legislative text, excluded from copyright protection in practice (public legal text); Wikisource transcription (CC BY-SA 4.0 for the transcription/formatting), Iran",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/قانون_اصلاح_قانون_نظام_صنفی_کشور",
+   "wikisource_pages_used": [
+    [
+     "قانون اصلاح قانون نظام صنفی کشور",
+     169283
+    ]
+   ],
+   "wikisource_pages_dropped": [],
+   "originals": [
+    {
+     "path": "law_fa/_orig/wikisource_قانون_اصلاح_قانون_نظام_صنفی_کشور.json",
+     "sha256": "c9b1d00e8e7fa0dc98ba54bc21e1a1632171644e3a7244d5ee622cdf5d7fef35"
+    }
+   ],
+   "lane": "LAW_fa",
+   "title": "Amendment of the Guild System Law (1392)",
+   "input_sha256": "c0478172b587404499a31beb444a54f4ea3691fbb5b33798f1ae11fb8431812f"
+  },
+  "book_fa\\wikisource_pirnia_iran-e-bastan_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Hassan Pirnia (Moshir-od-Dowleh)",
+   "published": "۱۳۰۶-۱۳۱۳",
+   "completeness": "partial: the Wikisource transcription covers the introduction, the ancient East, the Medes and the Achaemenids to Darius I (not all volumes)",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Hassan Pirnia (Moshir-od-Dowleh) died 1314/1935); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخ_ایران_باستان",
+   "wikisource_pages_used": [
+    [
+     "تاریخ ایران باستان/مدخل",
+     204921
+    ],
+    [
+     "تاریخ ایران باستان/قسمت اولی - کلیات",
+     204923
+    ],
+    [
+     "تاریخ ایران باستان/قسمت اولی - کلیات/نژادها",
+     240408
+    ],
+    [
+     "تاریخ ایران باستان/قسمت اولی - کلیات/زبانها",
+     240411
+    ],
+    [
+     "تاریخ ایران باستان/قسمت اولی - کلیات/خطوط",
+     240412
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم",
+     204924
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/حدود مشرق قدیم در مکان و زمان",
+     249542
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/اثرات وضع جغرافیائی مشرق قدیم",
+     249540
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم/بنی سام و بنی حام",
+     249544
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم/مهاجرت بنی سام به مصر",
+     249545
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم/مهاجرت بنی سام به عیلام",
+     249546
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم/مردمان شمالی مشرق قدیم",
+     249547
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم/مردمان آریانی",
+     249548
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم/نتیجه",
+     249549
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/خواندن خطوط قدیمه - کاوش‌ها",
+     249555
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۱ - خطوط قدیمه/خطّ مصری قدیم",
+     249557
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۱ - خطوط قدیمه/خطوط میخی",
+     249558
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۱ - خطوط قدیمه/خط مملکت و ان، خطّ هیت‌ها",
+     249559
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۱ - خطوط قدیمه/خطّ فینیقی، خطّ عربستان جنوبی",
+     249560
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها",
+     249561
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها/مصر",
+     249562
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها/آسور",
+     249563
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها/بابل",
+     249564
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها/ایران",
+     249565
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها/سوریّه",
+     249566
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۲ - کاوش‌ها/فلسطین، نوبی",
+     249567
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/کارهای علماء بعد از کشف سرچشمه‌های نوین",
+     249571
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/سرچشمه‌های قدیم",
+     249572
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/مورّخین و نویسندگان ارمنستان",
+     249574
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/کتب پهلوی",
+     249576
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/مؤلفین قرون اوّلیه اسلامی",
+     251120
+    ],
+    [
+     "تاریخ ایران باستان/قسمت سوم - نظری بتاریخ بابل، آسور و عیلام",
+     249506
+    ],
+    [
+     "تاریخ ایران باستان/قسمت چهارم - مقدمه تاریخ ایران",
+     249674
+    ],
+    [
+     "تاریخ ایران باستان/فصل اول - مادیها",
+     250070
+    ],
+    [
+     "تاریخ ایران باستان/فصل دوم - شاهان ماد",
+     250100
+    ],
+    [
+     "تاریخ ایران باستان/فصل سوم - روایت کتزیاس راجع به ماد",
+     250428
+    ],
+    [
+     "تاریخ ایران باستان/کتاب دوم",
+     250558
+    ],
+    [
+     "تاریخ ایران باستان/فصل اول - پارسیها و سلسلهٔ هخامنشی",
+     250589
+    ],
+    [
+     "تاریخ ایران باستان/فصل دوم - سلطنت کوروش بزرگ",
+     250634
+    ],
+    [
+     "تاریخ ایران باستان/فصل سوم - سلطنت کبوجیه",
+     250923
+    ],
+    [
+     "تاریخ ایران باستان/فصل چهارم - سلطنت داریوش اول",
+     251035
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخ ایران باستان",
+     "main page (table of contents)"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت اولی - کلیات/ازمنه پیش از تاریخ",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/نژاد ملل مشرق قدیم",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/منابع تاریخ مشرق قدیم",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/سرچشمه‌های نوین",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/۱ - خطوط قدیمه",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/کتب راجعه به جغرافیای عالم قدیم",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/سال‌شماری در مشرق قدیم",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/اعلام",
+     "index/excluded"
+    ],
+    [
+     "تاریخ ایران باستان/علام",
+     "index/excluded"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت اولی - کلیات/ازمنۀ پیش از تاریخ",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت دوم - مشرق قدیم/مؤلفین قرون اوّلیۀ اسلامی",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/قسمت چهارم - مقدم تاریخ ایران",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ ایران باستان/کتاب اول",
+     "all content duplicated elsewhere"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_ایران_باستان.json",
+     "sha256": "18460759fb811b836dab1012b11d0fc0414b52234120a2e1c5ee453d35852986"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "Ancient Iran (Iran-e Bastan)",
+   "input_sha256": "8f1f8c362739b6a82c7eb0b85b557eb7bf3ce152337f288cee77c7eaac0ba45b"
+  },
+  "book_fa\\wikisource_kasravi_tarikh-e-mashruteh_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Ahmad Kasravi",
+   "published": "۱۳۱۹",
+   "completeness": "complete per Wikisource (15 parts; name index, glossary and errata pages dropped)",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Ahmad Kasravi died 1324/1946); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخ_مشروطه_ایران",
+   "wikisource_pages_used": [
+    [
+     "تاریخ مشروطه ایران/دیباچه",
+     135764
+    ],
+    [
+     "تاریخ مشروطه ایران/۱",
+     135749
+    ],
+    [
+     "تاریخ مشروطه ایران/۲",
+     135756
+    ],
+    [
+     "تاریخ مشروطه ایران/۳",
+     135757
+    ],
+    [
+     "تاریخ مشروطه ایران/۴",
+     135758
+    ],
+    [
+     "تاریخ مشروطه ایران/۵",
+     192936
+    ],
+    [
+     "تاریخ مشروطه ایران/۶",
+     135760
+    ],
+    [
+     "تاریخ مشروطه ایران/۷",
+     135761
+    ],
+    [
+     "تاریخ مشروطه ایران/۸",
+     135762
+    ],
+    [
+     "تاریخ مشروطه ایران/۹",
+     135763
+    ],
+    [
+     "تاریخ مشروطه ایران/۱۰",
+     135750
+    ],
+    [
+     "تاریخ مشروطه ایران/۱۱",
+     135751
+    ],
+    [
+     "تاریخ مشروطه ایران/۱۲",
+     135752
+    ],
+    [
+     "تاریخ مشروطه ایران/۱۳",
+     135753
+    ],
+    [
+     "تاریخ مشروطه ایران/۱۴",
+     135754
+    ],
+    [
+     "تاریخ مشروطه ایران/۱۵",
+     135755
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخ مشروطه ایران",
+     "main page (table of contents)"
+    ],
+    [
+     "تاریخ مشروطه ایران/فهرست نامها",
+     "index/excluded"
+    ],
+    [
+     "تاریخ مشروطه ایران/فهرست نامها ۲",
+     "index/excluded"
+    ],
+    [
+     "تاریخ مشروطه ایران/واژه‌ها",
+     "index/excluded"
+    ],
+    [
+     "تاریخ مشروطه ایران/غلطنامه",
+     "index/excluded"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_مشروطه_ایران.json",
+     "sha256": "89ce0fd8a118d31435a4f4cd0d8c93d9d58e0a1231dea76cea3a8b260df6852b"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "History of the Iranian Constitutional Revolution",
+   "input_sha256": "74f09522976e1639e6e9adf537f44ede7f0a2236d0b02e9c77ba16b7f42a8cf6"
+  },
+  "book_fa\\wikisource_kasravi_khuzestan-500-years_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Ahmad Kasravi",
+   "published": "۱۳۱۲",
+   "completeness": "complete per Wikisource",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Ahmad Kasravi died 1324/1946); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخ_پانصد_ساله_خوزستان",
+   "wikisource_pages_used": [
+    [
+     "تاریخ پانصد ساله خوزستان/مقدمه",
+     214027
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش نخست",
+     214024
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش دوم",
+     214697
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش سوم",
+     214030
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/چند تاریخچه",
+     214890
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخ پانصد ساله خوزستان",
+     "main page (table of contents)"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش نخست/۱",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش نخست/۲",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش دوم/۱",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/بخش دوم/۲",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/چند تاریخچه/دیباچه",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/چند تاریخچه/جنگ ایران و انگلیس در محمره",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/چند تاریخچه/تاریخچه‌ای از یفرمخان",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "تاریخ پانصد ساله خوزستان/چند تاریخچه/سخنی چند درباره خلیج",
+     "all content duplicated elsewhere"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_پانصد_ساله_خوزستان.json",
+     "sha256": "844b56a109f7b7758cf922847adcbc55784ae336c7babab7bd2ccf318e0399c6"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "Five Hundred Years of Khuzestan History",
+   "input_sha256": "d672b9367974e014d354e7b29e545c20e0a848c9e7091f2121cac02639061a7e"
+  },
+  "book_fa\\wikisource_kasravi_azari_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Ahmad Kasravi",
+   "published": "۱۳۰۴",
+   "completeness": "complete per Wikisource (3rd printing 1325)",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Ahmad Kasravi died 1324/1946); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/آذری_یا_زبان_باستان_آذربایجان",
+   "wikisource_pages_used": [
+    [
+     "آذری یا زبان باستان آذربایجان/دیباچه",
+     135108
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار یکم",
+     135116
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار دوم",
+     135110
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار سوم",
+     135111
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار چهارم",
+     135115
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار پنجم",
+     135114
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار ششم",
+     135112
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/گفتار هفتم",
+     135113
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "آذری یا زبان باستان آذربایجان",
+     "main page (table of contents)"
+    ],
+    [
+     "آذری یا زبان باستان آذربایجان/واژه‌نامه",
+     "index/excluded"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_آذری_یا_زبان_باستان_آذربایجان.json",
+     "sha256": "d4be24a0afca28cb04d6a9b37431e3a970fb2defc6fef1e5ab25de9671d8c5bc"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "Azari, the Ancient Language of Azerbaijan",
+   "input_sha256": "e6a97c385505f1478d14db39b5922da9039249b045732f8eed8345a960c005d8"
+  },
+  "book_fa\\wikisource_kasravi_shir-o-khorshid_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Ahmad Kasravi",
+   "published": "۱۳۰۹",
+   "completeness": "complete per Wikisource",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Ahmad Kasravi died 1324/1946); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخچه_شیر_و_خورشید",
+   "wikisource_pages_used": [
+    [
+     "تاریخچه شیر و خورشید/آغاز سخن",
+     135013
+    ],
+    [
+     "تاریخچه شیر و خورشید/گفتار نخستین",
+     135014
+    ],
+    [
+     "تاریخچه شیر و خورشید/گفتار دومین",
+     135015
+    ],
+    [
+     "تاریخچه شیر و خورشید/گفتار سومین",
+     135016
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخچه شیر و خورشید",
+     "main page (table of contents)"
+    ],
+    [
+     "تاریخچه شیر و خورشید/واژه‌نامه",
+     "index/excluded"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخچه_شیر_و_خورشید.json",
+     "sha256": "ba66bb4a11e8744aaeef374dd07b03f6ddd1e3f3dc0e80c5b7b610770bd83696"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "A Short History of the Lion and Sun",
+   "input_sha256": "c6219eefddd9821cd4b1581509d100d4ff5630b1186f70d64543a864d182ff5c"
+  },
+  "book_fa\\wikisource_christensen_iran-sasanian_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Arthur Christensen; translator Gholamreza Rashid Yasemi",
+   "published": "۱۳۱۷ (ترجمه)",
+   "completeness": "complete per Wikisource (index page dropped); a translation, modern Persian prose",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Arthur Christensen; translator Gholamreza Rashid Yasemi died 1945 / 1330/1951); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/ایران_در_زمان_ساسانیان",
+   "wikisource_pages_used": [
+    [
+     "ایران در زمان ساسانیان/سرآغاز",
+     204876
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه مترجم",
+     204880
+    ],
+    [
+     "ایران در زمان ساسانیان/دیباچه مولف چاپ اول",
+     204875
+    ],
+    [
+     "ایران در زمان ساسانیان/دیباچه چاپ دوم",
+     204874
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه",
+     208285
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/مأخذ ایرانی معاصر ساسانیان. ادبیات پهلوی",
+     208299
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/روایات ساسانی، که در ادبیات عرب و ایران باقی است",
+     208298
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/منابع یونانی و لاتینی",
+     208297
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/منابع ارمنی",
+     208296
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/منابع سریانی",
+     208295
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/منابع چینی",
+     208301
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل اول",
+     214025
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل دوم",
+     208306
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل سوم",
+     208308
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل چهارم",
+     208307
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل پنجم",
+     208309
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل ششم",
+     208311
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل هفتم",
+     208312
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل هشتم",
+     208313
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل نهم",
+     208314
+    ],
+    [
+     "ایران در زمان ساسانیان/فصل دهم",
+     208315
+    ],
+    [
+     "ایران در زمان ساسانیان/خاتمه",
+     208316
+    ],
+    [
+     "ایران در زمان ساسانیان/ضمیمه اول",
+     208317
+    ],
+    [
+     "ایران در زمان ساسانیان/ضمیمه دوم",
+     208319
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "ایران در زمان ساسانیان",
+     "main page (table of contents)"
+    ],
+    [
+     "ایران در زمان ساسانیان/فهرست اختصارات",
+     "index/excluded"
+    ],
+    [
+     "ایران در زمان ساسانیان/مقدمه/شمه‌ای از تمدن ایران قبل از ظهور ساسانیان",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "ایران در زمان ساسانیان/سرآغار",
+     "all content duplicated elsewhere"
+    ],
+    [
+     "ایران در زمان ساسانیان/فهرست اعلام",
+     "index/excluded"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_ایران_در_زمان_ساسانیان.json",
+     "sha256": "5e3337bffb92d8cdc6ec7cd5a91864d622d12429f5d14fa3ac9b704d858100ea"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "Iran under the Sasanians (Christensen, tr. Rashid Yasemi)",
+   "input_sha256": "59e9e01abc7b6bc31bc57e7d362c5e39f32ecdf2139c0341d2f82de7865456c1"
+  },
+  "book_fa\\wikisource_bahar_political-parties-vol1_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Mohammad-Taqi Bahar",
+   "published": "۱۳۲۱",
+   "completeness": "INCOMPLETE: Wikisource marks this transcription as unfinished (some chapters missing)",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Mohammad-Taqi Bahar died 1330/1951); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخ_مختصر_احزاب_سیاسی_ایران،_جلد_اول",
+   "wikisource_pages_used": [
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/دیباچه",
+     148520
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/مقدمه",
+     148554
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/پادشاهی سلطان احمد شاه",
+     148560
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/ناصرالملک",
+     148566
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/احزاب سیاسی و مجلس دوم",
+     148577
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/روابط سیاسی احزاب",
+     148652
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/سقوط ناصرالملک",
+     148710
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/جنگ بین‌الملل دموکراتها را نجات داد",
+     148706
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/برگردیم بیک سال قبل",
+     148705
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/مهاجرت شروع شد",
+     148719
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/حرکت و مهاجرت",
+     148725
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/دموکرات و اعتدال منحل میشود",
+     149827
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/انقلاب روسیه یا معجز سیاسی",
+     149917
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/قرارداد ۱۹۱۹ و احمدشاه",
+     149959
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/سقوط وثوق‌الدوله",
+     150379
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/سقوط دولتهای گرجستان و قفقاز و ارمنستان",
+     151347
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/حکومت مشیرالدوله و سپهدار",
+     151378
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/حکومت سپهدار",
+     151449
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/مقدمات کودتای ۱۲۹۹",
+     151575
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/کودتای سوم حوت علم شد",
+     152017
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/رضاخان میرپنجه که بود",
+     152066
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/دو کودتا",
+     152117
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/حکومت سید ضیاءالدین",
+     152346
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/شمه‌ای از کارهای سید ضیاءالدین",
+     152843
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/شاه از سید رنجیده و ازو میترسید",
+     152875
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/اسناد پراکنده",
+     152922
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/مجلس چهارم باز میشود",
+     152959
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/چرا حزب دموکرات تشکیل نشد؟",
+     154559
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/هیئت دولت آقای قوام‌السلطنه",
+     154596
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/هجوم بسید ضیاءالدین",
+     154640
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/حزب سوسیالیست",
+     154723
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/فکر قشون متحدالشکل",
+     154771
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/تشنجات در مجلس چهارم",
+     154919
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/کلنل محمدتقی‌خان",
+     155263
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/کامیابیهای سیاسی",
+     155301
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/آغاز ضعف دولت قوام",
+     155352
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/سردارسپه چه میکند؟",
+     155385
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/مسافرت دوم احمدشاه بفرنگ",
+     155543
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/امتیاز نفت شمال",
+     155583
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/وجهه خارجی امتیاز نفت",
+     165242
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/امیرمؤید سوادکوهی",
+     165244
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/سقوط قوام‌السلطنه",
+     165247
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/مشیرالدوله و بحران",
+     165259
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/قوام‌السلطنه",
+     165263
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/نفت شمال از میان میرود",
+     165265
+    ],
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول/ایران در جامعهٔ ملل",
+     165266
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخ مختصر احزاب سیاسی ایران، جلد اول",
+     "main page (table of contents)"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_مختصر_احزاب_سیاسی_ایران_جلد_اول.json",
+     "sha256": "a60f708465126dadaf61af23767e5a43d2fab445e9fc053e370488a7cc841527"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "A Short History of Iranian Political Parties, vol. 1",
+   "input_sha256": "bd41f6a1ee0e25d964c905b23a710ed05d2be40aad9b8450a2178d99c69a6ab5"
+  },
+  "book_fa\\wikisource_mahmoud_iran-britain-relations_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Mahmoud Mahmoud",
+   "published": "۱۳۲۸",
+   "completeness": "complete per Wikisource for the volumes transcribed (4th printing 1353 text)",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Mahmoud Mahmoud died 1344/1965); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخ_روابط_سیاسی_ایران_و_انگلیس_در_قرن_نوزدهم_میلادی",
+   "wikisource_pages_used": [
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/توضیحی بر چاپ چهارم",
+     191087
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/مقدمه",
+     135851
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱",
+     135829
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲",
+     135840
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۳",
+     135843
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۴",
+     135844
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۵",
+     135845
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۶",
+     135846
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۷",
+     135847
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۸",
+     135848
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۹",
+     135849
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۰",
+     135830
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۱",
+     135831
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۲",
+     135832
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۳",
+     135833
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۴",
+     135834
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۵",
+     135835
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۶",
+     135836
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۷",
+     135837
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۸",
+     135838
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۱۹",
+     135839
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۰",
+     135841
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۱",
+     135842
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۲",
+     191858
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۳",
+     194218
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۴",
+     277588
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۵",
+     282361
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۶",
+     282635
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۷",
+     283407
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فصل ۲۸",
+     283443
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/سخنی چند در تالیف کتاب",
+     191088
+    ],
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی/فهرست مطالب کتاب",
+     135850
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخ روابط سیاسی ایران و انگلیس در قرن نوزدهم میلادی",
+     "main page (table of contents)"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_روابط_سیاسی_ایران_و_انگلیس_در_قرن_نوزدهم_میلادی.json",
+     "sha256": "7e74a120b353584db7f1015a4d066697aff3e91b9edf72938ac6a6b13437fcb3"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "History of Iran-Britain Political Relations in the 19th Century",
+   "input_sha256": "b75b50b2f959591959018d53c82f13be6b4b37ae0ce44cf6423dead714f06a64"
+  },
+  "book_fa\\wikisource_foroughi_ancient-rome_fa.html": {
+   "edition": "fa.wikisource transcription of the printed edition",
+   "author": "Mohammad-Ali Foroughi (Zoka-ol-Molk)",
+   "published": "۱۲۸۸",
+   "completeness": "complete per Wikisource",
+   "reuse_basis": "public domain in Iran (Iranian Copyright Act: 50 years after the author's death; Mohammad-Ali Foroughi (Zoka-ol-Molk) died 1321/1942); fa.wikisource transcription (CC BY-SA 4.0 for the transcription)",
+   "converter": "scratch build_fa.py / conv_fa.py",
+   "url": "https://fa.wikisource.org/wiki/تاریخ_مختصر_دولت_قدیم_روم",
+   "wikisource_pages_used": [
+    [
+     "تاریخ مختصر دولت قدیم روم/دیباچه",
+     136028
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل اول",
+     136029
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل دوم",
+     136041
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل سوم",
+     136043
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل چهارم",
+     136052
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل پنجم",
+     136048
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل ششم",
+     136049
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل هفتم",
+     136055
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل هشتم",
+     136054
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل نهم",
+     136053
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل دهم",
+     136042
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل یازدهم",
+     136058
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل دوازدهم",
+     136040
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل سیزدهم",
+     136045
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل چهاردهم",
+     136050
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل پانزدهم",
+     136046
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل شانزدهم",
+     136047
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل هفدهم",
+     136056
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل هیجدهم",
+     136057
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل نوزدهم",
+     136051
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیستم",
+     136039
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و یکم",
+     136038
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و دوم",
+     136031
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و سوم",
+     136033
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و چهارم",
+     136032
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و پنجم",
+     136030
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و ششم",
+     136034
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و هفتم",
+     136037
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و هشتم",
+     136036
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل بیست و نهم",
+     136035
+    ],
+    [
+     "تاریخ مختصر دولت قدیم روم/فصل سی‌ام",
+     136044
+    ]
+   ],
+   "wikisource_pages_dropped": [
+    [
+     "تاریخ مختصر دولت قدیم روم",
+     "main page (table of contents)"
+    ]
+   ],
+   "originals": [
+    {
+     "path": "book_fa/_orig/wikisource_تاریخ_مختصر_دولت_قدیم_روم.json",
+     "sha256": "5fa897d670696896c5a747ec18e924e1e9da0f8c5515192a0773ea1fd9cd7da2"
+    }
+   ],
+   "lane": "BOOK_fa",
+   "title": "A Short History of Ancient Rome",
+   "input_sha256": "695ee74522179f1a8c8e1a22d5e1b1cbe334493eb4384b3a6f65fec2ac57c6de"
+  }
+ }
+}

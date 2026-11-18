@@ -1,0 +1,18 @@
+{
+ "cost_usd": 0.28388369,
+ "calls": 913,
+ "by_model": {
+  "z-ai/glm-5.3-flash": {
+   "calls": 567,
+   "cost_usd": 0.23583465,
+   "prompt_tokens": 1626175,
+   "completion_tokens": 67452
+  },
+  "openai/gpt-oss-120b": {
+   "calls": 346,
+   "cost_usd": 0.04804904,
+   "prompt_tokens": 570555,
+   "completion_tokens": 158462
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T2-004",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 142666 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "93c272b83b054958aa1d11d84610e5f575157c4fe83dc142c41ccedfd2f7a2e3",
+ "evidence_chars": 142569,
+ "prompt_chars": 143189,
+ "est_prompt_tokens": 31363,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.maersk_annual-report_2024.en",
+    "doc_chars": 762402,
+    "shown": 142515,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

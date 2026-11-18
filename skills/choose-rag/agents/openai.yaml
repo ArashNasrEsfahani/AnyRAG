@@ -1,0 +1,8 @@
+# Optional metadata read by OpenAI Codex (UI label and invocation policy).
+# Claude ignores this folder; SKILL.md is the same for both.
+interface:
+  display_name: "Choose RAG"
+  short_description: "Pick a RAG setup from the evidence of a Persian-English RAG study"
+  default_prompt: "Help me choose a RAG setup for my project."
+policy:
+  allow_implicit_invocation: true

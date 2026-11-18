@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T2-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143092 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "4c72179241ba131f866107c3cf68ab0de2f4bef20c126fa7381df7f55d844c45",
+ "evidence_chars": 142899,
+ "prompt_chars": 143800,
+ "est_prompt_tokens": 31497,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "score": 7.517
+   },
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "score": 3.098
+   },
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "score": 2.083
+   },
+   {
+    "doc": "K.gutenberg-1015_parkman_oregon-trail.en",
+    "score": 1.823
+   },
+   {
+    "doc": "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en",
+    "score": 1.764
+   },
+   {
+    "doc": "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "score": 1.614
+   },
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "score": 1.304
+   },
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "score": 1.285
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "doc_chars": 223767,
+    "shown": 142826,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 5,
+  "gold_units_retained": 5,
+  "gold_docs_shown": 1
+ }
+}

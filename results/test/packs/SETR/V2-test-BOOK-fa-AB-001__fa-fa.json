@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-BOOK-fa-AB-001",
+ "variant": "SETR",
+ "setting": "fa-fa",
+ "q_lang": "fa",
+ "rid": "1fab0717f5496ce2a49b",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6076 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "purpose": "answer",
+ "messages_sha256": "edd645f57ec5e5a6b3fff9f6b9fa696bcd69c885be7f0ec0b32414a85fb959b8",
+ "evidence_chars": 6000,
+ "at": "2026-10-04T19:31:19"
+}

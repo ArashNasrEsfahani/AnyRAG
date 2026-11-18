@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-en-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_list",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 506 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 36198 chars]"
+  }
+ ],
+ "num_predict": 900,
+ "messages_sha256": "253e0f9fc466511236b738e9acbc776e48f21a7e1ba0bef6dd57aa9c4bdd1c23",
+ "evidence_chars": 36068,
+ "prompt_chars": 36704,
+ "est_prompt_tokens": 8039,
+ "build_ms": 0.3,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "L.ukpga-2010-23_bribery-act.en",
+    "doc_chars": 36047,
+    "shown": 36047,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}

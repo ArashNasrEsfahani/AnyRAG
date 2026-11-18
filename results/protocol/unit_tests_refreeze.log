@@ -1,0 +1,20 @@
+﻿test_freeze rc=0 :: 25 checks, 0 failed :: 
+test_lex5 rc=0 :: 73 checks, 0 failed :: 
+test_multidoc_pipeline rc=0 :: 111 checks, 0 failed :: PASS judge_policy.call_errors_are_failures / PASS grid.error_record_listed
+test_lex6 rc=0 :: 59/59 passed :: 
+test_budget_matrix rc=0 ::  :: 
+test_lex8 rc=0 :: 53 checks, 0 failed :: 
+test_lex9 rc=0 :: 0 failed :: 
+test_lex10 rc=0 ::  :: 
+test_lex10_control rc=0 ::  :: 
+test_lex11 rc=0 :: 5 tests passed :: 
+test_hybrid rc=0 :: 87 checks, 0 failed ::     + FullyQualifiedErrorId : NativeCommandError / PASS approach.HYBRID.no_error / PASS approach.HYBRID+blocks.no_error
+test_rerank rc=1 :: 32 checks, 1 failed: isolation.only_hybrid_imports_rerank :: FAIL isolation.only_hybrid_imports_rerank - ['approaches/hybrid.py', 'tools/rerank_smoke.py'] / PASS approach.no_error
+test_baselines rc=0 :: 32 checks, 0 failed :: 
+test_foundation rc=1 :: 20 checks, 1 failed: A.loaded :: FAIL A.loaded - CorpusSet(A: 22 docs, 9072 units, 4882544 chars) in 0.0s; skipped=[]
+test_questions rc=0 :: 43 checks, 0 failed :: 
+test_v2_sets rc=0 :: test_v2_sets: 30/30 passed :: 
+test_core_integration rc=0 :: 68 checks, 0 failed ::     + FullyQualifiedErrorId : NativeCommandError /                                                           [--no-retry-errors] /                                                           [--max-consecutive-errors MAX_CONSECUTIVE_ERRORS]
+test_grep_agent rc=0 :: 46 checks, 0 failed :: PASS grep.bad_regex - invalid pattern: rg: regex parse error: (?:(trout) ^ error: unclosed group
+test_setr rc=0 :: test_setr: 5/5 ok :: 
+test_reader_replay rc=0 :: test_reader_replay: 3/3 ok :: 

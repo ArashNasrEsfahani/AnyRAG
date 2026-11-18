@@ -1,0 +1,22 @@
+% src: work/multidoc/pools/<pool>.json (doc counts, summed chars); work/datasets_v2/questions/*_{dev,test}.jsonl (question counts)
+% R4: sources moved here from the benchmark prose (same facts: 97 reports / 42 Iranian companies; 15 reports / 11 companies; named works)
+\begin{table*}[t]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}lrrrr>{\raggedright\arraybackslash}X@{}}
+\toprule
+Pool & Docs & Chars (M) & Dev & Test & Sources \\
+\midrule
+RPT-fa (reports) & 97 & 4.76 & 10 & 16 & natural annual and activity reports of 42 Iranian companies \\
+RPT-en (reports) & 15 & 16.64 & 10 & 16 & annual or integrated reports of 11 international companies \\
+BOOK-fa (non-fiction) & 9 & 5.70 & 10 & 16 & modern Persian prose transcribed on Wikisource (e.g., Kasravi, Pirnia, Bahar) \\
+BOOK-en (non-fiction) & 11 & 6.26 & 10 & 16 & Project Gutenberg non-fiction (e.g., Darwin, Mill, Tocqueville, Douglass) \\
+LAW-fa (statutes) & 13 & 1.18 & 10 & 16 & Iranian statutes from Wikisource transcriptions (Civil Code, Commercial Codes, Direct Taxes Acts and others) \\
+LAW-en (statutes) & 10 & 3.52 & 10 & 16 & EU regulations (GDPR, DSA, AI Act and others) and UK Acts \\
+\midrule
+Total & 155 & 38.06 & 60 & 96 & 58,218 chunks of at most 1,000 characters (mean about 810; 200 overlap; Appendix~\ref{app:implementation}) \\
+\bottomrule
+\end{tabularx}
+\caption{Search pools, sources and question counts. Each pool is searched in full; dev and test share pools but no evidence document, source block, information need or source family.}
+\label{tab:pools}
+\end{table*}

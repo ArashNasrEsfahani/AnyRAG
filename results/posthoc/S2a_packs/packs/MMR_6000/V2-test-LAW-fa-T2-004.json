@@ -1,0 +1,18 @@
+{
+ "arm": "MMR_6000",
+ "question_id": "V2-test-LAW-fa-T2-004",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6243 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "eab6679a2debcbd636407c4ca019da41c7c5a5fd0528fe98ea3edb3d7b981e7e",
+ "evidence_chars": 5979
+}

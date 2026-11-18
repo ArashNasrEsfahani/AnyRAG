@@ -1,0 +1,309 @@
+{
+ "deepseek/deepseek-v4-flash": [
+  {
+   "qid": "V2-test-RPT-en-T2-002",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-002",
+   "arm": "LEX5B_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-002",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-003",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-003",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-004",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-004",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-004",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-005",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-005",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-005",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T2-005",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-001",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-002",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-002",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-003",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-004",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-005",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-005",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-T3-005",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-RPT-en-AB-001",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-001",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-002",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-002",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-002",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-003",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-003",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-003",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-004",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-004",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T1-005",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-001",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-001",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-002",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-002",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-002",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-004",
+   "arm": "HR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-004",
+   "arm": "LEX5B_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-004",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-005",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T2-005",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T3-001",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T3-001",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T3-001",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T3-002",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-T3-002",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-fa-AB-001",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-001",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-001",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-001",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-002",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-003",
+   "arm": "SETR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-005",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T1-005",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T2-001",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T2-004",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T2-005",
+   "arm": "HYBRID_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T3-003",
+   "arm": "HR_6000",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-BOOK-en-T3-005",
+   "arm": "HYBRID_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-LAW-fa-T1-003",
+   "arm": "SETR_15500",
+   "final": "ok"
+  },
+  {
+   "qid": "V2-test-LAW-en-T1-001",
+   "arm": "HR_15500",
+   "final": "ok"
+  }
+ ]
+}

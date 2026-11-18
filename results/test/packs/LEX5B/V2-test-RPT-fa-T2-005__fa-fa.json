@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-005",
+ "variant": "LEX5B",
+ "setting": "fa-fa",
+ "q_lang": "fa",
+ "rid": "c4ff1a1ba55cd1fb1f4b",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6113 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "purpose": "answer",
+ "messages_sha256": "c8b6dfe9461d85c5e226926bacc4ddbcedd18398aac206dd128ab3335469fb37",
+ "evidence_chars": 5977,
+ "at": "2026-10-04T18:03:22"
+}

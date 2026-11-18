@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T2-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143116 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "baf4b4a64d60d9f435a049e3353a437102ec1095a05bf73ffd0fe2c13f202188",
+ "evidence_chars": 142899,
+ "prompt_chars": 143824,
+ "est_prompt_tokens": 31502,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "K.gutenberg-14474_faraday_chemical-history-of-a-candle.en",
+    "score": 8.556
+   },
+   {
+    "doc": "K.gutenberg-2009_darwin_origin-of-species-6th-ed.en",
+    "score": 2.719
+   },
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "score": 2.633
+   },
+   {
+    "doc": "K.gutenberg-1015_parkman_oregon-trail.en",
+    "score": 2.291
+   },
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "score": 2.091
+   },
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "score": 1.821
+   },
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "score": 1.581
+   },
+   {
+    "doc": "K.gutenberg-1228_darwin_origin-of-species-1st-ed.en",
+    "score": 1.227
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.gutenberg-14474_faraday_chemical-history-of-a-candle.en",
+    "doc_chars": 220892,
+    "shown": 142856,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

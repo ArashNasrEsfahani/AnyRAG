@@ -1,0 +1,17 @@
+{
+ "best": "glm",
+ "rule": "higher S-a/S-b span retention; tie -> more complete; then fewer selector tokens",
+ "S-a": {
+  "model": "openai/gpt-oss-20b",
+  "span": 0.7892,
+  "complete": 33,
+  "fallbacks": 8
+ },
+ "S-b": {
+  "model": "z-ai/glm-5.3-flash",
+  "span": 0.8008,
+  "complete": 34,
+  "fallbacks": 16,
+  "note": "16 fallbacks = 10 deadline + 6 HTTP 429 (together upstream rate limit); counted as the method's fallbacks, not re-run"
+ }
+}

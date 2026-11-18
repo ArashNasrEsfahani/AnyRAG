@@ -1,0 +1,250 @@
+[
+ {
+  "id": "ex1_selector_rescue_fa",
+  "kind": "selector rescues evidence that fusion order missed",
+  "q": "V2-test-RPT-fa-T2-005",
+  "question": "میانگین درآمد ماهانهٔ رانندگان تمام‌وقت اسنپ در سال ۱۴۰۳ چقدر بود و اسنپ چه رانندگانی را تمام‌وقت به شمار می‌آورد؟",
+  "question_gloss_en": "What was the average monthly income of Snapp's full-time drivers in 1403, and whom does Snapp count as a full-time driver?",
+  "reference_gloss_en": "41,579,509 toman a month (up more than 116% on the previous year); a full-time driver is one who completes more than 40 successful trips a month.",
+  "gold_needed": [
+   {
+    "id": "E3",
+    "quote": "41,579,509 تومان",
+    "region": "o007"
+   },
+   {
+    "id": "E6",
+    "quote": "کاربری که بیشتر از 40 سفر موفق در ماه انجام دهد.",
+    "region": "o017"
+   }
+  ],
+  "gold_gloss_en": {
+   "E3": "41,579,509 toman",
+   "E6": "A user who completes more than 40 successful trips a month."
+  },
+  "FUSION_6000": {
+   "pack_items": [
+    "گزارش عملکرد سالانه گروه اسنپ 1401 > 1 نفر",
+    "گزارش عملکرد سالانه گروه اسنپ 1400 > باشگاه رانندگان > همراه همیشگی کاربران راننده > فروش موتورسیکلت اقساطی",
+    "گزارش عملکرد سالانه گروه اسنپ 1403 > اسنپ‌خودرو؛ همسفر همیشه",
+    "گزارش عملکرد سالانه گروه اسنپ 1402 > CSR > پاره‌وقت",
+    "مسیر همراهی - گزارش عملکرد سالانه گروه اسنپ 1404 > مسیرهمراهی > 4 نفر",
+    "گزارش عملکرد سالانه گروه اسنپ 1401 > 1 نفر > ترین های ناوگان اسنپ",
+    "گزارش عملکرد سالانه گروه اسنپ 1402 > CSR"
+   ],
+   "gold_item_coverage": {
+    "E1": 1.0,
+    "E2": 1.0,
+    "E3": 1.0,
+    "E4": 1.0,
+    "E5": 0.6521739130434783,
+    "E6": 0.0,
+    "E7": 0.0
+   },
+   "answer_first_sentence": "میانگین درآمد ماهانهٔ کاربران رانندهٔ تمام‌وقت اسنپ در سال ۱۴۰۳ برابر 41,579,509 تومان بود [3].",
+   "answer_gloss_en": "The average monthly income of Snapp's full-time driver users in 1403 was 41,579,509 toman [3]. (The rest of the answer says Snapp splits drivers into full-time and part-time but gives no definition.)",
+   "verdict": {
+    "J1_machine": [
+     0,
+     0
+    ]
+   },
+   "answer_full": "[stripped: 662 chars]"
+  },
+  "LEX5B_6000": {
+   "selector_raw": "parts=2\nP1: 3\nP2: 9\nEND",
+   "pack_items": [
+    "گزارش عملکرد سالانه گروه اسنپ 1403 > اسنپ‌خودرو؛ همسفر همیشه",
+    "گزارش عملکرد سالانه گروه اسنپ 1403 > واژه‌نامه",
+    "گزارش عملکرد سالانه گروه اسنپ 1401 > 1 نفر",
+    "گزارش عملکرد سالانه گروه اسنپ 1400 > باشگاه رانندگان > همراه همیشگی کاربران راننده > فروش موتورسیکلت اقساطی",
+    "گزارش عملکرد سالانه گروه اسنپ 1402 > CSR > پاره‌وقت",
+    "مسیر همراهی - گزارش عملکرد سالانه گروه اسنپ 1404 > مسیرهمراهی > 4 نفر",
+    "گزارش عملکرد سالانه گروه اسنپ 1402 > CSR"
+   ],
+   "gold_item_coverage": {
+    "E1": 1.0,
+    "E2": 1.0,
+    "E3": 1.0,
+    "E4": 1.0,
+    "E5": 1.0,
+    "E6": 1.0,
+    "E7": 0.0
+   },
+   "answer_first_sentence": "میانگین درآمد ماهانهٔ رانندگان تمام‌وقت اسنپ در ۱۴۰۳ برابر ۴۱,۵۷۹,۵۰۹ تومان بود و اسنپ راننده‌ای را تمام‌وقت می‌داند که در ماه بیش از ۴۰ سفر موفق انجام دهد.",
+   "answer_gloss_en": "The average monthly income of Snapp's full-time drivers in 1403 was 41,579,509 toman, and Snapp counts as full-time a driver who completes more than 40 successful trips a month.",
+   "verdict": {
+    "J1_machine": [
+     1,
+     1
+    ],
+    "J1_reason": "All required claims are present and accurate; optional growth claim is present; extra details do not affect correctness.",
+    "J1_units": {
+     "R1": "correct",
+     "R2": "correct",
+     "R3": "correct"
+    },
+    "J2_machine": 1,
+    "J2_reason": "R1 and R2 correct; R3 optional and unstated; extra details included.",
+    "J2_units": {
+     "R1": "correct",
+     "R2": "correct",
+     "R3": "missing"
+    },
+    "human_sym": "not reviewed"
+   },
+   "answer_full": "[stripped: 599 chars]"
+  },
+  "note": "The selector split the question into two parts (P1: passage 3, the income table; P2: passage 9, the 1403 glossary). The fusion pack never reaches the 1403 glossary item (header '... 1403 > واژه‌نامه' = 'glossary'); Lex-RAG puts it second."
+ },
+ {
+  "id": "ex2_selector_rescue_en",
+  "kind": "selector rescues evidence that fusion order missed",
+  "q": "V2-test-LAW-en-T2-004",
+  "question": "A platform company's core platform service crosses all the Digital Markets Act gatekeeper thresholds, but the company does not tell the Commission. How long did it have to notify, and what is the maximum fine for failing to do so?",
+  "reference": "It had to notify the Commission without delay and in any event within 2 months after the thresholds were met (Art. 3(3)). Failing, intentionally or negligently, to comply with that notification obligation can be fined up to 1 % of its total worldwide turnover in the preceding financial year (Art. 30(3)(b)).",
+  "gold_needed": [
+   {
+    "id": "E1",
+    "quote": "3. Where an undertaking providing core platform services meets all of the thresholds in paragraph 2, it shall notify the Commission thereof without delay and in any event within 2 months after those thresholds are met",
+    "region": "DMA Art. 3(3)"
+   },
+   {
+    "id": "E2",
+    "quote": "3. The Commission may adopt a decision, imposing on undertakings, including gatekeepers where applicable, and associations of undertakings, fines not exceeding 1 % of their total worldwide turnover in the preceding financial year where they intentionally or negligently:",
+    "region": "DMA Art. 30(3)"
+   },
+   {
+    "id": "E3",
+    "quote": "(b) fail to comply with the obligation to notify the Commission according to Article 3(3);",
+    "region": "DMA Art. 30(3)(b)"
+   }
+  ],
+  "FUSION_6000": {
+   "pack_items": [
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER II — GATEKEEPERS > Article 3 — Designation of gatekeepers",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER II — GATEKEEPERS > Article 3 — Designation of gatekeepers",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance)",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER II — GATEKEEPERS > Article 3 — Designation of gatekeepers",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER II — GATEKEEPERS > Article 3 — Designation of gatekeepers"
+   ],
+   "gold_item_coverage": {
+    "E1": 1.0,
+    "E2": 0.27037037037037037,
+    "E3": 0.6444444444444445
+   },
+   "answer_full": "The company had to notify the Commission without delay and in any event within 2 months after the thresholds were met (Article 3(3), Digital Markets Act). The maximum fine for failing to notify is not covered in the provided evidence — NOT_FOUND.",
+   "verdict": {
+    "J1_machine": [
+     0,
+     0
+    ]
+   }
+  },
+  "LEX5B_6000": {
+   "selector_raw": "parts=2\nP1: 1\nP2: 15+21\nEND",
+   "pack_items": [
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER II — GATEKEEPERS > Article 3 — Designation of gatekeepers",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER V — INVESTIGATIVE, ENFORCEMENT AND MONITORING POWERS > Article 30 — Fines",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER V — INVESTIGATIVE, ENFORCEMENT AND MONITORING POWERS > Article 30 — Fines",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance) > CHAPTER II — GATEKEEPERS > Article 3 — Designation of gatekeepers",
+    "Regulation (EU) 2022/1925 (Digital Markets Act) > (Text with EEA relevance)"
+   ],
+   "gold_item_coverage": {
+    "E1": 1.0,
+    "E2": 1.0,
+    "E3": 1.0
+   },
+   "answer_full": "The company had to notify the Commission without delay and in any event within 2 months after the thresholds were met (Article 3(3)). Failing to comply with that notification obligation can result in a fine of up to 1 % of its total worldwide turnover in the preceding financial year, where done intentionally or negligently (Article 30).",
+   "verdict": {
+    "J1_machine": [
+     1,
+     1
+    ],
+    "J1_reason": "Both claims accurately reflect the required facts with correct values and bindings.",
+    "J1_units": {
+     "R1": "correct",
+     "R2": "correct"
+    },
+    "J2_machine": 1,
+    "J2_reason": "All required claims match the reference packet exactly.",
+    "J2_units": {
+     "R1": "correct",
+     "R2": "correct"
+    },
+    "human_sym": 1
+   }
+  },
+  "note": "Fusion order reaches Art. 3(3) but not the full Art. 30(3) fine clause with point (b); the reader then answers the fine part with NOT_FOUND. The selector's second part (passages 15+21) is exactly Art. 30(3) + (b)."
+ },
+ {
+  "id": "ex3_judge_disagreement_fa",
+  "kind": "judge disagreement: Persian synonym not recognised by judge 1",
+  "q": "V2-test-LAW-fa-T1-002",
+  "question": "طبق قانون اساسی جمهوری اسلامی ایران، اقلیت‌های دینی در مجموع چند نماینده در مجلس شورای اسلامی دارند و این کرسی‌ها چگونه میانشان تقسیم شده است؟",
+  "question_gloss_en": "Under the Constitution, how many seats in the Islamic Consultative Assembly do the religious minorities have in total, and how are they divided?",
+  "reference_gloss_en": "Five: one each for Zoroastrians and Jews, one jointly for Assyrian and Chaldean Christians, and one each for Armenian Christians of the south and of the north (Art. 64).",
+  "requirement_R2": "Jews elect one representative.",
+  "cell": "LEX5B_6000",
+  "answer_full": "طبق اصل ۶۴ قانون اساسی، اقلیت‌های دینی در مجموع ۵ نماینده دارند:\n\n1. زرتشتیان: یک نماینده\n2. کلیمیان: یک نماینده\n3. مسیحیان آشوری و کلدانی: مجموعاً یک نماینده\n4. مسیحیان ارمنی جنوب: یک نماینده\n5. مسیحیان ارمنی شمال: یک نماینده",
+  "answer_gloss_en": "Under Art. 64 of the Constitution the religious minorities have 5 representatives in total: 1. Zoroastrians: one representative; 2. Kalimian [the Persian term for Jews]: one representative; 3. Assyrian and Chaldean Christians: one representative jointly; 4. Armenian Christians of the south: one representative; 5. Armenian Christians of the north: one representative.",
+  "verdict": {
+   "J1_machine": [
+    0,
+    0
+   ],
+   "J1_reason": "All required claims present except Jews (R2); extra claim about کلیمیان does not affect answer.",
+   "J1_units": {
+    "R1": "correct",
+    "R2": "missing",
+    "R3": "correct",
+    "R4": "correct",
+    "R5": "correct"
+   },
+   "J2_machine": 1,
+   "J2_reason": "All required claims match the reference exactly.",
+   "J2_units": {
+    "R1": "correct",
+    "R2": "correct",
+    "R3": "correct",
+    "R4": "correct",
+    "R5": "correct"
+   },
+   "human_sym": 1
+  },
+  "same_answer_other_cells": "all 8 GLM cells give the same five seats with the word kalimian; judge 1 failed 7 of them (it passed HYBRID_6000), judge 2 passed all 8 (j12_disagreements.json)",
+  "note": "Judge 1 marks the Jews requirement 'missing' and the claim 'کلیمیان: یک نماینده' (Kalimian: one representative) as 'extra': it does not recognise کلیمیان as 'Jews'. Judge 2 and the human accept the answer."
+ },
+ {
+  "id": "ex4_judge_disagreement_en",
+  "kind": "judge disagreement: true added detail failed as 'unsupported' by judge 2",
+  "q": "V2-test-RPT-en-T2-002",
+  "question": "What return on invested capital (as reported, not the underlying ROIC) did A.P. Moller - Maersk report for the group for 2024, how did it compare with its yearly target, and how does Maersk calculate this measure?",
+  "reference": "12.3% (last 12 months), above the yearly target of above 7.5% under normalised conditions. Maersk calculates ROIC as profit/loss before financial items (EBIT) less tax on EBIT, divided by the average invested capital over the last twelve months.",
+  "cell": "LEX5B_6000",
+  "answer_full": "[stripped: 415 chars]",
+  "verdict": {
+   "J1_machine": [
+    1,
+    1
+   ],
+   "J1_reason": "All required claims are present, accurate, and match the reference.",
+   "J1_units": {
+    "R1": "correct",
+    "R2": "correct",
+    "R3": "correct"
+   },
+   "J2_machine": 0,
+   "J2_reason": "Two claims correct, one unsupported detail, one correct definition.",
+   "J2_units": {
+    "R1": "correct",
+    "R2": "correct",
+    "R3": "correct"
+   },
+   "human_sym": "not reviewed"
+  },
+  "gold_E1_quote": "The return on invested capital (ROIC) (LTM) of 12.3% was above the yearly target of above 7.5% under normalised conditions.",
+  "pack_sentence_after_E1": "Profitability lagged during the first half of 2024; however, the strong result in the second half of the year had a positive impact, bringing ROIC abo",
+  "note": "The sentence judge 2 calls unsupported is verbatim in the reader's pack, immediately after the gold quote E1; the judge sees only the annotated excerpts. Judge 2 fails 6 of the 8 GLM cells of this question (5 of them passed by judge 1); judge 1 fails 1."
+ }
+]

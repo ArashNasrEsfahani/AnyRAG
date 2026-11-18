@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T3-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143070 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "8ff53446632fa1175003481888aadc6cb6490795f26092f98188787994d79243",
+ "evidence_chars": 142899,
+ "prompt_chars": 143893,
+ "est_prompt_tokens": 31517,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "score": 4.927
+   },
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "score": 3.98
+   },
+   {
+    "doc": "K.gutenberg-147_paine_common-sense.en",
+    "score": 2.393
+   },
+   {
+    "doc": "K.gutenberg-833_veblen_theory-of-leisure-class.en",
+    "score": 1.93
+   },
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "score": 1.777
+   },
+   {
+    "doc": "K.gutenberg-20203_franklin_autobiography.en",
+    "score": 1.772
+   },
+   {
+    "doc": "K.gutenberg-1015_parkman_oregon-trail.en",
+    "score": 1.711
+   },
+   {
+    "doc": "K.gutenberg-4239_malthus_essay-on-population.en",
+    "score": 1.502
+   }
+  ],
+  "docs": [
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "doc_chars": 305911,
+    "shown": 142878,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

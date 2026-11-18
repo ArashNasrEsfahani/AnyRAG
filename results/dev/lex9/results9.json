@@ -1,0 +1,168 @@
+{
+ "n": 54,
+ "arms": {
+  "HYBRID": {
+   "span": 0.72,
+   "full": 32,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 15
+   },
+   "t3_docs": 12,
+   "bw": {
+    "HR": [
+     6,
+     13
+    ],
+    "HYBRID": [
+     0,
+     0
+    ]
+   },
+   "groups": {
+    "fa": 0.7222,
+    "en": 0.7177,
+    "T1": 0.9259,
+    "T2": 0.6228,
+    "T3": 0.6111,
+    "RPT-fa": 0.5556
+   }
+  },
+  "HR": {
+   "span": 0.8065,
+   "full": 35,
+   "complete_by_lang": {
+    "fa": 20,
+    "en": 15
+   },
+   "t3_docs": 13,
+   "bw": {
+    "HR": [
+     0,
+     0
+    ],
+    "HYBRID": [
+     13,
+     6
+    ]
+   },
+   "groups": {
+    "fa": 0.8765,
+    "en": 0.7364,
+    "T1": 0.9815,
+    "T2": 0.7481,
+    "T3": 0.6898,
+    "RPT-fa": 0.8889
+   }
+  },
+  "a1": {
+   "span": 0.7632,
+   "full": 34,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 16
+   },
+   "t3_docs": 14,
+   "bw": {
+    "HR": [
+     6,
+     10
+    ],
+    "HYBRID": [
+     4,
+     0
+    ]
+   },
+   "groups": {
+    "fa": 0.7716,
+    "en": 0.7547,
+    "T1": 0.9815,
+    "T2": 0.6691,
+    "T3": 0.6389,
+    "RPT-fa": 0.6111
+   }
+  },
+  "F2 recomputed": {
+   "span": 0.7792,
+   "full": 33,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 16
+   },
+   "t3_docs": 13,
+   "bw": {
+    "HR": [
+     6,
+     8
+    ],
+    "HYBRID": [
+     7,
+     1
+    ]
+   },
+   "groups": {
+    "fa": 0.7963,
+    "en": 0.7621,
+    "T1": 0.9815,
+    "T2": 0.6784,
+    "T3": 0.6778,
+    "RPT-fa": 0.7222
+   }
+  },
+  "LEX9 learned scorer (synthetic-question supervision; chunk packer)": {
+   "span": 0.7611,
+   "full": 32,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 14
+   },
+   "t3_docs": 14,
+   "bw": {
+    "HR": [
+     6,
+     10
+    ],
+    "HYBRID": [
+     7,
+     3
+    ]
+   },
+   "groups": {
+    "fa": 0.7778,
+    "en": 0.7444,
+    "T1": 0.9815,
+    "T2": 0.612,
+    "T3": 0.6898,
+    "RPT-fa": 0.6667
+   }
+  }
+ },
+ "gap": {
+  "u3_feasible": 48,
+  "u4_feasible": 49,
+  "lex9_top40_feasible": 46,
+  "f2_top40_feasible": 46,
+  "lex9_pack_complete_of_u3_feasible": 32,
+  "f2_pack_complete_of_u3_feasible": 33,
+  "hr_pack_complete_of_u3_feasible": 35
+ },
+ "latency_ms": {
+  "channels": [
+   6.02,
+   15.47
+  ],
+  "features_incl_channels": [
+   14.05,
+   37.13
+  ],
+  "features_only": [
+   6.65,
+   20.95
+  ],
+  "model_order": [
+   3.85,
+   9.75
+  ]
+ },
+ "admitted": false
+}

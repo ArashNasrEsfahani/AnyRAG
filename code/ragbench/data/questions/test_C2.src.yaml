@@ -1,0 +1,931 @@
+# Test set, shard C2: Persian-only human-written company reports (corpus C).
+#
+# Build / validate:
+#   .venv/Scripts/python.exe -m ragbench.tools.questions build --src ragbench/data/questions/test_C2.src.yaml --out ragbench/data/questions/test_C2.jsonl
+#   .venv/Scripts/python.exe -m ragbench.tools.questions validate --path ragbench/data/questions/test_C2.jsonl --strict
+#
+# Written by reading the corpus Document unit text (ragbench.corpus, set C); no model involved.
+# Documents: irancell 1400/1402, nobitex 2022, irvc 1400/1402, tipax 1400, khanoumi 1404, karnameh 1402,
+# yektanet 1402, techrasa instagram 1401, ilia 1399, achareh 1396-1403.
+# Composition: 20 lookup/numeric, 8 locate, 8 multi-section, 6 cross-year, 6 unanswerable (48).
+# Conventions follow pilot.src.yaml. Cross-year questions use doc_scope with both reports and
+# per-item doc. Unanswerable questions list `absent` term sets checked against the scope document.
+
+questions:
+
+# ======================================================================================================
+# Karnameh 1402 (car marketplace annual report)
+# ======================================================================================================
+
+- id: T-C-karnameh-1402-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.karnameh_annual-report_1402]
+  question:
+    fa: "طبق گزارش سالانهٔ 1402 کارنامه، شاخصی که این گزارش با آن قیمت خودرو را می‌سنجد در طول آن سال چند درصد بالا رفت؟"
+    en: "According to Karnameh's 1402 annual report, by what percentage did the index the report uses to measure car prices go up over that year?"
+  answer:
+    fa: "تنها 2 درصد (پس از رشد 83 درصدی در سال 1401)."
+    en: "Only 2% (after an 83% rise in 1401)."
+  answer_value: 2
+  answer_unit: "%"
+  memorisable: false
+  notes: "The question keeps 'what percentage': a chart on p6 (p6_b2) gives the same rise as '5 units' of the index, which is not the asked-for figure and is not gold."
+  evidence:
+    - fact: "the price index rose only 2% in 1402 (83% in 1401)"
+      fa: ["2 درصد", "شاخص قیمت", "83 درصدی"]
+
+- id: T-C-karnameh-1402-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.karnameh_annual-report_1402]
+  question:
+    fa: "طبق گزارش سالانهٔ 1402 کارنامه، در این سال چند نفر دست‌کم یک بار از خدمات پولی این پلتفرم استفاده کردند؟"
+    en: "According to Karnameh's 1402 annual report, how many people used at least one of the platform's paid services in 1402?"
+  answer:
+    fa: "221,574 نفر."
+    en: "221,574 people."
+  answer_value: 221574
+  answer_unit: people
+  memorisable: false
+  notes: "The preface mentions 221 thousand cars in whose transactions Karnameh took part; that is a different count and is not gold."
+  evidence:
+    - fact: "221,574 people used a paid service at least once in 1402"
+      fa: ["221,574"]
+
+- id: T-C-karnameh-1402-03
+  corpus: C
+  type: locate
+  answer_type: span
+  doc_scope: [C.karnameh_annual-report_1402]
+  question:
+    fa: "در گزارش سالانهٔ 1402 کارنامه، وقتی بدنهٔ یک خودرو «ناایمن» خوانده می‌شود، دقیقاً چه وضعیتی دارد؟"
+    en: "In Karnameh's 1402 annual report, what exactly does it mean when a car's body is classed as 'unsafe'?"
+  answer:
+    fa: "یعنی هر چهار قطعهٔ درب، شاسی، سقف و ستون خودرو تعویض شده باشد."
+    en: "All four parts - doors, chassis, roof and pillars - have been replaced."
+  memorisable: false
+  notes: "Definition sits in the glossary table at the end of the report (the unit also defines other inspection terms)."
+  evidence:
+    - fact: "unsafe body = all four parts (door, chassis, roof, pillar) replaced"
+      fa: ["بدنه ناایمن", "چهار قطعه"]
+
+- id: T-C-karnameh-1402-04
+  corpus: C
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [C.karnameh_annual-report_1402]
+  question:
+    fa: "بر اساس گزارش سالانهٔ 1402 کارنامه، درآمد کل این شرکت در سال 1402 چند میلیارد تومان بود؟"
+    en: "According to Karnameh's 1402 annual report, what was the company's total revenue in 1402, in billions of tomans?"
+  answer:
+    fa: "این گزارش درآمد کل کارنامه را اعلام نمی‌کند. برای گردش مالی ناخالص (GMV) فقط رشد 244 درصدی آمده و مبلغی ذکر نشده است؛ ارقام پولی دیگر گزارش، مانند ارزش خودروهای کارشناسی‌شده یا معامله‌شده در تهران و درآمد ماهانهٔ دستیاران فروش و کارشناسان کارنامه، درآمد خود شرکت نیستند."
+    en: "The report does not state Karnameh's total revenue. For gross merchandise value (GMV) it gives only 244% growth, with no amount; its other money figures, such as the value of cars inspected or traded in Tehran and the monthly income of Karnameh's sales assistants and inspectors, are not the company's own revenue."
+  memorisable: false
+  notes: "Silent absence with distractors: GMV growth (244%, no amount; p29), monthly net income of sales assistants and inspectors (p31), the 49.4 همت value of cars inspected in Tehran (p34_g1) and the garbled '2,8' value of cars traded through Karnameh in Tehran (p32_b2). None of these is company revenue. Searches: درآمد+میلیارد, درآمد کل, سود خالص, GMV+تومان, گردش مالی+تومان, همت (only the inspected-car value); apply pass (work/qverify_C2/r10, r12, r13): درامد (only the p31 staff incomes), خالص, میلیون تومان / میلیارد تومان (car prices and price bands only)."
+  absent:
+    fa: [["درآمد", "میلیارد"], ["درآمد کل"], ["سود خالص"], ["GMV", "تومان"], ["گردش مالی", "تومان"]]
+
+# ======================================================================================================
+# Tipax 1400 (courier annual report covering 1399)
+# ======================================================================================================
+
+- id: T-C-tipax-1400-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.tipax_annual-report_1400]
+  question:
+    fa: "بر اساس گزارش سالانهٔ 1400 تیپاکس که عملکرد سال 1399 را مرور می‌کند، هر مرسوله به‌طور میانگین چه مسافتی را از مبدأ تا مقصد پیمود؟"
+    en: "According to Tipax's 1400 annual report, which reviews its 1399 performance, how far did each parcel travel on average from origin to destination?"
+  answer:
+    fa: "630 کیلومتر."
+    en: "630 km."
+  answer_value: 630
+  answer_unit: km
+  memorisable: false
+  evidence:
+    - fact: "average distance per parcel is 630 km"
+      fa: ["630", "کیلومتر"]
+
+- id: T-C-tipax-1400-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.tipax_annual-report_1400]
+  question:
+    fa: "در گزارش سالانهٔ 1400 تیپاکس، میانگین وزن بسته‌هایی که در سال 1399 جابه‌جا شد چند کیلوگرم بود؟"
+    en: "In Tipax's 1400 annual report, what was the average weight of the parcels shipped in 1399, in kilograms?"
+  answer:
+    fa: "7.3 کیلوگرم (در متن: 7/3 کیلوگرم)."
+    en: "7.3 kg."
+  answer_value: 7.3
+  answer_unit: kg
+  memorisable: false
+  notes: "The Persian text writes the decimal with a slash (7/3)."
+  evidence:
+    - fact: "average parcel weight 7.3 kg in 1399"
+      fa: ["7.3", "کیلوگرم"]
+
+- id: T-C-tipax-1400-03
+  corpus: C
+  type: locate
+  answer_type: short
+  doc_scope: [C.tipax_annual-report_1400]
+  question:
+    fa: "طبق گزارش سالانهٔ 1400 تیپاکس، کدام نمایندگی در سال 1399 بیش از همهٔ نمایندگی‌ها بسته فرستاد؟"
+    en: "According to Tipax's 1400 annual report, which agency sent more parcels than any other in 1399?"
+  answer:
+    fa: "نمایندگی بازار پاچنار."
+    en: "The Bazar-e Pachenar agency."
+  memorisable: false
+  evidence:
+    - fact: "Bazar Pachenar agency had the most parcels sent in 1399"
+      fa: ["پاچنار"]
+
+- id: T-C-tipax-1400-04
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.tipax_annual-report_1400]
+  question:
+    fa: "در گزارش سالانهٔ 1400 تیپاکس، نمایندگی‌های این شرکت در چند شهر مستقر بودند و ادارهٔ چند نمایندگی بر عهدهٔ زنان بود؟"
+    en: "In Tipax's 1400 annual report, in how many cities did the company have agencies, and how many agencies were run by women?"
+  answer:
+    fa: "در 329 شهر (555 نمایندگی در 329 شهر)؛ مدیریت 54 نمایندگی با بانوان بود."
+    en: "329 cities (555 agencies in 329 cities); 54 agencies were managed by women."
+  memorisable: false
+  evidence:
+    - fact: "agencies in 329 cities"
+      fa: ["329", "شهر"]
+    - fact: "54 agencies managed by women"
+      fa: ["54", "بانوان"]
+
+# ======================================================================================================
+# Yektanet 1402 (digital marketing report)
+# ======================================================================================================
+
+- id: T-C-yektanet-1402-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.yektanet_digital-marketing-report_1402]
+  question:
+    fa: "بر اساس گزارش یکتانت از بازاریابی دیجیتال ایران در سال 1402، در این سال چند موقعیت شغلی در زمینهٔ مارکتینگ و دیجیتال مارکتینگ آگهی شد و سال پیش از آن چند مورد بود؟"
+    en: "According to Yektanet's report on Iran's digital marketing in 1402, how many marketing and digital-marketing job openings were advertised in 1402, and how many the year before?"
+  answer:
+    fa: "107,796 در سال 1402، در برابر 57,456 در سال 1401 (حدود 88 درصد رشد)."
+    en: "107,796 in 1402, against 57,456 in 1401 (about 88% growth)."
+  answer_value: 107796
+  answer_unit: job openings
+  memorisable: false
+  evidence:
+    - fact: "job openings rose from 57,456 (1401) to 107,796 (1402)"
+      fa: ["107,796", "57,456"]
+
+- id: T-C-yektanet-1402-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.yektanet_digital-marketing-report_1402]
+  question:
+    fa: "طبق گزارش یکتانت دربارهٔ بازاریابی دیجیتال ایران در 1402، بازار تبلیغات دیجیتال کشور تقریباً چه اندازه‌ای دارد و چه سهمی از کل بازار تبلیغات را در بر می‌گیرد؟"
+    en: "According to Yektanet's report on Iran's digital marketing in 1402, roughly how large is Iran's digital advertising market, and what share of the whole advertising market does it make up?"
+  answer:
+    fa: "حدود 11 هزار میلیارد تومان؛ بیش از 20 درصد کل بازار تبلیغات."
+    en: "About 11 thousand billion tomans (11 trillion tomans); more than 20% of the total advertising market."
+  answer_value: 11
+  answer_unit: thousand billion tomans
+  memorisable: true
+  notes: "Headline figure of the report, widely quoted in the Iranian tech press."
+  evidence:
+    - fact: "digital ad market about 11 thousand billion tomans, over 20% of the ad market"
+      fa: ["11 هزار میلیارد تومان"]
+
+- id: T-C-yektanet-1402-03
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.yektanet_digital-marketing-report_1402]
+  question:
+    fa: "بر اساس گزارش یکتانت از بازاریابی دیجیتال ایران در سال 1402، کسب‌وکارها در این سال در مجموع چه مبلغی صرف انتشار رپورتاژ آگهی کردند و این رقم نسبت به سال قبل چند درصد تغییر کرد؟"
+    en: "According to Yektanet's report on Iran's digital marketing in 1402, how much did businesses spend in total on publishing sponsored (reportage) articles in 1402, and by what percentage did that change from the year before?"
+  answer:
+    fa: "بیش از 212 میلیارد تومان، با 41 درصد افزایش."
+    en: "More than 212 billion tomans, up 41%."
+  answer_value: 212
+  answer_unit: billion tomans
+  memorisable: false
+  evidence:
+    - fact: "reportage publishing turnover 212+ billion tomans, +41%"
+      fa: ["212", "رپورتاژ"]
+
+- id: T-C-yektanet-1402-04
+  corpus: C
+  type: locate
+  answer_type: span
+  doc_scope: [C.yektanet_digital-marketing-report_1402]
+  question:
+    fa: "در گزارش یکتانت از بازاریابی دیجیتال ایران در 1402، آگهی‌های کدام شبکه‌های تلویزیونی در آمار تبلیغات تلویزیونی حساب شده‌اند و آگهی‌ها چه سهمی از زمان پخش این شبکه‌ها را گرفته‌اند؟"
+    en: "In Yektanet's report on Iran's digital marketing in 1402, which TV channels are counted in its television-advertising figures, and what share of those channels' programming time went to ads?"
+  answer:
+    fa: "شبکه‌های 1 تا 6، نسیم، نمایش و آی‌فیلم (9 شبکه)؛ 7 درصد از کل زمان برنامه‌های این 9 شبکه به تبلیغات اختصاص یافته است."
+    en: "Channels 1 to 6, Nasim, Namayesh and iFilm (nine channels); 7% of these nine channels' total programming time went to advertising."
+  memorisable: false
+  evidence:
+    - fact: "TV ads = channels 1-6, Nasim, Namayesh, iFilm; 7% of airtime"
+      fa: ["نسیم", "آی فیلم"]
+
+# ======================================================================================================
+# TechRasa 1401 (Instagram shops and social commerce)
+# ======================================================================================================
+
+- id: T-C-techrasa-1401-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.techrasa_instagram-shops-social-commerce_1401]
+  question:
+    fa: "بر اساس گزارش تکراسا دربارهٔ فروشگاه‌های اینستاگرامی و تجارت اجتماعی (1401)، چند فروشگاه اینستاگرامی ایرانی بیش از صد هزار دنبال‌کننده دارند؟"
+    en: "According to TechRasa's report on Instagram shops and social commerce (1401), how many Iranian Instagram shops have more than 100,000 followers?"
+  answer:
+    fa: "6,000 فروشگاه."
+    en: "6,000 shops."
+  answer_value: 6000
+  answer_unit: shops
+  memorisable: false
+  evidence:
+    - fact: "6,000 Instagram shops have over 100k followers"
+      fa: ["6000", "100 هزار"]
+
+- id: T-C-techrasa-1401-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.techrasa_instagram-shops-social-commerce_1401]
+  question:
+    fa: "طبق گزارش تکراسا دربارهٔ فروشگاه‌های اینستاگرامی (1401)، یک فروشگاه اینستاگرامی ایرانی در ماه به‌طور میانه چند پست منتشر می‌کند؟"
+    en: "According to TechRasa's report on Instagram shops (1401), what is the median number of posts an Iranian Instagram shop publishes per month?"
+  answer:
+    fa: "14 پست در ماه."
+    en: "14 posts a month."
+  answer_value: 14
+  answer_unit: posts per month
+  memorisable: false
+  evidence:
+    - fact: "median 14 posts per month"
+      fa: ["14 پست"]
+
+- id: T-C-techrasa-1401-03
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.techrasa_instagram-shops-social-commerce_1401]
+  question:
+    fa: "بر اساس گزارش تکراسا دربارهٔ فروشگاه‌های اینستاگرامی (1401)، بیشتر فروشگاه‌های اینستاگرامی در چه گروه‌های کالایی فعال‌اند، و کدام استان با چند فروشگاه در صدر استان‌هاست؟"
+    en: "According to TechRasa's report on Instagram shops (1401), which product groups account for the most Instagram shops, and which province leads, with how many shops?"
+  answer:
+    fa: "پوشاک، و پس از آن «خوردنی و آشامیدنی» و «آرایشی، بهداشت و سلامت» (از مجموع 415 هزار فروشگاه)؛ استان تهران با 160 هزار فروشگاه و سهم 40 درصد."
+    en: "Clothing, followed by food and beverages and by cosmetics, hygiene and health (of 415,000 shops in all); Tehran province leads with 160,000 shops, a 40% share."
+  memorisable: false
+  evidence:
+    - fact: "clothing, food and beverages, cosmetics have the most shops (415k shops)"
+      fa: ["پوشاک", "خوردنی و آشامیدنی", "415 هزار"]
+    - fact: "Tehran has 160k shops, 40% share"
+      fa: ["160 هزار", "تهران"]
+
+- id: T-C-techrasa-1401-04
+  corpus: C
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [C.techrasa_instagram-shops-social-commerce_1401]
+  question:
+    fa: "بر اساس گزارش تکراسا دربارهٔ فروشگاه‌های اینستاگرامی (1401)، چند درصد از خریداران فروشگاه‌های اینستاگرامی قربانی کلاهبرداری شده‌اند؟"
+    en: "According to TechRasa's report on Instagram shops (1401), what percentage of Instagram-shop buyers have fallen victim to fraud?"
+  answer:
+    fa: "این گزارش چنین آماری ارائه نمی‌کند؛ فقط به چالش اعتمادسازی میان فروشگاه‌ها و خریداران اشاره می‌کند."
+    en: "The report gives no such figure; it only mentions the challenge of building trust between shops and buyers."
+  memorisable: false
+  notes: "Silent absence. The report discusses trust-building as a barrier to selling expensive goods but has no fraud or complaint statistics. Searches: کلاهبرداری, کلاه برداری, فریب, شکایت, اعتماد+درصد, مرجوع (all 0 hits except the two trust sentences without numbers)."
+  absent:
+    fa: [["کلاهبرداری"], ["کلاه برداری"], ["فریب"], ["شکایت"], ["اعتماد", "درصد"]]
+
+# ======================================================================================================
+# Ilia 1399 (what Iranians want from financial services)
+# ======================================================================================================
+
+- id: T-C-ilia-1399-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.ilia_what-iranians-want-from-financial-services_1399]
+  question:
+    fa: "در گزارش ایلیا دربارهٔ خواسته‌های مردم ایران از خدمات مالی (1399)، پرسشنامهٔ این مطالعه از چند نفر پاسخ گرفت؟"
+    en: "In Ilia's report on what Iranians want from financial services (1399), how many people answered the study's questionnaire?"
+  answer:
+    fa: "780 پاسخ‌دهنده."
+    en: "780 respondents."
+  answer_value: 780
+  answer_unit: respondents
+  memorisable: false
+  evidence:
+    - fact: "780 respondents"
+      fa: ["780"]
+
+- id: T-C-ilia-1399-02
+  corpus: C
+  type: locate
+  answer_type: short
+  doc_scope: [C.ilia_what-iranians-want-from-financial-services_1399]
+  question:
+    fa: "در گزارش ایلیا دربارهٔ خواسته‌های مردم ایران از خدمات مالی، داده‌های پرسشنامه با چه نرم‌افزار و چه الگوریتمی گروه‌بندی شد و حاصل آن چند گروه بود؟"
+    en: "In Ilia's report on what Iranians want from financial services, what software and algorithm were used to group the questionnaire data, and into how many groups?"
+  answer:
+    fa: "با نرم‌افزار SPSS Modeler و الگوریتم داده‌کاوی Two-Step، در 4 خوشه."
+    en: "SPSS Modeler with the Two-Step data-mining algorithm, into 4 clusters."
+  memorisable: false
+  evidence:
+    - fact: "SPSS Modeler, Two-Step algorithm, 4 clusters"
+      fa: ["spss modeler", "two-step"]
+
+- id: T-C-ilia-1399-03
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.ilia_what-iranians-want-from-financial-services_1399]
+  question:
+    fa: "طبق گزارش ایلیا دربارهٔ خواسته‌های مردم ایران از خدمات مالی، در حوزهٔ بیمه چند نوع بیمه و چند نوع خدمت در ایران عرضه می‌شود، و همهٔ خدمات مالی‌ای که امروز در کشور ارائه می‌شود روی هم در چند دسته جای می‌گیرد؟"
+    en: "According to Ilia's report on what Iranians want from financial services, how many types of insurance and how many insurance services are offered in Iran, and into how many categories do all the financial services offered in the country fall?"
+  answer:
+    fa: "12 نوع کلی بیمه و 19 نوع خدمت؛ کل خدمات مالی در بیش از 150 دسته (در چهار گروه بانکداری، سرمایه‌گذاری، بیمه و خدمات شرکتی)."
+    en: "12 general insurance types and 19 service types; all financial services fall into more than 150 categories (in four groups: banking, investment, insurance and corporate services)."
+  memorisable: false
+  notes: "Several numbers in this PDF extraction lost digits (e.g. the demographics page); the facts used here are in clean paragraphs."
+  evidence:
+    - fact: "12 insurance types and 19 service types"
+      fa: ["12 نوع", "19 نوع"]
+    - fact: "more than 150 service categories"
+      fa: ["150 دسته"]
+
+- id: T-C-ilia-1399-04
+  corpus: C
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [C.ilia_what-iranians-want-from-financial-services_1399]
+  question:
+    fa: "بر اساس گزارش ایلیا دربارهٔ خواسته‌های مردم ایران از خدمات مالی، حاشیهٔ خطای نتایج پیمایش این مطالعه چند درصد است؟"
+    en: "According to Ilia's report on what Iranians want from financial services, what is the margin of error of the survey results?"
+  answer:
+    fa: "گزارش حاشیهٔ خطا یا سطح اطمینان پیمایش را اعلام نمی‌کند."
+    en: "The report does not state a margin of error or confidence level for the survey."
+  memorisable: false
+  notes: "Silent absence. The method chapter gives the questionnaire size (44 questions), 780 respondents and the clustering tool, but no error margin. Searches: خطا, خطای, سطح اطمینان, فاصله اطمینان (0 hits); اطمینان alone hits two unrelated sentences."
+  absent:
+    fa: [["خطا"], ["خطای"], ["سطح اطمینان"], ["فاصله اطمینان"]]
+
+# ======================================================================================================
+# Achareh eight-year report 1396-1403
+# ======================================================================================================
+
+- id: T-C-achareh-1403-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.achareh_eight-year-report_1396-1403]
+  question:
+    fa: "بر اساس گزارش هشت‌سالهٔ آچاره (1396 تا 1403)، این پلتفرم در سال 1403 به‌طور میانگین چند درصد از مبلغ سفارش‌ها را به‌عنوان کمیسیون برداشت؟"
+    en: "According to Achareh's eight-year report (1396-1403), what percentage of order value did the platform take as commission on average in 1403?"
+  answer:
+    fa: "11 درصد."
+    en: "11%."
+  answer_value: 11
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "average commission 11% of order value in 1403"
+      fa: ["11%", "هزینه سفارش"]
+
+- id: T-C-achareh-1403-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.achareh_eight-year-report_1396-1403]
+  question:
+    fa: "طبق گزارش هشت‌سالهٔ آچاره، هر سال به‌طور میانگین چند درصد از کسانی که برای کار در آچاره درخواست می‌دهند به‌خاطر نداشتن صلاحیت پذیرفته نمی‌شوند؟"
+    en: "According to Achareh's eight-year report, on average what percentage of people who apply to work through Achareh are turned down each year for lack of qualifications?"
+  answer:
+    fa: "حدود 69 درصد."
+    en: "About 69%."
+  answer_value: 69
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "about 69% of applicants are rejected each year"
+      fa: ["69 درصد", "متقاضیان"]
+
+- id: T-C-achareh-1403-03
+  corpus: C
+  type: locate
+  answer_type: span
+  doc_scope: [C.achareh_eight-year-report_1396-1403]
+  question:
+    fa: "در گزارش هشت‌سالهٔ آچاره، این برآورد که آچاره بیش از 150 سال از وقت کاربرانش را ذخیره کرده، بر پایهٔ چه فرضی است؟"
+    en: "In Achareh's eight-year report, what assumption underlies the estimate that Achareh has saved its users more than 150 years of time?"
+  answer:
+    fa: "این فرض که هر سفارش در آچاره به‌طور متوسط نیم ساعت از زمانی را که مشتری برای پیدا کردن خدمت‌دهنده صرف می‌کند صرفه‌جویی می‌کند."
+    en: "The assumption that each Achareh order saves the customer, on average, half an hour of the time spent searching for a service provider."
+  memorisable: false
+  evidence:
+    - fact: "assumes each order saves half an hour of search time"
+      fa: ["نیم ساعت", "150 سال"]
+
+- id: T-C-achareh-1403-04
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.achareh_eight-year-report_1396-1403]
+  question:
+    fa: "طبق گزارش هشت‌سالهٔ آچاره، گردش فروش یک‌سالهٔ آچاره سازه در پایان 1400 و در پایان 1403 چه رقمی بود، و آچاره بازار در 1402 و در 1403 با چند فروشندهٔ کالا کار می‌کرد؟"
+    en: "According to Achareh's eight-year report, what was Achareh Sazeh's one-year sales turnover at the end of 1400 and at the end of 1403, and how many goods sellers was Achareh Bazar working with in 1402 and in 1403?"
+  answer:
+    fa: "فروش آچاره سازه از حدود 30 میلیارد تومان (پایان 1400) به 148 میلیارد تومان (پایان 1403) رسید (4.9 برابر)؛ تأمین‌کنندگان فعال آچاره بازار از 150 در 1402 به 540 در 1403 افزایش یافتند."
+    en: "Achareh Sazeh's sales grew from an estimated 30 billion tomans (end of 1400) to 148 billion tomans (end of 1403), 4.9 times; Achareh Bazar's active suppliers rose from 150 in 1402 to 540 in 1403."
+  memorisable: false
+  notes: "Within-document multi-year question: both figures come from the subsidiaries chapter, in two different sections."
+  evidence:
+    - fact: "Achareh Sazeh sales 30 bn tomans (1400) -> 148 bn tomans (1403)"
+      fa: ["30 میلیارد تومان", "148 میلیارد تومان"]
+    - fact: "Achareh Bazar active suppliers 150 (1402) -> 540 (1403)"
+      fa: ["540", "آچاره بازار"]
+
+# ======================================================================================================
+# Khanoumi 1404 (online beauty retailer annual report)
+# ======================================================================================================
+
+- id: T-C-khanoumi-1404-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.khanoumi_annual-report_1404]
+  question:
+    fa: "بر اساس گزارش سال 1404 خانومی، در پرفروش‌ترین روز سال (7 آذر 1404) چه مبلغ کالا فروخته شد؟"
+    en: "According to Khanoumi's 1404 report, how much was sold on the best-selling day of the year (7 Azar 1404)?"
+  answer:
+    fa: "140 میلیارد تومان در یک روز (7 آذر 1404)."
+    en: "140 billion tomans in a single day (7 Azar 1404)."
+  answer_value: 140
+  answer_unit: billion tomans
+  memorisable: false
+  notes: "The date is in the question because the gold unit (p26_b9, '7 آذر: فروش 140 میلیارد تومان در یک روز') does not itself say 'best-selling day'; that label and the 1404 date sit in separate chart units (p26_b5, p26_b8)."
+  evidence:
+    - fact: "7 Azar sales of 140 billion tomans in one day"
+      fa: ["140 میلیارد تومان"]
+
+- id: T-C-khanoumi-1404-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.khanoumi_annual-report_1404]
+  question:
+    fa: "طبق گزارش سال 1404 خانومی، چه سهمی از سفارش‌های لغوشده به این دلیل لغو شد که تحویل‌گیرنده در نشانی حضور نداشت یا دسترسی به او ممکن نبود؟"
+    en: "According to Khanoumi's 1404 report, what share of cancelled orders were cancelled because the recipient was not at the address or could not be reached?"
+  answer:
+    fa: "68 درصد."
+    en: "68%."
+  answer_value: 68
+  answer_unit: "%"
+  memorisable: false
+  notes: "The question names no period: the gold sentence (p64_b5) does not state one, and 'جنگ دوم' appears only as a chart label (p64_b7). The chart label '%68' (p64_b9) is a loose infographic number whose category also covers incomplete addresses and returned post (p64_b12); it is not gold."
+  evidence:
+    - fact: "68% of cancellations were due to the recipient being absent or unreachable"
+      fa: ["68", "کنسلی"]
+
+- id: T-C-khanoumi-1404-03
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.khanoumi_annual-report_1404]
+  question:
+    fa: "بر اساس گزارش سال 1404 خانومی، فروش خانومی در 1404 چند درصد رشد کرد و این رشد با تورم چه فاصله‌ای داشت؛ و در ماه‌های جنگ دوم، ارزش متوسط هر سبد در قیاس با همان بازه در سال پیش چند درصد بزرگ‌تر شد و گرانی چه سهمی در این افزایش داشت؟"
+    en: "According to Khanoumi's 1404 report, by how much did Khanoumi's sales grow in 1404 and how did that compare with inflation; and during the months of the second war, by what percentage was the average basket value larger than in the same period a year earlier, and how much of that increase came from rising prices?"
+  answer:
+    fa: "فروش 83 درصد رشد کرد، 35 واحد درصد بالاتر از نرخ تورم؛ میانگین سبد خرید در جنگ دوم 76 درصد بیشتر شد که از این 76 درصد، دست‌کم 48 واحد درصد (نرخ تورم اعلامی بانک مرکزی برای 1404) اثر تورم بود و بقیه از افزوده شدن حدود یک قلم کالا به هر سبد."
+    en: "Sales grew 83%, 35 percentage points above inflation; the average basket in the second war was 76% larger, and of that 76% rise at least 48 percentage points (the central bank's 1404 inflation rate) came from inflation, the rest from about one extra item per basket."
+  memorisable: false
+  notes: "The report writes 'at least %48 of it was due to inflation' and glosses 48% as the central bank's 1404 inflation rate (consistent with 83 - 35 = 48), so the answer reads it as 48 of the 76 percentage points, not 48% of the rise."
+  evidence:
+    - fact: "1404 sales growth 83%, 35 points above inflation"
+      fa: ["83", "35 واحد درصد"]
+    - fact: "average basket +76% in the second war, at least 48% from inflation"
+      fa: ["76%", "48%", "تورم"]
+
+- id: T-C-khanoumi-1404-04
+  corpus: C
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [C.khanoumi_annual-report_1404]
+  question:
+    fa: "بر اساس گزارش سال 1404 خانومی، مجموع فروش سالانهٔ خانومی در 1404 چند همت (هزار میلیارد تومان) بود؟"
+    en: "According to Khanoumi's 1404 report, what were Khanoumi's total annual sales in 1404, in thousand billion tomans?"
+  answer:
+    fa: "گزارش مبلغ کل فروش سالانه را اعلام نمی‌کند؛ فقط نرخ رشد فروش (83 درصد) و ارقامی مانند فروش 140 میلیارد تومانی پرفروش‌ترین روز را می‌آورد."
+    en: "The report does not give the total annual sales amount; it gives only sales growth (83%) and figures such as 140 billion tomans sold on the best-selling day."
+  memorisable: false
+  notes: "Silent absence with distractors (one-day sales, Black Beauty discount totals, growth multiples). The separate 1403 Khanoumi report states 1403 sales, but it is outside this question's scope. Searches in the 1404 report: فروش+همت, مجموع فروش, فروش سالانه, فروش کل, فروش+هزار میلیارد (0 hits); میلیارد تومان hits only the one-day sales and discount figures."
+  absent:
+    fa: [["فروش", "همت"], ["مجموع فروش"], ["فروش سالانه"], ["فروش کل"], ["فروش", "هزار میلیارد"]]
+
+# ======================================================================================================
+# Nobitex 2022 (crypto exchange annual report)
+# ======================================================================================================
+
+- id: T-C-nobitex-2022-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.nobitex_annual-report_2022]
+  question:
+    fa: "طبق گزارش 2022 نوبیتکس، کسی که در گفت‌وگوی متنی سایت یا اپلیکیشن سراغ پشتیبانی می‌رفت، به‌طور متوسط چه مدت منتظر می‌ماند تا یک کارشناس جوابش را بدهد؟"
+    en: "According to Nobitex's 2022 report, when someone turned to support through the text chat on the website or app, how long on average did they wait for a support agent to reply?"
+  answer:
+    fa: "88 ثانیه."
+    en: "88 seconds."
+  answer_value: 88
+  answer_unit: seconds
+  memorisable: false
+  notes: "Not the call-centre wait (19 seconds), which is reported separately."
+  evidence:
+    - fact: "average online-chat wait 88 seconds"
+      fa: ["88 ثانیه"]
+
+- id: T-C-nobitex-2022-02
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.nobitex_annual-report_2022]
+  question:
+    fa: "بنا بر گزارش 2022 نوبیتکس، تیم این صرافی در شروع و در انتهای آن سال چند عضو داشت؟"
+    en: "According to Nobitex's 2022 report, how many members did the exchange's team have at the beginning and at the close of that year?"
+  answer:
+    fa: "از 209 نفر به 268 نفر (رشد 28 درصدی)."
+    en: "From 209 to 268 people (28% growth)."
+  answer_value: 268
+  answer_unit: employees
+  memorisable: false
+  evidence:
+    - fact: "staff grew from 209 to 268 in 2022"
+      fa: ["209", "268"]
+
+- id: T-C-nobitex-2022-03
+  corpus: C
+  type: locate
+  answer_type: span
+  doc_scope: [C.nobitex_annual-report_2022]
+  question:
+    fa: "در گزارش سال 2022 نوبیتکس، «شاخص ثروت» گروه‌های کاربران چگونه محاسبه می‌شود و مقدار 60 برای یک گروه چه معنایی دارد؟"
+    en: "In Nobitex's 2022 report, how is the 'wealth index' of user groups calculated, and what does a value of 60 mean for a group?"
+  answer:
+    fa: "مبنای آن میانگین دارایی موجود در کیف پول همهٔ کاربران است که 100 واحد در نظر گرفته می‌شود؛ شاخص 60 یعنی آن گروه تقریباً 40 درصد کمتر از میانگین کل در کیف پول نوبیتکس دارایی دارد."
+    en: "It is based on the average assets held in all users' wallets, set to 100; an index of 60 means the group holds roughly 40% less than the overall average in its Nobitex wallets."
+  memorisable: false
+  notes: "The same definition appears three times with different worked examples (106, 26 and 60); only the unit with the 60 example is gold."
+  evidence:
+    - fact: "index base = average wallet assets = 100; 60 means ~40% below average"
+      fa: ["شاخص 60"]
+
+- id: T-C-nobitex-2022-04
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.nobitex_annual-report_2022]
+  question:
+    fa: "طبق گزارش 2022 نوبیتکس، چه نسبتی از داد‌وستدها با ریال (و نه تتر) صورت گرفت و این نسبت یک سال قبل چند بود، و سهم سفارش‌هایی که از راه API فرستاده شد چقدر بود؟"
+    en: "According to Nobitex's 2022 report, what proportion of trades were done against the rial (rather than tether), what was that proportion a year earlier, and what share of orders were sent via the API?"
+  answer:
+    fa: "91 درصد معاملات در بازارهای ریالی (در 2021: 89 درصد)؛ 20 درصد سفارش‌ها از طریق API (بیش از 50 درصد از اپلیکیشن و 27 درصد از وبسایت)."
+    en: "91% of trades were in rial markets (89% in 2021); 20% of orders came through the API (over 50% via the app and 27% via the website)."
+  memorisable: false
+  evidence:
+    - fact: "91% of trades in rial markets (89% in 2021)"
+      fa: ["91%", "89%"]
+    - fact: "20% of orders via the API"
+      fa: ["20%", "api"]
+
+# ======================================================================================================
+# Irancell sustainability reports 1400 and 1402
+# ======================================================================================================
+
+- id: T-C-irancell-1400-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.irancell_sustainability-report_1400]
+  question:
+    fa: "در گزارش پایداری 1400 ایرانسل، چند درصد از درآمد این اپراتور به تعهدات USO اختصاص یافت و این نسبت در سال قبل چند بود؟"
+    en: "In Irancell's 1400 sustainability report, what percentage of the operator's revenue was allocated to its USO commitments, and what was the ratio the year before?"
+  answer:
+    fa: "7 درصد در 1400، در برابر 3 درصد در 1399."
+    en: "7% in 1400, against 3% in 1399."
+  answer_value: 7
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "USO share of revenue rose from 3% (1399) to 7% (1400)"
+      fa: ["7 درصد", "خدمات عمومی اجباری"]
+
+- id: T-C-irancell-1400-02
+  corpus: C
+  type: locate
+  answer_type: short
+  doc_scope: [C.irancell_sustainability-report_1400]
+  question:
+    fa: "در گزارش پایداری 1400 ایرانسل، محاسبهٔ ردپای کربن فرض می‌کند که برای هر کیلووات‌ساعتی که به دست مصرف‌کننده می‌رسد چه مقدار انرژی در نیروگاه‌ها سوزانده می‌شود و چند کیلوگرم دی‌اکسید کربن منتشر می‌شود؟"
+    en: "In Irancell's 1400 sustainability report, what does the carbon-footprint calculation assume about how much power-plant energy each delivered kilowatt-hour of electricity takes and how much CO2 it emits?"
+  answer:
+    fa: "3.1 کیلووات‌ساعت (معادل 11.2 مگاژول) انرژی در نیروگاه برای هر کیلووات‌ساعت تحویلی، و انتشار 0.65 کیلوگرم دی‌اکسید کربن به‌ازای هر کیلووات‌ساعت برق مصرفی."
+    en: "3.1 kWh (11.2 MJ) of power-plant energy per kWh delivered, and 0.65 kg of CO2 per kWh of electricity consumed."
+  memorisable: false
+  evidence:
+    - fact: "3.1 kWh (11.2 MJ) of plant energy per delivered kWh"
+      fa: ["3.1", "11.2"]
+    - fact: "0.65 kg CO2 per kWh"
+      fa: ["0.65"]
+
+- id: T-C-irancell-1402-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.irancell_sustainability-report_1402]
+  question:
+    fa: "طبق گزارش پایداری 1402 ایرانسل، یک کاربر موبایل این اپراتور در آن سال به‌طور متوسط در ماه چند گیگابایت دیتا مصرف می‌کرد؟"
+    en: "According to Irancell's 1402 sustainability report, how many gigabytes of data did a mobile user of the operator consume per month, on average, that year?"
+  answer:
+    fa: "12.11 گیگابایت در ماه (12 درصد بیشتر از سال قبل)."
+    en: "12.11 GB a month (12% more than the previous year)."
+  answer_value: 12.11
+  answer_unit: GB per month
+  memorisable: false
+  evidence:
+    - fact: "average monthly data per subscriber 12.11 GB"
+      fa: ["12.11"]
+
+# T-C-irancell-1402-02 (total 1402 revenue, unanswerable) was dropped in verification: p21 gives the government's
+# share of operator revenue (28.1%) together with the amounts, so total revenue is computable. Replaced by -03.
+- id: T-C-irancell-1402-03
+  corpus: C
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [C.irancell_sustainability-report_1402]
+  question:
+    fa: "بر اساس گزارش پایداری 1402 ایرانسل، انتشار گازهای گلخانه‌ای محدودهٔ 3 (انتشارهای غیرمستقیم زنجیرهٔ ارزش) ایرانسل در سال 1402 چند تن دی‌اکسید کربن معادل بود؟"
+    en: "According to Irancell's 1402 sustainability report, how many tonnes of CO2 equivalent were Irancell's Scope 3 greenhouse-gas emissions (indirect value-chain emissions) in 1402?"
+  answer:
+    fa: "این گزارش انتشار محدودهٔ 3 را اعلام نمی‌کند؛ فقط انتشار محدودهٔ 1 و 2 را می‌آورد (روی هم 552,542 تن دی‌اکسید کربن معادل در 1402) و بررسی انتشار محدودهٔ 3 را تنها جزو برنامه‌های بلندمدت سازمان نام می‌برد."
+    en: "The report does not give Scope 3 emissions; it reports only Scope 1 and 2 emissions (552,542 tCO2e in total in 1402) and lists examining Scope 3 emissions only among the company's long-term plans."
+  memorisable: false
+  notes: "Silent absence with a near-miss. The report covers only Scope 1 (direct, 4,076 tCO2e) and Scope 2 (purchased electricity, 548,465 tCO2e), 552,542 in total (carbon-footprint page p48, ESG appendix p066_t1); its breakdown by use (BTS sites, data centres, buildings) and the 18 thousand tonnes avoided by energy saving concern Scope 1-2 energy use. The only Scope 3 mention is the strategy list item 'بررسی انتشار محدودۀ 3 در برنامه‌های بلندمدت سازمان' (p49_b11), with no figure, and nothing allows one to be computed. Searches (work/qverify_C2/r7.txt, r8.txt; pages 47-49 read in full, r9_pages47-49.txt): محدوده 3/سه (only p49_b11), دامنه (0), حوزه 3/سه (0), scope (only the footnote gloss 'Scope' for محدوده, p47_b19), غیرمستقیم (only the Scope 2 definition, the appendix Scope 2 row and indirect employment), گلخانه / کربن / tCO2 / دی‌اکسید (only Scope 1-2 figures, intensities and definitions), زنجیره ارزش / پایین‌دست / بالادست (0), سفر / ماموریت / ایاب و ذهاب / حمل و نقل and زنجیره تامین (no emission figures)."
+  absent:
+    fa: [["محدوده 3"], ["محدوده سه"], ["scope 3"], ["دامنه 3"], ["حوزه 3"], ["زنجیره ارزش"]]
+  # read and confirmed: the energy-strategy list names studying Scope 3 emissions as a long-term plan, no figure
+  absent_reviewed: ["p49_b11"]
+
+- id: T-C-irancell-1400-1402-01
+  corpus: C
+  type: cross-year
+  answer_type: short
+  doc_scope: [C.irancell_sustainability-report_1400, C.irancell_sustainability-report_1402]
+  question:
+    fa: "طبق گزارش پایداری 1400 ایرانسل، این اپراتور در پایان 1400 چند ایستگاه BTS داشت، و بنا بر گزارش پایداری 1402 تا پایان 1402 به چند ایستگاه رسیده بود؟"
+    en: "How many BTS sites did Irancell report at the end of 1400 in its 1400 sustainability report, and how many had it reached by the end of 1402 according to its 1402 report?"
+  answer:
+    fa: "پایان 1400: 16,074 سایت؛ پایان 1402: 18,151 سایت."
+    en: "End of 1400: 16,074 sites; end of 1402: 18,151 sites."
+  memorisable: false
+  notes: "The 1402 report's multi-year ESG appendix tables do not include BTS site counts, so the 1400 figure is only in the 1400 report."
+  evidence:
+    - fact: "1400: 16,074 BTS sites"
+      doc: C.irancell_sustainability-report_1400
+      fa: ["16,074", "BTS"]
+      # the carbon-intensity table's header row carries the site count, but the extraction scrambles it
+      exclude: ["p044_t1#table.0"]
+    - fact: "1402: 18,151 BTS sites"
+      doc: C.irancell_sustainability-report_1402
+      fa: ["18,151", "BTS"]
+
+- id: T-C-irancell-1400-1402-02
+  corpus: C
+  type: cross-year
+  answer_type: short
+  doc_scope: [C.irancell_sustainability-report_1400, C.irancell_sustainability-report_1402]
+  question:
+    fa: "طبق گزارش‌های پایداری 1400 و 1402 ایرانسل، ایرانسل در هر یک از این دو سال به‌طور متوسط در هر ماه چند غرفهٔ موقت برای شناساندن و فروش محصولاتش در مکان‌های پررفت‌وآمد فعال داشت؟"
+    en: "According to Irancell's 1400 and 1402 sustainability reports, on average how many temporary booths for introducing and selling its products did Irancell have active in busy places each month, in each of those two years?"
+  answer:
+    fa: "1400: 55 کانتر در ماه؛ 1402: 54 کانتر در ماه."
+    en: "1400: 55 counters a month; 1402: 54 counters a month."
+  memorisable: false
+  evidence:
+    - fact: "1400: 55 counters per month"
+      doc: C.irancell_sustainability-report_1400
+      fa: ["55 کانتر"]
+    - fact: "1402: 54 counters per month"
+      doc: C.irancell_sustainability-report_1402
+      fa: ["54 کانتر"]
+
+- id: T-C-irancell-1400-1402-03
+  corpus: C
+  type: cross-year
+  answer_type: short
+  doc_scope: [C.irancell_sustainability-report_1400, C.irancell_sustainability-report_1402]
+  question:
+    fa: "میانگین مدت خدمت نیروهای ایرانسل در این شرکت چند سال بود؛ یک بار طبق گزارش پایداری 1400 و بار دیگر طبق گزارش پایداری 1402؟"
+    en: "What was the average length of service of Irancell's staff at the company, according to the 1400 sustainability report and according to the 1402 report?"
+  answer:
+    fa: "گزارش 1400: میانگین 8.4 سال؛ گزارش 1402: نزدیک به 9 سال."
+    en: "1400 report: 8.4 years on average; 1402 report: nearly 9 years."
+  memorisable: false
+  notes: "Neither figure appears in the other report (the 1402 appendix tables have no tenure row)."
+  evidence:
+    - fact: "1400: average tenure 8.4 years"
+      doc: C.irancell_sustainability-report_1400
+      fa: ["8.4", "کارکنان"]
+    - fact: "1402: nearly 9 years of in-company experience"
+      doc: C.irancell_sustainability-report_1402
+      fa: ["نزدیک به 9 سال"]
+
+# ======================================================================================================
+# Iranian Venture Capital Association (IRVC) annual reports 1400 and 1402
+# ======================================================================================================
+
+- id: T-C-irvc-1400-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.irvc_vc-annual-report_1400]
+  question:
+    fa: "بر اساس گزارش سالانهٔ 1400 انجمن سرمایه‌گذاری خطرپذیر ایران، متوسط مبلغ هر فقره تسهیلاتی که اعضا در سال 1400 پرداخت کردند چقدر بود؟"
+    en: "According to the Iranian Venture Capital Association's 1400 annual report, what was the average amount of each loan (facility) that members granted in 1400?"
+  answer:
+    fa: "290 میلیون تومان."
+    en: "290 million tomans."
+  answer_value: 290
+  answer_unit: million tomans
+  memorisable: false
+  evidence:
+    - fact: "average facility 290 million tomans"
+      fa: ["290 میلیون تومان"]
+
+- id: T-C-irvc-1400-02
+  corpus: C
+  type: locate
+  answer_type: short
+  doc_scope: [C.irvc_vc-annual-report_1400]
+  question:
+    fa: "طبق گزارش سالانهٔ 1400 انجمن سرمایه‌گذاری خطرپذیر ایران، متقاضی عضویت در انجمن دست‌کم چه مقدار سرمایهٔ ثبتی باید داشته باشد و این حداقل برای عضویت پیوسته چقدر است؟"
+    en: "According to the Iranian Venture Capital Association's 1400 annual report, what minimum registered capital must an applicant have to join the association, and what is the minimum for full membership?"
+  answer:
+    fa: "حداقل 5 میلیارد ریال؛ برای عضویت پیوسته 30 میلیارد ریال."
+    en: "At least 5 billion rials; 30 billion rials for full membership."
+  memorisable: false
+  evidence:
+    - fact: "minimum registered capital 5 bn rials (30 bn for full membership)"
+      fa: ["5 میلیارد ریال", "30 میلیارد ریال"]
+
+- id: T-C-irvc-1400-03
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.irvc_vc-annual-report_1400]
+  question:
+    fa: "بر اساس گزارش سالانهٔ 1400 انجمن سرمایه‌گذاری خطرپذیر ایران، اعضا بیش از همه در کدام حوزه قرارداد سرمایه‌گذاری بستند، و بزرگ‌ترین بخش از پولی که به‌صورت تسهیلات پرداخت کردند از چه نوعی بود؟"
+    en: "According to the Iranian Venture Capital Association's 1400 annual report, in which sector did members sign the most investment contracts, and what type of facility made up the largest part of the money they paid out as facilities?"
+  answer:
+    fa: "حوزهٔ خدمات آموزشی و سازمانی بیشترین تعداد قرارداد را داشت؛ جعاله با بیش از 45 درصد مبلغ کل تسهیلات."
+    en: "Educational and organisational services had the most contracts; ju'ala facilities took more than 45% of the total facility amount."
+  memorisable: false
+  notes: "This extraction turns many chart titles into false headings; both gold units are the chart-summary sentences, which are complete on their own."
+  evidence:
+    - fact: "educational and organisational services had the most VC contracts"
+      fa: ["خدمات آموزشی و سازمانی", "بیشترین سهم"]
+    - fact: "ju'ala was over 45% of the facility amount"
+      fa: ["جعاله", "45%"]
+
+- id: T-C-irvc-1402-01
+  corpus: C
+  type: lookup
+  answer_type: numeric
+  doc_scope: [C.irvc_vc-annual-report_1402]
+  question:
+    fa: "طبق گزارش سالانهٔ 1402 انجمن سرمایه‌گذاری خطرپذیر ایران، از غربال یک طرح تا واریز نخستین مبلغ به آن، کار اعضا در این سال به‌طور متوسط چند روز زمان می‌برد؟"
+    en: "According to the Iranian Venture Capital Association's 1402 annual report, from screening a venture to paying in the first money, how many days on average did the members' work take that year?"
+  answer:
+    fa: "51 روز (در سال‌های 1400 و 1401: 80 روز)."
+    en: "51 days (80 days in 1400 and 1401)."
+  answer_value: 51
+  answer_unit: days
+  memorisable: false
+  evidence:
+    - fact: "investment process takes 51 days on average in 1402"
+      fa: ["51 روز"]
+
+- id: T-C-irvc-1402-02
+  corpus: C
+  type: multi-section
+  answer_type: short
+  doc_scope: [C.irvc_vc-annual-report_1402]
+  question:
+    fa: "طبق پیوست تأمین مالی جمعی در گزارش سالانهٔ 1402 انجمن سرمایه‌گذاری خطرپذیر ایران، شمار سکوهای مجاز این نوع تأمین مالی بین 1399 و 1402 چگونه تغییر کرد و به‌طور متوسط چند نفر در هر طرح سرمایه گذاشتند (در آغاز و پایان این دوره)؟"
+    en: "According to the crowdfunding appendix of the Iranian Venture Capital Association's 1402 annual report, how did the number of licensed crowdfunding platforms change between 1399 and 1402, and how many people on average invested in each project at the start and at the end of that period?"
+  answer:
+    fa: "سکوهای دارای مجوز از 4 به 24 رسید؛ میانگین سرمایه‌گذاران هر طرح از 60 به 150 نفر افزایش یافت."
+    en: "Licensed platforms went from 4 to 24; the average number of investors per project rose from 60 to 150."
+  memorisable: false
+  evidence:
+    - fact: "licensed crowdfunding platforms 4 (1399) -> 24 (1402)"
+      fa: ["4 سکو", "24 سکو"]
+    - fact: "investors per project 60 (1399) -> 150 (1402)"
+      fa: ["60 نفر", "150 نفر"]
+
+- id: T-C-irvc-1402-03
+  corpus: C
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [C.irvc_vc-annual-report_1402]
+  question:
+    fa: "بر اساس گزارش سالانهٔ 1402 انجمن سرمایه‌گذاری خطرپذیر ایران، اعضا از خروج‌های خود در سال 1402 به‌طور میانگین چه نرخ بازدهی (IRR) کسب کردند؟"
+    en: "According to the Iranian Venture Capital Association's 1402 annual report, what average rate of return (IRR) did members earn on their exits in 1402?"
+  answer:
+    fa: "گزارش نرخ بازده خروج‌ها را اعلام نمی‌کند؛ فقط نمونه‌هایی از خروج‌ها و روش خروج (مانند فروش به شرکت دیگر) را معرفی می‌کند."
+    en: "The report does not give a return on exits; it only presents example exits and their exit route (such as sale to another company)."
+  memorisable: false
+  notes: "Silent absence. The 1402 report introduces members' exits for the first time (company, business, exit route) with no returns or multiples. Searches: بازده, irr, سود+خروج, برابر+خروج."
+  absent:
+    fa: [["بازده"], ["irr"], ["سود", "خروج"], ["برابر", "خروج"]]
+  # read and confirmed: the definition of direct venture investment ("with the aim of profit and exit"), no return figure
+  absent_reviewed: ["p41_b6"]
+
+- id: T-C-irvc-1400-1402-01
+  corpus: C
+  type: cross-year
+  answer_type: short
+  doc_scope: [C.irvc_vc-annual-report_1400, C.irvc_vc-annual-report_1402]
+  question:
+    fa: "بنا بر گزارش‌های سالانهٔ 1400 و 1402 انجمن سرمایه‌گذاری خطرپذیر ایران، اعضای انجمن در هر کدام از این دو سال روی هم چه ارزشی ضمانت‌نامه به شرکت‌ها دادند؟"
+    en: "According to the Iranian Venture Capital Association's 1400 and 1402 annual reports, what combined value of guarantees did the association's members give to companies in each of those two years?"
+  answer:
+    fa: "1400: 3,610 میلیارد تومان؛ 1402: بیش از 20 هزار میلیارد تومان (رشد بیش از 2.6 برابری نسبت به 1401)."
+    en: "1400: 3,610 billion tomans; 1402: more than 20 thousand billion tomans (over 2.6 times the 1401 amount)."
+  memorisable: false
+  evidence:
+    - fact: "1400: guarantees of 3,610 billion tomans"
+      doc: C.irvc_vc-annual-report_1400
+      fa: ["3,610", "ضمانت"]
+    - fact: "1402: guarantees of more than 20 thousand billion tomans"
+      doc: C.irvc_vc-annual-report_1402
+      fa: ["20 هزار میلیارد تومان", "ضمانت"]
+
+- id: T-C-irvc-1400-1402-02
+  corpus: C
+  type: cross-year
+  answer_type: short
+  doc_scope: [C.irvc_vc-annual-report_1400, C.irvc_vc-annual-report_1402]
+  question:
+    fa: "بر اساس گزارش‌های سالانهٔ 1400 و 1402 انجمن سرمایه‌گذاری خطرپذیر ایران، بخش خصوصی در هر یک از این دو سال مالک چند درصد از سرمایهٔ ثبت‌شدهٔ آن دسته از صندوق‌های پژوهش و فناوری بود که به انجمن پیوسته‌اند؟"
+    en: "According to the Iranian Venture Capital Association's 1400 and 1402 annual reports, what percentage of the registered capital of the association's member research and technology funds did the private sector own in each of those years?"
+  answer:
+    fa: "1400: 59 درصد؛ 1402: 71 درصد."
+    en: "1400: 59%; 1402: 71%."
+  memorisable: false
+  evidence:
+    - fact: "1400: 59% of R&D funds' registered capital is private"
+      doc: C.irvc_vc-annual-report_1400
+      fa: ["59%", "صندوق", "خصوصی"]
+    - fact: "1402: 71% of R&D funds' registered capital is private"
+      doc: C.irvc_vc-annual-report_1402
+      fa: ["71%", "صندوق", "خصوصی"]
+
+- id: T-C-irvc-1400-1402-03
+  corpus: C
+  type: cross-year
+  answer_type: short
+  doc_scope: [C.irvc_vc-annual-report_1400, C.irvc_vc-annual-report_1402]
+  question:
+    fa: "طبق گزارش‌های سالانهٔ 1400 و 1402 انجمن سرمایه‌گذاری خطرپذیر ایران، هر عضو انجمن به‌طور میانگین چند کارمند داشت و چه درصدی از کارکنان اعضا در واحد سرمایه‌گذاری کار می‌کردند؟"
+    en: "According to the Iranian Venture Capital Association's 1400 and 1402 annual reports, how many employees did each member have on average, and what percentage of members' staff worked in the investment unit?"
+  answer:
+    fa: "1400: میانگین 14 نفر و 29 درصد در واحد سرمایه‌گذاری؛ 1402: همچنان 14 نفر و 27 درصد در واحد سرمایه‌گذاری."
+    en: "1400: 14 employees on average, 29% in the investment unit; 1402: still 14 employees, 27% in the investment unit."
+  memorisable: false
+  notes: "The 1400 figures come from infographic fact units whose text is self-explanatory (the chart titles repeat them as false headings)."
+  evidence:
+    - fact: "1400: 14 employees per member on average"
+      doc: C.irvc_vc-annual-report_1400
+      fa: ["14 نفر", "کارکنان"]
+    - fact: "1400: 29% of staff in the investment unit"
+      doc: C.irvc_vc-annual-report_1400
+      fa: ["29%", "واحد سرمایه"]
+    - fact: "1402: 14 employees per member, 27% in the investment unit"
+      doc: C.irvc_vc-annual-report_1402
+      fa: ["14", "27%", "واحد سرمایه"]

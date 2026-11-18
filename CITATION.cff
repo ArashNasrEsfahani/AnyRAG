@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code or benchmark, please cite the paper below."
+title: "AnyRAG: Choose the best RAG for your project"
+authors:
+  - family-names: "Nasr Esfahani"
+    given-names: "Arash"
+    email: "arash.nasr@ut.ac.ir"
+license: MIT
+repository-code: "https://github.com/ArashNasrEsfahani/AnyRAG"
+date-released: 2026-10-06
+preferred-citation:
+  type: article
+  title: "What Reaches the Reader: A Comparison of Retrieval-Augmented Generation Setups in Persian and English"
+  authors:
+    - family-names: "Nasr Esfahani"
+      given-names: "Arash"
+      email: "arash.nasr@ut.ac.ir"
+  year: 2026
+  journal: "arXiv preprint"
+  identifiers:
+    - type: other
+      value: "arXiv:XXXX.XXXXX"
+      description: "arXiv identifier (placeholder until submission)"

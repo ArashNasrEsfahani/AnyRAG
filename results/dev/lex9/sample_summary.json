@@ -1,0 +1,56 @@
+{
+ "BOOK-en": {
+  "docs": 11,
+  "val_docs": 2,
+  "questions": 23472,
+  "dropped_mismatch": 0,
+  "sampled": 3000,
+  "val": 546,
+  "loc_found": 2914
+ },
+ "BOOK-fa": {
+  "docs": 9,
+  "val_docs": 2,
+  "questions": 20553,
+  "dropped_mismatch": 0,
+  "sampled": 3000,
+  "val": 716,
+  "loc_found": 2969
+ },
+ "LAW-en": {
+  "docs": 10,
+  "val_docs": 2,
+  "questions": 13367,
+  "dropped_mismatch": 0,
+  "sampled": 3000,
+  "val": 468,
+  "loc_found": 2953
+ },
+ "LAW-fa": {
+  "docs": 13,
+  "val_docs": 3,
+  "questions": 4220,
+  "dropped_mismatch": 0,
+  "sampled": 3000,
+  "val": 793,
+  "loc_found": 2952
+ },
+ "RPT-en": {
+  "docs": 15,
+  "val_docs": 3,
+  "questions": 62748,
+  "dropped_mismatch": 0,
+  "sampled": 3000,
+  "val": 600,
+  "loc_found": 2965
+ },
+ "RPT-fa": {
+  "docs": 97,
+  "val_docs": 19,
+  "questions": 16946,
+  "dropped_mismatch": 0,
+  "sampled": 3000,
+  "val": 601,
+  "loc_found": 2953
+ }
+}

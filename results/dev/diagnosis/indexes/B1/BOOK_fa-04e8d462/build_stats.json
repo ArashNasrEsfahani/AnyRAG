@@ -1,0 +1,35 @@
+{
+ "approach": "B1",
+ "corpus_set": "BOOK_fa",
+ "fingerprint": "04e8d4627393221cec5a2cde2cfa1f104ad650c0",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T01:58:47",
+   "ok": true,
+   "build_ms": 0.0,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 0,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T01:58:47",
+ "size_bytes": 0
+}

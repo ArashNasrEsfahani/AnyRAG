@@ -1,0 +1,28 @@
+% src: work/datasets_v2/test_run/TEST_RESULTS.md sec. 2 and 4 (machine, tokens, latency);
+%      work/datasets_v2/test_run/TEST_RESULTS_HUMAN_SYM.md sec. 1 (SYMMETRIC human adjudication, /90: 71/76/76/78;
+%      supersedes the asymmetric 68/73/76/72). Ranges a-b = needs_adjudication bounds.
+%      fa/en token split: paper/analysis/revision_stats.md (tokens, total|fa, total|en).
+% R4: cost columns (tok/q, x HYBRID, p50, p95) moved unchanged to tables/cost.tex.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llcc|ccccc@{}}
+\toprule
+ & & \multicolumn{2}{c|}{Correct /90} & \multicolumn{5}{c}{Machine judge, by subgroup} \\
+Budget & Pipeline & Machine & Sym.\ merge & fa/45 & en/45 & T1/30 & T2/30 & T3/30 \\
+\midrule
+\multirow{4}{*}{6,000} & \hybrid & 62--63 & 71 & 35--36 & 27 & 28 & 20--21 & 14 \\
+ & \hr & 69--71 & 76 & 36 & 33--35 & 28 & 23--24 & 18--19 \\
+ & \lexb & 68--69 & 76 & 36--37 & 32 & 29 & 23--24 & 16 \\
+ & \setr & 63 & 78 & 33 & 30 & 27 & 18 & 18 \\
+\midrule
+\multirow{4}{*}{15,500} & \hybrid & 68 & -- & 35 & 33 & 28 & 22 & 18 \\
+ & \hr & 69--70 & -- & 38 & 31--32 & 28 & 21--22 & 20 \\
+ & \lexb & 67 & -- & 36 & 31 & 28 & 20 & 19 \\
+ & \setr & 66--67 & -- & 35 & 31--32 & 28 & 22--23 & 16 \\
+\bottomrule
+\end{tabular}
+\caption{Test accuracy with the primary reader (GLM-5.3-flash) on the answerable questions. \emph{Machine}: pinned strict judge, $a$--$b$ are bounds over unresolved judge cells. \emph{Sym.\ merge}: symmetric merge (Section~\ref{sec:protocol}), in which the author's verdicts replace the judge's on the 30 questions where the pipelines differed; this column was added after the test; -- = no human review. Subgroup columns are machine scores. Every pipeline abstained correctly on all unanswerable questions.}
+\label{tab:main}
+\end{table*}

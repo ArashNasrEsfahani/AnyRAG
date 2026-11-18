@@ -1,0 +1,52 @@
+% src: figures/data/lost_arms.dat, written by paper/analysis/figure_data_posthoc.py from work/posthoc_2026-11/S7_analysis/reach.json
+%      (S7 task 1: exact reader messages parsed; a gold item "reached" the reader if >= 90% of its quote occurs in the pack
+%      items of its own document; complete = every item of one annotated bundle, partial = some, none = no item).
+\newcommand{\lostx}{0}
+\newcommand{\lostu}{0.087}% cm per question (fits the 390pt single-column text width)
+\newcommand{\lostsw}[1]{\tikz[baseline=-0.6ex]\fill[#1] (0,-0.09) rectangle (0.3,0.09);}% key swatch
+\newcommand{\lostseg}[4]{% value, fill, text colour, y
+  \pgfmathsetmacro{\lostxe}{\lostx+#1}%
+  \ifnum#1>0
+    \fill[#2] ({\lostx*\lostu},{#4-0.21}) rectangle ({\lostxe*\lostu},{#4+0.21});
+    \ifnum#1>2 \node[font=\footnotesize, text=#3, inner sep=0pt] at ({(\lostx+\lostxe)/2*\lostu},{#4}) {#1};\fi
+  \fi
+  \xdef\lostx{\lostxe}}
+\begin{figure*}[tp]
+\centering
+\pgfplotstableread{figures/data/lost_arms.dat}\losttab
+\begin{tikzpicture}
+\foreach \r in {0,...,8}{
+  \pgfplotstablegetelem{\r}{lab}\of\losttab \edef\vlab{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{hc}\of\losttab \edef\vhc{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{hp}\of\losttab \edef\vhp{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{hn}\of\losttab \edef\vhn{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{un}\of\losttab \edef\vun{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{mn}\of\losttab \edef\vmn{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{mp}\of\losttab \edef\vmp{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{mc}\of\losttab \edef\vmc{\pgfplotsretval}
+  \pgfplotstablegetelem{\r}{rc}\of\losttab \edef\vrc{\pgfplotsretval}
+  \pgfmathsetmacro{\yy}{-0.58*\r}
+  \xdef\lostx{0}
+  \node[font=\footnotesize, text=cInk, anchor=east] at (-0.15,\yy) {\vlab};
+  \lostseg{\vhc}{cHit}{cInk}{\yy}
+  \lostseg{\vhp}{cHit!60!white}{cInk}{\yy}
+  \lostseg{\vhn}{cHit!28!white}{cInk}{\yy}
+  \lostseg{\vun}{black!35}{white}{\yy}
+  \lostseg{\vmn}{cMiss!30!white}{cInk}{\yy}
+  \lostseg{\vmp}{cMiss!65!white}{cInk}{\yy}
+  \lostseg{\vmc}{cMiss}{white}{\yy}
+  \node[font=\footnotesize\bfseries, text=cInk, anchor=west] at ({92*\lostu},\yy) {\vrc};
+}
+\draw[cAxis, line width=0.5pt] (0,-5.15) -- ({90*\lostu},-5.15);
+\foreach \t in {0,20,40,60,80}{\draw[cAxis, line width=0.5pt] ({\t*\lostu},-5.15) -- ({\t*\lostu},-5.25) node[below, font=\footnotesize, text=cInk, inner sep=2pt] {\t};}
+\node[font=\footnotesize, text=cInk, anchor=north] at ({45*\lostu},-5.65) {answerable questions (of 90)};
+\node[font=\footnotesize\bfseries, text=cInk, anchor=south west] at ({92*\lostu-0.55},0.38) {complete};
+\node[font=\footnotesize, text=cInk, anchor=south west] at ({92*\lostu-0.55},0.16) {bundle};
+% key
+\node[font=\footnotesize, text=cInk, anchor=south, inner sep=0pt] at ({45*\lostu-1.2},0.95) {%
+  \textbf{Correct:}\hspace{0.4em}\lostsw{cHit}\,all\hspace{0.6em}\lostsw{cHit!60!white}\,part\hspace{0.6em}\lostsw{cHit!28!white}\,none\hspace{0.6em}\lostsw{black!35}\,unresolved%
+  \hspace{1.6em}\textbf{Wrong:}\hspace{0.4em}\lostsw{cMiss!30!white}\,none\hspace{0.6em}\lostsw{cMiss!65!white}\,part\hspace{0.6em}\lostsw{cMiss}\,all};
+\end{tikzpicture}
+\caption{Post hoc. Evidence in the pack for correct and wrong answers. Bars split the questions of each variant by judged correct (blue) or wrong (orange) and by the gold evidence in the pack of the reader, and the number at right counts complete bundles. Packs hold 6,000 characters, except for the two rows marked 15,500 and the two search agents, which may show up to 15,500.}
+\label{fig:lost}
+\end{figure*}

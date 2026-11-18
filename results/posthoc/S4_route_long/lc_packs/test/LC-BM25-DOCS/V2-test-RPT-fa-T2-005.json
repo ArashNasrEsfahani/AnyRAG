@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-005",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 78896 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "910a78c6d7b2845b0f5c2e4b87e46944a56332a4d77d5e369fa327fd392548bb",
+ "evidence_chars": 78760,
+ "prompt_chars": 79612,
+ "est_prompt_tokens": 31490,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.snapp_annual-report_1402.fa",
+    "score": 8.138
+   },
+   {
+    "doc": "C.snapp_annual-report_1404.fa",
+    "score": 6.721
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 6.711
+   },
+   {
+    "doc": "C.achareh_eight-year-report_1396-1403.fa",
+    "score": 6.276
+   },
+   {
+    "doc": "C.snapp_annual-report_1400.fa",
+    "score": 6.166
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1403.fa",
+    "score": 5.868
+   },
+   {
+    "doc": "C.snapp_annual-report_1399.fa",
+    "score": 5.825
+   },
+   {
+    "doc": "C.snapp_annual-report_1401.fa",
+    "score": 5.21
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.snapp_annual-report_1402.fa",
+    "doc_chars": 78721,
+    "shown": 78721,
+    "whole": true,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 7,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

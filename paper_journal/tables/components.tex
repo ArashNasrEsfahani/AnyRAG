@@ -1,0 +1,42 @@
+% src: correct /90, fa/en, complete-bundle reach (S7 gold_reach on the reader messages) and nets (w/l = wins/losses of the arm over resolved pairs):
+%      S10_retrieval/RESULTS.md sec. 2.1-2.4 (DENSE, BM25 at 6,000 and 15,500; HYBRID_6000 62..63, fa 35..36, en 27, reach 57; HR_6000 69..71, fa 36, en 33..35, reach 63; HYBRID_15500 68, fa 35, en 33, reach 65),
+%      S11_rewrite/RESULTS.md sec. 2 (HYDE 61, MQ 58..59, reach 51 and 54), S12_chunks/RESULTS.md sec. 2 (C500, C2000 for HYBRID and HR; reach 55, 46, 59, 51),
+%      S13_embed/RESULTS.md sec. 2 (E5-HYBRID 58, E5-DENSE 54..55, reach 53 and 46; E5-DENSE vs S10 DENSE_6000 +1..+2, 10/8). HR vs HYBRID +6..+9 (10/4): S12 sec. 2 and revision_stats.
+\begin{table*}[tp]
+\caption{Post hoc. Retrieval components varied one at a time. Scored by the first judge only}
+\label{tab:components}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrrrr@{}}
+\toprule
+ & Correct & Persian & English & Complete bundle & Net vs.\ reference \\
+Variant & of 90 & of 45 & of 45 & in pack, of 90 & (w/l) \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{References, 6,000 characters}} \\
+\hybrid{} (BM25 and bge-m3, 1,000-character chunks) & 62--63 & 35--36 & 27 & 57 & -- \\
+\hr{} (\hybrid{} and cross-encoder) & 69--71 & 36 & 33--35 & 63 & +6..+9 (10/4) \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Retrieval channel (reference: \hybrid{} at the same budget)}} \\
+Dense only, 6,000 characters & 53 & 27 & 26 & 47 & $-$10..$-$9 (7/16) \\
+BM25 only, 6,000 characters & 48 & 24 & 24 & 45 & $-$15..$-$14 (2/16) \\
+\hybrid{}, 15,500 characters & 68 & 35 & 33 & 65 & -- \\
+Dense only, 15,500 characters & 63 & 34 & 29 & 62 & $-$5 (4/9) \\
+BM25 only, 15,500 characters & 61 & 33 & 28 & 59 & $-$7 (1/8) \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Query rewriting (reference: \hybrid{}, 6,000 characters)}} \\
+HyDE passage & 61 & 31 & 30 & 51 & $-$2..$-$1 (8/9) \\
+Multi-query & 58--59 & 29--30 & 29 & 54 & $-$5..$-$3 (6/9) \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Chunk size (reference: the same pipeline with 1,000-character chunks)}} \\
+\hybrid{}, 500-character chunks & 58--59 & 33 & 25--26 & 55 & $-$5..$-$3 (3/7) \\
+\hybrid{}, 2,000-character chunks & 49 & 29 & 20 & 46 & $-$14..$-$13 (3/16) \\
+\hr{}, 500-character chunks & 62 & 34 & 28 & 59 & $-$9..$-$7 (4/11) \\
+\hr{}, 2,000-character chunks & 51 & 27 & 24 & 51 & $-$20..$-$18 (2/20) \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Embedding model (multilingual-e5-large in place of bge-m3)}} \\
+\hybrid{} with e5 (reference: \hybrid{}) & 58 & 31 & 27 & 53 & $-$5..$-$4 (2/7) \\
+e5 dense only (reference: bge-m3 dense only) & 54--55 & 29 & 25--26 & 46 & +1..+2 (10/8) \\
+\bottomrule
+\end{tabularx}
+\end{table*}

@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-en-T2-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 99849 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "b3762ad686b0e16d6a660eade2c696348c1848e719545a80e81b1891b9f60ab0",
+ "evidence_chars": 99640,
+ "prompt_chars": 100557,
+ "est_prompt_tokens": 22025,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "D.zalando_annual-report_2024.en",
+    "doc_chars": 994143,
+    "shown": 99590,
+    "ranges": 2,
+    "whole": false
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 1
+ }
+}

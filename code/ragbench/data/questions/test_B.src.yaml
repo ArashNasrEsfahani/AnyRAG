@@ -1,0 +1,1218 @@
+# Test question set, shard B: the five human-written Persian/English report pairs (document-aligned only).
+#
+# Build (links quotes to unit ids per edition):
+#   .venv/Scripts/python.exe -m ragbench.tools.questions build --src ragbench/data/questions/test_B.src.yaml --out ragbench/data/questions/test_B.jsonl
+#   .venv/Scripts/python.exe -m ragbench.tools.questions validate --path ragbench/data/questions/test_B.jsonl --strict
+# Written by reading the B document unit text (ragbench.corpus); every fact was located separately in the
+# Persian and the English edition, and only facts that agree in both editions are used.
+# Composition per pair: 5 numeric lookup, 2 locate, 2 multi-section, 2 cross-year (TechRasa: 4 multi-section), 1 unanswerable.
+# No pilot question or pilot fact is reused (pilot B facts: 1401 Digikala Service 81.3%, 1401 4% late orders,
+# 1401 household expenditure, ISPA/Bahman 1401, 1401 20,802 calls and 78.3% resolved, 1401 Explore 4,200/226,
+# employees 1400/1401, sellers 1398/1401).
+
+questions:
+
+# ======================================================================================================
+# B.digikala-h1-1398 (half-year report, first half of 1398)
+# ======================================================================================================
+
+- id: T-B-digikala-h1-1398-01
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "According to Digikala's H1 1398 report, how much did a typical active marketplace vendor sell per month during that half-year?"
+    fa: "در گزارش نیمه نخست سال 1398 دیجی‌کالا، میانگین فروش ماهانه یک فروشنده فعال در بازارگاه دیجی‌کالا چقدر بوده است؟"
+  answer:
+    en: "23 million Tomans per month."
+    fa: "23 میلیون تومان در ماه."
+  answer_value: 23
+  answer_unit: million tomans
+  memorisable: false
+  evidence:
+    - fact: "each active marketplace seller sold 23 million Tomans a month on average in H1 1398"
+      en: ["23 million tomans", "seller"]
+      fa: ["23 میلیون تومان", "فروشنده"]
+
+- id: T-B-digikala-h1-1398-02
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "According to Digikala's H1 1398 report, roughly how often is the Digikala mobile app installed each month, and what share of its users are on Android?"
+    fa: "بر اساس گزارش نیمه نخست 1398 دیجی‌کالا، اپلیکیشن دیجی‌کالا هر ماه حدوداً چند بار نصب می‌شود و سهم کاربران اندرویدی آن چقدر است؟"
+  answer:
+    en: "About 400,000 downloads a month on average; 88% of app users are on Android (12% on iOS)."
+    fa: "به‌طور متوسط ماهانه 400 هزار بار دانلود؛ 88% کاربران اپلیکیشن از اندروید استفاده می‌کنند (12% از iOS)."
+  answer_value: 400000
+  answer_unit: downloads per month
+  answer_values:
+    en: {value: 400000, unit: downloads per month}
+    fa: {value: 400, unit: "هزار بار در ماه"}
+  memorisable: false
+  evidence:
+    - fact: "the app is downloaded 400,000 times a month on average; 88% Android, 12% iOS"
+      en: ["400,000", "android"]
+      fa: ["400 هزار", "اندروید"]
+
+- id: T-B-digikala-h1-1398-03
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "In Digikala's H1 1398 report, how many businesses applied to become marketplace sellers over the preceding six months, and what share of them were accepted?"
+    fa: "در گزارش نیمه نخست 1398 دیجی‌کالا، در شش ماه منتهی به گزارش چند کسب‌وکار متقاضی فروش در بازارگاه دیجی‌کالا شدند و چه سهمی از آنها پذیرفته شد؟"
+  answer:
+    en: "18,482 businesses applied; 67% of them met the requirements and were added as sellers."
+    fa: "18,482 کسب‌وکار درخواست دادند که 67% آنها شرایط فروشندگی را احراز کردند و به فروشندگان اضافه شدند."
+  answer_value: 18482
+  answer_unit: businesses
+  memorisable: false
+  evidence:
+    - fact: "18,482 businesses applied in six months; 67% qualified"
+      en: ["18,482", "67%"]
+      fa: ["18,482", "67%"]
+
+- id: T-B-digikala-h1-1398-04
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "According to Digikala's H1 1398 report, how much did Digikala pay out in gift credit each month, on average, to customers affected by marketplace sellers' failures?"
+    fa: "بر اساس گزارش نیمه نخست 1398 دیجی‌کالا، دیجی‌کالا به‌طور میانگین هر ماه چه مبلغ اعتبار هدیه به مشتریانی داد که از خطای فروشندگان بازارگاه آسیب دیده بودند؟"
+  answer:
+    en: "200,000,000 Tomans (200 million Tomans) a month on average, in gift cards."
+    fa: "به‌طور متوسط ماهانه 200 میلیون تومان کد هدیه."
+  answer_value: 200
+  answer_unit: million tomans
+  answer_values:
+    en: {value: 200000000, unit: Tomans}
+    fa: {value: 200, unit: "میلیون تومان"}
+  memorisable: false
+  notes: "The English edition writes the amount in full (200,000,000 Tomans), the Persian edition as 200 میلیون تومان. Both say the errors covered delay, cancellation and counterfeits, in 1.1% of orders."
+  evidence:
+    - fact: "a monthly average of 200 million Tomans of gift cards paid to affected customers in H1 1398"
+      en: ["200,000,000", "gift card"]
+      fa: ["200 میلیون تومان", "کد هدیه"]
+
+- id: T-B-digikala-h1-1398-05
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "In Digikala's H1 1398 report, what share of the comments and tweets that Digikala's social media team answers each month come from Instagram?"
+    fa: "در گزارش نیمه نخست 1398 دیجی‌کالا، چه سهمی از نظرها و توییت‌هایی که تیم شبکه‌های اجتماعی دیجی‌کالا هر ماه پاسخ می‌دهد از اینستاگرام می‌آید؟"
+  answer:
+    en: "56% (tweets are 43% and LinkedIn 1%), out of roughly 2,500 to 3,300 answered a month."
+    fa: "56% (توییت‌ها 43% و لینکدین 1%)، از حدود 2500 تا 3300 مورد در ماه."
+  answer_value: 56
+  answer_unit: "%"
+  memorisable: false
+  notes: "The 1398 annual report gives a different split whose Instagram/Twitter labels are swapped between its editions; that report is not used for this fact."
+  evidence:
+    - fact: "56% of the comments and tweets the SCET answers are Instagram comments"
+      en: ["56%", "instagram"]
+      fa: ["56%", "اینستاگرام"]
+
+- id: T-B-digikala-h1-1398-06
+  corpus: B
+  type: locate
+  answer_type: span
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "How does Digikala's H1 1398 report decide which customers count as loyal?"
+    fa: "در گزارش نیمه نخست 1398 دیجی‌کالا، چه کسانی جزو مشتریان وفادار به حساب آمده‌اند؟"
+  answer:
+    en: "Customers who made at least two purchases in the first half of 1398 (March-September 2019)."
+    fa: "مشتریانی که در شش ماه اول سال 1398 دست‌کم دو بار خرید کرده‌اند."
+  memorisable: false
+  evidence:
+    - fact: "loyal customers have at least two purchases in H1 1398"
+      en: ["loyal customers", "two purchases"]
+      fa: ["وفادار", "دو بار خرید"]
+
+- id: T-B-digikala-h1-1398-07
+  corpus: B
+  type: locate
+  answer_type: span
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "Under the seller rules in Digikala's H1 1398 report, what happens to a marketplace seller caught selling fakes the first, second and third time?"
+    fa: "طبق قواعد نظارت بر فروشندگان در گزارش نیمه نخست 1398 دیجی‌کالا، با فروشنده‌ای که یک، دو یا سه بار به فروش کالای جعلی متهم و شناسایی شود چه برخوردی می‌شود؟"
+  answer:
+    en: "First offence: a fine of up to 10 times the product's price; second: the fine plus a ban from the product category; third: the partnership with Digikala is ended. Digikala compensates the affected customers."
+    fa: "بار اول: جریمه تا 10 برابر ارزش فروش کالا؛ بار دوم: علاوه بر جریمه، سلب دسترسی به گروه کالایی؛ بار سوم: قطع همکاری با فروشنده. جبران خسارت مشتریان با دیجی‌کالاست."
+  memorisable: false
+  evidence:
+    - fact: "counterfeit penalties: fine up to 10x, category ban, termination on the third offence"
+      en: ["10 times", "third time"]
+      fa: ["10 برابر", "بار سوم"]
+
+- id: T-B-digikala-h1-1398-08
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "According to Digikala's H1 1398 report, what share of customers answered the post-purchase recommendation survey in Shahrivar 1398, and what share of Digikala Express orders arrived on time that month?"
+    fa: "طبق گزارش شش‌ماهه اول 1398 دیجی‌کالا، در شهریور آن سال چه نسبتی از خریداران در سنجش NPS مشارکت داشتند، و چند درصد مرسوله‌های اکسپرس دیجی‌کالا در همان ماه بی‌تأخیر به دست گیرنده رسید؟"
+  answer:
+    en: "About 10% of customers took part in the NPS survey; 96% of Digikala Express orders (the method used for about 80% of orders) were delivered on time."
+    fa: "حدود 10% مشتریان در نظرسنجی NPS شرکت کردند؛ 96% سفارش‌های دیجی‌کالا اکسپرس (روشی که حدود 80% سفارش‌ها با آن ارسال می‌شود) به‌موقع تحویل شد."
+  memorisable: false
+  evidence:
+    - fact: "about 10% of customers took part in the Shahrivar 1398 NPS survey"
+      en: ["10%", "survey"]
+      fa: ["10%", "نظرسنجی"]
+    - fact: "96% of Digikala Express orders were on time in Shahrivar 1398"
+      en: ["96%", "digikala express"]
+      fa: ["96%", "اکسپرس"]
+
+- id: T-B-digikala-h1-1398-09
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "In Digikala's H1 1398 report, what share of the items sold in the half-year were Iranian products, and which of Apple, Samsung and Huawei had the largest sales-value share by then, with what share?"
+    fa: "در گزارش نیمه نخست 1398 دیجی‌کالا، چه سهمی از تعداد کالاهای فروخته‌شده در این شش ماه تولید ایران بود، و در آن زمان از میان اپل، سامسونگ و هوآوی کدام برند سهم ریالی بیشتری داشت و سهمش چقدر بود؟"
+  answer:
+    en: "68% of items sold were Iranian products; Huawei led with a 10.9% NMV share (in 1396 Apple had led with 11.1%)."
+    fa: "68% از فروش تعدادی متعلق به کالاهای ایرانی بود؛ هوآوی با سهم ریالی 10.9% (در متن: 10/9%) جلوتر بود (در سال 1396 اپل با 11.1% پیشتاز بود)."
+  memorisable: false
+  evidence:
+    - fact: "68% of items sold in the past six months were Iranian products"
+      en: ["68%", "iranian products"]
+      fa: ["68%", "کالاهای ایرانی"]
+    - fact: "Huawei, with a 10.9% share, led Apple and Samsung in H1 1398"
+      en: ["10.9%", "huawei"]
+      fa: ["10.9%", "هوآوی"]
+
+- id: T-B-digikala-h1-1398-10
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-h1-1398, B.digikala-1398]
+  question:
+    en: "According to Digikala's H1 1398 report, residents of how many Iranian villages had bought from Digikala so far, and per its 1398 annual report, to how many villages did Digikala send one or more orders over the whole year?"
+    fa: "بر اساس گزارش نیمه نخست 1398 دیجی‌کالا، تا آن زمان اهالی چند روستای کشور از این فروشگاه سفارش داده بودند، و طبق گزارش سالانه 1398، دیجی‌کالا در طول آن سال دست‌کم یک سفارش به چند روستا فرستاد؟"
+  answer:
+    en: "H1 1398 report: residents of 11,132 villages had ordered so far; 1398 annual report: 12,230 villages received at least one order in 1398."
+    fa: "گزارش نیمه نخست 1398: ساکنان 11,132 روستا تاکنون خرید کرده‌اند؛ گزارش سالانه 1398: به 12,230 روستا در سال 1398 حداقل یک سفارش ارسال شد."
+  memorisable: false
+  notes: "The half-year report counts villages whose residents have ordered so far (cumulative); the annual report counts villages that received at least one order in 1398. Verifier: the question now names each report's own definition instead of asking for 'the same figure'. The half-year figure also sits in a loose map label, which is not gold."
+  evidence:
+    - fact: "H1 1398: residents of 11,132 villages have ordered"
+      doc: B.digikala-h1-1398
+      en: ["11,132", "orders"]
+      fa: ["11,132", "خرید"]
+    - fact: "1398: 12,230 villages"
+      doc: B.digikala-1398
+      en: ["12,230", "villages"]
+      fa: ["12,230", "روستا"]
+
+- id: T-B-digikala-h1-1398-11
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-h1-1398, B.digikala-1398]
+  question:
+    en: "What share of the items offered on Digikala's marketplace had been reported as counterfeit according to its H1 1398 report, and what share according to its 1398 annual report?"
+    fa: "بر اساس گزارش نیمه نخست 1398 دیجی‌کالا چه سهمی از کالاهای عرضه‌شده در بازارگاه تقلبی گزارش شده بود، و این سهم در گزارش سالانه 1398 چقدر است؟"
+  answer:
+    en: "H1 1398 report: 0.04% (4 items in 10,000) since 1397; 1398 annual report: 0.016% (16 items in 100,000)."
+    fa: "گزارش نیمه نخست 1398: 0.04% (4 کالا از 10 هزار) از ابتدای 1397؛ گزارش سالانه 1398: 0.016% (16 کالا از 100 هزار)."
+  memorisable: false
+  evidence:
+    - fact: "H1 1398: 0.04% of offerings counterfeit"
+      doc: B.digikala-h1-1398
+      en: ["0.04%"]
+      fa: ["0.04%"]
+    - fact: "1398: 0.016% of offerings counterfeit"
+      doc: B.digikala-1398
+      en: ["0.016%", "counterfeit"]
+      fa: ["0.016%", "تقلبی"]
+
+- id: T-B-digikala-h1-1398-12
+  corpus: B
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [B.digikala-h1-1398]
+  question:
+    en: "According to Digikala's H1 1398 report, how many couriers did Digikala have for delivering orders?"
+    fa: "بر اساس گزارش نیمه نخست 1398 دیجی‌کالا، دیجی‌کالا برای تحویل سفارش‌ها چند پیک یا مامور ارسال در اختیار داشت؟"
+  answer:
+    en: "The report does not state how many couriers Digikala had."
+    fa: "گزارش تعداد پیک‌ها یا ماموران ارسال دیجی‌کالا را اعلام نمی‌کند."
+  memorisable: false
+  notes: "Silent absence with distractors: the report gives 3,400 direct jobs, 408 call-center agents and courier satisfaction (85%), but no courier headcount. Searched en: courier, delivery agent, fleet, driver, job; fa: پیک, ماموران ارسال, ناوگان, راننده, شغل. The only hits are the OTD method paragraph, the courier-satisfaction label and the 3,400 jobs fact."
+  absent:
+    en: [["number of", "couriers"], ["couriers", "employ"], ["delivery agents"]]
+    fa: [["تعداد", "ماموران ارسال"], ["تعداد", "پیک"], ["ناوگان"]]
+
+# ======================================================================================================
+# B.digikala-1398 (annual report 1398)
+# ======================================================================================================
+
+- id: T-B-digikala-1398-01
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "In Digikala's 1398 annual report, how many customer emails did its customer service center answer in a typical week?"
+    fa: "در گزارش سالانه 1398 دیجی‌کالا، مرکز خدمات مشتریان دیجی‌کالا در یک هفته به‌طور معمول به چند ایمیل پاسخ داده است؟"
+  answer:
+    en: "9,286 emails a week on average."
+    fa: "به‌طور متوسط 9,286 ایمیل در هفته."
+  answer_value: 9286
+  answer_unit: emails per week
+  memorisable: false
+  evidence:
+    - fact: "9,286 average weekly replies to emails"
+      en: ["9,286", "emails"]
+      fa: ["9,286", "ایمیل"]
+
+- id: T-B-digikala-1398-02
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "According to Digikala's 1398 annual report, how many questions about products did users post in 1398, and how many answers came back?"
+    fa: "بر اساس گزارش سالانه 1398 دیجی‌کالا، کاربران در سال 1398 درباره کالاها حدوداً چند پرسش مطرح کردند و چند پاسخ گرفتند؟"
+  answer:
+    en: "About 285,000 questions, which received 115,000 answers."
+    fa: "حدود 285 هزار پرسش که 115 هزار پاسخ دریافت کرد."
+  answer_value: 285000
+  answer_unit: questions
+  answer_values:
+    en: {value: 285000, unit: questions}
+    fa: {value: 285, unit: "هزار پرسش"}
+  memorisable: false
+  evidence:
+    - fact: "about 285,000 questions asked and 115,000 answers received in 1398"
+      en: ["285,000", "115,000"]
+      fa: ["285 هزار", "115 هزار"]
+
+- id: T-B-digikala-1398-03
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "How much distance did Digikala's delivery vehicles cover in 1398, according to its annual report?"
+    fa: "طبق گزارش سالانه 1398 دیجی‌کالا، وسایل نقلیه‌ای که سفارش‌ها را می‌رساندند در آن سال روی هم چند کیلومتر راه رفتند؟"
+  answer:
+    en: "33 million kilometres."
+    fa: "33 میلیون کیلومتر."
+  answer_value: 33
+  answer_unit: million km
+  memorisable: false
+  evidence:
+    - fact: "Digikala's fleet travelled 33 million km in 1398"
+      en: [["33 million", "fleet"], ["33 million km", "mileage"]]
+      fa: ["33 میلیون کیلومتر"]
+
+- id: T-B-digikala-1398-04
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "According to Digikala's 1398 annual report, how many people worked for Digikala full-time as 1398 closed, and in how many of Iran's provinces were they based?"
+    fa: "طبق گزارش سالانه 1398 دیجی‌کالا، شمار نیروهای تمام‌وقت دیجی‌کالا در پایان آن سال چند نفر بود و آنها در چند استان کار می‌کردند؟"
+  answer:
+    en: "4,073 full-time personnel across 26 provinces (working in 35 Digikala centres)."
+    fa: "4073 نیروی تمام‌وقت در 26 استان (در 35 مرکز دیجی‌کالا)."
+  answer_value: 4073
+  answer_unit: employees
+  memorisable: false
+  notes: "Not a pilot fact: the pilot compares the 1400 and 1401 headcounts only. Verifier: the question no longer asks for the number of centres, because the same report also gives 31 centres (for processing, distribution, after-sales and seller collection; see 1398-09); the 35 centres where the staff work stay in the answer as detail."
+  evidence:
+    - fact: "4,073 full-time personnel in 26 provinces (35 centres) by the end of 1398"
+      en: ["4073", "provinces"]
+      fa: ["4073", "استان"]
+
+- id: T-B-digikala-1398-05
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "In Digikala's 1398 annual report, how many transactions can Digikala's payment technology handle at the same moment?"
+    fa: "در گزارش سالانه 1398 دیجی‌کالا، زیرساخت پرداخت دیجی‌کالا در هر لحظه توان رسیدگی به چند تراکنش را دارد؟"
+  answer:
+    en: "30,000 transactions at a time."
+    fa: "30 هزار تراکنش در لحظه."
+  answer_value: 30000
+  answer_unit: transactions at a time
+  answer_values:
+    en: {value: 30000, unit: transactions at a time}
+    fa: {value: 30, unit: "هزار تراکنش در لحظه"}
+  memorisable: false
+  evidence:
+    - fact: "fintech and payment algorithms enable processing 30,000 transactions at a time"
+      en: ["30,000", "transactions"]
+      fa: ["30 هزار", "تراکنش"]
+
+- id: T-B-digikala-1398-06
+  corpus: B
+  type: locate
+  answer_type: short
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "According to Digikala's 1398 annual report, in which provinces were Digikala customers most concentrated relative to population, and in which least?"
+    fa: "بر اساس گزارش سالانه 1398 دیجی‌کالا، شمار مشتریان دیجی‌کالا نسبت به جمعیت در کدام استان‌ها از همه بالاتر و در کدام استان‌ها از همه پایین‌تر بود؟"
+  answer:
+    en: "Highest in Tehran, Alborz and Yazd; lowest in Sistan and Baluchestan, Kurdistan and North Khorasan."
+    fa: "بیشترین: تهران، البرز و یزد؛ کمترین: سیستان و بلوچستان، کردستان و خراسان شمالی."
+  memorisable: false
+  evidence:
+    - fact: "customer density highest in Tehran, Alborz, Yazd; lowest in Sistan and Baluchestan, Kurdistan, North Khorasan"
+      en: ["yazd", "density"]
+      fa: ["یزد", "تراکم"]
+
+- id: T-B-digikala-1398-07
+  corpus: B
+  type: locate
+  answer_type: short
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "According to Digikala's 1398 annual report, which day of the year brought the most orders, and which sales campaign was running at the time?"
+    fa: "بر اساس گزارش سالانه 1398 دیجی‌کالا، پرسفارش‌ترین روز سال 1398 چه روزی بود و در آن زمان کدام کمپین فروش جریان داشت؟"
+  answer:
+    en: "29 November, during the 'This Friday you will need' festival; orders also jumped on 20 and 21 December with the Yalda festival."
+    fa: "هشتم آذر 1398، هم‌زمان با جشنواره «این جمعه لازمت میشه»؛ در 29 و 30 آذر نیز هم‌زمان با جشنواره یلدا سفارش‌ها جهش چشمگیری داشت."
+  memorisable: false
+  notes: "The English edition gives Gregorian dates (and misprints the year as 1998); the Persian edition gives 8 Azar and 29-30 Azar 1398, the same days (29 November, 20-21 December 2019)."
+  evidence:
+    - fact: "most orders of 1398 on 29 November / 8 Azar, with the 'This Friday you will need' festival"
+      en: ["november 29", "festival"]
+      fa: ["هشتم آذرماه", "جشنواره"]
+
+- id: T-B-digikala-1398-08
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "In Digikala's 1398 annual report, what was the largest number of items in one shopping cart during the year, and how much was the priciest single order worth?"
+    fa: "طبق گزارش سالانه 1398 دیجی‌کالا، بزرگ‌ترین سبد خرید آن سال از نظر تعداد چند قلم کالا در خود داشت و گران‌ترین سفارش تکی چه ارزشی داشت؟"
+  answer:
+    en: "1,604 items, all from the detergent category (dishwashing powder and tablets); the most expensive order was worth 244 million Tomans, for 177 electric shavers."
+    fa: "1604 قلم کالا از دسته مواد شوینده (پودر و قرص ظرفشویی)؛ گران‌ترین سفارش 244 میلیون تومان بود که شامل 177 ماشین اصلاح صورت می‌شد."
+  memorisable: false
+  evidence:
+    - fact: "one 1398 shopping cart held 1,604 detergent items"
+      en: ["1604", "detergents"]
+      fa: ["1604", "شوینده"]
+    - fact: "the most expensive 1398 order was 177 electric razors worth 244 million Tomans"
+      en: ["244 million", "177"]
+      fa: ["244 میلیون", "177"]
+
+- id: T-B-digikala-1398-09
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "According to Digikala's 1398 annual report, how many sites for handling goods, after-sales service and seller pickups did the company operate when 1398 closed, in how many provinces were new warehouses opened, and how many items a day could all its centres handle together?"
+    fa: "طبق گزارش سالانه 1398 دیجی‌کالا، این شرکت در پایان آن سال چند محل برای خدمات پس از فروش، جابه‌جایی کالا و تحویل‌گرفتن اجناس از فروشندگان داشت، در چند استان انبار تازه گشود، و همه مراکزش روی هم روزانه توان رسیدگی به چند کالا را داشتند؟"
+  answer:
+    en: "31 centres for processing, distribution, after-sales service and seller collection; new warehouses and centres in 9 provinces; a processing capacity of 600,000 items a day."
+    fa: "31 مرکز برای پردازش، توزیع، خدمات پس از فروش و جمع‌آوری کالای فروشندگان؛ انبارها و مراکز جدید در 9 استان؛ ظرفیت پردازش روزانه 600 هزار (600,000) کالا."
+  memorisable: false
+  notes: "Two traps in the same report: its 4,073 staff work in 35 centres (p16_b4, see 1398-04), so the question names the 31-centre definition; and the Danesh fulfilment centre alone processes 500,000 items a day (p6_b5, p103_b4), so the question asks for all centres together (600,000). Verifier: the centres and provinces evidence was split so the other units stating 31 centres (p6_b5, p103_b4) and 9 provinces (p112_b4) are gold too."
+  evidence:
+    - fact: "31 centres for processing, distribution, after-sales service and seller collection by the end of 1398"
+      en: [["31 centers"], ["31 distribution centers"]]
+      fa: ["31 مرکز"]
+    - fact: "new warehouses and centres set up in 9 provinces"
+      en: ["9 provinces", "warehouses"]
+      fa: ["9 استان", "انبار"]
+    - fact: "Digikala centres can process 600,000 items every day"
+      en: ["600,000", "every day"]
+      fa: ["600,000", "هر روز"]
+
+- id: T-B-digikala-1398-10
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-1398, B.digikala-1400]
+  question:
+    en: "What share of the items Digikala sold were Iranian products in 1398, and what share in 1400, according to its annual reports for those years?"
+    fa: "بر اساس گزارش‌های سالانه 1398 و 1400 دیجی‌کالا، سهم کالاهای ایرانی از تعداد کالاهای فروخته‌شده در هر یک از این دو سال چقدر بود؟"
+  answer:
+    en: "About 69% in 1398 and about 79% in 1400 (2021-22)."
+    fa: "حدود 69% در سال 1398 و حدود 79% در سال 1400."
+  memorisable: false
+  evidence:
+    - fact: "1398: about 69% of items sold were Iranian goods"
+      doc: B.digikala-1398
+      en: ["69%", "iranian goods"]
+      fa: ["69%", "کالاهای ایرانی"]
+    - fact: "1400: about 79% of items sold were Iranian products"
+      doc: B.digikala-1400
+      en: ["79%", "iranian products"]
+      fa: ["79%", "کالاهای ایرانی"]
+
+- id: T-B-digikala-1398-11
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-1398, B.digikala-1401]
+  question:
+    en: "How big a slice of all retail sales in Iran went through online channels when 1398 ended, per Digikala's 1398 annual report, and how big a slice does its 1401 annual report put it at?"
+    fa: "طبق گزارش سالانه 1398 دیجی‌کالا، وقتی آن سال به پایان رسید چه بخشی از کل داد و ستد خرده‌فروشی ایران از مجاری آنلاین می‌گذشت، و گزارش سالانه 1401 این بخش را چه اندازه برآورد می‌کند؟"
+  answer:
+    en: "About 2% by the end of 1398; 4% in the 1401 report (against 20% in Turkey)."
+    fa: "حدود 2% تا پایان 1398؛ در گزارش 1401: 4% (در برابر 20% در ترکیه)."
+  memorisable: false
+  notes: "The 1400 report gives a third point (3.2% to about 4%), which this question does not ask for."
+  evidence:
+    - fact: "by the end of 1398 online retail was about 2% of Iran's retail market"
+      doc: B.digikala-1398
+      en: ["about 2%", "retail"]
+      fa: ["حدود 2%", "خرده‌فروشی"]
+    - fact: "1401: online retail is 4% of Iran's retail market (Turkey 20%)"
+      doc: B.digikala-1401
+      en: [["4%", "turkey"], ["4%", "conducted online"]]
+      fa: [["4%", "ترکیه"], ["4%", "آنلاین"]]
+
+- id: T-B-digikala-1398-12
+  corpus: B
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [B.digikala-1398]
+  question:
+    en: "According to Digikala's 1398 annual report, what was Digikala's total net merchandise value (NMV) in 1398, in rials?"
+    fa: "بر اساس گزارش سالانه 1398 دیجی‌کالا، ارزش خالص کالای فروخته‌شده (NMV) دیجی‌کالا در سال 1398 در مجموع چند ریال بود؟"
+  answer:
+    en: "The report does not give Digikala's total NMV; it reports only growth rates (112% average annual growth and a 106% CAGR from 1390 to 1398)."
+    fa: "گزارش مبلغ کل ارزش خالص کالای فروخته‌شده را اعلام نمی‌کند و فقط نرخ رشد (میانگین سالانه 112% و CAGR برابر 106% از 1390 تا 1398) را می‌دهد."
+  memorisable: false
+  notes: "Silent absence with distractors (growth rates, NMV-share charts, a 39 billion Toman seller record in English). Searched en: nmv, net sales, net merchandise, billion, rials; fa: ارزش خالص, فروش خالص, میلیارد, ریال, همت. No unit gives an absolute NMV or net-sales amount."
+  absent:
+    en: [["nmv", "billion"], ["net sales", "billion"], ["net merchandise value", "trillion"]]
+    fa: [["فروش خالص", "میلیارد"], ["ارزش خالص", "میلیارد"], ["همت"]]
+
+# ======================================================================================================
+# B.digikala-1400 (annual report 1400, 2021-22, with the Boomi Mahalli report)
+# ======================================================================================================
+
+- id: T-B-digikala-1400-01
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "According to Digikala's 1400 annual report, what was the highest one-month sales total reached by a single marketplace seller in 1400?"
+    fa: "بر اساس گزارش سالانه 1400 دیجی‌کالا، بالاترین فروش یک ماهه‌ای که یک فروشنده بازارگاه در سال 1400 به آن رسید چقدر بود؟"
+  answer:
+    en: "467 billion rials in one month."
+    fa: "467 میلیارد ریال در یک ماه."
+  answer_value: 467
+  answer_unit: billion rials
+  memorisable: false
+  notes: "The Persian edition adds that the seller sold mobile phones and the month was Khordad; the English edition says only 'a seller'."
+  evidence:
+    - fact: "a seller set a monthly sales record of 467 billion rials in 1400"
+      en: ["467 billion"]
+      fa: ["467 میلیارد"]
+
+- id: T-B-digikala-1400-02
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "In Digikala's 1400 annual report, what share of the cheaper-price tips submitted by users ended with Digikala adjusting the price?"
+    fa: "در گزارش سالانه 1400 دیجی‌کالا، چه سهمی از مواردی که کاربران قیمت ارزان‌تری به دیجی‌کالا اطلاع دادند به تغییر قیمت کالا انجامید؟"
+  answer:
+    en: "77% of the more than 200,000 suggestions led to a price revision."
+    fa: "77% از بیش از 200 هزار پیشنهاد به ویرایش قیمت منجر شد."
+  answer_value: 77
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "over 200 thousand better-price proposals in 1400, 77% led to price revision"
+      en: ["77%", "price"]
+      fa: ["77%", "قیمت"]
+
+- id: T-B-digikala-1400-03
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "According to the Boomi Mahalli section of Digikala's 1400 annual report, how many local sellers came from Tehran province, the province with the most?"
+    fa: "بر اساس بخش بومی‌محلی گزارش سالانه 1400 دیجی‌کالا، استان تهران که در شمار فروشندگان بومی‌محلی اول است چند فروشنده از این دسته داشت؟"
+  answer:
+    en: "791 sellers, ahead of Isfahan and Razavi Khorasan."
+    fa: "791 فروشنده؛ پس از تهران، اصفهان و خراسان رضوی قرار دارند."
+  answer_value: 791
+  answer_unit: sellers
+  memorisable: false
+  evidence:
+    - fact: "Tehran leads Boomi Mahalli sellers with 791"
+      en: ["791", "tehran"]
+      fa: ["791", "تهران"]
+
+- id: T-B-digikala-1400-04
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "In Digikala's 1400 annual report, how many underprivileged students were supplied through the digikalamehr Kind Bag campaign, and how many users took part?"
+    fa: "در گزارش سالانه 1400 دیجی‌کالا، کمپین «کیف مهربانی» به چند دانش‌آموز نیازمند رسید و چند نفر در آن کمک کردند؟"
+  answer:
+    en: "Bags with backpacks, stationery and tablets for 500 students; 1,376 digikalamehr users took part over 20 days (October 2021)."
+    fa: "کیف‌هایی شامل کوله، لوازم‌التحریر و تبلت برای 500 دانش‌آموز؛ 1376 نفر از کاربران دیجی‌کالا مهر در 20 روز (مهر 1400) مشارکت کردند."
+  answer_value: 500
+  answer_unit: students
+  memorisable: false
+  evidence:
+    - fact: "Kind Bag campaign: 1,376 participants, bags for 500 students"
+      en: ["1376", "500"]
+      fa: ["1376", "500"]
+
+- id: T-B-digikala-1400-05
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "According to Digikala's 1400 annual report, how much clean water does the wastewater treatment plant at the Danesh fulfilment centre yield each day?"
+    fa: "بر اساس گزارش سالانه 1400 دیجی‌کالا، تصفیه‌خانه فاضلاب مرکز پردازش دانش هر روز چه حجمی آب پاک به دست می‌دهد؟"
+  answer:
+    en: "120 cubic metres a day, used to irrigate nearby farmland."
+    fa: "روزانه 120 متر مکعب، که برای آبیاری محصولات کشاورزی اطراف مرکز دانش به کار می‌رود."
+  answer_value: 120
+  answer_unit: cubic metres per day
+  memorisable: false
+  evidence:
+    - fact: "the SSB wastewater system produces 120 cubic metres of clean water daily"
+      en: ["120 cubic"]
+      fa: ["120 متر مکعب"]
+
+- id: T-B-digikala-1400-06
+  corpus: B
+  type: locate
+  answer_type: span
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "According to Digikala's 1400 annual report, when may a replica product be sold on the platform, and when is an item treated as counterfeit?"
+    fa: "طبق گزارش سالانه 1400 دیجی‌کالا، فروش نمونه مشابهِ کالای اصل در چه شرایطی روی پلتفرم مجاز است و کالا چه زمانی تقلبی به حساب می‌آید؟"
+  answer:
+    en: "Since 2018, replicas may be sold if they are labelled 'non-original'; an item offered as original without that label is treated as counterfeit, and Digikala acts against the seller."
+    fa: "از سال 1397 کالاهای مشابه با برچسب «غیر اصل» در عنوان اجازه فروش دارند؛ کالایی که بدون این نشان و با عنوان اصل عرضه شود تقلبی شناخته می‌شود و دیجی‌کالا با فروشنده برخورد می‌کند."
+  memorisable: false
+  evidence:
+    - fact: "non-original replicas allowed since 2018 with a label; unlabelled replicas sold as original are counterfeit"
+      en: ["non-original", "since 2018"]
+      fa: ["غیر اصل", "از سال 97"]
+
+- id: T-B-digikala-1400-07
+  corpus: B
+  type: locate
+  answer_type: short
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "According to Digikala's 1400 annual report, on which days of 1400 were the most orders placed, and which promotion were they tied to?"
+    fa: "بر اساس گزارش سالانه 1400 دیجی‌کالا، در کدام روزهای آن سال بیش از هر زمان دیگری سفارش ثبت شد و این روزها با کدام کمپین هم‌زمان بود؟"
+  answer:
+    en: "26-28 November 2021, during the Black Friday campaign; orders also rose sharply on 22-23 December with the Yalda promotion."
+    fa: "پنجم تا هفتم آذر 1400، هم‌زمان با جشنواره بلک‌فرایدی؛ در 1 و 2 دی نیز هم‌زمان با جشنواره یلدا سفارش‌ها افزایش چشمگیری داشت."
+  memorisable: false
+  notes: "The English edition gives Gregorian dates, the Persian edition Persian dates for the same days (5-7 Azar = 26-28 November; 1-2 Dey = 22-23 December)."
+  evidence:
+    - fact: "record orders in 1400 on 26-28 November / 5-7 Azar with Black Friday"
+      en: ["november 26th", "black-friday"]
+      fa: ["آذرماه", "بلک‌فرایدی"]
+
+- id: T-B-digikala-1400-08
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "What environmental savings does Digikala's 1400 annual report credit to its packing changes and to AI route optimisation: how far did plastic use fall, and by how much did delivery distances shrink?"
+    fa: "گزارش سالانه 1400 دیجی‌کالا برای تغییر روش بسته‌بندی و مسیریابی مبتنی بر هوش مصنوعی چه دستاورد زیست‌محیطی برمی‌شمارد؛ استفاده از پلاستیک تا چه حد افت کرد و راه پیموده‌شده برای ارسال سفارش‌ها چقدر کوتاه شد؟"
+  answer:
+    en: "Plastic use fell 90%, from 16,428 kg to 1,550 kg, by protecting items with unused cartons instead; delivery distances fell 34% on the previous year in cities where Digikala delivers directly."
+    fa: "مصرف پلاستیک با 90% کاهش از 16428 کیلوگرم به 1550 کیلوگرم رسید (با استفاده از کارتن‌های بلااستفاده به‌جای پلاستیک)؛ مسافت رساندن سفارش‌ها در شهرهایی که دیجی‌کالا مستقیماً تحویل می‌دهد نسبت به سال قبل 34% کاهش یافت."
+  memorisable: false
+  evidence:
+    - fact: "plastic use fell 90%, from 16,428 kg to 1,550 kg"
+      en: ["16428", "1550"]
+      fa: ["16428", "1550"]
+    - fact: "route optimisation cut delivery distances 34%"
+      en: ["34%", "distances"]
+      fa: ["34%", "مسیر"]
+
+- id: T-B-digikala-1400-09
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "In Digikala's 1400 annual report, what share of orders did Digikala's own logistics fleet deliver on time, and how satisfied were customers with couriers on average?"
+    fa: "در گزارش سالانه 1400 دیجی‌کالا، ناوگان لجستیکی خود دیجی‌کالا چه سهمی از سفارش‌ها را سر وقت رساند و مشتریان به‌طور میانگین چقدر از پیک‌ها راضی بودند؟"
+  answer:
+    en: "95% of orders were delivered on time by digiexpress; average satisfaction with couriers was 96.4%."
+    fa: "95% سفارش‌ها به‌موقع توسط دیجی‌کالا اکسپرس تحویل شد؛ میانگین رضایت از ماموران ارسال 96.4% بود."
+  memorisable: false
+  notes: "The on-time unit also gives the share of orders sent by Iran Post, which differs between editions (14.56% en, 14.52% fa); that figure is not asked for."
+  evidence:
+    - fact: "95% of orders delivered on time by Digikala's fleet in 1400"
+      en: ["95%", "on-time"]
+      fa: ["95%", "به موقع"]
+    - fact: "average satisfaction with couriers 96.4% in 1400"
+      en: ["96.4%", "couriers"]
+      fa: ["96.4", "ماموران ارسال"]
+
+- id: T-B-digikala-1400-10
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-1400, B.digikala-1401]
+  question:
+    en: "What share of Digikala's users were women according to its 1400 annual report, and what share according to its 1401 annual report?"
+    fa: "بر اساس گزارش سالانه 1400 دیجی‌کالا چند درصد کاربران دیجی‌کالا زن بودند، و گزارش سالانه 1401 این سهم را چقدر اعلام می‌کند؟"
+  answer:
+    en: "30% in the 1400 report (70% men) and 36% in the 1401 report (64% men)."
+    fa: "30% در گزارش 1400 (70% مرد) و 36% در گزارش 1401 (64% مرد)."
+  memorisable: false
+  notes: "Distractor in the 1400 report: '30%' also appears for female employees (with a different meaning in the Persian edition); that unit is excluded by requiring 'users'."
+  evidence:
+    - fact: "1400: 30% of users female, 70% male"
+      doc: B.digikala-1400
+      en: ["30%", "users", "female"]
+      fa: ["30 درصد", "کاربران", "خانم"]
+    - fact: "1401: 36% of users female, 64% male"
+      doc: B.digikala-1401
+      en: ["36%", "users", "female"]
+      fa: ["36%", "کاربران", "خانم"]
+
+- id: T-B-digikala-1400-11
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-1398, B.digikala-1400]
+  question:
+    en: "How much did Digikala's top customer by purchase value buy in 1398 and in 1400, according to the annual reports for those years?"
+    fa: "بر اساس گزارش‌های سالانه 1398 و 1400 دیجی‌کالا، مشتری‌ای که از نظر مبلغ بیشترین خرید را داشت در هر یک از این دو سال چند کالا و به چه ارزشی خرید کرد؟"
+  answer:
+    en: "1398: 10,607 items worth 350 million Tomans; 1400: 4,313 items worth 239 billion rials."
+    fa: "1398: 10,607 قلم کالا به ارزش 350 میلیون تومان؛ 1400: 4,313 کالا به ارزش 239 میلیارد ریال."
+  memorisable: false
+  notes: "Currency trap: the 1398 report uses Tomans, the 1400 report rials (350 million Tomans = 3.5 billion rials). The Persian 1398 unit writes 10،607 with an Arabic comma, so the quote uses the amount instead."
+  evidence:
+    - fact: "1398 top customer by value: 10,607 items, 350 million Tomans"
+      doc: B.digikala-1398
+      en: ["10,607", "350 million"]
+      fa: ["350 میلیون", "مبلغ"]
+    - fact: "1400 top customer by value: 4,313 items, 239 billion rials"
+      doc: B.digikala-1400
+      en: ["4,313", "239 billion"]
+      fa: ["4,313", "239 میلیارد"]
+
+- id: T-B-digikala-1400-12
+  corpus: B
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [B.digikala-1400]
+  question:
+    en: "According to Digikala's 1400 annual report, what was the average value of a Digikala order in 1400?"
+    fa: "بر اساس گزارش سالانه 1400 دیجی‌کالا، میانگین مبلغ هر سفارش در دیجی‌کالا در سال 1400 چقدر بود؟"
+  answer:
+    en: "The 1400 report does not give an average order value."
+    fa: "گزارش سالانه 1400 میانگین مبلغ هر سفارش را اعلام نمی‌کند."
+  memorisable: false
+  notes: "Silent absence; earlier reports did give it (496 thousand Tomans in 1398). Distractors: top shoppers by quantity and value, the free-shipping threshold (3 million rials) and the dynamic shipping fee range (170-400 thousand rials). Searched en: average order, order value, each order, per order, basket; fa: هر سفارش, مبلغ سفارش, ارزش سفارش, سبد خرید. No unit states an average order value."
+  absent:
+    en: [["average order value"], ["value of each order"], ["average", "per order"]]
+    fa: [["متوسط مبلغ هر سفارش"], ["میانگین مبلغ", "سفارش"], ["ارزش هر سفارش"]]
+
+# ======================================================================================================
+# B.digikala-1401 (annual report 1401, 2022-23)
+# ======================================================================================================
+
+- id: T-B-digikala-1401-01
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "According to Digikala's 1401 annual report, what share of Digikala customers held a Digiplus subscription in 1401?"
+    fa: "طبق گزارش سالانه 1401 دیجی‌کالا، چه سهمی از خریداران این فروشگاه در آن سال اشتراک دیجی‌پلاس گرفته بودند؟"
+  answer:
+    en: "19%."
+    fa: "19%."
+  answer_value: 19
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "19% of Digikala customers subscribed to Digiplus in 1401"
+      en: ["19%", "digiplus"]
+      fa: ["19%", "دیجی‌پلاس"]
+
+- id: T-B-digikala-1401-02
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "According to Digikala's 1401 annual report, what share of the company's net merchandise value in the year's final month was bought on instalment credit?"
+    fa: "در گزارش سالانه 1401 دیجی‌کالا، در ماه آخر سال چه سهمی از ارزش فروش دیجی‌کالا با اعتبار خرید قسطی پرداخت شد؟"
+  answer:
+    en: "17% of net merchandise value."
+    fa: "17% از ارزش خالص کالای فروخته‌شده (در اسفند)."
+  answer_value: 17
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "17% of NMV in the last month of the year was via installment credit"
+      en: ["17%", "installment"]
+      fa: ["17%", "اقساطی"]
+
+- id: T-B-digikala-1401-03
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "According to Digikala's 1401 annual report, how many people took part in the training sessions Digikala held that year for its local and indigenous sellers?"
+    fa: "بر اساس گزارش سالانه 1401 دیجی‌کالا، دوره‌های آموزشی دیجی‌کالا ویژه فروشندگان بومی‌ومحلی در سال 1401 چند شرکت‌کننده داشت؟"
+  answer:
+    en: "1,392 people from various provinces."
+    fa: "1,392 نفر از استان‌های مختلف."
+  answer_value: 1392
+  answer_unit: people
+  memorisable: false
+  evidence:
+    - fact: "1,392 individuals attended local-seller training in 1401"
+      en: ["1,392", "training"]
+      fa: ["1,392", "استان"]
+
+- id: T-B-digikala-1401-04
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "Digikala's 1401 annual report says it topped Iran Talent's employer-brand ranking. How many job seekers were surveyed for that ranking, and from how many companies did they choose?"
+    fa: "گزارش سالانه 1401 دیجی‌کالا می‌گوید این شرکت در رده‌بندی محبوب‌ترین کارفرمایان ایران تلنت اول شد. نظر چند کارجو در این پیمایش گرفته شد و آنها از میان چند شرکت دست به انتخاب زدند؟"
+  answer:
+    en: "22,000 job seekers, choosing from 7,657 companies."
+    fa: "22,000 کارجو، از میان 7,657 شرکت."
+  answer_value: 22000
+  answer_unit: job seekers
+  memorisable: false
+  evidence:
+    - fact: "Iran Talent's 1401 employer brand survey: 22,000 job seekers, 7,657 companies"
+      en: ["22,000", "7,657"]
+      fa: ["22,000", "7,657"]
+
+- id: T-B-digikala-1401-05
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "According to Digikala's 1401 annual report, how many orders did shoppers collect in person at a time that suited them, from pickup points and Ganje smart lockers, during that year?"
+    fa: "طبق گزارش سالانه 1401 دیجی‌کالا، خریداران در آن سال چند سفارش را شخصاً و در ساعتی که خودشان انتخاب کردند از نقاط تحویل و کمدهای هوشمند گنجه گرفتند؟"
+  answer:
+    en: "More than 48,000 orders (a separate label in the report gives 48,395 orders delivered through Ganje smart lockers)."
+    fa: "بیش از 48 هزار سفارش."
+  answer_value: 48000
+  answer_unit: orders
+  answer_values:
+    en: {value: 48000, unit: orders}
+    fa: {value: 48, unit: "هزار سفارش"}
+  memorisable: false
+  notes: "The English edition also has a separate label with 48,395 orders via Ganje lockers (p30_g1, consistent with 'over 48,000'); the Persian edition does not, so the question asks for the rounded figure both editions share. Verifier: answer_en mentions 48,395 so a grader accepts it; the label is not linked as gold because it counts lockers only."
+  evidence:
+    - fact: "customers received over 48,000 orders at their preferred time via PUDO in 1401"
+      en: ["48,000"]
+      fa: ["48 هزار", "سفارش"]
+
+- id: T-B-digikala-1401-06
+  corpus: B
+  type: locate
+  answer_type: short
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "Under the express delivery option described in Digikala's 1401 annual report, by what time must an order be placed to arrive the same day, and what happens to later orders?"
+    fa: "طبق توضیح گزارش سالانه 1401 دیجی‌کالا درباره ارسال فوری، سفارش تا چه ساعتی باید ثبت شود تا همان روز برسد و سفارش‌های دیرتر چه زمانی تحویل می‌شوند؟"
+  answer:
+    en: "Eligible items ordered before 6:00 pm are delivered the same day; later orders go out in the first delivery window of the next day. The option, formerly for Digiplus members only, became open to all users in Tehran."
+    fa: "کالاهای دارای ارسال فوری اگر قبل از ساعت 18 سفارش داده شوند همان روز می‌رسند و سفارش‌های بعد از آن در اولین بازه ارسال روز بعد تحویل می‌شوند؛ این امکان که پیش‌تر ویژه دیجی‌پلاس بود برای همه کاربران تهران فراهم شد."
+  memorisable: false
+  evidence:
+    - fact: "express delivery: same day if ordered before 6 pm, otherwise first slot next day"
+      en: ["6:00 pm"]
+      fa: ["ساعت 18"]
+
+- id: T-B-digikala-1401-07
+  corpus: B
+  type: locate
+  answer_type: span
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "With no sales festivals in 1401, what does Digikala's annual report link that year's busiest order days to, and which days were they?"
+    fa: "در نبود جشنواره‌های فروش در سال 1401، گزارش سالانه دیجی‌کالا پرسفارش‌ترین روزهای آن سال را با چه چیزی مرتبط می‌داند و آن روزها کدام بودند؟"
+  answer:
+    en: "They coincided with days when Iran's economy faced inflationary or currency shocks: 2-3 Khordad, 10 Dey, 1-2 Bahman and 1, 5, 6, 7 and 13 Esfand."
+    fa: "با روزهایی که اقتصاد ایران با جهش تورمی یا ارزی روبه‌رو بود هم‌زمان بودند: 2 و 3 خرداد، 10 دی، 1 و 2 بهمن، و 1، 5، 6، 7 و 13 اسفند."
+  memorisable: false
+  evidence:
+    - fact: "1401 record order days coincided with inflationary or currency jumps"
+      en: ["inflationary"]
+      fa: ["تورمی"]
+
+- id: T-B-digikala-1401-08
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "In the national survey reported in Digikala's 1401 annual report, what share of respondents never shop online and what is their most common reason, and what share of people who know Digikala are aware that anyone can sell on it?"
+    fa: "در پیمایش ملی گزارش سالانه 1401 دیجی‌کالا، چند درصد پاسخ‌گویان هیچ‌وقت خرید اینترنتی نمی‌کنند و رایج‌ترین دلیلشان چیست، و چند درصد از کسانی که دیجی‌کالا را می‌شناسند می‌دانند هر کسی می‌تواند در آن کالا بفروشد؟"
+  answer:
+    en: "31.7% do not shop online at all; 49% of them say they need to see a product in person (39% do not trust online stores); 51% know Digikala is a marketplace where anyone can sell by following its rules."
+    fa: "31.7% اصلاً خرید اینترنتی نمی‌کنند؛ 49% آنها می‌گویند باید کالا را از نزدیک ببینند (39% به فروشگاه‌های اینترنتی اعتماد ندارند)؛ 51% می‌دانند دیجی‌کالا مارکت‌پلیس است و هر کسی با رعایت مقررات می‌تواند در آن بفروشد."
+  memorisable: false
+  evidence:
+    - fact: "31.7% of respondents do not shop online at all"
+      en: ["31.7%", "online"]
+      fa: ["31.7%", "خرید اینترنتی"]
+    - fact: "49% of those who do not shop online need to see the product in person; 39% distrust online stores"
+      en: ["49%", "physically see"]
+      fa: ["49%", "از نزدیک"]
+    - fact: "51% of people who know Digikala know anyone can sell on it"
+      en: ["51%", "marketplace"]
+      fa: ["51%", "بفروشد"]
+
+- id: T-B-digikala-1401-09
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "According to Digikala's 1401 annual report, how much did customers give through digikalamehr, and how many goods did Digikala itself donate directly to charities in 1401, worth how much?"
+    fa: "بر اساس گزارش سالانه 1401 دیجی‌کالا، مشتریان از طریق دیجی‌کالامهر چه مبلغی کمک کردند، و خود دیجی‌کالا در سال 1401 چند کالا به چه ارزشی مستقیماً به خیریه‌ها بخشید؟"
+  answer:
+    en: "Customers contributed 49 billion rials through digikalamehr; Digikala directly donated over 68,000 items worth 72 billion rials."
+    fa: "مبلغ نیکوکاری مشتریان در دیجی‌کالامهر 4.9 میلیارد تومان بود؛ دیجی‌کالا بیش از 68 هزار کالا به ارزش 7.2 میلیارد تومان (در متن: 7/2) مستقیماً اهدا کرد."
+  memorisable: false
+  notes: "Currency trap: the English edition states rials (49 B IRR, 72 billion rials), the Persian edition tomans (4.9 and 7.2 billion tomans)."
+  evidence:
+    - fact: "digikalamehr contributions: 49 billion rials / 4.9 billion tomans"
+      en: ["49 b irr"]
+      fa: ["4.9 میلیارد تومان"]
+    - fact: "Digikala donated over 68,000 items worth 72 billion rials / 7.2 billion tomans"
+      en: ["68,000", "72 billion"]
+      fa: ["68 هزار", "7.2 میلیارد"]
+
+- id: T-B-digikala-1401-10
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-1398, B.digikala-1401]
+  question:
+    en: "How many different products (SKUs) did Digikala offer in total according to its 1398 annual report, and how many according to its 1401 annual report?"
+    fa: "بر اساس گزارش سالانه 1398 دیجی‌کالا، دیجی‌کالا روی هم چند نوع کالای مختلف (SKU) عرضه می‌کرد، و گزارش سالانه 1401 این عدد را چقدر اعلام می‌کند؟"
+  answer:
+    en: "1398 report: 2,238,287 SKUs overall; 1401 report: over 9.7 million SKUs, after 29% growth in the year."
+    fa: "گزارش 1398: 2,238,287 تنوع کالا؛ گزارش 1401: 9.7 میلیون نوع کالا (در متن: 9/7) با 29% رشد نسبت به سال قبل."
+  memorisable: false
+  notes: "Verifier: the 1401 quote has an alternative so the 'Digikala at a Glance' label (p21_g3, '9.7 M SKUs' / '9.7 میلیون تنوع کالایی') is gold too."
+  evidence:
+    - fact: "1398: overall SKU variety 2,238,287"
+      doc: B.digikala-1398
+      en: ["2,238,287"]
+      fa: ["2,238,287"]
+    - fact: "1401: product variety grew 29% to 9.7 million SKUs"
+      doc: B.digikala-1401
+      en: [["9.7 million", "29%"], ["9.7 m", "skus"]]
+      fa: [["9.7 میلیون", "29%"], ["9.7 میلیون", "تنوع"]]
+
+- id: T-B-digikala-1401-11
+  corpus: B
+  type: cross-year
+  answer_type: short
+  doc_scope: [B.digikala-1400, B.digikala-1401]
+  question:
+    en: "What was the response rate of Digikala's NPS survey among buyers according to its 1400 annual report, and what rate does its 1401 annual report give?"
+    fa: "بر اساس گزارش سالانه 1400 دیجی‌کالا، نرخ مشارکت خریداران در نظرسنجی NPS چند درصد بود، و گزارش سالانه 1401 چه نرخی برای آن ثبت کرده است؟"
+  answer:
+    en: "12.9% in 1400 (participation up 17%; 61.1% of respondents were promoters) and 13.7% in 1401."
+    fa: "12.9% در سال 1400 (با 17% رشد مشارکت؛ 61.1% توصیه‌کننده بودند) و 13.7% در سال 1401."
+  memorisable: false
+  evidence:
+    - fact: "1400: 12.9% took part in the NPS survey"
+      doc: B.digikala-1400
+      en: ["12.9%", "nps"]
+      fa: ["12.9", "nps"]
+    - fact: "1401: 13.7% took part in the NPS survey"
+      doc: B.digikala-1401
+      en: ["13.7%", "nps"]
+      fa: ["13.7%", "نظرسنجی"]
+
+- id: T-B-digikala-1401-12
+  corpus: B
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [B.digikala-1401]
+  question:
+    en: "According to Digikala's 1401 annual report, how many agents staffed Digikala's call center in 1401?"
+    fa: "بر اساس گزارش سالانه 1401 دیجی‌کالا، در سال 1401 چند کارشناس در مرکز تماس دیجی‌کالا کار می‌کردند؟"
+  answer:
+    en: "The 1401 report does not give the number of call-center agents; it reports only daily response volumes."
+    fa: "گزارش سالانه 1401 تعداد کارکنان مرکز تماس را اعلام نمی‌کند و فقط حجم پاسخ‌گویی روزانه را می‌دهد."
+  memorisable: false
+  notes: "Silent absence; the 1398 reports gave agent counts (408 in H1 1398, 336 in 1398). Distractors: daily calls, chats, tickets and complaint responses, and the 8,199 total employees. Searched en: agent, call center, staff; fa: پشتیبان, مرکز تماس, کارشناس. Hits are only the call-center intro, the survey paragraph and a delivery-agent mention."
+  absent:
+    en: [["call center", "agents"], ["number of", "agents"]]
+    fa: [["مرکز تماس", "کارشناس"], ["پشتیبان"]]
+
+# ======================================================================================================
+# B.techrasa-adtech (TechRasa, Iran Adtech Report 2020 / گزارش صنعت تبلیغات دیجیتال ایران 1399)
+# ======================================================================================================
+
+- id: T-B-techrasa-adtech-01
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, roughly what share of all online advertising traffic in Iran is fraudulent?"
+    fa: "بر اساس گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، تقریباً چه سهمی از کل ترافیک تبلیغات آنلاین ایران ساختگی و تقلبی است؟"
+  answer:
+    en: "About 41%, with ad fraud growing about 10% a year."
+    fa: "حدود 41%، با رشد سالانه حدود 10%."
+  answer_value: 41
+  answer_unit: "%"
+  memorisable: false
+  evidence:
+    - fact: "ad fraud is about 41% of Iran's online ad traffic, growing 10% a year"
+      en: ["41%", "fraud"]
+      fa: ["41%", "تقلب"]
+
+- id: T-B-techrasa-adtech-02
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "In TechRasa's Iran Adtech Report 2020, how much do Telegram channel admins and content producers in Iran earn in total per year?"
+    fa: "در گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، ادمین‌ها و تولیدکنندگان محتوای تلگرامی در ایران روی هم در سال چه درآمدی دارند؟"
+  answer:
+    en: "About 150 billion rials a year."
+    fa: "حدود 150 میلیارد ریال در سال."
+  answer_value: 150
+  answer_unit: billion rials per year
+  memorisable: false
+  evidence:
+    - fact: "Telegram channel operators and content creators earn about 150 billion rials a year"
+      en: ["150 billion", "telegram"]
+      fa: ["150 میلیارد", "تلگرام"]
+
+- id: T-B-techrasa-adtech-03
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, how much was spent on mobile advertising in Iran in 2019 (1398)?"
+    fa: "بر اساس گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، مجموع هزینه تبلیغات روی موبایل در ایران در سال 1398 چقدر بود؟"
+  answer:
+    en: "1,800 billion rials."
+    fa: "1800 میلیارد ریال."
+  answer_value: 1800
+  answer_unit: billion rials
+  memorisable: false
+  evidence:
+    - fact: "total mobile ad spend reached 1,800 billion rials in 2019 / 1398"
+      en: ["1800 billion"]
+      fa: ["1800 میلیارد"]
+
+- id: T-B-techrasa-adtech-04
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "In TechRasa's Iran Adtech Report 2020, what does a click on an ad cost on average in Iran on desktop, and on mobile web?"
+    fa: "در گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، هر کلیک روی تبلیغ در ایران به‌طور میانگین روی دسکتاپ و روی موبایل‌وب چند ریال هزینه دارد؟"
+  answer:
+    en: "About 5,510 rials on desktop and 5,420 rials on mobile web (average banner CPC)."
+    fa: "به ترتیب 5510 ریال روی دسکتاپ و 5420 ریال روی موبایل‌وب."
+  answer_value: 5510
+  answer_unit: rials per click (desktop)
+  memorisable: false
+  notes: "The English edition says these are banner-ad CPCs and adds that prices were estimated in Q1 2020 before 40% inflation; the Persian edition gives the same two numbers as the average CPC."
+  evidence:
+    - fact: "average CPC 5,510 rials on desktop and 5,420 rials on mobile web"
+      en: ["5510", "5420"]
+      fa: ["5510", "5420"]
+
+- id: T-B-techrasa-adtech-05
+  corpus: B
+  type: lookup
+  answer_type: numeric
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, how many Aparat channels make money from their videos, and how old are the youngest and oldest owners?"
+    fa: "بر اساس گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، چند کانال آپارات از ویدیوهایشان پول درمی‌آورند و جوان‌ترین و مسن‌ترین صاحب این کانال‌ها چند ساله‌اند؟"
+  answer:
+    en: "2,030 channels; the youngest owner is 11 and the oldest 72."
+    fa: "2030 کانال؛ جوان‌ترین صاحب کانال 11 ساله و مسن‌ترین 72 ساله است."
+  answer_value: 2030
+  answer_unit: channels
+  memorisable: false
+  evidence:
+    - fact: "2,030 Aparat channels earn from video; owners aged 11 to 72"
+      en: ["2030", "channels"]
+      fa: ["2030", "کانال"]
+
+- id: T-B-techrasa-adtech-06
+  corpus: B
+  type: locate
+  answer_type: span
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "What is ads.txt, as TechRasa's Iran Adtech Report 2020 describes it, and what does it let advertisers verify?"
+    fa: "در گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، ads.txt چیست و به تبلیغ‌کنندگان اجازه می‌دهد چه چیزی را بررسی کنند؟"
+  answer:
+    en: "An IAB standard against unauthorised ad intermediaries: a simple text file named ads.txt listing the ad-tech companies allowed to sell or resell a publisher's ad space directly or indirectly, so advertisers can identify that publisher's authorised partners."
+    fa: "راهکاری از IAB برای مقابله با واسطه‌گران تبلیغات: فایل متنی ساده‌ای به همین نام که نام شرکت‌های مجاز به فروش مستقیم و غیرمستقیم جایگاه‌های تبلیغاتی ناشر در آن نوشته می‌شود تا تبلیغ‌کنندگان همکاران مجاز آن ناشر را بشناسند."
+  memorisable: true
+  notes: "ads.txt is a public IAB standard, so a well-read model may answer without the report."
+  evidence:
+    - fact: "ads.txt lists the ad-tech companies authorised to sell a publisher's inventory"
+      en: ["ads.txt", "intermediaries"]
+      fa: ["ads.txt", "واسطه"]
+
+- id: T-B-techrasa-adtech-07
+  corpus: B
+  type: locate
+  answer_type: short
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, which in-app banner size draws the most views, and how much of the view share goes to the standard in-app size?"
+    fa: "بر اساس گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، کدام اندازه بنر درون‌برنامه‌ای بیشترین بیننده را جذب می‌کند و اندازه استاندارد این نوع آگهی چند درصد از بازدیدها را به خود اختصاص می‌دهد؟"
+  answer:
+    en: "300 x 250 pixels gets the most views; the standard 320 x 50 size gets only a 3% view share."
+    fa: "اندازه 300×250 پیکسل (در متن: 250×300) بیشترین بازدید را دارد و اندازه استاندارد 320×50 (در متن: 50×320) تنها 3% سهم بازدید دارد."
+  memorisable: false
+  evidence:
+    - fact: "300x250 has the most in-app views; standard 320x50 only 3%"
+      en: ["in-app", "3%"]
+      fa: ["درون‌برنامه‌ای", "3%"]
+
+- id: T-B-techrasa-adtech-08
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, how did the COVID-19 outbreak change short-term ad demand in tourism, online taxis and online education, and how many new staff did Digikala say it needed to cope with the jump in online shopping?"
+    fa: "طبق گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، حجم آگهی‌های گردشگری، تاکسی آنلاین و آموزش آنلاین در کوتاه‌مدت پس از همه‌گیری کرونا چه تغییری کرد، و دیجی‌کالا گفت برای جوابگویی به موج سفارش‌های اینترنتی باید چند نفر تازه استخدام کند؟"
+  answer:
+    en: "Tourism advertising fell 81% and online taxi 77%, while online education grew 1,961% (health and insurance +822%, online stores +245%); Digikala needed to recruit 2,000 new staff."
+    fa: "تبلیغات گردشگری 81% و تاکسی آنلاین 77% کاهش یافت، در حالی که آموزش آنلاین 1961% رشد کرد (سلامت و بیمه 822% و فروشگاه‌های آنلاین 245%)؛ دیجی‌کالا به جذب 2000 نیروی جدید نیاز داشت."
+  memorisable: false
+  evidence:
+    - fact: "tourism -81%, online taxi -77%, online education +1961%, health and insurance +822%, online stores +245%"
+      en: ["81%", "1961%"]
+      fa: ["81%", "1961%"]
+    - fact: "Digikala needed to recruit 2,000 new staff"
+      en: ["2,000", "digikala"]
+      fa: ["2000", "دیجی‌کالا"]
+
+- id: T-B-techrasa-adtech-09
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "In TechRasa's Iran Adtech Report 2020, how many video views a day did Aparat record, and what share of video ad viewing took place on mobile devices?"
+    fa: "در گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، آپارات روزانه چند بازدید ویدیو ثبت کرد و چه سهمی از مشاهده تبلیغات ویدیویی روی دستگاه‌های موبایل بود؟"
+  answer:
+    en: "About 32 million daily video views on Aparat; mobile devices' share of video ads reached 86%, up 16% on the previous year."
+    fa: "حدود 32 میلیون بازدید روزانه در آپارات؛ سهم دستگاه‌های موبایل از مشاهده تبلیغات ویدیویی با 16% افزایش به 86% رسید."
+  memorisable: false
+  evidence:
+    - fact: "Aparat recorded about 32 million daily video views"
+      en: ["32 million", "daily views"]
+      fa: ["32 میلیون", "آپارات"]
+    - fact: "mobile share of video ads rose 16% to 86%"
+      en: ["86%", "mobile"]
+      fa: ["86%", "موبایل"]
+
+- id: T-B-techrasa-adtech-10
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, what percentage of Cafe Bazaar's users get their apps by typing a query into its search box, how many keywords are looked up in the store each day, and what portion of mobile advertising now runs inside apps?"
+    fa: "طبق گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، چه نسبتی از کاربران کافه بازار اپلیکیشن مورد نیازشان را با تایپ یک عبارت در کادر جستجو پیدا و دریافت می‌کنند، هر روز چند کلیدواژه در این فروشگاه جستجو می‌شود، و امروز چه بخشی از آگهی‌های موبایل داخل اپلیکیشن‌ها نمایش داده می‌شود؟"
+  answer:
+    en: "55% install via search; 6 million keywords are searched daily; in-app ads reached 42% of mobile ads, up about 2%."
+    fa: "55% از راه جستجوی کلیدواژه نصب می‌کنند؛ روزانه 6 میلیون کلیدواژه جستجو می‌شود؛ سهم تبلیغات درون‌برنامه‌ای با 2% افزایش به 42% رسیده است."
+  memorisable: false
+  evidence:
+    - fact: "55% of Cafe Bazaar users install via search; 6 million keywords a day"
+      en: ["55%", "6 million"]
+      fa: ["55%", "6 میلیون"]
+    - fact: "in-app share of mobile ads reached 42%"
+      en: ["42%", "in-app"]
+      fa: ["42%", "درون‌برنامه‌ای"]
+
+- id: T-B-techrasa-adtech-11
+  corpus: B
+  type: multi-section
+  answer_type: short
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, what was Iran's mobile phone penetration rate, and what were the estimated penetration rates of mobile and fixed internet at the end of 2019 (1398)?"
+    fa: "بر اساس گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، ضریب نفوذ تلفن همراه در ایران چند درصد بود و در پایان 1398 ضریب نفوذ اینترنت سیار و ثابت چقدر برآورد شد؟"
+  answer:
+    en: "Mobile phone penetration was 142.07%, up 25% on the previous year; mobile internet penetration was 83.05% and fixed internet 10.95%."
+    fa: "ضریب نفوذ تلفن همراه 142.07% با 25% رشد نسبت به سال قبل؛ ضریب نفوذ اینترنت سیار 83.05% و اینترنت ثابت 10.95%."
+  memorisable: true
+  notes: "National regulator (CRA) statistics that are widely reported; a well-read model may know the mobile penetration figure."
+  evidence:
+    - fact: "mobile phone penetration 142.07%, up 25%"
+      en: ["142.07%", "25%"]
+      fa: ["142.07", "25%"]
+    - fact: "end of 2019: mobile internet penetration 83.05%, landline 10.95%"
+      en: ["83.05%", "10.95%"]
+      fa: ["83.05%", "10.95%"]
+
+- id: T-B-techrasa-adtech-12
+  corpus: B
+  type: unanswerable
+  answer_type: unanswerable
+  doc_scope: [B.techrasa-adtech]
+  question:
+    en: "According to TechRasa's Iran Adtech Report 2020, what is the average CPM (cost per thousand impressions) for display banner ads in Iran, in rials?"
+    fa: "بر اساس گزارش صنعت تبلیغات دیجیتال ایران 1399 تکراسا، میانگین هزینه هر هزار نمایش (CPM) برای بنرهای تبلیغاتی در ایران چند ریال است؟"
+  answer:
+    en: "The report does not give a CPM price for banner ads."
+    fa: "گزارش قیمتی برای CPM بنرهای تبلیغاتی ارائه نمی‌کند."
+  memorisable: false
+  notes: "Silent absence with distractors: CPM appears only as a ranked cost model (third most popular), banner prices are given per click (5,510 / 5,420 rials) and the only per-thousand price is for push notifications (20,300 rials per 1,000 deliveries). Searched en: cpm, mille, 1000, thousand; fa: cpm, هزار بازدید, هر هزار."
+  absent:
+    en: [["cpm", "rials"], ["cost per mille", "rials"], ["per thousand impressions"]]
+    fa: [["cpm", "ریال"], ["هر هزار بازدید", "ریال"]]

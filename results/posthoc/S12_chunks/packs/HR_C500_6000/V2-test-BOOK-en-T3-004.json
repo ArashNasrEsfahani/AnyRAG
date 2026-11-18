@@ -1,0 +1,16 @@
+{
+ "qid": "V2-test-BOOK-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6145 chars]"
+  }
+ ],
+ "messages_sha256": "e42463fa63103ec587ac20de1290dffee6fa4a9cfe17a8b7ef182cc994e19ad1",
+ "num_predict": 768
+}

@@ -1,0 +1,49 @@
+{
+ "approach": "LEX11M_15500",
+ "corpus_set": "D_en",
+ "fingerprint": "c687339f1b22cafd522a6f6e987d63db3b8fe515",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T20:43:41",
+   "ok": true,
+   "build_ms": 9314.0,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 9314.0,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T20:43:50",
+ "size_bytes": 255,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX11M_15500\\D_en-c687339f",
+ "corpus_stats": {
+  "name": "D_en",
+  "docs": 15,
+  "sections": 6906,
+  "units": 111500,
+  "chars": 16638928,
+  "skipped": 0
+ },
+ "copied_at": "2026-09-26T20:56:08",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

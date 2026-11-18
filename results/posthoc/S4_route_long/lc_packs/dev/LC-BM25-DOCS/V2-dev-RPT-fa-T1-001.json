@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T1-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79042 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "2c295b84ad9400be8ef388187c229ea3881b05712b910fb74525cdff2017fc74",
+ "evidence_chars": 78944,
+ "prompt_chars": 79573,
+ "est_prompt_tokens": 31475,
+ "build_ms": 3116.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.divar_annual-report_1400.fa",
+    "score": 4.133
+   },
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "score": 3.743
+   },
+   {
+    "doc": "C.khanoumi_annual-report_1404.fa",
+    "score": 2.391
+   },
+   {
+    "doc": "C.nobitex_biennial-report_2024-2025.fa",
+    "score": 2.319
+   },
+   {
+    "doc": "C.cafebazaar_ads-report_1400.fa",
+    "score": 2.237
+   },
+   {
+    "doc": "C.nobitex_annual-report_2022.fa",
+    "score": 2.151
+   },
+   {
+    "doc": "C.divar_labor-market-report_1399.fa",
+    "score": 2.112
+   },
+   {
+    "doc": "C.myket_annual-report_1403.fa",
+    "score": 2.088
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.divar_annual-report_1400.fa",
+    "doc_chars": 14926,
+    "shown": 14926,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "doc_chars": 77645,
+    "shown": 63956,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

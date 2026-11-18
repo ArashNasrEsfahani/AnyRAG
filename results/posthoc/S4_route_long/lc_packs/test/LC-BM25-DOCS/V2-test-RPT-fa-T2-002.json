@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79169 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "bc764109e6c3d8113716f15942a0ed736a7c50be71d8fda4dee2c97cb6847251",
+ "evidence_chars": 79073,
+ "prompt_chars": 79700,
+ "est_prompt_tokens": 31525,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 8.875
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 8.242
+   },
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "score": 6.418
+   },
+   {
+    "doc": "C.digikala_book-report-h1_1400.fa",
+    "score": 6.367
+   },
+   {
+    "doc": "C.digikala_human-capital-report_1399.fa",
+    "score": 5.615
+   },
+   {
+    "doc": "C.techrasa_instagram-shops-social-commerce_1401.fa",
+    "score": 5.505
+   },
+   {
+    "doc": "C.achareh_eight-year-report_1396-1403.fa",
+    "score": 4.527
+   },
+   {
+    "doc": "C.snapp_annual-report_1403.fa",
+    "score": 4.135
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "doc_chars": 151042,
+    "shown": 79039,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

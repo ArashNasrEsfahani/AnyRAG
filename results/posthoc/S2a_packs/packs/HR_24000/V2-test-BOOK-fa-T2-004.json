@@ -1,0 +1,18 @@
+{
+ "arm": "HR_24000",
+ "question_id": "V2-test-BOOK-fa-T2-004",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 24131 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "e937aec4c39b59c00d427bcadc3d18ef569adde2637cb41ec0a58c89e1fe9ffc",
+ "evidence_chars": 24000
+}

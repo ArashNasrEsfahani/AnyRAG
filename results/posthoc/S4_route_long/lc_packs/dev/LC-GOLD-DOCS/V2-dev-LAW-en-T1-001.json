@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-en-T1-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143099 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "a82e182a4520b88fcf799c40d38af0b75747c5059bf9b7fc8c0211e46d5832e4",
+ "evidence_chars": 142911,
+ "prompt_chars": 143622,
+ "est_prompt_tokens": 31458,
+ "build_ms": 1.5,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "L.ukpga-2015-30_modern-slavery-act.en",
+    "doc_chars": 174430,
+    "shown": 142879,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

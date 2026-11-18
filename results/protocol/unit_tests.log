@@ -1,0 +1,18 @@
+﻿test_freeze rc= :: PASS tb.gate_failed | PASS gate.arm_env_declared_ok | 25 checks, 0 failed
+test_lex5 rc= :: PASS lex5.ok | 73 checks, 0 failed
+test_multidoc_pipeline rc= :: PASS judge_policy.failure_retry_on_request | PASS grid.judge_failure_listed | 111 checks, 0 failed
+test_lex6 rc= :: PASS approach.ok | PASS approach.router.ok | 59/59 passed
+test_budget_matrix rc= :: 
+test_lex8 rc= :: PASS identity.ok | 53 checks, 0 failed
+test_lex9 rc= :: ok order_ties | ok lr_scorer | 0 failed
+test_lex10 rc= :: 
+test_lex10_control rc= :: 
+test_lex11 rc= :: ok test_invariance_check_raises | ok test_reorder_ties_and_sparse_only_last | 5 tests passed
+test_hybrid rc= :: {"set": "T_en", "started": "2026-10-01T15:02:16", "embed": true, "index_dir": "C:\\Users\\arash\\AppData\\Local\\Temp\\ragbench_hybrid_pekdt4f7\\idx3\\_hybrid\\T_en-13293c84", "corpus_set": "T_en", "n_chunks": 22, "with_vector": 22, "missing_vectors": 0, "dense_complete": true, "fingerprint": "13293c840640b4be6bb5705c786aa031f8d1e719", "ok": true, "embed_stats": {"unique_texts": 22, "todo": 0, "embedded_now": 0, "batches": 0, "commits": 0, "tokens_now": 0, "wall_ms_now": 0.0}, "wall_s": 0.0} | PASS prebuild.flush_on_failure | 87 checks, 0 failed
+test_rerank rc= :: FAIL isolation.only_hybrid_imports_rerank - ['approaches/hybrid.py', 'tools/rerank_smoke.py'] | 32 checks, 1 failed: isolation.only_hybrid_imports_rerank
+test_baselines rc= :: PASS B3.failed_build_recorded - attempts=[(False, 4, 1)] | PASS B3.resume_uses_cache - chunks=493 unique=493 from_cache=48 embedded_now=445 http=28 totals={'build_ms': 1137.6, 'llm_calls': 0, 'embed_calls': 32, 'prompt_tokens': 0, 'completion_tokens': 0, 'embed_tokens': 112307, 'llm_wall_ms': 62.0, 'failed_calls': 1} | 32 checks, 0 failed
+test_foundation rc= :: FAIL A.loaded - CorpusSet(A: 22 docs, 9072 units, 4882544 chars) in 0.0s; skipped=[] | 20 checks, 1 failed: A.loaded
+test_questions rc= :: PASS match.mixed_ok | 43 checks, 0 failed
+test_v2_sets rc= :: PASS live.BOOK_fa - 9 docs of 9 rows, 0 skipped | PASS live.BOOK_en - 11 docs of 11 rows, 0 skipped | test_v2_sets: 30/30 passed
+test_core_integration rc= :: PASS final.timeline_other_variants_ok - {} | PASS sanity.agentic_cap - ["PASS records.questions_known - 0 question id(s) in no --questions file ['ragbench/data/questions/pilot.jsonl', 'ragbench/data/questions/pilot_timeline.jsonl']: []", "FAIL calls.AGENTIC within [1, 8] - min 8 max 9 mean 8.50; violations [('C-TL-divar-02', 'fa-fa', 9)]"] | 68 checks, 0 failed
+test_grep_agent rc= :: PASS guard.ok | 46 checks, 0 failed

@@ -1,0 +1,964 @@
+{
+ "frozen_at": "2026-09-25T16:25:19",
+ "schema": "question-v2 (work/datasets_v2/SCHEMA.json)",
+ "files": {
+  "questions/rpt_dev.jsonl": {
+   "sha256": "f23031bdd7e769095974bfd74ffa4f5e37eaf73da19ba5be03ead299c7d75ce1",
+   "bytes": 108036,
+   "n_questions": 20,
+   "status": "dev: run now",
+   "cells": {
+    "en-AB-abstain": 1,
+    "en-T1-single": 3,
+    "en-T2-explanation": 2,
+    "en-T2-single": 1,
+    "en-T3-comparison": 3,
+    "fa-AB-abstain": 1,
+    "fa-T1-single": 3,
+    "fa-T2-comparison": 1,
+    "fa-T2-single": 2,
+    "fa-T3-comparison": 2,
+    "fa-T3-single": 1
+   },
+   "questions": {
+    "V2-dev-RPT-fa-T1-001": {
+     "revision": 2,
+     "content_hash": "4cfae6bd32e8aec3e20d8e12aff1b60f6c72b4421121962e7b5f82f6aa1c7819",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T1-002": {
+     "revision": 2,
+     "content_hash": "8abd8305056884e1efcf30e6ca77f95e2b9d28153e0cebbc7aba0c7ea530c243",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T1-003": {
+     "revision": 3,
+     "content_hash": "6761cff4da7fe169534567cbfb843edaad34acb210d20f03bf243d406a14007f",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T2-001": {
+     "revision": 2,
+     "content_hash": "27481b7ae35461a6722ec899f08aacb3e2d021810814144efeeef135fbd4274c",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T2-002": {
+     "revision": 2,
+     "content_hash": "dac64a75dc3fc6f5295022499e1793765265240e44a37c53d62683f9f25401c1",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T2-003": {
+     "revision": 3,
+     "content_hash": "0fd1fc2fef43d45e4cc4bbad1e75f9a51a04f00086e647944359b19a4bd3cfec",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T3-001": {
+     "revision": 2,
+     "content_hash": "599ece845dec21d89f5e6bad643468c682e8e943d9d9e3c3ef9d7183a0461da3",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T3-002": {
+     "revision": 3,
+     "content_hash": "45bb88e6f1aedd63c12f0b1502c210b33f73c635a79edad628a71c7b69bd52e8",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-T3-003": {
+     "revision": 2,
+     "content_hash": "d153212820e5f3e34cc4f0eb95140b5aded75dfcedf3c51e896661351fa33274",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-fa-AB-001": {
+     "revision": 2,
+     "content_hash": "7244c3f439eb027caf709527f4533a6b4783eaecd6ab55883de6ad9ad3c5fbb1",
+     "pool_id": "RPT-fa"
+    },
+    "V2-dev-RPT-en-T1-001": {
+     "revision": 1,
+     "content_hash": "705204dccc8723236d1f4aea639bcb7cf1fcfb5078ae0e8ea062eda8ad3542ea",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T1-002": {
+     "revision": 1,
+     "content_hash": "e0eaaca45b6a26194a2e06c6d20714b44719fa94ce4ed45b54c3d73d10f44f85",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T1-003": {
+     "revision": 1,
+     "content_hash": "9e0d2dee39978dedfd29c95f3b1419bb5f9a7c5d313da7a52e124657f1c7759d",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T2-001": {
+     "revision": 2,
+     "content_hash": "793e6bae309249cd0a9e0911ae0dfe9734d397e5bb1cdc626ac3c64b40857fe2",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T2-002": {
+     "revision": 2,
+     "content_hash": "f224e82cb2a474564f522b58430d30fdf7ae1dcdb57c3f0aac6ac6ac70abdbe6",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T2-003": {
+     "revision": 2,
+     "content_hash": "2ae776d967a364e5a070778e0fb38c9babe6e8fe899db4e35fd87da01809193c",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T3-001": {
+     "revision": 1,
+     "content_hash": "e0b73a87e77aa9fcc12ba989870c8f1b854c544ebf3630ee7d4c8e740e1595f3",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T3-002": {
+     "revision": 1,
+     "content_hash": "56a30fcabd1a86a71116e1cd2a0b5e3c5d939f5f6ad83236d06882b0d3537dfa",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-T3-003": {
+     "revision": 1,
+     "content_hash": "84b0dc9d111b5b3531defaa72585aae560dcb9220fd84391ca8d3c87968b01e8",
+     "pool_id": "RPT-en"
+    },
+    "V2-dev-RPT-en-AB-001": {
+     "revision": 1,
+     "content_hash": "5de805a0d98677b38038af070b04734c8e60e20908fcfd97db1b69d73017e752",
+     "pool_id": "RPT-en"
+    }
+   }
+  },
+  "questions/rpt_test.jsonl": {
+   "sha256": "41327ecd6c1622879f4a63e261dc2197d41cd163d8d2bb2537496da48230fa16",
+   "bytes": 166854,
+   "n_questions": 32,
+   "status": "TEST: frozen, NOT run (one-shot later)",
+   "cells": {
+    "en-AB-abstain": 1,
+    "en-T1-single": 5,
+    "en-T2-explanation": 3,
+    "en-T2-list": 1,
+    "en-T2-single": 1,
+    "en-T3-comparison": 5,
+    "fa-AB-abstain": 1,
+    "fa-T1-single": 5,
+    "fa-T2-comparison": 2,
+    "fa-T2-explanation": 2,
+    "fa-T2-single": 1,
+    "fa-T3-comparison": 5
+   },
+   "questions": {
+    "V2-test-RPT-fa-T1-001": {
+     "revision": 2,
+     "content_hash": "5b250c1d1e610ece74781bc5552af1b185bda7908ca89e96b1a3994187d8a791",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T1-002": {
+     "revision": 2,
+     "content_hash": "23124b050ba89775657fa993ea4d0c8aa210773718251ff0faca87644339952f",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T1-003": {
+     "revision": 1,
+     "content_hash": "f2c28bba119b6977f6165a55fe14714d2ead4ba49ef27a844fd8b761519f74b4",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T1-004": {
+     "revision": 2,
+     "content_hash": "59660e753c118d7f85890a0ba213cb8d78e7d1216d8d7587e879dc3e4c0f2331",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T1-005": {
+     "revision": 2,
+     "content_hash": "2933082155f8becd63be9c4fe1b1e9a0e67d46f576fd2c19acfc19406f5d9cb4",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T2-001": {
+     "revision": 3,
+     "content_hash": "9dc08e408fc75bd1ffdcdcd2f261bc7ad0476b5313957a6114d9e453a760d14c",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T2-002": {
+     "revision": 2,
+     "content_hash": "01c9c13e71d77bb25bbf57acc78cc3fd68101fbb0ef64605b3ccec3a7d3e2ca3",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T2-003": {
+     "revision": 2,
+     "content_hash": "acdd64c6f3394cfebe8274bcf1d779d77037cde288f7d93093ccd739d02aa945",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T2-004": {
+     "revision": 2,
+     "content_hash": "294ea011bdee07e5181336db1828f9f9eaa254239a1b498998ae3eb7ed2180ed",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T2-005": {
+     "revision": 3,
+     "content_hash": "ed07ce3054b90f252f636d4c1f27dcba7cc5da1fd9a904834f95e9c0fd1ddf41",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T3-001": {
+     "revision": 2,
+     "content_hash": "bfc7a4e844135278bae8c0dec118e8079204b220bfd2e1fbe939b81837e0c5c5",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T3-002": {
+     "revision": 2,
+     "content_hash": "ff5e47a6024a40f543dde733360b3ff852fa3020434ab4febd3b9dc9527387ec",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T3-003": {
+     "revision": 3,
+     "content_hash": "024b1e0b25dbbbf06599b9a4020988ad0593d12b8ecd55282eddc208e99155c6",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T3-004": {
+     "revision": 2,
+     "content_hash": "d4398b9898e06f039c59dccf8ea542b5cdd9eadb49fb2caf2a5ea2efefc38d2b",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-T3-005": {
+     "revision": 3,
+     "content_hash": "30d477e0859dc6760629f62688f77e6206901fa60f6ea6b86d22aebaac760ca2",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-fa-AB-001": {
+     "revision": 2,
+     "content_hash": "fd245dac1d26568e7640e87ea7a23f77a485bf109322f25627ffe2a5c3473f86",
+     "pool_id": "RPT-fa"
+    },
+    "V2-test-RPT-en-T1-001": {
+     "revision": 1,
+     "content_hash": "70fb5ecc46ceba52b9252633c8e7e83b03d7a09275b526c15c6adfd3f85f0b37",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T1-002": {
+     "revision": 2,
+     "content_hash": "c25d7df4eef58aeba41c04f10569251799d2caf2f84418e9db9dd4eb96fe5290",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T1-003": {
+     "revision": 1,
+     "content_hash": "6cefb5583f96b1803e841c3ee2b7b07399b6b26626a9d1b39ab319fdf4731380",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T1-004": {
+     "revision": 1,
+     "content_hash": "c3323ac541ee83c7ea3621d776e39d1e00da09fe8d525ba611f72bf43c437d08",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T1-005": {
+     "revision": 1,
+     "content_hash": "c8c7af439baf2a7607e292bf7681b30c56d7b54d514c47c031239928426d14cc",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T2-001": {
+     "revision": 2,
+     "content_hash": "5406cd3d45f0c006344a47e6a3e9f68b4aa9a9cf8cff677d73131d9325593af9",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T2-002": {
+     "revision": 2,
+     "content_hash": "d4de8b4a9022e70caa26ff33f12a8766f6e8a15cbcba77e46cf9cc6e6244f67e",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T2-003": {
+     "revision": 1,
+     "content_hash": "6a515241d45ebe617a90f2ef0193f8c38334247a8e3e488ad99b96e7fb4d12a5",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T2-004": {
+     "revision": 1,
+     "content_hash": "4d805e5b844992af7135dbeec6ebfa911e903e64fb2a413407eb172127518926",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T2-005": {
+     "revision": 1,
+     "content_hash": "88906452fac25e0271dd6b5cc20e82fb546c62dcc8327d33aca1d741be52d98d",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T3-001": {
+     "revision": 2,
+     "content_hash": "682264842e7bb8e99f9a97baa15d57492d5926081a82c8aad7a931ff90a48440",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T3-002": {
+     "revision": 1,
+     "content_hash": "341712c8d85f679cf8160b72de4e9b2df929093cbf424ab508c152b4765e2fd2",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T3-003": {
+     "revision": 2,
+     "content_hash": "98bc2217250d4de86dd773f251bfb13f956e0223794bbfc9a9fbb7cf408d44d1",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T3-004": {
+     "revision": 2,
+     "content_hash": "770fe0fef9499763ee6fb21f5760a6d6c0eaaa7bdcb1c81c2df8c75f38ac89eb",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-T3-005": {
+     "revision": 1,
+     "content_hash": "69fc0c3dd399b82e8b3dd4cc661e389badc970239ffbad18025ff4fd074bd71b",
+     "pool_id": "RPT-en"
+    },
+    "V2-test-RPT-en-AB-001": {
+     "revision": 1,
+     "content_hash": "745db60b3f7ad94ca74a72e697060ba9084dbff10933ae32bc24fa437a0cb34b",
+     "pool_id": "RPT-en"
+    }
+   }
+  },
+  "questions/book_dev.jsonl": {
+   "sha256": "f8bc900d8f61726d1b024317484ef33c6cc4bbcc554ba5270fe89e3bfd7f5952",
+   "bytes": 116840,
+   "n_questions": 20,
+   "status": "dev: run now",
+   "cells": {
+    "en-AB-abstain": 1,
+    "en-T1-explanation": 1,
+    "en-T1-single": 2,
+    "en-T2-explanation": 3,
+    "en-T3-comparison": 2,
+    "en-T3-explanation": 1,
+    "fa-AB-abstain": 1,
+    "fa-T1-explanation": 1,
+    "fa-T1-list": 1,
+    "fa-T1-single": 1,
+    "fa-T2-comparison": 1,
+    "fa-T2-explanation": 2,
+    "fa-T3-explanation": 2,
+    "fa-T3-single": 1
+   },
+   "questions": {
+    "V2-dev-BOOK-fa-T1-001": {
+     "revision": 2,
+     "content_hash": "d5e6f41fcc555fae9e1cdd75aa101adb0a081c425a37cda993c21b7244a15f1a",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T1-002": {
+     "revision": 4,
+     "content_hash": "8ad025d3034f4b494798f93e569e0ddbc6eff267a03313e64ac577af084fce36",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T1-003": {
+     "revision": 1,
+     "content_hash": "9b4bcc45bdf2ce8f98d8811f99588d0fb72ade241c10e9d4b288a8df62984547",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T2-001": {
+     "revision": 2,
+     "content_hash": "ea57996d315534622165bba381bf6a076d0464d50948ae6f039f51e153ad2feb",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T2-002": {
+     "revision": 2,
+     "content_hash": "78163896b78dfdfd18b6fe5b3383a82a9a334a4455df1993345ca7852cb28279",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T2-003": {
+     "revision": 2,
+     "content_hash": "29ded9e37b5fbf9736dfd63f4f6eb184b21f6405e62f04c3af5f2405e1433c69",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T3-001": {
+     "revision": 2,
+     "content_hash": "afb7bf79a2a5327ac7854b492207943fd2a0e625df4d789445ee6d8a37f859b0",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T3-002": {
+     "revision": 2,
+     "content_hash": "8459656b13fb1404bf0daac02965681fa639a11bc61e3fd5868d182871d797ba",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-T3-003": {
+     "revision": 2,
+     "content_hash": "9221aaa5e1737ffbf295dd4ff8867be80c16da4fdcd451622211e0b1e8ae34f7",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-fa-AB-001": {
+     "revision": 2,
+     "content_hash": "1f3aaa1fe905205ed5de6c06959e8fee2c71c3b9d4c42fb44b4c6f6e92d2305c",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-dev-BOOK-en-T1-001": {
+     "revision": 1,
+     "content_hash": "703730957a4a757bfbb9b5040fabaad42c9faddb887dbe21f11573737f37b602",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T1-002": {
+     "revision": 1,
+     "content_hash": "a40c2e05aa084747ac55dcb6106c98f0435ae621331ac65760d61c4764057026",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T1-003": {
+     "revision": 1,
+     "content_hash": "3b017d3f70f2c816de14515f68991094394af0ca51038a17f75a7479a48b1f1d",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T2-001": {
+     "revision": 1,
+     "content_hash": "9c0e4de4de26cd040d2a0b650a86d323e341dd6572410488f83db530714fecb2",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T2-002": {
+     "revision": 2,
+     "content_hash": "3d4e2de6a3b165d2b6ef238f051441884dbfdf68c7ebceba91148ddde7ca7052",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T2-003": {
+     "revision": 2,
+     "content_hash": "7bb5f33db922adbe1de2f2b57b2f3b32aef1918c2a79277e8571aaf82318376d",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T3-001": {
+     "revision": 1,
+     "content_hash": "127d947e26afca965f11a451c37e909752a41b658abe209f86d28492fdc15213",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T3-002": {
+     "revision": 1,
+     "content_hash": "6c25e99936d6462737b5f4f3ea2c2224a82548fac7e4a80969f3e90ef0670c07",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-T3-003": {
+     "revision": 1,
+     "content_hash": "0cecfeb4222c076c9de117435ca1b370cc4089b220c98f2b5c52438d06b828b2",
+     "pool_id": "BOOK-en"
+    },
+    "V2-dev-BOOK-en-AB-001": {
+     "revision": 1,
+     "content_hash": "cb9b56a84f257a590f704d8133e9a65cc7e54289a7b198447fc72700e8486165",
+     "pool_id": "BOOK-en"
+    }
+   }
+  },
+  "questions/book_test.jsonl": {
+   "sha256": "560e7c4c0f470a64ba99f6645b8ac98071e8b01acc24c0a58b0ba462fb5108f5",
+   "bytes": 191599,
+   "n_questions": 32,
+   "status": "TEST: frozen, NOT run (one-shot later)",
+   "cells": {
+    "en-AB-abstain": 1,
+    "en-T1-comparison": 2,
+    "en-T1-explanation": 1,
+    "en-T1-single": 2,
+    "en-T2-comparison": 1,
+    "en-T2-explanation": 2,
+    "en-T2-single": 2,
+    "en-T3-comparison": 4,
+    "en-T3-explanation": 1,
+    "fa-AB-abstain": 1,
+    "fa-T1-explanation": 3,
+    "fa-T1-single": 2,
+    "fa-T2-explanation": 3,
+    "fa-T2-single": 2,
+    "fa-T3-comparison": 1,
+    "fa-T3-explanation": 3,
+    "fa-T3-single": 1
+   },
+   "questions": {
+    "V2-test-BOOK-fa-T1-001": {
+     "revision": 1,
+     "content_hash": "ac1cd640f3f8a1ada996b47d42c285d83fba718cbdda931e50f28e69aee43f6f",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T1-002": {
+     "revision": 3,
+     "content_hash": "fe4d9f532435db49c85f19d0d776c8784a56df764694453ddc25343890bb7bad",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T1-003": {
+     "revision": 3,
+     "content_hash": "586e8566714ed0cdb460660daf4f3b419513ae3c845764d18bb0ccafda7b1838",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T1-004": {
+     "revision": 1,
+     "content_hash": "ba53d957a9a1f6fa49b98b853f2ffe327250e9405a275f7fcd50efbbacfdfc75",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T1-005": {
+     "revision": 2,
+     "content_hash": "fbe248a7878ec6e875e121c7a95a40132ce31d347d4d1e987ea12dd9a2f3ac6f",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T2-001": {
+     "revision": 3,
+     "content_hash": "2eb06fe009c5bf540f81ce871996aba6b433fc2cb3145db41839b58b723cf7f6",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T2-002": {
+     "revision": 2,
+     "content_hash": "e6e5192453c15b519ae7b0ecd65ab3a8d82e1bc6b2892e7e4e06c49cfe602b80",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T2-003": {
+     "revision": 3,
+     "content_hash": "975634e7fe804480fffb912febda1484ade61a90f940e1386e418deb54e9216c",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T2-004": {
+     "revision": 3,
+     "content_hash": "ef7a957584b8ba50e711601411f9c07b45b5b2304a731714680bd6845d745771",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T2-005": {
+     "revision": 3,
+     "content_hash": "4afd66c5d7e30c794ea6fbef0e37f61a8c7af610cd3f7a1aadabeadf5e5eb1c2",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T3-001": {
+     "revision": 2,
+     "content_hash": "fac3eebde751fa4ac9db9c8813b3f5b39af59996d4e4ab8736947950f2a73ce5",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T3-002": {
+     "revision": 2,
+     "content_hash": "1ec43423a033f9b29a88103cab5c978477e3c0a17498b6f983fe2bf580d188d2",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T3-003": {
+     "revision": 2,
+     "content_hash": "b8df574f9a4c3422e6cee71616001e71854b8658f29293c03dbb9549ac3aab9b",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T3-004": {
+     "revision": 2,
+     "content_hash": "d6da14f9f8b8160d7d643a82c260e55e1c2ad9030764739a944b569c4aec95b7",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-T3-005": {
+     "revision": 2,
+     "content_hash": "589e3367c67f4f4f2688521f591d9c77e3107d5af982a943bbd16744f0491258",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-fa-AB-001": {
+     "revision": 3,
+     "content_hash": "f31e5d1d100108f76ca1856e50c3683b19590e64dabfc02c481212d3e5576f63",
+     "pool_id": "BOOK-fa"
+    },
+    "V2-test-BOOK-en-T1-001": {
+     "revision": 1,
+     "content_hash": "d63ab0864365884f38463fe9f6e460a600370af974332580c664a879001e578b",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T1-002": {
+     "revision": 1,
+     "content_hash": "e83c6b156404dcd4ece2d037b42cca734a98554daa5d1a5b43c60e2710ad29d5",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T1-003": {
+     "revision": 1,
+     "content_hash": "0e10b3f38e6c928e7876c9b935c20926dcb2ec366a2934712574d2253c766f6f",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T1-004": {
+     "revision": 1,
+     "content_hash": "cacc22d7fc8d2e5ed124fac952ea3bc592be39960d1a59d2bdc162c96c25c5c0",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T1-005": {
+     "revision": 1,
+     "content_hash": "8010f3c1c4b51e4b7683fb716088773f3a15d2746f1f72eccfab71e3f2d9d97c",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T2-001": {
+     "revision": 2,
+     "content_hash": "9621874569c2ba98f5c47f84b59cd4a1382b9e70debb31dd293535b511504c44",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T2-002": {
+     "revision": 2,
+     "content_hash": "688f4edfb6e15fd63a1bda1c57bf5ea7c4c83959a48e1f9b59488b2b22cfd382",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T2-003": {
+     "revision": 1,
+     "content_hash": "aa844e48273259a6d8f9f6e3cdef65beb4482cd0fc45f7f6239346ce48be4048",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T2-004": {
+     "revision": 1,
+     "content_hash": "0847de56b0eb9b692bdde232fc7ba3c8b313a0c2bc0dd104e1bef4aa1cf105b7",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T2-005": {
+     "revision": 3,
+     "content_hash": "23ed78b24c1b786f6ee3e953632fba53e776e7b81223fca88a20718315b8830d",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T3-001": {
+     "revision": 1,
+     "content_hash": "f0522e6903ab249eed26f886603fd3a2986b9934356d3ccedd73fcbf2fdd5647",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T3-002": {
+     "revision": 1,
+     "content_hash": "ff717b6826e9ce07a3146919fc24744c096179f4c6438ea0dcb20c4154e15e1d",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T3-003": {
+     "revision": 1,
+     "content_hash": "fcb0cefd3486516d3c9da085a2227a4dabde84d917051300fb48329dba25fc02",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T3-004": {
+     "revision": 2,
+     "content_hash": "a03d7b73149db21b536d977227032209bfa070edf0772186c6cd8b4df965668b",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-T3-005": {
+     "revision": 2,
+     "content_hash": "d2acaf7645cea4c331d31a5e02160ddcd202bb742a3674d854443130566d18ae",
+     "pool_id": "BOOK-en"
+    },
+    "V2-test-BOOK-en-AB-001": {
+     "revision": 1,
+     "content_hash": "02135175c0402b707221136239dd25cb4325f7b5c447490e1e5dd8687c8d01a4",
+     "pool_id": "BOOK-en"
+    }
+   }
+  },
+  "questions/law_dev.jsonl": {
+   "sha256": "05a3821a9787a66dc9b7363220aadfaafa24c8f881bf008801e3ed0ae9f69d29",
+   "bytes": 132568,
+   "n_questions": 20,
+   "status": "dev: run now",
+   "cells": {
+    "en-AB-abstain": 1,
+    "en-T1-list": 1,
+    "en-T1-single": 2,
+    "en-T2-explanation": 3,
+    "en-T3-comparison": 3,
+    "fa-AB-abstain": 1,
+    "fa-T1-single": 3,
+    "fa-T2-explanation": 3,
+    "fa-T3-comparison": 3
+   },
+   "questions": {
+    "V2-dev-LAW-fa-T1-001": {
+     "revision": 2,
+     "content_hash": "0c12be85ba127f051c1bea0dd4386b167836a01b007158d7eb2bf1a0cfb4fad9",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T1-002": {
+     "revision": 2,
+     "content_hash": "7c04e25677f1250b87d0e07fe4f5c946f02acb2232a1e43d6e26ea765098bd14",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T1-003": {
+     "revision": 2,
+     "content_hash": "4070cec8e198dbc46b7f48fcc983f4d912b7a21cac1bcb04b7ac36d90f16cf74",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T2-001": {
+     "revision": 3,
+     "content_hash": "7bc89d56fed2dd81909f9574e18297e93a6fe114b8ee711b41d6aaa147a8fb3c",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T2-002": {
+     "revision": 2,
+     "content_hash": "3d0132e1d4961009716073f4d20357722322dc96f2913f6e15b006b8f19ff8ec",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T2-003": {
+     "revision": 3,
+     "content_hash": "dfe495d5dc6a8088ba4314cb22303ca2039d365cb741f4b36ec9247f5510de6b",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T3-001": {
+     "revision": 2,
+     "content_hash": "28b72361b03aebbb42336d9a7f9973418c364792226eee649a6d376d0f35c256",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T3-002": {
+     "revision": 2,
+     "content_hash": "bde30e57900ef5deeb3983bbf2502b2ec73db17c717c62beb0860e5741be4f28",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-T3-003": {
+     "revision": 2,
+     "content_hash": "b0dc006737236a985aea87b482c35f343f4f56f104a863129593ab5a4c9f4114",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-fa-AB-001": {
+     "revision": 3,
+     "content_hash": "e526f2baa85740ea37aa0912b5a37633687522aaa870cff33393cbb7a6f2fb7a",
+     "pool_id": "LAW-fa"
+    },
+    "V2-dev-LAW-en-T1-001": {
+     "revision": 1,
+     "content_hash": "5862235e1e963d38bb0a219a95f28b838b09506c177bb5008214a2787d2b2dbd",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T1-002": {
+     "revision": 1,
+     "content_hash": "a793aca2601edb45c9afa5ba0bc09afed985ccff469cad026f257b55f7ad8bff",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T1-003": {
+     "revision": 1,
+     "content_hash": "30646c64a7193185ef5c518a59aac5a0b8b1aee67fabfaa1b5e18927ad81b3c8",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T2-001": {
+     "revision": 2,
+     "content_hash": "dc83017d7be402100843feeb49112170dd04f95e986e19d23b58ce11fbc2c29c",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T2-002": {
+     "revision": 2,
+     "content_hash": "92fbcc272cac4ef7f919687f7c0dc23f39ebee8f7b77967a98a51929a6aaa075",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T2-003": {
+     "revision": 1,
+     "content_hash": "2687661571ab8c88b8c3b7932cb49b24ab065b2b6aa5a492bf7486308aee4fcb",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T3-001": {
+     "revision": 1,
+     "content_hash": "576ad04511f89d0b869c148a1c34f1741d00c95bb62812518e5f7ab8fb27ac04",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T3-002": {
+     "revision": 1,
+     "content_hash": "84ec4a2b9e1025d69c46febf5ab7f8c11a55e642b8f49377ef8191d3a89ddcc8",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-T3-003": {
+     "revision": 1,
+     "content_hash": "d72d6a0db823be2afdf11b3706ec259619bb7d2982164a808507af9df9a5280d",
+     "pool_id": "LAW-en"
+    },
+    "V2-dev-LAW-en-AB-001": {
+     "revision": 1,
+     "content_hash": "ab7f59e3c9f493a7042707d827ca89ca57e61aca2613a0a0b2baf935abba828b",
+     "pool_id": "LAW-en"
+    }
+   }
+  },
+  "questions/law_test.jsonl": {
+   "sha256": "393d4a90aa88ea016dc988b1fb5cf8e0c38e1b01895c731fb8e895e40953433d",
+   "bytes": 216456,
+   "n_questions": 32,
+   "status": "TEST: frozen, NOT run (one-shot later)",
+   "cells": {
+    "en-AB-abstain": 1,
+    "en-T1-single": 5,
+    "en-T2-explanation": 5,
+    "en-T3-comparison": 3,
+    "en-T3-explanation": 1,
+    "en-T3-series": 1,
+    "fa-AB-abstain": 1,
+    "fa-T1-list": 1,
+    "fa-T1-single": 4,
+    "fa-T2-explanation": 5,
+    "fa-T3-comparison": 4,
+    "fa-T3-list": 1
+   },
+   "questions": {
+    "V2-test-LAW-fa-T1-001": {
+     "revision": 3,
+     "content_hash": "3b20b13caf9f25039c8cbdf6694adb8da73c2acd37a1edeaaba31f11cdc2d6c3",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T1-002": {
+     "revision": 2,
+     "content_hash": "a114d799969f86ca6a28c8c0becf7a64f7c832a8f291b6fe26b1b83c51487f81",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T1-003": {
+     "revision": 3,
+     "content_hash": "19ed3c972ae7837764cca1781fa18857cb713bd884a10325d8d9dabb1d3d5f83",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T1-004": {
+     "revision": 2,
+     "content_hash": "6cecd52f9f82792a4234cb1234d15b4ccfdd75eb56e564c9ec2edd94a6cb4da7",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T1-005": {
+     "revision": 2,
+     "content_hash": "1c567c4cd18be7c9ba3a2ea4a300a4d9f3f13abae0debae09a6a16f03e65bbb9",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T2-001": {
+     "revision": 2,
+     "content_hash": "74623060b6a3ca8e593e4a16592df04595ef073ae3e22397f371c0cb76b2b740",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T2-002": {
+     "revision": 3,
+     "content_hash": "1a2259c025910543b1a6280b552e772b38128084c10d8ec86c4e73f95c21e711",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T2-003": {
+     "revision": 3,
+     "content_hash": "73b13941d20f8842b8ab67a810385168d65c9affccaf60389fea9fc55aa80d3f",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T2-004": {
+     "revision": 2,
+     "content_hash": "f4d8cb4a2a23c66c251b6172c513170c8de05c660e5fd5862a85a5c3aeeeae30",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T2-005": {
+     "revision": 2,
+     "content_hash": "e9047d826581432f23cd44d49a7a592f272439fef8e1b10f1777e3cec9e2c154",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T3-001": {
+     "revision": 2,
+     "content_hash": "9c231fd638cc5d8107461baabcac53def6bedd70f3e52ec8e1c6f3fa6f899d28",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T3-002": {
+     "revision": 2,
+     "content_hash": "60dcd92b8e32c04998e7cb26650603cc4d1ea3c3e9d4b0f5abde14b9ade54799",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T3-003": {
+     "revision": 3,
+     "content_hash": "1be76e213ae1ced0464adf50e911158c7cb7fe2cf3691a2d9289b2c4676e1bda",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T3-004": {
+     "revision": 2,
+     "content_hash": "18b618c2c16e059e483258f1eb53ebb15a6342b4ea5e0e61731d19cecbfba026",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-T3-005": {
+     "revision": 3,
+     "content_hash": "66a16a7a8964899c49abfc381b9c6fec8a1ac4776b7c41ab9cee10f3dd79bff3",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-fa-AB-001": {
+     "revision": 3,
+     "content_hash": "87adcb27420327536b40e9dcff7e365179c451c699068539a8e3fef26ac17a40",
+     "pool_id": "LAW-fa"
+    },
+    "V2-test-LAW-en-T1-001": {
+     "revision": 1,
+     "content_hash": "929d1d12505712d36825327b61592e1fbf9e112ae5953fb2acd9db9b16036689",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T1-002": {
+     "revision": 1,
+     "content_hash": "eb687b9b3fa6dd525caa4c07424d437384943d2ae9a44c6fb9162186d41406ee",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T1-003": {
+     "revision": 1,
+     "content_hash": "81d5a5b32e7019fbd3ac0123b1c1b1b72b1e69287e5dfb27fcafb390fad0a75b",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T1-004": {
+     "revision": 1,
+     "content_hash": "10e8713dd2f90317f6277ae91a9f01d03e937ddc7046cddbf4670ba887dc0d79",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T1-005": {
+     "revision": 1,
+     "content_hash": "118f1234ebd0537952968f6eb2652153b7c99382219454cc0e7720bde7541195",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T2-001": {
+     "revision": 2,
+     "content_hash": "943b7cb64dcf4eabe48d11fcf92fb96f074a0dac43a65764fc6354746a358858",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T2-002": {
+     "revision": 1,
+     "content_hash": "65536d0f0a046e5dbf914004b1eff0c338dfe28e073e44ef2dc6ab158125442a",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T2-003": {
+     "revision": 1,
+     "content_hash": "6239627d659c9952e16d3ec2825cdab2002b537dd27ffd218c8fefe290098ffe",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T2-004": {
+     "revision": 1,
+     "content_hash": "889f95aa660e62628c2aa54dbfa785c54347a6035d07867a3c6d74cfb1fef175",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T2-005": {
+     "revision": 2,
+     "content_hash": "aa70c3fa1deaa98a145ada74c7a225803f94e400ddc60fd541122aae660716ce",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T3-001": {
+     "revision": 1,
+     "content_hash": "51377d151bc7feb09ac76b08fd746bcb994a78164c55245434933e2187a0a359",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T3-002": {
+     "revision": 1,
+     "content_hash": "85a507e888895ffb8016d8251a7f2fa5f711db639ab05e0433cbd05f4d3b9c73",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T3-003": {
+     "revision": 1,
+     "content_hash": "4ffa5140a8937ff867c689f80c8e765ce2e9e9384f65191b50c5906d3f0f5ce2",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T3-004": {
+     "revision": 1,
+     "content_hash": "bbf565db5908d064a29d5ce3acd99b5ad954d918b0156ccfc7f78b1db7c72a49",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-T3-005": {
+     "revision": 1,
+     "content_hash": "0129b2f5605e772a74dd0e00f876a70cff1845f730d9ef49e86392aee545ce44",
+     "pool_id": "LAW-en"
+    },
+    "V2-test-LAW-en-AB-001": {
+     "revision": 1,
+     "content_hash": "2b26572fea5275e6758b9cc4ebeb0a6c119bbc0757a353fbaf1781c89b03772f",
+     "pool_id": "LAW-en"
+    }
+   }
+  }
+ },
+ "totals": {
+  "dev": 60,
+  "test": 96
+ },
+ "provenance": {
+  "authoring": "agent-authored per DESIGN.md (RESIZED header: 3 tiers x 3 domains x 2 languages; dev 3/cell + 6 unanswerable = 60, test 5/cell + 6 = 96); every quote an exact substring of the frozen source text; full self-check 0 errors (FINAL_LOG.md step 3b)",
+  "independent_agent_reviews": {
+   "RPT": "questions/rpt_review.md (dev 15/5/0, test 23/6/4 accept/fix/reject; fixes + 4 replacements applied, round 2 all accepted)",
+   "BOOK": "questions/book_review.md (42 accept / 8 fix / 2 reject; applied)",
+   "LAW": "questions/law_review.md (43 accept / 6 fix / 3 reject; applied)",
+   "replacements": "independent re-check of the 10 replacement records (FINAL_LOG.md step 2)"
+  },
+  "persian_wording_reviews": [
+   "questions/persian_review_rpt_book.md (69 findings, applied: persian_fixes_log.md)",
+   "questions/persian_review_law.md (72 findings, applied: FINAL_LOG.md step 1)"
+  ],
+  "author_spot_check": "the author (Arash) checked 32 of 156 in review_game (book_dev 20, book_test 4, law_dev 4, law_test 1, rpt_dev 3): 31 good, 1 fix (V2-dev-BOOK-fa-T1-002: Liqvan passage, 'knows of 4'), fix applied (revision 4); he accepts the set as verified. Paper wording: 'author spot-check of 32/156 (97% accepted) + independent agent review + native Persian wording review'.",
+  "user_review_files_sha256": {
+   "book_dev.review.jsonl": "9f79420307c5756795ff0492886da0027f64c6ee3cf6d31df5e0b577b9491989",
+   "book_test.review.jsonl": "0641eb988742bfbf9b5b701294d9b94ccb07f3bac6c20808e068e5dc2844cb38",
+   "law_dev.review.jsonl": "1b42aba1f10a8581a104cde6f6ae790a3daea473ddc862a4af9dc46454a77ab1",
+   "law_test.review.jsonl": "5ae9706fcacddd9dbad8a4cdfc46e4d8a08f6fd46ad32e8075031f7df55055fa",
+   "rpt_dev.review.jsonl": "a73adaf21e50983bcf8f4aec4bea136702be6ebf1c77cd267bfd16a61f58c090"
+  },
+  "supporting_files_sha256": {
+   "DESIGN.md": "4a2e6ecc21cb605871c39020111417bcc3033ca60a14a0c292fe8a21dffee744",
+   "SCHEMA.json": "13bffcc8c667abdddd9a947593391e87b80e361f0f15d496c4bef776444a4796",
+   "sources/FROZEN_v2.json": "eedec2ed45d7ef26b33c4904928670b18ecfa30a0520528b5dd37c6e2727f213",
+   "questions/FINAL_LOG.md": "eaefafbf46426e2850a8be58c03c7158c077a60a71b1bb18fb956f97a1d8c7ae",
+   "questions/rpt_review.md": "ea7a9e3acbcf069b082ddfdc6d15a68cb2fed9c30753f64bd7adf73af5b54106",
+   "questions/book_review.md": "ff39ff19a9c9e1e7da13192724e606260e188fb9ff163fda65770dc7ff7e467c",
+   "questions/law_review.md": "b7fccfb5205630121ea6e113e7159bf2eeae7454709913d5c8c7b534604e654a",
+   "questions/persian_review_law.md": "bcf502e9868e9ed73e206bcad4b3ad9ca800b51b8e8a90bf982be55645e32651",
+   "questions/persian_review_rpt_book.md": "81dacec046002954ba1d581498cb4d3a1401acc58f606e63de4df64d6aea89aa",
+   "questions/persian_fixes_log.md": "f83332b39137c1ed8a92b00256224c4f95543cbd7b0ffe650dde612ddf4bcdf1"
+  },
+  "code": {
+   "worktree": "D:\\KareOne\\RAG-Paper-upgrades",
+   "branch": "upgrades",
+   "commit": "cae69acddb1d80684e35875475081d9e0a0013b1"
+  }
+ },
+ "rule": "The TEST files are frozen and are NOT run during development; they are run once (one-shot) after the methods are fixed. Any later edit to any of the six files requires a new freeze file (never overwrite)."
+}

@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T3-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79258 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "0b1f6d9db28bfa68694b78c74f52ac45de327d6f1f2efbce84dfceab84633fb7",
+ "evidence_chars": 79125,
+ "prompt_chars": 80089,
+ "est_prompt_tokens": 31679,
+ "build_ms": 1.7,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.divar_annual-report_1398.fa",
+    "score": 7.179
+   },
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "score": 6.555
+   },
+   {
+    "doc": "C.melkradar_real-estate-report_1398.fa",
+    "score": 5.884
+   },
+   {
+    "doc": "C.karnameh_annual-report_1401.fa",
+    "score": 5.567
+   },
+   {
+    "doc": "C.karnameh_annual-report_1402.fa",
+    "score": 4.968
+   },
+   {
+    "doc": "C.divar_annual-report_1400.fa",
+    "score": 4.837
+   },
+   {
+    "doc": "C.maxholding_adtech-report_1403.fa",
+    "score": 4.708
+   },
+   {
+    "doc": "C.myket_annual-report_1403.fa",
+    "score": 4.678
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.divar_annual-report_1398.fa",
+    "doc_chars": 15502,
+    "shown": 15502,
+    "whole": true,
+    "gold_doc": false
+   },
+   {
+    "doc": "C.divar_annual-report_1399.fa",
+    "doc_chars": 77645,
+    "shown": 63559,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

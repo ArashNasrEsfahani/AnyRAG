@@ -1,0 +1,18 @@
+{
+ "arm": "KNAP_6000",
+ "question_id": "V2-test-LAW-en-T1-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5897 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "95e96f3296175dbaae3bbc3be18f1f0e227fdd1db9dd49c50ea40f344504e63d",
+ "evidence_chars": 5727
+}

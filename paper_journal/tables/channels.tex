@@ -1,0 +1,26 @@
+% src: work/posthoc_2026-11/S7_analysis/channels.json, channels_tables.md, fig_channels.dat (section 5 of RESULTS.md). Gold recall in the top 40 candidates, per question
+%      "complete / partial / none" = a full gold bundle / some item / no item among the candidates; items in brackets = gold items found of 106 (Persian) and 124 (English).
+%      BM25 is recomputed exactly on CPU (all 2,737 saved BM25 ranks reproduced). Dense row (REVIEW2 item 19): exact lists, S10_retrieval/RESULTS.md sec. 2.4 (38/6/1 fa, 33/11/1 en) and S15_crossling/RESULTS.md sec. 2 X (items 98 of 106, 104 of 124); the earlier lower-bound row (37, 95; 31, 96) and the BM25-or-dense union row (computed from it) were dropped;
+%      the learned-sparse channel was never saved and needs a GPU. Normalisation ablation: recall only, frozen index, raw query and plain Unicode tokenizer variants.
+\begin{table}[tp]
+\caption{Post hoc. Gold evidence found by each retrieval channel in the top 40. C, P and N count questions with a complete, partial or no bundle}
+\label{tab:channels}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Top 40 candidates & Persian (106 items) & English (124) \\
+\midrule
+BM25 (exact) & 37/6/2 (85) & 29/14/2 (88) \\
+Dense (exact) & 38/6/1 (98) & 33/11/1 (104) \\
+\hybrid{} fused & 39/6/0 (98) & 33/11/1 (98) \\
+\lexb{} fusion & 40/5/0 (100) & 35/9/1 (101) \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{BM25, less normalisation (C, items)}} \\
+Frozen tokenizer & 37 (85) & 29 (88) \\
+Raw query, frozen index & 35 (80) & 27 (86) \\
+Plain Unicode tokenizer & 35 (81) & 27 (81) \\
+\bottomrule
+\end{tabular}
+\end{table}

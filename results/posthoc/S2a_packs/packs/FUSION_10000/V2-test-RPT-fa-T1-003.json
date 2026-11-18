@@ -1,0 +1,18 @@
+{
+ "arm": "FUSION_10000",
+ "question_id": "V2-test-RPT-fa-T1-003",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 9934 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "5b1ecfb4d9323c3c6148419180b21a171e27dcae0e629622599aeb54ff0e20ac",
+ "evidence_chars": 9818
+}

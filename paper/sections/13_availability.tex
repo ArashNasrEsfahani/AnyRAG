@@ -1,0 +1,14 @@
+\section*{Data and Code Availability}
+\label{sec:availability}
+% src (REVIEW2 item 67): wording changed from 'when this preprint appears' to 'on acceptance' for a journal submission.
+% src: release/AnyRAG/README.md (layout, licences, stripped results, on-request list); work/TODO.md 2026-10-06 (repo private until arXiv)
+
+Code, benchmark and results will be released at \url{https://github.com/ArashNasrEsfahani/AnyRAG} on acceptance. A reviewer copy is available on request. The code is released under the MIT licence and covers the benchmark code, all arms, the frozen test runner, evaluation and the analysis scripts of this paper. The annotations and results are released under CC BY 4.0. The release contains:
+\begin{itemize}
+  \item the 156 questions with requirements, gold evidence (document and unit identifiers, offsets, short quotations and SHA-256 hashes), evidence bundles and provenance;
+  \item decisive spans for the 60 dev questions;
+  \item the frozen protocol, manifest, pins and token calibration;
+  \item per-question records, verdicts and token ledgers for every arm and reader, including the post hoc arms and the ledger of every post hoc call;
+  \item the blinded human-review exports and unblinding keys for the primary reader at 6,000 characters.
+\end{itemize}
+The analysis scripts run from the repository layout without model calls. We do not redistribute the document corpora. A source manifest lists every document's title, edition, source, landing URL and file hash. The extraction code and the hashes of the extracted text let others check that a rebuilt pool matches unit identifiers and offsets. Corpus text was stripped from the released results. Some large intermediate artifacts (judge caches, raw logs, indexes and embeddings) are available on request.

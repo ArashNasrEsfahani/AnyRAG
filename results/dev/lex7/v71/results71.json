@@ -1,0 +1,207 @@
+{
+ "arms": {
+  "HYBRID": {
+   "span": 0.72,
+   "full": 32,
+   "top24": 0.8858,
+   "t3_docs": 12,
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     13
+    ],
+    "HYBRID": [
+     0,
+     0
+    ],
+    "a1 RRF(bm25,dense,sparse)": [
+     0,
+     4
+    ]
+   },
+   "fa": 0.7222,
+   "en": 0.7177,
+   "T1": 0.9259,
+   "T2": 0.6228,
+   "T3": 0.6111,
+   "RPT-fa": 0.5556
+  },
+  "HYBRID+rerank": {
+   "span": 0.8065,
+   "full": 35,
+   "top24": 0.9057,
+   "t3_docs": 13,
+   "bw": {
+    "HYBRID+rerank": [
+     0,
+     0
+    ],
+    "HYBRID": [
+     13,
+     6
+    ],
+    "a1 RRF(bm25,dense,sparse)": [
+     10,
+     6
+    ]
+   },
+   "fa": 0.8765,
+   "en": 0.7364,
+   "T1": 0.9815,
+   "T2": 0.7481,
+   "T3": 0.6898,
+   "RPT-fa": 0.8889
+  },
+  "a1 RRF(bm25,dense,sparse)": {
+   "span": 0.7632,
+   "full": 34,
+   "top24": 0.921,
+   "t3_docs": 14,
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     10
+    ],
+    "HYBRID": [
+     4,
+     0
+    ],
+    "a1 RRF(bm25,dense,sparse)": [
+     0,
+     0
+    ]
+   },
+   "fa": 0.7716,
+   "en": 0.7547,
+   "T1": 0.9815,
+   "T2": 0.6691,
+   "T3": 0.6389,
+   "RPT-fa": 0.6111
+  },
+  "MMR-a1 (recomputed)": {
+   "span": 0.7673,
+   "full": 34,
+   "top24": 0.9256,
+   "t3_docs": 14,
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     9
+    ],
+    "HYBRID": [
+     5,
+     2
+    ],
+    "a1 RRF(bm25,dense,sparse)": [
+     1,
+     2
+    ]
+   },
+   "fa": 0.7901,
+   "en": 0.7444,
+   "T1": 0.9815,
+   "T2": 0.663,
+   "T3": 0.6574,
+   "RPT-fa": 0.6667
+  },
+  "O1 orderfix(MMR-a1)": {
+   "span": 0.7735,
+   "full": 35,
+   "top24": 0.9256,
+   "t3_docs": 14,
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     9
+    ],
+    "HYBRID": [
+     6,
+     1
+    ],
+    "a1 RRF(bm25,dense,sparse)": [
+     2,
+     1
+    ]
+   },
+   "fa": 0.7901,
+   "en": 0.7568,
+   "T1": 0.9815,
+   "T2": 0.6815,
+   "T3": 0.6574,
+   "RPT-fa": 0.6667
+  },
+  "O2 orderfix-v2(MMR-a1)": {
+   "span": 0.7652,
+   "full": 33,
+   "top24": 0.9256,
+   "t3_docs": 14,
+   "bw": {
+    "HYBRID+rerank": [
+     5,
+     9
+    ],
+    "HYBRID": [
+     6,
+     2
+    ],
+    "a1 RRF(bm25,dense,sparse)": [
+     2,
+     2
+    ]
+   },
+   "fa": 0.7778,
+   "en": 0.7527,
+   "T1": 0.9815,
+   "T2": 0.6568,
+   "T3": 0.6574,
+   "RPT-fa": 0.6667
+  }
+ },
+ "orderfix2": {
+  "calls": 54,
+  "answered": 53,
+  "prompt_p50": 851.0,
+  "prompt_max": 887,
+  "completion_p50": 89.0,
+  "completion_max": 200,
+  "tokens_per_q_mean": 953.0377358490566,
+  "ms_p50": 621.4,
+  "ms_p95": 1033.7349999999983,
+  "cost_usd": 0.00394745,
+  "status": {
+   "fail": 4,
+   "ok": 40,
+   "none": 10
+  },
+  "reason": {
+   "deadline": 1,
+   "None": 50,
+   "truncated": 3
+  }
+ },
+ "gained_lost": {
+  "gained_vs_rerank": [
+   "BOOK-en-T3-002 (0.17 vs 0.00)",
+   "BOOK-en-T3-003 (1.00 vs 0.67)",
+   "LAW-en-T2-001 (0.89 vs 0.00)",
+   "LAW-en-T2-002 (1.00 vs 0.75)",
+   "RPT-en-T3-003 (0.75 vs 0.50)"
+  ],
+  "lost_vs_rerank": [
+   "BOOK-fa-T2-002 (0.33 vs 0.67)",
+   "BOOK-en-T2-001 (0.50 vs 0.75)",
+   "BOOK-en-T2-002 (0.60 vs 0.80)",
+   "BOOK-en-T3-001 (0.25 vs 0.75)",
+   "LAW-fa-T3-002 (0.67 vs 1.00)",
+   "RPT-fa-T2-001 (0.00 vs 0.50)",
+   "RPT-fa-T2-003 (0.00 vs 1.00)",
+   "RPT-fa-T3-002 (0.50 vs 1.00)",
+   "RPT-en-T2-003 (0.50 vs 1.00)"
+  ],
+  "gained_vs_O1": [],
+  "lost_vs_O1": [
+   "LAW-fa-T2-003 (0.67 vs 1.00)",
+   "LAW-en-T2-001 (0.89 vs 1.00)"
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+% src: dev60/DEV60.md (dev machine /54: HYBRID 30, HR 32, LEX5B 37); setr/SETR.md (dev SETR 40-42);
+%      TEST_RESULTS_HUMAN.md sec. 4 (dev human, asymmetric review: 34/36/41; cells reviewed 14/13/20);
+%      test_freeze/PROTOCOL.md sec. 6 items 2 and 4 (HR 33/54 with the earlier contradictory verdict; parser v1.1 worst case LEX5B 36/54);
+%      test: TEST_RESULTS.md sec. 2 (machine), TEST_RESULTS_HUMAN_SYM.md sec. 1 (symmetric human). pp = net/54 or net/90 x 100.
+\begin{table}[tp]
+\caption{Development and test results at 6,000 characters}
+\label{tab:devtest}
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{Dev (/54)} & \multicolumn{2}{c}{Test (/90)} \\
+Pipeline @6,000 & First judge & Human$^a$ & First judge & Merged \\
+\midrule
+\hybrid & 30 & 34 & 62--63 & 71 \\
+\hr & 32 (33)$^b$ & 36 & 69--71 & 76 \\
+\lexb & 37 (36)$^c$ & 41 & 68--69 & 76 \\
+\setr & 40--42$^d$ & -- & 63 & 78 \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Differences in percentage points}} \\
+\lexb{} -- \hybrid & +13.0 (+11.1) & +13.0 & +5.6..+7.8 & +5.6 \\
+\lexb{} -- \hr & +9.3 (+5.6) & +9.3 & $-3.3$..0.0 & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

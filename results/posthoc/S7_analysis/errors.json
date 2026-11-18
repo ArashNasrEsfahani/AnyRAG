@@ -1,0 +1,2269 @@
+{
+ "a_judge_disagreements": {
+  "n": 66,
+  "by_label": {
+   "extra_unsupported": {
+    "cells": 30,
+    "J1_stricter": 9,
+    "J2_stricter": 21,
+    "questions": 13,
+    "fa": 18,
+    "en": 12,
+    "six_thousand_cells": 15
+   },
+   "omission_disputed": {
+    "cells": 12,
+    "J1_stricter": 2,
+    "J2_stricter": 10,
+    "questions": 5,
+    "fa": 3,
+    "en": 9,
+    "six_thousand_cells": 5
+   },
+   "judge_misread": {
+    "cells": 6,
+    "J1_stricter": 2,
+    "J2_stricter": 4,
+    "questions": 5,
+    "fa": 5,
+    "en": 1,
+    "six_thousand_cells": 4
+   },
+   "synonym_fa": {
+    "cells": 7,
+    "J1_stricter": 7,
+    "J2_stricter": 0,
+    "questions": 1,
+    "fa": 7,
+    "en": 0,
+    "six_thousand_cells": 3
+   },
+   "numeric_tolerance": {
+    "cells": 4,
+    "J1_stricter": 1,
+    "J2_stricter": 3,
+    "questions": 1,
+    "fa": 4,
+    "en": 0,
+    "six_thousand_cells": 2
+   },
+   "substantive_error": {
+    "cells": 7,
+    "J1_stricter": 2,
+    "J2_stricter": 5,
+    "questions": 7,
+    "fa": 2,
+    "en": 5,
+    "six_thousand_cells": 2
+   }
+  },
+  "by_label_question": {},
+  "by_label_lang": {},
+  "by_arm": {
+   "HYBRID_6000": {
+    "extra_unsupported": 3,
+    "omission_disputed": 1,
+    "substantive_error": 1
+   },
+   "HR_6000": {
+    "omission_disputed": 3,
+    "numeric_tolerance": 1,
+    "extra_unsupported": 4,
+    "synonym_fa": 1,
+    "substantive_error": 1
+   },
+   "LEX5B_6000": {
+    "extra_unsupported": 4,
+    "judge_misread": 3,
+    "synonym_fa": 1
+   },
+   "HYBRID_15500": {
+    "extra_unsupported": 5,
+    "omission_disputed": 2,
+    "synonym_fa": 1
+   },
+   "HR_15500": {
+    "judge_misread": 2,
+    "substantive_error": 2,
+    "synonym_fa": 1,
+    "omission_disputed": 2
+   },
+   "LEX5B_15500": {
+    "numeric_tolerance": 1,
+    "extra_unsupported": 4,
+    "substantive_error": 3,
+    "synonym_fa": 1,
+    "omission_disputed": 1
+   },
+   "SETR_6000": {
+    "judge_misread": 1,
+    "numeric_tolerance": 1,
+    "extra_unsupported": 4,
+    "omission_disputed": 1,
+    "synonym_fa": 1
+   },
+   "SETR_15500": {
+    "numeric_tolerance": 1,
+    "extra_unsupported": 6,
+    "omission_disputed": 2,
+    "synonym_fa": 1
+   }
+  },
+  "questions_total": 29,
+  "top_questions": [
+   [
+    "V2-test-LAW-fa-T1-002",
+    7
+   ],
+   [
+    "V2-test-BOOK-fa-T1-002",
+    6
+   ],
+   [
+    "V2-test-RPT-en-T2-002",
+    5
+   ],
+   [
+    "V2-test-LAW-en-T3-001",
+    5
+   ],
+   [
+    "V2-test-RPT-fa-T3-001",
+    4
+   ],
+   [
+    "V2-test-BOOK-fa-T3-002",
+    4
+   ],
+   [
+    "V2-test-BOOK-en-T3-005",
+    3
+   ],
+   [
+    "V2-test-LAW-fa-T2-004",
+    3
+   ]
+  ],
+  "structural_flags_of_stricter_verdict": {
+   "claim_unsupported": 46,
+   "claim_wrong_value": 9,
+   "req_missing": 11,
+   "req_wrong": 4,
+   "rule:cache": 1,
+   "claim_contradiction": 1,
+   "claim_wrong_binding": 1
+  }
+ },
+ "a_cells": [
+  {
+   "idx": 0,
+   "arm": "HYBRID_6000",
+   "q": "V2-test-RPT-en-T2-002",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 1,
+   "arm": "HYBRID_6000",
+   "q": "V2-test-BOOK-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 2,
+   "arm": "HYBRID_6000",
+   "q": "V2-test-BOOK-fa-T2-001",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 3,
+   "arm": "HYBRID_6000",
+   "q": "V2-test-BOOK-fa-T2-005",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 4,
+   "arm": "HYBRID_6000",
+   "q": "V2-test-BOOK-en-T3-001",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "substantive_error",
+   "structural": [
+    "claim_wrong_value"
+   ]
+  },
+  {
+   "idx": 5,
+   "arm": "HR_6000",
+   "q": "V2-test-RPT-fa-T2-003",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 6,
+   "arm": "HR_6000",
+   "q": "V2-test-RPT-fa-T3-001",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "numeric_tolerance",
+   "structural": [
+    "claim_wrong_value"
+   ]
+  },
+  {
+   "idx": 7,
+   "arm": "HR_6000",
+   "q": "V2-test-RPT-en-T2-002",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 8,
+   "arm": "HR_6000",
+   "q": "V2-test-BOOK-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 9,
+   "arm": "HR_6000",
+   "q": "V2-test-BOOK-fa-T3-002",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 10,
+   "arm": "HR_6000",
+   "q": "V2-test-BOOK-en-T3-005",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J1",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported",
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 11,
+   "arm": "HR_6000",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 12,
+   "arm": "HR_6000",
+   "q": "V2-test-LAW-fa-T2-004",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 13,
+   "arm": "HR_6000",
+   "q": "V2-test-LAW-en-T3-001",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 14,
+   "arm": "HR_6000",
+   "q": "V2-test-LAW-en-T3-004",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "substantive_error",
+   "structural": [
+    "claim_unsupported",
+    "claim_wrong_value",
+    "req_wrong"
+   ]
+  },
+  {
+   "idx": 15,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-RPT-en-T2-002",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 16,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-RPT-en-T2-005",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 17,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-RPT-en-T3-003",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J1",
+   "label": "judge_misread",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 18,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-BOOK-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 19,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-BOOK-fa-T1-003",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "judge_misread",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 20,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-BOOK-fa-T1-005",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "judge_misread",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 21,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-BOOK-fa-T2-001",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 22,
+   "arm": "LEX5B_6000",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 23,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-RPT-fa-T3-004",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 24,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-BOOK-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 25,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-BOOK-fa-T1-005",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 26,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-BOOK-en-T3-005",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 27,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "rule:cache"
+   ]
+  },
+  {
+   "idx": 28,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-LAW-fa-T2-003",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 29,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-LAW-fa-T2-004",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 30,
+   "arm": "HYBRID_15500",
+   "q": "V2-test-LAW-en-T3-001",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 31,
+   "arm": "HR_15500",
+   "q": "V2-test-BOOK-fa-T1-005",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "judge_misread",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 32,
+   "arm": "HR_15500",
+   "q": "V2-test-BOOK-fa-T3-002",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "judge_misread",
+   "structural": [
+    "claim_unsupported",
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 33,
+   "arm": "HR_15500",
+   "q": "V2-test-BOOK-fa-T3-004",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "substantive_error",
+   "structural": [
+    "claim_contradiction"
+   ]
+  },
+  {
+   "idx": 34,
+   "arm": "HR_15500",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 35,
+   "arm": "HR_15500",
+   "q": "V2-test-LAW-fa-T3-003",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "substantive_error",
+   "structural": [
+    "claim_wrong_binding"
+   ]
+  },
+  {
+   "idx": 36,
+   "arm": "HR_15500",
+   "q": "V2-test-LAW-en-T3-001",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 37,
+   "arm": "HR_15500",
+   "q": "V2-test-LAW-en-T3-002",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J1",
+   "label": "omission_disputed",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 38,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-RPT-fa-T3-001",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "numeric_tolerance",
+   "structural": [
+    "claim_wrong_value"
+   ]
+  },
+  {
+   "idx": 39,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-RPT-en-T2-005",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 40,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-BOOK-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 41,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-BOOK-fa-T3-002",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 42,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-BOOK-en-T2-001",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "substantive_error",
+   "structural": [
+    "claim_wrong_value",
+    "req_wrong"
+   ]
+  },
+  {
+   "idx": 43,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-BOOK-en-T3-003",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J1",
+   "label": "substantive_error",
+   "structural": [
+    "claim_unsupported",
+    "req_wrong"
+   ]
+  },
+  {
+   "idx": 44,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 45,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-LAW-en-T2-001",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 46,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-LAW-en-T3-001",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 47,
+   "arm": "LEX5B_15500",
+   "q": "V2-test-LAW-en-T3-002",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "substantive_error",
+   "structural": [
+    "claim_wrong_value",
+    "req_wrong"
+   ]
+  },
+  {
+   "idx": 48,
+   "arm": "SETR_6000",
+   "q": "V2-test-RPT-fa-T2-002",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "judge_misread",
+   "structural": [
+    "claim_wrong_value"
+   ]
+  },
+  {
+   "idx": 49,
+   "arm": "SETR_6000",
+   "q": "V2-test-RPT-fa-T3-001",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "numeric_tolerance",
+   "structural": [
+    "claim_wrong_value"
+   ]
+  },
+  {
+   "idx": 50,
+   "arm": "SETR_6000",
+   "q": "V2-test-RPT-en-T2-002",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 51,
+   "arm": "SETR_6000",
+   "q": "V2-test-BOOK-en-T3-005",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 52,
+   "arm": "SETR_6000",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 53,
+   "arm": "SETR_6000",
+   "q": "V2-test-LAW-en-T2-001",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 54,
+   "arm": "SETR_6000",
+   "q": "V2-test-LAW-en-T2-002",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 55,
+   "arm": "SETR_6000",
+   "q": "V2-test-LAW-en-T2-004",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 56,
+   "arm": "SETR_15500",
+   "q": "V2-test-RPT-fa-T3-001",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J1",
+   "label": "numeric_tolerance",
+   "structural": [
+    "claim_wrong_value"
+   ]
+  },
+  {
+   "idx": 57,
+   "arm": "SETR_15500",
+   "q": "V2-test-RPT-en-T2-002",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 58,
+   "arm": "SETR_15500",
+   "q": "V2-test-RPT-en-T2-005",
+   "lang": "en",
+   "tier": "T2",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 59,
+   "arm": "SETR_15500",
+   "q": "V2-test-BOOK-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 60,
+   "arm": "SETR_15500",
+   "q": "V2-test-BOOK-fa-T2-005",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 61,
+   "arm": "SETR_15500",
+   "q": "V2-test-BOOK-fa-T3-002",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J1",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 62,
+   "arm": "SETR_15500",
+   "q": "V2-test-LAW-fa-T1-002",
+   "lang": "fa",
+   "tier": "T1",
+   "stricter": "J1",
+   "label": "synonym_fa",
+   "structural": [
+    "req_missing"
+   ]
+  },
+  {
+   "idx": 63,
+   "arm": "SETR_15500",
+   "q": "V2-test-LAW-fa-T2-004",
+   "lang": "fa",
+   "tier": "T2",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 64,
+   "arm": "SETR_15500",
+   "q": "V2-test-LAW-fa-T3-001",
+   "lang": "fa",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "extra_unsupported",
+   "structural": [
+    "claim_unsupported"
+   ]
+  },
+  {
+   "idx": 65,
+   "arm": "SETR_15500",
+   "q": "V2-test-LAW-en-T3-001",
+   "lang": "en",
+   "tier": "T3",
+   "stricter": "J2",
+   "label": "omission_disputed",
+   "structural": [
+    "claim_unsupported"
+   ]
+  }
+ ],
+ "b_wins_losses": {
+  "HYBRID_6000": {
+   "table": {
+    "T1_table_cell": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T1_table_cell|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "ALL|fa": {
+     "win": 4,
+     "loss": 2,
+     "tie1": 32,
+     "tie0": 5,
+     "unres": 2,
+     "n": 45
+    },
+    "ALL": {
+     "win": 11,
+     "loss": 4,
+     "tie1": 57,
+     "tie0": 16,
+     "unres": 2,
+     "n": 90
+    },
+    "T1_fact": {
+     "win": 2,
+     "loss": 0,
+     "tie1": 25,
+     "tie0": 0,
+     "unres": 0,
+     "n": 27
+    },
+    "T1_fact|fa": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 12,
+     "tie0": 0,
+     "unres": 0,
+     "n": 13
+    },
+    "T2_comparison_derivation": {
+     "win": 4,
+     "loss": 1,
+     "tie1": 6,
+     "tie0": 1,
+     "unres": 1,
+     "n": 13
+    },
+    "T2_comparison_derivation|fa": {
+     "win": 3,
+     "loss": 0,
+     "tie1": 4,
+     "tie0": 0,
+     "unres": 1,
+     "n": 8
+    },
+    "T2_definition_bridge": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 6,
+     "tie0": 1,
+     "unres": 1,
+     "n": 8
+    },
+    "T2_definition_bridge|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 3,
+     "tie0": 0,
+     "unres": 1,
+     "n": 4
+    },
+    "T3_cross_time_version": {
+     "win": 2,
+     "loss": 0,
+     "tie1": 9,
+     "tie0": 0,
+     "unres": 0,
+     "n": 11
+    },
+    "T3_cross_time_version|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 8,
+     "tie0": 0,
+     "unres": 0,
+     "n": 8
+    },
+    "T3_cross_subject": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 7,
+     "unres": 0,
+     "n": 9
+    },
+    "T3_cross_subject|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T1_fact|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 13,
+     "tie0": 0,
+     "unres": 0,
+     "n": 14
+    },
+    "ALL|en": {
+     "win": 7,
+     "loss": 2,
+     "tie1": 25,
+     "tie0": 11,
+     "unres": 0,
+     "n": 45
+    },
+    "T1_table_cell|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_bounded_synthesis": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T2_bounded_synthesis|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_definition_bridge|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 3,
+     "tie0": 1,
+     "unres": 0,
+     "n": 4
+    },
+    "T2_comparison_derivation|en": {
+     "win": 1,
+     "loss": 1,
+     "tie1": 2,
+     "tie0": 1,
+     "unres": 0,
+     "n": 5
+    },
+    "T3_cross_subject|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 7,
+     "unres": 0,
+     "n": 8
+    },
+    "T3_cross_time_version|en": {
+     "win": 2,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 3
+    },
+    "T2_bounded_synthesis|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_rule_exception": {
+     "win": 2,
+     "loss": 2,
+     "tie1": 3,
+     "tie0": 0,
+     "unres": 0,
+     "n": 7
+    },
+    "T2_rule_exception|fa": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T3_bounded_aggregation": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 2,
+     "unres": 0,
+     "n": 3
+    },
+    "T3_bounded_aggregation|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    },
+    "T3_cross_doc_bridge": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 5,
+     "unres": 0,
+     "n": 7
+    },
+    "T3_cross_doc_bridge|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 4,
+     "unres": 0,
+     "n": 5
+    },
+    "T2_rule_exception|en": {
+     "win": 2,
+     "loss": 1,
+     "tie1": 2,
+     "tie0": 0,
+     "unres": 0,
+     "n": 5
+    },
+    "T3_cross_doc_bridge|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 1,
+     "unres": 0,
+     "n": 2
+    },
+    "T3_bounded_aggregation|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 1,
+     "unres": 0,
+     "n": 2
+    },
+    "T1_list_local": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 0,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T1_list_local|fa": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 0,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    }
+   },
+   "decisive": [
+    {
+     "q": "V2-test-RPT-fa-T2-002",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5708,
+     "ctrl_chars": 5998
+    },
+    {
+     "q": "V2-test-RPT-en-T2-001",
+     "subtype": "T2_bounded_synthesis",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5750,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-RPT-en-T2-004",
+     "subtype": "T2_comparison_derivation",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5622,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-RPT-en-T3-004",
+     "subtype": "T3_cross_time_version",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5795,
+     "ctrl_chars": 5914
+    },
+    {
+     "q": "V2-test-RPT-en-T3-005",
+     "subtype": "T3_cross_time_version",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5985,
+     "ctrl_chars": 5999
+    },
+    {
+     "q": "V2-test-BOOK-fa-T1-005",
+     "subtype": "T1_fact",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "none",
+     "lex_chars": 5657,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-001",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5634,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-003",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "none",
+     "lex_chars": 5663,
+     "ctrl_chars": 5965
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-005",
+     "subtype": "T2_rule_exception",
+     "lang": "fa",
+     "result": "loss",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5796,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-002",
+     "subtype": "T2_comparison_derivation",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "complete",
+     "lex_chars": 5554,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-fa-T1-002",
+     "subtype": "T1_list_local",
+     "lang": "fa",
+     "result": "loss",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5902,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-en-T1-004",
+     "subtype": "T1_fact",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5858,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-en-T2-002",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5933,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-en-T2-004",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5510,
+     "ctrl_chars": 5988
+    },
+    {
+     "q": "V2-test-LAW-en-T2-005",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5980,
+     "ctrl_chars": 5958
+    }
+   ],
+   "reach_transitions": {
+    "win:partial->partial": 2,
+    "win:partial->complete": 4,
+    "win:complete->complete": 3,
+    "win:none->complete": 1,
+    "win:none->partial": 1,
+    "loss:complete->complete": 2,
+    "loss:complete->partial": 1,
+    "loss:partial->partial": 1
+   }
+  },
+  "FUSION_6000": {
+   "table": {
+    "T1_table_cell": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T1_table_cell|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "ALL|fa": {
+     "win": 5,
+     "loss": 0,
+     "tie1": 31,
+     "tie0": 8,
+     "unres": 1,
+     "n": 45
+    },
+    "ALL": {
+     "win": 12,
+     "loss": 2,
+     "tie1": 56,
+     "tie0": 19,
+     "unres": 1,
+     "n": 90
+    },
+    "T1_fact": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 27,
+     "tie0": 0,
+     "unres": 0,
+     "n": 27
+    },
+    "T1_fact|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 13,
+     "tie0": 0,
+     "unres": 0,
+     "n": 13
+    },
+    "T2_comparison_derivation": {
+     "win": 5,
+     "loss": 0,
+     "tie1": 5,
+     "tie0": 2,
+     "unres": 1,
+     "n": 13
+    },
+    "T2_comparison_derivation|fa": {
+     "win": 4,
+     "loss": 0,
+     "tie1": 3,
+     "tie0": 0,
+     "unres": 1,
+     "n": 8
+    },
+    "T2_definition_bridge": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 5,
+     "tie0": 2,
+     "unres": 0,
+     "n": 8
+    },
+    "T2_definition_bridge|fa": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 1,
+     "unres": 0,
+     "n": 4
+    },
+    "T3_cross_time_version": {
+     "win": 2,
+     "loss": 0,
+     "tie1": 9,
+     "tie0": 0,
+     "unres": 0,
+     "n": 11
+    },
+    "T3_cross_time_version|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 8,
+     "tie0": 0,
+     "unres": 0,
+     "n": 8
+    },
+    "T3_cross_subject": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 2,
+     "tie0": 6,
+     "unres": 0,
+     "n": 9
+    },
+    "T3_cross_subject|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T1_fact|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 14,
+     "tie0": 0,
+     "unres": 0,
+     "n": 14
+    },
+    "ALL|en": {
+     "win": 7,
+     "loss": 2,
+     "tie1": 25,
+     "tie0": 11,
+     "unres": 0,
+     "n": 45
+    },
+    "T1_table_cell|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_bounded_synthesis": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T2_bounded_synthesis|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_definition_bridge|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 3,
+     "tie0": 1,
+     "unres": 0,
+     "n": 4
+    },
+    "T2_comparison_derivation|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 2,
+     "unres": 0,
+     "n": 5
+    },
+    "T3_cross_subject|en": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 1,
+     "tie0": 6,
+     "unres": 0,
+     "n": 8
+    },
+    "T3_cross_time_version|en": {
+     "win": 2,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 3
+    },
+    "T2_bounded_synthesis|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_rule_exception": {
+     "win": 3,
+     "loss": 1,
+     "tie1": 2,
+     "tie0": 1,
+     "unres": 0,
+     "n": 7
+    },
+    "T2_rule_exception|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 1,
+     "unres": 0,
+     "n": 2
+    },
+    "T3_bounded_aggregation": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 2,
+     "unres": 0,
+     "n": 3
+    },
+    "T3_bounded_aggregation|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    },
+    "T3_cross_doc_bridge": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 5,
+     "unres": 0,
+     "n": 7
+    },
+    "T3_cross_doc_bridge|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 4,
+     "unres": 0,
+     "n": 5
+    },
+    "T2_rule_exception|en": {
+     "win": 3,
+     "loss": 1,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 5
+    },
+    "T3_cross_doc_bridge|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 1,
+     "unres": 0,
+     "n": 2
+    },
+    "T3_bounded_aggregation|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 1,
+     "unres": 0,
+     "n": 2
+    },
+    "T1_list_local": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    },
+    "T1_list_local|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    }
+   },
+   "decisive": [
+    {
+     "q": "V2-test-RPT-fa-T2-002",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5708,
+     "ctrl_chars": 5968
+    },
+    {
+     "q": "V2-test-RPT-fa-T2-005",
+     "subtype": "T2_definition_bridge",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5977,
+     "ctrl_chars": 5986
+    },
+    {
+     "q": "V2-test-RPT-en-T2-001",
+     "subtype": "T2_bounded_synthesis",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5750,
+     "ctrl_chars": 5982
+    },
+    {
+     "q": "V2-test-RPT-en-T2-004",
+     "subtype": "T2_comparison_derivation",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5622,
+     "ctrl_chars": 5864
+    },
+    {
+     "q": "V2-test-RPT-en-T3-004",
+     "subtype": "T3_cross_time_version",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5795,
+     "ctrl_chars": 5808
+    },
+    {
+     "q": "V2-test-RPT-en-T3-005",
+     "subtype": "T3_cross_time_version",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5985,
+     "ctrl_chars": 5957
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-001",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5634,
+     "ctrl_chars": 5974
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-003",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5663,
+     "ctrl_chars": 5615
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-001",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5668,
+     "ctrl_chars": 5668
+    },
+    {
+     "q": "V2-test-BOOK-en-T3-003",
+     "subtype": "T3_cross_subject",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "none",
+     "lex_chars": 5981,
+     "ctrl_chars": 5337
+    },
+    {
+     "q": "V2-test-LAW-fa-T2-005",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5679,
+     "ctrl_chars": 5679
+    },
+    {
+     "q": "V2-test-LAW-en-T2-002",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5933,
+     "ctrl_chars": 5935
+    },
+    {
+     "q": "V2-test-LAW-en-T2-004",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5510,
+     "ctrl_chars": 5410
+    },
+    {
+     "q": "V2-test-LAW-en-T2-005",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5980,
+     "ctrl_chars": 5930
+    }
+   ],
+   "reach_transitions": {
+    "win:partial->partial": 4,
+    "win:partial->complete": 7,
+    "loss:none->partial": 1,
+    "win:complete->complete": 1,
+    "loss:partial->partial": 1
+   }
+  },
+  "HR_6000": {
+   "table": {
+    "T1_table_cell": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T1_table_cell|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "ALL|fa": {
+     "win": 3,
+     "loss": 2,
+     "tie1": 33,
+     "tie0": 6,
+     "unres": 1,
+     "n": 45
+    },
+    "ALL": {
+     "win": 6,
+     "loss": 7,
+     "tie1": 61,
+     "tie0": 13,
+     "unres": 3,
+     "n": 90
+    },
+    "T1_fact": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 26,
+     "tie0": 0,
+     "unres": 0,
+     "n": 27
+    },
+    "T1_fact|fa": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 12,
+     "tie0": 0,
+     "unres": 0,
+     "n": 13
+    },
+    "T2_comparison_derivation": {
+     "win": 1,
+     "loss": 1,
+     "tie1": 9,
+     "tie0": 1,
+     "unres": 1,
+     "n": 13
+    },
+    "T2_comparison_derivation|fa": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 6,
+     "tie0": 0,
+     "unres": 1,
+     "n": 8
+    },
+    "T2_definition_bridge": {
+     "win": 1,
+     "loss": 1,
+     "tie1": 5,
+     "tie0": 1,
+     "unres": 0,
+     "n": 8
+    },
+    "T2_definition_bridge|fa": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 3,
+     "tie0": 0,
+     "unres": 0,
+     "n": 4
+    },
+    "T3_cross_time_version": {
+     "win": 2,
+     "loss": 0,
+     "tie1": 9,
+     "tie0": 0,
+     "unres": 0,
+     "n": 11
+    },
+    "T3_cross_time_version|fa": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 7,
+     "tie0": 0,
+     "unres": 0,
+     "n": 8
+    },
+    "T3_cross_subject": {
+     "win": 0,
+     "loss": 3,
+     "tie1": 2,
+     "tie0": 3,
+     "unres": 1,
+     "n": 9
+    },
+    "T3_cross_subject|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T1_fact|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 14,
+     "tie0": 0,
+     "unres": 0,
+     "n": 14
+    },
+    "ALL|en": {
+     "win": 3,
+     "loss": 5,
+     "tie1": 28,
+     "tie0": 7,
+     "unres": 2,
+     "n": 45
+    },
+    "T1_table_cell|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_bounded_synthesis": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T2_bounded_synthesis|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_definition_bridge|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 1,
+     "unres": 0,
+     "n": 4
+    },
+    "T2_comparison_derivation|en": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 3,
+     "tie0": 1,
+     "unres": 0,
+     "n": 5
+    },
+    "T3_cross_subject|en": {
+     "win": 0,
+     "loss": 3,
+     "tie1": 1,
+     "tie0": 3,
+     "unres": 1,
+     "n": 8
+    },
+    "T3_cross_time_version|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 0,
+     "unres": 0,
+     "n": 3
+    },
+    "T2_bounded_synthesis|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 1
+    },
+    "T2_rule_exception": {
+     "win": 1,
+     "loss": 1,
+     "tie1": 3,
+     "tie0": 1,
+     "unres": 1,
+     "n": 7
+    },
+    "T2_rule_exception|fa": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T3_bounded_aggregation": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 2,
+     "unres": 0,
+     "n": 3
+    },
+    "T3_bounded_aggregation|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    },
+    "T3_cross_doc_bridge": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 2,
+     "tie0": 4,
+     "unres": 0,
+     "n": 7
+    },
+    "T3_cross_doc_bridge|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 4,
+     "unres": 0,
+     "n": 5
+    },
+    "T2_rule_exception|en": {
+     "win": 1,
+     "loss": 0,
+     "tie1": 2,
+     "tie0": 1,
+     "unres": 1,
+     "n": 5
+    },
+    "T3_cross_doc_bridge|en": {
+     "win": 0,
+     "loss": 1,
+     "tie1": 1,
+     "tie0": 0,
+     "unres": 0,
+     "n": 2
+    },
+    "T3_bounded_aggregation|en": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 1,
+     "tie0": 1,
+     "unres": 0,
+     "n": 2
+    },
+    "T1_list_local": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    },
+    "T1_list_local|fa": {
+     "win": 0,
+     "loss": 0,
+     "tie1": 0,
+     "tie0": 1,
+     "unres": 0,
+     "n": 1
+    }
+   },
+   "decisive": [
+    {
+     "q": "V2-test-RPT-fa-T2-003",
+     "subtype": "T2_definition_bridge",
+     "lang": "fa",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5888,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-RPT-en-T2-003",
+     "subtype": "T2_definition_bridge",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5981,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-RPT-en-T3-002",
+     "subtype": "T3_cross_subject",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "none",
+     "ctrl_reach": "partial",
+     "lex_chars": 5876,
+     "ctrl_chars": 5843
+    },
+    {
+     "q": "V2-test-RPT-en-T3-005",
+     "subtype": "T3_cross_time_version",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5985,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-BOOK-fa-T1-005",
+     "subtype": "T1_fact",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5657,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-003",
+     "subtype": "T2_comparison_derivation",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5663,
+     "ctrl_chars": 5865
+    },
+    {
+     "q": "V2-test-BOOK-fa-T2-005",
+     "subtype": "T2_rule_exception",
+     "lang": "fa",
+     "result": "loss",
+     "lex_reach": "complete",
+     "ctrl_reach": "complete",
+     "lex_chars": 5796,
+     "ctrl_chars": 5806
+    },
+    {
+     "q": "V2-test-BOOK-en-T2-002",
+     "subtype": "T2_comparison_derivation",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "complete",
+     "lex_chars": 5554,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-fa-T3-004",
+     "subtype": "T3_cross_time_version",
+     "lang": "fa",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5621,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-en-T2-004",
+     "subtype": "T2_rule_exception",
+     "lang": "en",
+     "result": "win",
+     "lex_reach": "complete",
+     "ctrl_reach": "partial",
+     "lex_chars": 5510,
+     "ctrl_chars": 5999
+    },
+    {
+     "q": "V2-test-LAW-en-T3-001",
+     "subtype": "T3_cross_subject",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "complete",
+     "lex_chars": 5972,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-en-T3-003",
+     "subtype": "T3_cross_doc_bridge",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "none",
+     "ctrl_reach": "complete",
+     "lex_chars": 5451,
+     "ctrl_chars": 6000
+    },
+    {
+     "q": "V2-test-LAW-en-T3-004",
+     "subtype": "T3_cross_subject",
+     "lang": "en",
+     "result": "loss",
+     "lex_reach": "partial",
+     "ctrl_reach": "partial",
+     "lex_chars": 5930,
+     "ctrl_chars": 6000
+    }
+   ],
+   "reach_transitions": {
+    "loss:partial->partial": 2,
+    "win:partial->complete": 3,
+    "loss:partial->none": 1,
+    "win:complete->complete": 2,
+    "win:partial->partial": 1,
+    "loss:complete->complete": 1,
+    "loss:complete->partial": 2,
+    "loss:complete->none": 1
+   }
+  },
+  "selector_on_decisive_vs_FUSION": {
+   "win|fallback=False": 12,
+   "loss|fallback=False": 2
+  }
+ }
+}

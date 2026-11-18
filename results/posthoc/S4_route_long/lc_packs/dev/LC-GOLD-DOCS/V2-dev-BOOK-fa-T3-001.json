@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-fa-T3-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79132 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "af82b6e968feceb00d5eac7c5dc03cb89adf62dd561b6cb0f2ade8d410a707c1",
+ "evidence_chars": 79020,
+ "prompt_chars": 79663,
+ "est_prompt_tokens": 31510,
+ "build_ms": 1.1,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "K.wikisource_christensen_iran-sasanian.fa",
+    "doc_chars": 690548,
+    "shown": 39548,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "K.wikisource_foroughi_ancient-rome.fa",
+    "doc_chars": 425584,
+    "shown": 39393,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 2
+ }
+}

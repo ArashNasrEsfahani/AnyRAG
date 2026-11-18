@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T2-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143103 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "ee3949ecc1b011ea8e5e43646821234ae6d5c39e2c19fa7c8c839733f7cf9519",
+ "evidence_chars": 142953,
+ "prompt_chars": 143626,
+ "est_prompt_tokens": 31459,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-815_tocqueville_democracy-in-america-part1.en",
+    "doc_chars": 1110035,
+    "shown": 142899,
+    "ranges": 2,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

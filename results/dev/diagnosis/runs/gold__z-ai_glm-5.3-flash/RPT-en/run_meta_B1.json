@@ -1,0 +1,150 @@
+{
+ "approach": "B1",
+ "approach_base": "B1",
+ "flags": {},
+ "invocations": [
+  {
+   "run_id": "20260926-020135-f6f49f",
+   "started": "2026-09-26T02:01:35",
+   "argv": [
+    "--approach-class",
+    "diag_arms:GoldB1",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+    "--corpus",
+    "D",
+    "--settings",
+    "en-en",
+    "--pool",
+    "RPT-en",
+    "--ids",
+    "V2-dev-RPT-en-T2-001,V2-dev-RPT-en-T2-002,V2-dev-RPT-en-T2-003,V2-dev-RPT-en-T3-001,V2-dev-RPT-en-T3-002,V2-dev-RPT-en-T3-003",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--no-warmup",
+    "--no-health",
+    "--out",
+    "D:/KareOne/RAG Paper/work/datasets_v2/diagnosis/runs/gold__z-ai_glm-5.3-flash/RPT-en"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_RPT-en.jsonl",
+   "questions_sha1": "9616a1f0551cd0f838d0eabe4a39ac119b084544",
+   "corpus": "D",
+   "settings": [
+    "en-en"
+   ],
+   "n_planned": 6,
+   "n_todo": 6,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b679df886c5b80d065bd500eeb22e7c46f941fe9",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 3,
+    "v2_explanation": 2,
+    "v2_single": 1
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "5f032344d0ab0eea63ebe9ae3bad6adfca1892eb",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1",
+    "v2_explanation": "answer-v2-explanation-v1",
+    "v2_single": "answer-v2-single-v1"
+   },
+   "pool": {
+    "pool_id": "RPT-en",
+    "manifest_sha1": "083eaa34617784ea404f29d78c6ac03dc7097459"
+   },
+   "identity": {
+    "experiment_id": "datasets-v2-dev",
+    "replicate": 0
+   },
+   "finished": "2026-09-26T02:01:54",
+   "status": "ok",
+   "n_ok": 6,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 6,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 4018,
+     "completion_tokens": 821,
+     "embed_tokens": 0,
+     "llm_wall_ms": 18888.5,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\diagnosis\\runs\\gold__z-ai_glm-5.3-flash\\RPT-en\\ledger_B1.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-dev-RPT-en-T2-001": "957166225020175c",
+  "V2-dev-RPT-en-T2-002": "8b117622fba656a1",
+  "V2-dev-RPT-en-T2-003": "ec33eb1131e75cef",
+  "V2-dev-RPT-en-T3-001": "425a726134a6afba",
+  "V2-dev-RPT-en-T3-002": "8c53f5a698b4a867",
+  "V2-dev-RPT-en-T3-003": "cf423ec0169957dd"
+ },
+ "question_sigs_v2": {
+  "V2-dev-RPT-en-T2-001": "e5571c6acd479aa2",
+  "V2-dev-RPT-en-T2-002": "6d02f48a43379976",
+  "V2-dev-RPT-en-T2-003": "381066f82a7cc16c",
+  "V2-dev-RPT-en-T3-001": "f742ab8f2f228159",
+  "V2-dev-RPT-en-T3-002": "6e3243eeb0e6e9e9",
+  "V2-dev-RPT-en-T3-003": "b4f6e14071dc2a06"
+ }
+}

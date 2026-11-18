@@ -1,0 +1,29 @@
+\section{Human Review and Judges}
+\label{app:review}
+% src: datasets_v2/human_check/README.md, key_test.json, key_test_sym.json, human_test_export.json (930 s, 77 items),
+%      human_test_sym_export.json (1,410 s, 39 items), human_dev_export.json (1,041 s, 46 items);
+%      test_run/TEST_RESULTS_HUMAN.md (asymmetric merge), TEST_RESULTS_HUMAN_SYM.md (symmetric merge); work/TODO.md 2026-10-05/06
+%      Second judge: work/posthoc_2026-11/S1_evaluator/RESULTS.md, judge2_results.json
+
+The first human review was asymmetric, and correcting it turned a significant result into a non-significant one. This appendix describes both reviews and then the second judge.
+
+\subsection{Review procedure and the correction}
+The review set uses the primary reader at 6,000 characters and holds every question on which the first judge separated the arms of at least one compared pair: \lexb{} against \hybrid, \lexb{} against \hr, or \setr{} against \lexb. These are 30 answerable test questions and 20 dev questions. In the first review only the arms of the discordant pairs were reviewed within each question, and identical answers of two arms became one item. On test this gave 77 items (78 cells), with 30 reviewed cells for \lexb{} but only 17, 16 and 15 for \hybrid, \hr{} and \setr. On dev it gave 46 items (47 cells): \lexb{} 20, \hybrid{} 14, \hr{} 13.
+
+To make the review symmetric, the author reviewed the 42 test cells missing from the 30 questions, blind and in a new shuffled page: 39 items covering 40 cells, plus 2 cells whose answers were byte-identical to an already reviewed answer and inherit its verdict. All 120 cells (4 arms $\times$ 30 questions) now carry a human verdict, and none was unsure. The dev review was not completed symmetrically, so dev human numbers appear only in Table~\ref{tab:devtest}.
+
+Both reviews used a static page that showed, per item, the question (Persian ones with an English gloss), the reference answer and one candidate answer, never the method, in a fixed shuffled order. The reviewer pressed \emph{correct}, \emph{wrong} or \emph{unsure} and saw neither the requirements nor the sources. The key to methods and machine verdicts was opened only after the export. Review took 17 minutes for dev (46 items), 15.5 for the first test review (77 items) and 23.5 for the symmetric completion (39 items).
+
+When merging, a reviewed cell takes the human verdict and every other cell keeps the machine verdict. A note containing \emph{half correct} counts as wrong whatever the button: on dev all such cells had been pressed wrong, whereas six first-review test cells had been pressed correct, so one rule was fixed for both splits. An \emph{unsure} verdict keeps the machine verdict (1 dev cell). The review resolved all 4 unresolved judge cells of the four 6,000-character GLM arms, and before the new verdicts were added the merge script reproduced the machine totals and the earlier asymmetric merge cell for cell.
+
+\input{tables/judge}
+
+Table~\ref{tab:judge} gives the cell-level agreement, 79 of 116 cells (68\%) on test and 31 of 46 (67\%) on dev. Because the questions were selected for machine discordance, agreement on a random sample would likely be higher, and disagreement shows that the evaluators differ, not which one is right. Judge 1's strictness differed by pipeline: it rejected 15 of the 27 \setr{} answers that the human accepted, but only 6 to 9 of the 20 to 25 accepted answers of each other pipeline. Once on dev it was the laxer evaluator, accepting an inverted ratio (13.3/5.4 reported as a share) that a later audit rejected.
+% src: TEST_RESULTS_HUMAN_SYM.md sec. 4 (per-arm strictness: HYBRID 20 accepted / 9 rejected, HR 25 / 6, LEX5B 25 / 7, SETR 27 / 15); diagnosis files (dev inverted ratio)
+
+The correction mattered. The judge was never laxer than the human on the reviewed test cells, so reviewing a cell can only keep or raise an arm's score, and unequal coverage gives some arms more chances for correction. With the asymmetric merge the GLM totals at 6,000 characters were \hybrid{} 68, \hr{} 73, \lexb{} 76 and \setr{} 72 of 90, and \lexb{} led \hybrid{} by an apparently significant +8 (9 better, 1 worse; $p=.022$, Holm $.043$). Four of those nine questions had machine verdicts 0/0 for both arms and only the \lexb{} answer reviewed, so they were differences between evaluators. With the symmetric merge the totals are 71, 76, 76 and 78: \lexb{} leads \hybrid{} by +5 (7/2; $p=.18$, Holm $.36$), ties \hr{} (5/5, was +3), and \setr{} moves from $-4$ to +2 against \lexb. The gate fails under both. We report the symmetric numbers everywhere.
+
+\subsection{A second judge}
+Table~\ref{tab:judge2} gives the scores of a second judge from a different model family and its agreement with the first judge and with the human. The two judges agree on 91.2\% of the 750 answers that both could resolve (Cohen's $\kappa=0.760$). Only 12 of 768 answers were unresolved under the second judge, every one because the reply used a claim status the frozen parser rejects. Neither judge is ever more lenient than the human, but judge 1 concentrates its strictness on \setr{} (15 answers against 6 to 9 for the others) while judge 2 spreads it evenly, so \setr's last place at 6,000 characters is specific to judge 1. The judges also agree on 91.7\% of the four 6,000-character cells ($\kappa=0.781$). Under judge 2 no comparison of the primary kind is significant at every assignment of the unresolved cells: the gain of Lex-RAG over \hybrid{} at 6,000 characters is +4..+8 answers (sign $p$ .096--.455), and over \hr{} +2..+4 ($p$ .481--.815). The gain over \hybrid{} comes entirely from English questions and mostly from tier 3.
+
+\input{tables/judge2}

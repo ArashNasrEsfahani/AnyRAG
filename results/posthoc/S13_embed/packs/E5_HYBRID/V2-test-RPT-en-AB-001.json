@@ -1,0 +1,18 @@
+{
+ "arm": "E5_HYBRID",
+ "question_id": "V2-test-RPT-en-AB-001",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5876 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "07789d5f7b63c3df957dde24dcd29f72322b3911fa372aa3cc6e620bb796fc68",
+ "evidence_chars": 5773
+}

@@ -1,0 +1,23 @@
+% src: work/datasets_v2/DESIGN.md (tier definitions, integration operations); questions/*_{dev,test}.jsonl (counts per tier,
+%      language and domain); examples verbatim from questions/law_dev.jsonl V2-dev-LAW-en-T1-003,
+%      rpt_dev.jsonl V2-dev-RPT-en-T2-003, rpt_dev.jsonl V2-dev-RPT-en-T3-001, rpt_dev.jsonl V2-dev-RPT-en-AB-001 (dev questions)
+\begin{table*}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{4.6cm}>{\raggedright\arraybackslash}Xcc@{}}
+\toprule
+Tier & Simplest sufficient evidence & Example (dev question) & Dev & Test \\
+\midrule
+\textbf{T1}\newline local fact & one coherent passage, list or table region gives the answer and the labels that bind it to its subject and constraints & \emph{Whose consent is needed before a prosecution under the Bribery Act 2010 can be brought in England and Wales?} (LAW-en) & 18 & 30 \\
+\addlinespace
+\textbf{T2}\newline within-document integration & one document suffices, but no single region does; definition bridge, rule plus exception, comparison or derivation, bounded synthesis & \emph{Wise's FY2024 annual report gives its total customer balances and, in the Wise Business section, the business deposits it holds. Roughly what share of total customer balances were business deposits?} (RPT-en, derivation) & 18 & 30 \\
+\addlinespace
+\textbf{T3}\newline cross-document integration & every sufficient bundle spans at least two documents; cross-time or cross-version comparison, cross-subject comparison, cross-document bridge, aggregation & \emph{Turkcell and Vodafone Turkey both had their 2G licences extended to 30 April 2029. What fee did each operator agree for the extension, and how did the way they paid it differ?} (RPT-en, cross-subject) & 18 & 30 \\
+\addlinespace
+Unanswerable & no sufficient evidence in the pool (absence audit) & \emph{How many members did Zalando Plus have at the end of 2024?} (RPT-en) & 6 & 6 \\
+\bottomrule
+\end{tabularx}
+\caption{The three question tiers. A tier is set by the simplest sufficient evidence in the pool; for T2 and T3, removing any required region makes part of the answer impossible. Each pool has 3 dev and 5 test questions per tier plus one unanswerable question per split. Figure~\ref{fig:example} (Appendix~\ref{app:benchmark}) shows a Persian T3 question.}
+\label{tab:tiers}
+\end{table*}

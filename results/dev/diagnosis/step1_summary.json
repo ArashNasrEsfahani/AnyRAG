@@ -1,0 +1,322 @@
+{
+ "HYBRID|T2": {
+  "n": 18,
+  "classes": {
+   "wrong_no_cov": 6,
+   "wrong_full_cov": 9,
+   "wrong_partial_cov": 1,
+   "correct": 2
+  },
+  "req_cov_rate": 0.756,
+  "full_cov_rate": 0.611,
+  "req_x_judge": {
+   "notcov/notcorrect": 11,
+   "cov/correct": 18,
+   "cov/notcorrect": 16
+  },
+  "doc_gold_cov_rate": 0.778,
+  "doc_present_rate": 1.0,
+  "gold_unit_rate": 0.716,
+  "gold_retrieved_but_cut": 16,
+  "mean_ev_items": 6.39,
+  "mean_ev_chars": 5928,
+  "gold_pos_hist": {
+   "6": 3,
+   "1": 13,
+   "3": 4,
+   "4": 9,
+   "2": 5,
+   "5": 4,
+   "7": 1
+  },
+  "abstained": 5
+ },
+ "HYBRID|T3": {
+  "n": 18,
+  "classes": {
+   "correct": 5,
+   "wrong_partial_cov": 5,
+   "wrong_no_cov": 4,
+   "wrong_full_cov": 4
+  },
+  "req_cov_rate": 0.66,
+  "full_cov_rate": 0.5,
+  "req_x_judge": {
+   "cov/correct": 25,
+   "notcov/notcorrect": 17,
+   "cov/notcorrect": 10,
+   "notcov/correct": 1
+  },
+  "doc_gold_cov_rate": 0.676,
+  "doc_present_rate": 0.811,
+  "gold_unit_rate": 0.651,
+  "gold_retrieved_but_cut": 18,
+  "mean_ev_items": 6.83,
+  "mean_ev_chars": 5977,
+  "gold_pos_hist": {
+   "1": 15,
+   "3": 4,
+   "2": 6,
+   "6": 1,
+   "4": 6
+  },
+  "abstained": 6
+ },
+ "HYBRID+rerank|T2": {
+  "n": 18,
+  "classes": {
+   "wrong_no_cov": 3,
+   "wrong_full_cov": 10,
+   "correct": 2,
+   "wrong_partial_cov": 3
+  },
+  "req_cov_rate": 0.844,
+  "full_cov_rate": 0.667,
+  "req_x_judge": {
+   "notcov/notcorrect": 7,
+   "cov/notcorrect": 16,
+   "cov/correct": 22
+  },
+  "doc_gold_cov_rate": 0.944,
+  "doc_present_rate": 1.0,
+  "gold_unit_rate": 0.731,
+  "gold_retrieved_but_cut": 15,
+  "mean_ev_items": 6.56,
+  "mean_ev_chars": 5928,
+  "gold_pos_hist": {
+   "3": 3,
+   "2": 12,
+   "6": 6,
+   "7": 2,
+   "1": 12,
+   "4": 2,
+   "5": 2
+  },
+  "abstained": 4
+ },
+ "HYBRID+rerank|T3": {
+  "n": 18,
+  "classes": {
+   "correct": 6,
+   "wrong_partial_cov": 6,
+   "wrong_full_cov": 3,
+   "wrong_no_cov": 3
+  },
+  "req_cov_rate": 0.623,
+  "full_cov_rate": 0.5,
+  "req_x_judge": {
+   "cov/correct": 21,
+   "cov/notcorrect": 12,
+   "notcov/notcorrect": 18,
+   "notcov/correct": 2
+  },
+  "doc_gold_cov_rate": 0.649,
+  "doc_present_rate": 0.865,
+  "gold_unit_rate": 0.603,
+  "gold_retrieved_but_cut": 21,
+  "mean_ev_items": 6.67,
+  "mean_ev_chars": 5970,
+  "gold_pos_hist": {
+   "1": 13,
+   "3": 10,
+   "5": 1,
+   "7": 2,
+   "2": 7
+  },
+  "abstained": 7
+ },
+ "LEX3|T2": {
+  "n": 18,
+  "classes": {
+   "wrong_no_cov": 5,
+   "wrong_full_cov": 4,
+   "wrong_partial_cov": 5,
+   "correct": 4
+  },
+  "req_cov_rate": 0.644,
+  "full_cov_rate": 0.444,
+  "req_x_judge": {
+   "notcov/notcorrect": 15,
+   "cov/correct": 21,
+   "cov/notcorrect": 8,
+   "notcov/correct": 1
+  },
+  "doc_gold_cov_rate": 0.778,
+  "doc_present_rate": 0.944,
+  "gold_unit_rate": 0.582,
+  "gold_retrieved_but_cut": 0,
+  "mean_ev_items": 6.0,
+  "mean_ev_chars": 4977,
+  "gold_pos_hist": {
+   "1": 16,
+   "3": 3,
+   "5": 3,
+   "4": 5,
+   "2": 3,
+   "6": 1
+  },
+  "abstained": 6
+ },
+ "LEX3|T3": {
+  "n": 18,
+  "classes": {
+   "correct": 5,
+   "wrong_partial_cov": 7,
+   "wrong_no_cov": 2,
+   "wrong_full_cov": 4
+  },
+  "req_cov_rate": 0.66,
+  "full_cov_rate": 0.444,
+  "req_x_judge": {
+   "cov/correct": 22,
+   "cov/notcorrect": 13,
+   "notcov/notcorrect": 16,
+   "notcov/correct": 2
+  },
+  "doc_gold_cov_rate": 0.676,
+  "doc_present_rate": 0.838,
+  "gold_unit_rate": 0.683,
+  "gold_retrieved_but_cut": 0,
+  "mean_ev_items": 6.17,
+  "mean_ev_chars": 4848,
+  "gold_pos_hist": {
+   "1": 13,
+   "4": 8,
+   "2": 3,
+   "5": 3,
+   "6": 5,
+   "3": 3
+  },
+  "abstained": 6
+ },
+ "AGENTIC5|T2": {
+  "n": 18,
+  "classes": {
+   "wrong_no_cov": 6,
+   "wrong_full_cov": 5,
+   "correct": 3,
+   "wrong_partial_cov": 4
+  },
+  "req_cov_rate": 0.578,
+  "full_cov_rate": 0.444,
+  "req_x_judge": {
+   "notcov/notcorrect": 18,
+   "cov/notcorrect": 11,
+   "cov/correct": 15,
+   "notcov/correct": 1
+  },
+  "doc_gold_cov_rate": 0.833,
+  "doc_present_rate": 1.0,
+  "gold_unit_rate": 0.597,
+  "gold_retrieved_but_cut": 14,
+  "mean_ev_items": 5.67,
+  "mean_ev_chars": 4315,
+  "gold_pos_hist": {
+   "6": 7,
+   "1": 12,
+   "4": 9,
+   "2": 3,
+   "3": 1,
+   "5": 3
+  },
+  "abstained": 4
+ },
+ "AGENTIC5|T3": {
+  "n": 18,
+  "classes": {
+   "correct": 4,
+   "wrong_full_cov": 2,
+   "wrong_partial_cov": 8,
+   "wrong_no_cov": 4
+  },
+  "req_cov_rate": 0.566,
+  "full_cov_rate": 0.278,
+  "req_x_judge": {
+   "cov/correct": 22,
+   "cov/notcorrect": 8,
+   "notcov/notcorrect": 22,
+   "notcov/correct": 1
+  },
+  "doc_gold_cov_rate": 0.622,
+  "doc_present_rate": 0.892,
+  "gold_unit_rate": 0.508,
+  "gold_retrieved_but_cut": 18,
+  "mean_ev_items": 7.22,
+  "mean_ev_chars": 5178,
+  "gold_pos_hist": {
+   "1": 17,
+   "8": 1,
+   "3": 5,
+   "2": 3,
+   "4": 2
+  },
+  "abstained": 4
+ },
+ "ALL|T2": {
+  "n": 72,
+  "classes": {
+   "wrong_no_cov": 20,
+   "wrong_full_cov": 28,
+   "wrong_partial_cov": 13,
+   "correct": 11
+  },
+  "req_cov_rate": 0.706,
+  "full_cov_rate": 0.542,
+  "req_x_judge": {
+   "notcov/notcorrect": 51,
+   "cov/correct": 76,
+   "cov/notcorrect": 51,
+   "notcov/correct": 2
+  },
+  "doc_gold_cov_rate": 0.833,
+  "doc_present_rate": 0.986,
+  "gold_unit_rate": 0.657,
+  "gold_retrieved_but_cut": 45,
+  "mean_ev_items": 6.15,
+  "mean_ev_chars": 5287,
+  "gold_pos_hist": {
+   "6": 17,
+   "1": 53,
+   "3": 11,
+   "4": 25,
+   "2": 23,
+   "5": 12,
+   "7": 3
+  },
+  "abstained": 19
+ },
+ "ALL|T3": {
+  "n": 72,
+  "classes": {
+   "correct": 20,
+   "wrong_partial_cov": 26,
+   "wrong_no_cov": 13,
+   "wrong_full_cov": 13
+  },
+  "req_cov_rate": 0.627,
+  "full_cov_rate": 0.431,
+  "req_x_judge": {
+   "cov/correct": 90,
+   "notcov/notcorrect": 73,
+   "cov/notcorrect": 43,
+   "notcov/correct": 6
+  },
+  "doc_gold_cov_rate": 0.655,
+  "doc_present_rate": 0.851,
+  "gold_unit_rate": 0.611,
+  "gold_retrieved_but_cut": 57,
+  "mean_ev_items": 6.72,
+  "mean_ev_chars": 5493,
+  "gold_pos_hist": {
+   "1": 58,
+   "3": 22,
+   "2": 19,
+   "6": 6,
+   "4": 16,
+   "5": 4,
+   "7": 2,
+   "8": 1
+  },
+  "abstained": 23
+ }
+}

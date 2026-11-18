@@ -1,0 +1,41 @@
+{
+ "spans_outside_q80": {
+  "A": 1,
+  "B": 1,
+  "B-nolex": 1,
+  "B-noreq": 0,
+  "B-plain": 1,
+  "HYBRID-intact": 0,
+  "B-noplanner": 0
+ },
+ "detail": [
+  [
+   "A",
+   "V2-dev-BOOK-fa-T3-003",
+   [
+    "E1"
+   ]
+  ],
+  [
+   "B",
+   "V2-dev-BOOK-fa-T3-003",
+   [
+    "E1"
+   ]
+  ],
+  [
+   "B-nolex",
+   "V2-dev-BOOK-fa-T3-003",
+   [
+    "E1"
+   ]
+  ],
+  [
+   "B-plain",
+   "V2-dev-BOOK-fa-T3-003",
+   [
+    "E1"
+   ]
+  ]
+ ]
+}

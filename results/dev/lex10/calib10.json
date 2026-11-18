@@ -1,0 +1,49 @@
+{
+ "tokenizer": "tiktoken o200k_base",
+ "rows": 72,
+ "exact": 72,
+ "fit": {
+  "fa": {
+   "n": 36,
+   "n_all": 36,
+   "k": 1.1699,
+   "k_ratio_min_max": [
+    1.1399,
+    1.2047
+   ],
+   "k_fit_mape": 0.0153,
+   "completion_mean": 124.3,
+   "completion_by_arm": {
+    "HYBRID": 110.8,
+    "HYBRID+rerank": 123.8,
+    "LEX7.1": 138.4
+   },
+   "linear_chars": {
+    "a": 657.5,
+    "b_tokens_per_char": 0.28308
+   },
+   "glm_tokens_per_char": 0.38064
+  },
+  "en": {
+   "n": 36,
+   "n_all": 36,
+   "k": 1.0146,
+   "k_ratio_min_max": [
+    0.9848,
+    1.0343
+   ],
+   "k_fit_mape": 0.0094,
+   "completion_mean": 129.6,
+   "completion_by_arm": {
+    "HYBRID": 120.6,
+    "HYBRID+rerank": 128.4,
+    "LEX7.1": 139.7
+   },
+   "linear_chars": {
+    "a": -3946.77,
+    "b_tokens_per_char": 0.80555
+   },
+   "glm_tokens_per_char": 0.22978
+  }
+ }
+}

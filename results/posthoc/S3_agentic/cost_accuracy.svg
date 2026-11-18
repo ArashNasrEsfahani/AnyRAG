@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" font-family="sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="22" font-size="13">Machine strict accuracy (of 90) vs query-time LLM tokens per question (96 q, log x)</text>
+<line x1="143.3" y1="40" x2="143.3" y2="405" stroke="#ddd"/><text x="143.3" y="421" text-anchor="middle">2000</text>
+<line x1="246.6" y1="40" x2="246.6" y2="405" stroke="#ddd"/><text x="246.6" y="421" text-anchor="middle">3000</text>
+<line x1="376.8" y1="40" x2="376.8" y2="405" stroke="#ddd"/><text x="376.8" y="421" text-anchor="middle">5000</text>
+<line x1="553.4" y1="40" x2="553.4" y2="405" stroke="#ddd"/><text x="553.4" y="421" text-anchor="middle">10000</text>
+<line x1="730.0" y1="40" x2="730.0" y2="405" stroke="#ddd"/><text x="730.0" y="421" text-anchor="middle">20000</text>
+<line x1="70" y1="405.0" x2="730" y2="405.0" stroke="#ddd"/><text x="64" y="409.0" text-anchor="end">60%</text>
+<line x1="70" y1="332.0" x2="730" y2="332.0" stroke="#ddd"/><text x="64" y="336.0" text-anchor="end">65%</text>
+<line x1="70" y1="259.0" x2="730" y2="259.0" stroke="#ddd"/><text x="64" y="263.0" text-anchor="end">70%</text>
+<line x1="70" y1="186.0" x2="730" y2="186.0" stroke="#ddd"/><text x="64" y="190.0" text-anchor="end">75%</text>
+<line x1="70" y1="113.0" x2="730" y2="113.0" stroke="#ddd"/><text x="64" y="117.0" text-anchor="end">80%</text>
+<line x1="70" y1="40.0" x2="730" y2="40.0" stroke="#ddd"/><text x="64" y="44.0" text-anchor="end">85%</text>
+<text x="415" y="448" text-anchor="middle">tokens / question</text>
+<rect x="601.9" y="172.9" width="10" height="10" fill="#c2410c"/>
+<text x="614.9" y="171.9" fill="#c2410c">GREP_AGENT</text>
+<rect x="529.5" y="91.8" width="10" height="10" fill="#c2410c"/>
+<text x="542.5" y="90.8" fill="#c2410c">ITER_BM25</text>
+<line x1="169.5" y1="275.2" x2="169.5" y2="259.0" stroke="#1d4ed8" stroke-width="2"/>
+<circle cx="169.5" cy="267.1" r="5" fill="#1d4ed8"/>
+<text x="177.5" y="261.1" fill="#1d4ed8">HYBRID_6000</text>
+<line x1="171.8" y1="161.7" x2="171.8" y2="129.2" stroke="#1d4ed8" stroke-width="2"/>
+<circle cx="171.8" cy="145.4" r="5" fill="#1d4ed8"/>
+<text x="179.8" y="139.4" fill="#1d4ed8">HR_6000</text>
+<line x1="367.5" y1="177.9" x2="367.5" y2="161.7" stroke="#1d4ed8" stroke-width="2"/>
+<circle cx="367.5" cy="169.8" r="5" fill="#1d4ed8"/>
+<text x="375.5" y="163.8" fill="#1d4ed8">LEX5B_6000</text>
+<circle cx="490.6" cy="259.0" r="5" fill="#1d4ed8"/>
+<text x="498.6" y="253.0" fill="#1d4ed8">SETR_6000</text>
+<circle cx="388.5" cy="177.9" r="5" fill="#64748b"/>
+<text x="396.5" y="171.9" fill="#64748b">HYBRID_15500</text>
+<line x1="391.0" y1="161.7" x2="391.0" y2="145.4" stroke="#64748b" stroke-width="2"/>
+<circle cx="391.0" cy="153.6" r="5" fill="#64748b"/>
+<text x="399.0" y="147.6" fill="#64748b">HR_15500</text>
+<circle cx="491.7" cy="194.1" r="5" fill="#64748b"/>
+<text x="499.7" y="188.1" fill="#64748b">LEX5B_15500</text>
+<line x1="574.9" y1="210.3" x2="574.9" y2="194.1" stroke="#64748b" stroke-width="2"/>
+<circle cx="574.9" cy="202.2" r="5" fill="#64748b"/>
+<text x="582.9" y="196.2" fill="#64748b">SETR_15500</text>
+</svg>

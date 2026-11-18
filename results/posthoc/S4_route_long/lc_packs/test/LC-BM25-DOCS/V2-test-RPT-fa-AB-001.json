@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-AB-001",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": false,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79148 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "423b7195c3fa7f86eec93ceeb01411799b2a7b4c1c64e422360762c3f6368661",
+ "evidence_chars": 79073,
+ "prompt_chars": 79679,
+ "est_prompt_tokens": 31516,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 6.742
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 6.436
+   },
+   {
+    "doc": "C.digikala_annual-report_1399.fa",
+    "score": 5.206
+   },
+   {
+    "doc": "C.myket_annual-report_1403.fa",
+    "score": 4.615
+   },
+   {
+    "doc": "C.digikala_human-capital-report_1399.fa",
+    "score": 4.471
+   },
+   {
+    "doc": "C.dataak_annual-report_1404.fa",
+    "score": 4.46
+   },
+   {
+    "doc": "C.achareh_eight-year-report_1396-1403.fa",
+    "score": 4.312
+   },
+   {
+    "doc": "C.digikala_book-report-h1_1400.fa",
+    "score": 4.295
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "doc_chars": 151042,
+    "shown": 79039,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 0,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

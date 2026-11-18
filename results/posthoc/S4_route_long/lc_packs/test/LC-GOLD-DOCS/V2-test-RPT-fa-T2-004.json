@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-004",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79246 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "c3eae78b46c0a1169a556c3a37c20e5ae6dad7e8f43f13877ce3299947c5d482",
+ "evidence_chars": 79094,
+ "prompt_chars": 80077,
+ "est_prompt_tokens": 31674,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "C.mci_financial-statements_1401.fa",
+    "doc_chars": 140873,
+    "shown": 79007,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

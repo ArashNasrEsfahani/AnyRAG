@@ -1,0 +1,333 @@
+\section{Benchmark and implementation details}
+\label{app:benchmark}
+% src: work/datasets_v2/DESIGN.md (tiers, schema, authoring pipeline); questions/*.jsonl (counts); TODO.md "User review (2026-09-25)" and review files; lex4_replay/REPLAY.md (decisive spans)
+% src: RAG-Paper-upgrades/ragbench (frozen code tree, commit 77924d4): retrieval/hybrid.py, config.yaml (chunking), approaches/baselines.py chunk_document and DEFAULTS["tokenizer"], ragbench/normalize.py, contracts.py pack_evidence,
+%      approaches/lex5/bundles.py MAX_ALTS = 2, approaches/setr/approach.py PASSAGE_CAP = 1500, work/datasets_v2/setr/SETR.md, test_freeze/PROTOCOL.md sec. 2, 7 and 9. Chunk counts from work/indexes/_hybrid/<pool>/chunks_meta.json
+%      (C 6,921; D_en 25,685; BOOK_fa 8,905; BOOK_en 9,661; LAW_fa 1,619; LAW_en 5,427 = 58,218; weighted mean 807 chars).
+% src: paper/analysis/revision_stats.md "Families" (labels 47, constituents 33, components 20, blocks 29)
+
+This appendix describes how the benchmark was built and how the four pipelines were implemented.
+Figure~\ref{fig:example} shows a Persian cross-document question with its evidence bundle.
+Table~\ref{tab:composition} gives the composition of the test set and the groups of questions that share a source, which the cluster intervals use.
+\input{tables/example}
+\input{tables/composition}
+
+\subsection{Annotation and construction}
+Each question records its atomic requirements (subject, aspect, constraints and typed expected value) and its evidence items with exact quotes and code-point offsets into the frozen text.
+It also records one or more sufficient evidence bundles, the integration operation, a necessity audit (T2 and T3) or an absence audit (unanswerable questions), and its provenance.
+Every pipeline and reader receives the same metadata, which is annotation-derived information that a deployed system would not have.
+
+For development diagnostics, decisive spans were derived on the development set only.
+A decisive span is the minimal sentence-level part of a gold quote that holds the value of the requirement that it supports, matched after Persian and Arabic letter and digit folding.
+The development set has 158 spans over 54 answerable questions, with a median length of 113 characters.
+Decisive-span retention is the fraction of spans that appear whole inside one item shown to the reader, for the best bundle.
+It measures lexical containment and not entailment, but it behaves almost as a necessary condition.
+Of 99 development cells without full retention, 5 were judged correct, against 79 of 115 with it (earlier run with a local reader).
+
+The author designed the benchmark and its construction procedure.
+Claude Opus 5.5 agents drafted the candidate questions, which people and programs then checked.
+A curator agent chose information needs and wrote requirements, quotes and audits without seeing any method output.
+A question-writer agent saw only that specification and wrote the question and the expected answer, about half in ordinary terms and half paraphrased.
+The saved provenance gives the same agent identifier for both roles on all 156 questions, so the intended separation of roles cannot be shown.
+% src: work/datasets_v2/questions/*_{dev,test}.jsonl provenance.curator == provenance.writer on 156/156 (checked 2026-10-06)
+A mechanical verifier then checked the schema, that every quote equals the frozen text at its offsets, and that a bundle supports every requirement, and it flagged copied spans, answer leakage and near-duplicates.
+An independent source-review agent checked answers, tiers (by the removal test) and necessity against the full pool.
+The first-round outcomes (accept, fix, reject) over the 52 questions of each genre were 37, 11 and 4 for reports. They were 42, 8 and 2 for books and 43, 6 and 3 for laws.
+Fixes were applied and replacements were re-reviewed.
+% src: questions/{rpt,book,law}_review_decisions.jsonl, first verdict per id (52 each); rpt_review.md's summary row says 23 test accepts (38 overall), but its per-tier rows and the decisions file give 22 (37 overall); corrected 2026-10-07.
+A native Persian speaker reviewed the Persian wording, with 141 findings over the three Persian sets that were applied with a change log.
+% src: author confirmation 2026-10-06 (work/TODO.md: "Persian review = native speaker"); test_freeze/PROTOCOL.md sec. 7
+% src (number check 2026-11-18): 141 findings = questions/persian_review_law.md (72) + persian_review_rpt_book.md (69); 32 of 156, 31 good / 1 fix = work/TODO.md "User review" entry
+Finally, 32 of the 156 questions were spot-checked in an interface that showed the question, the expected answer, the requirements and the marked evidence.
+Of these, 31 were accepted and 1 was fixed.
+Every tier is half Persian and half English with an equal share per genre, but documents and tasks are not balanced, so language differences are descriptive.
+Development documents act as distractors for test questions.
+Some report sources had been used in earlier, unrelated question sets, so for reports the test evaluates new questions but not unseen documents.
+
+\subsection{Implementation}
+\label{app:implementation}
+% Blind-review fix (2026-10-07): clipping from paper/analysis/revision_stats.md "Clipping (GLM cells)": clipped 65/69/0/62 of 96; chars_mean HYBRID 5,956, HR 5,958, LEX5B 5,772, SETR 5,949.
+%   Selector rejections from test_run/runs/*/LEX5B_{6000,15500}/runs_*.jsonl trace.lex5b.selector (6,000: 2 overflow, 1 id_out_of_range, 1 duplicate_alternative; 15,500: 2 overflow).
+Table~\ref{tab:settings-full} collects the parameter values, model versions and providers, each fixed to one provider.
+The pipelines are the author's designs, and Claude Opus 5.5 agents wrote and ran their code under his direction.
+\input{tables/settings_full}
+
+All pipelines share one chunking of each pool.
+Sections are packed whole into chunks of at most 1,000 characters.
+Longer sections are cut into windows that end at a paragraph, line, sentence or word break, with approximately 200 characters of overlap.
+Chunks never cross documents, and the six pools give 58,218 chunks with a mean length of approximately 810 characters.
+Every BM25 channel uses one tokenizer, and the dense and learned-sparse encoders receive the same normalised query.
+Normalisation applies Unicode NFKC, maps Arabic letter variants to their Persian forms, removes tatweel, diacritics and bidirectional controls, converts Persian and Arabic-Indic digits to ASCII, and unifies zero-width joiners into the zero-width non-joiner (ZWNJ).
+A word joined by a ZWNJ is indexed whole and as its parts, numbers are indexed as written and without separators, stop words are dropped, English tokens lose a plural \emph{s}, and Persian is not stemmed.
+The indexed text of a chunk is its title and section path followed by the chunk, and the reader sees only the chunk.
+
+Evidence is rendered with a header per item and packed up to $B$ characters.
+\hybrid{}, \hr{} and \setr{} add chunks in order.
+The first chunk that does not fit is clipped to the remaining space if at least 200 characters survive, and otherwise it is dropped and packing stops.
+\lexb{} never clips and skips units that do not fit.
+In the saved 6,000-character runs, the last item was clipped in 65, 69 and 62 of 96 packs of \hybrid{}, \hr{} and \setr{} and in none of the packs of \lexb{}.
+The packs of \lexb{} were therefore slightly shorter, with a mean of 5,772 characters against 5,949 to 5,958.
+The query embedding of \hybrid{} comes from bge-m3 served by Ollama, whereas the score fusion of \lexb{} uses the Hugging Face implementation of the same model.
+% src: test_freeze/PROTOCOL.md sec. 7 (HYBRID Ollama dense vs. F2 HF implementation)
+
+The four stages of \lexb{} run as five steps.
+\begin{enumerate}
+  \item Candidates: one bge-m3 pass gives dense and learned-sparse vectors, and BM25, dense and sparse each return a list that is fused as in Eq.~\ref{eq:fuse};
+  \item Evidence units: chunks become units, a sentence cut at a chunk edge is extended within a fixed allowance, and table captions and headers are attached, so that the fusion order of units, packed to $B$, is the fallback pack;
+  \item Selector view and call: the top units are shown with a document legend, a header and an excerpt around the words of the question, and the model splits the question into parts and names for each the passages that together support it, joined by \texttt{+}, or \texttt{NONE}, and after the first bundle it may give one alternative after \texttt{|};
+  \item Strict parsing: any grammar violation, deadline or error falls back to the pack without selection, and replies are never repaired, so that of the four rejected replies at 6,000 characters two listed three bundles for a part, as did both rejected replies at 15,500;
+  \item Bundle packing: the packer enumerates every combination of one listed bundle or none per part, keeps those whose rendered cost is at most $B$, and solves Eq.~\ref{eq:pack}, after which the remaining listed bundles are added all-or-nothing, and finally fused units that fit whole.
+\end{enumerate}
+A part counts as covered by the prediction of the selector, which does not mean that the evidence suffices.
+The pack without selection was run afterwards as \lexb{} without selection (\ref{app:posthoc}).
+
+\setr{} follows SetR \citep{lee2025setr}.
+One chain-of-thought call identifies the information requirements and selects a passage set, using the system message and selection prompt of the authors verbatim (Supplementary Material, Sect.~S3) over the top 20 chunks of \hybrid{}, with the GLM model as selector.
+A cap of 1,500 characters per passage never binds.
+The version differs from the published system in several ways.
+The selector is an untuned general model and not a fine-tuned one, and the candidate list and the deadline are different. Furthermore, the selected chunks are packed first and then filled with the rest of the list of \hybrid{} up to $B$, so that every pipeline reads about the same amount of evidence.
+A deadline or an unparsable reply falls back to the order of \hybrid{}.
+All readers receive byte-identical prompts, which was checked by hash.
+The answer prompt depends only on the annotated answer format, asks for the answer in the language of the question and uses \texttt{NOT\_FOUND} for abstention.
+The selector calls of \lexb{} and \setr{} always use GLM-5.3-flash.
+% src: test_freeze/PROTOCOL.md sec. 2 (GLM pinned to together; no seed) and sec. 9 reader table (pins, fp8)
+
+\section{Protocol and its changes}
+\label{app:timeline}
+% src: work/TODO.md (dated log, entries 2026-10-06); TEST_RESULTS_HUMAN_SYM.md; lex5b/LEX5B.md; dev60/DEV60.md; budget_matrix/BUDGET_MATRIX.md;
+%      test_freeze/PROTOCOL.md sec. 1-10 (sec. 3 operational note 2026-10-01 23:10, sec. 5 bounds, sec. 6, 9, 10 amendment 2);
+%      test_run/TEST_RESULTS.md sec. 7 (61 cleanup tries, 123 reruns logged); lex5_pilot/PILOT.md (selector call tokens);
+%      lex7/LEX7_OFFLINE.md row O1 (945 tokens); TEST_RESULTS_HUMAN.md (half-correct rule); TEST_RESULTS_HUMAN_SYM.md header + sec. 1
+Table~\ref{tab:timeline} lists every change to the protocol of Sect.~\ref{sec:protocol}, with its date and its timing relative to the results.
+The development variants of the Supplementary Material, Sect.~S2 were run between the entries of 25 September and 1 October.
+During development, most decisions were screened on a fixed 24-question development subset and on offline decisive-span retention over the 54 answerable development questions.
+The frozen manifest covers questions, pools, indexes, the provider and model version of each reader and the token calibration, and the runner refuses a modified code tree.
+\input{tables/timeline}
+
+The reasons for three of the changes are as follows.
+The token gate was relaxed because the full-passage selectors that were piloted at the time needed 5 to 7 thousand selector tokens per question, while the original gate left approximately 1.1 thousand.
+A smaller excerpt-only order fixer later used 945 tokens, so the old gate did not exclude every selector based on a language model.
+\setr{} was added because it led on the development set, and excluding a baseline adapted from published work after it had won would have been selective.
+The judge was fixed to one model version at one provider because, on the development set, an unfixed judge scored one identical answer as both correct and incorrect on two occasions.
+
+On the test, retrieval, reranking and selection ran once per question and cell with the primary reader.
+The primary cells ran one process at a time, with the pipeline order rotated per question, while the other five readers answered the saved packs in parallel and judging ran as answers arrived.
+An operational note added at the start of the run changed no method, variant, reader setting or gate.
+A selector deadline is a completed execution and is never re-run.
+Infrastructure failures were allowed one re-run, extended on 4 October to five tries for cells whose records were all HTTP 429 or local connection errors.
+The log holds 123 re-run entries in total, 61 of them clean-up tries for one of the five other readers, and no cell that had produced an answer was re-run.
+For the resource gate, calls with unknown usage are bounded per call and never counted as zero, and the comparison is with the concurrent \hybrid{} run at 6,000 characters over all 96 questions.
+A malformed judge reply was retried up to three times with identical input, and if none parsed, the cell was marked as unresolved and enters totals and differences as bounds (0 and 1).
+The first valid verdict for an answer is final.
+The frozen report script excluded unresolved pairs from the sign test, zero-filled them in point estimates and bootstraps, and clustered by 47 source labels, which are finer than the 20 groups used here.
+This paper instead reports ranges over unresolved cells, the sign-test $p$ range over every assignment, and clusters of questions that are connected through shared source families.
+
+\section{Extended results of the frozen test}
+\label{app:stats}
+% src: test_run/TEST_RESULTS.md (machine), test_run/TEST_RESULTS_HUMAN_SYM.md (symmetric human), paper/analysis/revision_stats.md (bounds, sign-p ranges, CIs, readers, clipping, tokens), dev60/DEV60.md, setr/SETR.md, budget_matrix/BUDGET_MATRIX.md
+Table~\ref{tab:paired} gives every paired comparison with the primary reader.
+Absolute totals of the merged scores are not estimates of human-judged accuracy, because the 60 unreviewed questions keep strict first-judge verdicts for every pipeline.
+The Holm correction covers only the two primary comparisons, with an adjusted value of .237 for the first-judge scores on resolved pairs, as in the frozen analysis. The value rises to .665 over every assignment of unresolved answers, and it is .359 for the human scores.
+For first-judge scores the interval is the union of the intervals at the two extreme assignments.
+Bounds, $p$ ranges and group intervals were added after the freeze.
+The descriptive rows are not corrected for multiplicity and were not fixed before the test.
+The difference of \setr{} over \hybrid{} under human review (7 wins, no loss, uncorrected $p=.016$) is one of six post hoc human comparisons.
+\input{tables/paired}
+
+All bootstrap intervals are percentile intervals from 10,000 resamples with seed 0 of the mean paired difference.
+The question bootstrap resamples the 90 answerable questions, and the cluster bootstrap resamples the 20 groups of questions that share a source and takes the question-weighted mean.
+% src: paper/analysis/revision_stats.py boot_mean (N_BOOT 10,000, SEED 0, percentile 2.5/97.5; cluster = resample component keys, question-weighted). Group sizes (components in the code): 15, 13, 13, 7, 7, 5, 4, 4, ten of 2, two of 1 (20 components, 90 questions).
+Groups hold 1 to 15 questions, and the three largest hold 41 of the 90, so the cluster intervals rest on few effective units and are approximate.
+% src: interval widths 11.4 (SETR, component) to 22.0 (HR, component) points = budget-effect CIs in revision_stats.md (rows "machine X_15500 vs X_6000")
+The budget effects and interactions in Table~\ref{tab:paired} are ranges over unresolved answers and not confidence intervals, and the paired 95\% intervals of the budget effects are approximately 11 to 22 points wide.
+The two budgets of \lexb{} ran independent selector calls, so the interaction compares two stochastic runs and not one selection at two sizes.
+No human review exists at 15,500 characters, and two budgets cannot show where selection stops helping.
+
+Table~\ref{tab:readers} gives the net differences for every reader.
+All readers answered byte-identical packs selected with the GLM selector, so the rows share questions, packs and judge, and the two budgets of \lexb{} used independent selector calls.
+The token counts of the non-primary readers combine the shared selector calls with the answer call of the reader, and their latencies combine the pre-answer time of the primary run with the call of the reader.
+\input{tables/readers}
+
+Table~\ref{tab:cost} gives the query-time cost.
+The selector call of \lexb{} at 6,000 characters is almost entirely prompt tokens.
+On calls with known usage it used 219 thousand prompt tokens against 5.7 thousand completion tokens, of which 3.8 thousand were reasoning.
+For the 15 calls with unreported usage, the lower bound counts zero tokens.
+The upper bound is an estimate fixed before the test. It equals the prompt characters times the largest tokens-per-character rate seen for that model, call type and language in the development logs, raised by 10\%, plus the completion cap of the call.
+The resource gate used the upper bound, and it compared the upper bound for \lexb{} at 6,000 characters with 2.5 times the tokens of \hybrid{}, relaxed from 1.5 during development (Table~\ref{tab:timeline}).
+% src: test_freeze/PROTOCOL.md sec. 5 (bounds: lower 0; upper ceil(prompt_chars x r) + max_tokens; r = max observed x 1.10); test_freeze/token_calibration.json; paper/analysis/revision_stats.json tokens.LEX5B_6000 (known prompt 219,283, completion 5,728, reasoning 3,768)
+Persian questions cost more than English ones in every pipeline.
+\input{tables/cost}
+Of the 96 packs of \lexb{} at 6,000 characters, 37 were identical to the pack without selection, 19 held the same chunks in a different order, and 40 held a different set.
+% src: TEST_RESULTS.md sec. 4 selector behaviour (final pack = fallback 37, same set 56 -> 19 reordered, 40 different set)
+The 19 selector fallbacks at 6,000 characters (15 deadlines and 4 grammar rejections) were uneven, as Table~\ref{tab:fallbacks} shows.
+Valid replies that marked every part \texttt{NONE} (6 questions) are not counted.
+The fallbacks are uneven across language and tier, and the language pattern reverses between the two budgets, so they are descriptive and are not evidence that language or complexity causes them.
+% src: fallback table recomputed by paper/analysis/fallback_table.py -> fallback_table.md (saved GLM test records)
+\input{tables/fallbacks}
+
+Table~\ref{tab:devtest} sets development beside test in percentage points, since the denominators differ (54 against 90).
+Superscript a marks the development review that covered the pipelines unequally, in which \lexb{} had 20 reviewed answers, \hybrid{} 14 and \hr{} 13.
+Superscript b marks an earlier contradictory verdict on one \hr{} answer, superscript c the worst case under the frozen parser, and superscript d the test judge with a fixed model version, whereas other development machine scores used an unfixed judge.
+Two corrections to the development record reduce the development leads.
+An earlier contradictory judge verdict gives \hr{} 33 instead of 32, and the frozen parser would have rejected one historical reply of \lexb{} (worst case 36).
+With both, the development leads are +11.1 and +5.6 points, against +5.6 and 0.0 under the merged scores on the test.
+The development lead of \setr{} reversed under the first judge but not under the human.
+The method was adapted to the development set over many iterations and tested once, so the shrinkage is read as the expected regression of a method selected on development data.
+On the development set, \setr{} was the strongest pipeline at 6,000 characters (40 to 42 of 54 against 37 for \lexb{}), with the highest decisive-span retention (0.868 against 0.842 for the packs of \lexb{} of the same run).
+% src: setr/SETR.md line 71 (LEX5B offline S-c 0.854 / 38; dev60 shown 0.842 / 36); dev60/DEV60.md (LEX5B@6000 0.842 (36))
+On the test, it tied \hybrid{} for the lowest first-judge score and was the slowest pipeline.
+These numbers describe the adaptation of SetR and not the published system.
+\input{tables/devtest}
+
+\section{Human review and judges}
+\label{app:review}
+% src: datasets_v2/human_check/README.md, key_test.json, key_test_sym.json, human_test_export.json (930 s, 77 items), human_test_sym_export.json (1,410 s, 39 items), human_dev_export.json (1,041 s, 46 items);
+%      test_run/TEST_RESULTS_HUMAN.md (asymmetric merge), TEST_RESULTS_HUMAN_SYM.md (symmetric merge); work/TODO.md 2026-10-05/06; Second judge: work/posthoc_2026-11/S1_evaluator/RESULTS.md, judge2_results.json
+The unequal review covered the pipelines unequally, and completing it turned a significant result into a non-significant one.
+This appendix describes both reviews and then the second judge.
+
+The review set uses the primary reader at 6,000 characters.
+It holds every question on which the first judge separated the pipelines of at least one compared pair, namely \lexb{} against \hybrid{}, \lexb{} against \hr{}, or \setr{} against \lexb{}.
+These are 30 answerable test questions and 20 development questions.
+In the unequal review, only the pipelines of the discordant pairs were reviewed within each question, and identical answers of two pipelines became one item.
+On the test this gave 77 items (78 answers), with 30 reviewed answers for \lexb{} but only 17, 16 and 15 for \hybrid{}, \hr{} and \setr{}.
+On the development set it gave 46 items (47 answers), with 20 answers for \lexb{}, 14 for \hybrid{} and 13 for \hr{}.
+In order to cover all pipelines equally, the author reviewed the 42 test answers that were missing from the 30 questions, blind and in a new shuffled page.
+These are 39 items covering 40 answers, plus 2 answers that were byte-identical to an already reviewed answer and inherit its verdict.
+All 120 answers (4 pipelines and 30 questions) now carry a human verdict, and none was unsure.
+The development review was not completed for all pipelines, so development human numbers appear only in Table~\ref{tab:devtest}.
+
+Both reviews used a static page that showed, for each item, the question (Persian ones with an English gloss), the reference answer and one candidate answer, never the method, in a fixed shuffled order.
+The reviewer pressed correct, wrong or unsure, and saw neither the requirements nor the sources.
+The key to methods and judge verdicts was opened only after the export.
+The review took 17 minutes for the development set (46 items), 15.5 minutes for the unequal test review (77 items) and 23.5 minutes for the completion (39 items).
+When the reviews are merged, a reviewed answer takes the human verdict and every other answer keeps the first-judge verdict.
+A note containing ``half correct'' counts as wrong whatever the button, because on the development set all such answers had been pressed wrong, whereas six test answers of the unequal review had been pressed correct.
+An unsure verdict keeps the first-judge verdict (1 development answer).
+The review resolved all 4 unresolved judge answers of the four 6,000-character GLM pipelines.
+Before the new verdicts were added, the merge script reproduced the first-judge totals and the merged scores of the unequal review answer for answer.
+
+Table~\ref{tab:judge} gives the answer-level agreement, 79 of 116 answers (68\%) on the test and 31 of 46 (67\%) on the development set.
+Because the questions were selected for disagreement between the pipelines under the first judge, agreement on a random sample would likely be higher, and disagreement shows that the evaluators differ and not which one is right.
+The first judge was stricter for some pipelines than for others.
+It rejected 15 of the 27 answers of \setr{} that the human accepted, but only 6 to 9 of the 20 to 25 accepted answers of each other pipeline.
+On the development set the first judge once accepted an answer that gave the ratio of 13.3 to 5.4 as a share, and a later audit rejected that answer.
+% src: TEST_RESULTS_HUMAN_SYM.md sec. 4 (per-arm strictness: HYBRID 20 accepted / 9 rejected, HR 25 / 6, LEX5B 25 / 7, SETR 27 / 15); diagnosis files (dev inverted ratio)
+\input{tables/judge}
+
+The judge was never laxer than the human on the reviewed test answers, so reviewing an answer can only keep or raise the score of a pipeline, and unequal coverage gives some pipelines more chances for correction.
+With the merged scores of the unequal review, the primary-reader totals at 6,000 characters were 68 for \hybrid{}, 73 for \hr{}, 76 for \lexb{} and 72 for \setr{}, and \lexb{} led \hybrid{} by an apparently significant +8 (9 better, 1 worse, $p=.022$, Holm $.043$).
+Four of those nine questions had first-judge verdicts of 0 for both pipelines and only the answer of \lexb{} reviewed, so they were differences between evaluators.
+With the merged scores of the complete review, the totals are 71, 76, 76 and 78.
+\lexb{} leads \hybrid{} by +5 (7 better, 2 worse, $p=.18$, Holm $.36$) and ties \hr{} (5 against 5, against +3 in the unequal review), and \setr{} moves from $-4$ to +2 against \lexb{}.
+The gate fails under both merges, and the numbers of the complete review are reported everywhere.
+
+Table~\ref{tab:judge2} gives the scores of the second judge, Mistral Large, from a different model family, and its agreement with the first judge and with the human.
+The two judges agree on 91.2\% of the 750 answers that both could resolve (Cohen's $\kappa=0.760$).
+Only 12 of 768 answers were unresolved under the second judge, every one because the reply used a claim status that the frozen parser rejects.
+Neither judge is ever more lenient than the human, but the first judge concentrates its strictness on \setr{} (15 answers against 6 to 9 for the others) while the second spreads it evenly.
+The last place of \setr{} at 6,000 characters is therefore specific to the first judge.
+The judges also agree on 91.7\% of the answers of the four pipelines at 6,000 characters ($\kappa=0.781$).
+Under the second judge no comparison of the primary kind is significant at every assignment of the unresolved answers.
+The gain of \lexb{} over \hybrid{} at 6,000 characters is +4 to +8 answers (sign $p$ .096 to .455), and over \hr{} it is +2 to +4 ($p$ .481 to .815).
+The gain over \hybrid{} comes entirely from English questions and mostly from tier 3.
+\input{tables/judge2}
+
+\section{Post hoc variants and analyses}
+\label{app:posthoc}
+% src: work/posthoc_2026-11/COMMON.md (rules shared by every stream) and S1..S15 RESULTS.md (what was run, exactly)
+Everything in this appendix was run after the frozen test, with the test questions already used, so it is post hoc and exploratory.
+The Supplementary Material, Sect.~S1 lists every variant and analysis, including those that the body does not discuss, with its cost, outcome and settings.
+The same rules held for every run.
+Prompts were fixed on the development set or before the run, and no setting was tuned on test questions.
+Each variant ran once on the test set.
+The reader and the first judge are those of the frozen test. The second judge of \ref{app:review} also scored seven of the variants (Tables~\ref{tab:funnel}, \ref{tab:ablation} and~\ref{tab:search}). The ledgers of all calls are released with the code.
+
+Several details matter when reading the results.
+In the settings tables of the Supplementary Material (Sect.~S1), the gold-document and tier-routing rows use information that a deployed system does not have, and the BM25-ranked documents of the long-context variant were cut to fit the prompt, which dropped most of the gold evidence.
+Only the two statute pools fit the 1,048,575-token context of the reader, so the whole-pool variant ran on three questions only.
+In Table~\ref{tab:ablation}, selection over the candidates of the reranker scores the same as the pack of the reranker ($-1$ to $+1$, 9 wins and 8 losses).
+An answer whose messages were byte-identical to those of a frozen pack reuses the frozen answer and verdict.
+This holds for 37 of the 96 answers of \lexb{} without selection at 6,000 characters, exactly the questions on which the selection call changed nothing. Every difference between the two variants therefore comes from the 59 questions on which it changed the pack.
+The agents were given 15,500 characters but used a median of only 1,652 (regular-expression agent) and 2,735 (BM25 agent), so they are not compared with single-pass pipelines at matched evidence.
+Their billed cost per question (approximately \$0.001) is far below what their token counts suggest, because most of it is cached prompt tokens, so the tables report tokens.
+On the 54 answerable development questions, \lexb{} without selection scores 29 against 37 for \lexb{} (+8 answers, 9 wins and 1 loss, sign $p=.021$, interval 3.7 to 25.9 points over questions).
+Those questions were used to develop \lexb{}, so this is a consistency check and not independent evidence.
+
+\subsection{Further analyses of the test answers}
+\label{app:analysis}
+% src: work/posthoc_2026-11/S7_analysis/RESULTS.md (all sections); every number below is in reach.json, contam.json, tokens.json, errors.json, channels.json or numbers.json
+These analyses support Sect.~\ref{sec:components}.
+They use only saved data, and no model was called.
+Figure~\ref{fig:examples} shows two test cases.
+In the first, the selection call finds a definition that the fusion order alone leaves out.
+In the second, two judges disagree about a correct answer.
+The English glosses are the author's.
+\input{figures/examples}
+
+For every answer, the exact message that the reader saw was parsed into its numbered passages.
+A gold evidence item counts as reached if at least 90\% of its quote appears word for word, in pieces of at least 12 characters, inside passages of its own document.
+A bundle is complete if all its items reached the reader.
+A question is complete if any annotated bundle is complete, partial if at least one item of the best bundle reached the reader, and none otherwise.
+The rule finds a complete bundle for all 90 gold-evidence packs and agrees with the identifiers of the annotation on 241 to 243 of 248 items for the six frozen configurations checked.
+It is a text criterion, so it can miss paraphrased table evidence and does not credit evidence outside the annotated bundles, which is why 6 to 12 answers per variant are correct without a complete bundle (Fig.~\ref{fig:lost}).
+
+Persian costs the reader more tokens per character than English, and the ratio depends on how it is measured, as Table~\ref{tab:tokens} shows.
+The body uses 1.8, the marginal rate, which is the extra tokens that a Persian evidence character adds to the prompt compared with an English one.
+Earlier measurements include the fixed English system prompt, a larger share of a small pack, and so give smaller ratios.
+At equal tokens English receives more evidence, and the gain appears only at the smallest budgets.
+A Persian pack at budget $B$ costs about as many tokens as an English pack at the next budget up (1,416 tokens against 1,531 for \hybrid{}, Persian at 3,000 characters against English at 6,000).
+\input{tables/tokens}
+
+With no evidence at all, the reader answers 26 of the 90 answerable questions, of which 9 are from English books, 11 from English statutes, 3 from Persian books and 3 from Persian statutes. None is from the company reports.
+Table~\ref{tab:contam} in the body repeats the main contrasts without these questions.
+The advantage of \lexb{} over \hybrid{} and over \lexb{} without selection holds without them, the edge of the BM25 agent over \hr{} lies wholly in them, and about half of the gap to gold evidence is on them.
+
+Table~\ref{tab:channels} shows which channel finds the gold evidence.
+The BM25 and dense lists were recomputed exactly, and the learned-sparse channel was not saved.
+In Persian, BM25 finds a complete bundle for 37 questions and dense retrieval for 38, and dense retrieval finds more items (98 against 85).
+Recall in the top 40 is higher in Persian than in English for every channel.
+Removing normalisation costs BM25 two complete Persian bundles, since 27 of the 45 Persian questions contain Persian digits that only the normalised path matches against the ASCII digits of the corpus.
+\input{tables/channels}
+
+Table~\ref{tab:errors} gives the causes of the 66 answers on which the two judges disagree, and where \lexb{} wins and loses by integration operation.
+The cause labels are one analyst's reading of the saved reasons of the judges, with no second annotator.
+Only 7 of the 66 answers involve a real error in the answer.
+In 30 answers the answer is correct on every required part, and one added, mostly true sentence from the pack of the reader is failed as unsupported, because the judges see only the annotated excerpts.
+\lexb{} gains most on within-document integration (T2) and on cross-time questions, in both languages, and it loses cross-subject questions to \hr{} (0 wins and 3 losses, all English).
+\input{tables/errors}
+Gold evidence alone answered 12 of 18 tier-2 development questions but all 30 tier-2 test questions.
+The two are not comparable, because the questions, the pack (whole evidence units on the development set, annotated quotes on the test) and the judge setting (not fixed to one model version on the development set) differ.
+Of the six tier-2 development questions that were not passed, one was unjudged, one was the added-detail rule of Table~\ref{tab:errors}, and one is a suspected defect of the question.
+
+\subsection{Statistical definitions and variance}
+\label{app:variance}
+% src: work/posthoc_2026-11/S1_evaluator/RESULTS.md, S2b_variance/RESULTS.md, S5_stats/RESULTS.md; formal definitions: paper/analysis/revision_stats.py and \ref{app:stats}
+An unresolved judge answer is an answer for which the reply of the judge does not parse after three identical attempts.
+A score is then a range whose lower end counts every unresolved answer as wrong and whose upper end counts every one as right.
+All totals and paired differences are such ranges, and a sign-test $p$-value is the range over every assignment.
+Groups are the 20 connected sets of questions that share a source document family, and the cluster bootstrap resamples them.
+The mixed model is a logistic regression on every answer of all six readers, with pipeline and budget as fixed effects and a random intercept for the question and one for the pack. A pack is the pair of a question and a configuration of pipeline and budget. The model was fitted with a Laplace approximation in custom Python code and was cross-checked with statsmodels, as Sect.~\ref{sec:protocol} states.
+The pack term is needed because all six readers answered byte-identical packs.
+Its variance is clearly nonzero (likelihood-ratio $\chi^2=84.0$, $p\approx 2\times10^{-20}$), and a model with the question alone gives the same estimates with standard errors approximately 30\% smaller, which is the pack correlation being ignored.
+
+Table~\ref{tab:variance} in the body gives the noise from re-running the reader and the selection call on identical inputs.
+The standard deviation of a score is approximately two answers, and 8 to 15 of approximately 89 questions change verdict between runs.
+Re-sending the selection prompt changes the pack for about half of the questions, but accuracy stays within reader noise (standard deviation 1.5 to 2.1 answers over the full pipeline).
+The low score of 63 of \setr{} was a low run, since its two new runs score 68 to 69 and 68.
+For a single paired difference, the reader alone has a standard deviation of 2.5 to 2.8 answers.
+The difference between \lexb{} and \hybrid{} at 6,000 characters stays positive in all three runs (+5 to +7, +3 to +4, +4 to +5), is never significant, and has a three-run mean of +4.0 to +5.3 ($p\ge .23$).
+The difference between \lexb{} and \hr{} stays at or below zero in all three.
+Among the effects fixed before the test, only the budget gain of \hybrid{} is positive in all nine pairings of repeated runs (mean +6.7 to +7.3, 95\% group interval 2.0 to 14.4 points). \hr{} against \hybrid{}, a descriptive contrast, is also positive in all nine pairings (mean +6.3 to +8.0).
+Because the two budgets of \lexb{} drew separate selector replies, one reply was also packed at both budgets, and the budget effect stays near zero ($-3$ to 0 and $-1$ to +1 against $-2$ to $-1$ for the frozen pair).
+Separate selector replies therefore do not explain the missing budget gain.
+
+Two re-sends of the selection prompt gave the same pack for only 61 of 96 questions, yet accuracy stayed within reader noise.
+Without the 3-second deadline, 14 of the 15 timed-out selector calls returned a valid selection (median 2.99 seconds), and accuracy on those questions was 7 against 5 of 14.
+With the smaller selector model, 40 of 96 selections fell back, 21 of them for invalid passage identifiers.
+At 6,000 characters on the primary reader, equivalence of \lexb{} and \hr{} cannot be shown on the first judge even at a margin of 8 answers of 90 (90\% interval $-8.3$ to $+5.7$, TOST $p=.062$).
+Under the merged scores it holds at 8 ($p=.017$) but not at 5 ($p=.092$), and the margins were chosen after the fact.
+With 90 questions and the observed disagreement rate of 15 to 17\%, the paired design has 80\% power only for differences of approximately 10 to 11 answers, with 11.1 and 10.4 answers as the smallest detectable differences of the two primary contrasts, and 458 and 401 questions needed to detect a difference of 5.
+Across the 48 per-reader tests of Table~\ref{tab:readers}, three have a raw $p<.05$ at every assignment of unresolved answers.
+Within a column of six readers, only the budget effect of \hr{} for DeepSeek-V4-flash survives a Holm correction at every assignment (Holm $p$ .003 to .038), and nothing survives across all 48.
+A random effect for the source group adds nothing once the question is in the model.

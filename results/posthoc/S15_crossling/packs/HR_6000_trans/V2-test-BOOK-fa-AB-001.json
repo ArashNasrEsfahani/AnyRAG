@@ -1,0 +1,18 @@
+{
+ "arm": "HR_6000_trans",
+ "question_id": "V2-test-BOOK-fa-AB-001",
+ "setting": "en-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6081 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "65088dbdbcf2c4a55774be2c6db72f1b5ee7bbdd8d6e4970ba538db98bf11f9f",
+ "evidence_chars": 5999
+}

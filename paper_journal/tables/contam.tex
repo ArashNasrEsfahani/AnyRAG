@@ -1,0 +1,27 @@
+% src (hybrid-index agent rows, 2026-11-18): S9_gpu/RESULTS.md sec. 2, paired tables for all 90 and for the 64 answerable questions without the 26 (HR_6000: +6..+8, 15/8, p .152-.307; +4..+5, 11/6, p .332-.481; HYBRID_6000: +14..+15, 20/5, p .004-.009; +10..+11, 14/3, p .013-.031); the 26-only cells were computed on 2026-11-18 with the compare() function of S9_gpu/analyze.py on the 26 closed-book-correct questions (HR_6000: net +2..+3, 4/2 or 5/2, sign p .453-.688; HYBRID_6000: net +4, 6/2, p .289); no API call.
+% src: work/posthoc_2026-11/S7_analysis/contam.json, contam_tables.md (section 2 of RESULTS.md). The 26 closed-book-correct questions are those the
+%      closed-book arm (S6 CLOSEDBOOK, machine strict verdict 1) answers: BOOK-en 9, LAW-en 11, BOOK-fa 3, LAW-fa 3, RPT 0. Net = first minus second arm
+%      in answers (bounds over unresolved judge cells), wins/losses in brackets, sign-test p range. GLM-5.3-flash, 6,000 characters unless marked.
+\begin{table*}[tp]
+\caption{Post hoc. Main contrasts with and without questions answerable from memory. All values are first-judge scores}
+\label{tab:contam}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X@{}}
+\toprule
+Contrast & All 90 questions & Without memory-answerable questions ($n=64$) & Memory-answerable only ($n=26$) \\
+\midrule
+\lexb{} vs.\ \hybrid{} & +5..+7 (11/4), .118--.332 & +6..+8 (10/2), .039--.180 & $-$1 (1/2) \\
+\lexb{} vs.\ \hr{} & $-$3..0 (6/7), .61--1 & 0..+2 (6/4), .75--1 & $-$3..$-$2 (0/3) \\
+\lexb{} vs.\ \lexb{} without selection & +9..+11 (12/2), .007--.035 & +7..+9 (9/1), .012--.065 & +2 (3/1) \\
+\hr{} vs.\ \hybrid{} & +6..+9 (10/4), .049--.180 & +5..+7 (8/3), .092--.227 & +1..+2 \\
+\hybrid{} 15,500 vs.\ 6,000 & +5..+6 (10/4), .18--.30 & +4..+5 (8/3), .23--.39 & +1 \\
+BM25 agent vs.\ \hr{} & +2..+4 (11/8), .50--.82 & $-$1..0 (7/7), 1.0 & +3..+4 (4/1) \\
+Hybrid-index agent vs.\ \hr{} & +6..+8 (15/8), .152--.307 & +4..+5 (11/6), .332--.481 & +2..+3 (4/2), .453--.688 \\
+Hybrid-index agent vs.\ \hybrid{} & +14..+15 (20/5), .004--.009 & +10..+11 (14/3), .013--.031 & +4 (6/2), .289 \\
+Gold evidence vs.\ \hr{} & +12..+14 (18/5), .007--.023 & +7..+8 (13/5), .096--.167 & +5..+6 (5/0) \\
+Gold evidence vs.\ \lexb{} & +14..+15 (17/3), .001--.003 & +6..+7 (9/3), .092--.146 & +8 (8/0) \\
+\bottomrule
+\end{tabularx}
+\end{table*}

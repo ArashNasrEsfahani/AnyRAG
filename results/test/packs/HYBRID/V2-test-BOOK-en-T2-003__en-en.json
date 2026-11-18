@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-BOOK-en-T2-003",
+ "variant": "HYBRID",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "1cc5c0a4f56d54368ab0",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5848 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "purpose": "answer",
+ "messages_sha256": "15fe6d620c4123ba93222e3c1b0c32bd0e201498677eac4167eb4f1cbccb45f0",
+ "evidence_chars": 5698,
+ "at": "2026-10-04T20:13:17"
+}

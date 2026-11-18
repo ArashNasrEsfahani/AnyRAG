@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T1-004",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79243 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "87ae90ba615643f5dc1d8c5edcb195b1b5b033a0f57fd3578ecadfb4cd9ef1fc",
+ "evidence_chars": 79096,
+ "prompt_chars": 79774,
+ "est_prompt_tokens": 31554,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.mci_management-interpretive-report_1401.fa",
+    "score": 6.167
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1401.fa",
+    "score": 3.664
+   },
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 3.511
+   },
+   {
+    "doc": "C.digipay_annual-report_1400.fa",
+    "score": 3.505
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 3.486
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1402.fa",
+    "score": 3.431
+   },
+   {
+    "doc": "C.snapp_annual-report_1401.fa",
+    "score": 3.412
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1403.fa",
+    "score": 3.39
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.mci_management-interpretive-report_1401.fa",
+    "doc_chars": 58657,
+    "shown": 58657,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1401.fa",
+    "doc_chars": 129989,
+    "shown": 20316,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

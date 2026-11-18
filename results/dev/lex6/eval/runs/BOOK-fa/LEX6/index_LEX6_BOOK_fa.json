@@ -1,0 +1,49 @@
+{
+ "approach": "LEX6",
+ "corpus_set": "BOOK_fa",
+ "fingerprint": "fd5005b89cd6f24f655f02cc51c64c7736b15df2",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T15:24:22",
+   "ok": true,
+   "build_ms": 573.4,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 573.4,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T15:24:23",
+ "size_bytes": 259,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX6\\BOOK_fa-fd5005b8",
+ "corpus_stats": {
+  "name": "BOOK_fa",
+  "docs": 9,
+  "sections": 936,
+  "units": 14388,
+  "chars": 5695311,
+  "skipped": 0
+ },
+ "copied_at": "2026-09-26T15:25:18",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

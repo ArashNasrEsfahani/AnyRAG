@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79167 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "7b512e3092560b18025e9f0fea6a708cb55c1c10a049a5488910db90357be9bd",
+ "evidence_chars": 78925,
+ "prompt_chars": 79998,
+ "est_prompt_tokens": 31643,
+ "build_ms": 0.8,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "doc_chars": 171437,
+    "shown": 39490,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-amendment-1351.fa",
+    "doc_chars": 48211,
+    "shown": 39339,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 5,
+  "gold_units_retained": 5,
+  "gold_docs_shown": 2
+ }
+}

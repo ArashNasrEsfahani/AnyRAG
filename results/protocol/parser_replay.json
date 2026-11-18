@@ -1,0 +1,90 @@
+{
+ "old_parser": "02d0e37 lex5-bundles-v1",
+ "new_parser": "lex5-bundles-v1.1",
+ "required_dirs_present": {
+  "lex5b": 20,
+  "budget_matrix": 14,
+  "dev60": 59
+ },
+ "per_source": {
+  "budget_matrix": {
+   "no_text": 10,
+   "replies": 14,
+   "status_ok": 14,
+   "identical": 14
+  },
+  "dev60": {
+   "replies": 59,
+   "status_ok": 51,
+   "identical": 59,
+   "no_text": 13,
+   "status_all_none": 8
+  },
+  "lex5_pilot": {
+   "replies": 21,
+   "status_ok": 19,
+   "identical": 21,
+   "no_text": 3,
+   "status_fail": 2
+  },
+  "lex5b": {
+   "replies": 20,
+   "status_ok": 19,
+   "identical": 19,
+   "no_text": 5,
+   "status_fail": 1,
+   "differ": 1
+  },
+  "probe:lex5_pilot": {
+   "replies": 20,
+   "identical": 20
+  }
+ },
+ "total": {
+  "no_text": 31,
+  "replies": 134,
+  "status_ok": 103,
+  "identical": 133,
+  "status_all_none": 8,
+  "status_fail": 3,
+  "differ": 1
+ },
+ "raw_at_2000_char_cap": 0,
+ "differences": [
+  {
+   "file": "lex5b\\eval\\runs\\RPT-fa\\LEX5B\\runs_LEX5B.jsonl",
+   "line": 6,
+   "question_id": "V2-dev-RPT-fa-T3-001",
+   "raw": "[stripped: 25 chars]",
+   "old": {
+    "status": "ok",
+    "reason": null
+   },
+   "new": {
+    "status": "fail",
+    "reason": "duplicate_alternative"
+   },
+   "under_new_parser": "fallback pack (selector reply rejected)",
+   "saved_shown_chunks": [
+    3550,
+    3664,
+    3549,
+    3519,
+    3657,
+    3540
+   ],
+   "fallback_chunks": [
+    3549,
+    3550,
+    3664,
+    3519,
+    3657,
+    3540
+   ],
+   "fallback_same_chunk_set": true,
+   "fallback_identical_order": false,
+   "saved_evidence_chars": 5992
+  }
+ ],
+ "verdict": "1 DIFFERENCE(S) listed"
+}

@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-RPT-en-T1-003",
+ "variant": "HYBRID",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "c4fcc5c8a4334fb672e4",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5927 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "purpose": "answer",
+ "messages_sha256": "2ba453cf38a4908c92bb7ab3bb7ce05a769d4214d384947a2439aa0e7b3679cb",
+ "evidence_chars": 5770,
+ "at": "2026-10-04T18:21:33"
+}

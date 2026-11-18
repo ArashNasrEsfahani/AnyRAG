@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-en-T2-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143058 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "d0fe15ae95661c536d2c8e09e1705d3932a31c933f16efa5cf194c21f14dd6d0",
+ "evidence_chars": 142880,
+ "prompt_chars": 143766,
+ "est_prompt_tokens": 31490,
+ "build_ms": 1.3,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "score": 3.352
+   },
+   {
+    "doc": "D.arcelormittal_annual-report_2023.en",
+    "score": 3.338
+   },
+   {
+    "doc": "D.tatasteel_integrated-report_2024.en",
+    "score": 1.694
+   },
+   {
+    "doc": "D.leroy_annual-report_2024.en",
+    "score": 1.398
+   },
+   {
+    "doc": "D.riotinto_annual-report_2024.en",
+    "score": 1.08
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2024.en",
+    "score": 0.757
+   },
+   {
+    "doc": "D.maersk_annual-report_2024.en",
+    "score": 0.75
+   },
+   {
+    "doc": "D.mowi_integrated-annual-report_2022.en",
+    "score": 0.73
+   }
+  ],
+  "docs": [
+   {
+    "doc": "D.arcelormittal_annual-report_2024.en",
+    "doc_chars": 1328555,
+    "shown": 142839,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

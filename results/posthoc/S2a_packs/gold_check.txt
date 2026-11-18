@@ -1,0 +1,1 @@
+GOLD first-bundle evidence items: 210 document text_sha256 matches frozen doc: 210 slice == annotated quote: 210

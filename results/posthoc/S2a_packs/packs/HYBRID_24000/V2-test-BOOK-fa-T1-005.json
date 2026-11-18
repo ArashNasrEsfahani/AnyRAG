@@ -1,0 +1,18 @@
+{
+ "arm": "HYBRID_24000",
+ "question_id": "V2-test-BOOK-fa-T1-005",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 23896 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "a467b0454491a1c895bcb59093fbefad323ba5df63ccdaddcb759e51d5d4d4dc",
+ "evidence_chars": 23808
+}

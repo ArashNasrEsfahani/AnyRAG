@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T3-003",
+ "arm": "LC-BM25-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79262 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "093a92f2d0b9500018fae8ee752f524730ef4a215b1a306fcaa4769415ea5469",
+ "evidence_chars": 79073,
+ "prompt_chars": 79793,
+ "est_prompt_tokens": 31562,
+ "build_ms": 1.7,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "score": 9.203
+   },
+   {
+    "doc": "C.yektanet_digital-marketing-report_1402.fa",
+    "score": 8.355
+   },
+   {
+    "doc": "C.khanoumi_annual-report_1404.fa",
+    "score": 8.064
+   },
+   {
+    "doc": "C.techrasa_instagram-shops-social-commerce_1401.fa",
+    "score": 7.633
+   },
+   {
+    "doc": "C.jabama_annual-report_1403.fa",
+    "score": 6.939
+   },
+   {
+    "doc": "C.digikala_annual-report_1402.fa",
+    "score": 6.894
+   },
+   {
+    "doc": "C.jabama_annual-report_1402.fa",
+    "score": 6.423
+   },
+   {
+    "doc": "C.myket_annual-report_1403.fa",
+    "score": 6.288
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.digikala_annual-report_1403.fa",
+    "doc_chars": 151042,
+    "shown": 79039,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 0
+ }
+}

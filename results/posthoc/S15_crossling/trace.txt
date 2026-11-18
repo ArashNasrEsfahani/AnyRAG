@@ -1,0 +1,9 @@
+Timeout (0:00:45)!
+Thread 0x00001e58 (most recent call first):
+  File "<string>", line 6 in stop
+  File "C:\Users\arash\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1023 in run
+  File "C:\Users\arash\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1081 in _bootstrap_inner
+  File "C:\Users\arash\AppData\Local\Programs\Python\Python314\Lib\threading.py", line 1043 in _bootstrap
+
+Thread 0x00000500 (most recent call first):
+  File "analyze.py"

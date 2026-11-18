@@ -1,0 +1,98 @@
+% Compile with XeLaTeX (Persian examples): latexmk -xelatex main.tex
+\documentclass[11pt]{article}
+
+% preprint = final, non-anonymous copy with page numbers (official ACL option)
+% Numeric citations [n]: acl.sty loads natbib itself, so the options are passed before it;
+% the ACL bibliography style (acl_natbib.bst) is kept and numbered by natbib.
+\PassOptionsToPackage{numbers,sort&compress,square}{natbib}
+\usepackage[preprint]{acl}
+\usepackage{microtype}
+
+% Fonts: official ACL XeLaTeX/LuaLaTeX recipe (acl_lualatex.tex), Persian via babel bidi
+\usepackage[english,bidi=default]{babel}
+\babelfont{rm}{TeXGyreTermesX}
+\babelprovide[import]{persian}
+\babelfont[persian]{rm}[Scale=0.92]{Vazirmatn}
+\newcommand{\fa}[1]{\foreignlanguage{persian}{#1}}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{placeins}% \FloatBarrier only where placed by hand (no per-section flush: it left half-empty pages)
+% Float placement: let floats share pages with text so no column is left half empty
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{6}
+\setcounter{dbltopnumber}{3}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.85}
+\renewcommand{\dbltopfraction}{0.92}
+\renewcommand{\dblfloatpagefraction}{0.85}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage[most]{tcolorbox}% example figure cards
+\input{figures/style}% shared figure style: palette, markers, axis look (all figures)
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\scriptsize, breaklines=true, columns=fullflexible, frame=single, framesep=2pt, xleftmargin=2pt, xrightmargin=2pt}
+
+\newcommand{\hybrid}{\textsc{Hybrid}}
+\newcommand{\hr}{\textsc{HR}}
+\newcommand{\lexb}{\textsc{Lex-RAG}}
+\newcommand{\setr}{\textsc{SetR-p+fill}} % SetR-prompt adaptation with HYBRID fill (not the published SetR system)
+\newcommand{\ftwo}{three-signal score fusion}
+
+\title{What Reaches the Reader: A Controlled Comparison of\\
+Retrieval-Augmented Generation Setups in Persian and English}
+
+\author{Arash Nasr Esfahani \\
+  University of Tehran \\
+  \texttt{arash.nasr@ut.ac.ir}}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related}
+\input{sections/03_benchmark}
+\input{sections/05_frozen}
+\input{sections/05b_components}
+\input{sections/06_lost}
+\input{sections/07_budget}
+\input{sections/08_search}
+\input{sections/08a_language}
+\input{sections/08b_guide}
+\input{sections/09_stability}
+\input{sections/11_conclusion}
+\input{sections/12_limitations}
+\input{sections/13_availability}
+\input{sections/14_ai_disclosure}
+
+\FloatBarrier
+\bibliography{refs}
+
+\FloatBarrier
+\clearpage
+\appendix
+% clearly named appendix, starting on a fresh page
+\twocolumn[\begin{center}{\Large\bfseries Appendix}\end{center}\vspace{1em}]
+\small
+\input{sections/A_benchmark}
+\input{sections/B_protocol}
+\input{sections/C_results}
+\input{sections/D_review}
+\input{sections/E_posthoc}
+\input{sections/F_development}
+\input{sections/G_prompts}
+
+\end{document}

@@ -1,0 +1,100 @@
+{
+ "n_questions": 96,
+ "dense_ranks": [
+  2954,
+  2954
+ ],
+ "bm25_ranks": [
+  2923,
+  2923
+ ],
+ "questions_all_dense_ranks_match": 96,
+ "questions_all_bm25_ranks_match": 96,
+ "dense_saved_contiguous_depth": {
+  "mean": 27.4,
+  "min": 20,
+  "n_full40": 1
+ },
+ "dense_top_contiguous_equal": 96,
+ "bm25_full_list_known": 0,
+ "score_checks": {
+  "dense_score_within_1e-5": 10566,
+  "bm25_score_within_1e-4": 10232
+ },
+ "max_abs_diff": {
+  "dense": 6.645851134967629e-07,
+  "bm25": 4.999389648929764e-07
+ },
+ "fused40_equal_saved": 96,
+ "fused40_equal_trace_top": 96,
+ "pack_6000": {
+  "bytes_equal_pack_file": 96,
+  "sha_equal_pack_file": 96,
+  "sha_equal_record": 96,
+  "num_predict_equal": 96,
+  "chars_equal": 96
+ },
+ "pack_15500": {
+  "bytes_equal_pack_file": 96,
+  "sha_equal_pack_file": 96,
+  "sha_equal_record": 96,
+  "num_predict_equal": 96,
+  "chars_equal": 96
+ },
+ "index_files": {
+  "BOOK_en": {
+   "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid\\BOOK_en-ad376436",
+   "same_as_HYBRID_hybrid_ref": true,
+   "manifest_files": 13,
+   "sha_ok": 13,
+   "sha_bad": 0,
+   "n_chunks": 9661,
+   "dense_complete": true
+  },
+  "BOOK_fa": {
+   "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid\\BOOK_fa-91f5c590",
+   "same_as_HYBRID_hybrid_ref": true,
+   "manifest_files": 13,
+   "sha_ok": 13,
+   "sha_bad": 0,
+   "n_chunks": 8905,
+   "dense_complete": true
+  },
+  "C": {
+   "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid\\C-3fa305d2",
+   "same_as_HYBRID_hybrid_ref": true,
+   "manifest_files": 13,
+   "sha_ok": 13,
+   "sha_bad": 0,
+   "n_chunks": 6921,
+   "dense_complete": true
+  },
+  "D_en": {
+   "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid\\D_en-a035666d",
+   "same_as_HYBRID_hybrid_ref": true,
+   "manifest_files": 12,
+   "sha_ok": 12,
+   "sha_bad": 0,
+   "n_chunks": 25685,
+   "dense_complete": true
+  },
+  "LAW_en": {
+   "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid\\LAW_en-8f193164",
+   "same_as_HYBRID_hybrid_ref": true,
+   "manifest_files": 13,
+   "sha_ok": 13,
+   "sha_bad": 0,
+   "n_chunks": 5427,
+   "dense_complete": true
+  },
+  "LAW_fa": {
+   "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\_hybrid\\LAW_fa-cab61c2a",
+   "same_as_HYBRID_hybrid_ref": true,
+   "manifest_files": 13,
+   "sha_ok": 13,
+   "sha_bad": 0,
+   "n_chunks": 1619,
+   "dense_complete": true
+  }
+ }
+}

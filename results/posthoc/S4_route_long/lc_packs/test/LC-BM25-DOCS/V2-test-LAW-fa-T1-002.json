@@ -1,0 +1,84 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T1-002",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_list",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 514 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79236 chars]"
+  }
+ ],
+ "num_predict": 900,
+ "messages_sha256": "d5df733bb7d2cab91fa3d3816030670ba7ce0c98f8f81a3a10c9fabcd08018ce",
+ "evidence_chars": 79072,
+ "prompt_chars": 79750,
+ "est_prompt_tokens": 31545,
+ "build_ms": 1.4,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "score": 4.348
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "score": 3.701
+   },
+   {
+    "doc": "L.wikisource_civil-code.fa",
+    "score": 3.306
+   },
+   {
+    "doc": "L.wikisource_guild-system-amendment-1392.fa",
+    "score": 2.726
+   },
+   {
+    "doc": "L.wikisource_direct-taxes-1345.fa",
+    "score": 1.828
+   },
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "score": 1.529
+   },
+   {
+    "doc": "L.wikisource_cooperatives-1350.fa",
+    "score": 1.262
+   },
+   {
+    "doc": "L.wikisource_commercial-code-1311.fa",
+    "score": 1.216
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.wikisource_constitution-1368.fa",
+    "doc_chars": 75276,
+    "shown": 75276,
+    "whole": true,
+    "gold_doc": true
+   },
+   {
+    "doc": "L.wikisource_press-law-1364.fa",
+    "doc_chars": 15381,
+    "shown": 3713,
+    "whole": false,
+    "gold_doc": false
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

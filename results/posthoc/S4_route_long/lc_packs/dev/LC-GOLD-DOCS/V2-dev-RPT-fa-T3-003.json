@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-RPT-fa-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 22701 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "e7159ec4473220255584cb17b044b210f5ae656f3a3c6798b6158ace2f5a0cba",
+ "evidence_chars": 22512,
+ "prompt_chars": 23232,
+ "est_prompt_tokens": 9189,
+ "build_ms": 0.5,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "C.cafebazaar_ads-report_1400.fa",
+    "doc_chars": 7523,
+    "shown": 7523,
+    "ranges": 1,
+    "whole": true
+   },
+   {
+    "doc": "C.divar_annual-report_1400.fa",
+    "doc_chars": 14926,
+    "shown": 14926,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 2
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-fa-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 77799 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "7b7b1091e59a7cb75fe18318e2ac19e21e928af49f26f5336ca43acb902da3ff",
+ "evidence_chars": 77616,
+ "prompt_chars": 78330,
+ "est_prompt_tokens": 30983,
+ "build_ms": 0.8,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_registration-of-deeds-1310.fa",
+    "doc_chars": 77588,
+    "shown": 77588,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 1,
+  "gold_units_retained": 1,
+  "gold_docs_shown": 1
+ }
+}

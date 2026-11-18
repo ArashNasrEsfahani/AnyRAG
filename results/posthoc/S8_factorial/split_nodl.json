@@ -1,0 +1,44 @@
+{
+ "saved_fallback": {
+  "n_answerable": 18,
+  "pack_changed": 16,
+  "net": [
+   2,
+   3
+  ],
+  "better_worse": [
+   2,
+   0
+  ],
+  "nodl": [
+   10,
+   11
+  ],
+  "saved": [
+   8,
+   8
+  ]
+ },
+ "saved_success": {
+  "n_answerable": 72,
+  "pack_changed": 28,
+  "net": [
+   0,
+   1
+  ],
+  "better_worse": [
+   1,
+   1
+  ],
+  "nodl": [
+   61,
+   61
+  ],
+  "saved": [
+   60,
+   61
+  ]
+ },
+ "all96_pack_changed": 45,
+ "fallback19_pack_changed": 16
+}

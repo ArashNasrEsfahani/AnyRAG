@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T2-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 97200 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "753ea3b6ce2209e5e866016086987997128f603b8e4379c11dff5b225996beca",
+ "evidence_chars": 96898,
+ "prompt_chars": 97908,
+ "est_prompt_tokens": 21445,
+ "build_ms": 0.7,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-34901_mill_on-liberty.en",
+    "doc_chars": 305911,
+    "shown": 96864,
+    "ranges": 2,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}

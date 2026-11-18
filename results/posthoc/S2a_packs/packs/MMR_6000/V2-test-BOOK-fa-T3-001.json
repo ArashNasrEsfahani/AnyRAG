@@ -1,0 +1,18 @@
+{
+ "arm": "MMR_6000",
+ "question_id": "V2-test-BOOK-fa-T3-001",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5965 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "84945415c9508e8b21f9c75a01aa8a73789fc2e4b9904f12f7612ba4ae85e0f4",
+ "evidence_chars": 5826
+}

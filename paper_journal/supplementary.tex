@@ -1,0 +1,210 @@
+% Supplementary material for the journal paper (compile on its own with: latexmk -g -xelatex supplementary.tex).
+% It reuses the preamble of main.tex and reads the labels of main.tex through xr-hyper (main.aux must exist: compile main.tex first).
+\documentclass[preprint,12pt]{elsarticle}
+\input{preamble}
+\usepackage{xr-hyper}
+\externaldocument{main}
+\addtolength{\textheight}{14pt}% the long log and settings tables are floats of nearly a full page
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{S\arabic{section}.\arabic{subsection}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\begin{document}
+\begin{frontmatter}
+\title{Supplementary material for: What Reaches the Reader: A Comparison of Retrieval-Augmented Generation Setups in Persian and English}
+\author[ut]{Arash Nasr Esfahani\corref{cor1}}
+\ead{arash.nasr@ut.ac.ir}
+\cortext[cor1]{Corresponding author.}
+\affiliation[ut]{organization={School of Mathematics, Statistics, and Computer Science, University of Tehran},city={Tehran},country={Iran}}
+\begin{abstract}
+This document holds the post hoc log and settings, the development record, the prompts of the paper and the examination of the gold-evidence misses. Section numbers start with S, and references to Sections, Tables and Appendices without S point to the main paper.
+\end{abstract}
+\end{frontmatter}
+
+\section{Post hoc variants: log and settings}
+\label{supp:log}
+% src: moved from Appendix E of the main paper (Tables E.1 to E.4 and the run log) on 2026-11-18; work/posthoc_2026-11/COMMON.md and S1..S15 RESULTS.md
+Table~\ref{tab:posthoc-log} lists every variant and analysis that was run after the frozen test, including those that the body of the paper does not discuss.
+Costs are as reported by the provider, and a dash marks costs that were not itemised.
+Tables~\ref{tab:posthoc-settings}, \ref{tab:posthoc-settings2} and~\ref{tab:posthoc-settings3} give the settings of each variant.
+The rules that held for every run are stated in \ref{app:posthoc} of the main paper.
+Two runs were cut short and are not used.
+One was a first pass of the first judge that was stopped after five verdicts in order to run the variants in parallel.
+The other was a first selector-swap attempt that failed on a software error in the runner and was repeated from scratch.
+Review packets for a second reviewer were prepared, but no human verdicts exist for them.
+The second judge scored seven of the variants: \lexb{} without selection, the selected set of \setr{} without fill, the listwise reranker, the BM25 agent, the regular-expression agent, gold evidence and the closed-book run.
+Its scores are 57 to 59, 63 to 64, 64, 66 to 68, 67 to 68, 82 to 84 and 26 to 28, against 58 to 59, 63, 66 to 67, 73, 68, 83 and 26 under the first judge.
+\input{tables/posthoc_log}
+\input{tables/posthoc_settings}
+
+\section{Development record}
+\label{app:negative}
+% src: lex5_pilot/PILOT.md per-arm table (LEX5 8/12 9146 tok/q; LEX5+selector=glm 6/12 7496; HYBRID 2143); devrun/RESULTS_DEV.md (LLM calls/q 3.0); budget_matrix/BUDGET_MATRIX.md (HYBRID+KW 10, DOC-3 11)
+% src (per row): devrun/RESULTS_DEV.md (LEX2, LEX3, AGENTIC; local gemma4:e4b reader); diagnosis/LEX3_PROFILE.md; lex4_replay/REPLAY.md; lex5_replay/REPLAY5.md; lex5_pilot/PILOT.md; lex5b/LEX5B.md; lex5b_fast/LEX5B_FAST.md;
+%   lex6/eval/LEX6_EVAL.md; idea_test/IDEAS.md; lex_research/OFFLINE_TESTS.md; lex7/LEX7_OFFLINE.md; lex8/LEX8.md; lex9/LEX9.md; lex10/LEX10.md; lex11/LEX11.md; budget_matrix/BUDGET_MATRIX.md
+% src (learned lasso term weights row): work/analysis/LEX_LEARNED.md (Result 1: recall@8 hand 0.738, 1-SE 0.726; CV fits dense, 230-284 nonzero of ~290; sparse regime: hand-set + sparse corrections 0.738); work/runs/lex_learn/compare/COMPARE.md
+%   (wide dev acc n=63: hand-set 74.6, learned 68.3; paired 1 better / 5 worse / 57 equal); results.md there (gemma4:e4b reader, pilot.jsonl)
+Table~\ref{tab:negative-full} lists every development variant that preceded or competed with \lexb{}.
+All numbers in it are on the development set.
+Retention (ret.) is decisive-span retention over the 54 answerable development questions at 6,000 characters, with the number of questions whose best bundle is fully retained in brackets (\hybrid{} 0.720 (32), \hr{} 0.806 (35)).
+Screen is the number of strictly correct answers on a fixed 24-question subset with the GLM reader (\hybrid{} 12, \hr{} 13, \hybrid{} at 15,500 characters 19).
+The first block used the earlier 60-question development run with a local 4B reader (gemma4:e4b), where \hybrid{} scored 27 and \hr{} 28 of 60.
+Retention and screen numbers are not comparable with test accuracy.
+Every admission rule was declared before the corresponding local result, but the sequence of variants was chosen in response to earlier results, so the whole record is exploratory.
+The row marked with a dagger is an earlier experiment with an earlier version of the development set, a regex-based lexical method, a local reader and match-based accuracy on a wider set, and its retrieval is measured as gold-window recall.
+The learned-weights experiment predates the benchmark.
+All other variants were run between 25 September and 1 October 2026 by agents that executed the designs of the author (Table~\ref{tab:timeline}).
+\input{tables/negative}
+
+Two patterns explain most rows.
+Query-time lexical search failed because keywords written by a 20B model mostly paraphrased the question or invented wordings that the documents do not use.
+Index-time enrichment, such as contextual prefixes and 141 thousand synthetic questions for \$3.49, did not move decisive chunks into the pack.
+The one component that clearly raised retention was the learned-sparse channel.
+Three-signal score fusion raised retention from 0.720 to 0.779 at 6,000 characters and from 0.847 to 0.882 at 15,500 characters. Yet its pack answered no more screen questions than \hybrid{} (12 of 24 at 6,000 characters, and 15 against 19 at 15,500).
+Retention therefore does not explain accuracy here.
+Cheaper selection did not replace the full selector.
+In an offline replay of the replies of the admitted selector, keeping only the selected bundles removed approximately 60\% of the characters and lowered retention from 0.854 to 0.778, and keeping 20\% fill gave 0.815.
+% src: lex11/LEX11.md selector pruning replay (S-c 5,766 chars 0.8540; core only 2,283 chars 0.7778; core+20% 3,230 chars 0.8148)
+On the screen, \hybrid{} rose from 12 to 19 with the larger budget and \lexb{} fell from 17 to 15, but the selector hit its deadline in 10 of 24 questions at 15,500 characters (5 of 24 at 6,000). That budget effect is therefore confounded by provider latency.
+The learned-weights experiment used lasso weights motivated by Gaussian-universality results \citep{mesforush2026lasso}, and its fits were dense, outside the sparse-signal assumption of that theory.
+% src: work/datasets_v2/diagnosis/T2_T3_DIAGNOSIS.md (T2 28 of 61 wrong cells with full gold coverage, T3 13 of 52; gold-only glm-5.3-flash T2 12/18, T3 17/18)
+A development diagnosis separated reader failures from retrieval failures.
+With the local 4B reader, 28 of 61 wrong T2 cells had all required gold evidence in front of the reader, against 13 of 52 wrong T3 cells.
+Given only the gold evidence, GLM-5.3-flash answered 12 of 18 T2 and 17 of 18 T3 development questions.
+This is consistent with retrieval being a large part of the T3 failures. The development reader was therefore replaced by a stronger model.
+
+\section{Prompts}
+\label{app:prompts}
+% src: RAG-Paper-upgrades/ragbench/approaches/lex5b/views.py (PROMPT); ragbench/contracts.py (ANSWER_V2_* systems)
+% Blind-review fix (2026-10-07): all prompts verbatim from the frozen code tree (RAG-Paper-upgrades, commit 77924d4, clean): answer: contracts.py _V2_HEAD, SOURCE_RULE_EVIDENCE, ABSTAIN_RULE_EVIDENCE, ANSWER_V2_{SINGLE,LIST,COMPARISON,SERIES,EXPLANATION}_SYSTEM, ANSWER_USER_EVIDENCE, V2_ABSTAIN_FORMAT, LANG_NAMES; config.yaml evidence.abstain_token NOT_FOUND;
+%   SetR: approaches/setr/approach.py SYSTEM, USER, render_passage; judge: tools/judge_multi.py V2_MULTI_SYSTEM, V2_MULTI_USER, V2_UNANS_SYSTEM, V2_UNANS_USER, reference_packet_v2, parse_multi, score_v2 (rubric "judge-multi v2 (strict)", MANIFEST.json judge). Python's doubled braces are shown single.
+The selector, answer and judge prompts used on test are reproduced here verbatim, with placeholders in braces. The prompt of the selector of \setr{} and the judge prompt for unanswerable questions follow the other prompts.
+
+\emph{\lexb{} selector.} In this prompt, \texttt{\{legend\}} lists the documents as \texttt{D<k>: title}, and each passage is rendered as \texttt{[n] D<k> > section}, followed by its excerpt. The parser reads ``at most 2 alternatives'' as at most two bundles per part, a first choice and one alternative (\ref{app:benchmark} of the main paper).
+\begin{lstlisting}
+You are selecting evidence passages for a question. Read the question and the numbered passages. Each passage is shown by its document, its section and a short excerpt; the full passage is longer.
+
+Question: {question}
+
+Documents:
+{legend}
+
+Passages:
+{passages}
+
+Task:
+1. Split the question into the separate parts it asks for: one part per separate piece of information needed to answer it. A simple question has one part. Use at most 8 parts.
+2. For each part, give the passages that together fully support its answer. Include every passage the answer depends on: each value or operand, each condition, qualifier, exception or definition - not only the passage that states the final answer. Join passages that are needed together with +. If a different set of passages would also fully support the part on its own, give it after | as an alternative (at most 2 alternatives, best first). Do not list passages that are only on a related topic. If no passage supports a part, write NONE.
+
+Reply with exactly these lines and nothing else (numbers are passage numbers). The first line gives the number of parts, then one line per part, and the last line is the word END. An alternative must be a different set of passages.
+parts=<number of parts>
+P1: <passages joined by +> | <alternative passages joined by +>
+P2: NONE
+END
+Always finish your reply with the line END.
+\end{lstlisting}
+
+\emph{Answer prompts.} All pipelines and readers use the same system prompt for a given answer format. It starts with a shared head, in which \texttt{\{answer\_lang\}} is \texttt{Persian (Farsi)} or \texttt{English}:
+\begin{lstlisting}
+You answer questions about documents such as company reports, books and laws.
+Use only the numbered evidence passages in the user message.
+If the answer is not there, reply with exactly NOT_FOUND and nothing else.
+Answer in {answer_lang}.
+\end{lstlisting}
+The format instruction follows on the same line as the last sentence of the head. The five instructions are:
+\begin{lstlisting}
+[single] The question asks for one fact. Reply with the answer only, in one or two short sentences, naming what it applies to (the subject and, where the question fixes them, the period, version or condition). Copy numbers exactly as they are written, with their unit. Do not explain your reasoning.
+
+[list] The question asks for several items. Give them as a numbered list, one short line each, naming the subject, period or version of an item whenever the question spans more than one. List each item once. Copy numbers exactly as they are written. Do not explain your reasoning.
+
+[comparison] The question compares things across subjects, documents, periods or versions. First give each value or statement the comparison needs on its own line, in the form <subject> - <period or version>: <value or statement>, and write NOT_FOUND for one you cannot give. Then give the comparison, difference or calculation the question asks for in one or two short sentences, with any arithmetic in brief. If the definitions, periods or units differ, say that the values are not directly comparable instead of comparing them. Copy numbers exactly as they are written. Do not explain your reasoning.
+
+[series] The question asks for one value over several periods or versions. Reply with one line per period or version, earliest first, in the form <period or version>: <value> <unit>, and write <period or version>: NOT_FOUND for one whose value you cannot give. Copy numbers exactly as they are written. End with one short sentence on how the value changed; if what is counted differs between periods (a different definition or scope), say instead that the values are not directly comparable. Do not explain your reasoning.
+
+[explanation] The question needs an answer that combines several points (for example a rule and its exception or condition, a definition applied to a case, a cause and its effect, or several steps of one account). Give the direct answer first, then each point it rests on, in at most six short sentences, naming the article, section, subject or period each point comes from. Answer every part of the question. Copy numbers exactly as they are written. Do not add points you cannot support.
+\end{lstlisting}
+The bracketed labels were added for this paper and are not sent. The user message is \texttt{Evidence:} followed by the rendered pack, a blank line and \texttt{Question: \{question\}}. Unanswerable questions are given the format of the tier they imitate (T1 single, T2 explanation, T3 comparison) and are correct only with an abstention. Completion limits are given in Table~\ref{tab:settings-full}.
+\emph{\setr{} selector.} The prompt is the system message and the selection prompt of the SetR release (\texttt{generate\_data.py}, selection mode with information requirements), verbatim. Only the number of passages, the question and the passages are filled in. Each of the top 20 passages of \hybrid{} is rendered as \texttt{[i]} followed by its text, with line breaks replaced by spaces and the text cut at 1,500 characters, and the passages are joined by line breaks. The system message is:
+\begin{lstlisting}
+You are RankLLM, an intelligent assistant that can rank passages based on their relevancy to the query.
+\end{lstlisting}
+The user message is:
+\begin{lstlisting}
+I will provide you with {num} passages, each indicated by a numerical identifier []. Select the passages based on their relevance to the search query: {question}.
+
+{context}
+
+Search Query: {question}
+
+Please follow the steps below:
+Step 1. Please list up the information requirements to answer the query.
+Step 2. for each requirement in Step 1, find the passages that has the information of the requirement.
+Step 3. Choose the passages that mostly covers clear and diverse informations to answer the query. Number of passages is unlimited. The format of final output should be '### Final Selection: [] []', e.g., ### Final Selection: [4] [2].
+\end{lstlisting}
+The parser takes the numbers after the last \texttt{Final Selection} marker, keeps the first occurrence of each valid number and keeps the order of the model. A reply without a marker or a valid number, a missed deadline of 8 seconds and a call error all fall back to \hybrid{} order, with no repair and no retry. The selected passages are packed first, and the other candidates of \hybrid{} fill the rest of the budget.
+
+\emph{Judge.} The judge grades every answer of an answerable question with the following system and user prompts:
+\begin{lstlisting}
+[system] You are a strict, impartial grader for a question-answering benchmark over documents (company reports, non-fiction books and laws) written in Persian and English. You compare a candidate answer with a reference packet built from the documents: the reference answer, the answer requirements (each with an id, marked required or optional), the source excerpts behind them and accepted alternatives. The packet is the truth; do not use outside knowledge. Reply with one JSON object only.
+
+[user] Question ({lang}): {question}
+Answer format: {fmt}
+
+Reference packet:
+{packet}
+
+Candidate answer:
+{answer}
+
+Grade in two lists.
+1. "claims": split the candidate into its distinct claims. For each give {"text": <the claim, short>, "unit":
+   <the requirement id it expresses, or null>, "status": one of correct | wrong_value | wrong_binding | contradiction |
+   unsupported | extra | duplicate | non_substantive}.
+   correct: states a requirement with the same meaning, bound to the same subject, aspect and constraints (time,
+   version, place, population, condition). Paraphrase, either language, rounding at the requirement's precision,
+   Persian digits, the Persian decimal slash (78/3 = 78.3) and scale words are all fine.
+   wrong_value: the right subject and aspect with a different value or statement. wrong_binding: a right value or
+   statement attached to the wrong subject, time, version or condition. contradiction: conflicts with a requirement,
+   an excerpt or another claim of the answer. unsupported: a substantive claim not in the packet that changes the
+   answer (a different conclusion, a wrong reason, rule, exception or trend). extra: harmless additional detail not in
+   the packet that does not change the answer. duplicate: repeats an earlier claim. non_substantive: framing, hedging or
+   citation markers such as [2].
+2. "units": for EVERY requirement id in the packet give one of correct | missing | wrong | contradicted.
+A derived requirement (a comparison, difference, ranking or conclusion) is correct only if the candidate states it;
+its inputs are graded as their own requirements. For a list, each required item is its own requirement.
+Reply with JSON only: {"claims": [...], "units": {"<requirement id>": "<status>", ...}, "reason": "at most 25 words"}
+\end{lstlisting}
+The reference packet is a JSON object built from the question file alone, with the question's tier, answer format, integration operation, language and reference answer, and one entry per requirement (identifier, whether required, proposition, subject, aspect, constraints, value, unit, precision, accepted alternatives, derivation and source excerpts). A reply is valid only if its \texttt{units} grade every requirement identifier of the packet and its \texttt{claims} use the eight claim statuses; an invalid reply is retried up to three attempts and never repaired. An answer is strictly correct if every required requirement is graded \texttt{correct}, none is \texttt{contradicted}, and no claim is \texttt{contradiction}, \texttt{wrong\_value}, \texttt{wrong\_binding} or \texttt{unsupported}. Claims marked \texttt{extra}, \texttt{duplicate} or \texttt{non\_substantive}, and optional requirements, do not affect it.
+
+For unanswerable questions the judge receives the absence audit of the question instead of a packet. An answer that is exactly the abstention token \texttt{NOT\_FOUND} is ruled correct without a call. Any other answer is graded with the following prompts, in which \texttt{\{missing\}} is what the documents lack, and \texttt{\{near\}} lists the nearby facts that are not the answer, joined by semicolons:
+\begin{lstlisting}
+[system] You are a strict, impartial grader for a question-answering benchmark over documents (company reports, non-fiction books and laws) written in Persian and English. The question asks for something the documents do not contain. Reply with one JSON object only.
+
+[user] Question ({lang}): {question}
+What the documents lack: {missing}
+Nearby facts that are NOT the answer: {near}
+
+Candidate answer:
+{answer}
+
+The candidate is CORRECT only if it declines to give the missing fact (for example NOT_FOUND, "the documents do not
+say", or an explanation that the value is not given), possibly while mentioning the nearby facts as such. It is
+INCORRECT if it states a value, date, name or conclusion for the missing fact, including one taken from a nearby fact.
+Reply with JSON only: {"correct": true or false, "reason": "at most 20 words"}
+\end{lstlisting}
+The reply is a JSON object holding a verdict and a reason of at most 20 words.
+
+\section{Examination of the gold-evidence misses}
+\label{supp:goldmiss}
+% src: work/posthoc_2026-11/S17_goldmiss/RESULTS.md (the table, the counts and the reasons); S2a_packs/RESULTS.md sec. 2.4 (83 of 90; T1 27/30, T2 30/30, T3 26/30; en 40/45, fa 43/45); S8_factorial/tables.md 'Accuracy, judge 2' (GOLD 82..84, 88 resolved)
+With the first annotated bundle alone as evidence, the primary reader answered 83 of the 90 answerable test questions correctly under the first judge. Table~\ref{tab:goldmiss} lists the seven misses, with the tier, the language, the expected answer, the given answer, the verdicts of both judges and a class. The pack that the reader saw for each question is the quoted bundle in bundle order, and each class is one reading of the saved question, pack, answer and judge records. No second person checked it.
+
+Four of the seven packs do not contain enough text to tie the key value to its subject. In three of them the quote is a table row or a clause that is cut out of its context, and in the fourth the passage that fixes the period is missing. In these cases the reader reported that it could not give the value, as its prompt asks. Two misses are judge decisions that a person would probably not make. One was failed by the first judge on a unit that the source itself gives, the other because the first judge did not link a correct line to its requirement. The second judge accepts the second answer and fails the first on a restated source sentence. One miss is an answer that is true but leaves out one of two required points, and the saved data do not show whether a person would accept it.
+The second judge scored 88 of the 90 answers and found 82 correct. It leaves two of the seven unresolved because its reply used a claim status that the frozen parser rejects, and it fails two answers that the first judge accepted. If the two judge cases were counted as correct, the gold reference would be 85 of 90. This is a count from the reading above and not a new score.
+\input{tables/goldmiss}
+
+\FloatBarrier
+\bibliographystyle{elsarticle-num}
+\bibliography{refs}
+\end{document}

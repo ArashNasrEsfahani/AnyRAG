@@ -1,0 +1,45 @@
+% src: work/posthoc_2026-11/S7_analysis/examples.md (examples.json, written by t4c_examples.py from the saved test packs, selector replies and verdicts).
+%      Left: ex1_selector_rescue_fa, question V2-test-RPT-fa-T2-005 (text, selector reply `P1: 3 / P2: 9`, answers and verdicts verbatim; English
+%      glosses are the S7 stream's own). Right: ex4_judge_disagreement_en, question V2-test-RPT-en-T2-002 (judge 1 [1,1], judge 2 0; Judge 2 fails
+%      6 of the 8 GLM cells of this question, judge 1 fails 1).
+% Illustration only; no plotted numbers. Style as tables/example.tex.
+\begin{figure*}[t]
+\centering
+\tcbset{exc/.style={enhanced, boxrule=0.6pt, arc=3pt, left=4pt, right=4pt, top=9pt, bottom=3pt, fontupper=\footnotesize,
+  colframe=cAxis!60, colback=white, coltitle=white, colbacktitle=cAxis, fonttitle=\footnotesize\bfseries,
+  attach boxed title to top left={xshift=6pt, yshift=-2.2mm}, boxed title style={arc=2pt, boxrule=0pt}, before skip=7pt, after skip=2pt},
+  exs/.style={enhanced, boxrule=0pt, arc=0pt, leftrule=2.2pt, colframe=#1, colback=#1!6, left=4pt, right=3pt, top=1pt, bottom=1pt,
+  fontupper=\footnotesize, before skip=2pt, after skip=2pt}}
+\begin{minipage}[t]{0.495\textwidth}
+\begin{tcolorbox}[exc, title={A. The selection call finds the missing definition (Persian)}]
+\begin{otherlanguage}{persian}
+میانگین درآمد ماهانهٔ رانندگان تمام‌وقت اسنپ در سال ۱۴۰۳ چقدر بود و اسنپ چه رانندگانی را تمام‌وقت به شمار می‌آورد؟\par
+\end{otherlanguage}
+{\color{cAxis}\textit{Gloss:} What was the average monthly income of Snapp's full-time drivers in 1403, and whom does Snapp count as a full-time driver?\par}
+\end{tcolorbox}
+\begin{tcolorbox}[exs=cHyb]
+\textbf{Without selection.} The pack holds the income figure but not the 1403 glossary entry. The answer gives the income only. Judged wrong.
+\end{tcolorbox}
+\begin{tcolorbox}[exs=cLex]
+\textbf{With selection.} The selector reply is \texttt{P1: 3 / P2: 9}: passage 3 for the income, passage 9 for the definition, which the pack now contains.\par
+\begin{otherlanguage}{persian}
+میانگین درآمد ماهانهٔ رانندگان تمام‌وقت اسنپ در ۱۴۰۳ برابر ۴۱,۵۷۹,۵۰۹ تومان بود و اسنپ راننده‌ای را تمام‌وقت می‌داند که در ماه بیش از ۴۰ سفر موفق انجام دهد.\par
+\end{otherlanguage}
+{\color{cAxis}\textit{Gloss:} The average monthly income of Snapp's full-time drivers in 1403 was 41,579,509 toman, and Snapp counts as full-time a driver who completes more than 40 successful trips a month.\par}
+Judged correct.
+\end{tcolorbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.495\textwidth}
+\begin{tcolorbox}[exc, title={B. Two judges disagree on a correct answer (English)}]
+What return on invested capital (as reported, not the underlying ROIC) did A.P.\ Moller -- Maersk report for the group for 2024, how did it compare with its yearly target, and how does Maersk calculate this measure?\par
+\end{tcolorbox}
+\begin{tcolorbox}[exs=cHR]
+\textbf{Answer (\lexb{}).} A.P.\ Moller -- Maersk reported a group ROIC of 12.3\% for 2024, which was above its yearly target of above 7.5\% under normalised conditions. \emph{Profitability lagged in the first half of 2024, but the strong second-half result brought ROIC above target.} The measure is defined as profit/loss before financial items for the year (EBIT) less tax on EBIT, divided by the average invested capital over the last twelve months.
+\end{tcolorbox}
+\begin{tcolorbox}[exs=cSetR]
+\textbf{Judge 1:} correct, all three required claims present. \textbf{Judge 2:} wrong, ``two claims correct, one unsupported detail''. The italic sentence appears word for word in the reader's pack, right after the annotated evidence, but the judges see only the annotated excerpts. Judge 2 fails this question in 6 of the 8 reader cells, judge 1 in 1.
+\end{tcolorbox}
+\end{minipage}
+\caption{Post hoc. Examples from the test set; panel B uses the second judge. A: selection moves a missing passage into the pack that the fusion order alone leaves out. B: a judge disagreement, a true added detail failed as unsupported (Table~\ref{tab:errors}).}
+\label{fig:examples}
+\end{figure*}

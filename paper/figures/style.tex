@@ -1,0 +1,101 @@
+% Shared figure style for every figure in the paper (input once in the preamble of main.tex).
+% One colour and one marker per pipeline, used everywhere (colour-blind-safe; markers keep figures legible in grey):
+%   Hybrid grey / circle, HR teal / square, Lex-RAG orange / triangle, SetR-p+fill blue / diamond.
+% Budget encoding where both budgets appear: open marker = 6,000 characters, filled marker = 15,500 characters.
+\usetikzlibrary{positioning,arrows.meta,fit,backgrounds,calc,shapes.geometric,shapes.misc,shadows}
+\usepgfplotslibrary{groupplots}
+\definecolor{cHyb}{HTML}{6E6E6E}
+\definecolor{cHR}{HTML}{009E73}
+\definecolor{cLex}{HTML}{E66100}
+\definecolor{cSetR}{HTML}{0072B2}
+\definecolor{cInk}{HTML}{222222}
+\definecolor{cAxis}{HTML}{5A5A5A}
+\definecolor{cGrid}{HTML}{E4E4E4}
+\definecolor{cHigh}{HTML}{FFF1E0}% light orange band behind the key comparison
+\definecolor{cWithdrawn}{HTML}{B8B8B8}
+\colorlet{cHybL}{cHyb!14}
+\colorlet{cHRL}{cHR!14}
+\colorlet{cLexL}{cLex!14}
+\colorlet{cSetRL}{cSetR!14}
+% legacy names (older figure sources) map onto the same palette
+\colorlet{cbBlack}{cHyb}\colorlet{cbBlue}{cHR}\colorlet{cbVerm}{cLex}\colorlet{cbGreen}{cSetR}
+
+\pgfplotsset{
+  % axis look shared by all plots: light grid, thin grey axes, readable fonts (>= 8pt at print size)
+  paper/.style={
+    axis line style={cAxis, line width=0.6pt},
+    tick style={cAxis, line width=0.6pt},
+    major tick length=3pt,
+    tick label style={font=\footnotesize, text=cInk},
+    label style={font=\small, text=cInk},
+    title style={font=\small\bfseries, text=cInk},
+    grid style={cGrid, line width=0.5pt},
+    legend style={draw=none, fill=none, font=\footnotesize},
+    every axis plot/.append style={line width=1.5pt, mark size=3.2pt},
+    axis x line*=bottom, axis y line*=left,
+  },
+  % pipeline identities: filled marker (single-budget plots and 15,500) and open marker (6,000)
+  pHyb/.style={color=cHyb, mark=*, mark options={solid, fill=cHyb, draw=white, line width=0.5pt}},
+  pHR/.style={color=cHR, mark=square*, mark options={solid, fill=cHR, draw=white, line width=0.5pt}},
+  pLex/.style={color=cLex, mark=triangle*, mark options={solid, fill=cLex, draw=white, line width=0.5pt}, mark size=3.8pt},
+  pSetR/.style={color=cSetR, mark=diamond*, mark options={solid, fill=cSetR, draw=white, line width=0.5pt}, mark size=3.8pt},
+  pHybO/.style={color=cHyb, mark=*, mark options={solid, fill=white, draw=cHyb, line width=1.3pt}},
+  pHRO/.style={color=cHR, mark=square*, mark options={solid, fill=white, draw=cHR, line width=1.3pt}},
+  pLexO/.style={color=cLex, mark=triangle*, mark options={solid, fill=white, draw=cLex, line width=1.3pt}, mark size=3.8pt},
+  pSetRO/.style={color=cSetR, mark=diamond*, mark options={solid, fill=white, draw=cSetR, line width=1.3pt}, mark size=3.8pt},
+  % select rows of a data file by its numeric class column (1 Hybrid, 2 HR, 3 Lex-RAG, 4 SetR-p+fill)
+  cls/.style={restrict expr to domain={\thisrow{cls}}{#1:#1}},
+  % interval encodings: thick bar = identification bounds over unresolved judgments; thin whisker = sampling envelope
+  boundbar/.style={only marks, mark=none, forget plot, error bars/.cd, x dir=both, x explicit,
+    error bar style={line width=3.4pt, line cap=round}, error mark=none},
+  ciwhisker/.style={only marks, mark=none, forget plot, error bars/.cd, x dir=both, x explicit,
+    error bar style={line width=0.9pt}, error mark=|, error mark options={line width=0.9pt, mark size=2.6pt}},
+  ybound/.style={only marks, mark=none, forget plot, error bars/.cd, y dir=both, y explicit,
+    error bar style={line width=2.6pt, line cap=round}, error mark=none},
+  xenvelope/.style={only marks, mark=none, forget plot, error bars/.cd, x dir=both, x explicit,
+    error bar style={line width=0.9pt}, error mark=|, error mark options={line width=0.9pt, mark size=2pt}},
+}
+\pgfplotstableset{col sep=semicolon}
+
+\tikzset{
+  % direct labels next to data
+  dlabel/.style={font=\footnotesize\bfseries, inner sep=1pt},
+  note/.style={font=\footnotesize, text=cInk, align=left, inner sep=1pt},
+  % pipeline diagram
+  stage/.style={draw=#1, line width=0.9pt, rounded corners=4pt, fill=#1!10, align=center, font=\footnotesize,
+    inner sep=3pt, minimum height=0.95cm, text=cInk},
+  stage/.default=cHyb,
+  shared/.style={draw=cAxis, line width=0.8pt, rounded corners=4pt, fill=white, align=center, font=\footnotesize,
+    inner sep=3pt, minimum height=0.95cm, text=cInk, drop shadow={opacity=0.22, shadow xshift=0.7pt, shadow yshift=-0.7pt}},
+  flow/.style={-{Stealth[length=5pt, width=4pt]}, line width=1.1pt, draw=#1},
+  flow/.default=cAxis,
+  fallback/.style={-{Stealth[length=4pt]}, line width=0.9pt, draw=#1, densely dashed},
+  fallback/.default=cAxis,
+  lanelabel/.style={font=\small\bfseries, text=#1, anchor=east, align=right},
+  badge/.style={circle, fill=#1, text=white, font=\scriptsize\bfseries, inner sep=0pt, minimum size=11pt},
+}
+% class-indexed pipeline styles (for \pgfplotsinvokeforeach over the cls column)
+\pgfplotsset{
+  pcls1/.style={pHyb}, pcls2/.style={pHR}, pcls3/.style={pLex}, pcls4/.style={pSetR},
+  pclsO1/.style={pHybO}, pclsO2/.style={pHRO}, pclsO3/.style={pLexO}, pclsO4/.style={pSetRO},
+}
+\colorlet{pcol1}{cHyb}\colorlet{pcol2}{cHR}\colorlet{pcol3}{cLex}\colorlet{pcol4}{cSetR}
+% inline pipeline key: \pkey{colour}{mark}{name} draws the pipeline's marker followed by its name in its colour
+\newcommand{\pkey}[3]{\tikz[baseline=-0.55ex]{\pgfsetplotmarksize{3.2pt}\pgfsetfillcolor{#1}\pgfsetstrokecolor{#1}\pgfsetlinewidth{0.5pt}\pgfuseplotmark{#2}}\,\textcolor{#1}{\textbf{#3}}}
+\newcommand{\pkeyopen}[3]{\tikz[baseline=-0.55ex]{\pgfsetplotmarksize{3.2pt}\pgfsetfillcolor{white}\pgfsetstrokecolor{#1}\pgfsetlinewidth{1.3pt}\pgfuseplotmark{#2}}\,\textcolor{#1}{#3}}
+\newcommand{\pipelinekey}{\pkey{cHyb}{*}{\hybrid}\quad\pkey{cHR}{square*}{\hr}\quad\pkey{cLex}{triangle*}{\lexb}\quad\pkey{cSetR}{diamond*}{\setr}}
+\newcommand{\budgetkey}{\pkeyopen{cAxis}{*}{6,000 chars}\quad\pkey{cAxis}{*}{\mdseries 15,500 chars}}
+
+% post-hoc additions (rewrite 2026-11): Lex-RAG without selection (reddish purple / diamond-open), search agents (vermillion),
+% evidence-reach shades (sky blue = answer correct, vermillion = answer wrong).
+\definecolor{cFus}{HTML}{CC79A7}
+\definecolor{cAgent}{HTML}{D55E00}
+\definecolor{cHit}{HTML}{56B4E9}
+\definecolor{cMiss}{HTML}{D55E00}
+\pgfplotsset{
+  pFus/.style={color=cFus, mark=pentagon*, mark options={solid, fill=cFus, draw=white, line width=0.5pt}, mark size=3.6pt, densely dashed},
+  pcls5/.style={pFus}, pclsO5/.style={color=cFus, mark=pentagon*, mark options={solid, fill=white, draw=cFus, line width=1.3pt}, mark size=3.6pt},
+  pcls6/.style={color=cAgent, mark=square*, mark options={solid, fill=cAgent, draw=white}}, pclsO6/.style={pcls6},
+  pcls7/.style={color=cAxis, mark=triangle*, mark options={solid, fill=cAxis, draw=white}}, pclsO7/.style={pcls7},
+}
+\colorlet{pcol5}{cFus}\colorlet{pcol6}{cAgent}\colorlet{pcol7}{cAxis}

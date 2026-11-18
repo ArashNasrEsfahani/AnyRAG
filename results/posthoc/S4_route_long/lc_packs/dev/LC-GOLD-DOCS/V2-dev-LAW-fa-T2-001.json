@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-fa-T2-001",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_explanation",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 716 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 58233 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "592909811db293e946f80e31d9628e599b5e13d0cd88ff70bc93ae88d2e5456d",
+ "evidence_chars": 57971,
+ "prompt_chars": 58949,
+ "est_prompt_tokens": 23317,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "doc_chars": 57947,
+    "shown": 57947,
+    "ranges": 1,
+    "whole": true
+   }
+  ],
+  "gold_units": 4,
+  "gold_units_retained": 4,
+  "gold_docs_shown": 1
+ }
+}

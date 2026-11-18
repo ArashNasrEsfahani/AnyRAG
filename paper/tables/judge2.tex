@@ -1,0 +1,27 @@
+% src: work/posthoc_2026-11/S1_evaluator/judge2_results.json and judge2_results.md (sections 2.1, 2.3, 2.4, 2.5 of RESULTS.md). Judge 1 = pinned gpt-oss-120b (deepinfra/bf16);
+%      judge 2 = mistralai/mistral-large-2512 (pin mistral/zdr, temperature 0, seed 42), same rubric, prompt and parser, run on the 768 saved GLM-5.3-flash answers
+%      (8 cells x 96 questions); 12 cells unresolved (the reply used the claim status "missing", which the frozen parser rejects). Bounds over unresolved cells.
+%      Human = symmetric human review of 30 questions x 4 pipelines at 6,000 characters (120 cells); "stricter" = judge 0 and human 1; "laxer" = judge 1 and human 0.
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrr@{\hspace{1.2em}}lrrrr@{}}
+\toprule
+\multicolumn{4}{@{}l}{\emph{Correct of 90, both judges}} & \multicolumn{5}{l}{\emph{Against the human on the 120 reviewed answers (6,000 characters)}} \\
+\cmidrule(r){1-4}\cmidrule(l){5-9}
+Cell & J1 & J2 & Unres. & Pipeline & Agree J1 & Agree J2 & Stricter J1/J2 & Laxer \\
+\midrule
+\hybrid{}, 6,000 & 62--63 & 59--61 & 2 & \hybrid{} & 20/29 & 20/29 & 9/9 & 0/0 \\
+\hr{}, 6,000 & 69--71 & 63 & 0 & \hr{} & 22/28 & 21/30 & 6/9 & 0/0 \\
+\lexb{}, 6,000 & 68--69 & 65--67 & 2 & \lexb{} & 22/29 & 20/29 & 7/9 & 0/0 \\
+\setr{}, 6,000 & 63 & 63--65 & 2 & \setr{} & 15/30 & 17/29 & 15/12 & 0/0 \\
+\hybrid{}, 15,500 & 68 & 65--68 & 3 & All four & 79/116 & 78/117 & 37/39 & 0/0 \\
+\hr{}, 15,500 & 69--70 & 66--68 & 2 & & & & & \\
+\lexb{}, 15,500 & 67 & 67 & 0 & & & & & \\
+\setr{}, 15,500 & 66--67 & 64--65 & 1 & & & & & \\
+\bottomrule
+\end{tabular}
+\caption{Post hoc. A second judge (J2, another model family) against the pinned judge (J1). Left: correct answers out of 90 under each judge; Unres.: answers J2 could not score. Right: agreement with the human on reviewed answers, and answers each judge rejects that the human accepts (stricter).}
+\label{tab:judge2}
+\end{table*}

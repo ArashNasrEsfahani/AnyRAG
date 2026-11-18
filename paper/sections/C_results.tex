@@ -1,0 +1,41 @@
+\section{Extended Results of the Frozen Test}
+\label{app:stats}
+% src: test_run/TEST_RESULTS.md (machine), test_run/TEST_RESULTS_HUMAN_SYM.md (symmetric human), paper/analysis/revision_stats.md
+%      (bounds, sign-p ranges, CIs, readers, clipping, tokens), dev60/DEV60.md, setr/SETR.md, budget_matrix/BUDGET_MATRIX.md
+
+Table~\ref{tab:paired} gives every paired comparison with the primary reader. Absolute totals under the symmetric merge are not estimates of human-judged accuracy, because the 60 unreviewed questions keep strict machine verdicts for every pipeline. Holm correction covers only the two primary comparisons (machine .237 on resolved pairs, as in the frozen analysis, and up to .665 over every assignment of unresolved cells; human .359). For machine scores the interval is the union of the intervals at the two extreme assignments. Bounds, $p$ ranges and component intervals were added after the freeze. The descriptive rows are not corrected for multiplicity and were not fixed before the test; the \setr{}--\hybrid{} human difference (7/0, uncorrected $p=.016$) is one of six post hoc human comparisons.
+
+\input{tables/paired}
+
+\subsection{Intervals and the budget effect}
+All bootstrap intervals are percentile intervals from 10,000 resamples (seed 0) of the mean paired difference. The question bootstrap resamples the 90 answerable questions. The cluster bootstrap resamples the 20 connected components and takes the question-weighted mean. Components hold 1 to 15 questions, and the three largest hold 41 of the 90, so the cluster intervals rest on few effective units and are approximate.
+% src: paper/analysis/revision_stats.py boot_mean (N_BOOT 10,000, SEED 0, percentile 2.5/97.5; cluster = resample component keys,
+%      question-weighted). Component sizes computed 2026-10-07 from the frozen question file with the same union-find rule
+%      (no model calls): 15, 13, 13, 7, 7, 5, 4, 4, ten of 2, two of 1 (20 components, 90 questions).
+
+The budget effects and interactions in Table~\ref{tab:paired} are identification bounds, not confidence intervals; the paired 95\% intervals of the budget effects are about 11 to 22 points wide. The two \lexb{} budgets ran independent selector calls, so the interaction compares two stochastic runs and not one selection at two sizes. There is no human review at 15,500 characters, and two budgets cannot show where selection stops helping.
+
+\subsection{Readers}\label{app:readers}
+Table~\ref{tab:readers} gives the net differences for every reader. All readers answered byte-identical packs selected with the GLM selector, so the rows share questions, packs and judge, and the two \lexb{} budgets used independent selector calls. The table comes from the saved verdicts through the statistics script in the release. Token counts of the non-primary readers combine the shared GLM selector calls with the reader's own answer call, and their latencies combine the primary run's pre-answer time with the reader's own call.
+
+\input{tables/readers}
+\subsection{Cost and fallbacks}
+Table~\ref{tab:cost} gives the query-time cost. The selector call of \lexb\textsubscript{6000} is almost entirely prompt tokens: on calls with known usage it used 219k prompt against 5.7k completion tokens, of which 3.8k were reasoning. For the 15 calls with unreported usage the lower bound counts zero tokens. The upper bound is an envelope fixed before the test: the prompt's characters times the largest tokens-per-character rate seen for that model, call type and language in the development logs, raised by 10\%, plus the call's completion cap. The resource gate used the upper bound. Persian questions cost more than English ones in every pipeline. Cross-encoder GPU time, embeddings, index construction and storage are not counted, and the resource gate compared the upper bound for \lexb\textsubscript{6000} with $2.5\times$, relaxed from $1.5\times$ during development (Table~\ref{tab:timeline}).
+% src: test_freeze/PROTOCOL.md sec. 5 (bounds: lower 0; upper ceil(prompt_chars x r) + max_tokens; r = max observed x 1.10);
+%      test_freeze/token_calibration.json (token-bounds-v1, margin 1.1)
+% src: paper/analysis/revision_stats.json tokens.LEX5B_6000 (known prompt 219,283, completion 5,728, reasoning 3,768)
+
+\input{tables/cost}
+
+Of the 96 \lexb\textsubscript{6000} packs, 37 were identical to the pack without selection (the fallback pack), 19 held the same chunks in a different order, and 40 held a different set.
+% src: TEST_RESULTS.md sec. 4 selector behaviour (final pack = fallback 37, same set 56 -> 19 reordered, 40 different set)
+The selector's 19 fallbacks at 6,000 characters (15 deadlines, 4 grammar rejections) were uneven (Table~\ref{tab:fallbacks}); valid replies that marked every part \texttt{NONE} (6 questions) are not counted. The fallbacks are uneven across language and tier, and the language pattern reverses between the two budgets, so they are descriptive and not evidence that language or complexity causes them.
+% src: fallback table recomputed by paper/analysis/fallback_table.py -> fallback_table.md (saved GLM test records)
+
+\input{tables/fallbacks}
+
+\subsection{Development against test}
+Table~\ref{tab:devtest} sets dev beside test in percentage points, since the denominators differ (54 against 90). Two recorded dev sensitivities shrink the dev leads before any test: an earlier contradictory judge verdict gives \hr{} 33 instead of 32, and the frozen parser would have rejected one historical \lexb{} reply (worst case 36). With both, the dev leads are +11.1 and +5.6 points, against +5.6 and 0.0 under the symmetric merge on test. \setr's dev lead reversed under the machine judge but not under the human. The method was adapted to dev over many iterations and tested once, so we read the shrinkage as the expected regression of a dev-selected method. On dev, \setr{} was the strongest pipeline at 6,000 characters (40--42 of 54 against 37 for \lexb) with the highest decisive-span retention (0.868 against 0.842 for the \lexb{} packs of the same run; an offline replay of the \lexb{} selector in Table~\ref{tab:negative-full} gave 0.854). On test it tied \hybrid{} for the lowest machine score and was the slowest pipeline (Tables~\ref{tab:main} and~\ref{tab:cost}). These numbers describe our adaptation of SetR, not the published system.
+% src: setr/SETR.md line 71 (LEX5B offline S-c 0.854 / 38; dev60 shown 0.842 / 36); dev60/DEV60.md (LEX5B@6000 0.842 (36))
+
+\input{tables/devtest}

@@ -1,0 +1,23 @@
+\begin{table*}[tp]
+\caption{Post hoc. Contrasts split by language half. Scored by the first judge only}
+\label{tab:replication}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
+\toprule
+ & Persian half & English half & Difference between \\
+Contrast (net answers, A minus B) & (of 45) & (of 45) & halves, permutation $p$ \\
+\midrule
+\lexb{} against Lex-RAG without selection, 3,000 characters & +7..+8 & +8 & 1.00 \\
+\lexb{} against Lex-RAG without selection, 6,000 characters & +4..+6 & +5 & 1.00 \\
+\hr{} against \hybrid{}, 6,000 characters & 0..+1 & +6..+8 & .17 \\
+\hybrid{} at 15,500 against 6,000 characters & $-$1..0 & +6 & .11 \\
+SetR set only against \hybrid{}, 3,000 characters & +2..+3 & +10..+11 & .12 \\
+Hybrid-index agent against \hybrid{} & +3..+4 & +11 & .11 \\
+BM25 agent against \hybrid{} & $-$2..$-$1 & +12 & .02 \\
+Regular-expression agent against \hybrid{} & $-$7..$-$6 & +12 & .001 \\
+Gold evidence against \hr{} & +7 & +5..+7 & 1.00 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

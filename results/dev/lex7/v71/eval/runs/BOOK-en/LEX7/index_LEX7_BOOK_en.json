@@ -1,0 +1,49 @@
+{
+ "approach": "LEX7",
+ "corpus_set": "BOOK_en",
+ "fingerprint": "ff39ddd53e70d219f6ef211b386c16fe5415de0b",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T17:29:13",
+   "ok": true,
+   "build_ms": 9536.7,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 9536.7,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T17:29:22",
+ "size_bytes": 259,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX7\\BOOK_en-ff39ddd5",
+ "corpus_stats": {
+  "name": "BOOK_en",
+  "docs": 11,
+  "sections": 296,
+  "units": 9742,
+  "chars": 6263617,
+  "skipped": 0
+ },
+ "copied_at": "2026-09-26T17:34:19",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

@@ -1,0 +1,391 @@
+{
+ "n": 54,
+ "arms": {
+  "HYBRID": {
+   "span": 0.72,
+   "full": 32,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 15
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     13
+    ],
+    "HYBRID": [
+     0,
+     0
+    ]
+   },
+   "groups": {
+    "fa": 0.7222,
+    "en": 0.7177,
+    "T1": 0.9259,
+    "T2": 0.6228,
+    "T3": 0.6111,
+    "RPT-fa": 0.5556
+   },
+   "chars_mean": null
+  },
+  "HYBRID+rerank": {
+   "span": 0.8065,
+   "full": 35,
+   "complete_by_lang": {
+    "fa": 20,
+    "en": 15
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     0,
+     0
+    ],
+    "HYBRID": [
+     13,
+     6
+    ]
+   },
+   "groups": {
+    "fa": 0.8765,
+    "en": 0.7364,
+    "T1": 0.9815,
+    "T2": 0.7481,
+    "T3": 0.6898,
+    "RPT-fa": 0.8889
+   },
+   "chars_mean": null
+  },
+  "a1": {
+   "span": 0.7632,
+   "full": 34,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 16
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     10
+    ],
+    "HYBRID": [
+     4,
+     0
+    ]
+   },
+   "groups": {
+    "fa": 0.7716,
+    "en": 0.7547,
+    "T1": 0.9815,
+    "T2": 0.6691,
+    "T3": 0.6389,
+    "RPT-fa": 0.6111
+   },
+   "chars_mean": null
+  },
+  "MMR-a1": {
+   "span": 0.7673,
+   "full": 34,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 16
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     9
+    ],
+    "HYBRID": [
+     5,
+     2
+    ]
+   },
+   "groups": {
+    "fa": 0.7901,
+    "en": 0.7444,
+    "T1": 0.9815,
+    "T2": 0.663,
+    "T3": 0.6574,
+    "RPT-fa": 0.6667
+   },
+   "chars_mean": null
+  },
+  "O1": {
+   "span": 0.7735,
+   "full": 35,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 17
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     9
+    ],
+    "HYBRID": [
+     6,
+     1
+    ]
+   },
+   "groups": {
+    "fa": 0.7901,
+    "en": 0.7568,
+    "T1": 0.9815,
+    "T2": 0.6815,
+    "T3": 0.6574,
+    "RPT-fa": 0.6667
+   },
+   "chars_mean": null
+  },
+  "O2": {
+   "span": 0.7652,
+   "full": 33,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 16
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     5,
+     9
+    ],
+    "HYBRID": [
+     6,
+     2
+    ]
+   },
+   "groups": {
+    "fa": 0.7778,
+    "en": 0.7527,
+    "T1": 0.9815,
+    "T2": 0.6568,
+    "T3": 0.6574,
+    "RPT-fa": 0.6667
+   },
+   "chars_mean": null
+  },
+  "F1 CombSUM-norm (chunk packer)": {
+   "span": 0.7462,
+   "full": 31,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 13
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     11
+    ],
+    "HYBRID": [
+     6,
+     2
+    ]
+   },
+   "groups": {
+    "fa": 0.7901,
+    "en": 0.7023,
+    "T1": 0.9259,
+    "T2": 0.6691,
+    "T3": 0.6435,
+    "RPT-fa": 0.6667
+   },
+   "chars_mean": null
+  },
+  "F2 MaxMean (chunk packer)": {
+   "span": 0.7792,
+   "full": 33,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 16
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     8
+    ],
+    "HYBRID": [
+     7,
+     1
+    ]
+   },
+   "groups": {
+    "fa": 0.7963,
+    "en": 0.7621,
+    "T1": 0.9815,
+    "T2": 0.6784,
+    "T3": 0.6778,
+    "RPT-fa": 0.7222
+   },
+   "chars_mean": null
+  },
+  "C1 compact + ranked packing": {
+   "span": 0.7692,
+   "full": 33,
+   "complete_by_lang": {
+    "fa": 18,
+    "en": 15
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     6,
+     10
+    ],
+    "HYBRID": [
+     7,
+     3
+    ]
+   },
+   "groups": {
+    "fa": 0.7963,
+    "en": 0.7422,
+    "T1": 0.9815,
+    "T2": 0.6503,
+    "T3": 0.6759,
+    "RPT-fa": 0.7222
+   },
+   "chars_mean": 5913.9
+  },
+  "C2 compact + coverage packer": {
+   "span": 0.7121,
+   "full": 28,
+   "complete_by_lang": {
+    "fa": 15,
+    "en": 13
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     4,
+     12
+    ],
+    "HYBRID": [
+     9,
+     12
+    ]
+   },
+   "groups": {
+    "fa": 0.7716,
+    "en": 0.6527,
+    "T1": 0.9259,
+    "T2": 0.5948,
+    "T3": 0.6157,
+    "RPT-fa": 0.7778
+   },
+   "chars_mean": 5876.2
+  },
+  "S1 C2 + synthetic-question field": {
+   "span": 0.7255,
+   "full": 30,
+   "complete_by_lang": {
+    "fa": 16,
+    "en": 14
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     5,
+     12
+    ],
+    "HYBRID": [
+     10,
+     10
+    ]
+   },
+   "groups": {
+    "fa": 0.7901,
+    "en": 0.6609,
+    "T1": 0.9815,
+    "T2": 0.5515,
+    "T3": 0.6435,
+    "RPT-fa": 0.7778
+   },
+   "chars_mean": 5898.2
+  },
+  "S1r (post-hoc diagnostic) S1 candidates + ranked packing": {
+   "span": 0.7456,
+   "full": 30,
+   "complete_by_lang": {
+    "fa": 17,
+    "en": 13
+   },
+   "bw": {
+    "HYBRID+rerank": [
+     5,
+     13
+    ],
+    "HYBRID": [
+     7,
+     7
+    ]
+   },
+   "groups": {
+    "fa": 0.784,
+    "en": 0.7072,
+    "T1": 0.9815,
+    "T2": 0.5932,
+    "T3": 0.662,
+    "RPT-fa": 0.7222
+   },
+   "chars_mean": 5932.4
+  }
+ },
+ "stage_ms": {
+  "compact:coverage_pack": [
+   57.4,
+   671.7
+  ],
+  "compact:ranked_pack": [
+   0.5,
+   0.9
+  ],
+  "compact:retrieve": [
+   10.7,
+   43.7
+  ],
+  "compact:t_cands_ms": [
+   0.4,
+   0.8
+  ],
+  "compact:t_chunk_ms": [
+   4.5,
+   13.2
+  ],
+  "compact:t_unit_ms": [
+   5.4,
+   26.9
+  ],
+  "fusion:F1": [
+   0.1,
+   0.5
+  ],
+  "fusion:F2": [
+   0.2,
+   0.5
+  ],
+  "fusion:channels": [
+   3.1,
+   25.7
+  ],
+  "synth:coverage_pack": [
+   64.2,
+   747.3
+  ],
+  "synth:ranked_pack": [
+   0.6,
+   1.2
+  ],
+  "synth:retrieve": [
+   13.0,
+   44.8
+  ],
+  "synth:t_cands_ms": [
+   0.5,
+   0.8
+  ],
+  "synth:t_chunk_ms": [
+   4.5,
+   13.9
+  ],
+  "synth:t_unit_ms": [
+   7.5,
+   29.1
+  ]
+ }
+}

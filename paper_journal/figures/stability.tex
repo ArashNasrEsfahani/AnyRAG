@@ -1,0 +1,30 @@
+% src: figures/data/stability.dat, written by paper/analysis/figure_data_posthoc.py from
+%      work/posthoc_2026-11/S2b_variance/results.json (exp1.cells[arm].acc_by_rep: the saved answers and two more draws of the
+%      reader on the identical packs, judge 1), work/posthoc_2026-11/S1_evaluator/judge2_results.json (ranking_6000_ans90:
+%      judge 2; symmetric human merge with judge 1 or judge 2 on the 60 questions the human did not review).
+%      All values: correct of 90 answerable test questions at 6,000 characters, GLM-5.3-flash; bars = bounds over unresolved cells.
+\begin{figure*}[tp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[paper, name=st, width=\textwidth, height=6.8cm, clip=false,
+  xmin=0.4, xmax=8.3, xtick={1,2,3,4.6,6.2,7.2},
+  xticklabels={{saved\\run}, {repeat\\run 2}, {repeat\\run 3},{second\\judge}, {judge 1\\elsewhere}, {judge 2\\elsewhere}},
+  xticklabel style={align=center, font=\footnotesize},
+  ymin=54, ymax=85, ytick={55,60,...,80}, ymajorgrids, ylabel={Correct of 90 (6,000 characters)}]
+\fill[black!5] (axis cs:0.4,54) rectangle (axis cs:3.5,85);
+\fill[black!5] (axis cs:5.6,54) rectangle (axis cs:8.3,85);
+\node[font=\footnotesize\bfseries, text=cAxis, anchor=north] at (axis cs:2,84.8) {same judge, repeated reader runs};
+\node[font=\footnotesize\bfseries, text=cAxis, anchor=north] at (axis cs:4.6,84.8) {second judge};
+\node[font=\footnotesize\bfseries, text=cAxis, anchor=north, align=center] at (axis cs:6.7,84.8) {human review\\of 30 questions};
+\pgfplotsinvokeforeach{1,2,3,4}{%
+  \addplot[pcls#1, only marks, forget plot, restrict expr to domain={\thisrow{cls}}{#1:#1}, ybound]
+    table[x expr=\thisrow{x}+(#1-2.5)*0.12, y=mid, y error minus expr=\thisrow{mid}-\thisrow{lo}, y error plus expr=\thisrow{hi}-\thisrow{mid}] {figures/data/stability.dat};
+  \addplot[pcls#1, only marks, forget plot, restrict expr to domain={\thisrow{cls}}{#1:#1}]
+    table[x expr=\thisrow{x}+(#1-2.5)*0.12, y=mid] {figures/data/stability.dat};
+}
+\end{axis}
+\node[font=\footnotesize, anchor=south] at ($(st.north)+(0,0.15cm)$) {\pkey{cHyb}{*}{\hybrid}\quad\pkey{cHR}{square*}{\hr}\quad\pkey{cLex}{triangle*}{\lexb}\quad\pkey{cSetR}{diamond*}{\setr}};
+\end{tikzpicture}
+\caption{Post hoc. Stability of the ranking of four pipelines. Left: the same packs answered three times. Middle: a second judge. Right: the 30 human-reviewed questions merged into judge scores, with either judge scoring the other 60. Bars show ranges over unresolved judge cells.}
+\label{fig:stability}
+\end{figure*}

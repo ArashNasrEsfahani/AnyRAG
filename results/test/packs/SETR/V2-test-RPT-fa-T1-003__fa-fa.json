@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-RPT-fa-T1-003",
+ "variant": "SETR",
+ "setting": "fa-fa",
+ "q_lang": "fa",
+ "rid": "57cbdd3722ed4f208470",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6009 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "purpose": "answer",
+ "messages_sha256": "fc093c0dd14f53be4be4a00cfc670be73c613f69e9e1d22af8bb9ff2fbaa677a",
+ "evidence_chars": 5893,
+ "at": "2026-10-01T23:11:24"
+}

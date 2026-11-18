@@ -1,0 +1,18 @@
+{
+ "arm": "GOLD",
+ "question_id": "V2-test-RPT-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 504 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "8f64929199477ebe54caaa879b204546ab1e0e1bff8857668fe708f3817202e2",
+ "evidence_chars": 337
+}

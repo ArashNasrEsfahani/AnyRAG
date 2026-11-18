@@ -1,0 +1,41 @@
+% src: posthoc_2026-11/S2a_packs/RESULTS.md (FUSION, GOLD, MMR, KNAP; sec. 2.1, 2.2, 2.4), S6_baselines (CLOSEDBOOK 26, LISTWISE 66-67, SETR_NOFILL 63),
+%      S2b_variance (selector swap 59; fallbacks), S7_analysis/RESULTS.md (reach table, contamination, 16/16, 64 vs 53),
+%      S8_factorial/tables.md (SELHR 70, LEX5B_NODL 71-72, dev replication +8 9/1; RESULTS.md not yet written when this was drafted), S1_evaluator (judge 2)
+% All scores: machine judge 1, primary reader, 90 answerable questions, 6,000 characters unless stated.
+% src (judge 2, added 2026-11-11): S8_factorial/tables.md 'Accuracy, judge 2' (FUSION_6000 57..59, LEX5B_6000 65..67; gap 6..10); S14_bilingual compact_table.md (Lex-RAG vs FUSION @6000 under judge 2: fa +4, en +2..+6); SELHR and LEX5B_NODL were not sent to judge 2 (absent from that table).
+
+% src (REVIEW2 N1/N2, 2026-11-11): funnel counts of Table funnel = S10_retrieval/RESULTS.md sec. 2.4 (top-40 complete: BM25 66, dense 71, hybrid 72, HR 75; packs 45, 47, 57, 63) and S7_analysis/RESULTS.md sec. 1 reach table (packs Lex-RAG 64, Lex-RAG without selection 53, ITER_BM25 71)
+%      and sec. 5 (Lex-RAG F2 top 40: 40 + 35 = 75; Lex-RAG without selection uses the same 40 candidates); correct: S2a_packs, S8_factorial/tables.md, S10. Losses: 90-75 = 15 to 90-72 = 18 before the list; 72-57 = 15, 75-63 = 12, 75-64 = 11 in packing.
+%      Selector effect: +9..+11 saved answers (S8_factorial/results.json acc_j1, LEX5B_6000 vs FUSION_6000); redraws +4..+6 and +4..+5 (S14_bilingual/RESULTS.md sec. 2.1 'replicates r1; r2', sum of the halves: fa +2..+3 / en +2..+3 and fa +3..+4 / en +1);
+%      second judge +6..+10 (S8_factorial/tables.md 'Accuracy, judge 2': FUSION_6000 57..59, LEX5B_6000 65..67; S8_factorial/RESULTS.md sec. 3.1 is stale, tables.md is the source); dev +8, 9 wins 1 loss (S8_factorial dev_fusion; E_posthoc).
+%      Listwise 66..67 vs LEX5B 68..69 (S6_baselines); HR 69..71 vs LEX5B 68..69 (S2a_packs).
+
+\subsection{Where Answers Are Lost and What Selection Adds}
+\label{sec:lost}
+This subsection asks where wrong answers come from and which step of \lexb{} matters. The rules of Section~\ref{sec:results} apply, and scores are for 6,000 characters unless noted.
+
+We first check whether the reader is the problem, then trace each miss to the evidence the reader saw, and finally ask which step in \lexb{} makes the difference.
+
+\subsubsection{Reader Ability}
+Two reference runs bracket what the reader can do. In the \emph{closed book} run it gets no evidence and answers from memory. In the \emph{gold evidence} run it gets only the first annotated bundle, about 570 characters. Closed book it answers 26 of the 90 questions. With the gold bundle it answers 83, including every within-document question. The best single-pass pipelines reach 70 to 72, even at four times the budget. Most of the remaining gap therefore lies in what the pipelines put in front of the reader.
+
+The closed-book run also tests the benchmark itself. Company-report questions are never answered from memory, but many English book and statute questions are. Those 26 questions are partly contaminated by the reader's training data. We therefore repeated the main contrasts without them. The gain of \lexb{} over \hybrid{} is as large without these questions, so it does not depend on them.
+
+\subsubsection{Evidence in the Pack}
+\input{figures/lost}
+To see why answers fail, we checked for every question whether the annotated evidence appears in the pack the reader received (Figure~\ref{fig:lost}). A question is \emph{complete} if some full evidence bundle is in the pack, \emph{partial} if only some of the needed passages are, and \emph{none} if nothing is. At 6,000 characters the pattern is the same for every pipeline. Most misses are partial, because the pack held part of the evidence but not all of it. Few misses have no evidence at all, and a few have a complete bundle.
+
+Evidence is lost at two points (Table~\ref{tab:funnel}). The first is before the candidate list exists. The top 40 candidates hold a complete bundle for 72 questions with hybrid retrieval, 71 with dense retrieval, 66 with BM25 and 75 with the reranked list and with the fusion used by \lexb. For 15 to 18 of the 90 questions the evidence is therefore gone at retrieval. The second is packing. The 6,000-character packs hold a complete bundle for 57 questions (\hybrid), 63 (\hr) and 64 (\lexb), a further loss of 11 to 15. For plain hybrid retrieval the two losses are about equal, and for the reranked pipeline the retrieval loss is the larger (15 against 12). The reference run with gold evidence answers 83, so even a complete bundle does not guarantee a correct answer.
+\input{tables/funnel}
+
+Of the wrong answers that had a complete bundle, the reviewer accepted all 16 that were reviewed. These are disagreements between the judge and the reviewer and not failures of the pipeline (Section~\ref{sec:stability}). The cross-document tier is where bundles are most often partial, and 22 questions received a complete bundle from none of the single-pass pipelines at 6,000 characters. They are most often cross-document questions, and the iterative BM25 agent, which issues new queries, recovers them best (71 complete bundles). Figure~\ref{fig:examples} shows one case of the effect of selection. In a Persian report question about drivers' income, the reply of the selector added the definition of full-time work that Lex-RAG without selection lacked.
+
+\subsubsection{Role of the Selection Call}
+\input{tables/ablation}
+If missing evidence is the main cause, the selection call should be the step that matters. Table~\ref{tab:ablation} tests this by removing or replacing it. Lex-RAG without selection uses the same fused candidates and the same packer, but no LLM call. Against \lexb's saved answers it scores 9 to 11 answers lower. When the \lexb{} side is replaced by either of two later reader redraws, the difference is 4 to 6 and 4 to 5 answers (Table~\ref{tab:variance}). A second judge gives 6 to 10, and the 54 answerable dev questions give 8 (9 wins, 1 loss). We therefore read the effect as about 5 to 10 answers at 6,000 characters. The loss shows in both languages. With the call, a complete bundle reaches the reader on 64 questions, against 53 without it. Without the call, \lexb{} is no better than \hybrid, so its fusion and packing give no measurable gain alone.
+
+Packers without an LLM do not replace the call. An embedding-based diversity rule (MMR) and a score-per-character knapsack score well below \lexb. A listwise LLM reranker, which reorders \hybrid's top 20 in one call, comes within three answers of \lexb{} (66 to 67 against 68 to 69) and stays below \hr. A smaller selector model cuts \lexb{} to the level of Lex-RAG without selection, because its replies often broke the required format and the pipeline fell back to the pack without selection. Lifting the selector's 3-second deadline changes \lexb's score by at most a few answers.
+
+A cross-encoder does as well with less. \hr{} scores as high as \lexb{} (69 to 71 against 68 to 69) with no LLM tokens, while \lexb{} needs about twice \hybrid's tokens. Applying \lexb's selection call to \hr's reranked candidates is no better than \hr{} alone. Once a cross-encoder has ordered the candidates, the selection call adds no measurable gain. The selected set also need not be large. \setr's selected set alone, about three chunks and 3,000 characters, scores the same as its set plus fill at half the characters.
+
+At 6,000 characters the pipelines differ mainly in what they pack. Their candidate lists hold a complete bundle for a similar number of questions (71 to 75 of 90), and a reranking or selection step, whether an LLM call or a cross-encoder, is what moves accuracy. A second judge points the same way. It scores Lex-RAG without selection at 57 to 59 and \lexb{} at 65 to 67, a gap of 6 to 10 answers against 9 to 11 under the first judge. The gap is present in both languages. The second judge did not score the arms with the selector over the reranker's candidates or without a deadline.

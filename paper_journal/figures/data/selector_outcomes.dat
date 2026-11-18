@@ -1,0 +1,5 @@
+cls;big;deadline;rejected;allnone;ident;reord;changed;error;label;arm
+3;0;15;4;6;12;19;40;0;\lexb, 6,000;LEX5B_6000
+3;1;15;2;6;15;36;22;0;\lexb, 15,500;LEX5B_15500
+4;0;6;0;0;13;0;77;0;\setr, 6,000;SETR_6000
+4;1;0;1;0;14;0;81;0;\setr, 15,500;SETR_15500

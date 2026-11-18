@@ -1,0 +1,23 @@
+{
+ "schema": "answer-pack-v1",
+ "question_id": "V2-test-BOOK-en-T3-004",
+ "variant": "LEX5B",
+ "setting": "en-en",
+ "q_lang": "en",
+ "rid": "f2bfb6b4f036ede871f4",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6109 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "purpose": "answer",
+ "messages_sha256": "31706c77b8c32564e0edea7d72427f27d152ba2ca2a8d0c0fc30ff439be7beff",
+ "evidence_chars": 5867,
+ "at": "2026-10-04T20:26:39"
+}

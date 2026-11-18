@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-BOOK-en-T2-004",
+ "arm": "LC-GOLD-DOCS",
+ "split": "test",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 73987 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "47488289c34275206ed0d7b56f2ecc0f30fef16122b0cf1219b9e6fc3928f156",
+ "evidence_chars": 73828,
+ "prompt_chars": 74510,
+ "est_prompt_tokens": 16320,
+ "build_ms": 0.6,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-1015_parkman_oregon-trail.en",
+    "doc_chars": 722370,
+    "shown": 73794,
+    "ranges": 2,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}

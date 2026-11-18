@@ -1,0 +1,18 @@
+{
+ "arm": "KNAP_6000",
+ "question_id": "V2-test-RPT-en-T3-004",
+ "setting": "en-en",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 823 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5535 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "d9b238235cfc4250837c62a072b4b89882855d8bc15bb45535454856dc3096a2",
+ "evidence_chars": 5368
+}

@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-RPT-fa-T2-004",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "RPT-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T2",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79279 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "77d6e3f2605e4ea8ec171fca5668a604eddd19b0b3de610a5ee56d04cccd4a6e",
+ "evidence_chars": 79127,
+ "prompt_chars": 80110,
+ "est_prompt_tokens": 31687,
+ "build_ms": 1.2,
+ "info": {
+  "budget_chars": 79131,
+  "ranking": [
+   {
+    "doc": "C.mci_financial-statements_1401.fa",
+    "score": 6.492
+   },
+   {
+    "doc": "C.mci_management-interpretive-report_1401.fa",
+    "score": 5.555
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1400.fa",
+    "score": 5.465
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1402.fa",
+    "score": 5.366
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1403.fa",
+    "score": 5.084
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1399.fa",
+    "score": 5.069
+   },
+   {
+    "doc": "C.irancell_sustainability-report_1401.fa",
+    "score": 4.966
+   },
+   {
+    "doc": "C.dataak_annual-report_1404.fa",
+    "score": 4.242
+   }
+  ],
+  "docs": [
+   {
+    "doc": "C.mci_financial-statements_1401.fa",
+    "doc_chars": 140873,
+    "shown": 79044,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 2,
+  "gold_docs_shown": 1
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "arm": "BM25_6000",
+ "question_id": "V2-test-BOOK-fa-T3-004",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6222 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "358d109160f2c7d8b291edeec3baa609846654b0c9c50e758909fa6c7e8846e1",
+ "evidence_chars": 6000
+}

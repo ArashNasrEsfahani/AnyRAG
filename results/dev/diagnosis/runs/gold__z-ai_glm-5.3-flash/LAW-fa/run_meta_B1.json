@@ -1,0 +1,148 @@
+{
+ "approach": "B1",
+ "approach_base": "B1",
+ "flags": {},
+ "invocations": [
+  {
+   "run_id": "20260926-020244-05babb",
+   "started": "2026-09-26T02:02:44",
+   "argv": [
+    "--approach-class",
+    "diag_arms:GoldB1",
+    "--questions",
+    "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-fa.jsonl",
+    "--corpus",
+    "L",
+    "--settings",
+    "fa-fa",
+    "--pool",
+    "LAW-fa",
+    "--ids",
+    "V2-dev-LAW-fa-T2-001,V2-dev-LAW-fa-T2-002,V2-dev-LAW-fa-T2-003,V2-dev-LAW-fa-T3-001,V2-dev-LAW-fa-T3-002,V2-dev-LAW-fa-T3-003",
+    "--reader",
+    "openrouter:z-ai/glm-5.3-flash",
+    "--no-warmup",
+    "--no-health",
+    "--out",
+    "D:/KareOne/RAG Paper/work/datasets_v2/diagnosis/runs/gold__z-ai_glm-5.3-flash/LAW-fa"
+   ],
+   "questions_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\devrun\\questions\\dev_v2run_LAW-fa.jsonl",
+   "questions_sha1": "5e5e0e0caf6cbc6ffbfe05b06d821d37251786c3",
+   "corpus": "L",
+   "settings": [
+    "fa-fa"
+   ],
+   "n_planned": 6,
+   "n_todo": 6,
+   "models": {
+    "chat": "openrouter/z-ai/glm-5.3-flash",
+    "chat_digest": "openrouter",
+    "embed": "bge-m3:latest",
+    "embed_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+   },
+   "approach_code_sha1": "b679df886c5b80d065bd500eeb22e7c46f941fe9",
+   "docs": null,
+   "docs_restriction": null,
+   "split": "dev",
+   "final": false,
+   "ollama_version": null,
+   "config_hash": "ebaf1eaeccc2",
+   "config_hash_sections": [
+    "models",
+    "generation",
+    "evidence",
+    "chunking",
+    "caps",
+    "answer"
+   ],
+   "answer_prompts": {
+    "default": "answer-v2",
+    "timeline": "answer-timeline-v1"
+   },
+   "answer_formats": {
+    "v2_comparison": 3,
+    "v2_explanation": 3
+   },
+   "config_source": "D:\\KareOne\\RAG-Paper-upgrades\\ragbench\\config.yaml",
+   "evidence_budget": 6000,
+   "dependency_sha1": "5f032344d0ab0eea63ebe9ae3bad6adfca1892eb",
+   "variants_version": "variants-v2",
+   "answer_prompts_all": {
+    "v2_comparison": "answer-v2-comparison-v1",
+    "v2_explanation": "answer-v2-explanation-v1"
+   },
+   "pool": {
+    "pool_id": "LAW-fa",
+    "manifest_sha1": "dfa068f3072805eef102b5f90b2e495795bfc18e"
+   },
+   "identity": {
+    "experiment_id": "datasets-v2-dev",
+    "replicate": 0
+   },
+   "finished": "2026-09-26T02:02:59",
+   "status": "ok",
+   "n_ok": 6,
+   "n_errors": 0,
+   "ledger_totals": {
+    "index": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "query": {
+     "llm_calls": 6,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 3541,
+     "completion_tokens": 998,
+     "embed_tokens": 0,
+     "llm_wall_ms": 14690.3,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    },
+    "smoke": {
+     "llm_calls": 0,
+     "embed_calls": 0,
+     "judge_calls": 0,
+     "prompt_tokens": 0,
+     "completion_tokens": 0,
+     "embed_tokens": 0,
+     "llm_wall_ms": 0,
+     "load_ms": 0,
+     "lock_wait_ms": 0,
+     "failed_calls": 0
+    }
+   },
+   "ledger_file": "D:\\KareOne\\RAG Paper\\work\\datasets_v2\\diagnosis\\runs\\gold__z-ai_glm-5.3-flash\\LAW-fa\\ledger_B1.jsonl",
+   "trace_stats": {
+    "n": 0,
+    "sums": {},
+    "rates": {}
+   }
+  }
+ ],
+ "question_sigs": {
+  "V2-dev-LAW-fa-T2-001": "b0bc087a4f8b1b28",
+  "V2-dev-LAW-fa-T2-002": "6c84a4d1dc76eb66",
+  "V2-dev-LAW-fa-T2-003": "17b67f46dacd201b",
+  "V2-dev-LAW-fa-T3-001": "84fffa0f1914c1e8",
+  "V2-dev-LAW-fa-T3-002": "1bcaec750ba96220",
+  "V2-dev-LAW-fa-T3-003": "170e73009d47c9d9"
+ },
+ "question_sigs_v2": {
+  "V2-dev-LAW-fa-T2-001": "f89e337799fc7dba",
+  "V2-dev-LAW-fa-T2-002": "5873b3dfb3a86dac",
+  "V2-dev-LAW-fa-T2-003": "3b40fe37cbd40a89",
+  "V2-dev-LAW-fa-T3-001": "37837cc9b4f41cf4",
+  "V2-dev-LAW-fa-T3-002": "d7f770a4e3985e9d",
+  "V2-dev-LAW-fa-T3-003": "ce1dc9b08b7b9186"
+ }
+}

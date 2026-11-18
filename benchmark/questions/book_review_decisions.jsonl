@@ -1,0 +1,52 @@
+{"id": "V2-dev-BOOK-fa-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T2-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T2-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T2-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T3-001", "verdict": "accept", "tier_ok": true, "problems": ["subtype better as cross_doc derivation than bounded_aggregation (optional)"], "fix": null}
+{"id": "V2-dev-BOOK-fa-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-fa-T3-003", "verdict": "accept", "tier_ok": true, "problems": ["weak integration: two unrelated lookups about one subject", "reuses unit p1_b95 also used by dev-fa-T1-001"], "fix": null}
+{"id": "V2-dev-BOOK-fa-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T1-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T2-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T2-002", "verdict": "fix", "tier_ok": false, "problems": ["chapter VII p1_b113-b116 alone answers who taught, why it stopped (husband's direction) and how he finished; audit missed p1_b113"], "fix": "Question -> 'How did Frederick Douglass learn to read in Baltimore? Who first taught him, what reasons did Mr. Auld give for stopping the lessons, and how did Douglass finish learning?'; R2 value -> 'unlawful and unsafe to teach a slave to read; it would unfit him to be a slave'; necessity_audit notes p1_b113 restates the stop but not its reasons."}
+{"id": "V2-dev-BOOK-en-T2-003", "verdict": "fix", "tier_ok": true, "problems": ["'the other product' unbound (carbon/soot also a product)"], "fix": "Question -> 'Faraday shows the audience two products of a burning candle, water and carbonic acid. How does he make the water visible, and how does he show that the air from the candle contains carbonic acid?'"}
+{"id": "V2-dev-BOOK-en-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-dev-BOOK-en-T3-003", "verdict": "accept", "tier_ok": true, "problems": ["answer entity named in the question as one of two options (known, acceptable)"], "fix": null}
+{"id": "V2-dev-BOOK-en-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T1-002", "verdict": "fix", "tier_ok": true, "problems": ["same book states the first-Majlis deficit as six and a half crores elsewhere (p.69 passage)"], "fix": "R1 comparator approximately, aliases ['شش کرور و نیم','6.5 کرور']; expected answer notes both figures."}
+{"id": "V2-test-BOOK-fa-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T1-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T1-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T2-001", "verdict": "accept", "tier_ok": true, "problems": ["optional alternative bundle for R3 (p1_b~870 eight years)"], "fix": null}
+{"id": "V2-test-BOOK-fa-T2-002", "verdict": "accept", "tier_ok": true, "problems": ["shares the 550 BC evidence with T2-001"], "fix": null}
+{"id": "V2-test-BOOK-fa-T2-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T2-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T2-005", "verdict": "fix", "tier_ok": true, "problems": ["two stapled lookups in adjacent sections (~1.7k chars)", "subtype rule_exception wrong"], "fix": "Minimum: subtype T2_bounded_synthesis. Better: ask article 5 consequence of transfer (p1_b1330) + what Standard Oil later wanted re the Southern Oil Company (p1_b1466)."}
+{"id": "V2-test-BOOK-fa-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T3-003", "verdict": "accept", "tier_ok": true, "problems": ["subtype better cross_doc_bridge (optional)"], "fix": null}
+{"id": "V2-test-BOOK-fa-T3-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-fa-T3-005", "verdict": "fix", "tier_ok": true, "problems": ["three stapled lookups", "second Muhammara T3 on the same book pair as T3-001", "Khuzestan concentration (3 of 5 fa test T3)"], "fix": "Replace (tier valid but weak and concentrated): Mahmoud p1_b698 (1811: Sir William Ouseley sent to Fasa hoping to find Cyrus the Great's tomb) + Pirnia p1_b1471 (Cyrus buried at Pasargadae; tomb still standing). See book_review.md concentration section."}
+{"id": "V2-test-BOOK-fa-AB-001", "verdict": "accept", "tier_ok": true, "problems": ["audit should list the 1327 Abadan-growth near-miss"], "fix": "Add Khuzestan unit with 'آبادی آبادان ... از سال 1327' to absence_audit.neighbouring_facts."}
+{"id": "V2-test-BOOK-en-T1-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T1-002", "verdict": "accept", "tier_ok": true, "problems": ["same fact as R1 of test-en-T2-001"], "fix": null}
+{"id": "V2-test-BOOK-en-T1-003", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T1-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T1-005", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T2-001", "verdict": "fix", "tier_ok": false, "problems": ["chapter V p1_b153-b154 restates the rule; ch. V alone answers (T1)", "R1 duplicates test-en-T1-002"], "fix": "Add 'to whom does the principle not apply at all' (ch. I: children/minors, those needing care, backward states of society) as required R; drop or make optional the harm-principle R1."}
+{"id": "V2-test-BOOK-en-T2-002", "verdict": "reject", "tier_ok": false, "problems": ["end of ch.4 and start of ch.5 ~1k chars apart = one region; ch.4 opening p1_b98 also gives both"], "fix": "Keep as T1 reserve."}
+{"id": "V2-test-BOOK-en-T2-003", "verdict": "accept", "tier_ok": true, "problems": ["trap: undated 2,000,000 NY State elsewhere (excluded by '1830 figures')"], "fix": null}
+{"id": "V2-test-BOOK-en-T2-004", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T2-005", "verdict": "reject", "tier_ok": false, "problems": ["chapter 5 passage (~144k) answers change and reasons in one region", "expected answer misses the book's explicit reasons; ch.4 p1_b115 says both equal early"], "fix": "Keep as T1 reserve with the ch.5 passage and a rewritten answer."}
+{"id": "V2-test-BOOK-en-T3-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T3-002", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}
+{"id": "V2-test-BOOK-en-T3-003", "verdict": "accept", "tier_ok": true, "problems": ["optional alias: Tocqueville 'the body is left free, and the soul is enslaved'"], "fix": null}
+{"id": "V2-test-BOOK-en-T3-004", "verdict": "fix", "tier_ok": false, "problems": ["question itself states Malthus's 25-year rule, so Malthus is not needed (Tocqueville alone suffices)", "Tocqueville ~3k chars later states the US doubled about every 22 years"], "fix": "Question -> 'What doubling period does Malthus take as his rule for unchecked population, and do Tocqueville's figures for the United States population in 1790 and 1830 bear it out? What doubling period does Tocqueville himself give?' Add R: Tocqueville ~22 years (p1_b~1840); accept census footnote 3,929,328 / 12,856,165."}
+{"id": "V2-test-BOOK-en-T3-005", "verdict": "fix", "tier_ok": false, "problems": ["Mill's content is stated in the question and not asked; only Veblen is needed as worded"], "fix": "Question -> 'What does Mill say majority feeling in the United States does to people with large incomes who would like to live showily, and how does Veblen's theory explain the motive that this feeling restrains?' (R1 then asked)."}
+{"id": "V2-test-BOOK-en-AB-001", "verdict": "accept", "tier_ok": true, "problems": [], "fix": null}

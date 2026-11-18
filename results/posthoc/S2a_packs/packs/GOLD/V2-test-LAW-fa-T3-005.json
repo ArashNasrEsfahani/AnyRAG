@@ -1,0 +1,18 @@
+{
+ "arm": "GOLD",
+ "question_id": "V2-test-LAW-fa-T3-005",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 514 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 1008 chars]"
+  }
+ ],
+ "num_predict": 900,
+ "messages_sha256": "03188769b8f7d5b5a14265889d4e3c2e513e85c453f4ff3350dd5b6439f8948d",
+ "evidence_chars": 771
+}

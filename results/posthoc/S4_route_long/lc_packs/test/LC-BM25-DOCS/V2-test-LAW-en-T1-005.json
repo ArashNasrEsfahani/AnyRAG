@@ -1,0 +1,77 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-test-LAW-en-T1-005",
+ "arm": "LC-BM25-DOCS",
+ "split": "test",
+ "pool": "LAW-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143109 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "25c5c42df7353c5edcce1d006e7245c1e077633cab6c90787297f7ef0fb5efed",
+ "evidence_chars": 142865,
+ "prompt_chars": 143632,
+ "est_prompt_tokens": 31460,
+ "build_ms": 1.0,
+ "info": {
+  "budget_chars": 142900,
+  "ranking": [
+   {
+    "doc": "L.ukpga-2018-12_data-protection-act.en",
+    "score": 4.505
+   },
+   {
+    "doc": "L.ukpga-2015-30_modern-slavery-act.en",
+    "score": 3.954
+   },
+   {
+    "doc": "L.ukpga-2015-15_consumer-rights-act.en",
+    "score": 3.919
+   },
+   {
+    "doc": "L.eurlex-32024R1689_ai-act.en",
+    "score": 3.119
+   },
+   {
+    "doc": "L.eurlex-32022R2065_dsa.en",
+    "score": 2.744
+   },
+   {
+    "doc": "L.eurlex-32016R0679_gdpr.en",
+    "score": 2.731
+   },
+   {
+    "doc": "L.eurlex-32022R1925_dma.en",
+    "score": 1.692
+   },
+   {
+    "doc": "L.ukpga-2010-23_bribery-act.en",
+    "score": 1.424
+   }
+  ],
+  "docs": [
+   {
+    "doc": "L.ukpga-2018-12_data-protection-act.en",
+    "doc_chars": 852926,
+    "shown": 142832,
+    "whole": false,
+    "gold_doc": true
+   }
+  ],
+  "gold_units": 2,
+  "gold_units_retained": 0,
+  "gold_docs_shown": 1
+ }
+}

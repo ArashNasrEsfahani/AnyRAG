@@ -1,0 +1,18 @@
+{
+ "arm": "HR_6000_trans",
+ "question_id": "V2-test-LAW-fa-T2-004",
+ "setting": "en-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 708 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 6306 chars]"
+  }
+ ],
+ "num_predict": 640,
+ "messages_sha256": "cae5731664a546c43492f0f868cbbb1154362d233983ba533f5d2be6d515cf33",
+ "evidence_chars": 5939
+}

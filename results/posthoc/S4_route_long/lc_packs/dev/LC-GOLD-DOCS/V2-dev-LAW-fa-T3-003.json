@@ -1,0 +1,50 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-LAW-fa-T3-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "LAW-fa",
+ "lang": "fa",
+ "setting": "fa-fa",
+ "tier": "T3",
+ "answerable": true,
+ "fmt": "v2_comparison",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 831 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 79034 chars]"
+  }
+ ],
+ "num_predict": 768,
+ "messages_sha256": "f7106037945ba452ae1403b14f20576828f985682e218ccd3db5a9ef2c8f8f9e",
+ "evidence_chars": 78767,
+ "prompt_chars": 79865,
+ "est_prompt_tokens": 31590,
+ "build_ms": 2.1,
+ "info": {
+  "budget_chars": 79131,
+  "docs": [
+   {
+    "doc": "L.wikisource_civil-service-employment-1345.fa",
+    "doc_chars": 71158,
+    "shown": 39328,
+    "ranges": 1,
+    "whole": false
+   },
+   {
+    "doc": "L.wikisource_social-security-1354.fa",
+    "doc_chars": 57947,
+    "shown": 39377,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 5,
+  "gold_units_retained": 5,
+  "gold_docs_shown": 2
+ }
+}

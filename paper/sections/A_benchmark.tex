@@ -1,0 +1,62 @@
+\section{Benchmark and Implementation Details}
+\label{app:benchmark}
+% src: work/datasets_v2/DESIGN.md (tiers, schema, authoring pipeline); questions/*.jsonl (counts);
+%      TODO.md "User review (2026-09-25)" and review files (review outcomes); lex4_replay/REPLAY.md (decisive spans)
+% src: RAG-Paper-upgrades/ragbench (frozen code tree, commit 77924d4): retrieval/hybrid.py, config.yaml (chunking),
+%      approaches/baselines.py chunk_document and DEFAULTS["tokenizer"], ragbench/normalize.py, contracts.py pack_evidence,
+%      approaches/lex5/bundles.py MAX_ALTS = 2, approaches/setr/approach.py PASSAGE_CAP = 1500, work/datasets_v2/setr/SETR.md,
+%      test_freeze/PROTOCOL.md sec. 2, 7 and 9. Chunk counts from work/indexes/_hybrid/<pool>/chunks_meta.json
+%      (C 6,921; D_en 25,685; BOOK_fa 8,905; BOOK_en 9,661; LAW_fa 1,619; LAW_en 5,427 = 58,218; weighted mean 807 chars).
+
+This appendix describes the benchmark and how the four pipelines were built. Figure~\ref{fig:example} shows a Persian cross-document question with its evidence bundle, and Table~\ref{tab:composition} gives the composition of the test set and the source-family structure behind the cluster intervals.
+% src: paper/analysis/revision_stats.md "Families" (labels 47, constituents 33, components 20, blocks 29)
+
+\input{tables/example}
+\input{tables/composition}
+
+\subsection{Annotation and construction}
+Each question records atomic requirements (subject, aspect, constraints, typed expected value), evidence items with exact quotes and code-point offsets into the frozen text, one or more sufficient evidence bundles, the integration operation, a necessity audit (T2/T3) or an absence audit (unanswerable), and provenance. Every pipeline and reader receives the same metadata, which is annotation-derived information that a deployed system would not have.
+
+For development diagnostics we derived \emph{decisive spans} on dev only. A decisive span is the minimal sentence-level part of a gold quote that holds the value of the requirement it supports, matched after Persian/Arabic letter and digit folding. Dev has 158 spans over 54 answerable questions (median 113 characters). Decisive-span retention is the fraction of spans that appear whole inside one item shown to the reader, taking the best bundle. It measures lexical containment, not entailment, but behaves almost as a necessary condition: of 99 dev cells without full retention 5 were judged correct, against 79 of 115 with it (earlier local-reader run).
+
+The author designed the benchmark and its construction procedure. Claude Opus 5.5 agents drafted the candidate questions, which people and programs then checked. A curator agent chose information needs and wrote requirements, quotes and audits without seeing any method output, and a question-writer agent saw only that specification and wrote the question and expected answer, about half in ordinary terms and half paraphrased. The saved provenance gives the same agent identifier for both roles on all 156 questions, so the intended separation of roles cannot be shown.
+% src: work/datasets_v2/questions/*_{dev,test}.jsonl provenance.curator == provenance.writer on 156/156 (checked 2026-10-06)
+A mechanical verifier then checked the schema, that every quote equals the frozen text at its offsets, and that a bundle supports every requirement, and flagged copied spans, answer leakage and near-duplicates. An independent source-review agent checked answers, tiers (by the removal test) and necessity against the full pool; first-round outcomes (accept/fix/reject) over the 52 questions of each genre were 37/11/4 for reports, 42/8/2 for books and 43/6/3 for laws, and fixes were applied and replacements re-reviewed.
+% src: questions/{rpt,book,law}_review_decisions.jsonl, first verdict per id (52 each). rpt_review.md's summary row says 23 test
+%      accepts (38 overall), but its own per-tier rows and the decisions file give 22 (37 overall); corrected 2026-10-07.
+A native Persian speaker reviewed the Persian wording (141 findings over the three Persian sets, applied with a change log).
+% src: author confirmation 2026-10-06 (work/TODO.md: "Persian review = native speaker"); test_freeze/PROTOCOL.md sec. 7
+Finally we spot-checked 32 of the 156 questions in an interface showing the question, expected answer, requirements and the marked evidence; 31 were accepted and 1 was fixed.
+
+Every tier is half Persian and half English with an equal share per genre, but documents and tasks are not balanced (Table~\ref{tab:pools}), so language differences are descriptive. Dev documents act as distractors for test questions. Some report sources had been used in earlier, unrelated question sets of this project, so for reports the test evaluates fresh questions but not unseen documents.
+
+\subsection{Implementation}
+\label{app:implementation}
+% Blind-review fix (2026-10-07): clipping from paper/analysis/revision_stats.md "Clipping (GLM cells)": clipped 65/69/0/62 of 96;
+%   chars_mean HYBRID 5,956, HR 5,958, LEX5B 5,772, SETR 5,949. Selector rejections from test_run/runs/*/LEX5B_{6000,15500}/runs_*.jsonl
+%   trace.lex5b.selector (6,000: 2 overflow, 1 id_out_of_range, 1 duplicate_alternative; 15,500: 2 overflow).
+Table~\ref{tab:settings-full} collects the parameter values, model versions and provider pins. The pipelines are our designs, and Claude Opus 5.5 agents wrote and ran their code under his direction.
+
+\input{tables/settings_full}
+
+\emph{Chunking and matching.} All pipelines share one chunking of each pool. Sections are packed whole into chunks of at most 1,000 characters; longer sections are cut into windows that end at a paragraph, line, sentence or word break, with about 200 characters of overlap. Chunks never cross documents, and the six pools give 58,218 chunks (mean about 810 characters). Every BM25 channel uses one tokenizer, and the dense and learned-sparse encoders get the same normalised query. Normalisation applies Unicode NFKC, maps Arabic letter variants to their Persian forms, removes tatweel, diacritics and bidirectional controls, converts Persian and Arabic-Indic digits to ASCII, and unifies zero-width joiners into the zero-width non-joiner (ZWNJ). A word joined by a ZWNJ is indexed whole and as its parts, numbers are indexed as written and without separators, stop words are dropped, English tokens lose a plural \emph{s}, and Persian is not stemmed. The indexed text of a chunk is its title and section path followed by the chunk; the reader sees only the chunk.
+
+\emph{Packing.} Evidence is rendered with a header per item and packed up to $B$ characters. \hybrid, \hr{} and \setr{} add chunks in order; the first chunk that does not fit is clipped to the remaining space if at least 200 characters survive, and otherwise dropped, and packing stops. \lexb{} never clips and skips packages that do not fit. In the saved 6,000-character runs the last item was clipped in 65, 69 and 62 of 96 \hybrid, \hr{} and \setr{} packs and in none of the \lexb{} packs, so \lexb{} packs were slightly shorter (mean 5,772 against 5,949--5,958 characters).
+
+\emph{\hybrid{} and \hr.} \hybrid{} fuses a BM25 list and a bge-m3 dense list over the whole pool by reciprocal rank fusion and packs chunks in fused order. Its query embedding comes from bge-m3 served by Ollama, whereas \lexb's \ftwo{} uses the Hugging Face implementation of the same model. \hr{} rescores the fused chunks with the cross-encoder, re-orders them and uses the same packer.
+% src: test_freeze/PROTOCOL.md sec. 7 (HYBRID Ollama dense vs. F2 HF implementation)
+
+\emph{\lexb.} The four stages of Section~\ref{sec:systems} run as five steps.
+\begin{enumerate}
+  \item \emph{Candidates (\ftwo).} One bge-m3 pass gives dense and learned-sparse vectors; BM25, dense and sparse each return a list. Each channel's score is min-max normalised over the union ($z_j$) and chunks are ranked by $\mathrm{MaxMean}(x)=\tfrac12\max_j z_j(x)+\tfrac12\,\mathrm{mean}_j z_j(x)$, which uses the channels' actual scores rather than ranks as RRF does.
+  \item \emph{Evidence units.} Chunks become packages: a sentence cut at a chunk edge is extended within a fixed allowance, and table captions and headers are attached. The fusion order of packages, packed to $B$, is the fallback pack.
+  \item \emph{Selector view and call} (prompt in Appendix~\ref{app:prompts}). The top packages are shown with a document legend, a header and an excerpt around the question's words. The model splits the question into parts and names, for each, the passages that together support it, joined by \texttt{+}, or \texttt{NONE}. After the first bundle it may give one alternative after \texttt{|}, so a part has at most two bundles; a part with three is rejected.
+  \item \emph{Strict parsing.} Any grammar violation, deadline or error falls back to the pack without selection (the fallback pack); replies are never repaired. Of the four rejected replies at 6,000 characters, two listed three bundles for a part, as did both rejected replies at 15,500.
+  \item \emph{Bundle packing.} The packer enumerates every combination of one listed bundle or none per part (at most eight parts), keeps those whose rendered cost is at most $B$, and picks the one covering most parts (a part is covered if any listed bundle is fully represented), then the smallest sum of alternative indices, then the fewest characters. A part counts as covered by the selector's prediction, which does not mean the evidence suffices. Remaining listed bundles are then added all-or-nothing, and finally fused packages that fit whole.
+\end{enumerate}
+The no-selector pack was run afterwards as Lex-RAG without selection (Appendix~\ref{app:posthoc}).
+
+\emph{\setr.} \setr{} follows SetR~\citep{lee2025setr}. One chain-of-thought call identifies the information requirements and selects a passage set, using their system message and selection prompt verbatim (Appendix~\ref{app:prompts}) over \hybrid's top 20 chunks, with the GLM model as selector. A 1,500-character cap per passage never binds. Our version differs from the published system in four ways: the selector is an untuned general model rather than a fine-tuned one, the candidate list and deadline are ours, and the selected chunks are packed first and then filled with the rest of \hybrid's list up to $B$, so that every pipeline reads about the same amount of evidence. A deadline or unparsable reply falls back to \hybrid{} order.
+
+All readers receive byte-identical prompts (checked by hash). The answer prompt depends only on the annotated answer format, asks for the answer in the question's language and uses \texttt{NOT\_FOUND} for abstention. The selector calls of \lexb{} and \setr{} always use GLM-5.3-flash. For unanswerable questions, a correct answer is a proper abstention.
+% src: test_freeze/PROTOCOL.md sec. 2 (GLM pinned to together; no seed) and sec. 9 reader table (pins, fp8)

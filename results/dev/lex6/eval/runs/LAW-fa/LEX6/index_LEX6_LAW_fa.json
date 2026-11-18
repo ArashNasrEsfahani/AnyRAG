@@ -1,0 +1,49 @@
+{
+ "approach": "LEX6",
+ "corpus_set": "LAW_fa",
+ "fingerprint": "c71aab57b0e664a80c6384f21c8ac023154cfb41",
+ "complete": true,
+ "attempts": [
+  {
+   "started": "2026-09-26T15:24:26",
+   "ok": true,
+   "build_ms": 327.2,
+   "llm_calls": 0,
+   "embed_calls": 0,
+   "judge_calls": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "embed_tokens": 0,
+   "llm_wall_ms": 0,
+   "load_ms": 0,
+   "lock_wait_ms": 0,
+   "failed_calls": 0
+  }
+ ],
+ "totals": {
+  "build_ms": 327.2,
+  "llm_calls": 0,
+  "embed_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "embed_tokens": 0,
+  "llm_wall_ms": 0,
+  "failed_calls": 0
+ },
+ "completed_at": "2026-09-26T15:24:26",
+ "size_bytes": 257,
+ "index_dir": "D:\\KareOne\\RAG Paper\\work\\indexes\\LEX6\\LAW_fa-c71aab57",
+ "corpus_stats": {
+  "name": "LAW_fa",
+  "docs": 13,
+  "sections": 3198,
+  "units": 6572,
+  "chars": 1183142,
+  "skipped": 0
+ },
+ "copied_at": "2026-09-26T15:25:27",
+ "cached_cost": null,
+ "docs": "all",
+ "docs_restriction": null,
+ "index_cost": null
+}

@@ -1,0 +1,16 @@
+{
+ "qid": "V2-test-RPT-fa-T1-003",
+ "setting": "fa-fa",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 531 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 5975 chars]"
+  }
+ ],
+ "messages_sha256": "e8d6c6bdb04464617b20f931b7031d06a37de8d4ba2cf3e0ea1ac05378918574",
+ "num_predict": 256
+}

@@ -1,0 +1,38 @@
+% src (T3 column, REVIEW2 N3, 2026-11-11): cross-document correct of 30: HR_6000 18..19, HR_15500 20, LEX5B_6000 16, ITER_BM25 23, GREP_AGENT 21 = S8_factorial/tables.md accuracy judge 1; hybrid-index agent 25 = S9_gpu/RESULTS.md sec. 2 table; -- = not tabulated.
+% src: S3_agentic/results.json arms and paired (ITER_BM25, GREP_AGENT: accuracy, fa/en, tokens_per_q, calls_per_q; vs HR_6000 in results_tables.md);
+%      S4_route_long/lc_tables.md and lc_results.json (LC-GOLD-DOCS, LC-BM25-DOCS: accuracy, tokens_per_q_mean, comparisons vs HR_6000),
+%      S4_route_long/routing_tables.md (oracle and GLM-router rows, format rule: accuracy, tokens/q, calls/q; "vs always HR_6000");
+%      frozen rows from S3 results.json (HR_6000, LEX5B_6000, HR_15500). Net = arm minus HR at 6,000 characters, bounds over unresolved judge cells.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+ & Correct & Persian & English & Cross-doc. & LLM tokens & LLM & Net vs.\ \hr{} \\
+Arm & of 90 & of 45 & of 45 & (T3, of 30) & per question & calls & 6,000 (w/l) \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{Best single-pass pipelines}} \\
+\hr{}, 6,000 characters & 69--71 & 36 & 33--35 & 18--19 & 2,237 & 1.0 & -- \\
+\hr{}, 15,500 characters & 69--70 & 38 & 31--32 & 20 & 5,287 & 1.0 & -- \\
+\lexb{}, 6,000 characters & 68--69 & 36--37 & 32 & 16 & 4,511--5,131 & 2.0 & $-$3..0 (6/7) \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{Search agents (up to five rounds, 15,500-character answer pack)}} \\
+BM25 search agent & 73 & 34 & 39 & 23 & 9,285 & 3.6 & +2..+4 (11/8) \\
+Hybrid-index search agent (reranker) & 77 & 39 & 38 & 25 & 9,070 & 3.6 & +6..+8 (15/8) \\
+Grep agent & 68 & 29 & 39 & 21 & 12,338 & 5.1 & $-$3..$-$1 (12/13) \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{Long context (32,000-token prompt)}} \\
+Gold documents (uses the annotation) & 79 & 37 & 42 & -- & 29,569 & 1.0 & +8..+10 (17/8) \\
+BM25-ranked documents & 24 & 11 & 13 & -- & 30,967 & 1.0 & $-$47..$-$45 (2/48) \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{Routing between a cheap and a wide pipeline}} \\
+By gold tier (uses the annotation), to \hr{} at 15,500 & 69--70 & 38 & 31--32 & -- & 4,167 & 1.0 & $-$2..+1 (6/5) \\
+By a language-model router, to \hr{} at 15,500 & 68--69 & 38 & 30--31 & -- & 5,065 & 2.0 & $-$3..0 (6/6) \\
+By answer format, to \hr{} at 15,500 & 67--68 & 37 & 30--31 & -- & 4,153 & 1.0 & $-$4..$-$1 (5/6) \\
+\bottomrule
+\end{tabular}}
+\caption{Post hoc. Search agents, long-context reading and routing against the best single-pass pipelines (GLM-5.3-flash reader, machine judge, 90 answerable questions). Each arm ran once; tokens count every call; ranges cover unresolved judge cells; comparisons are uncorrected.}
+\label{tab:search}
+\end{table*}

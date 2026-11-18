@@ -1,0 +1,43 @@
+{
+ "schema": "s4-lc-pack-v1",
+ "question_id": "V2-dev-BOOK-en-T1-003",
+ "arm": "LC-GOLD-DOCS",
+ "split": "dev",
+ "pool": "BOOK-en",
+ "lang": "en",
+ "setting": "en-en",
+ "tier": "T1",
+ "answerable": true,
+ "fmt": "v2_single",
+ "messages": [
+  {
+   "role": "system",
+   "content": "[stripped: 523 chars]"
+  },
+  {
+   "role": "user",
+   "content": "[stripped: 143096 chars]"
+  }
+ ],
+ "num_predict": 256,
+ "messages_sha256": "90fb3bc62f9f6d1c67436294d2ac097f5233fbdeb4698caa3365f9b0e7c85aa3",
+ "evidence_chars": 142973,
+ "prompt_chars": 143619,
+ "est_prompt_tokens": 31457,
+ "build_ms": 0.9,
+ "info": {
+  "budget_chars": 142900,
+  "docs": [
+   {
+    "doc": "K.gutenberg-23_douglass_narrative.en",
+    "doc_chars": 223767,
+    "shown": 142900,
+    "ranges": 1,
+    "whole": false
+   }
+  ],
+  "gold_units": 3,
+  "gold_units_retained": 3,
+  "gold_docs_shown": 1
+ }
+}
