@@ -1,5 +1,5 @@
 % src (T3 column, REVIEW2 N3, 2026-11-11): cross-document correct of 30: HR_6000 18..19, HR_15500 20, LEX5B_6000 16, ITER_BM25 23, GREP_AGENT 21 = S8_factorial/tables.md accuracy judge 1; hybrid-index agent 25 = S9_gpu/RESULTS.md sec. 2 table; -- = not tabulated.
-% src (judge 2 column, 2026-11-18): S8_factorial/tables.md "Accuracy, judge 2" (HR_6000 63, HR_15500 66..68, LEX5B_6000 65..67, ITER_BM25 66..68, GREP_AGENT 67..68); dash = not scored by judge 2. All other columns are first-judge values.
+% src (judge 2 column, 2026-11-18): S8_factorial/tables.md "Accuracy, judge 2" (HR_6000 63, HR_15500 66..68, LEX5B_6000 65..67, ITER_BM25 66..68, GREP_AGENT 67..68); HYBRID_AGENT 74..75 = S16_judge2/tables.md (2026-11-18); dash = not scored by judge 2. All other columns are first-judge values.
 % src: S3_agentic/results.json arms and paired (ITER_BM25, GREP_AGENT: accuracy, fa/en, tokens_per_q, calls_per_q; vs HR_6000 in results_tables.md);
 %      S4_route_long/lc_tables.md and lc_results.json (LC-GOLD-DOCS, LC-BM25-DOCS: accuracy, tokens_per_q_mean, comparisons vs HR_6000),
 %      S4_route_long/routing_tables.md (oracle and GLM-router rows, format rule: accuracy, tokens/q, calls/q; "vs always HR_6000");
@@ -22,7 +22,7 @@ Variant & of 90 & of 90 & of 45 & of 45 & (T3, of 30) & per question & calls & 6
 \midrule
 \multicolumn{9}{@{}l}{\emph{Search agents (up to five rounds, 15,500-character answer pack)}} \\
 BM25 agent & 73 & 66--68 & 34 & 39 & 23 & 9,285 & 3.6 & +2..+4 (11/8) \\
-Hybrid-index agent (with reranker) & 77 & -- & 39 & 38 & 25 & 9,070 & 3.6 & +6..+8 (15/8) \\
+Hybrid-index agent (with reranker) & 77 & 74--75 & 39 & 38 & 25 & 9,070 & 3.6 & +6..+8 (15/8) \\
 Regular-expression agent & 68 & 67--68 & 29 & 39 & 21 & 12,338 & 5.1 & $-$3..$-$1 (12/13) \\
 \midrule
 \multicolumn{9}{@{}l}{\emph{Long context (32,000-token prompt)}} \\

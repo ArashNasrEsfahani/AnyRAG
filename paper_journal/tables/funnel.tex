@@ -1,9 +1,9 @@
 % src: S10_retrieval/RESULTS.md sec. 2.4 'Gold-bundle coverage' (top-40 list and delivered 6,000-character pack: BM25 66 and 45, dense 71 and 47, hybrid 72 and 57, HR 75 and 63, of 90);
 %      S7_analysis/RESULTS.md sec. 1 (packs: Lex-RAG 64, Lex-RAG without selection 53, GOLD 90 complete) and sec. 5 (Lex-RAG F2 top 40 = 40 + 35 = 75, also the candidates of Lex-RAG without selection);
 %      correct of 90 (machine judge 1): S10 (BM25 48, dense 53), S2a_packs/S8_factorial tables.md (hybrid 62..63, HR 69..71, Lex-RAG without selection 58..59, Lex-RAG 68..69, gold 83).
-% src (judge 2 column, 2026-11-18): S8_factorial/tables.md "Accuracy, judge 2" (HYBRID_6000 59..61, HR_6000 63, FUSION_6000 57..59, LEX5B_6000 65..67, GOLD 82..84); BM25 and dense were not scored by judge 2.
+% src (judge 2 column, 2026-11-18): S8_factorial/tables.md "Accuracy, judge 2" (HYBRID_6000 59..61, HR_6000 63, FUSION_6000 57..59, LEX5B_6000 65..67, GOLD 82..84); BM25_6000 42..45, DENSE_6000 45..49 = S16_judge2/tables.md 'Accuracy, judge 1 vs judge 2' (added 2026-11-18).
 \begin{table}[tp]
-\caption{Post hoc. Complete evidence bundles in the candidate list and in the pack, with accuracy under two judges. A dash marks pipelines scored by the first judge only}
+\caption{Post hoc. Complete evidence bundles in the candidate list and in the pack, with accuracy under two judges}
 \label{tab:funnel}
 \centering
 \footnotesize
@@ -14,8 +14,8 @@
 \cmidrule(lr){2-3}\cmidrule(lr){4-5}
 Pipeline & Top 40 & Pack & Judge 1 & Judge 2 \\
 \midrule
-BM25 & 66 & 45 & 48 & -- \\
-Dense & 71 & 47 & 53 & -- \\
+BM25 & 66 & 45 & 48 & 42--45 \\
+Dense & 71 & 47 & 53 & 45--49 \\
 \hybrid{} & 72 & 57 & 62--63 & 59--61 \\
 \hr{} & 75 & 63 & 69--71 & 63 \\
 \lexb{} without selection & 75 & 53 & 58--59 & 57--59 \\

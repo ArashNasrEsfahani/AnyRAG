@@ -1,4 +1,4 @@
-# S16: judge 2 on the post-hoc variants: NOT RUN (global money floor; see section 6)
+# S16: judge 2 on the 12 post hoc variants: COMPLETE (2026-11-18; sections 1-6 are the earlier record, section 7 the result)
 
 ## 1. What was run
 
@@ -71,3 +71,46 @@ $0.0025 in total: 3 estimate calls, see section 6 (`ledger_j2.jsonl`).
   approved by the author. I reverted the floor to $2.00 and made no further calls.
 - **To resume:** the author approves the $0.75 floor (or tops up the key above $2.90), then runs `python s16.py`.
 - **Facts for the paper are unchanged.** 3 of 1,152 cells is not a result; no claim changes.
+
+## 7. Final run, 2026-11-18 (all 12 variants)
+
+- **Run.** After the key was topped up and the cap raised to $1.40 with the author's approval (`judge2_posthoc.py`),
+  `s16.py` ran to completion: first 7 variants in sequence, then HYBRID_C2000, HR_C2000, E5_DENSE, E5_HYBRID and
+  HR_6000_TRANS as 5 parallel processes (`logs/par_<V>.log`, each ending "done"). No judge_multi failures, no stall or
+  budget stop. Stream cost **$1.2248** (`ledger_j2.jsonl`; 1,227 ledger rows, of which 177 were transport retries).
+- **Unresolved.** 30 of 1,152 cells are needs_adjudication (the reply used a claim status the frozen parser rejects);
+  they were **not adjudicated** and count as 0..1 in every bound. Per variant: HYBRID_AGENT 1, DENSE_6000 4, BM25_6000 3,
+  HYDE_6000 1, MQ_6000 1, HYBRID_C500 1, HR_C500 1, HYBRID_C2000 5, HR_C2000 3, E5_DENSE 3, E5_HYBRID 3, HR_6000_TRANS 4.
+  BM25_6000 has 1 cell reused from frozen HYBRID_6000, scored by S1's judge-2 verdict.
+- **Analysis.** `python analyze.py` -> `results.json`, `tables.md` (no model calls).
+
+| variant | judge 1 /90 | judge 2 /90 | agreement (96 cells) | kappa |
+|---|---|---|---|---|
+| HYBRID_AGENT | 77 | 74..75 | 88.4% | 0.526 |
+| DENSE_6000 | 53 | 45..49 | 88.0% | 0.754 |
+| BM25_6000 | 48 | 42..45 | 93.5% | 0.870 |
+| HYDE_6000 | 61 | 58..59 | 90.5% | 0.779 |
+| MQ_6000 | 58..59 | 55..56 | 87.2% | 0.716 |
+| HYBRID_C500 | 58..59 | 56..57 | 93.6% | 0.856 |
+| HR_C500 | 62 | 61..62 | 92.6% | 0.821 |
+| HYBRID_C2000 | 49 | 48..53 | 96.7% | 0.931 |
+| HR_C2000 | 51 | 52..55 | 92.5% | 0.841 |
+| E5_DENSE | 54..55 | 54..57 | 93.5% | 0.856 |
+| E5_HYBRID | 58 | 54..57 | 89.2% | 0.759 |
+| HR_6000_TRANS | 53..54 | 51..55 | 95.6% | 0.905 |
+| pooled | | | 91.8% (n 1,118) | 0.817 |
+
+References (S1, frozen): HYBRID_6000 62..63 / 59..61, HR_6000 69..71 / 63. Abstention 6/6 for every variant under both judges.
+
+**Facts for the paper (what changes).**
+- No paired contrast reverses direction under judge 2.
+- 2,000-character chunks: the loss shrinks from 13..14 (Hybrid) and 18..20 (HR) under judge 1 to 6..13 and 8..11 under
+  judge 2 (sign p .0072-.29 and .027-.13), so it is no longer clearly above the detectable difference of about 11.
+- e5 dense vs bge-m3 dense: +1..+2 (judge 1, a tie) becomes +5..+12 (11/3, p .0075-.33), because judge 2 scores
+  DENSE_6000 lower (45..49).
+- Hybrid-index agent vs HR_6000: +6..+8 (15/8, p .15-.31) under judge 1 becomes +11..+12 (16/4, p .012-.027,
+  uncorrected) under judge 2; vs HYBRID_6000 +13..+16 (p .0037-.015), as under judge 1.
+- BM25 alone vs Hybrid: -19..-14 (judge 2) against -15..-14 (judge 1); dense alone -16..-10 against -10..-9.
+- Cross-language HR_6000_TRANS vs HR_6000: -12..-8 (judge 2) against -18..-15 (judge 1).
+- Rewriting (HyDE -3..0, multi-query -6..-3 vs Hybrid), 500-character chunks and e5 hybrid (-7..-2) stay below their
+  references.

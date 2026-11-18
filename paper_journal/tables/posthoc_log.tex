@@ -59,7 +59,7 @@ Variant or analysis & USD & Outcome & Reported in \\
 \multicolumn{4}{@{}l}{\emph{Hybrid-index agent and vector check (block cost 0.13)}} \\
 Hybrid-index search agent (reranker as search tool) & 0.13 & 77 of 90 at 9,070 tokens per question; 6 to 8 above \hr{}, not significant & Sec.~\ref{sec:search} \\
 Ollama against Hugging Face bge-m3 vectors & 0 & The same model up to numerical noise; with the other vectors 16 of 96 \hybrid{} packs at 6,000 characters would change & \ref{app:posthoc} \\
-Second judge on the post hoc variants (Mistral Large) & -- & Seven variants scored (Tables~\ref{tab:ablation} and~\ref{tab:search} of the main paper): the BM25 agent 66--68 against 73 under the first judge, the listwise reranker 64 against 63 for \hr{}; the hybrid-index agent, the component variations, the budget sweep, the selector-over-reranker and no-deadline variants and the cross-language runs were not scored & Sec.~\ref{sec:stability} \\
+Second judge on the post hoc variants (Mistral Large) & 1.22 & 19 variants scored: seven first (the BM25 agent 66--68 against 73 under the first judge, the listwise reranker 64 against 63 for \hr{}), then the hybrid-index agent (74--75), the ten component variants at 6,000 characters and the cross-language run (92\% agreement, $\kappa=0.82$); the budget sweep, routing, long context and the selector-over-reranker and no-deadline variants were not scored & Sec.~\ref{sec:stability} \ % src: S16_judge2/tables.md, ledger_j2.jsonl (1.2248 USD)
 \midrule
 \multicolumn{4}{@{}l}{\emph{Retrieval components (block cost 0.66)}} \\
 Dense only and BM25 only, 6,000 and 15,500 characters & 0.28 & 53 and 48 at 6,000, 63 and 61 at 15,500, against \hybrid{} 62--63 and 68; no GPU used & Sec.~\ref{sec:components} \\

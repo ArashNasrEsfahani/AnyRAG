@@ -32,7 +32,7 @@ from ragbench.util import KVCache, sha1_json  # noqa: E402
 JUDGE2 = "mistralai/mistral-large-2512"
 PIN2 = "mistral/zdr"
 GEN = {"temperature": 0, "top_p": 1.0, "seed": 42}
-CAP_USD = 0.90
+CAP_USD = 1.40  # raised from 0.90 with the author's approval, 2026-11-18
 TRANSPORT_ATTEMPTS = int(os.environ.get("S8_J2_TRANSPORT", "12"))   # S1 used 6; raised only for upstream 429s
 FLOOR_USD = 2.00
 LEDGER = HERE / "ledger_j2.jsonl"

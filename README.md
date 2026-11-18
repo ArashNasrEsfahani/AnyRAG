@@ -160,10 +160,11 @@ test, and its post hoc appendix, are built from these files.
   with standard statsmodels estimators (Bayesian mixed logistic GLM by variational Bayes and posterior mode under two
   priors, GEE and cluster-robust GLM, and pipeline x reader interaction tests), read straight from the S5 cells.
   No model calls.
-- **S16** (`results/posthoc/S16_judge2/`): the second judge (Mistral Large) was set up for the twelve post hoc
-  variants scored only by the first judge, and judge 1 was reproduced from the saved cells. The full run was **not
-  made** (the API key was below the stream's money floor); only a 3-question estimate ran. No paper claim rests on
-  it, and judge-2 coverage stays as in S1 and S8.
+- **S16** (`results/posthoc/S16_judge2/`): the second judge (Mistral Large) on the twelve post hoc variants that
+  only the first judge had scored (hybrid-index agent, the ten component variants at 6,000 characters, the
+  cross-language run); $1.22. Agreement with judge 1 is 91.8% (kappa 0.82); 30 of 1,152 cells stay unresolved and
+  count as ranges. No contrast reverses; the loss of 2,000-character chunks shrinks to 6 to 13 answers and the
+  hybrid-index agent's lead over HR grows to 11 to 12 (`RESULTS.md` sec. 7, `tables.md`).
 - **S17** (`results/posthoc/S17_goldmiss/`): a reading of the saved packs, answers and both judges' verdicts for the
   7 of 90 questions the reader gets wrong with the gold evidence (4 insufficient evidence bundles, 2 judge
   strictness, 1 reader error). No new runs.

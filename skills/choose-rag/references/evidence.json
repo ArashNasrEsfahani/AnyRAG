@@ -1979,6 +1979,16 @@
      "en": "79–80 vs 72–75",
      "fa": "۷۹–۸۰ در برابر ۷۲–۷۵"
     }
+   },
+   {
+    "label": {
+     "en": "Second judge, 1,000 / 2,000: Hybrid; HR",
+     "fa": "داور دوم، ۱٬۰۰۰ / ۲٬۰۰۰: ترکیبی؛ HR"
+    },
+    "value": {
+     "en": "59–61 / 48–53; 63 / 52–55 of 90",
+     "fa": "۵۹–۶۱ / ۴۸–۵۳؛ ۶۳ / ۵۲–۵۵ از ۹۰"
+    }
    }
   ],
   "source": {
@@ -1986,7 +1996,7 @@
     "en": "Table “Retrieval components varied one at a time”; Sect. “Retrieval components and where answers are lost”; Data release: anyrag-results/posthoc/S12_chunks",
     "fa": "جدول «تغییر اجزای بازیابی، هر بار یک جزء»؛ بخش «اجزای بازیابی و مرحله‌ای که پاسخ‌ها در آن از دست می‌روند»؛ داده‌های منتشرشده: anyrag-results/posthoc/S12_chunks"
    },
-   "file": "work/posthoc_2026-11/S12_chunks/RESULTS.md (sec. 2)",
+   "file": "work/posthoc_2026-11/S12_chunks/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "measured",
@@ -2044,6 +2054,16 @@
      "en": "2,551 / 2,438 / 2,216 (one extra LLM call)",
      "fa": "۲٬۵۵۱ / ۲٬۴۳۸ / ۲٬۲۱۶ (یک فراخوانی LLM اضافی)"
     }
+   },
+   {
+    "label": {
+     "en": "Second judge: HyDE / multi-query / no rewrite",
+     "fa": "داور دوم: HyDE / multi-query / بدون بازنویسی"
+    },
+    "value": {
+     "en": "58–59 / 55–56 / 59–61 of 90",
+     "fa": "۵۸–۵۹ / ۵۵–۵۶ / ۵۹–۶۱ از ۹۰"
+    }
    }
   ],
   "source": {
@@ -2051,7 +2071,7 @@
     "en": "Table “Retrieval components varied one at a time”; Sect. “Retrieval components and where answers are lost”; Data release: anyrag-results/posthoc/S11_rewrite",
     "fa": "جدول «تغییر اجزای بازیابی، هر بار یک جزء»؛ بخش «اجزای بازیابی و مرحله‌ای که پاسخ‌ها در آن از دست می‌روند»؛ داده‌های منتشرشده: anyrag-results/posthoc/S11_rewrite"
    },
-   "file": "work/posthoc_2026-11/S11_rewrite/RESULTS.md (sec. 2)",
+   "file": "work/posthoc_2026-11/S11_rewrite/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "measured",
@@ -2109,6 +2129,16 @@
      "en": "72 of 90",
      "fa": "۷۲ از ۹۰"
     }
+   },
+   {
+    "label": {
+     "en": "Second judge: dense only, e5 / bge-m3; Hybrid, e5 / bge-m3",
+     "fa": "داور دوم: فقط معنایی، e5 / bge-m3؛ ترکیبی، e5 / bge-m3"
+    },
+    "value": {
+     "en": "54–57 / 45–49; 54–57 / 59–61 of 90",
+     "fa": "۵۴–۵۷ / ۴۵–۴۹؛ ۵۴–۵۷ / ۵۹–۶۱ از ۹۰"
+    }
    }
   ],
   "source": {
@@ -2116,13 +2146,13 @@
     "en": "Table “Retrieval components varied one at a time”; Sect. “Retrieval components and where answers are lost”; Data release: anyrag-results/posthoc/S13_embed",
     "fa": "جدول «تغییر اجزای بازیابی، هر بار یک جزء»؛ بخش «اجزای بازیابی و مرحله‌ای که پاسخ‌ها در آن از دست می‌روند»؛ داده‌های منتشرشده: anyrag-results/posthoc/S13_embed"
    },
-   "file": "work/posthoc_2026-11/S13_embed/RESULTS.md (sec. 2)",
+   "file": "work/posthoc_2026-11/S13_embed/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "measured",
   "caveat": {
-   "en": "Two embedding models tried.",
-   "fa": "دو مدل embedding آزموده شد."
+   "en": "Two embedding models tried. Under the second judge e5 leads bge-m3 as the only channel by 5 to 12 answers, significant only for some verdicts of the unresolved answers.",
+   "fa": "دو مدل embedding آزموده شد. با داور دوم، e5 در حالت فقط معنایی ۵ تا ۱۲ پاسخ از bge-m3 جلوتر است؛ این برتری فقط با برخی حکم‌های ممکن برای پاسخ‌های داوری‌نشده معنادار است."
   },
   "tags": [
    "embedding"
@@ -2214,6 +2244,16 @@
      "en": "2,735 characters of 15,500 allowed",
      "fa": "۲٬۷۳۵ کاراکتر از ۱۵٬۵۰۰ کاراکتر مجاز"
     }
+   },
+   {
+    "label": {
+     "en": "Second judge: hybrid-index agent / HR",
+     "fa": "داور دوم: عامل روی نمایهٔ ترکیبی / HR"
+    },
+    "value": {
+     "en": "74–75 / 63 of 90 (+11 to +12, p .012–.027 uncorrected)",
+     "fa": "۷۴–۷۵ / ۶۳ از ۹۰ (‎+۱۱ تا ‎+۱۲، p = ۰٫۰۱۲ تا ۰٫۰۲۷ بدون اصلاح)"
+    }
    }
   ],
   "source": {
@@ -2221,7 +2261,7 @@
     "en": "Sect. “Evidence budget and iterative or long-context retrieval”; Data release: anyrag-results/posthoc/S3_agentic, anyrag-results/posthoc/S9_gpu",
     "fa": "بخش «بودجهٔ شواهد و بازیابی تکرارشونده یا با پنجرهٔ متنی بلند»؛ داده‌های منتشرشده: anyrag-results/posthoc/S3_agentic، anyrag-results/posthoc/S9_gpu"
    },
-   "file": "work/posthoc_2026-11/S3_agentic/RESULTS.md; work/posthoc_2026-11/S9_gpu/RESULTS.md (sec. 2)",
+   "file": "work/posthoc_2026-11/S3_agentic/RESULTS.md; work/posthoc_2026-11/S9_gpu/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "measured",
@@ -2654,6 +2694,16 @@
      "en": "69–71 → 53–54",
      "fa": "۶۹–۷۱ ← ۵۳–۵۴"
     }
+   },
+   {
+    "label": {
+     "en": "Same, second judge",
+     "fa": "همین، داور دوم"
+    },
+    "value": {
+     "en": "63 → 51–55",
+     "fa": "۶۳ ← ۵۱–۵۵"
+    }
    }
   ],
   "source": {
@@ -2661,7 +2711,7 @@
     "en": "Table “Retrieval when each question is asked in the other language”; Sect. “Persian and English”",
     "fa": "جدول «بازیابی وقتی هر پرسش به زبان دیگر پرسیده می‌شود»؛ بخش «فارسی و انگلیسی»"
    },
-   "file": "work/posthoc_2026-11/S15_crossling/RESULTS.md (sec. 2), results_tables.md",
+   "file": "work/posthoc_2026-11/S15_crossling/RESULTS.md (sec. 2), results_tables.md; work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "measured",
@@ -3025,6 +3075,16 @@
      "en": "0.69 / 0.82 (p .21)",
      "fa": "۰٫۶۹ / ۰٫۸۲ (p = ۰٫۲۱)"
     }
+   },
+   {
+    "label": {
+     "en": "Agreement / kappa on 12 post hoc variants scored later",
+     "fa": "توافق / کاپا در ۱۲ حالت پسینی که بعدتر داوری شدند"
+    },
+    "value": {
+     "en": "91.8% / 0.817",
+     "fa": "۹۱٫۸٪ / ۰٫۸۱۷"
+    }
    }
   ],
   "source": {
@@ -3032,13 +3092,13 @@
     "en": "Sect. “Reliability of the rankings and practical guidance”; Table “Test accuracy of four pipelines at two evidence budgets”; Sect. “Readers and judging”",
     "fa": "بخش «اعتبار رتبه‌بندی‌ها و راهنمای عملی»؛ جدول «دقت چهار پایپ‌لاین در پرسش‌های آزمون با دو بودجهٔ شواهد»؛ بخش «مدل‌های پاسخ‌گو و داوری»"
    },
-   "file": "work/posthoc_2026-11/S1_evaluator/RESULTS.md; work/posthoc_2026-11/S8_factorial/tables.md; work/posthoc_2026-11/S14_bilingual/RESULTS.md (sec. 2.5)",
+   "file": "work/posthoc_2026-11/S1_evaluator/RESULTS.md; work/posthoc_2026-11/S8_factorial/tables.md; work/posthoc_2026-11/S14_bilingual/RESULTS.md (sec. 2.5); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "measured",
   "caveat": {
-   "en": "The second judge scored only the 6,000 and 15,500 arms.",
-   "fa": "داور دوم فقط حالت‌های ۶٬۰۰۰ و ۱۵٬۵۰۰ را سنجید."
+   "en": "The second judge scored the eight frozen arms and 19 post hoc variants; the budget sweep, routing and long-context runs were scored by the first judge only.",
+   "fa": "داور دوم هشت حالت آزمون ازپیش‌تعیین‌شده و ۱۹ حالت پسینی را سنجید؛ منحنی بودجه، مسیریابی و اجراهای پنجرهٔ متنی بلند را فقط داور اول سنجید."
   },
   "tags": [
    "judges",
@@ -3389,6 +3449,16 @@
      "en": "+6 to +8, not significant",
      "fa": "‎+۶ تا ‎+۸، معنادار نیست"
     }
+   },
+   {
+    "label": {
+     "en": "Same, second judge",
+     "fa": "همین، داور دوم"
+    },
+    "value": {
+     "en": "+11 to +12, p .012–.027 uncorrected",
+     "fa": "‎+۱۱ تا ‎+۱۲، p = ۰٫۰۱۲ تا ۰٫۰۲۷ بدون اصلاح"
+    }
    }
   ],
   "source": {
@@ -3396,13 +3466,13 @@
     "en": "Table “Practical recommendations with supporting evidence and confidence”; Sect. “Reliability of the rankings and practical guidance”; Table “Test accuracy of four pipelines at two evidence budgets”; Sect. “Evidence budget and iterative or long-context retrieval”",
     "fa": "جدول «توصیه‌های عملی، دلیل‌های پشتیبان و میزان اطمینان»؛ بخش «اعتبار رتبه‌بندی‌ها و راهنمای عملی»؛ جدول «دقت چهار پایپ‌لاین در پرسش‌های آزمون با دو بودجهٔ شواهد»؛ بخش «بودجهٔ شواهد و بازیابی تکرارشونده یا با پنجرهٔ متنی بلند»"
    },
-   "file": "work/datasets_v2/test_run/TEST_RESULTS.md; work/posthoc_2026-11/S9_gpu/RESULTS.md (sec. 2)",
+   "file": "work/datasets_v2/test_run/TEST_RESULTS.md; work/posthoc_2026-11/S9_gpu/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "tentative",
   "caveat": {
-   "en": "The agent's lead over the reranker is not significant.",
-   "fa": "برتری عامل بر بازرتبه‌ساز معنادار نیست."
+   "en": "The agent's lead over the reranker is not significant under the first judge; under the second it is, without correction.",
+   "fa": "برتری عامل بر بازرتبه‌ساز با داور اول معنادار نیست؛ با داور دوم معنادار است، البته بدون اصلاح برای مقایسه‌های چندگانه."
   },
   "tags": [
    "guide",
@@ -3458,6 +3528,16 @@
     "value": {
      "en": "68 / 61",
      "fa": "۶۸ / ۶۱"
+    }
+   },
+   {
+    "label": {
+     "en": "Second judge, 6,000: Hybrid / BM25",
+     "fa": "داور دوم، ۶٬۰۰۰: ترکیبی / BM25"
+    },
+    "value": {
+     "en": "59–61 / 42–45 of 90",
+     "fa": "۵۹–۶۱ / ۴۲–۴۵ از ۹۰"
     }
    }
   ],
@@ -3517,6 +3597,16 @@
      "en": "68 / 63",
      "fa": "۶۸ / ۶۳"
     }
+   },
+   {
+    "label": {
+     "en": "Second judge, 6,000: Hybrid / dense",
+     "fa": "داور دوم، ۶٬۰۰۰: ترکیبی / معنایی"
+    },
+    "value": {
+     "en": "59–61 / 45–49 of 90",
+     "fa": "۵۹–۶۱ / ۴۵–۴۹ از ۹۰"
+    }
    }
   ],
   "source": {
@@ -3574,6 +3664,16 @@
      "en": "62–63 / 49",
      "fa": "۶۲–۶۳ / ۴۹"
     }
+   },
+   {
+    "label": {
+     "en": "Second judge: reranked / plain Hybrid, 1,000 / 2,000",
+     "fa": "داور دوم: با بازرتبه‌ساز / ترکیبیِ ساده، ۱٬۰۰۰ / ۲٬۰۰۰"
+    },
+    "value": {
+     "en": "63 / 52–55; 59–61 / 48–53",
+     "fa": "۶۳ / ۵۲–۵۵؛ ۵۹–۶۱ / ۴۸–۵۳"
+    }
    }
   ],
   "source": {
@@ -3581,13 +3681,13 @@
     "en": "Table “Practical recommendations with supporting evidence and confidence”; Sect. “Reliability of the rankings and practical guidance”; Table “Retrieval components varied one at a time”",
     "fa": "جدول «توصیه‌های عملی، دلیل‌های پشتیبان و میزان اطمینان»؛ بخش «اعتبار رتبه‌بندی‌ها و راهنمای عملی»؛ جدول «تغییر اجزای بازیابی، هر بار یک جزء»"
    },
-   "file": "work/posthoc_2026-11/S12_chunks/RESULTS.md (sec. 2)",
+   "file": "work/posthoc_2026-11/S12_chunks/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
   "confidence": "strong",
   "caveat": {
-   "en": "At a 6,000-character budget with this packer.",
-   "fa": "با بودجهٔ ۶٬۰۰۰ کاراکتر و همین بسته‌ساز."
+   "en": "At a 6,000-character budget with this packer. Under the second judge the loss is 6 to 13 answers, no longer clearly above the detectable difference.",
+   "fa": "با بودجهٔ ۶٬۰۰۰ کاراکتر و همین بسته‌ساز. با داور دوم افت ۶ تا ۱۳ پاسخ است و دیگر آشکارا بیش از تفاوت آشکارشدنی نیست."
   },
   "tags": [
    "guide",
@@ -3746,6 +3846,16 @@
     "value": {
      "en": "58 / 62–63",
      "fa": "۵۸ / ۶۲–۶۳"
+    }
+   },
+   {
+    "label": {
+     "en": "Second judge, dense only: e5 / bge-m3",
+     "fa": "داور دوم، فقط معنایی: e5 / bge-m3"
+    },
+    "value": {
+     "en": "54–57 / 45–49",
+     "fa": "۵۴–۵۷ / ۴۵–۴۹"
     }
    }
   ],
