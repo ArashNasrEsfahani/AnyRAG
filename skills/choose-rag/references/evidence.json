@@ -3641,8 +3641,8 @@
  {
   "id": "g-chunk-2000",
   "claim": {
-   "en": "Use chunks of about 1,000 characters; 2,000-character chunks lose clearly at a 6,000-character budget because few large chunks fit the pack.",
-   "fa": "قطعه‌های حدود ۱٬۰۰۰ کاراکتری به کار ببرید؛ قطعه‌های ۲٬۰۰۰ کاراکتری در بودجهٔ ۶٬۰۰۰ کاراکتر آشکارا عقب می‌مانند، چون قطعهٔ بزرگ زیادی در بسته جا نمی‌شود."
+   "en": "Use chunks of about 1,000 characters; 2,000-character chunks lose at a 6,000-character budget because few large chunks fit the pack.",
+   "fa": "قطعه‌های حدود ۱٬۰۰۰ کاراکتری به کار ببرید؛ قطعه‌های ۲٬۰۰۰ کاراکتری در بودجهٔ ۶٬۰۰۰ کاراکتر عقب می‌مانند، چون قطعهٔ بزرگ زیادی در بسته جا نمی‌شود."
   },
   "numbers": [
    {
@@ -3684,7 +3684,7 @@
    "file": "work/posthoc_2026-11/S12_chunks/RESULTS.md (sec. 2); work/posthoc_2026-11/S16_judge2/tables.md",
    "manuscript": "paper_journal/main.pdf (journal manuscript, in preparation)"
   },
-  "confidence": "strong",
+  "confidence": "tentative",
   "caveat": {
    "en": "At a 6,000-character budget with this packer. Under the second judge the loss is 6 to 13 answers, no longer clearly above the detectable difference.",
    "fa": "با بودجهٔ ۶٬۰۰۰ کاراکتر و همین بسته‌ساز. با داور دوم افت ۶ تا ۱۳ پاسخ است و دیگر آشکارا بیش از تفاوت آشکارشدنی نیست."
@@ -3703,7 +3703,7 @@
     "en": "About 1,000 characters.",
     "fa": "حدود ۱٬۰۰۰ کاراکتر."
    },
-   "confidence_text": "Strong against 2,000 at a 6,000-character budget with this packer; tentative against 500"
+   "confidence_text": "Tentative: strong against 2,000 under the first judge only (6,000-character budget, this packer); tentative against 500"
   }
  },
  {
@@ -3760,7 +3760,7 @@
     "en": "About 1,000 characters.",
     "fa": "حدود ۱٬۰۰۰ کاراکتر."
    },
-   "confidence_text": "Strong against 2,000 at a 6,000-character budget with this packer; tentative against 500"
+   "confidence_text": "Tentative: strong against 2,000 under the first judge only (6,000-character budget, this packer); tentative against 500"
   }
  },
  {
