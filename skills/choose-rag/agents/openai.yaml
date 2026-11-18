@@ -2,7 +2,7 @@
 # Claude ignores this folder; SKILL.md is the same for both.
 interface:
   display_name: "Choose RAG"
-  short_description: "Pick a RAG setup from the evidence of a Persian-English RAG study"
-  default_prompt: "Help me choose a RAG setup for my project."
+  short_description: "Pick or review the RAG setup of your repo from a Persian-English RAG study"
+  default_prompt: "Scan this repository and its documents and recommend the best RAG setup for it."
 policy:
   allow_implicit_invocation: true

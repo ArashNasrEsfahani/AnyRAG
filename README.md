@@ -105,9 +105,11 @@ tools/strip_corpus_text.py   the script that removed corpus text from results/ (
 
 ## Choose your RAG with Claude or Codex
 
-`skills/choose-rag/` is an Agent Skill that asks up to eight short questions about your project (question types,
-language, evidence budget, latency, GPU, extra LLM calls, whether the model may already know the answers, Persian
-spelling), applies the paper's decision rules and returns a recommended pipeline. Every part carries its evidence, a
+`skills/choose-rag/` is an Agent Skill that reads your repository and documents locally (a read-only scanner, no
+dependencies, nothing executed or sent) to infer the eight chooser answers (question types, language, evidence
+budget, latency, GPU, extra LLM calls, whether the model may already know the answers, Persian spelling), asks
+only what it cannot infer (or all eight when there is no codebase), applies the paper's decision rules and returns a
+recommended pipeline, with file-by-file changes when it finds an existing RAG stack. Every part carries its evidence, a
 confidence label (Strong / Tentative / Measured) and its source in the paper, plus what to avoid, the trade-offs and
 a recipe to check the choice on your own questions. The same folder works in Claude (Claude Code and the Claude
 apps) and in OpenAI Codex; see `skills/choose-rag/README.md` for details and an example conversation.
@@ -130,9 +132,12 @@ mkdir -p ~/.codex/skills && cp -r skills/choose-rag ~/.codex/skills/
 
 - **Claude apps (claude.ai, desktop):** turn on code execution, then upload `skills/choose-rag.zip` under
   Settings > Capabilities > Skills (menu names may differ by plan and version).
-- Then ask a RAG question, or invoke the skill directly (`/choose-rag` in Claude Code, `$choose-rag` in Codex).
+- Then open your project and ask, for example, "Which RAG setup should I use for this project?" or "Review my RAG
+  setup", or invoke the skill directly (`/choose-rag` in Claude Code, `$choose-rag` in Codex).
 - Check the install: `python ~/.claude/skills/choose-rag/scripts/test_choose.py` (or the Codex path) should print
-  `Profiles: 33 of 33 passed` and a sweep with 0 problems. The rules also run without an agent:
+  `Profiles: 33 of 33 passed` and a sweep with 0 problems; `scripts/test_scan.py` should print
+  `Scan checks: 38 of 38 passed`. The scripts also run without an agent:
+  `python skills/choose-rag/scripts/scan_project.py path/to/repo --recommend` and
   `python skills/choose-rag/scripts/choose.py --questions`.
 
 ## Post hoc experiments (November 2026)

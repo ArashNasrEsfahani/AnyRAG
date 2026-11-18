@@ -1,11 +1,13 @@
 # choose-rag: an Agent Skill for picking a RAG setup
 
-`choose-rag` helps you choose a retrieval-augmented generation (RAG) setup for your own project. It asks
-up to eight short questions (question types, language, evidence budget, latency, GPU, extra LLM calls,
-whether the model may already know the answers, Persian spelling), runs the decision rules of a research
-study, and gives you a recommended pipeline. Each part comes with its evidence, a confidence label
-(Strong / Tentative / Measured) and the paper source, plus what to avoid, the trade-offs, and a recipe
-to check the result on your own questions.
+`choose-rag` helps you choose a retrieval-augmented generation (RAG) setup for your own project. Point it
+at your repository: it reads your code and documents locally, infers what it can (document language and
+spelling, current chunk size and top-k, vector DB, BM25, embedding model, reranker, GPU, LLM provider,
+latency hints, question types) and asks only what it cannot tell. Without a codebase it asks up to eight
+short questions instead. It then runs the decision rules of a research study and gives you a recommended
+pipeline and, for an existing stack, the changes to make file by file. Each part comes with its
+evidence, a confidence label (Strong / Tentative / Measured) and the paper source, plus what to avoid,
+the trade-offs, and a recipe to check the result on your own questions.
 
 The evidence comes from *What Reaches the Reader: A Comparison of Retrieval-Augmented Generation Setups
 in Persian and English* (Arash Nasr Esfahani, University of Tehran, in preparation). It rests on 90 test
@@ -30,8 +32,10 @@ choose-rag/
     evaluation_recipe.md        paired evaluation with a sign test, on your own data
     source_map.md               how sources are cited (journal manuscript, by title)
   scripts/
+    scan_project.py             read-only project scanner: infers the 8 answers, the stack, the changes
     choose.py                   the rules as a deterministic script (Python 3 standard library)
     test_choose.py              reproduces the 33 test profiles and sweeps all 43,200 answer combinations
+    test_scan.py                runs the scanner on 4 synthetic projects built in a temporary folder
     sign_test.py                exact sign test for the evaluation recipe
 ```
 
@@ -39,7 +43,13 @@ choose-rag/
 
 ### Claude Code
 
-Personal, for all projects:
+Personal, for all projects, straight from GitHub:
+
+```bash
+git clone --depth 1 https://github.com/ArashNasrEsfahani/AnyRAG.git && mkdir -p ~/.claude/skills && cp -r AnyRAG/skills/choose-rag ~/.claude/skills/
+```
+
+Or from this folder:
 
 ```bash
 # macOS / Linux
@@ -53,7 +63,8 @@ Copy-Item -Recurse choose-rag "$env:USERPROFILE\.claude\skills\"
 ```
 
 For one project only, copy the folder to `<project>/.claude/skills/choose-rag/`. Then start Claude Code
-and ask a RAG question, or type `/choose-rag`.
+in your project and ask a RAG question ("Which RAG setup should I use for this project?"), or type
+`/choose-rag`.
 
 ### Claude apps (claude.ai, desktop)
 
@@ -69,6 +80,8 @@ and says so.
 ### OpenAI Codex (CLI, IDE extension)
 
 ```bash
+git clone --depth 1 https://github.com/ArashNasrEsfahani/AnyRAG.git && mkdir -p ~/.codex/skills && cp -r AnyRAG/skills/choose-rag ~/.codex/skills/
+# or, from this folder:
 mkdir -p ~/.codex/skills && cp -r choose-rag ~/.codex/skills/
 ```
 
@@ -88,9 +101,48 @@ RAG question and Codex will pick it from the description.
 
 ```bash
 python ~/.claude/skills/choose-rag/scripts/test_choose.py     # or the Codex path
+python ~/.claude/skills/choose-rag/scripts/test_scan.py
 ```
 
-It should print `Profiles: 33 of 33 passed` and a sweep with 0 problems.
+They should print `Profiles: 33 of 33 passed` with a sweep of 0 problems, and `Scan checks: 38 of 38 passed`.
+
+## Point it at your repo
+
+Open Claude Code or Codex in your project folder and ask:
+
+> Which RAG setup should I use for this project?
+
+or "Review my RAG setup", "Choose retrieval for my repo", `/choose-rag` (Claude Code), `$choose-rag`
+(Codex). The agent runs the scanner on the folder, shows you what it inferred with a confidence for each
+answer, asks only the unknown or uncertain ones, and then gives the recommendation with changes such as:
+
+```
+[change] app/rag/config.py:2: Your chunk_size=2000: consider about 1,000 characters with 200 overlap.
+         Confidence: Tentative (at a 6,000-character budget with this packer). Evidence: g-chunk-2000 [tentative], chunks [measured]
+[change] app/retrieve.py:8: Add a cross-encoder reranker (e.g. bge-reranker-v2-m3) after your Chroma retrieval ...
+[keep]   app/retrieve.py:8: Your pack of about 6,480 characters fits the recommended ~6,000.
+```
+
+The scanner is safe to run on any folder: it only reads files (standard library, no dependencies), never
+executes or imports your code, never uses the network and writes nothing. It skips `.git`,
+`node_modules`, virtual environments, build and cache folders, binary files and `.env` files, and caps
+what it reads (2,500 files, 256 KB per text file, 64 MB in total). Your documents and code stay on your
+machine; the agent sees only the scan summary and the lines it chooses to read. You can run it yourself:
+
+```bash
+python scripts/scan_project.py path/to/your/repo                 # slot table, corpus, stack, resources
+python scripts/scan_project.py path/to/your/repo --json          # machine-readable; "answers" feeds choose.py
+python scripts/scan_project.py path/to/your/repo --recommend --q1 t2 --q4 few   # + recommendation and changes
+```
+
+It infers: document folders, types, count, size, rough characters and script mix (Persian/Arabic, Latin,
+other); the language of test questions, UI strings and prompts; vector DBs (FAISS, Chroma, Qdrant,
+Weaviate, pgvector, Milvus, LanceDB, Elasticsearch/OpenSearch), BM25 (rank_bm25, bm25s, Elasticsearch),
+embedding models (bge-m3, e5, OpenAI, sentence-transformers), rerankers (bge-reranker, Cohere, cross-encoders),
+frameworks (LangChain, LlamaIndex, Haystack, DSPy), chunk_size / overlap, top-k and context budgets; GPU
+hints, LLM providers (OpenAI, Anthropic, OpenRouter, Ollama, vLLM, ...) and latency hints; FAQ versus
+cross-document question wording. Code-side inferences are heuristics: the confidence column says how far
+to trust each one, and the agent confirms them with you.
 
 ## Using the script directly
 
