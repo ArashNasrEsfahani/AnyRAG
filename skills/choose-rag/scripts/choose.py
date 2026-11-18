@@ -17,7 +17,8 @@ It implements the rule semantics in references/chooser.json -> notes.semantics:
     tradeoffs, avoid, extras, with the items in notes.universal (advice that
     holds for every setup) listed last under one heading.
   * Sources cite the journal manuscript's tables and sections by title, not by
-    number, because the numbers may change before publication.
+    number, because the numbers may change before publication; numbers cut from
+    the manuscript cite their folder of the public data release.
 
 Usage examples
   python choose.py --q1 t3 --q2 fa --q5 yes

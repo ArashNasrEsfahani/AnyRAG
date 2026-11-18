@@ -128,7 +128,7 @@ python scripts/sign_test.py results.csv                  # question_id,a,b[,excl
 > |---|---|---|---|
 > | Retrieval | BM25 + dense, fused with reciprocal rank fusion. Hybrid 62–63 vs dense 53 vs BM25 48 of 90 | Strong against BM25 alone, Tentative against dense alone | Guide table; components table |
 > | Chunks | ~1,000 characters, 200 overlap (2,000-char chunks: 51 vs 69–71) | Strong against 2,000 at this budget; Tentative against 500 | Guide table; components table |
-> | Selection | One LLM call that picks passages from the fused candidates (no GPU needed); removing it cost ~15 answers at 3,000 chars and 5–10 at 6,000 | Tentative at 6,000 (your budget); Strong only at 3,000 (one run) | Guide table; selection-step table; budget figure |
+> | Selection | One LLM call that picks passages from the fused candidates (no GPU needed); removing it cost ~15 answers at 3,000 chars and 5–10 at 6,000 | Tentative at 6,000 (your budget); Strong only at 3,000 (one run) | Guide table; budget figure; data release (posthoc/S8_factorial) |
 > | Budget | ~6,000 characters | Tentative | Guide table; budget figure |
 > | Agent | None | Tentative | Guide table |
 > | Normalisation | Standard tokenisation (the paper's normalisation findings are Persian only) | Measured | |

@@ -26,7 +26,8 @@ claims of your own and present them as the study's; when you add general advice,
   list of situations it does not cover. Read section 5 when the project looks out of scope.
 - `references/evaluation_recipe.md`: how the user can check the recommendation on their own questions.
 - `scripts/sign_test.py`: the exact sign test used in the recipe.
-- `references/source_map.md`: how sources are cited (journal manuscript tables and sections by title).
+- `references/source_map.md`: how sources are cited (journal manuscript tables, figures and sections by title,
+  plus folders of the public data release for numbers cut from the manuscript).
 
 Paths are relative to this skill's folder. Run scripts with the folder's absolute path, for example
 `python <skill-dir>/scripts/choose.py ...` (use `python3` where `python` is not Python 3).
@@ -93,8 +94,8 @@ text). Do not paste the raw script output; turn it into this structure:
 3. **Avoid**: the avoid items, each with a few words of why.
 4. **Evidence**: for each slot and avoid item, the key number, its confidence label exactly as given
    (**Strong**, **Tentative** or **Measured**, with its scope, e.g. "Strong against BM25 alone,
-   Tentative against dense alone"), and the paper source (journal manuscript tables and sections by title,
-   as the script prints them; numbers are not used because they may change before publication). Keep it compact: a table or one line each.
+   Tentative against dense alone"), and the paper source (journal manuscript tables and sections by title, and any
+   data release folder, as the script prints them; numbers are not used because they may change before publication). Keep it compact: a table or one line each.
 5. **Trade-offs**: the trade-off cards, which explain tensions between the user's own answers. If none
    fired, mention the main cost of the recommendation (tokens, latency) in one line.
 6. **What the study does not cover here**: anything in the project outside the study's scope (see

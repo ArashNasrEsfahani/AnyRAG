@@ -16,13 +16,8 @@
 \input{sections/j4_conclusion}
 \input{sections/j5_backmatter}
 
-\appendix
-% Elsevier style: tables and figures numbered per appendix (Table A.1, Table B.1, ...)
-\counterwithin*{table}{section}\counterwithin*{figure}{section}
-\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
-\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
-\input{sections/jA_appendix}
-
+{\small
 \bibliographystyle{elsarticle-num}
 \bibliography{refs}
+}
 \end{document}

@@ -108,7 +108,8 @@ The reasons for three of the changes are as follows.
 The token gate was relaxed because the full-passage selectors that were piloted at the time needed 5 to 7 thousand selector tokens per question, while the original gate left approximately 1.1 thousand.
 A smaller excerpt-only order fixer later used 945 tokens, so the old gate did not exclude every selector based on a language model.
 \setr{} was added because it led on the development set, and excluding a baseline adapted from published work after it had won would have been selective.
-The judge was fixed to one model version at one provider because, on the development set, an unfixed judge scored one identical answer as both correct and incorrect on two occasions.
+The judge was fixed to one model version at one provider because, on the development set, an unfixed judge scored one identical answer as correct in one run and as incorrect in another.
+% src: work/datasets_v2/test_freeze/PROTOCOL.md sec. 6 item 2 (HR RPT-fa-T2-002, identical answer/rubric hash: strict 1 in lex5_pilot, 0 in idea_test); the only documented case (also work/TODO.md)
 
 On the test, retrieval, reranking and selection ran once per question and cell with the primary reader.
 The primary cells ran one process at a time, with the pipeline order rotated per question, while the other five readers answered the saved packs in parallel and judging ran as answers arrived.
@@ -212,7 +213,7 @@ Because the questions were selected for disagreement between the pipelines under
 The first judge was stricter for some pipelines than for others.
 It rejected 15 of the 27 answers of \setr{} that the human accepted, but only 6 to 9 of the 20 to 25 accepted answers of each other pipeline.
 On the development set the first judge once accepted an answer that gave the ratio of 13.3 to 5.4 as a share, and a later audit rejected that answer.
-% src: TEST_RESULTS_HUMAN_SYM.md sec. 4 (per-arm strictness: HYBRID 20 accepted / 9 rejected, HR 25 / 6, LEX5B 25 / 7, SETR 27 / 15); diagnosis files (dev inverted ratio)
+% src: TEST_RESULTS_HUMAN_SYM.md sec. 4 (per-arm strictness: HYBRID 20 accepted / 9 rejected, HR 25 / 6, LEX5B 25 / 7, SETR 27 / 15); dev inverted ratio: work/datasets_v2/lex11/LEX11.md sec. 1 "The Wise case" (lines 45-54; AGENTIC5 13.3 / 5.4 = 2.463 reported as the share, adjudicated 0) and lex11/audit/decisions.json (V2-dev-RPT-en-T2-003, flag inverse_ratio_false_positive)
 \input{tables/judge}
 
 The judge was never laxer than the human on the reviewed test answers, so reviewing an answer can only keep or raise the score of a pipeline, and unequal coverage gives some pipelines more chances for correction.

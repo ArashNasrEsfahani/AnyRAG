@@ -5,50 +5,41 @@
 % src (number check 2026-11-18): agent median latency 10.5 s and 4.09x tokens = S9_gpu/RESULTS.md sec. 5 items 4-5; 1.8/3.2/4.0/5.5 s = Table cost p50; HYBRID ~50 -> 72 and 2.5x text = figures/data/budget.dat (3,000 -> 24,000; 15,500/6,000 = 2.58)
 % Confidence: strong = the difference is larger than the ~11 answers the test can detect (about 8 of 45 in one half), or the claim concerns a measured cost or a large retrieval-level effect, or the tier leaves no room for a difference; tentative = same direction in the point estimates but within the noise of 90 questions.
 \begin{table*}[tp]
-\caption{Practical recommendations with supporting evidence and confidence}
+\caption{Practical recommendations with supporting evidence and confidence. Every row rests on 90 answerable questions, one primary reader and the first judge unless a second judge is named}
 \label{tab:guide}
 \centering
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.02}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.0cm}@{}}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.2cm}@{}}
 \toprule
 Situation & Recommended setup & Why (evidence in this paper) & Confidence \\
 \midrule
 Single-fact questions (T1) & Hybrid retrieval at a modest budget; no reranker or selection call. & Every pipeline answers 27 to 29 of 30 (Table~\ref{tab:main}). & Strong \\
-Within-document questions (T2) & Hybrid retrieval with a cross-encoder reranker. & \hr{} and \lexb{} answer 23 to 24 of 30, \hybrid{} 20 to 21 (Table~\ref{tab:main}). & Tentative \\
-Cross-document questions (T3) & Reranker first. Add an iterative agent over the hybrid index if four times the tokens and about 10 s are acceptable. & \hr{} and \setr{} lead \hybrid{} (18 to 19 against 14 of 30, Table~\ref{tab:main}); the agent reaches 25 of 30 but is not significantly ahead of \hr{} (Table~\ref{tab:search}). & Tentative \\
+Within-document and cross-document questions (T2, T3) & Hybrid retrieval with a cross-encoder reranker. Add an iterative agent over the hybrid index if four times the tokens and about 10 s are acceptable. & T2: \hr{} and \lexb{} answer 23 to 24 of 30, \hybrid{} 20 to 21. T3: \hr{} and \setr{} lead \hybrid{} (18 to 19 against 14 of 30); the agent reaches 25 of 30 but is not significantly ahead of \hr{} (Table~\ref{tab:main}, Sect.~\ref{sec:evidence}). & Tentative \\
 Retrieval channel & Run BM25 and dense retrieval and fuse them. If only one can run, use dense retrieval with a larger budget. & Hybrid 62 to 63, dense 53, BM25 48 at 6,000 characters; at 15,500 the gaps shrink to 5 and 7 (Table~\ref{tab:components}). & Strong against BM25 alone, tentative against dense \\
-Chunk size & About 1,000 characters. & \hr{}: 69 to 71 at 1,000, 62 at 500, 51 at 2,000; few large chunks fit the pack (Table~\ref{tab:components}). & Strong against 2,000 at a 6,000-character budget with this packer; tentative against 500 \\
-Query rewriting & Do not add HyDE or multi-query. & 61 and 58 to 59 against 62 to 63, at one extra LLM call, and fewer complete bundles in Persian (Sect.~\ref{sec:components}). & Tentative \\
-Embedding model & bge-m3 or multilingual-e5-large; spend effort on a reranker. & Dense-only scores tie; e5 is 4 to 5 lower inside hybrid, not significantly (Table~\ref{tab:components}). & Tentative \\
-Persian budgets & Set budgets in tokens, not characters. & Persian costs about 1.5 to 1.8 times the tokens per character for five of six readers, 3.0 for one (Table~\ref{tab:tokenizers}). & Strong \\
-Persian spelling and digits & Normalise letters, non-joiners and digits before BM25. & Without normalisation BM25 loses 5 to 8 of 45 complete bundles; retrieval only (Sect.~\ref{sec:language}). & Tentative \\
+Chunk size, rewriting and embedding model & Chunks of about 1,000 characters; no HyDE or multi-query; bge-m3 or multilingual-e5-large, and spend effort on a reranker. & \hr{}: 69 to 71 at 1,000 characters, 62 at 500, 51 at 2,000. Rewriting scores 61 and 58 to 59 against 62 to 63. The e5 model ties bge-m3 as the only channel (Table~\ref{tab:components}). & Strong against 2,000-character chunks, tentative otherwise \\
+Persian budgets, spelling and digits & Set budgets in tokens, not characters. Normalise letters, non-joiners and digits before BM25. & Persian costs about 1.5 to 1.8 times the tokens per character for five of six readers, 3.0 for one. Without normalisation BM25 loses 5 to 8 of 45 complete bundles; retrieval only (Sect.~\ref{sec:language}). & Strong for token cost, tentative for spelling \\
 \bottomrule
 \end{tabularx}
 \end{table*}
 
 \begin{table*}[tp]
-\addtocounter{table}{-1}
-\renewcommand{\theHtable}{\thetable.cont}
-\caption{Practical recommendations with supporting evidence and confidence (continued)}
+\addtocounter{table}{-1}\renewcommand{\theHtable}{\thetable.cont}
+\caption{Practical recommendations (continued)}
 \centering
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{0.9}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.7cm}@{}}
+\renewcommand{\arraystretch}{1.02}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.2cm}@{}}
 \toprule
 Situation & Recommended setup & Why (evidence in this paper) & Confidence \\
 \midrule
-Query language differs from the documents & A dense channel, and a reranker after the fusion; not BM25 alone. & BM25 finds 2 and 8 of 45 bundles, dense 35 and 28; fusion loses its lead over dense; \hr{} still answers 53 to 54 against 69 to 71 (Table~\ref{tab:language}). & Strong for the BM25 collapse, tentative for fusion against dense \\
-Tight budget (6,000 characters) & A reranking or selection step: a cross-encoder, or an LLM selection call if none is available. & Removing the selection call costs about 15 answers at 3,000 characters (one run) and about 4 to 11 at 6,000, depending on the reader run (Table~\ref{tab:ablation}, Fig.~\ref{fig:budget}). The lead of \hr{} over \hybrid{} (6 to 9) is not significant (pooled $p=.31$; 63 against 59 to 61 under the second judge). & Strong at 3,000 characters for the selection call, one run; tentative at 6,000 characters and for the cross-encoder \\
-Loose budget (15,500 characters or more) & \hybrid{}; reranking and selection add little. & \hybrid{} rises from about 50 to 72 correct; \hr{} gains less ($-$2 to +6 across repeated reader runs; Fig.~\ref{fig:budget}). & Tentative \\
-Latency-sensitive & One pass: hybrid, with or without a reranker. No selection calls or agents. & Median latency 1.8 s hybrid, 3.2 s reranked, 4.0 s Lex-RAG, 5.5 s SetR, 10.5 s agent (Tables~\ref{tab:cost} and~\ref{tab:search}); measured under load, so only the order is informative. & Tentative \\
-No GPU for a reranker & Hybrid with a larger budget, or an LLM selection call over the fused candidates. & Hybrid at 15,500 matches Lex-RAG at 6,000 with 2.5 times the text (Fig.~\ref{fig:budget}). & Tentative \\
-Questions answerable from memory & Do not count on retrieval; build the evaluation without them. & The reader answers 26 of 90 with no evidence (Table~\ref{tab:contam}). & Strong \\
-Search agents & Treat the BM25 agent's lead over the reranker with caution. & It lies in the 26 memory-answerable questions (4 wins, 1 loss) and shrinks under the second judge (66 to 68 against 73; Table~\ref{tab:search}). The hybrid-index agent keeps a lead without them (55 against 50 to 51 of 64; Table~\ref{tab:contam}). & Tentative \\
+Query language differs from the documents & A dense channel, and a reranker after the fusion; not BM25 alone. & BM25 finds 2 and 8 of 45 bundles, dense 35 and 28; \hr{} still answers 53 to 54 against 69 to 71 (Table~\ref{tab:language}). & Strong for the BM25 collapse, tentative for fusion against dense \\
+Tight budget (6,000 characters) & A reranking or selection step: a cross-encoder, or an LLM selection call if no GPU is available. & Removing the selection call costs about 15 answers at 3,000 characters (one run) and about 4 to 11 at 6,000. The lead of \hr{} over \hybrid{} (6 to 9) is not significant (pooled $p=.31$; 63 against 59 to 61 under the second judge) (Fig.~\ref{fig:budget}, Sect.~\ref{sec:components}). & Strong at 3,000 characters for the selection call, tentative at 6,000 and for the cross-encoder \\
+Loose budget (15,500 characters or more) & \hybrid{}; reranking and selection add little. & \hybrid{} rises from about 50 to 72 correct and matches \lexb{} at 6,000 with 2.5 times the text; \hr{} gains less ($-$2 to +6 across repeated reader runs; Fig.~\ref{fig:budget}). & Tentative \\
+Latency-sensitive & One pass: hybrid, with or without a reranker. No selection calls or agents. & Median latency 1.8 s hybrid, 3.2 s reranked, 4.0 s \lexb{}, 5.5 s \setr{}, 10.5 s hybrid-index agent; measured under load, so only the order is informative. & Tentative \\
+Evaluation & Exclude questions that the reader answers from memory, and check the evidence pack before blaming the reader. & The reader answers 26 of 90 with no evidence. The BM25 agent's lead over the reranker lies in those questions (4 wins, 1 loss) and shrinks under the second judge (66 to 68 against 73); the hybrid-index agent keeps a lead without them (55 against 50 to 51 of 64). & Strong for the memory-answerable questions, tentative for the agents \\
 \bottomrule
 \end{tabularx}
-\par\smallskip
-{\footnotesize\emph{Note.} Every row rests on 90 answerable questions and one primary reader, and on the first judge unless a second judge is named.\par}
 \end{table*}
